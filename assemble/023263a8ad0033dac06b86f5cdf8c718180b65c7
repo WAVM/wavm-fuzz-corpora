@@ -1,0 +1,8 @@
+(func
+br 0
+f32x4.sub
+f32x4.sub
+f32x4.sub
+f32x4.sub f32x4.sub br 0
+f32x4.sub
+f32x4.sub f32x4.sub br 0)

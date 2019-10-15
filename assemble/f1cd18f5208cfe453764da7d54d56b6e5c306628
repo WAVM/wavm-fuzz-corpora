@@ -1,0 +1,49 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param funcref f32 v128) (result f64 f32)))
+  (type $2 (func (param f32) (result f32 i32)))
+  (type $3 (func (param f64)))
+  (type $4 (func (param externref f32 v128) (result funcref)))
+  (import "env" "table" (table $5 32 4294967295 shared externref))
+  (import "env" "table" (table $6 98 4294967295 funcref))
+  (import "env" "global0" (global $11 (mut f32)))
+  (import "env" "global1" (global $12 (mut i32)))
+  (import "env" "global2" (global $13 (mut i64)))
+  (import "env" "global5" (global $14 funcref))
+  (import "env" "func0" (func $18))
+  (import "env" "func1" (func $19 (param funcref f32 v128) (result f64 f32)))
+  (import "env" "func2" (func $20 (param f64)))
+  (import "env" "func3" (func $21 (param externref f32 v128) (result funcref)))
+  (memory $8  50 48614 shared)
+  (memory $9  41 50029)
+  (memory $10  0 26143)
+  (table $7  92 4294967295 shared funcref)
+  (global $15  (mut i64) (i64.const -2572934132258522564))
+  (global $16  (mut externref) (ref.null extern))
+  (elem $17 declare funcref
+    (ref.func $20) (ref.func $21) (ref.func $18) (ref.func $22)
+    (ref.func $18) (ref.func $19) (ref.func $20) (ref.func $20)
+    (ref.func $21) (ref.func $20) (ref.func $20) (ref.null func)
+    (ref.null func) (ref.func $22) (ref.func $19) (ref.func $20)
+    (ref.func $21) (ref.func $20) (ref.func $19) (ref.func $20)
+    (ref.func $20) (ref.func $21) (ref.func $18) (ref.func $18)
+    (ref.func $20) (ref.func $21) (ref.func $18) (ref.func $18))
+  
+  (func $22 (type $2)
+    (param $0 f32)
+    (result f32 i32)
+    (local $1 f32)
+    global.get $11
+    call $18
+    table.size $6
+    i32.load16_s $9 offset=3447790726
+    table.size $6
+    v32x4.load_interleaved_4 $10 offset=3886586985 align=4
+    v128.not
+    i32x4.widen_high_i16x8_u
+    f32x4.extract_lane 2
+    i64.trunc_f32_s
+    atomic.fence
+    global.get $11
+    unreachable
+    ))

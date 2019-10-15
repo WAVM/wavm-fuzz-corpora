@@ -1,0 +1,50 @@
+(module
+  (type $0 (func (param f64 externref funcref v128) (result i32 f32)))
+  (type $1 (func))
+  (type $2 (func (result funcref i32)))
+  (type $3 (func (param v128 v128 i32 f32)))
+  (import "env" "memory" (memory $6 60 907 shared))
+  (import "env" "memory" (memory $7 90 36955 shared))
+  (import "env" "table" (table $4 87 4294967295 externref))
+  (import "env" "global0" (global $9 f32))
+  (import "env" "global5" (global $10 v128))
+  (import "env" "func0" (func $18 (result funcref i32)))
+  (import "env" "func1" (func $19 (param v128 v128 i32 f32)))
+  (memory $8  79 21655 shared)
+  (table $5  19 4294967295 externref)
+  (global $11  v128 (v128.const i32x4 0xee32efbb 0xa11f3a69 0x7963db37 0x32d6b148))
+  (global $12  i64 (i64.const -5672554454442398394))
+  (global $13  i64 (i64.const 2483213572538903293))
+  (global $14  (mut v128) (v128.const i32x4 0x13b5d096 0x8ea4535f 0xe33dcee7 0x4126a015))
+  (global $15  (mut f64) (f64.const 0x1.57e1dde7afe36p+63))
+  
+  (func $20 (type $0)
+    (param $0 f64)
+    (param $1 externref)
+    (param $2 funcref)
+    (param $3 v128)
+    (result i32 f32)
+    (local $4 f32)
+    local.get $3
+    local.get $3
+    f64x2.le
+    i32x4.bitmask
+    i64.load16_u offset=1768386631
+    global.get $13
+    f32.convert_i64_u
+    unreachable
+    )
+  
+  (func $21 (type $1)
+    (local $0 externref)
+    data.drop $17
+    f64.const -0x1.fd12b260df46ep+728
+    global.get $14
+    unreachable
+    )
+  
+  (data $16 
+    "\n\19\a1\b0V\f9\81h\e0\85\db\1d\0ee\d2\01\e4\de\e3;\ea\ed\cb\c3\f9T\cc\db\0f\8d\a7\bd\b6\f0\d6\02\a2")
+  
+  (data $17 
+    "\bd\9e\e9cY\ad\f2\0d]"))

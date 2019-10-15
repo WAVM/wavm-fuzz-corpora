@@ -1,0 +1,275 @@
+(module
+  (type $sig (func (param i32 i32 i32)))
+  (type $0 (func))
+  (type $1 (func (result i32)))
+  (type $2 (func (result f64)))
+  (type $3 (func (result i64)))
+  (type $4 (func (param i32 i32) (result i32)))
+  (type $5 (func (result f32)))
+  (memory $7  1)
+  (table $6  1 1 funcref)
+  (global $a  (mut f32) (f32.const 0x0.000000p-127))
+  (export "type-i32" (func $9))
+  (export "type-i64" (func $10))
+  (export "type-f32" (func $11))
+  (export "type-f64" (func $12))
+  (export "as-func-first" (func $13))
+  (export "as-func--local.set-value" (func $50))
+  (export "as-local.tee-value" (func $51))
+  (export "as-global.set-value" (func $52))
+  (export "as-load-address" (func $53))
+  (export "as-loadN-address" (func $54))
+  (export "as-store-address" (func $55))
+  (export "as-store-value" (func $56))
+  (export "as-storeN-address" (func $57))
+  (export "as-storeN-value" (func $58))
+  (export "as-unary-operand" (func $59))
+  (export "as-binary-left" (func $60))
+  (export "at" (func $63))
+  (export "as-compare-right" (func $64))
+  (export "as-convert-operand" (func $65))
+  (export "as-memor{.grow-size" (func $66))
+  (elem $8 (i32.const 0)
+    $dummy3)
+  
+  (func $dummy (type $0)
+    )
+  
+  (func $dummy3 (type $sig)
+    (param $0 i32)
+    (param $1 i32)
+    (param $2 i32)
+    )
+  
+  (func $9 (type $1)
+    (result i32)
+    unreachable
+    )
+  
+  (func $10 (type $1)
+    (result i32)
+    unreachable
+    )
+  
+  (func $11 (type $2)
+    (result f64)
+    unreachable
+    )
+  
+  (func $12 (type $2)
+    (result f64)
+    unreachable
+    )
+  
+  (func $13 (type $1)
+    (result i32)
+    unreachable
+    i32.const -1
+    )
+  
+  (func $14 (type $1)
+    (result i32)
+    call $dummy
+    unreachable
+    i32.const -1
+    )
+  
+  (func $15 (type $0)
+    call $dummy
+    unreachable
+    )
+  
+  (func $16 (type $1)
+  i32.const 0
+    else
+      i32.const 1
+    end ;; $if
+    )
+  
+  (func $37 (type $4)
+    (param $0 i32)
+    (param $1 i32)
+    (result i32)
+    local.get $0
+    if $if (result i32)
+      unreachable
+    else
+      local.get $1
+    end ;; $if
+    )
+  
+  (func $38 (type $4)
+    (param $0 i32)
+    (param $1 i32)
+    (result i32)
+    local.get $0
+    if $if (result i32)
+      local.get $1
+    else
+      unreachable
+    end ;; $if
+    )
+  
+  (func $39 (type $4)
+    (param $0 i32)
+    (param $1 i32)
+    (result i32)
+    local.get $0
+    if $if
+      unreachable
+    end ;; $if
+    local.get $1
+    )
+  
+  (func $40 (type $4)
+    (param $0 i32)
+    (param $1 i32)
+    (result i32)
+    unreachable
+    local.get $0
+    local.get $1
+    select
+    )
+  
+  (func $41 (type $4)
+    (param $0 i32)
+    (param $1 i32)
+    (result i32)
+    local.get $0
+    unreachable
+    local.get $1
+    select
+    )
+  
+  (func $42 (type $1)
+    (result i32)
+    i32.const 0
+    i32.const 1
+    unreachable
+    select
+i32.const 3
+    call_indirect $6 (type $sig)
+    )
+  
+  (func $48 (type $0)
+    i32.const 0
+    i32.const 1
+    unreachable
+    i32.const 3
+    call_indirect $6 (type $sig)
+    )
+  
+  (func $49 (type $0)
+    i32.const 0
+    i32.const 1
+    i32.const 2
+    unreachable
+    call_indirect $6 (type $sig)
+    )
+  
+  (func $50 (type $0)
+    (local $0 f32)
+    unreachable
+    local.set $0
+    )
+  
+  (func $51 (type $5)
+    (result f32)
+    (local $0 f32)
+    unreachable
+    local.tee $0
+    )
+  
+  (func $52 (type $5)
+    (result f32)
+    unreachable
+    global.set $a
+    )
+  
+  (func $53 (type $5)
+    (result f32)
+    unreachable
+    f32.load
+    )
+  
+  (func $54 (type $3)
+    (result i64)
+    unreachable
+    i64.load8_s
+    )
+  
+  (func $55 (type $0)
+    unreachable
+    f64.const 0x1.c000000000000p+2
+    f64.store
+    )
+  
+  (func $56 (type $0)
+    i32.const 2
+    unreachable
+    i64.store
+    )
+  
+  (func $57 (type $0)
+    unreachable
+    i32.const 7
+    i32.store8
+    )
+  
+  (func $58 (type $0)
+    i32.const 2
+    unreachable
+    i64.store16
+    )
+  
+  (func $59 (type $5)
+    (result f32)
+    unreachable
+    f32.neg
+    )
+  
+  (func $60 (type $1)
+    (result i32)
+    unreachable
+    i32.const 10
+    i32.add
+    )
+  
+  (func $61 (type $3)
+    (result i64)
+    i64.const 10
+    unreachable
+    i64.sub
+    )
+  
+  (func $62 (type $1)
+    (result i32)
+    unreachable
+    i32.eqz
+    )
+  
+  (func $63 (type $1)
+    (result i32)
+    unreachable
+    f64.const 0x1.4000000000000p+3
+    f64.le
+    )
+  
+  (func $64 (type $1)
+    (result i32)
+    f32.const 0x1.400000p+3
+    unreachable
+    f32.ne
+    )
+  
+  (func $65 (type $1) 
+   (result i32)
+    unreachable
+    i32.wrap_i64
+    )
+  
+  (func $66 (type $1)
+    (result i32)
+    unreachable
+    memory.grow
+    ))

@@ -1,0 +1,40 @@
+(module
+  (type $0 (func (param f32 externref)))
+  (type $1 (func (param v128 v128 v128 i64 i32)))
+  (import "env" "memory" (memory $2 79 13578 shared))
+  (import "env" "memory" (memory $3 0 9031))
+  (import "env" "global2" (global $5 externref))
+  (import "env" "global5" (global $6 i64))
+  (import "env" "global7" (global $7 funcref))
+  (memory $4  96 62926 shared)
+  (global $8  externref (ref.null extern))
+  (global $9  i32 (i32.const -2144802995))
+  (global $10  (mut f32) (f32.const 0x1.2cdc0ep+31))
+  (global $11  i64 (i64.const -7729815869101157224))
+  (global $12  funcref (ref.null func))
+  (global $13  f64 (f64.const 0x1.e59fcfdce5f2bp+63))
+  (elem $14 declare exception_type)
+  
+  (func $15 (type $0)
+    (param $0 f32)
+    (param $1 externref)
+    (local $2 funcref)
+    global.get $9
+    i32.load offset=3279089773 align=2
+    i32.load8_u $3 offset=1793326362
+    f32.convert_i32_u
+    i64.const 515723978107180667
+    i64.extend32_s
+    global.get $6
+    i64.eq
+    v32x4.load_interleaved_4 $3 offset=1975684715 align=2
+    f32x4.eq
+    global.get $6
+    i32.const -280884251
+    block $block (param v128 v128 v128 i64 i32)
+      br_if $block
+      f32.convert_i64_u
+      br $block
+    end ;; $block
+    drop
+    ))

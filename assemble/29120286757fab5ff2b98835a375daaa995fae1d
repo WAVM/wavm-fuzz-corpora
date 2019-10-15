@@ -1,0 +1,2 @@
+(func()i32.atomic.store16
+.store/6)

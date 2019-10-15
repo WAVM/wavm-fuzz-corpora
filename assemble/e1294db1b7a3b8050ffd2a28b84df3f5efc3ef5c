@@ -1,0 +1,26 @@
+(module
+  (type $0 (func))
+  
+  (func $66 (type $0)
+    data.drop $88
+    )
+  
+  (data $1 )
+  
+  (data $2 )
+  
+  (data $3 )
+  
+  (data $4 )
+   
+  (data $24 )
+  
+  (data $50 )
+  
+(data $26 )
+  
+  (data $27 )
+  
+  (data $28 )
+  
+  (data $65 ))

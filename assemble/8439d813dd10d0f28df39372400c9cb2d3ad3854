@@ -1,0 +1,10 @@
+(func ()i64.atomic.rmw8.and_u
+i64.atomic.rmw8.and_u i64.atomic.rmw8.and_u
+.and_u)(func ()i64.atomic.rmw8.and_u i64.atomic.rmw8.and_u
+id_u
+i64.atomi)(func ()i64.atomic.rmw8.and_u i64.atomic.rmw8.and_u
+idand_u)(func ()i64.atomic.rmw8.and_u i64.atomic.rmw8.and_u
+idd_u)(func ()i64.atomic.rmw8.and_u i64.atomic.rmw8.and_u
+i64.atomic.rmw8.and_u i6tomicmw8.and_u)(func ()i64.atomic.rmw8.and_u i64.atomic.rmw8.and_u
+i64.atomic.rmw8.and_u
+i64.atomic.rmw8.and_u)

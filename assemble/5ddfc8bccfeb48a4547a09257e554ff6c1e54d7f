@@ -1,0 +1,21 @@
+(module  
+(type $0 (func (param i32) (result v128)))
+  (type $3 (func (result v128)))
+  (memory $2  2)
+  
+  (func $6 (param $0 i32)
+    (result v128)
+    local.get 
+ $0   i32x4.load16x4_u
+    )
+  
+  (func   (result v128)
+    i32.const 61526
+ i32x4.load16x4_u
+    )
+  
+  (func $33 (type $0)
+    (param $0 i32)
+ (result v128)
+    local.get $0
+    i32x4.load16x4_u))

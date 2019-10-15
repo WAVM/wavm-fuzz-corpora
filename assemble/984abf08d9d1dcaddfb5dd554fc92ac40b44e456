@@ -1,0 +1,2 @@
+(func i16x8.add_saturate_s loop
+i16x8.add_saturate_s)

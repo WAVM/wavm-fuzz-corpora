@@ -1,0 +1,73 @@
+(module
+  (type $0 (func (param funcref funcref externref) (result funcref)))
+  (type $1 (func (param funcref) (result v128 v128)))
+  (type $2 (func (param i64 v128) (result i64 externref)))
+  (type $3 (func (param v128)))
+  (import "env" "memory" (memory $7 1 29055 shared))
+  (import "env" "func0" (func $12 (param funcref funcref externref) (result funcref)))
+  (memory $8  41 50940)
+  (table $4  62 4294967295 externref)
+  (table $5  72 4294967295 shared funcref)
+  (table $6  7 4294967295 funcref)
+  (elem $9 declare memory
+    $8 $8 $7 $7 $7 $8 $7 $7
+    $7 $7 $7 $8 $7 $8 $7 $8
+    $7 $8 $8 $7 $8 $8 $8 $7
+    $7 $7 $7 $7 $8 $8 $8 $8
+    $7 $7 $8 $7 $7 $7 $7 $7
+    $8 $8 $8 $7 $8 $8 $7 $7
+    $8 $8 $8 $8 $8 $7 $8 $8
+    $8 $8 $8 $7 $8 $7 $7)
+  (elem $10 (i32.const -1634243505) exception_type)
+  
+  (func $13 (type $1)
+    (param $0 funcref)
+    (result v128 v128)
+    (local $1 externref)
+    (local $2 i64)
+    f32.const -0x1.7bf1ccp+54
+    i32.trunc_f32_s
+    table.get $6
+    drop
+    v128.const i32x4 0x11c78dec 0xa3039021 0x69c61b37 0xa7263660
+    f64.const -0x1.230eb22bed980p+317
+    i64.trunc_sat_f64_s
+    unreachable
+    )
+  
+  (func $14 (type $2)
+    (param $0 i64)
+    (param $1 v128)
+    (result i64 externref)
+    table.size $6
+    i64.load $8 offset=3941967734
+    i64.const 6525369280547156635
+    i64.extend32_s
+    i64.div_s
+    f32.convert_i64_s
+    local.get $1
+    loop $loop (param v128)
+      i8x16.abs
+      i16x8.widen_high_i8x16_u
+      i16x8.bitmask
+      block $block
+        local.get $0
+        local.tee $0
+        i32.const -1445045949
+        drop
+        br $block
+      end ;; $block
+      table.get $5
+      ref.is_null
+      unreachable
+    end ;; $loop
+    drop
+    i64.const -1698779926487131476
+    atomic.fence
+    f64.const 0x1.8e9f8a1703330p+683
+    unreachable
+    )
+  
+  (data $11 
+    "h\8f\13^\a2:\bb\d7UD,\n\94\1dbf\1cX\1f\c3I\fd\8f\d5\af!nR\96\94\d5\15\1c\01\8e\c8\cd\1dJ\96\a8Y\e8c\dc\e3\80O\9el\0e\85\c03!z\feL[\d7\06\e7c\f3"
+    "S\b7\e60\ba\c1@\0b\bcbh\c3\91\1b\09E\ba"))

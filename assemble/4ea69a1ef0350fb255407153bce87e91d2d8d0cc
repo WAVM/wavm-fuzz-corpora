@@ -1,0 +1,21 @@
+   (func    f32x4.eq o1)   (func  f32x4.eq 1 1)
+  (func  
+   f32x4.eq 1 1nc ry $)
+   (func i32.const 0
+    f32x4.eq ±)
+   (func    f32x4.eq )
+(func  
+   f32x4.eq 1lo1)     (func    f32x4.eq o1)   (func  f32x4.eq 1 1)
+  (func  
+   f32x4.eq 1 1nc ry $)
+   (func i32.const 0
+    f32x4.eq ±)
+   (func    f32x4.eq )
+(func  
+   f32x4.eq 1lo1)  (func  
+   f32x4.eq 1)
+     (func  
+   f32x4.eq 12.)(func  
+   f32x4.eq 1)
+     (func  
+   f32x4.eq 12.)

@@ -1,0 +1,50 @@
+(module
+  (type $0 (func (param externref i32)))
+  (type $1 (func (param f64 f32 externref) (result i64)))
+  (type $2 (func (param funcref i64 f64 f32)))
+  (type $3 (func (param externref) (result i64 funcref externref i64)))
+  (type $4 (func (param v128) (result i32 f64 v128 i32)))
+  (import "env" "memory" (memory $5 70 19869 shared))
+  (import "env" "global0" (global $7 v128))
+  (import "env" "func0" (func $8 (param externref i32)))
+  (import "env" "func1" (func $9 (param funcref i64 f64 f32)))
+  (memory $6  21 36325 shared)
+  
+  (func $10 (type $1)
+    (param $0 f64)
+    (param $1 f32)
+    (param $2 externref)
+    (result i64)
+    ref.null func
+    ref.null extern
+    block $block (param externref) (result i64 funcref externref i64)
+      loop $loop (result v128)
+        i64.const 2558824273156423048
+        memory.size
+        i16x8.load8x8_u $6 offset=2246921329 align=4
+        i32x4.any_true
+        v32x4.load_interleaved_2 offset=2614539448 align=8
+        loop $loop_0 (param v128) (result i32 f64 v128 i32)
+          i8x16.extract_lane_s 11
+          i32x4.load16x4_u $6 offset=3069609590 align=1
+          local.get $1
+          f32.neg
+          f32.abs
+          drop
+          ref.null extern
+          ref.is_null
+          br_if $loop_0
+          br $loop_0
+        end ;; $loop_0
+        drop
+        drop
+        unreachable
+      end ;; $loop
+      drop
+      drop
+      i32.const -816593854
+      ref.null extern
+      unreachable
+    end ;; $block
+    return
+    ))

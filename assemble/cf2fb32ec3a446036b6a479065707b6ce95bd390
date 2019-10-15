@@ -1,0 +1,2 @@
+(module
+  (global $0  funcref (ref.null func)))

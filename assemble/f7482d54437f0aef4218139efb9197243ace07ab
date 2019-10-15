@@ -1,0 +1,20 @@
+(module  (func     (+rsul)
+    (local $2 i64)
+    nop
+    v128.const i32x4 0x5b1b3ff2 0x67f 0xdf410ec9 0x791274b   atomic.fence  atomic.fence
+    _true
+ )
+   (func
+    atomic.fence  atomic.fence
+    (local $3 i64) nop
+    atomic.fence
+     atomic.fence
+ 128$  )
+  
+  (func
+    atomic.fence
+all_true
+ )
+  
+  (func
+    atomic.fence 6"))

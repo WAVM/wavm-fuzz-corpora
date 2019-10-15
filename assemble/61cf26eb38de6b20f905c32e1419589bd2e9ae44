@@ -1,0 +1,142 @@
+(module
+  (type $0 (func))
+ (type $1 (func (param i32 i32 i32) (result i32)))
+  (export "test"(func $3))
+  (export "cnge" (func $4))
+  (memory $2  1 1)
+  
+  (func $3 (type $0)
+    i32.const 17767
+    i32.const 1
+    i32.const 1344
+    memory.fill
+    i32.const 7977
+    i32.const 5
+    i32.const 1994
+    memory.fill
+    i32.const 22714
+   i32.const 36341
+     i32.const 1670
+    memory.copy
+    i32.const 62970
+    i32.const 53332
+    i32.const 1341
+    memory.copy
+    i32.const 14133
+    i32.const 46312
+    i32.const 644
+    memory.copy
+    i32.const 29029
+    i32.const 190 i32.const 1895
+    memory.copy
+    i32.const 38012    i32.const 2284
+    i32.const 1520
+    memory.copy
+    i32.const 32740
+    i32.const 47237
+    i32.const 3014
+    memory.copy
+    i32.const 11148
+    i32.const 21260
+    i32.const 1011
+    memory.copy
+    i32.const 7665
+    i32.const 31612
+    i32.const 3034
+    memory.copy
+    i32.const 18044
+    i32.const 12987
+    i32.const 3320
+    memory.copy
+    i32.const 57306
+    i32.const 55905
+    i32.const 3  i32.const 2284
+    i32.const 1520
+    memory.copy
+    i32.const 32740
+    i32.const 47237
+    i32.const 3014
+    memory.copy
+    i32.const 11148
+    i32.const 21260
+    i32.const 1011
+    memory.copy
+  i32.const 7665
+    i32.const 31612
+    i32.const 3034
+    memory.copy
+    i32.const 18044
+    i32.const 12987
+    i32.const 3320
+    memory.copy
+    i32.const 57306
+    i32.const 55905
+    i32.const 308
+    memory.copy
+    i32.const 24675
+    i32.const 16815
+    i32.const 1155
+    memory.copy
+    i32.const 19900
+    i32.const 10115
+    i32.const 722
+    memory.copy
+    i32.const 2921
+    i32.const 5935
+    i32.const  10115
+    i32.const 722
+    memory.copy
+    i32.const 2921
+    i32.const 5935
+    i32.const 2370
+    memory.copy
+    i32.const 32255
+    i32.const 50095 i32.const 2926
+    memory.copy
+    i32.const 15126
+    i32.const 17299
+    i32.const 2607
+    memory.copy
+    i32.const 45575
+    i32.const 284472370
+    memory.copy
+    i32.const 32255
+    i32.const 50095 i32.const 2926
+    memory.copy
+    i32.const 15126
+    i32.const 17299
+    i32.const 2607
+    memory.copy
+    i32.const 45575
+    i32.const 28  i32.const 2045
+    memory.copy
+    i32.const 55149
+    i32.const 36113
+    i32.const 2596
+    memory.copy
+    i32.const 8461
+  
+    memory.copy
+    i32.const 15126
+    i32.const 17299
+    i32.const 2607
+    memory.copy
+ i32.const 22787
+    i32.const 28447
+    i32.const 2045
+    memory.copy
+    i32.const 5544694
+    i32.const 20138
+    i32.const 877
+    memory.copy
+    i32.const 36810
+    i32.const 18585
+    i32.const 2987
+    memory.copy
+    i32.const 50370
+    i32.const 41271
+    i32.const 1406
+    memory.copy
+    )
+  
+  (func $4  ))

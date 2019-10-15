@@ -1,0 +1,20 @@
+(module
+  (type $0 (func (param f64) (result externref funcref)))
+  (type $1 (func (result f64)))
+  (import "env" "memory" (memory $3 86 5304 shared))
+  (import "env" "table" (table $2 66 4294967295 funcref))
+  (import "env" "global0" (global $5 (mut f32)))
+  (import "env" "global1" (global $6 v128))
+  (memory $4  87 43360 shared)
+  
+  (func $7 (type $0)
+    (param $0 f64)
+    (result externref funcref)
+    unreachable
+    )
+  
+  (func $8 (type $1)
+    (result f64)
+    f64.const 0x1.02a853ac0ee9bp-957
+    return
+    ))

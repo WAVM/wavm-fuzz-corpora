@@ -1,0 +1,70 @@
+(module
+  (type $0 (func (param f32 f64 funcref) (result i64)))
+  (type $1 (func (param i32 f32) (result f64 f64)))
+  (type $2 (func (result funcref)))
+  (type $3 (func (param f64 i32)))
+  (type $4 (func (result f32 externref i32)))
+  (import "env" "memory" (memory $6 94 35777 shared))
+  (import "env" "global0" (global $9 (mut i64)))
+  (import "env" "global1" (global $10 i32))
+  (import "env" "global3" (global $11 f32))
+  (import "env" "global4" (global $12 i64))
+  (import "env" "global5" (global $13 (mut v128)))
+  (import "env" "func0" (func $17 (param i32 f32) (result f64 f64)))
+  (import "env" "func1" (func $18 (param f64 i32)))
+  (memory $7  32 53153 shared)
+  (memory $8  57 57306)
+  (table $5  0 4294967295 shared externref)
+  (global $14  (mut v128) (v128.const i32x4 0xbb409439 0x831cdd3c 0x28bdefb6 0x9636c6e4))
+  
+  (func $19 (type $0)
+    (param $0 f32)
+    (param $1 f64)
+    (param $2 funcref)
+    (result i64)
+    (local $3 i32)
+    (local $4 f32)
+    local.get $3
+    v128.load $8 offset=3078560491 align=1
+    i16x8.neg
+    f32.const 0x1.9e6220p+125
+    local.tee $0
+    i64.trunc_sat_f32_s
+    global.get $10
+    v32x4.load_interleaved_3 $8 offset=2896416327 align=4
+    block $block (result f32 externref i32)
+      local.get $4
+      f64.const 0x1.61ba0b5a24517p+704
+      table.size $5
+      local.get $1
+      i32.trunc_f64_s
+      i32.extend16_s
+      i32.atomic.rmw.xor offset=982715454
+      local.set $3
+      unreachable
+    end ;; $block
+    local.set $3
+    ref.is_null
+    local.set $3
+    f32x4.replace_lane 3
+    i32x4.add
+    i8x16.add_saturate_u
+    global.set $14
+    unreachable
+    )
+  
+  (func $20 (type $2)
+    (result funcref)
+    (local $0 i32)
+    global.get $12
+    i64.extend32_s
+    data.drop $15
+    global.set $9
+    unreachable
+    )
+  
+  (data $15 (memory $8) (i32.const 2145154845)
+    "\f6\e3$")
+  
+  (data $16 
+    "\e4\d25\845"))

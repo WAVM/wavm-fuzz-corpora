@@ -1,0 +1,38 @@
+(module
+  (type $0 (func (param i32) (result i32 v128)))
+  (type $1 (func (result f64 f32 f64 f64)))
+  (import "env" "memory" (memory $5 87 17350 shared))
+  (import "env" "table" (table $2 29 4294967295 shared externref))
+  (table $3  33 4294967295 shared funcref)
+  (table $4  9 4294967295 shared funcref)
+  
+  (func $6 (type $0)
+    (param $0 i32)
+    (result i32 v128)
+    (local $1 i64)
+    local.get $1
+    local.get $0
+    i32.load offset=1893286537 align=2
+    f64.load offset=2830803643 align=4
+    f64.floor
+    loop $loop (result externref)
+      f32.const 0x1.7de2dap-93
+      nop
+      block $block (result f64 f32 f64 f64)
+        memory.size
+        i64.load8_u offset=2664436277
+        table.size $4
+        local.get $1
+        i64.atomic.rmw8.xchg_u offset=2116275896
+        i64.rem_u
+        local.set $1
+        br $loop
+      end ;; $block
+      f64.gt
+      table.get $2
+      drop
+      unreachable
+    end ;; $loop
+    ref.null func
+    unreachable
+    ))

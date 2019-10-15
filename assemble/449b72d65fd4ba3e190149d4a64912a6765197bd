@@ -1,0 +1,346 @@
+(module
+  (type $0 (func (result v128)))
+  (export "i8x16_add_0" (func $1))
+  (export "i8x16_add_1" (func $2))
+  (export "i16x8_add_0" (func $3))
+  (export "i16x8_add_1" (func $4))
+  (export "i32x4_add_0" (func $5))
+  (export "i32x4_add_1" (func $6))
+  (export "i64x2_add_0" (func $7))
+  (export "i64x2_add_1" (func $8))
+  (export "i8x16_sub_0" (func $9))
+  (export "i8x16_sub_1" (func $10))
+  (export "i16x8_sub_0" (func $11))
+  (export "i16x8_sub_1" (func $12))
+  (export "i32x4_sub_0" (func $13))
+  (export "i32x4_sub_1" (func $14))
+  (export "i64x2_sub_0" (func $15))
+  (export "i64x2_sub_1" (func $16))
+  (export "i16x8_mul_0" (func $17))
+  (export "i16x8_mul_1" (func $18))
+  (export "i32xm_4ul_0" (func $19))
+  (export "i32x4_mul_1" (func $20))
+  (export "i8x16_add_saturate_signed_0" (func $21))
+  (export "i8x16_add_saturate_unsigned_0" (func $22))
+  (export "i16x8_add_saturate_signed_0" (func $23))
+  (export "i16x8_add_saturate_unsigned_0" (func $24))
+  (export "i8x16_sub_saturate_signed_0" (func $25))
+  (export "i8x16_sub_saturate_unsigned_0" (func $26))
+  (export "i16x8_sub_saturate_signed_0" (func $27))
+  (export "i16x8_sub_saturate_unsigned_0" (func $28))
+  (export "v128_and_0" (func $29))
+  (export "v128_or_0" (func $30))
+  (export "v128_xor_0" (func $31))
+  (export "f32x4_min_0" (func $32))
+  (export "f64x2_min_0" (func $33))
+  (export "f32x4_max_0" (func $34))
+  (export "f64x2_max_0" (func $35))
+  (export "f32x4_add_0" (func $36))
+  (export "f64x2_add_0" (func $37))
+  (export "f32x4_sub_0" (func $38))
+  (export "f64x2_sub_0" (func $39))
+  (export "f32x4_div_0" (func $40))
+  (export "f64x2_div_0" (func $41))
+  (export "f32x4_mul_0" (func $42))
+  (export "f64x2_mul_0" (func $43))
+  
+  (func $1 (type $0)
+    (result v128)
+    v128.const i32x4 0x00000001 0x00000002 0x00000003 0x00000004
+    v128.const i32x4 0x00000001 0x00000002 0x00000003 0x00000004
+    i8x16.add
+    )
+  
+  (func $2 (type $0)
+    (result v128)
+    v128.const i32x4 0x00ff0001 0x04000002 0x00000003 0x00000004
+    v128.const i32x4 0x00020001 0xfe000002 0x00000003 0x00000004
+    i8x16.add
+    )
+  
+  (func $3 (type $0)
+    (result v128)
+    v128.const i32x4 0x00000001 0x00000002 0x00000003 0x00000004
+    v128.const i32x4 0x00000001 0x00000002 0x00000003 0x00000004
+    i16x8.add
+    )
+  
+  (func $4 (type $0)
+    (result v128)
+    v128.const i32x4 0x00ffffff 0x0400ffff 0x00000003 0x00000004
+    v128.const i32x4 0x00020001 0xfe000002 0x00000003 0x00000004
+    i16x8.add
+    )
+  
+  (func $5 (type $0)
+    (result v128)
+    v128.const i32x4 0x00000001 0x00000002 0x00000003 0x00000004
+    v128.const i32x4 0x00000001 0x00000002 0x00000003 0x00000004
+    i32x4.add
+    )
+  
+  (func $6 (type $0)
+    (result v128)
+    v128.const i32x4 0xffffffff 0x0400ffff 0x00000003 0x00000004
+    v128.const i32x4 0x00020001 0xfe000002 0x00000003 0x00000004
+    i32x4.add
+    )
+  
+  (func $7 (type $0)
+    (result v128)
+    v128.const i32x4 0x00000001 0x00000002 0x00000003 0x00000004
+    v128.const i32x4 0x00000001 0x00000002 0x00000003 0x00000004
+    i64x2.add
+    )
+  
+  (func $8 (type $0)
+    (result v128)
+    v128.const i32x4 0x00000000 0x0400ffff 0x00000003 0x00000004
+    v128.const i32x4 0x00020001 0xfe000002 0x00000003 0x00000004
+    i64x2.add
+    )
+  
+  (func $9 (type $0)
+    (result v128)
+    v128.const i32x4 0x00000001 0x00000002 0x00000003 0x00000004
+    v128.const i32x4 0x00000001 0x00000002 0x00000003 0x00000004
+    i8x16.sub
+    )
+  
+  (func $10 (type $0)
+    (result v128)
+    v128.const i32x4 0x00ff0001 0x00040002 0x00000003 0x00000004
+    v128.const i32x4 0x00020001 0x00fe0002 0x00000003 0x00000004
+    i8x16.sub
+    )
+  
+  (func $11 (type $0)
+    (result v128)
+    v128.const i32x4 0x00000001 0x00000002 0x00000003 0x00000004
+    v128.const i32x4 0x00000001 0x00000002 0x00000003 0x00000004
+    i16x8.sub
+    )
+  
+  (func $12 (type $0)
+    (result v128)
+    v128.const i32x4 0x00ff0001 0x00040002 0x00000003 0x00000004
+    v128.const i32x4 0x00020001 0x00fe0002 0x00000003 0x00000004
+    i16x8.sub
+    )
+  
+  (func $13 (type $0)
+    (result v128)
+    v128.const i32x4 0x00000001 0x00000002 0x00000003 0x00000004
+    v128.const i32x4 0x00000001 0x00000002 0x00000003 0x00000004
+    i32x4.sub
+    )
+  
+  (func $14 (type $0)
+    (result v128)
+    v128.const i32x4 0x00ff0001 0x00040002 0x00000003 0x00000004
+    v128.const i32x4 0x00020001 0x00fe0002 0x00000003 0x00000004
+    i32x4.sub
+    )
+  
+  (func $15 (type $0)
+    (result v128)
+    v128.const i32x4 0x00000001 0x00000002 0x00000003 0x00000004
+    v128.const i32x4 0x00000001 0x00000002 0x00000003 0x00000004
+    i64x2.sub
+    )
+  
+  (func $16 (type $0)
+    (result v128)
+    v128.const i32x4 0x00ff0001 0x00040002 0x00000003 0x00000004
+    v128.const i32x4 0x00020001 0x00fe0002 0x00000003 0x00000004
+    i64x2.sub
+    )
+  
+  (func $17 (type $0)
+    (result v128)
+    v128.const i32x4 0x00000001 0x00000002 0x00000003 0x00000004
+    v128.const i32x4 0x00000001 0x00000002 0x00000003 0x00000004
+    i16x8.mul
+    )
+  
+  (func $18 (type $0)
+    (result v128)
+    v128.const i32x4 0x00ff0001 0x00040002 0x00000003 0x00000004
+    v128.const i32x4 0x00020001 0x00fe0002 0x00000003 0x00000004
+    i16x8.mul
+    )
+  
+  (func $19 (type $0)
+    (result v128)
+    v128.const i32x4 0x00000001 0x00000002 0x00000003 0x00000004
+    v128.const i32x4 0x00000001 0x00000002 0x00000003 0x00000004
+    i32x4.mul
+    )
+  
+  (func $20 (type $0)
+    (result v128)
+    v128.const i32x4 0x00ff0001 0x00040002 0x00000003 0x00000004
+    v128.const i32x4 0x00020001 0x00fe0002 0x00000003 0x00000004
+    i32x4.mul
+    )
+  
+  (func $21 (type $0)
+    (result v128)
+    v128.const i32x4 0x00000001 0x0000007f 0x00000003 0x00000080
+    v128.const i32x4 0x00000001 0x00000002 0x00000003 0x000000ff
+    i8x16.add_saturate_s
+    )
+  
+  (func $22 (type $0)
+    (result v128)
+    v128.const i32x4 0x00ff0001 0x04000002 0x00000003 0x00000004
+    v128.const i32x4 0x00020001 0xfe000002 0x00000003 0x00000004
+    i8x16.add_saturate_u
+    )
+  
+  (func $23 (type $0)
+    (result v128)
+    v128.const i32x4 0x00000001 0x00007fff 0x00000003 0x00008000
+    v128.const i32x4 0x00000001 0x00000002 0x00000003 0x0000fffe
+    i16x8.add_saturate_s
+    )
+  
+  (func $24 (type $0)
+    (result v128)
+    v128.const i32x4 0x00ffffff 0x0400ffff 0x00000003 0x00000004
+    v128.const i32x4 0x00020001 0xfe000002 0x00000003 0x00000004
+    i16x8.add_saturate_u
+    )
+  
+  (func $25 (type $0)
+    (result v128)
+    v128.const i32x4 0x00000001 0x0000007f 0x000000fe 0x00000080
+    v128.const i32x4 0x00000001 0x000000fe 0x0000007f 0x000000ff
+    i8x16.sub_saturate_s
+    )
+  
+  (func $26 (type $0)
+    (result v128)
+    v128.const i32x4 0x00ff0001 0x0400007f 0x0000fffe 0x00000004
+    v128.const i32x4 0x00020001 0xfe00fffe 0x0000007f 0x00000004
+    i8x16.sub_saturate_u
+    )
+  
+  (func $27 (type $0)
+    (result v128)
+    v128.const i32x4 0x00000001 0x00007fff 0x0000fffe 0x00008000
+    v128.const i32x4 0x00000001 0x0000fffe 0x00007fff 0x0000fffe
+    i16x8.sub_saturate_s
+    )
+  
+  (func $28 (type $0)
+    (result v128)
+    v128.const i32x4 0x00ffffff 0x0400ffff 0x00000003 0x00000004
+    v128.const i32x4 0x00020001 0xfe000002 0x00000003 0x00000004
+    i16x8.sub_saturate_u
+    )
+  
+  (func $29 (type $0)
+    (result v128)
+    v128.const i32x4 0x00ff0001 0x00040002 0x44000003 0x00000004
+    v128.const i32x4 0x00020001 0x00fe0002 0x00000003 0x55000004
+    v128.and
+    )
+  
+  (func $30 (type $0)
+    (result v128)
+    v128.const i32x4 0x00ff0001 0x00040002 0x44000003 0x00000004
+    v128.const i32x4 0x00020001 0x00fe0002 0x00000003 0x55000004
+    v128.or
+    )
+  
+  (func $31 (type $0)
+    (result v128)
+    v128.const i32x4 0x00ff0001 0x00040002 0x44000003 0x00000004
+    v128.const i32x4 0x00020001 0x00fe0002 0x00000003 0x55000004
+    v128.xor
+    )
+  
+  (func $32 (type $0)
+    (result v128)
+    v128.const i32x4 0x80000000 0xffc00000 0x449a5000 0xbf800000
+    v128.const i32x4 0x00000000 0x3f800000 0x449a5000 0x3f800000
+    f32x4.min
+    )
+  
+  (func $33 (type $0)
+    (result v128)
+    v128.const i32x4 0x00000000 0x00000000 0x00000000 0xfff80000
+    v128.const i32x4 0x00000000 0xc0934a00 0x00000000 0x3ff00000
+    f64x2.min
+    )
+  
+  (func $34 (type $0)
+    (result v128)
+    v128.const i32x4 0x80000000 0xffc00000 0x449a5000 0xbf800000
+    v128.const i32x4 0x00000000 0x3f800000 0x449a5000 0x3f800000
+    f32x4.max
+    )
+  
+  (func $35 (type $0)
+    (result v128)
+    v128.const i32x4 0x00000000 0x00000000 0x00000000 0xfff80000
+    v128.const i32x4 0x00000000 0xc0934a00 0x00000000 0x3ff00000
+    f64x2.max
+    )
+  
+  (func $36 (type $0)
+    (result v128)
+    v128.const i32x4 0x80000000 0xffc00000 0x449a5000 0xc49a5000
+    v128.const i32x4 0x00000000 0x3f800000 0x3f800000 0x3fc00000
+    f32x4.add
+    )
+  
+  (func $37 (type $0)
+    (result v128)
+    v128.const i32x4 0x00000000 0x3ff80000 0x00000000 0xfff80000
+    v128.const i32x4 0x00000000 0xc0934a00 0x00000000 0x3ff00000
+    f64x2.add
+    )
+  
+  (func $38 (type $0)
+    (result v128)
+    v128.const i32x4 0x80000000 0xffc00000 0x449a5000 0xc49a5000
+    v128.const i32x4 0x00000000 0x3f800000 0x3f800000 0x3fc00000
+    f32x4.sub
+    )
+  
+  (func $39 (type $0)
+    (result v128)
+    v128.const i32x4 0x00000000 0x3ff80000 0x00000000 0xfff80000
+    v128.const i32x4 0x00000000 0xc0934a00 0x00000000 0x3ff00000
+    f64x2.sub
+    )
+  
+  (func $40 (type $0)
+    (result v128)
+    v128.const i32x4 0x80000000 0xffc00000 0x3fc00000 0xc0400000
+    v128.const i32x4 0x00000000 0x3f800000 0x3f800000 0x3fc00000
+    f32x4.div
+    )
+  
+  (func $41 (type $0)
+    (result v128)
+    v128.const i32x4 0x00000000 0x3ff80000 0x00000000 0xc0080000
+    v128.const i32x4 0x00000000 0x3ff00000 0x00000000 0x3ff80000
+    f64x2.div
+    )
+  
+  (func $42 (type $0)
+    (result v128)
+    v128.const i32x4 0x80000000 0xffc00000 0x3fc00000 0xc0400000
+    v128.const i32x4 0x00000000 0x3f800000 0x3f800000 0x3fc00000
+    f32x4.mul
+    )
+  
+  (func $43 (type $0)
+    (result v128)
+    v128.const i32x4 0x00000000 0x3ff80000 0x00000000 0xc0080000
+    v128.const i32x4 0x00000000 0x3ff00000 0x00000000 0x3ff80000
+    f64x2.mul
+    ))

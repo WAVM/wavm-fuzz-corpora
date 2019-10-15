@@ -1,0 +1,38 @@
+(module
+  (type $0 (func (param i32) (result funcref i32)))
+  (type $1 (func (param v128 funcref f64 funcref)))
+  (import "env" "memory" (memory $3 77 8236 shared))
+  (import "env" "memory" (memory $4 36 3235))
+  (import "env" "func0" (func $9 (param v128 funcref f64 funcref)))
+  (memory $5  97 6378 shared)
+  (table $2  73 4294967295 shared funcref)
+  (global $6  (mut f32) (f32.const 0x1.f71724p+31))
+  
+  (func $10 (type $0)
+    (param $0 i32)
+    (result funcref i32)
+    nop
+    data.drop $8
+    data.drop $7
+    v128.const i32x4 0x067e1beb 0xcbf8a0da 0xfc8ba583 0x8ad91990
+    i8x16.abs
+    i32x4.neg
+    i8x16.abs
+    i32x4.widen_low_i16x8_u
+    f64.const 0x1.a067ed8ff81c2p+1021
+    f32.demote_f64
+    f32x4.splat
+    i8x16.eq
+    i32x4.abs
+    global.get $6
+    i32.reinterpret_f32
+    i8x16.replace_lane 8
+    ref.null extern
+    unreachable
+    )
+  
+  (data $7 (memory $5) (i32.const -1629568050)
+    "B\1b5\91`L9\af\ae\03")
+  
+  (data $8 
+    "\e40\03yw\a0\a1\ac\8e\d0\c4\b4\1c\af\18\fa\8f\d2U\c8\c7\dc\14C^\f78D\0c\n\cd\06\ab&i1\\sc\09FZs\18/@e\c8\0c\85\f7\e5-\03\16\f7"))

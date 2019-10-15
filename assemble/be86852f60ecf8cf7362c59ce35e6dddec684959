@@ -1,0 +1,21 @@
+(module
+  (type $0 (func (param v128 v128) (result v128)))
+  (type $2 (func (param v128) (result v128)))
+  (export "i8x16.min_s-i8x16.avame6.abs" (func $38))
+ 	
+  
+  (func $35 (esult v128)
+    local.get $0
+    i8x16.abs
+   (param $1 v128)
+    (result v128)
+    local.get $0
+   i8x16.abs   )
+  
+  (func $38 (type $2)
+    (pav128)
+    (re*ult v128)
+    local.get $0
+    i8x16.abs
+    i8x16.abs
+›   ))

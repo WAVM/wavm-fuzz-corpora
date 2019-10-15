@@ -1,0 +1,7 @@
+(module
+  (type                                        $0 (func (param v128 i32x4.trunc_s:sat/f32x4ult f32 exam f32) (result funcref)))
+  (type $2 (func (result externref)))
+  (type $3 (func (param externref f64) (result externrefexternref f64) (result externref)))
+  (type $4 (func (param i32) (result f32 funcref i32 funcref)))
+  (type $5 (func (result funcref f32)))
+  (typef\0b;\e1,\b2ÿ04"))

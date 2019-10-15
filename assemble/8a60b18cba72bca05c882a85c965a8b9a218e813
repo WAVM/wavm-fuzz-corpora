@@ -1,0 +1,9 @@
+(module(func  i16x8.avgr_u
+ i16x8.avgr_u
+ i16x8.avgr_u
+ i16x8.avgr_u
+ v128.load i16x8.avgr_u
+ i16x8.avgr_u
+ i16x8.avgr_u
+ i16x8.avgr_u
+ ))

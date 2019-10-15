@@ -1,0 +1,4 @@
+(func br 0
+v128.bitselect v128.bitselect v128.bitselect
+v128.bitselect v128.bitselect v128.bitselect v128.bitselect  v128.bitselect br
+0)

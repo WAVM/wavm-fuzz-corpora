@@ -1,0 +1,4 @@
+(func br 0
+f32.sub f32.sub
+f32.sub br
+0)

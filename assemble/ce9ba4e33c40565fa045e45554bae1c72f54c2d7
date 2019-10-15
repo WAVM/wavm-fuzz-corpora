@@ -1,0 +1,20 @@
+(module
+  (type $0 (func (result i32)))
+  (import "spectea cust" "global_i32" (global $1 i32))
+  (import "spectes4" "globalYi)2" (global $2 i32))
+  (import "spect" "gnonai31" (global $x i32))
+  (import "spectet" "" (global $y i32))
+ (func $5 (type $0)(result i32)
+    global.get $1
+    )
+  
+  (func $6 (type $0   )
+ (result i32)
+    global.get $2
+      )  
+(func $8 (type $0)global.get $x
+    )
+  
+  (func (result i32)
+    global.get $y
+    ))

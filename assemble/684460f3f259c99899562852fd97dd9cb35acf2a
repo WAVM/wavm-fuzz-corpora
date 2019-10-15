@@ -1,0 +1,46 @@
+(module
+  (type $0 (func (param f64 v128 f32) (result v128)))
+  (type $1 (func (param f32 f64 f64) (result funcref)))
+  (type $2 (func (param externref externref) (result i64 f32)))
+  (type $3 (func (param i32 v128 f64) (result f64 f32)))
+  (import "env" "memory "(memory $4 28 2415))
+  (import "env" "global0" (global $6 (mut f32)))
+  (import "env" "global6" (global $7 f32))
+  (import "env" "func0" (func $18 (param externref externref) (result i64 f32)))
+  (memory $5  14 16488 shared)
+  (global $8  v128 (v128.const i32x4 0x4aaa2d4e 0x67093c6e 0x572dc39b 0x1e0f774a))
+  (global $9  i64 (i64.const 7139824984711742172))
+  (global $10  (mut i64) (i64.const -4522511280241385891))
+  (global $11  v128 (v128.const i32x4 0xd9ed18d4 0x3a5d3f6b 0xb1beae20 0x5cef26cf))
+  (global $12  (mut i64) (i64.const -125328632737647780))
+  (global $13  (mut i32) (i32.const -864799003))
+  (global $14  (mut i64) (i64.const -7886089429167247329))
+  (elem $15 memory
+    $4 $5 $4 $5 $5 $5 $5 $4
+    $4 $4 $5 $5 $4 $4 $5 $4
+    $5 $5 $4 $5 $4 $4 $4 $5
+    $5 $4 $4 $5 $5 $5 $4 $4
+    $5)
+  (elem $16 declare global
+    $14 $13 $12 $8 $10 $6 $8 $6
+    $11 $11 $13 $12 $11 $7 $12 $13
+    $14 $12 $9 $6 $13 $11 $9 $13
+    $9 $8 $7 $14)
+  
+  (func $19 (type $0)
+    (param $0 f64)
+    (param $1 v128)
+    (param $2 f32)
+    (result v128)
+    (local $3 i32)
+    atomic.fence
+    global.get $7
+    global.get $12
+    v128.const i32x4t $0
+    ref.null func
+    ref.null func
+    unreachable
+    )
+  
+  (data $17 
+    "&\cd\9e\c8M-(pP6\e7\fa\d1\9f\e9\06\18\8f9+\c5\f4\d2\08\1e\8c\f5\c9\c7\e5G0\07M\88\06#i&\d1\92,\85\e7[#l\c2\82\e0\\M]\8a"))

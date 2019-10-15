@@ -1,0 +1,1 @@
+(memory 8)(func()v128.load()v128.load)

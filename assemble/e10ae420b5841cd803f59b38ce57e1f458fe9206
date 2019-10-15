@@ -1,0 +1,20 @@
+(module
+  (type $0 (func (param f64)))
+  (import "env" "memory" (memory $1 50 28327 shared))
+  (import "env" "global0" (global $3 v128))
+  (import "env" "global3" (global $4 funcref))
+  (memory $2  10 45275 shared)
+  (global $5  (mut i64) (i64.const 1934355708793029387))
+  (global $6  f64 (f64.const 0x1.28f4693e9fb2ep+62))
+  (elem $7 declare funcref
+    (ref.null func) (ref.func $8) (ref.func $8) (ref.func $8)
+    (ref.func $8) (ref.null func) (ref.func $8) (ref.func $8)
+    (ref.null func) (ref.null func) (ref.null func) (ref.func $8)
+    (ref.null func) (ref.func $8) (ref.func $8) (ref.func $8)
+    (ref.func $8) (ref.func $8) (ref.null func) (ref.null func)
+    (ref.func $8) (ref.null func) (ref.func $8) (ref.func $8)
+    (ref.null func) (ref.func $8) (ref.null func) (ref.func $8) (ref.null func) (ref.func $8))
+  
+  (func $8 (type $0)
+    (param $0 f64)
+    ))

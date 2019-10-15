@@ -1,0 +1,37 @@
+(module
+  (type $0 (func (param funcref) (result f64 i64)))
+  (type $1 (func (param f32 f64 f32) (result f32 i32 f32)))
+  (type $2 (func (param f64 i64) (result funcref f32 v128)))
+  (import "env" "memory" (memory $3 42 50835 shared))
+  (import "env" "memory" (memory $4 23 51752 shared))
+  (import "env" "global5" (global $6 f32))
+  (memory $5  73 46777 shared)
+  (global $7  i32 (i32.const 108620872))
+  (global $8  externref (ref.null extern))
+  (global $9  (mut externref) (ref.null extern))
+  (global $10  v128 (v128.const i32x4 0xba33fa75 0x09925027 0x1b9a84a6 0xc3c2d827))
+  (global $11  f32 (f32.const 0x1.d3178cp+30))
+  (global $12  (mut i64) (i64.const 7413310590283397700))
+  
+  (func $15 (type $0)
+    (param $0 funcref)
+    (result f64 i64)
+    (local $1 f32)
+    (local $2 i32)
+    (local $3 f64)
+    (local $4 f64)
+    v128.const i32x4 0x0b9fbff3 0x704face4 0xc0a751d7 0x992c269a
+    local.get $2
+    f32.convert_i32_u
+    local.get $3
+    f64.sqrt
+    global.get $11
+    f32.ceil
+    loop $loop (param f32 f64 f32) (result f32 i32 f32)
+      i64.trunc_sat_f32_u
+     i32.trunc_sat_f32_s
+      br_if 1
+      loop $loop_0 (param f64 i64) (rev128)
+        local.get $2
+        v8x1fa;\d4sM%\ed\ab\0d\d1\a9\a8\05!\f5/g,\13\e1\fc"
+    "H\0eE\a7q\cd"))

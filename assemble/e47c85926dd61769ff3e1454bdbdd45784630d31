@@ -1,0 +1,25 @@
+(memory 4)(func(.u)(i64x2.load32x2_s
+ (i))()(i64x2.load32x2_s)(i64x2.load32x2_s
+noau)(i64x2.load32x2_s
+)()(i64x2.load32x2_s)(i64x2.load32x2_s
+(i))(i64x2.load32x2_s
+(i64x2.load32x2_s
+(inoau)(i64x2.load32x2_s
+ (i))()(i64x2.load32x2_s)(i64x2.load32x2_s
+noau)(i64x2.load32x2_s
+ (i))()(i64x2.load32x2_s)(i64x2.load32x2_s
+(i))(i64x2.load32x2_s
+(i))(i64x2.load32x2_s
+(i))))  6)(func(.u)(i64x2.load32x2_s
+ (i))()(i64x2.load32x2_s)(i64x2.load32x2_s
+noau)(i64x2.load32x2_s
+)()(i64x2.load32x2_s)(i64x2.load32x2_s
+(i))(i64x2.load32x2_s
+(i64x2.load32x2_s
+(inoau)(i64x2.load32x2_s
+ (i))()(i64x2.load32x2_s)(i64x2.load32x2_s
+noau)(i64x2.load32x2_s
+ (i))()(i64x2.load32x2_s)(i64x2.load32x2_s
+(i))(i64x2.load32x2_s
+(i))(i64x2.load32x2_s
+(i)))) )

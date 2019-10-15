@@ -1,0 +1,1 @@
+(func(s)( i32.load16_s)(i32.load16_s)(i32.load16_s)(i32.load16_s)( i32.load16_s )(i32.load16_s)(i32.load16_s)(i32.load16_s )( i32.load16_s )(i32.load16_s)(i32.load16_s)(i32.load16_s)( i32.load16_s )(i32.load16_s )block( i32.load16_s)(i32.load16_s))

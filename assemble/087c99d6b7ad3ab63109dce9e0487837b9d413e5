@@ -1,0 +1,5 @@
+(func
+br 0 i32x4.shr_u
+br 0 i32x4.shr_u
+br 0 i32x4.shr_u
+br 0)

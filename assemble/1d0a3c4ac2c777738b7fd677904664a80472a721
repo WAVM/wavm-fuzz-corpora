@@ -1,0 +1,2 @@
+(func()i16x8.shr_s i32.const 0
+select)

@@ -1,0 +1,6 @@
+()
+  (type  (func (param i64 f32 i32) (result f32 v129 4 i64)))
+  
+  (t)
+  (type  (func (param i64 f32 i32) (result f32 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯4)
+  (typ

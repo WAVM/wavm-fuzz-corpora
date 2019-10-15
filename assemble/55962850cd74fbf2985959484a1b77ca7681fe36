@@ -1,0 +1,12 @@
+(module
+  (type $0 (func (param i32) (result i32)))
+  (table $t  0 10 externref)
+  (export "grow" (func $1))
+  
+  (func $1 (type $0)
+    (param $0 i32)
+    (result i32)
+    ref.null extern
+    local.get $0
+    table.grow $t
+    ))

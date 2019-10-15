@@ -1,0 +1,58 @@
+(module
+  (type $0 (func (param funcref i64 f64) (result externref funcref)))
+  (type $1 (func (param i32 v128 i32)))
+  (import "env" "memory" (memory $5 40 28691 shared))
+  (import "env" "table" (table $2 9 4294967295 funcref))
+  (import "env" "global1" (global $8 funcref))
+  (memory $6  37 58624 shared)
+  (memory $7  98 34995 shared)
+  (table $3  58 4294967295 shared funcref)
+  (table $4  2 4294967295 funcref)
+  (global $9  (mut i64) (i64.const 353010370852282752))
+  
+  (func $11 (type $0)
+    (param $0 funcref)
+    (param $1 i64)
+    (param $2 f64)
+    (result externref funcref)
+    (local $3 funcref)
+    (local $4 f64)
+    memory.size
+    i32.extend16_s
+    i16x8.load8x8_u $7 offset=4053518735 align=4
+    f64x2.sqrt
+    i8x16.neg
+    table.size $4
+    i64x2.shl
+    i8x16.extract_lane_s 2
+    v64x2.load_interleaved_4 $7 offset=2213943728 align=8
+    i32x4.widen_low_i16x8_u
+    i32x4.gt_s
+    v8x16.swizzle
+    drop
+    i32x4.any_true
+    i64.load16_s offset=859266386 align=1
+    unreachable
+    )
+  
+  (func $12 (type $1)
+    (param $0 i32)
+    (param $1 v128)
+    (param $2 i32)
+    (local $3 i64)
+    (local $4 f64)
+    (local $5 v128)
+    (local $6 v128)
+    global.get $9
+    i64.ctz
+    i64.extend16_s
+    local.set $3
+    i32.const -463419058
+    v128.load $6 offset=4221730394 align=8
+    i64x2.neg
+    unreachable
+    )
+  
+  (data $10 (memory $6) (i32.const 631943344)
+    "\1e\f3sL\0c\0f\88\1fr\cb\edNh\0dl\17\88\a5\a4\19\1a\e7\90<\8a\f2\e1bt\d8\eb=[#/\19\fc\bd\a2\8e\b7\ff\b4\fau\9c\95\bc\b6]z\83'\be\98\b4\b46\e2\a6\1bou\ea"
+    "\fd=d\8f\d77\e4\bf\12\a3\b5OK\ac}\18\ec\02\d0\f7\a2\cb\85\04B\e5\fe\17\c3"))

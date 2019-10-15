@@ -1,0 +1,43 @@
+(module
+  (type $0 (func (param f64 externref i64 f64) (result i64)))
+  (type $1 (func (param f32 i64 i64)))
+  (type $2 (func (param externref externref funcref f32) (result funcref f32)))
+  (type $3 (func))
+  (type $4 (func (result i64)))
+  (import "env" "global0" (global $6 f64))
+  (import "env" "global2" (global $7 (mut v128)))
+  (import "env" "global3" (global $8 (mut i32)))
+  (import "env" "global4" (global $9 (mut i32)))
+  (import "env" "global5" (global $10 f32))
+  (import "env" "global6" (global $11 f64))
+  (import "env" "func0" (func $14 (param externref externref funcref f32) (result funcref f32)))
+  (import "env" "func1" (func $15))
+  (import "env" "func2" (func $16 (result i64)))
+  (table $5  33 4294967295 shared externref)
+  (global $12  funcref (ref.null func))
+  
+  (func $17 (type $0)
+    (param $0 f64)
+    (param $1 externref)
+    (param $2 i64)
+    (param $3 f64)
+    (result i64)
+    global.get $10
+    global.get $6
+    atomic.fence
+    i64.trunc_sat_f64_u
+    return
+    )
+  
+  (func $18 (type $1)
+    (param $0 f32)
+    (param $1 i64)
+    (param $2 i64)
+    (local $3 f32)
+    f64.const -0x1.5baa0a4eacdb2p+860
+    f64x2.splat
+    br 0
+    )
+  
+  (data $13 
+    "@\86\9f\07\032Q\f5\da\a9\8b]\b1:\fa\da\bc\e6\aa\0b\b1\9e\e7\ae(\0d\b8m\86q\db\da\fe\82\b4\e2\a6Df\82\1e\ad\c8\90dyt"))

@@ -1,0 +1,87 @@
+(module
+  (type $0 (func (result funcref)))
+  (type $1 (func (param f64 i32 i32)))
+  (type $2 (func (param f64 externref funcref) (result i32)))
+  (type $3 (func (param f64 f64 f64 externref) (result f64 f32)))
+  (type $4 (func (param funcref externref funcref)))
+  (type $5 (func (param i32 f64 externref i64) (result externref i32 i64 externref)))
+  (import "env" "memory" (memory $9 9 2988))
+  (import "env" "table" (table $6 31 4294967295 shared funcref))
+  (import "env" "func0" (func $14 (param f64 i32 i32)))
+  (import "env" "func1" (func $15 (param funcref externref funcref)))
+  (memory $10  53 29162 shared)
+  (memory $11  19 44056)
+  (table $7  47 4294967295 externref)
+  (table $8  10 4294967295 funcref)
+  (elem $12 declare memory
+    $9 $10 $11 $9 $9 $10 $9 $11
+    $11 $11 $11)
+  (elem $13 (table $7) (i32.const -1369767132) memory
+    $9 $10 $10 $11 $10 $10 $9 $11
+    $10 $9 $9 $9 $10 $11 $10 $9
+    $10 $11 $9 $11 $9 $10 $9 $11
+    $10 $9 $11 $10 $10 $11 $11 $9
+    $9 $9 $10 $9 $10 $9 $10 $10
+    $9 $9 $10 $9 $10 $9 $10 $11
+    $9 $11 $11 $9 $10 $9 $11 $11
+    $11 $9 $10 $10 $10 $10 $10 $9
+    $11 $9 $11 $11 $10 $11 $11 $10
+    $11 $11 $9 $11 $11 $11 $9 $10
+    $11 $10 $9 $10 $11 $9 $10 $10
+    $11 $9 $10 $11 $9 $11)
+  
+  (func $16 (type $0)
+    (result funcref)
+    (local $0 i64)
+    (local $1 f32)
+    (local $2 funcref)
+    nop
+    local.get $0
+    f64.const 0x1.3c3b74917c16bp+989
+    f64.floor
+    local.get $2
+    br 0
+    )
+  
+  (func $17 (type $2)
+    (param $0 f64)
+    (param $1 externref)
+    (param $2 funcref)
+    (result i32)
+    (local $3 i64)
+    (local $4 i64)
+    f32.const -0x1.2484bap+90
+    f64.const 0x1.32c107257c6f3p+733
+    i32.const 1754271469
+    f64.const 0x1.75a335194d968p-417
+    local.get $1
+    i32.const 1137118215
+    v16x8.load_interleaved_2 $11 offset=3693277309 align=1
+    i16x8.add_saturate_u
+    i16x8.any_true
+    v32x4.load_interleaved_2 $10 offset=1617580626 align=1
+    v8x16.shuffle 28 29 10 6 10 6 20 18 12 16 7 6 23 7 3 11
+    i64x2.extract_lane 0
+    loop $loop (param i32 f64 externref i64) (result externref i32 i64 externref)
+      local.get $3
+      i64.mul
+      local.set $3
+      local.get $3
+      br $loop
+    end ;; $loop
+    drop
+    i64.atomic.rmw.xor $10 offset=591218328
+    drop
+    ref.null extern
+    unreachable
+    )
+  
+  (func $18 (type $3)
+    (param $0 f64)
+    (param $1 f64)
+    (param $2 f64)
+    (param $3 externref)
+    (result f64 f32)
+    atomic.fence
+    unreachable
+    ))

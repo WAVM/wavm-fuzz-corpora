@@ -1,0 +1,6 @@
+(module
+  (memory $3  51 66 shared)
+  
+  (func $2  i32.const 1768687877
+      i16x8.load8x8_u $3 offset=2 i32.const 1 i16x8.load8x8_u $3 offset=2 i32.const 353  i16x8.load8x8_u $3 offset=2 i32.const 353749  i16x8.load8x8_u $3 offset=248 unreachable
+   ))

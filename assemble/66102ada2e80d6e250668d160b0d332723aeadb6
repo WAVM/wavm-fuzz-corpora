@@ -1,0 +1,15 @@
+(module
+  (type $0 (func (param externref i32)))
+  (import "env" "memory" (memory $1 61 58717 shared))
+  (import "env" "func0" (func $16 (param externref i32)))
+  (global $11  (mut funcref) (ref.null func))
+  (global $12  f32 (f32.const 0x1.b1cfa6p+27))
+  (global $13  (mut i32) (i32.const -1021765310))
+  (elem $14 declare table)
+  (elem $15 global
+    $8 $10 $4 $4 $13 $12 $8 $9
+    $12 $8 $7 $8 $13 $13 $5 $9
+    $7 $5 $13 $4 $11 $6 $5 $5
+    $13 $4 $5 $13 $8 $5 $5 $7
+    $13 $10 $5 $6 $8 $8 $8 $8
+    $10 $5 $13 $9 $11))

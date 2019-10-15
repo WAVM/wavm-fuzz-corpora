@@ -1,0 +1,13 @@
+(func br 5 f32x4.ge
+f32x4.ge
+f32x4.ge
+f32x4.ge f32x4.ge
+f32x4.ge
+f32x4.ge f32x4.ge
+f32x4.ge
+f32x4.ge
+f32x4.ge f32x4.ge
+f32x4.ge
+f32x4.ge
+f32x4.ge
+f32x4.ge)

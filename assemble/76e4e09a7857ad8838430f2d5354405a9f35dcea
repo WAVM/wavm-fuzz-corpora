@@ -1,0 +1,6 @@
+(func(i8x16.extract_lane_s 1ref.null extern) (ref.func $15)
+    (ref.null extern) (ref.func $13) (ref.null extern) (ref.func $16)
+    (ref.null extern) (ref.func $16) (ref.null extern) (ref.func $14)
+    (ref.null extern) (ref.func $14) (ref.null extern) (ref.null func)
+    (ref.null extern) (ref.4) (ref.nulfuncll func)
+    (ref.null extern) (retrac)t_lan))))

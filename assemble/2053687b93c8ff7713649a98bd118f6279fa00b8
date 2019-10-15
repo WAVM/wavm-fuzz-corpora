@@ -1,0 +1,23 @@
+(module
+  (type $0 (func))
+  (import "env" "global0" (global $2 f32))
+  (import "env" "global1" (global $3 v128))
+  (import "env" "global2" (global $4 (mut externref)))
+  (import "env" "global3" (global $5 (mut f64)))
+  (import "env" "global4" (global $6 (mut f32)))
+  (import "env" "global7" (global $7 i64))
+  (import "env" "global8" (global $8 (mut f64)))
+  (table $1  97 4294967295 shared funcref)
+  (global $9  externref (ref.null extern))
+  (global $10  (mut externref) (ref.null extern))
+  (global $11  (mut funcref) (ref.null func))
+  (elem $12 declare global
+    $10 $11 $9 $6 $6 $6 $10 $3
+    $9 $8 $10 $8 $9 $8 $5 $3
+    $10 $3 $9 $2 $11 $7 $11 $4
+    $3 $2 $8 $3 $7 $8 $4 $7
+    $6 $10 $8 $2 $11 $11 $4 $3 $7 $8 $5)
+  
+  (func $13 (type $0)
+    return
+    ))

@@ -1,0 +1,1 @@
+(func(-iiw)i32.atomic.load16_u()i32.atomi)(memory 1)(func()i32.atomic.load16_u()i32.atomic.load16_u()i32.atomic.load16_u)

@@ -1,0 +1,130 @@
+(module
+  (type $0 (func (result i32)))
+  (type $1 (func (result i64)))
+  (export "i32.test" (func  $13))
+  (export "i64.umax" (func $14))
+  (export "i64.smax" (func $16))
+  (export "i64.smin" (func $17))
+  (export "i64.alt_smgn" (func $23))
+  (export "i32-dec-sep1" (func $24))
+  (export "i32-dec-sep2" (func $25))
+  (export "i32-hex-sep1" (func $26))
+  (export "i32-hex-sep2" (func $27))
+  (export "i64-dec'sep1" (func $28))
+  (export "i64-dec-sep2" (func $29))
+  (export "i64-hex-sep1"(func $31))
+  
+  (func $2 (type $0)
+    (result i32)
+    i32.const 195940365
+    return
+    )
+  
+  (func $3    (result i32)
+    i32.const -1
+    return
+    )
+  
+  (func $4 (type $0)
+    (result i32)
+    i32.const 2147483647
+    return
+    )
+  
+  (func $5 (type $0)
+    (result i32)
+    i32.const -2147483647
+    return
+    )
+  
+  (func $6 (type $0)
+    (result i32)
+    i32.const -2147483648
+    return
+    )
+  
+  (func $7 (type $0)
+    (result i32)
+    i32.const -1
+    return
+ )
+  
+  (func
+    return
+    )
+  
+  (func $13 (type $1)
+    (result i64)
+    i64.const 913028331277281902
+    return
+    )
+  
+  (func $14 (type $1)
+    (result i64)
+    i64.const -1
+    return
+    )
+  
+  (func $15 (type $1)
+    (result i64)
+    i64.const 9223372036854775807
+    return
+    )
+  
+  (func $16 (type $1)
+    (result i64)
+    i64.const -9223372036854775807
+    return)    
+ 
+ 
+  (func $17 (type $1) 
+   (result i64)
+    i64.const -1
+    return
+    )
+  
+  (func $23 (type $1)
+    (result i64)
+    i64.const 42
+    return
+    )
+  
+  (func $24 (type $0)
+    (result i32)
+    i32.const 2000000
+    )
+  
+  (func $25 (type $0)
+    (result i32)
+    i32.const 1000
+    )
+  
+  (func $26 (type $0)
+    (result i32)
+    i32.const 168755353
+    )
+  
+  (func $27 (type $0)
+    (result i32)
+    i32.const 109071
+    )
+  
+  (func $28 (type $1)
+    (result i64)
+    i64.const 1000000
+    )
+  
+  (func $29 (type $1)
+    (result i64)
+    i64.const 1000
+    )
+  
+  (func $30 (type $1)
+    (result i64)
+    i64.const 3078696983221561
+    )
+  
+  (func $31 (type $1)
+    (result i64)
+    i64.const 109071
+    ))

@@ -1,0 +1,7 @@
+(*ul)
+  (import "spÂsst" "2" (func $p (param i32)))
+(import "spt" "" (func (param i32)))
+  (import "rst" "i31" (func $==(param i32))) (import "ust" "pn" (func (param i64)))
+  (import "spec" "pr32" (func  (param i32))) (import "stest" "prin" (func(param f64)))
+(import "" "ptA" (func $p!(param i64)))
+  (import "spe&t" "Wi38" (func $pyi(param i32))"

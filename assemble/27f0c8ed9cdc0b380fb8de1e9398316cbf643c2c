@@ -1,0 +1,73 @@
+(module
+  (type $0 (func (param f64)))
+  (type $1 (func (param externref f64 i32) (result externref)))
+  (type $2 (func (result externref)))
+  (type $3 (func (param i32 v128)))
+  (type $4 (func (param i64)))
+  (type $5 (func (result f64 i32 f32)))
+  (import "env" "memory" (memory $6 49 54445 shared))
+  (import "env" "func0" (func $10 (result externref)))
+  (memory $7  32 6169)
+  (memory $8  25 36690 shared)
+  
+  (func $11 (type $0)
+    (param $0 f64)
+    (local $1 i32)
+    (local $2 v128)
+    return
+    )
+  
+  (func $12 (type $1)
+    (param $0 externref)
+    (param $1 f64)
+    (param $2 i32)
+    (result externref)
+    (local $3 v128)
+    (local $4 funcref)
+    atomic.fence
+    ref.null func
+    f32.const -0x1.7a819ep-82
+    drop
+    ref.null extern
+    call $10
+    drop
+    i64.const -7043420779252414618
+    local.get $1
+    f64.neg
+    i64.trunc_sat_f64_s
+    block $block (param i64)
+      i64.popcnt
+      block $block_0 (result f64 i32 f32)
+        local.get $2
+        br_if $block
+        i32.const 2015226211
+        ref.null extern
+        drop
+        local.set $2
+        local.get $3
+        br $block
+      end ;; $block_0
+      br $block
+    end ;; $block
+    unreachable
+    )
+  
+  (func $26 (type $3)
+    (param $0 i32)
+    (param $1 v128)
+    (local $2 f32)
+    i32.const -50823081
+    local.get $1
+    local.get $0
+    local.set $0
+    i32x4.abs
+    i8x16.extract_lane_s 9
+    i32.atomic.rmw16.and_u $7 offset=881514933
+    i64.const -2045056338083634845
+    i64.atomic.rmw32.or_u $7 offset=649143607
+    br 0
+    )
+  
+  (data $9 
+    "\89\f3m\da\a8\dc\a4\a1\c0\17\ac\b4\06\9f \05\99I,\d5OF\82\a8\16\c3\8f\dbK2ZT\9c\04Z\a3\de\1f\b3q\14\b0%z\aaU\ef*\e2\8b\d3NK\"\e9\beCz\9d\dd#\1e\05\fb"
+    "|R6e\bcc\c3\f6\c5\ac\14\a4\9b^\80D"))

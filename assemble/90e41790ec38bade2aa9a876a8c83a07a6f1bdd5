@@ -1,0 +1,37 @@
+(module
+  (type $0 (func (param funcref)))
+  (import "env" "memory" (memory $3 0 64507))
+  (import "env" "memory" (memory $4 89 60600))
+  (import "env" "table" (table $1 7 4294967295 shared funcref))
+  (import "env" "global1" (global $6 (mut v128)))
+  (import "env" "global3" (global $7 i32))
+  (import "env" "global4" (global $8 (mut f64)))
+  (memory $5  87 47027 shared)
+  (table $2  15 4294967295 externref)
+  (global $9  (mut i64) (i64.const 8482918291835332500))
+  (global $10  (mut externref) (ref.null extern))
+  
+  (func $13 (type $0)
+    (param $0 funcref)
+    (local $1 i32)
+    (local $2 i64)
+    (local $3 i64)
+    (local $4 v128)
+    i64.const -7636304016338697750
+    i64.popcnt
+    table.size $2
+    i64.atomic.load16_u offset=847578260
+    i64.eq
+    i32.atomic.load16_u $4 offset=3569340298
+    global.get $8
+    i64.trunc_sat_f64_u
+    unreachable
+    )
+  
+  (data $11 
+    "\c8 \b0eq,\03\ad{\e2\d0\e3\1c\19\cf\d0W]/\90\f2O\a5\ec\f3\f5\a6sx\n\94M#\d7\1129\13\ed8\a7\c9\0f\cb\84\fa^V\1f\a5\cd\09\06\b2\85\da\c4\b0\01\8c\8a\d0\d5\e8"
+    "\e9w\1d\81)\91\cb\00^\b3\abc\ac`Ev\c0\cd\ac\ad\d8\a1\fb\e2\b5r\97=\89")
+  
+  (data $12 (memory $4) (i32.const 108756467)
+    "\e4z\eb&\c2\b8o\f2\f6Y\c7f9\de\15\f5\dePe\0e\c2\b5\a36\cf\b3\b0\"\d11I\18\d6S\dbo\e4jV\ac\e3z\a1[>\feg\dc^\f3W\b44\c3?n\e9\c6\fa\fa\91\fb:T"
+    "\a0\d9\d9`Ig05\f35\be~\c0\93N\88\8e\94\81\fe\89OY\8a"))

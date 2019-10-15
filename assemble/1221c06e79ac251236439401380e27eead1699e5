@@ -1,0 +1,84 @@
+(module
+  (type $0 (func (param externref f64 funcref) (result f64)))
+  (type $1 (func (param i32 i64 v128)))
+  (type $2 (func (param funcref i32 externref)))
+  (type $3 (func (param i32 i64 funcref)))
+  (type $4 (func (param v128)))
+  (type $5 (func (result externref f32)))
+  (type $6 (func (result funcref f32 externref externref)))
+  (import "env" "func0" (func $11 (param funcref i32 externref)))
+  (import "env" "func1" (func $12 (param i32 i64 funcref)))
+  (memory $8  22 3634 shared)
+  (memory $9  89 46939)
+  (table $7  88 4294967295 externref)
+  
+  (func $13 (type $0)
+    (param $0 externref)
+    (param $1 f64)
+    (param $2 funcref)
+    (result f64)
+    (local $3 externref)
+    atomic.fence
+    local.get $3
+    block $block (result v128)
+      data.drop $10
+      v128.const i32x4 0xf265dc74 0x49538338 0x82606991 0x3b322638
+      i16x8.any_true
+      f32.load $9 offset=2452191269 align=1
+      atomic.fence
+      i64.trunc_sat_f32_u
+      loop $loop (result externref f32)
+        local.get $0
+        atomic.fence
+        block $block_0 (result funcref f32 externref externref)
+          i64.const 7255639424454450695
+          nop
+          br $loop
+        end ;; $block_0
+        ref.null extern
+        br $loop
+      end ;; $loop
+      ref.null func
+      ref.null func
+      unreachable
+    end ;; $block
+    call $15
+    drop
+    f64.const -0x1.74af353e54fb2p+52
+    unreachable
+    )
+  
+  (func $14 (type $1)
+    (param $0 i32)
+    (param $1 i64)
+    (param $2 v128)
+    (local $3 v128)
+    atomic.fence
+    local.get $0
+    i32.atomic.load16_u offset=576248492
+    v64x2.load_interleaved_2 offset=3454039912 align=8
+    i8x16.avgr_u
+    atomic.fence
+    i8x16.extract_lane_u 1
+    v32x4.load_interleaved_4 offset=3432365489 align=2
+    i32x4.max_s
+    f32x4.abs
+    i16x8.ne
+    f32x4.le
+    f64x2.abs
+    i16x8.neg
+    local.get $0
+    i16x8.shr_u
+    drop
+    unreachable
+    )
+  
+  (func $15 (type $4)
+    (param $0 v128)
+    (local $1 i64)
+    (local $2 v128)
+    br 0
+    )
+  
+  (data $10 
+    "@\868^\c9\fb\e7z\17\8b\ea"))

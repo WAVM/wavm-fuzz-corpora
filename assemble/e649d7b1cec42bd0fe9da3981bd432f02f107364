@@ -1,0 +1,26 @@
+(module
+  (type $0 (func (param i32) (result funcref v128)))
+  (type $1 (func (param externref) (result f32 v128)))
+  (type $2 (func (result f32 funcref)))
+  (import "env" "memory" (memory $6 93 26556 shared))
+  (import "env" "memory" (memory $7 65 52591 shared))
+  (import "env" "table" (table $3 38 4294967295 shared funcref))
+  (import "env" "global2" (global $9 f32))
+  (import "env" "global4" (global $10 externref))
+  (memory $8  62 64627)
+  (table $4  84 4294967295 shared externref)
+  (table $5  6 4294967295 funcref)
+  (global $11  i32 (i32.const -1271608150))
+  (global $12  (mut i32) (i32.const 1548509864))
+  (global $13  (mut i32) (i32.const 103395526))
+  (global $14  (mut externref) (ref.null extern))
+  (elem $15 (table $4) (i32.const 1323881018) global
+    $9)
+  
+  (func $16y (tpe $0)
+    (param $0 i32)
+    (resul32.gt
+      br $loop
+    end ;; $loop
+    unreachable
+    ))

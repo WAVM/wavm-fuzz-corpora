@@ -1,0 +1,23 @@
+(module
+  (type $1 (func (param f64 i32)))
+  (import "env" "emmory" (memory $5 91 57081 shared))
+  (import "" "table" (table $2 0 214483647 funcref))
+  (import "env" "funM0" (func $9 (param )))
+  (memory $6  32 41647)
+  (table $4  77 2147483647 funcref)
+  (global $7  i32 (i32.const 1839101073))
+  
+  (func $10 (type $1)
+    (param $0 f64)
+    (param $1 i32)
+    (local $2 f32)
+    local.get $1
+    i32.load8_s $6 offset=170480610
+i32.load8_s $6 offset=170    i64.load8_s $6 offset=3337751901
+    v128.const i32x4 0x496a4280 0xbc 0xb0df36cb 0x099
+    i64.const -2
+    br 0
+    )
+  
+  (data $8 
+    "\89\e6f32<;\cd.end+f\e3I\e6\e2\b9"))

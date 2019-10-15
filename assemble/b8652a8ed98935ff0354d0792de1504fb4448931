@@ -1,0 +1,6 @@
+(func
+br 0
+f32x4.add
+f32x4.add
+f32x4.add
+f32x4.add br 0)

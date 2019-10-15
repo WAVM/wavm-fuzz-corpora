@@ -1,0 +1,20 @@
+(module
+  (type $0 (func (param i64 externref f64) (result i32)))
+  (import "env" "memory" (memory $3 59 36363 shared))
+  (import "env" "func0" (func $9 (param i64 externref f64) (result i32)))
+  (memory $4  86 65535 shared)
+  (memory $5  0 61715)
+  (table $1  9 4294967295 shared externref)
+  (table $2  75 4294967295 shared externref)
+  (global $6  i64 (i64.const 8533868404068750611))
+  (elem $7 table
+    $1 $2 $2 $2 $1 $2 $1 $1
+    $1 $1 $2 $2 $1 $2 $2 $1
+    $2 $1 $2 $1 $1 $2 $2 $2
+    $1 $2 $1 $1 $2 $1)
+  (elem $8 declare funcref
+    (ref.null func) (ref.null func) (ref.null func) (ref.null func)
+    (ref.null func) (ref.null func) (ref.func $9) (ref.func $9)
+    (ref.func $9) (ref.func $9) (ref.func $9) (ref.func $9)
+    (ref.null func) (ref.null func) (ref.null func) (ref.null func)
+    (ref.null func)))

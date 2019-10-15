@@ -1,0 +1,4 @@
+(module
+  
+( table $2  1 funcref)(func block  i32.const 5
+     call_indirect   end   i32.const 5 call_indirect $2  i32.const 0 call_indirect   ))

@@ -1,0 +1,1 @@
+(func $g if $n)(func $6 try $r try $g if $n)

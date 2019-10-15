@@ -1,0 +1,6 @@
+
+(func
+f32.store align=2
+f32.load align=2 i64.store32 align=2 
+i64.store32 align=2  i64.load32_s align=2 i64.store32 align=2  i64.load32_u align=2
+ i64.load32_u align=2)

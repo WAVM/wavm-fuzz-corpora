@@ -1,0 +1,1 @@
+(func (3c8) (i16x8.min_s (3)) (i16x8.min_s (i16x8.min_s)(i16x8.min_s ) (i)))

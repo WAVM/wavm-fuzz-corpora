@@ -1,0 +1,8 @@
+(func br 0
+i32.div_u
+i32.div_u
+i32.div_u br
+ 0
+
+i64.div_u br
+0)

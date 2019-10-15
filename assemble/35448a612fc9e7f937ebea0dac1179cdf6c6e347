@@ -1,0 +1,1 @@
+(memory 3)(func(sub)(i32.atomic.rmw.sub)(i32.atomic.rmw.sub)(i32.atomic.rmw.sub)(i32.atomic.rmw.sub)(isub)(i32.atomic.rmw.sub)(i32.atomic.rmw.sub)(i32.atomic.rmw.sub)(i32.atomic.rmw.sub)(i32.atomic.rmw.sub)(i32.atomic.rmw.sub)( i32.atomic.rmw.sub )(i32.atomic.rmw.sub)(i32.atomic.rmw.sub)(i32.atomic.rmw.sub)( i32.atomic.rmw.sub )(i32.atomic.rmw.sub)ic.rmw.stomic.roic.ub))

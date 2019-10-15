@@ -1,0 +1,18 @@
+(module  (type $0 (func (param v128)))
+ 
+  (func $1
+    i8x16.max_u
+     i8x16.max_u
+    i8x16.max_u
+ ( $0)
+
+    i8x16.max_u
+ i8x16.max_u    i8x16.max_u
+)
+  
+  (func    local.get $1
+    i8x16.max_u
+ ( $0)
+
+    i8x16.max_u
+  ))

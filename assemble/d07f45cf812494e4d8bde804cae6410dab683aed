@@ -1,0 +1,8 @@
+(module
+  (type $0 (func (result v128)))
+  (export "f32xqon" (func $2))
+    (func $2 (type $0)
+     v128.const i32x4 0xbf600 0x7fc00000 0x4080000 0
+    f32x4.sqrt
+    f32x4.sqrt
+  f32x4.sqrt  ))

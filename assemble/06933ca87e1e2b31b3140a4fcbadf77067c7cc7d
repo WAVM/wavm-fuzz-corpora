@@ -1,0 +1,3 @@
+(func
+i32x4.extract_lane
+6)

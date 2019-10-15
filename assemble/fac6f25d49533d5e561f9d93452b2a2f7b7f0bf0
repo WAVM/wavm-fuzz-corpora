@@ -1,0 +1,93 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param v128 f32)))
+  (type $2 (func (param i32 f32 f32 v128) (result funcref)))
+  (type $3 (func (result v128 f64)))
+  (type $4 (func (param funcref) (result i64 f32 f64 funcref)))
+  (import "env" "table" (table $5 72 4294967295 funcref))
+  (import "env" "global1" (global $6 (mut externref)))
+  (import "env" "global2" (global $7 (mut funcref)))
+  (import "env" "global4" (global $8 f32))
+  (import "env" "global6" (global $9 (mut f32)))
+  (import "env" "global8" (global $10 (mut i64)))
+  (import "env" "global9" (global $11 (mut i64)))
+  (global $12  v128 (v128.const i32x4 0x41cac2cc 0x0f67251a 0x372ec219 0x28d79a03))
+  (global $13  funcref (ref.null func))
+  (global $14  externref (ref.null extern))
+  (global $15  (mut f32) (f32.const 0x1.2db6aap+29))
+  
+  (func $18 (type $0)
+    (local $0 f64)
+    (local $1 i64)
+    (local $2 i64)
+    local.get $2
+    br 0
+    )
+  
+  (func $19 (type $1)
+    (param $0 v128)
+    (param $1 f32)
+    (local $2 externref)
+    (local $3 f32)
+    local.get $0
+    i8x16.all_true
+    local.get $1
+    nop
+    local.get $3
+    i32.trunc_f32_u
+    global.get $14
+    global.get $15
+    nop
+    global.get $11
+    i64.clz
+    i64.extend16_s
+    return
+    )
+  
+  (func $20 (type $2)
+    (param $0 i32)
+    (param $1 f32)
+    (param $2 f32)
+    (param $3 v128)
+    (result funcref)
+    (local $4 f64)
+    (local $5 externref)
+    global.get $7
+    loop $loop (result v128 f64)
+      global.get $14
+      local.get $1
+      i32.trunc_f32_u
+      atomic.fence
+      i8x16.splat
+      local.get $2
+      i64.trunc_f32_s
+      i64.const 5073920340240864297
+      local.get $0
+      select
+      global.get $13
+      block $block (param funcref) (result i64 f32 f64 funcref)
+        global.get $14
+        ref.is_null
+        br_if $loop
+        global.set $7
+        global.get $11
+        i64.const 1683967152832010076
+        i64.rotl
+        f64.reinterpret_i64
+        drop
+        br $loop
+      end ;; $block
+      ref.null func
+      ref.null func
+      br 1
+    end ;; $loop
+    local.set $4
+    drop
+    br 0
+    )
+  
+  (data $16 
+    "\8c\a6\09e^\b3Q \f5\f7\cf/\ac\df\0d\18\1d\a96,\e1.\af")
+  
+  (data $17 
+    "%\db\a8\ac\a8\12\b4\d7,\d0\02\84a\90\d8\d0\94*\90\e8\88\efc\f1\0f\c0\f6\f2\a6\d1\d00\e4\8fI\1a\eb\05i\fcd\9a\db"))

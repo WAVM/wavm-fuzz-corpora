@@ -1,0 +1,3 @@
+(func(if (if(v128.andnot)  ( v128.andnot
+ )( v128.andnot
+))))

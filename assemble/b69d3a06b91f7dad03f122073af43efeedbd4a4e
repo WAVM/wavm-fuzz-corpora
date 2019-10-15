@@ -1,0 +1,3 @@
+(custom_section "a" (after data))(custom_section "a" (after data)n "  "")(custom_section "a" (after data) "")(custom_section "i32x.neg" (after data) ""c)(custom_section "a" (after data) "")
+    (custom_section "i32x8.neg" (after data) "")(custom_section "a" (after data)n (aa) "")(custom_section "a" (after data)
+  

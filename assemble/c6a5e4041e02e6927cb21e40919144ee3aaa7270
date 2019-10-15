@@ -1,0 +1,1 @@
+(func(if i32())br_table 1 0)(func(if i32())br_table 1 0)(func(if i32())bnc0)(func(if i32())br_table 1 0)(func(if i32()m3 if i32())br_table 1 0)(func(if i32())br_table 1 0)(func(if i)table 1 0)(func(if i32())br_table 1 0)(func(if i32())br_table 1 0)(func(y())brble0)(func(if i32()())br_table 1 0)(func(if i16())br_ble 1 0))br_tale f32.minnc0)

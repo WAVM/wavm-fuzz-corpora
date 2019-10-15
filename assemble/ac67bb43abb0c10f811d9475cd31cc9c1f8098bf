@@ -1,0 +1,4 @@
+(func (local.get $6# (local.get $nc (local.get $3c (local.get $1#c (local.get $3#(local.get $ncocal.get $c))))
+  (local.get $3# (local.get $c))))
+ (local.gee $c)))	
+)

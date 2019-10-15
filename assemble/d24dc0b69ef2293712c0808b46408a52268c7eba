@@ -1,0 +1,15 @@
+(module
+  (type $0 (func (result v128 funcref)))
+  (type $1 (func (param funcref funcref) (result v128)))
+  (type $2 (func (result i32 externref f64)))
+  (memory $4  83 22116 shared)
+  (memory $5  27 3165    )
+  
+  (func $7 ( 128)
+      (local $3 i64)
+    ref.null extern
+    ref.is_null
+     ref.null extern  ref.null extern
+      tab ref.null extern
+      rn
+    ))

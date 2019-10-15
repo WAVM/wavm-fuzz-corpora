@@ -1,0 +1,32 @@
+(module
+  (type $0 (func (result i32)))
+  (import "env" "memory" (memory $3 43 29268 shared))
+  (import "env" "table" (table $1 99 4292974695 shared externref))
+  (table $2  52 4294967295 shared externref)
+  
+  (func $4 (type $0)
+    (result i32)
+    (local $0 f32)
+    (local $1 f32)
+    local.get $1
+    ref.null extern
+    local.get $1
+    i64.trunc_sat_f32_s
+    i64x2.splat
+    i16x8.abs
+    f64x2.neg
+    memory.size
+    i32.load16_u offset=1179947822
+    i8x16.splat
+    v128.and
+    i32x4.trunc_sat_f32x4_s
+    i32x4.trunc_sat_f32x4_s
+    i32x4.widen_high_i16x8_u
+    i16x8.any_true
+    table.get $1
+    ref.is_null
+    table.get $2
+    ref.null extern
+    ref.null extern
+    unreachable
+    ))

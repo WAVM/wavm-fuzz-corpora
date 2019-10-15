@@ -1,0 +1,44 @@
+(module
+  (type $0 (func (param i32 externref v128 externref)))
+  (type $1 (func (param f64 externref i64 f32) (result externref i64)))
+  (type $2 (func (result funcref v128 i64)))
+  (import "env" "memory" (memory $4 71 55350 shared))
+  (import "env" "global3" (global $6 (mut i64)))
+  (memory $5  86 20099)
+  (table $3  44 4294967295 shared funcref)
+  (global $7  externref (ref.null extern))
+  (global $8  i32 (i32.const 1582324869))
+  (global $9  i32 (i32.const -125471434))
+  (global $10  (mut f64) (f64.const 0x1.871618e75f149p+63))
+  (elem $11 declare funcref
+    (ref.func $12) (ref.func $12) (ref.null func) (ref.func $12)
+    (ref.func $12) (ref.null func) (ref.null func) (ref.func $12)
+    (ref.func $12) (ref.func $12) (ref.func $12) (ref.func $12)
+    (ref.null func) (ref.func $12) (ref.null func) (ref.func $12)
+    (ref.null func) (ref.null func) (ref.func $12) (ref.func $12)
+    (ref.null func) (ref.null func) (ref.func $12) (ref.func $12)
+    (ref.func $12) (ref.func $12) (ref.null func) (ref.func $12)
+    (ref.func $12) (ref.func $12) (ref.null func) (ref.null func)
+    (ref.null func) (ref.null func) (ref.func $12) (ref.null func)
+    (ref.null func) (ref.func $12) (ref.null func) (ref.null func)
+    (ref.null func) (ref.func $12) (ref.func $12) (ref.null func)
+    (ref.func $12) (ref.func $12) (ref.func $12) (ref.null func)
+    (ref.null func) (ref.func $12) (ref.null func) (ref.func $12)
+    (ref.func $12) (ref.null func) (ref.func $12) (ref.null func)
+    (ref.null func) (ref.func $12) (ref.func $12) (ref.func $12)
+    (ref.null func) (ref.func $12) (ref.func $12))
+  
+  (func $12 (type $0)
+    (param $0 i32)
+    (param $1 externref)
+    (param $2 v128)
+    (param $3 externref)
+    glextern
+        ref.is_null
+        drop
+        br $loop
+      end ;; $loop
+      br 1
+    end ;; $block
+    unreachable
+    ))

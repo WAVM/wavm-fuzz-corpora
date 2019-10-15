@@ -1,0 +1,246 @@
+(func $.rotl  i16x8.min_u
+  i64
+  in_u
+ i64. i1vx8l  i16x
+     ) (func i16x8.min_u
+ i64.rotl    i16x8.min_u
+     )
+  
+  (func i16x8.min_u
+  i64.rotl  i16x8.min16x8.min_u
+  i64
+    )
+  
+  (func i16x8.min_u
+ i64. i1vx8l  i16x
+     ) (func i16x8.min_u
+ i64.rotl    i16x8.min_u
+     )
+  
+  (func i16x8.min_u
+  i64.rotl  i16x8.min_u
+  i16x8.min_u
+  )
+  
+  (func i16x8.min_u
+  i64.rotl  i16x8.min_u
+     i64.rotl  i16x8.min_u
+    i16x8.min_u
+ i64.rotl  i16x8.min_u
+     )
+  
+  (func i16x8.min_u
+  i64.rotl  i16x8.min_u
+     i64.rotl  i16x8.min_u
+    i16x8.min_u
+ i64.rotl  i16x8.min_u
+     )
+  
+    
+  (func i16x8.min_u
+ i64.rotl  i16x8.min_u
+      i64.rotl  i16x8.min_u
+     )
+  
+  (func i64.rotl  i16x8.min_u          i64.rotl  i16x8.min_u
+     )
+  
+  (func i64.rotl  i16x8.min_u  _u
+  i16x8.min_u
+  )
+  
+  (func i16x8.min_u
+  i64.rotl  i16x8.min_u
+     i64.16x8.min_u
+ i64.rotl  i16x8.min_u
+     )
+  
+    
+  (func i16x8.min_u
+ i64.rotl  i16x8.min_u
+ _u
+ i64. i1vx8l  i16x
+     ) (func i16x8.min_u
+ i64.rotl    i16x8.min_u
+     )
+  
+  (func i16x8.min_u
+  i64.rotl  i16x8.min_u
+  i16x8.min_u
+  )
+  
+  (func i16x8.min_u
+  i64.rotl  i16x8.min_u
+     i64.rotl  i16x8.min_u
+    i16x8.min_u
+ i64.rotl  i16x8.min_u
+     )
+  
+    
+  (func i16x8.min_u
+ i64.rotl  i16x8.min_u
+      i64.rotl  i16x8.min_u
+     )
+  
+  (func i64.rotl  i16x8.min_u          i64.rotl  i16x8.min_u
+    i16x8.min_u
+ i64.rotl  i16x8.min_u
+     )
+  
+    
+  (func i16x8.min_u
+ i64.rotl  i16x8.min_u
+      i64.rotl  i16x8.min_u
+     )
+  
+  (func i64.rotl  i16x8.min_u        _u
+ i64. i1vx8l  i16x
+     ) (func i16x8.min_u
+ i64.rotl    i16x8.min_u
+     )
+  
+  (func i16x8.min_u
+  i64.rotl  i16x8.min_u
+  i16x8.min_u
+  )
+  
+  (func i16x8.min_u
+  i64.rotl  i16x8.min_u
+     i64.rotl  i16x8.min_u
+    i16x8.min_u
+ i64.rotl  i16x8.min_u
+     )
+  
+  (func i16x8.min_u
+  i64.rotl  i16x8.min_u
+     i64.rotl  i16x8.min_u
+    i16x8.min_u
+ i646x8.min_u
+      i64.otl  i16x8.min_u
+     )
+  
+  (func i64.rotl  i16x8.min_u          i64.rotl  i16x8.min_u
+    i16x8.min_u
+ i64.rotl  i16x8.min_u
+     )
+  
+    
+  (func i16x8.min_u
+ i64.rotl  i16x8.min_u
+      i64.rotl  i16x8.min_u
+     )
+  
+  (func i64.rotl  i16x8.min_u        _u
+ i64. i1vx8l  i16x
+     ) (func i16x8.min_u
+ i64.rotl    i16x8.min_u
+     )
+  
+  (func i16x8.min_u
+  i64.rotl  i16x8.min_u
+  i16x8.min_u
+  )
+  
+  (func i16x8.min_u
+  i64.rotl  i16x8.min_u
+     i64.rotl  i16x8.min_u
+    i16x8.min_u
+ i64.rotl  i16x8.min_u
+     )
+  
+  (func i16x8.min_u
+  i64.rotl  i16x8.min_u
+     i64.rotl  i16x8.min_u
+    i16x8.min_u
+ i64.rotl  i16x8.min_u
+     )
+  
+    
+  (func i16x8.min_u
+ i64.rotl  i16x8.min_u
+      i64.rotl  i16x8.min_u
+     )
+  
+  (func i64.rotl  i16x8.min_u          i64.rotl  i16x8.min_u
+     )
+  
+  (func i64.rotl  i16x8.min_u  _u
+  i16x8.min_u
+  )
+  
+  (func i16x8n_u
+  i64.rotl  i16x8.min_u
+  i16x8.min_u
+  )
+  
+  (func i16x8.min_u
+  i32.rotl  i16x8.min_u
+     i64.rotl  i16x8.min_u
+    i16x8.min_u
+ i64.rotl  i16x8.min_u
+     )
+  
+    
+  (func i16x8.min_u
+ i64.rotl  i16x8.min_u
+      i64.rotl  i16x8.min_u
+     )
+  
+  (func i64.rotl  i16x8.min_u          i64.rotl  i16x8.min_u
+    i16x8.min_  i64.rotl  i16x8.min_u
+     )
+  
+  (func i64.rotl  i16x8.min_u  .rotl  i16x8.min_u
+     )
+  
+    
+  (func i16x8.min_u
+ i64.rotl  i16x8.min_u
+      i64.rotli16x8.min_u
+     )
+  
+  (func i64.rotl  i16x8.min_u          i64.rotl  i16x8.min_u
+     )
+  
+  (func i64.rotl  i16x8.min_u  _u
+  i16x8.min_u
+  )
+  
+  (func i16x8.min_u
+  i64.rotl  i16x8.min_u
+     i64.16x8.min_u
+ i64.rotl  i16x8.min_u
+     )
+  
+    
+  (func i16x8.min_u
+ i64.rotl  i16x8.min_u
+ _u
+ i64. i1vx8l  i16x
+     ) (func i16x8.min_u
+ i64.rotl    i16x8.min_u
+     )
+  
+  (func i16x8.min_u
+  i64.rotl  i16x8.min_u
+  i16x8.min_u
+  )
+  
+  (func i16x8.min_u
+  i64.rotl  i16x8.min_u
+     i64.rotl  i16x8.min_u
+    i16x8.min_u
+ i64.rotl  i16x8.min_u
+     )
+  
+    
+  (func i16x8.min_u
+ i64.rotl  i16x8.min_u
+      i64.rotl  i16x8.min_u
+     )
+  
+  (func i64.rotl  i16x8.min_u          i64.rotl  i16x8.min_u
+    i16x8.min_  i64.rotl  i16x8.min_u
+     )
+  
+  (func i64.rotl  i16x8.min_u         ))

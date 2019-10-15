@@ -1,0 +1,18 @@
+(module(import "" "f"(func $f))
+(func(resy)
+ref.f ref.is_nu"f"(fun\ $f))
+(func(resy)
+ref.func $f ref.is_null
+  ref.func $f ref.is_null
+ref.func $-lunc(resy)
+ref.func $f ref.is_null
+  ref.func $f ref.is_null
+rref.is_null
+  ref.f" "f"(fun\ $f))
+(func(resy)
+ref.func $f ref.is_null
+  ref.func $f ref.is_null
+ref.func $-lunc(resy)
+ref.func $f ref.is_null
+  ref.func $f ref.is_null
+refunc_null))

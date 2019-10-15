@@ -1,0 +1,27 @@
+(type(func))
+  (func $3 
+memory.fill    memory.fill
+  
+memory.fill
+ memory.fill  memory.fill
+   memory.fill
+   memory.fill
+ memory.fill
+ memory.fill  memory.fill      memory.fill memory.fill      memory.fill
+   memory.fill
+  memory.fill
+    memory.fill
+    memory.fill
+   memory.fill memory.fill
+  memory.fill
+    memory.fill memory.fill  memory.fill   memory.fill
+ memory.fill
+  memory.fill
+  memory.fill
+   memory.fill
+  
+   memory.fill
+   memory.fill
+  memory.fill
+   memory.fill
+   )

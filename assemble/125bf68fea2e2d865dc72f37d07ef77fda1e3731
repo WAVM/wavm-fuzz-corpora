@@ -1,0 +1,78 @@
+(module
+  (type $0 (func (param externref v128 f64)))
+  (type $1 (func (result i32)))
+  (type $2 (func (param funcref v128 funcref externref) (result funcref i64)))
+  (type $3 (func (param f32 i64 i64) (result funcref v128)))
+  (type $4 (func (param externref) (result f32 i32)))
+  (type $5 (func (param i64) (result v128 funcref externref)))
+  (import "env" "table" (table $6 33 4294967295 funcref))
+  (import "env" "func0" (func $12 (result i32)))
+  (import "env" "func1" (func $13 (param f32 i64 i64) (result funcref v128)))
+  (import "env" "func2" (func $14 (param externref) (result f32 i32)))
+  (memory $7  34 36628 shared)
+  (global $8  (mut f32) (f32.const 0x1.b3ce9ap+31))
+  (elem $9 declare
+    $12 $14 $14 $13 $15 $13 $15 $14
+    $16 $13 $12 $12 $15 $16 $12 $14
+    $13 $12 $13)
+  
+  (func $15 (type $0)
+    (param $0 externref)
+    (param $1 v128)
+    (param $2 f64)
+    (local $3 f64)
+    (local $4 v128)
+    (local $5 v128)
+    local.get $4
+    f32x4.abs
+    i32x4.abs
+    f64x2.sqrt
+    local.get $2
+    f32.demote_f64
+    i64.trunc_sat_f32_s
+    loop $loop (param i64) (result v128 funcref externref)
+      i64.extend16_s
+      global.get $8
+      memory.size
+      v64x2.load_interleaved_4 offset=349497048 align=4
+      i8x16.ne
+      v128.bitselect
+      i32x4.all_true
+      return
+    end ;; $loop
+    ref.is_null
+    unreachable
+    )
+  
+  (func $16 (type $2)
+    (param $0 funcref)
+    (param $1 v128)
+    (param $2 funcref)
+    (param $3 externref)
+    (result funcref i64)
+    (local $4 f64)
+    (local $5 i64)
+    ref.null func
+    local.set $0
+    local.get $1
+    f32x4.convert_i32x4_s
+    i16x8.widen_low_i8x16_u
+    i16x8.bitmask
+    i16x8.load8x8_u offset=1614962144 align=4
+    local.set $1
+    f32.const 0x1.245e1ep-14
+    i64.trunc_f32_s
+    i64.const -668652500596992997
+    i64.extend8_s
+    global.get $8
+    f32.const -0x1.716c50p-73
+    drop
+    unreachable
+    )
+  
+  (data $10 (i32.const -1797975697)
+    "\ce\a2\83\85F\eaL\c6\b5iH\03\88~E\cd$\01~\de:_\fe:\b3\8a6A]9\ae&\c3\"\c5[\86\c0\a5\87v\ca\8aX(\df\7f\12\17+\df\a1\be\89\1d\d4\ef\b4\8b;t\11lI"
+    "\f8\d5o\8e\a4Y\fdCC\9e\7f\e2R;%k\d7\c3_\9fwn\cdq\11kog\9e ")
+  
+  (data $11 (i32.const -1918567048)
+    "\18\ee\91\07q\11}\db\bcr=\a0J\a8\ce\db\c8\e6\d4'R\e6"))

@@ -1,0 +1,86 @@
+(module
+  (type $0 (func (param i64 i32)))
+  (type $1 (func (param f64 f64 f64 i32)))
+  (type $2 (func (param v128 f32) (result f32)))
+  (type $3 (func (param f64 f32 i64) (result f64 i64)))
+  (type $4 (func (result i64 i64)))
+  (type $5 (func (result i32 f32)))
+  (import "env" "table" (table $6 68 4294967295 shared funcref))
+  (import "env" "table" (table $7 97 4294967295 shared funcref))
+  (import "env" "global1" (global $11 f64))
+  (import "env" "global4" (global $12 (mut v128)))
+  (import "env" "global6" (global $13 funcref))
+  (import "env" "global8" (global $14 i64))
+  (import "env" "func0" (func $22 (param i64 i32)))
+  (import "env" "func1" (func $23 (param v128 f32) (result f32)))
+  (memory $9  64 54293 shared)
+  (memory $10  84 33440)
+  (table $8  74 4294967295 shared externref)
+  (global $15  (mut v128) (v128.const i32x4 0x9ac5d377 0x9decf803 0x6425baa8 0x5d813a0d))
+  (global $16  i64 (i64.const -6549083375588320610))
+  (global $17  i32 (i32.const 1835211222))
+  (global $18  (mut externref) (ref.null extern))
+  (global $19  externref (ref.null extern))
+  (global $20  i32 (i32.const 1251398784))
+  (elem $21 (table $8) (i32.const -424947685) externref
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern))
+  
+  (func $24 (type $1)
+    (param $0 f64)
+    (param $1 f64)
+    (param $2 f64)
+    (param $3 i32)
+    (local $4 i64)
+    (local $5 externref)
+    (local $6 i64)
+    (local $7 f64)
+    global.get $14
+    f64.convert_i64_u
+    global.get $14
+    block $block (result i64 i64)
+      i32.const -1339554915
+      i64.load32_s offset=822284496 align=1
+      local.get $1
+      i32.trunc_sat_f64_u
+      loop $loop (result i32 f32)
+        local.get $5
+        v128.const i32x4 0xc31f5370 0x3cb01340 0x25a21d70 0xa4a7fafa
+        f32x4.convert_i32x4_s
+        f32x4.neg
+        f64x2.abs
+        i8x16.all_true
+        drop
+        br $loop
+      end ;; $loop
+      unreachable
+    end ;; $block
+    local.set $4
+    i64.rotl
+    unreachable
+    )
+  
+  (func $25 (type $3)
+    (param $0 f64)
+    (param $1 f32)
+    (param $2 i64)
+    (result f64 i64)
+    (local $3 i64)
+    local.get $2
+    i64.ctz
+    global.get $12
+    f64x2.abs
+    i8x16.any_true
+    table.size $7
+    v8x16.load_interleaved_3 $10 offset=1255032104 align=1
+    f32x4.sqrt
+    i16x8.widen_high_i8x16_u
+    v32x4.store_interleaved_3 $10 offset=3351454942
+    global.get $16
+    i64.mul
+    local.set $3
+    local.get $1
+    f32.ceil
+    local.set $1
+    unreachable
+    ))

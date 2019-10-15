@@ -1,0 +1,57 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param funcref) (result i32 funcref)))
+  (type $2 (func (param i32) (result i64 externref v128 i32)))
+  (type $3 (func (param v128)))
+  (import "env" "memory" (memory $6 19 59877 shared))
+  (import "env" "global2" (global $7 (mut v128)))
+  (import "env" "func0" (func $13 (param funcref) (result i32 funcref)))
+  (table $4  21 4294967295 funcref)
+  (table $5  66 4294967295 externref)
+  (global $8  f32 (f32.const 0x1.c448a2p+31))
+  (global $9  (mut i64) (i64.const 3465621326266561507))
+  (elem $10 global
+    $7 $7 $7 $9 $7 $8 $9 $9
+    $9 $7 $7 $7 $9 $7 $7 $8
+    $8 $8 $7 $8 $9 $9 $9 $7
+    $8 $7 $7 $8 $8 $8 $9 $8
+    $9 $8 $9)
+  (elem $11 declare
+    $14 $13 $14 $13 $13 $14 $14 $13
+    $14 $14 $14 $14 $13 $13 $14 $14
+    $13 $13 $14 $14 $14 $13 $14 $13
+    $14 $13 $14 $14 $14 $14 $14 $13
+    $14 $14 $14 $13 $13 $14 $14 $14
+    $13 $14 $13 $13 $14 $13 $14 $13
+    $14 $14 $14 $13 $13)
+  
+  (func $14 (type $0)
+    i64.const -5282034932590477730
+    global.get $9
+    i64.lt_u
+    i32x4.load16x4_s offset=443976298 align=2
+    i32x4.widen_high_i16x8_s
+    global.get $9
+    call $14
+    global.get $9
+    i64.extend32_s
+    f64.reinterpret_i64
+    i32.trunc_f64_s
+    block $block (param i32) (result i64 externref v128 i32)
+      v32x4.load_interleaved_2 offset=614221408
+      loop $loop (param v128)
+        f64.const -0x1.3e9bbde13dfe7p-104
+        return
+      end ;; $loop
+      unreachable
+    end ;; $block
+    i64x2.shr_u
+    global.set $7
+    ref.null extern
+    ref.is_null
+    table.get $4
+    br 0
+    )
+  
+  (data $12 (i32.const 626810532)
+    "\87\00zb_\a1\9a\81Y\d5\a8"))

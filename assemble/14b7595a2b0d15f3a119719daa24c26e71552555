@@ -1,0 +1,1 @@
+(func i32.load8_u offset)(func i32.load8_u offset)(func i32.load8_s offset)

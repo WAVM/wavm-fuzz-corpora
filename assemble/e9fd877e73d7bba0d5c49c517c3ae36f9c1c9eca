@@ -1,0 +1,4 @@
+(func  br 0 i32x4.le_s br
+ 0 i32x4.le_s br
+0 i32x4.le_s br
+0)

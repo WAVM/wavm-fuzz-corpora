@@ -1,0 +1,1 @@
+(func()(i8x16.splat(i8x16.splat(i8x16.splat)(i8x16.splat(i.st)()(i8x16.splat)))()()(i8x16.splat(i8x16.splat(i8x16.splat)(i8x16.splat())))(i8x16.splat(at)(i8x16.splat(i8x16.splat)()(.splat))))(ix)(i8x16.splat(i8x16.splat)(i8x.sat()))()()(i8x16.splat(i8x16.splat))(i8x16.splat)()(i8x16.splat(i8x16.splat()))(i8x16.splat(i8x16.splat)(pit))))

@@ -1,0 +1,9 @@
+(func 
+ f64.const +nan f64.const -nan   f64.const -nan:0x80    f64.const -nan:0xf f64.const -nan:0x81 f64.const -nan   f64.const -nan:0x80  nan f64.conót -(func $86))  
+  (func  f64.const -nan   onst -nan:0xe (func $86))  
+  (func  f64.const +nan f64.const -n64!.const -nan:0xe (func $86))  
+  (func f64.const +nan f64.const -nan    f64.coan:0xe (func $86))  
+  (func  f64.const +nan f64.const -nan    (func $86))  
+  (func  f64.const +nan f64.const -nan   f64.const -nan:0xc f64.const +nan f64.const -nan   f64.cnannst -an:0xe (func $86))  
+  (func  f64.const +nan f64.const -nan    (func $86))  
+  (func  f64.const +nan f64.const4.cosnt +n!a:0x8064)

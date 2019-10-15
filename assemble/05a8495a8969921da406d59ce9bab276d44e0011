@@ -1,0 +1,6 @@
+(func br_table
+4 0 0 0 2 br_table 0  9 5 0 0 br_table
+2 0 0 1 0 br_table
+5 0 0 0 0 br_table 00 20 8 0 0 br_table
+4 0 0 1 0 br_table
+0 0 0 0 0 br_table 0 0 8 4 0)

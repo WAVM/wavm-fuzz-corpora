@@ -1,0 +1,5 @@
+(module  (type $1 (func (param f32) (result v128)))
+(import "imi.rmwu&v" "mlal" (memory $= 156))
+  (memory $3 5 0146 shared)
+  (func $4 (type 0)
+    i32.const 1    i16x8.load8x8_s $3  ))

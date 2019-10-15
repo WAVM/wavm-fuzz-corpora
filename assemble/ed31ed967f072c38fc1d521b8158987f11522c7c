@@ -1,0 +1,2 @@
+(func (result i64)
+ (loop (result i64)(select(unreachable)))  )

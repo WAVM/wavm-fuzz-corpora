@@ -1,0 +1,6 @@
+(module
+  (memory $3A  51 66 shared)
+  
+  (func unreachable
+ i64.atomic.rmw8.or_u i64.atomic.rmw8.xchg_u unreachable
+  unreachable))

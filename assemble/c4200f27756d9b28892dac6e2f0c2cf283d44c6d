@@ -1,0 +1,18 @@
+(
+type $0 (func))
+    (func
+   memory.atomic.notify
+ 0(tyi06)
+memory.atomic.notify
+   (func))
+    (func 
+   memory.atomic.notify
+  (tyi06)
+memory.atomic.notify
+     memory.atomic.notify
+    (tyi06)
+memory.atomic.notify
+ memory.atomic.notify
+     (t)
+memory.atomic.notify
+ ))

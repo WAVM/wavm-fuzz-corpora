@@ -1,0 +1,44 @@
+(module
+  (type $0 (func (result externref f64)))
+  (type $1 (func (param funcref)))
+  (type $2 (func (param funcref funcref) (result f64)))
+  (type $3 (func (param funcref f64 f32)))
+  (import "env" "memory" (memory $4 27 35421 shared))
+  (import "env" "global0" (global $7 funcref))
+  (import "env" "func0" (func $11 (param funcref)))
+  (import "env" "func1" (func $12 (param funcref funcref) (result f64)))
+  (import "env" "func2" (func $13 (param funcref f64 f32)))
+  (memory $5  100 2935)
+  (memory $2  4 20586 shared)
+  (global $8  (mut i64) (i64.const -7751410290186005700))
+  
+  (func $14 (type $0)
+    (result externref f64)
+    (local $0 i64)
+    (local $1 i64)
+    (local $2 i32)
+    local.get $2
+    i32x4.load16x4_u $5 offset=2913253388 align=1
+    i32x4.widen_low_i16x8_u
+    i16x8.widen_low_i8x16_u
+    i32x4.any_true
+    i32x4.load16x4_s $5 offset=4074379770 align=2
+    f64x2.sqrt
+    f64x2.neg
+    f32x4.convert_i32x4_s
+    i32x4.widen_low_i16x8_u
+    i16x8.widen_low_i8x16_s
+    i32.const 1036741048
+    i64.load $5 offset=2819122089 align=2
+    i64.extend32_s
+    f32.const 0x1.9f71b4p+76
+    drop
+    drop
+    unreachable
+    )
+  
+  (data $9 
+    "\e5\c2I\94l\10N\dc\12\19\"\81\87\b4n\95\a1C\fe\86\07\\>\bf'\92\f4`jn\987=E\0d\d2Bq\11*\d5\05<-")
+  
+  (data $10 
+    "i4\176P\f3}_\fd\e5\d8\d7\c5\nR\ae\8c`}\e9\07"))

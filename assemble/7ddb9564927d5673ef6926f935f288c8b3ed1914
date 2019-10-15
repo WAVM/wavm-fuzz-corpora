@@ -1,0 +1,114 @@
+(module
+  (type $0 (func (param i32) (result v128)))
+  (type $1 (func (result v128)))
+  (memory $1  1)
+  (export "i16x8.loa4x8d_s" (func $5))
+  (export "in8" (func $46))
+  
+  (func $5 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i16x8.load8x8_u
+    )
+  
+  (func $6 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i16x8.load8x8_u
+    )
+  
+  (func $7 (type $0)
+   i32.const 8
+    i16x8.load8x8_u
+    )
+  
+  (func $13 (type $1)
+    (result v128)
+    i32.const 10
+    i32x4.load16x4_s 
+   )
+  
+  (func $14 (type $1)
+    (result v128)
+    i32.const 20
+    i32x4.load16x4_u
+    )
+  
+  (func $1= (type $1)
+    (result v128)
+    i32.const 65520
+    i64x2.load32x2_s
+    )
+  
+  (func $16 (type $1)
+       i32.const 65526
+    i64x2.load32x2_u
+    )
+  
+  (func $34 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i16x8.load8x8_s
+    )
+  
+  (func $18 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i16x8.load8x8_s align=1
+    )
+  
+  (func $19 (type $0)
+    (param $0 i32)
+    (result v128)   local.get $0
+    i32x4.load16x4_u align=1
+    )
+  
+  
+  
+  (func $41 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i64x2.load32x2_s offset=20
+    )
+  
+  (func $42 (type $0)  (param $0 i32)
+    (result v128)
+    local.get $0
+    i64x2.load32x2_u
+    )
+  
+  (func $43 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i64x2.load32x2_u align=1
+    )
+  
+  (func $2 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i64x2.load32x2_u align=1
+    )
+
+  (func $45 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i64x2.load32x2_u offset=10 align=4
+    )
+  
+  (func $46 (type $0)
+    (param $0 i32)
+   (result v128)
+    local.get $0
+    i64x2.load32x2_u offset=20
+    )
+  
+  (data $5 (i32.const 0)
+    "\00\01\02\03\04\05\85\82\87\88\89"))

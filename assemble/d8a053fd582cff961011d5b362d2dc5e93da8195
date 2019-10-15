@@ -1,0 +1,1 @@
+(func f64.const 2e3 f64.const 5e3)

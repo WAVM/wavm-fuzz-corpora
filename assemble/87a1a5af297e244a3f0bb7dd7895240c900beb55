@@ -1,0 +1,3 @@
+(module
+  (global funcref (ref.null func))
+  (global $1  (mut funcref) (ref.null func))3)))

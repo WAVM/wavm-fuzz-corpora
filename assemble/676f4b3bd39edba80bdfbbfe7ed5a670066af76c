@@ -1,0 +1,7 @@
+(func(i16.ato)(i64x2.load32x2_u(i64x2.load32x2_u)(i64x2.load32x2_u)_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)miu)(i64x2.load32x2_u(i64x2.load32x2_u)(i64x2.load32x2_u
+   )_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)mi2.d2u)(i64x2.load32x2_u(i64x2.load32x2_u)(i64x2.load32x2_u
+  lad2u)(i64x2.load32x2_u(i64x2.load32x2_u)(i64x2.load32x2_u
+   )_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)miatomic2.lad2u)(i64x2.load32x2_u(iu)(i64x2.load32x2_u
+   )_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)mic.cmpx)(i64x2.load32x2_u(i64x2.load32x2_u)(i64x2.load32x2_u
+   )_u.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)(i64x2.load32x2_u
+   ))ue))

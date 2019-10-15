@@ -1,0 +1,4 @@
+(module
+  ( (func (8 funcref)))
+  (type $1 (func (param v128 f64) (result f26)))
+  (type $2 (func (param v128 f64)ype $3 (func\f3\84$\e1"))

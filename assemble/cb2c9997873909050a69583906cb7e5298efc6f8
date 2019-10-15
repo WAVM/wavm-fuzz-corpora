@@ -1,0 +1,9 @@
+(module
+    (type $2 (func (result i32 externref f64)))
+  (memory $4  83 22116 shared)
+  (memory $5  27 31   )
+  
+  (func $7 ( v128)
+      (local $3 i64)
+    ref.null extern
+    ref.is_null   ))

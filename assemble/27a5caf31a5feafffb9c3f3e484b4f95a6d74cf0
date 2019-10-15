@@ -1,0 +1,1 @@
+(global $x(mut i32) (i32.const 0))  (func()global.set $x(ÿ)global.set $x(muÿÿ)global.set $x(muÿÿo)global.set $x(3))  (func()global.set $x(muÿÿ)global.set $x(muÿÿ)global.set  $x(mut i)global.set $x(ÿ)global.set $x(muÿÿ)global.set $x(muÿÿo)global.set $x(3))  (func()global.set $x(muÿÿ)global.set $x(muÿÿ)global.set $x(muÿÿª)global.set $x(muÿÿª)global.set $xx)

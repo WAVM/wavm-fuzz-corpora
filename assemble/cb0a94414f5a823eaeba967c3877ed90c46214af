@@ -1,0 +1,644 @@
+(module
+  (type $check (func (param i32 i32) (result i32)))
+  (type $0 (func))
+  (type $1 (func (param i32 i32 i32) (result i32)))
+  (type $2 (func (result i32)))
+  (type $3 (func (param i32)))
+  (type $4 (func (param i32) (result i32)))
+  (type $5 (func (param i32 i32)))
+  (memory $7  1)
+  (table $6  1 1 funcref)
+  (global $a  (mut i32) (i32.const 0))
+  (export "as-func-first" (func $9))
+  (export "as-func-mid" (func $10))
+  (export "as-func-last" (func $11))
+  (export "as-func-everywhere" (func $12))
+  (export "as-drid" (func $86))
+  (export "as-store-last" (func $87))
+  (export "as-store-everywhere" (func $88))
+  (elem $8 (i32.const 0)
+    $func)
+  
+  (func $dummy (type $0)
+    )
+  
+  (func $3-ary (type $1)
+    (param $0 i32)
+    (param $1 i32)
+    (param $2 i32)
+    (result i32)
+    local.get $0
+    local.get $1
+    local.get $2
+    i32.sub
+    i32.add
+    )
+  
+  (func $9 (type $2)
+    (result i32)
+    nop
+    i32.const 1
+    )
+  
+  (func $10 (type $2)
+    (result i32)
+    call $dummy
+    nop
+    i32.const 2
+    )
+  
+  (func $11 (type $2)
+    (result i32)
+    call $dummy
+    i32.const 3
+    nop
+    )
+  
+  (func $12 (type $2)
+    (result i32)
+    nop
+    nop
+    call $dummy
+    nop
+    i32.const 4
+    nop
+    nop
+    )
+  
+  (func $13 (type $3)
+    (param $0 i32)
+    nop
+    local.get $0
+    drop
+    )
+  
+  (func $14 (type $3)
+    (param $0 i32)
+    local.get $0
+    nop
+    drop
+    )
+  
+  (func $15 (type $3)
+    (param $0 i32)
+    nop
+    nop
+    local.get $0
+    nop
+    nop
+    drop
+    )
+  
+  (func $16 (type $4)
+    (param $0 i32)
+    (result i32)
+    nop
+    local.get $0
+    local.get $0
+    local.get $0
+    select
+    )
+  
+  (func $17 (type $4)
+    (param $0 i32)
+    (result i32)
+    local.get $0
+    nop
+    local.get $0
+    local.get $0
+    select
+    )
+  
+  (func $18 (type $4)
+    (param $0 i32)
+    (result i32)
+    local.get $0
+    local.get $0
+    nop
+    local.get $0
+    select
+    )
+  
+  (func $19 (type $4)
+    (param $0 i32)
+    (result i32)
+    local.get $0
+    local.get $0
+    local.get $0
+    nop
+    select
+    )
+  
+  (func $20 (type $4)
+    (param $0 i32)
+    (result i32)
+    nop
+    local.get $0
+    nop
+    nop
+    local.get $0
+    nop
+    nop
+    local.get $0
+    nop
+    nop
+    select
+    )
+  
+  (func $2(result i32)
+      nop
+      i32.const 2
+    end ;; $loop
+    )
+  
+  (func $26 (type $2)
+    (result i32)
+    loop $loop (result i32)
+      call $dummy
+      nop
+      i32.const 2
+    end ;; $loop
+    )
+  
+  (func $27 (type $2)
+    (result i32)
+    loop $loop (result i32)
+      call $dummy
+      i32.const 3
+      nop
+    end ;; $loop
+    )
+  
+  (func $28 (type $2)
+    (result i32)
+    loop $loop (result i32)
+      nop
+      nop
+      call $dummy
+      nop
+      i32.const 4
+      nop
+      nop
+    end ;; $loop
+    )
+  
+  (func $29 (type $3)
+    (param $0 i32)
+    local.get $0
+    nop
+    if $if
+      call $dummy
+    end ;; $if
+    )
+  
+  (func $30 (type $3)
+    (param $0 i32)
+    local.get $0
+    if $if
+      nop
+    else
+      call $dummy
+    end ;; $if
+    )
+  
+  (func $31 (type $3)
+    (param $0 i32)
+    local.get $0
+    if $if
+      call $dummy
+    else
+      nop
+    end ;; $if
+    )
+  
+  (func $32 (type $4)
+    (param $0 i32)
+    (result i32)
+    block $block (result i32)
+      nop
+      local.get $0
+      br $block
+    end ;; $block
+    )
+  
+  (func $33 (type $4)
+    (param $0 i32)
+    (result i32)
+    block $block (result i32)
+      local.get $0
+      nop
+      br $block
+    end ;; $block
+    )
+  
+  (func $34 (type $4)
+    (param $0 i32)
+    (result i32)
+    block $block (result i32)
+      nop
+      nop
+      local.get $0
+      nop
+      nop
+      br $blococal.get $0
+    local.get $1
+    nop
+    local.get $2
+    call $3-ary
+    )
+  
+  (func $49 (type $1)
+    (param $0 i32)
+    (param $1 i32)
+    (param $2 i32)
+    (result i32)
+    local.get $0
+    local.get $1
+    local.get $2
+    nop
+    call $3-ary
+    )
+  
+  (func $50 (type $1)
+    (param $0 i32)
+    (param $1 i32)
+    (param $2 i32)
+    (result i32)
+    nop
+    nop
+    local.get $0
+    nop
+    nop
+    local.get $1
+    nop
+    nop
+    local.get $2
+    nop
+    nop
+    call $3-ary
+    )
+  
+  (func $51 (type $4)
+    (param $0 i32)
+    (result i32)
+    nop
+    local.get $0
+    i32.ctz
+    )
+  
+  (func $52 (type $4)
+    (param $0 i32)
+    (result i32)
+    local.get $0
+    nop
+    i32.ctz
+    )
+  
+  (func $53 (type $4)
+    (param $0 i32)
+    (result i32)
+    nop
+    nop
+    local.get $0
+    nop
+    nop
+    i32.ctz
+    )
+  
+  (func $54 (type $4)
+    (param $0 i32)
+    (result i32)
+    nop
+    local.get $0
+    local.get $0
+    i32.a
+    local.get $0
+    i32.add
+    )
+  
+  (func $56 (type $4)
+    (param $0 i32)
+    (result i32)
+    local.get $0
+    local.get $0
+    nop
+    i32.add
+    )
+  
+  (func $57 (type $4)
+    (param $0 i32)
+    (result i32)
+    nop
+    local.get $0
+    nop
+    nop
+    local.get $0
+    nop
+    nop
+    i32.add
+    )
+  
+  (func $58 (type $4)
+    (param $0 i32)
+    (result i32)
+    nop
+    local.get $0
+    i32.eqz
+    )
+  
+  (func $59 (type $4)
+    (param $0 i32)
+    (result i32)
+    local.get $0
+    nop
+    i32.eqz
+    )
+  
+  (func $60 (type $4)
+    (param $0 i32)
+    (result i32)
+    nop
+    nop
+    local.get $0
+    nop
+    nop
+    i32.eqz
+    )
+  
+  (func $61 (type $4)
+    (param $0 i32)
+    (result i32)
+    nop
+    local.get $0
+    local.get $0
+    i32.ne
+    )
+  
+  (func $62 (type $4)
+    (param $0 i32)
+    (result i32)
+    local.get $0
+    nop
+    local.get $0
+    i32.ne
+    )
+  
+  (func $63 (type $4)
+    (param $0 i32)
+    (result i32)
+    local.get $0
+    local.get $0
+    nop
+    i32.lt_u
+    )
+  
+  (func $64 (type $4)
+    (param $0 i32)
+    (result i32)
+    nop
+    local.get $0
+    nop
+    nop
+    local.get $0
+    nop
+    nop
+    i32.le_s
+    )
+  
+  (func $65 (type $4)
+    (param $0 i32)
+    (result i32)
+    nop
+    local.get $0
+    memory.grow
+    )
+  
+  (func $66 (type $4)
+    (param $0 i32)
+    (result i32)
+    local.get $0
+    nop
+    memory.grow
+    )
+  
+  (func $67 (type $4)
+    (param $0 i32)
+    (result i32)
+    nop
+    nop
+    local.get $0
+    nop
+    nop
+    memory.grow
+    )
+  
+  (func $func (type $check)
+    (param $0 i32)
+    (param $1 i32)
+    (result i32)
+    local.get $0
+    )
+  
+  (func $68 (type $2)
+    (result i32)
+    block $block (result i32)
+      nop
+      i32.const 1
+      i32.const 2
+      i32.const 0
+      call_indirect $6 (type $check)
+    end ;; $block
+    )
+  
+  (func $69 (type $2)
+    (result i32)
+    block $block (result i32)
+      i32.const 1
+      nop
+      i32.const 2
+      i32.const 0
+      call_indi2.const 0
+      call_indirect $6 (type $check)
+    end ;; $block
+    )
+  
+  (func $71 (type $2)
+    (result i32)
+    block $block (result i32)
+      i32.const 1
+      i32.const 2
+      i32.const 0
+      nop
+      call_indirect $6 (type $check)
+    end ;; $block
+    )
+  
+  (func $72 (type $2)
+    (result i32)
+    block $block (result i32)
+      nop
+      nop
+      i32.const 1
+      nop
+      nop
+      i32.const 2
+      nop
+      nop
+      i32.const 0
+      nop
+      nop
+      call_indirect $6 (type $check)
+    end ;; $block
+    )
+  
+  (func $73 (type $4)
+    (param $0 i32)
+    (result i32)
+    nop
+    i32.const 2
+    lojal.set $0
+    local.get $0
+    )
+  
+  (func $74 (type $4)
+    (param $0 i32)
+    (result i32)
+    i32.const 2
+    nop
+    local.set $0
+    local.get $0
+    )
+  
+  (func $75 (type $4)
+    (param $0 i32)
+    (result i32)
+    nop
+    nop
+    i32.const 2
+    nop
+    nop
+    local.set $0
+    local.get $0
+    )
+  
+  (func $76 (type $4)
+    (param $0 i32)
+    (result i32)
+    nop
+    i32.const 2
+    l.tee $0
+    )
+  
+  (func $77 (type $4)
+    (param $0 i32)
+    (result i32)
+    i32.const 2
+    nop
+    local.tee $0
+    )
+  
+  (func $78 (type $4)
+    (param $0 i32)
+    (result i32)
+    nop
+    nop
+    i32.const 2
+    nop
+    nop
+    local.tee $0
+    )
+  
+  (func $79 (type $2)
+    (result i32)
+    nop
+    i32.const 2
+    global.set $a
+    global.get $a
+    )
+  
+  (func $80 (type $2)
+    (result i32)
+    i32.const 2
+    nop
+    global.set $a
+    global.get $a
+    )
+  
+  (func $81 (type $2)
+    (result i32)
+    nop
+    nop
+    i32.const 2
+    nop
+    nop
+    global.set $a
+    global.get $a
+    )
+  
+  (func $82 (type $4)
+    (param $0 i32)
+    (result i32)
+    nop
+    local.get $0
+    i32.load
+    )
+  
+  (func $83 (type $4)
+    (param $0 i32)
+    (result i32)
+    local.get $0
+    nop
+    i32.load
+    )
+  
+  (func $84 (type $4)
+    (param $0 i32)
+    (result i32)
+    nop
+    nop
+    local.get $0
+    nop
+    nop
+    i32.load
+    )
+  
+  (func $85 (type $5)
+    (param $0 i32)
+    (param $1 i32)
+    nop
+    local.get $0
+    local.get $1
+    i32.store
+    )
+  
+  (func $86 (type $5)
+    (param $0 i32)
+    (param $1 i32)
+    local.get $0
+    nop
+    local.get $1
+    i32.store
+    )
+  
+  (func $87 (type $5)
+    (param $0 i32)
+    (param $1 i32)
+    local.get $0
+    local.get $1
+    nop
+    i32.store
+    )
+  
+  (func $88 (type $5)
+    (param $0 i32)
+    (param $1 i32)
+    nop
+    nop
+    local.get $0
+    nop
+    nop
+    local.get $1
+    nop
+    nop
+    i32.store
+    ))

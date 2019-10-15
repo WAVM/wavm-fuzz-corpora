@@ -1,0 +1,48 @@
+(module
+  (type $0 (func (result f64)))
+  (import "env" "memory" (memory $2 24 7940 shared))
+  (import "env" "memory" (memory $3 12 47490 shared))
+  (import "env" "memory" (memory $4 48 51571 shared))
+  (import "env" "table" (table $1 9 4294967295 shared externref))
+  (import "env" "global3" (global $5 (mut v128)))
+  (global $6  i64 (i64.const 3570871298512953408))
+  (global $7  (mut f32) (f32.const 0x1.5c95b0p+29))
+  (global $8  (mut externref) (ref.null extern))
+  (global $9  (mut externref) (ref.null extern))
+  (global $10  (mut i32) (i32.const -521956187))
+  (elem $11 memory
+    $3 $4 $2 $2 $2 $2 $3 $4
+    $2 $4 $2 $4 $2 $3 $2 $4
+    $2 $4 $4 $4 $3 $4 $4 $3
+    $3 $2 $4 $2 $4 $2 $4 $2
+    $4 $4 $4 $2 $3)
+  
+  (func $12 (type $0)
+    (result f64)
+    (local $0 externref)
+    (local $1 i64)
+    f32.const -0x1.3d0d9ap-22
+    elem.drop $11
+    local.get $1
+    i64.extend8_s
+    f32.convert_i64_u
+    f32.abs
+    nop
+    elem.drop $11
+    f32.ne
+    elem.drop $11
+    i32.ctz
+    i32x4.load16x4_s offset=683917125
+    i16x8.any_true
+    v32x4.load_interleaved_4 $4 offset=4109624303 align=2
+    global.get $10
+    i16x8.shr_s
+    v8x16.shuffle 10 6 9 21 4 25 17 26 29 22 8 14 24 4 6 21
+    f32x4.ge
+    f32x4.max
+    ref.null extern
+    global.set $8
+    global.set $5
+    global.get $8
+    unreachable
+    ))

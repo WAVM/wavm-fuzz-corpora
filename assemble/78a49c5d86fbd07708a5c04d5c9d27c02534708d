@@ -1,0 +1,29 @@
+(module
+  (type $0 (func (param f32 i32)))
+  (import "env" "table" (table $1 66 4294967295 shared externref))
+  (global $2  f32 (f32.const 0x1.a03994p+29))
+  
+  (func $4 (type $0)
+    (param $0 f32)
+    (param $1 i32)
+    (local $2 funcref)
+    (local $3 v128)
+    (local $4 v128)
+    v128.const i32x4 0x17c7ce86 0xc8ab3dd1 0xa114e4e3 0x720365e0
+    i32x4.widen_high_i16x8_s
+    i16x8.neg
+    nop
+    i32.const -1464199024
+    i16x8.replace_lane 4
+    f32x4.neg
+    local.get $0
+    f32.ceil
+    f32.const -0x1.b6ee4ep-97
+    i32.trunc_f32_s
+    i64.const -291968406964284868
+    f64.convert_i64_s
+    unreachable
+    )
+  
+  (data $3 
+    "\1e\14\dac\85L\1fN\a8E8\c5-o\be-\b4w\eao\b42b\84\d6\06\cf(\ec\e0\95HT\1b?\fb9m\87\1b\cf=\91S\f7\86\93\1b\c4\a8"))

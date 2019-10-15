@@ -1,0 +1,52 @@
+(module
+  (type $0 (func (param externref i64) (result f32 f32)))
+  (type $1 (func (param f64 i64) (result f64 externref)))
+  (type $2 (func (param funcref externref) (result externref)))
+  (import "env" "memory" (memory $5 66 49646))
+  (import "env" "global2" (global $8 f64))
+  (import "env" "global3" (global $9 i64))
+  (import "env" "global4" (global $10 (mut externref)))
+  (import "env" "func0" (func $17 (param f64 i64) (result f64 externref)))
+  (memory $6  81 23407 shared)
+  (memory $7  67 47455)
+  (table $3  4 4294967295 funcref)
+  (table $4  77 4294967295 shared externref)
+  (global $11  funcref (ref.null func))
+  (global $12  (mut i32) (i32.const 1095659435))
+  (global $13  funcref (ref.null func))
+  (elem $14 (i32.const -2084020960) funcref
+    (ref.null func) (ref.func $17) (ref.func $18) (ref.func $17)
+    (ref.func $18))
+  
+  (func $18 (type $0)
+    (param $0 externref)
+    (param $1 i64)
+    (result f32 f32)
+    global.get $13
+    global.get $12
+    i64.atomic.load $7 offset=3334122006
+    data.drop $16
+    ref.null extern
+    nop
+    f64.const 0x1.30b4949c5baaap-750
+    i64.trunc_f64_s
+    global.get $13
+    global.get $10
+    block $block (param funcref externref) (result externref)
+      atomic.fence
+      global.get $9
+      i64.popcnt
+      i32.wrap_i64
+      table.get $4
+      ref.null func
+      unreachable
+    end ;; $block
+    unreachable
+    )
+  
+  (data $15 
+    "\"\"\09\a4,\f0d\e9\d5\c7G\b7\86\fa\e2$t\ad\be\b3ex\c4\cd\a1d\1e\a7\d92\b5\b8\0d\e4!\b60H\e0D\db\8dgkuf\83,\e2\b3\10Hk\06%\80N\82\0d\89\1a\e8;#"
+    "B +\ac\fe2$1\131")
+  
+  (data $16 
+    "\b0k\f9\f4\a1\cb\11Q*J/\19\7f\a5mC\15\9c\01\eb\8f\9d\e5P\99\08\b8\n\c1\d7\12"))

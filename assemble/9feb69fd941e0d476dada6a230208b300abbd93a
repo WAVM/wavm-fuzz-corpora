@@ -1,0 +1,1 @@
+(func block $1 br $1 br $1)

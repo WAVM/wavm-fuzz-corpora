@@ -1,0 +1,95 @@
+(module
+  (type $0 (func (param i32 funcref externref) (result funcref)))
+  (type $1 (func (param i32 f32) (result v128)))
+  (type $2 (func (param externref)))
+  (type $3 (func (param i64 externref funcref) (result f64 externref)))
+  (type $4 (func (result i32 i64 externref)))
+  (type $5 (func (param i64) (result f32 i64 f64 f64)))
+  (import "env" "global0" (global $11 (mut i64)))
+  (import "env" "global2" (global $12 i32))
+  (import "env" "func0" (func $18 (param i32 funcref externref) (result funcref)))
+  (import "env" "func1" (func $19 (param i32 f32) (result v128)))
+  (memory $8  69 41885 shared)
+  (memory $9  43 9380 shared)
+  (memory $10  54 45189 shared)
+  (table $6  42 4294967295 externref)
+  (table $7  27 4294967295 externref)
+  (global $13  i64 (i64.const 1394754734650164111))
+  (global $14  (mut i64) (i64.const -2613142052198970912))
+  (global $15  (mut f64) (f64.const 0x1.542f27b3b09e4p+63))
+  (elem $16 (i32.const -751669946) memory
+    $9 $8 $9 $9 $9 $10 $10 $10
+    $8 $10 $10 $10 $8 $9 $9 $8
+    $8 $8 $9 $9 $8 $8 $10 $10
+    $8 $10 $9 $8 $10 $8 $9 $9
+    $10 $8 $9 $10 $9 $10 $10 $10
+    $9 $9 $9 $9 $9 $8 $8 $10
+    $8)
+  
+  (func $20 (type $2)
+    (param $0 externref)
+    nop
+    memory.size
+    memory.size $10
+    if $if (result i32 i64 externref)
+      global.get $13
+      i64.extend32_s
+      br 1
+    else
+      global.get $15
+      global.get $15
+      f64.eq
+      v8x16.load_interleaved_3 $9 offset=3792976626
+      f64x2.div
+      i32x4.mul
+      i8x16.abs
+      i64.const 8581934964073346640
+      i64x2.replace_lane 0
+      br 1
+    end ;; $if
+    drop
+    i64.atomic.rmw16.xchg_u offset=2294748733
+    i64.atomic.rmw8.add_u $9 offset=46180385
+    br 0
+    )
+  
+  (func $21 (type $3)
+    (param $0 i64)
+    (param $1 externref)
+    (param $2 funcref)
+    (result f64 externref)
+    (local $3 f64)
+    (local $4 funcref)
+    memory.size
+    v8x16.load_interleaved_4 $10 offset=2418093982
+    f64x2.add
+    local.get $3
+    nop
+    global.get $12
+    i32x4.splat
+    i32x4.any_true
+    global.get $13
+    i64.atomic.rmw.or offset=105326164
+    i64.ctz
+    i64.extend16_s
+    nop
+    block $block (param i64) (result f32 i64 f64 f64)
+      f64.reinterpret_i64
+      ref.null extern
+      drop
+      local.set $3
+      atomic.fence
+      v128.const i32x4 0x36b9397b 0x44b4e694 0x6742e24e 0xd58937d7
+      ref.null extern
+      call $20
+      ref.null extern
+      ref.null extern
+      unreachable
+    end ;; $block
+    f64.eq
+    table.get $6
+    unreachable
+    )
+  
+  (data $17 (i32.const 404335413)
+    "\1f\e7\n\f9J"))

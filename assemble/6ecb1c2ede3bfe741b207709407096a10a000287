@@ -1,0 +1,2 @@
+(module(type $1(func(result i64)))(func(type $1)i64.const 9221372032331076104
+return i64.const 9023203675854087820))

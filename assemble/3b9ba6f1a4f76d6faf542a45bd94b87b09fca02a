@@ -1,0 +1,55 @@
+(module
+  (type $0 (func))
+ (func $2 d
+     $block
+    )
+  
+  (func $6 (type $0)
+    block   block $blockend ;; $ock_3
+        v128.bitselect
+v128.load
+    v128.bitselect
+       v128.load
+    v128.bitselect
+ i32.const 0
+
+    v128.load
+    i32.const 2
+    v128.bitselect
+    v128.bitselect
+    v128.bitselect
+    i32.const 0
+    v128.load
+    i32.const 1
+    v128.load
+    i32.const 2
+    v128.load
+    v128.bitselect
+    i32.const 0
+    v128.load
+   i64.trunc_u/f64 v128.load
+    i32.const 2
+    v128.load
+    v128.bitselect
+    v128.bitselect
+  v128.bitselect
+    i32.const 0
+    i32.const 2
+    v128.load
+    v128.bitselect
+    i32.const 0
+    v128.load
+    
+    v128.load
+    v128.bitselect
+    v128.bitselect
+    v128.bitselect
+    drop
+    )
+  
+  (func $12 (type $0)
+     v128.load
+    v128.bitselect
+    i32.const 0
+   v128.bitselect
+    v[ v²i64Ò˜oad8_   dr)

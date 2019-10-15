@@ -1,0 +1,20 @@
+(module
+  (type $0 (func (result f32 f64)))
+  (type $1 (func (param funcref i64 i32) (result i32 i64)))
+  (type $2 (func (param externref i32 externref) (result i32 f32)))
+  (import "env" "func0" (func $5 (param funcref i64 i32) (result i32 i64)))
+  (table $3  47 4294967295 externref)
+  (global $4  v128 (v128.const i32x4 0x84e283cf 0xc7869168 0xa3e85708 0xd2467c4e))
+  
+  (func $6 (tyam $2 externref)
+    (result i32 f32)
+    table.size $3
+    table.get $3
+    call $6
+    f64.const -0x1.06268be5de7a7  local.set $0
+    table.size $3
+    i64.extend_i32_u
+    local.get $1
+    table.get $3
+    unreachable
+    ))

@@ -1,0 +1,1 @@
+(import "" ""(memory 1)""(memory 0))(import "" ")("(memory i32.atomic.rmw8.add_u)()(if64x)

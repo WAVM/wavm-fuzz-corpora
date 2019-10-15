@@ -1,0 +1,1 @@
+(func(f64.mul)(f64.mul)(f64.i32.atomic.rmwsubul)(f64.mul)(f64.mul(f64.mul))))

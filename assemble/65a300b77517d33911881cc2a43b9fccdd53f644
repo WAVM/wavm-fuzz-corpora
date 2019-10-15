@@ -1,0 +1,1 @@
+(memory 1)(func(p)i64.atomic.rmw8.add_u i64.atomic.rmw8.add_u i64.atomic.rmw8.add_u i64.atomic.rmw8.add_u(p)i64.atomic.rmw8.add_u i64.atomic.rmw8.add_u i64.atomic.rmw8.add_u i64.atomic.rmw8.add_u(p)i64.atomic.rmw8.add_u i64.atomic.rmw8.add_u i64.atomic.rmw8.add_u i64.atomic.rmw8.add_u)(func(p)i64.atomic.rmw8.add_u i64.atomic.rmw8.add_u i64.atomic.rmw8.add_u i64.atomic.rmw8.add_u)

@@ -1,0 +1,5 @@
+(func(i8x16.f.func $13) (reffunc $16)
+    (ref.null extern) (ref.func $16) (ref.null extern) (ref.func $14)
+    (ref.null extern) (ref.func $14) (ref.null extern) (ref.null func)
+    (ref.null extern) (ref.func $14) (ref.nulfunc $14) (ref.nullv64x$14)
+    (ref.null extern) (ref.null func) (ref.nxtrac)t_lan))))

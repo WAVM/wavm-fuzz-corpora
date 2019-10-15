@@ -1,0 +1,51 @@
+(module
+  (type $0 (func (param v128 f64) (result externref)))
+  (type $1 (func (param f32 funcref f32) (result v128 i64)))
+  (type $2 (func (param externref f32 i32)))
+  (import "env" "func0" (func $6 (param v128 f64) (result externref)))
+  (memory $4  56 610 shared)
+  (table $3  2 4294967295 shared funcref)
+  
+  (func $7 (type $1)
+    (param $0 f32)
+    (param $1 funcref)
+    (param $2 f32)
+    (result v128 i64)
+    local.get $2
+    f32.const 0x1.77071ep-97
+    f32.lt
+    f64.convert_i32_u
+    i64.reinterpret_f64
+    f64.convert_i64_u
+    i32.trunc_sat_f64_u
+    i32.const 852128290
+    unreachable
+    )
+  
+  (func $8 (type $2)
+    (param $0 externref)
+    (param $1 f32)
+    (param $2 i32)
+    (local $3 externref)
+    atomic.fence
+    f32.const 0x1.032a68p+37
+    memory.size
+    local.get $1
+    i64.trunc_sat_f32_u
+    i64.atomic.rmw32.xor_u offset=1258708320
+    atomic.fence
+    i64x2.splat
+    i16x8.all_true
+    i64.atomic.load16_u offset=241903101
+    local.get $0
+    atomic.fence
+    loop $loop
+      local.get $0
+      local.get $3
+      br 1
+    end ;; $loop
+    unreachable
+    )
+  
+  (data $5 
+    "\8a:\ff\d8\f5\b7^\n\cb/\ef\85\df\d1\ea|\0c\d0\f2&"))

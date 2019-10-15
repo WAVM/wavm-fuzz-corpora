@@ -1,0 +1,23 @@
+(module
+  (type $0 (func (param i64 i64 f32 f32)))
+  (type $1 (func (param f64 f64 v128 i32) (result v128)))
+  (type $2 (func (param v128 externref i64)))
+  (type $3 (func (param externref i64)))
+  (type $4 (func (param funcref) (result f64)))
+  (type $5 (func (result funcref externref i64)))
+  (import "env" "memory" (memory $6 74 14535 shared))
+(import "env" "func3" (func $13 (param externref i64)))
+  (global $8  (mut f64) (f64.const 0x1.ca1f8e09177efp+62))
+  (global $9  f64 (f64.const 0x1.d1edde619445dp+63))
+  
+  (func $14 (type $4)
+    (param $0 funcref)
+    (result f64)
+    (local $1 f64.load offset=407077991
+      br 1
+    end ;; $loop
+    ref.i16x8.add_saturate_snull func
+    ref.null extern
+    local.set $1
+    unreachable
+    ))

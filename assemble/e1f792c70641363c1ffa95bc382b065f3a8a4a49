@@ -1,0 +1,1 @@
+(global $x(mut i32) (i32.const 0))(func()global.set $x(m)global.set $xglobal.set $xx)

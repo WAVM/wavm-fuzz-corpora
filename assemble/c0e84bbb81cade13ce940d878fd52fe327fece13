@@ -1,0 +1,61 @@
+(module
+  (type $0 (func (param v128 f64 externref v128)))
+  (type $1 (func (param i64 i32 v128) (result funcref)))
+  (type $2 (func (param v128 i32) (result i64 v128 i32 v128)))
+  (memory $3  49 39268 shared)
+  
+  (func $6 (type $0)
+    (param $0 v128)
+    (param $1 f64)
+    (param $2 externref)
+    (param $3 v128)
+    (local $4 externref)
+    (local $5 f32)
+    (local $6 externref)
+    (local $7 f64)
+    atomic.fence
+    ref.null extern
+    memory.size
+    i32.extend16_s
+    i32.ctz
+    i64.load8_u offset=1402355416
+    f32.const -0x1.c05074p+14
+    i64.trunc_sat_f32_s
+    i64.rotl
+    i64.extend8_s
+    i64.extend16_s
+    return
+    )
+  
+  (func $7 (type $1)
+    (param $0 i64)
+    (param $1 i32)
+    (param $2 v128)
+    (result funcref)
+    f64.const 0x1.cefdd22ca294fp+96
+    i64.trunc_sat_f64_s
+    i64.clz
+    i64.const -6629171186962121509
+    i64.le_s
+    memory.grow
+    i32.atomic.load8_u offset=2966112382
+    v128.const i32x4 0x27031847 0x5a97ec9d 0x6e76742a 0x325d10b6
+    f32x4.abs
+    local.get $0
+    i32.const 1320926474
+    i64.load8_u offset=166153312
+    i64.ge_u
+    loop $loop (param v128 i32) (result i64 v128 i32 v128)
+      i64x2.shr_s
+      unreachable
+    end ;; $loop
+    ref.null extern
+    unreachable
+    )
+  
+  (data $4 (i32.const 1424646945)
+    "D]\e5Dn\ba\15J\061/\b2\13:\cfA\ea \07\dbwg\09MrUw\cb\c22l\d5\95\10\a4\81\91\18\97\d2\aa\89@{F\0f\f8i\03U\0d\f6\9b7\fbJ\c5<\d5| m\d1\a8"
+    "\cfF\e0~\aa\de\0e\9c\8f\aa\d3{\14\e5\87G\ed\96\fa\c3*i\bd:")
+  
+  (data $5 (i32.const -2056788100)
+    "\ff3\0b9\12\ef\a0\03\d5N\e5\8fYf\dby\00\1fz\d7\15\a93\0c[\9c<\8a\a4\95\b8\de\e8\8e\a1l\95\d1&#"))

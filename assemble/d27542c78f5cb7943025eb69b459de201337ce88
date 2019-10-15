@@ -1,0 +1,62 @@
+(module
+  (type $0 (func (param externref funcref v128 f64) (result v128)))
+  (type $1 (func (param v128)))
+  (type $2 (func (param v128 externref externref)))
+  (type $3 (func (param f32 i32 i32) (result v128)))
+  (type $4 (func (param funcref i32 i32 i64)))
+  (import "env" "memory" (memory $6 41 30855 shared))
+  (import "env" "memory" (memory $7 35 41571))
+  (import "env" "func0" (func $10 (param v128 externref externref)))
+  (import "env" "func1" (func $11 (param f32 i32 i32) (result v128)))
+  (import "env" "func2" (func $12 (param funcref i32 i32 i64)))
+  (memory $8  26 35431 shared)
+  (table $5  17 4294967295 shared externref)
+  
+  (func $13 (type $0)
+    (param $0 externref)
+    (param $1 funcref)
+    (param $2 v128)
+    (param $3 f64)
+    (result v128)
+    (local $4 i64)
+    local.get $2
+    table.size $5
+    i16x8.splat
+    f64x2.lt
+    local.set $2
+    nop
+    local.get $2
+    v128.not
+    f32x4.sqrt
+    f64x2.extract_lane 1
+    i32.trunc_f64_u
+    i32.load16_u offset=2199125314
+    v8x16.load_interleaved_2 offset=3848065464
+    loop $loop (param v128)
+      i16x8.widen_low_i8x16_u
+      call $14
+      unreachable
+    end ;; $loop
+    unreachable
+    )
+  
+  (func $14 (type $1)
+    (param $0 v128)
+    (local $1 v128)
+    local.get $1
+    f32x4.sqrt
+    i32x4.abs
+    i32x4.abs
+    f32x4.sqrt
+    i8x16.extract_lane_u 0
+    atomic.fence
+    v32x4.load_interleaved_4 $8 offset=1458733887 align=4
+    data.drop $9
+    i16x8.sub_saturate_u
+    f32x4.sqrt
+    i32x4.ne
+    return
+    )
+  
+  (data $9 
+    "U=\0d~\a0\ba\d6\ff\b8\e6\b9\a3J#?\0d~\d2"))

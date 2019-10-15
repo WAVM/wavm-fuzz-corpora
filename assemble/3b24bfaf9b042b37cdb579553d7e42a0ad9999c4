@@ -1,0 +1,6 @@
+(module
+  (type $0 (func (paresult i64)))
+  (type $2 (func (param v128) (result f32)))
+  (type $3 (func (param v12864)))
+  (type $2 (func (param v128) (result f32))(type $3 (f v128t "i8" (  xtract_lane 3
+    ))

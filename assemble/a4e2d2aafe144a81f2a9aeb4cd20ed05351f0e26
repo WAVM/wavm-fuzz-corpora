@@ -1,0 +1,53 @@
+(module
+  (type $0 (func (param v128 externref) (result externref f32)))
+  (type $1 (func (param i32 f32 i64 funcref) (result v128)))
+  (type $2 (func (param f32 i64) (result funcref)))
+  (type $3 (func))
+  (type $4 (func (param v128) (result i32)))
+  (import "env" "global0" (global $6 (mut funcref)))
+  (import "env" "global2" (global $7 f32))
+  (import "env" "global5" (global $8 f32))
+  (import "env" "global6" (global $9 funcref))
+  (import "env" "global7" (global $10 (mut v128)))
+  (import "env" "global8" (global $11 i64))
+  (import "env" "func0" (func $19 (param i32 f32 i64 funcref) (result v128)))
+  (import "env" "func1" (func $20 (param f32 i64) (result funcref)))
+  (import "env" "func2" (func $21))
+  (import "env" "func3" (func $22 (param v128) (result i32)))
+  (table $5  33 4294967295 externref)
+  (global $12  (mut i64) (i64.const 2354038796558683216))
+  (global $13  f32 (f32.const 0x1.114c3ep+24))
+  (global $14  f32 (f32.const 0x1.9d48b6p+31))
+  (elem $15 declare memory)
+  (elem $16 declare exception_type)
+  
+  (func $23 (type $0)
+    (param $0 v128)
+    (param $1 externref)
+    (result externref f32)
+    (local $2 i64)
+    local.get $1
+    f32.const -0x1.3a70d0p-74
+    global.get $12
+    local.tee $2
+    i32.wrap_i64
+    global.get $14
+    i32.reinterpret_f32
+    i32.clz
+    f64.const 0x1.b6a354beebd1ep-720
+    i32.trunc_f64_u
+    i32.extend8_s
+    i32.rotr
+    i32.rotr
+    i32.extend8_s
+    call $21
+    br_if 0
+    return
+    )
+  
+  (data $17 
+    "\f5_\9e\ecxL\9a\ce\af\84\b7\b1\dbg\cc\b9\0d<\d7\a1\9f#")
+  
+  (data $18 
+    "\92\80z\85a$Q\fc\daTF\9e\9b\fb\d2\e0\b4\1e\c2\a0g\07\9a\eb\1e\a7\b4m\b7_ K\0c\c5\f3a\0e\d7\9c\n\b5\11\a1U\ff\9fj\18\f2\ad\fd\aeN\da\c2\ebe\86\12\e5\9c#\9bu"
+    "\deH\1b\d5\7f='a\c0\c4\dd\dbY\8a9\e1\fe\d7\df\a6"))

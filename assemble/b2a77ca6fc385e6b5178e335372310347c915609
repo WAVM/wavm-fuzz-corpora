@@ -1,0 +1,82 @@
+(module
+  (type $0 (func (param i64 f64 i32 f64) (result funcref)))
+  (type $1 (func (param i64 f64) (result v128)))
+  (type $2 (func (result i64 externref i32)))
+  (type $3 (func (param i32 i64) (result i64)))
+  (import "env" "table" (table $4 93 4294967295 funcref))
+  (import "env" "global0" (global $7 (mut i32)))
+  (memory $5  50 28679 shared)
+  (memory $6  30 8422 shared)
+  
+  (func $9 (type $0)
+    (param $0 i64)
+    (param $1 f64)
+    (param $2 i32)
+    (param $3 f64)
+    (result funcref)
+    local.get $3
+    block $block (result i64 externref i32)
+      global.get $7
+      memory.grow $6
+      v32x4.load_splat offset=2837981298 align=1
+      i16x8.extract_lane_u 7
+      i64x2.load32x2_s $6 offset=648456433 align=2
+      memory.size $6
+      global.get $7
+      v16x8.load_interleaved_2 $6 offset=1325673029 align=8
+      v128.xor
+      i32x4.widen_high_i16x8_s
+      i32x4.any_true
+      i64.load32_u $6 offset=3160360097 align=2
+      block $block_0 (param i32 i64) (result i64)
+        i64.store16 offset=1085544089 align=1
+        table.size $4
+        table.get $4
+        ref.is_null
+        local.set $2
+        local.get $2
+        local.set $2
+        local.get $2
+        global.set $7
+        unreachable
+      end ;; $block_0
+      local.set $0
+      ref.null extern
+      drop
+      unreachable
+    end ;; $block
+    table.get $4
+    drop
+    ref.null func
+    drop
+    unreachable
+    )
+  
+  (func $10 (type $1)
+    (param $0 i64)
+    (param $1 f64)
+    (result v128)
+    (local $2 externref)
+    local.get $0
+    loop $loop
+      data.drop $8
+      nop
+      unreachable
+    end ;; $loop
+    drop
+    local.get $0
+    i64.extend32_s
+    i64.clz
+    memory.size
+    memory.grow
+    i32x4.splat
+    i8x16.extract_lane_u 4
+    f32.reinterpret_i32
+    v128.const i32x4 0x4adf6fb4 0xad62fba8 0xd6c20a04 0x4c9f0cc6
+    ref.null extern
+    ref.null func
+    unreachable
+    )
+  
+  (data $8 
+    "\89\9410 s\19\d7\cb"))

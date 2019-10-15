@@ -1,0 +1,47 @@
+(module
+  (type $0 (func (param i64)))
+  (type $1 (func (param v128 f64 f32) (result i64)))
+  (import "env" "table" (table $2 39 4294967295 shared funcref))
+  (import "env" "global0" (global $7 v128))
+  (import "env" "global1" (global $8 f32))
+  (import "env" "func0" (func $10 (param v128 f64 f32) (result i64)))
+  (memory $5  67 10995 shared)
+  (memory $6  58 27552)
+  (table $3  72 4294967295 shared funcref)
+  (table $4  58 4294967295 shared externref)
+  (elem $9 (i32.const -471675562) funcref
+    (ref.null func) (ref.func $11) (ref.null func) (ref.func $10)
+    (ref.func $10) (ref.null func) (ref.func $11) (ref.func $11)
+    (ref.func $11) (ref.func $10) (ref.null func) (ref.func $10)
+    (ref.null func) (ref.null func) (ref.func $10) (ref.null func)
+    (ref.func $10) (ref.func $10) (ref.null func) (ref.func $11)
+    (ref.func $10) (ref.func $11) (ref.func $11) (ref.func $11)
+    (ref.func $11) (ref.func $10) (ref.null func) (ref.func $11)
+    (ref.func $11) (ref.null func) (ref.func $10))
+  
+  (func $11 (type $0)
+    (param $0 i64)
+    (local $1 f32)
+    i32.const 919444566
+    local.get $0
+    i64.store16 $6 offset=4168451220 align=1
+    local.get $0
+    table.size $4
+    elem.drop $9
+    i32.extend16_s
+    i64.extend_i32_u
+    i64.shr_u
+    i64.extend32_s
+    f64.convert_i64_u
+    elem.drop $9
+    i64.reinterpret_f64
+    global.get $8
+    f32.floor
+    ref.null func
+    ref.null func
+    ref.is_null
+    br_if 0
+    drop
+    local.set $1
+    br 0
+    ))

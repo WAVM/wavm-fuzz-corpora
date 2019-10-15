@@ -1,0 +1,6 @@
+(module
+  (global $0  funcref (ref.null func))
+  (global $1  (mut funcref) (ref.null func))
+  (global $2  externref (ref.null extern))
+  (global $3  (mut externref) (ref.null extern))
+  (export "g-consxtern" (global $3)))

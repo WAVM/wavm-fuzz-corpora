@@ -1,0 +1,58 @@
+(module
+  (type $0 (func (param i64) (result i64 funcref)))
+  (type $1 (func (param f32) (result i32 i32 f32)))
+  (import "env" "global1" (global $3 (mut f32)))
+  (import "env" "global2" (global $4 externref))
+  (memory $2  29 13956 shared)
+  (global $5  externref (ref.null extern))
+  (elem $6 global
+    $4 $4 $5 $4 $3 $5 $4 $3
+    $3 $5 $4 $4 $3 $4 $3 $4 $3 $3 $3 $4 $5)
+  (elem $7 declare funcref
+    (ref.null func) (ref.null func) (ref.func $8) (ref.func $8)
+    (ref.func $8) (ref.func $8) (ref.func $8) (ref.func $8)
+    (ref.func $8) (ref.null func) (ref.null func) (ref.null func)
+    (ref.func $8) (ref.func $8) (ref.func $8) (ref.null func)
+    (ref.func $8) (ref.null func) (ref.func $8) (ref.func $8)
+    (ref.null func) (ref.func $8) (ref.func $8) (ref.func $8)
+    (ref.null func) (ref.null func) (ref.func $8) (ref.func $8)
+    (ref.null func) (ref.null func) (ref.null func) (ref.null func)
+    (ref.func $8) (ref.null func) (ref.func $8) (ref.null func)
+    (ref.func $8) (ref.func $8) (ref.func $8) (ref.func $8)
+    (ref.null func) (ref.null func) (ref.func $8) (ref.null func)
+    (ref.null func) (ref.func $8) (ref.null func) (ref.null func)
+    (ref.func $8) (ref.null func) (ref.null func) (ref.null func)
+    (ref.func $8) (ref.func $8) (ref.func $8))
+  
+  (func $8 (type $0)
+    (param $0 i64)
+    (result i64 funcref)
+    (local $1 f32)
+    (local $2 funcref)
+    (local $3 v128)
+    i64.const 6449122372020926732
+    global.get $5
+    f64.const 0x1.7daf40e61cbabp-439
+    v128.const i32x4 0x874d4d7b 0xf30b7062 0x2963380a 0x8d784733
+    global.get $3
+    block $block (param f32) (result i32 i32 f32)
+      i64.trunc_f32_u
+      i64x2.splat
+      i32x4.widen_high_i16x8_s
+      f64x2.sqrt
+      f64x2.sqrt
+      i64x2.neg
+      f64x2.sqrt
+      i16x8.any_true
+      global.get $5
+      drop
+      v64x2.load_interleaved_2 offset=351480453 align=2
+      f64x2.ne
+      unreachable
+    end ;; $block
+    f32.store offset=4136693912 align=2
+    i64x2.shr_u
+    drop
+    drop
+    unreachable
+    ))

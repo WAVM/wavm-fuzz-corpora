@@ -1,0 +1,10 @@
+(func br 0
+f64x2.max
+f64x2.max
+f64x2.max
+f64x2.max
+f64x2.max 
+f64x2.max
+f64x2.max
+f64x2.max br
+0)

@@ -1,0 +1,62 @@
+(module
+  (type $0 (func (param f32 f64 i64) (result i32 i64)))
+  (type $1 (func (param externref v128 f64 funcref) (result i32)))
+  (type $2 (func (param f32 f32 externref externref)))
+  (type $3 (func))
+  (type $4 (func (param f32 v128 i32 i64)))
+  (import "env" "func0" (func $6 (param f32 f64 i64) (result i32 i64)))
+  (import "env" "func1" (func $7))
+  (memory $5  79 48082 shared)
+  
+  (func $8 (type $1)
+    (param $0 externref)
+    (param $1 v128)
+    (param $2 f64)
+    (param $3 funcref)
+    (result i32)
+    (local $4 f64)
+    (local $5 f64)
+    (local $6 externref)
+    (local $7 f32)
+    local.get $1
+    i16x8.widen_low_i8x16_s
+    i32x4.abs
+    i32x4.bitmask
+    i64x2.load32x2_s offset=2667671166
+    unreachable
+    )
+  
+  (func $9 (type $2)
+    (param $0 f32)
+    (param $1 f32)
+    (param $2 externref)
+    (param $3 externref)
+    (local $4 v128)
+    unreachable
+    )
+  
+  (func $10 (type $4)
+    (param $0 f32)
+    (param $1 v128)
+    (param $2 i32)
+    (param $3 i64)
+    (local $4 v128)
+    memory.size
+    nop
+    i64x2.load32x2_u offset=1325400442 align=1
+    local.tee $4
+    i32x4.widen_high_i16x8_u
+    f64x2.neg
+    i32.const -1301745699
+    i64x2.shr_u
+    nop
+    f32x4.convert_i32x4_u
+    i16x8.extract_lane_s 6
+    i32.load16_u offset=4080907608
+    local.get $4
+    local.get $1
+    i16x8.min_u
+    v128.store offset=1555676589
+    ref.null func
+    br 0
+    ))

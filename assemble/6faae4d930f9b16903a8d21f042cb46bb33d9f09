@@ -1,0 +1,6 @@
+(func i64.or
+i64x2.neg i64x2.neg
+i64x2.neg i64x2.neg i64x2.neg i64x2.neg
+i64x2.neg i64x2.neg
+i64x2.neg i64x2.neg i64x2.neg i64x2.neg
+i64x2.neg i64x2.neg i64x2.neg i64x2.neg 0)

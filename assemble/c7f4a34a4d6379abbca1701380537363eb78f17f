@@ -1,0 +1,23 @@
+(func()i3+32.8.l )
+  
+  (func   local.get $0
+    v8x16.store_interleaved_2
+    v8x16.store_interleaved_2
+  local.get $0
+    v8x16.store_interleaved_2
+    v8x16.store_interleaved_2
+    v8x16.store_interleaved_2
+      ()
+        v8x16.store_interleaved_2
+    v8x16.store_interleaved_2
+    v8x16.store_interleaved_2
+       v8x16.store_interleaved_2
+    v8x16.store_interleaved_2
+    v8x16.store_interleaved_2
+v8x16.store_interleaved_2
+   v8x16.store_interleaved_2
+  local.get $0
+    v8x16.store_interleaved_2
+    v8x16.store_interleaved_2
+    v8x16.store_interleaved_2
+      .store))2if()i

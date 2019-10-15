@@ -1,0 +1,4 @@
+(module
+(func   $_(result i32)  block (result i32
+)  loop $l$l_ob(result i32)
+i32.const 1  end   end ))

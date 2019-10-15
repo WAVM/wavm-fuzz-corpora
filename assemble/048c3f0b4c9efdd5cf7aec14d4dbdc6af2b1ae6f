@@ -1,0 +1,3 @@
+(module(memory 8 )
+
+(func unreachable   i32.atomic.store16  i32.atomic.store16 i32.atomic.store16 i32.atomic.store16 ))

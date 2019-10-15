@@ -1,0 +1,133 @@
+(module
+  (type $0 (func (param f64) (result i32 externref)))
+  (type $1 (func (param f32 i32 funcref f32)))
+  (type $2 (func (result v128 v128)))
+  (type $3 (func))
+  (type $4 (func (param v128 f32) (result v128 i32)))
+  (type $5 (func (result f64 i32)))
+  (type $6 (func (result externref v128 f64 v128)))
+  (import "env" "memory" (memory $10 0 53158))
+  (import "env" "table" (table $7 77 4294967295 funcref))
+  (import "env" "global1" (global $13 (mut v128)))
+  (import "env" "global2" (global $14 (mut f32)))
+  (import "env" "global3" (global $15 v128))
+  (import "env" "global4" (global $16 f32))
+  (import "env" "global7" (global $17 f64))
+  (import "env" "func0" (func $23))
+  (memory $11  63 14549 shared)
+  (memory $12  72 15964 shared)
+  (table $8  97 4294967295 shared funcref)
+  (table $9  34 4294967295 externref)
+  (global $18  externref (ref.null extern))
+  (global $19  (mut funcref) (ref.null func))
+  (global $20  i64 (i64.const -1287722076365374376))
+  (elem $21 declare exception_type)
+  (elem $22 declare memory
+    $12)
+  
+  (func $24 (type $0)
+    (param $0 f64)
+    (result i32 externref)
+    (local $1 externref)
+    (local $2 v128)
+    (local $3 funcref)
+    (local $4 f32)
+    global.get $17
+    v128.const i32x4 0x6bb3e39d 0xddf61565 0x3af29782 0xc89d29df
+    i8x16.extract_lane_s 15
+    memory.size
+    i32.ctz
+    v64x2.load_interleaved_3 $11 offset=3264452082 align=2
+    i32x4.widen_high_i16x8_u
+    i8x16.add_saturate_s
+    i8x16.ne
+    i16x8.abs
+    f32.const 0x1.369328p-24
+    elem.drop $22
+    f32.trunc
+    i32.const 1910969168
+    if $if (param v128 f32) (result v128 i32)
+      f32x4.replace_lane 1
+      i32x4.all_true
+      drop
+      elem.drop $22
+      global.get $16
+      drop
+      global.get $14
+      drop
+      global.get $16
+      ref.null extern
+      drop
+      drop
+      i32.const -1276196975
+      table.get $9
+      unreachable
+    else
+      ref.null extern
+      drop
+      f32x4.replace_lane 2
+      local.tee $2
+      i16x8.abs
+      local.set $2
+      call $23
+      global.get $20
+      ref.null extern
+      unreachable
+    end ;; $if
+    i32x4.replace_lane 2
+    v128.store offset=4199405463
+    ref.null extern
+    ref.is_null
+    drop
+    ref.null extern
+    local.set $1
+    local.set $0
+    global.get $18
+    local.set $1
+    global.get $18
+    ref.is_null
+    i64.atomic.load32_u $12 offset=1084490371
+    unreachable
+    )
+  
+  (func $25 (type $1)
+    (param $0 f32)
+    (param $1 i32)
+    (param $2 funcref)
+    (param $3 f32)
+    (local $4 f64)
+    (local $5 funcref)
+    (local $6 i32)
+    unreachable
+    )
+  
+  (func $26 (type $2)
+    (result v128 v128)
+    (local $0 i64)
+    (local $1 funcref)
+    local.get $0
+    local.set $0
+    local.get $1
+    local.get $1
+    drop
+    loop $loop (result f64 i32)
+      nop
+      call $26
+      local.get $0
+      f32.convert_i64_s
+      global.get $16
+      v128.const i32x4 0x215706c5 0xe9de36f8 0xa85179e6 0x6598b816
+      block $block (result externref v128 f64 v128)
+        f64.const 0x1.a29de8217e015p+473
+        local.get $1
+        local.set $1
+        unreachable
+      end ;; $block
+      ref.null extern
+      ref.is_null
+      i16x8.replace_lane 2
+      unreachable
+    end ;; $loop
+    call_indirect $7 (type $3)
+    unreachable
+    ))

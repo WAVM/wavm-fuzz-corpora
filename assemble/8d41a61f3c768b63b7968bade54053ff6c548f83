@@ -1,0 +1,37 @@
+(module
+  (type $0 (func (param f32 i64 funcref) (result i64)))
+  (import "env" "memory" (memory $2 14 58305 shared))
+  (memory $3  74 10624)
+  (memory $4  22 35864)
+  (table $1  64 4294967295 funcref)
+  (elem $5 externref
+    (ref.null extern) (ref.null extern) (ref.null extern))
+  
+  (func $8 (type $0)
+    (param $0 f32)
+    (param $1 i64)
+    (param $2 funcref)
+    (result i64)
+    (local $3 f64)
+    local.get $2
+    i64.const 456368526612730792
+    local.get $3
+    memory.size $3
+    i64.load16_s offset=2493447365
+    f64.reinterpret_i64
+    f32.demote_f64
+    f32.sqrt
+    f32.const 0x1.7bc196p-41
+    f32.eq
+    ref.null extern
+    drop
+    table.get $1
+    ref.null func
+    unreachable
+    )
+  
+  (data $6 
+    "\18xR\fbG\1d\ac\a8H\a2\eeHO\c4\ba17\8d\a3#\96")
+  
+  (data $7 
+    "x:A)^\7f{\c9\ab)[#\01%+\fc\18\acdl4\13eo\dc\1d\d6\ab\17\13\07jL\e8$"))

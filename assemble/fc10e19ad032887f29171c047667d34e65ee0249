@@ -1,0 +1,1 @@
+(memory 2)(func()oad()i64.atomic.load)(func()i64.atomic.load()i64.atomic.load()i64.atomic.load()i64.atomic.load)(func()i64.atomic.load()i64.atomic.load()i64.icload)(func()i64.atomic.load()i64.atomic.load()i64.atomic.load()i64.atomic.load)(func()i64.atomic.load()i64.atomic.load()i64.atomic.load()i64.atomic.load)(func()i64.atomic.load()i64.atomic.load()i64.oamic.load)

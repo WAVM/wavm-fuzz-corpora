@@ -1,0 +1,3 @@
+
+(func( f32x4.t_e 2)(f32x4.extract_lane 3)()(f32x4.extract_lane 3)(f32x4.e_lane 3)(f32x4.extract_lane 2)(f)(f32x4.extract_lane 3)(f3)(f3_l)(f32x4.extract_lane 2)(f32x4alane 3)(f32x4.extract_lane 3)(2x)(f32x4.extract_lane 2)()(f32x4.extract_lane 3)(f32x4.ee 3)(f32x4.extract_lane 1)(2x)(f32x4.extract_lane 2)()(f32x4.extract_lane 3)(f_lane 2)(f32x4.extract_lane 3)(fx)(f32x4.extract_lane 2)()(f32x
+ex2)(f32x4.extract_lane 3)(fx)(f32x4.extract_lane 2)()(f32x4.extract_lane 3)))

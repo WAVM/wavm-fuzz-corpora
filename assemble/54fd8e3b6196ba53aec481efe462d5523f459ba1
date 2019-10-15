@@ -1,0 +1,2 @@
+(memory 1)(func memory.copy 1 0
+memory.copy 1 0)

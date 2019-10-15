@@ -1,0 +1,5 @@
+(module   (global $mut_glob  (mut i32)(i32.const 14))(func $5-i64.trunc_sat_f32_u
+   (param $0 i32)
+    local.get $0
+    global.set $mut_glob
+    ))

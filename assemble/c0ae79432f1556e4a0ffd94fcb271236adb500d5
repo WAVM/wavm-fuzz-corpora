@@ -1,0 +1,89 @@
+(module
+  (type $0 (func (param funcref externref f32 i64) (result f64)))
+  (type $1 (func (param externref i32) (result f64 funcref)))
+  (type $2 (func (result i64 externref)))
+  (type $3 (func (param v128 v128 funcref)))
+  (import "env" "memory" (memory $6 0 39077 shared))
+  (import "env" "memory" (memory $7 18 18409))
+  (import "env" "table" (table $4 67 4294967295 externref))
+  (import "env" "table" (table $5 34 4294967295 funcref))
+  (import "env" "global1" (global $8 (mut f64)))
+  (import "env" "global3" (global $9 f32))
+  (import "env" "global4" (global $10 (mut i64)))
+  (import "env" "global7" (global $11 (mut f32)))
+  (import "env" "func0" (func $21 (result i64 externref)))
+  (global $12  (mut v128) (v128.const i32x4 0xcc3101eb 0x9c0ac49f 0xb3df8406 0x56a3bc2c))
+  (global $13  f32 (f32.const 0x1.2ae5e6p+29))
+  (global $14  (mut externref) (ref.null extern))
+  (global $15  (mut externref) (ref.null extern))
+  (global $16  (mut f32) (f32.const 0x1.af273ep+30))
+  (global $17  i32 (i32.const -556902243))
+  (elem $18 table)
+  
+  (func $22 (type $0)
+    (param $0 funcref)
+    (param $1 externref)
+    (param $2 f32)
+    (param $3 i64)
+    (result f64)
+    (local $4 f32)
+    (local $5 f64)
+    global.get $15
+    local.tee $1
+    f32.const -0x1.f1bd42p-90
+    i32.trunc_sat_f32_s
+    i64.load32_u $7 offset=2835706815 align=2
+    global.get $11
+    i32.trunc_f32_u
+    memory.size
+    v64x2.load_interleaved_4 $7 offset=1667894216 align=8
+    f64x2.gt
+    i16x8.gt_s
+    i8x16.eq
+    i16x8.widen_high_i8x16_s
+    i8x16.extract_lane_s 12
+    i32.atomic.rmw.and offset=2187809124
+    memory.size
+    i32.gt_s
+    drop
+    local.set $3
+    global.set $15
+    call $21
+    global.set $14
+    drop
+    i64.const 7169535555461812784
+    unreachable
+    )
+  
+  (func $23 (type $1)
+    (param $0 externref)
+    (param $1 i32)
+    (result f64 funcref)
+    (local $2 f64)
+    unreachable
+    )
+  
+  (func $24 (type $3)
+    (param $0 v128)
+    (param $1 v128)
+    (param $2 funcref)
+    (local $3 externref)
+    (local $4 funcref)
+    (local $5 funcref)
+    global.get $10
+    f64.convert_i64_u
+    atomic.fence
+    atomic.fence
+    global.get $14
+    call $21
+    global.set $15
+    i64.extend32_s
+    call $21
+    unreachable
+    )
+  
+  (data $19 
+    "\b4\cbl\c4\ba\e22\d6\d0\b0\fd\b1)e\ca|\f9\07\99\c2\83\a74\a30\d7\84\a2q`\81\9b\d1\f2\d3\d2[\be8\88G\c6HJJ\b4\a5Q\c1;UI\81?z\ed")
+  
+  (data $20 (memory $7) (i32.const 1697631911)
+    "\caB\07=\n\cc]\aaS\e4g$f\d6\b9"))

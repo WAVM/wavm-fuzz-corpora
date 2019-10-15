@@ -1,0 +1,61 @@
+(module
+  (type $0 (func (param v128) (result f64)))
+  (type $1 (func (param i64) (result f32)))
+  (type $2 (func (param f64 funcref f32 i32) (result externref)))
+  (type $3 (func (param f32) (result f32 v128)))
+  (type $4 (func (result f32)))
+  (import "env" "memory" (memory $5 43 58007))
+  (import "env" "global0" (global $7 i32))
+  (import "env" "global2" (global $8 i64))
+  (import "env" "global3" (global $9 (mut externref)))
+  (import "env" "global4" (global $10 i64))
+  (import "env" "func0" (func $14 (param v128) (result f64)))
+  (import "env" "func1" (func $15 (param i64) (result f32)))
+  (import "env" "func2" (func $16 (param f32) (result f32 v128)))
+  (import "env" "func3" (func $17 (result f32)))
+  (memory $6  44 18786 shared)
+  (global $11  (mut funcref) (ref.null func))
+  (global $12  (mut f64) (f64.const 0x1.6167a745e32cfp+62))
+  
+  (func $18 (type $2)
+    (param $0 f64)
+    (param $1 funcref)
+    (param $2 f32)
+    (param $3 i32)
+    (result externref)
+    (local $4 i64)
+    (local $5 f64)
+    (local $6 f64)
+    atomic.fence
+    local.get $2
+    i64.trunc_sat_f32_s
+    i64.eqz
+    f64.load $6 offset=3535508853 align=2
+    f64.neg
+    f32.const -0x1.25f216p-81
+    v128.const i32x4 0x1df475b5 0xfbb6e527 0x0477bc6f 0xd304f667
+    atomic.fence
+    i16x8.widen_high_i8x16_u
+    f32x4.abs
+    i16x8.bitmask
+    call $17
+    i32.trunc_sat_f32_u
+    i32.const -803710276
+    i32.atomic.rmw.xor $6 offset=1671002378
+    i32.atomic.rmw16.and_u offset=3791092730
+    local.set $3
+    local.set $2
+    global.set $12
+    atomic.fence
+    nop
+    atomic.fence
+    nop
+    i32.const 1997462708
+    local.set $3
+    ref.null func
+    global.set $11
+    unreachable
+    )
+  
+  (data $13 
+    "\19\d9|{\f3\0b\97|p\1d\b6\88\02\9a\130\929\e7\8f\02AG\e9\10\ae\12[\ecs8\b7\d1\10\be\ed\d4lPSsp`\c7v\"\fdl\7f\fbTak\b2\bc(\abx\90\fd"))

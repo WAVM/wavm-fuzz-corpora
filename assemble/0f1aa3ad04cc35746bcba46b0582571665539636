@@ -1,0 +1,89 @@
+(module
+  (type $0 (func (result funcref)))
+  (type $1 (func (param v128) (result v128)))
+  (type $2 (func (param i32) (result externref i32 i32 f32)))
+  (type $3 (func (param v128 externref) (result funcref f32)))
+  (type $4 (func (result externref i32)))
+  (type $5 (func (result f64 v128)))
+  (import "env" "memory" (memory $8 27 17125 shared))
+  (import "env" "memory" (memory $9 65 65229 shared))
+  (import "env" "memory" (memory $10 97 1015 shared))
+  (import "env" "table" (table $6 53 4294967295 shared externref))
+  (table $7  42 4294967295 shared externref)
+  (global $11  (mut f32) (f32.const 0x1.5b9038p+31))
+  (global $12  f64 (f64.const 0x1.4e47f6d840e0fp+62))
+  
+  (func $15 (type $0)
+    (result funcref)
+    (local $0 i32)
+    (local $1 funcref)
+    memory.size $9
+    i64.atomic.load32_u offset=1500273978
+    f32.const -0x1.907654p+21
+    f32.floor
+    i64.trunc_sat_f32_s
+    i64.popcnt
+    i64.rem_u
+    i64.eqz
+    i64x2.load32x2_s offset=1946646826
+    i16x8.widen_low_i8x16_u
+    f32x4.extract_lane 0
+    unreachable
+    )
+  
+  (func $16 (type $1)
+    (param $0 v128)
+    (result v128)
+    (local $1 funcref)
+    (local $2 f64)
+    (local $3 i64)
+    (local $4 v128)
+    nop
+    ref.null func
+    f32.const 0x1.a1d7cap-9
+    v128.const i32x4 0xa1a2f45c 0xa674fa49 0x122667c0 0x05f5afe8
+    i32x4.extract_lane 3
+    loop $loop (param i32) (result externref i32 i32 f32)
+      i64.load16_u offset=1261556993
+      f32.convert_i64_s
+      f32.sqrt
+      table.size $7
+      i16x8.splat
+      table.size $6
+      table.get $6
+      loop $loop_0 (param v128 externref) (result funcref f32)
+        block $block (result externref i32)
+          ref.null extern
+          i32.const 926702821
+          table.get $7
+          drop
+          block $block_0 (result f64 v128)
+            global.get $12
+            i64.trunc_f64_u
+            local.set $3
+            local.get $3
+            local.set $3
+            data.drop $14
+            v128.const i32x4 0x59927277 0x8af6b370 0x89d1858b 0x500983f5
+            br 4
+          end ;; $block_0
+          drop
+          ref.null extern
+          unreachable
+        end ;; $block
+        table.get $7
+        ref.null extern
+        unreachable
+      end ;; $loop_0
+      ref.null extern
+      unreachable
+    end ;; $loop
+    unreachable
+    )
+  
+  (data $13 (memory $9) (i32.const -1199909070)
+    "\b2:\1b\a3hP\06\ac\afK\8a\8f6\d8\bc]\cd\de1\a1F\f7^\f5\f43\bdk\cd\ab]\a8\fe?)\abSj\09\fbt\b5\b5\18\d5b\c8z\ff*~WI\b1\80\88\f2E\06\ab\06\85B\9c"
+    "j\ce\83\8f\93\bf\bd\8d\f4\\\da\ba\0f&\fd\11\ea\81\95kk\03\00\1b/<\c8&\ee\83`\f9@\c2\00")
+  
+  (data $14 
+    "\0f;\c2A\f5b\c0t[\e4\a0\81\b9\ffzn\97\cb\94\89\a3D\000\88\0fv.1\d1\"P\09:\a5\bf"))

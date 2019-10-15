@@ -1,0 +1,81 @@
+(module
+  (type $0 (func (param f32 externref i64 funcref)))
+  (type $1 (func (param f32 i64 v128 funcref) (result externref)))
+  (type $2 (func (param externref f32 v128) (result f64 f32)))
+  (type $3 (func (param f32 funcref)))
+  (import "env" "memory" (memory $6 11 60904 shared))
+  (import "env" "memory" (memory $7 94 65175 shared))
+  (import "env" "table" (table $4 86 4294967295 shared funcref))
+  (import "env" "global0" (global $9 v128))
+  (import "env" "global2" (global $10 (mut i64)))
+  (import "env" "global3" (global $11 externref))
+  (import "env" "global4" (global $12 (mut funcref)))
+  (import "env" "global5" (global $13 i64))
+  (import "env" "global6" (global $14 i64))
+  (import "env" "func0" (func $18 (param f32 externref i64 funcref)))
+  (import "env" "func1" (func $19 (param externref f32 v128) (result f64 f32)))
+  (memory $8  27 53177)
+  (table $5  47 4294967295 externref)
+  (global $15  (mut funcref) (ref.null func))
+  (global $16  i64 (i64.const -1955917794780662186))
+  
+  (func $20 (type $1)
+    (param $0 f32)
+    (param $1 i64)
+    (param $2 v128)
+    (param $3 funcref)
+    (result externref)
+    global.get $13
+    atomic.fence
+    global.get $13
+    memory.size $8
+    i64.const -7342351348563392973
+    i64.atomic.rmw.sub $8 offset=156474196
+    global.get $9
+    i32x4.abs
+    global.get $11
+    local.get $1
+    local.tee $1
+    local.set $1
+    v128.const i32x4 0x560335d3 0xecfd2ce1 0x9b1e4b94 0xe9e9e8b7
+    i8x16.abs
+    i16x8.neg
+    ref.null func
+    ref.null func
+    drop
+    global.set $12
+    drop
+    drop
+    local.set $2
+    i64.le_u
+    ref.null func
+    global.set $15
+    drop
+    unreachable
+    )
+  
+  (func $21 (type $3)
+    (param $0 f32)
+    (param $1 funcref)
+    (local $2 v128)
+    (local $3 funcref)
+    i32.const 1922307502
+    i16x8.load8x8_s $8 offset=2249819700 align=1
+    memory.size $7
+    i32.load16_s $7 offset=1522121211 align=1
+    nop
+    i32x4.shr_u
+    f32x4.extract_lane 1
+    data.drop $17
+    data.drop $17
+    local.get $3
+    drop
+    i64.trunc_f32_s
+    memory.size $7
+    global.get $11
+    i64.const 547082779907231356
+    return
+    )
+  
+  (data $17 (memory $7) (i32.const 604700506)
+    "-\d0"))

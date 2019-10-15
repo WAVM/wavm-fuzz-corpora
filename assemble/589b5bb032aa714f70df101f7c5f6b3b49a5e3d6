@@ -1,0 +1,4 @@
+(func br 0
+f64x2.min
+br
+0)

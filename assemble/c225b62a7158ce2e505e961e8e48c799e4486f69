@@ -1,0 +1,69 @@
+(module
+  (type $0 (func (param f64 v128)))
+  (type $1 (func (param externref v128 i32 f64) (result i32)))
+  (type $2 (func (param v128 i64 f32) (result f32 externref)))
+  (type $3 (func (param i64) (result f64)))
+  (type $4 (func (param f64 f64) (result externref i64 funcref)))
+  (import "env" "memory" (memory $5 56 40061 shared))
+  (import "env" "global0" (global $7 funcref))
+  (import "env" "func0" (func $10 (param v128 i64 f32) (result f32 externref)))
+  (import "env" "func1" (func $11 (param i64) (result f64)))
+  (memory $6  40 8569 shared)
+  (global $8  (mut f64) (f64.const 0x1.3c8c318964cb9p+63))
+  (global $9  funcref (ref.null func))
+  
+  (func $12 (type $0)
+    (param $0 f64)
+    (param $1 v128)
+    global.get $8
+    f32.demote_f64
+    atomic.fence
+    i64.trunc_f32_u
+    f64.const -0x1.8a3786bc91419p-634
+    local.get $0
+    v128.const i32x4 0x11287d7f 0x4a0e4d52 0x811128f4 0xa3fcbee9
+    i32x4.bitmask
+    v32x4.load_splat offset=1321707164 align=2
+    i8x16.bitmask
+    br_if 0
+    memory.size $6
+    f64.convert_i32_s
+    f64.sub
+    block $block (param f64 f64) (result externref i64 funcref)
+      return
+    end ;; $block
+    return
+    )
+  
+  (func $13 (type $1)
+    (param $0 externref)
+    (param $1 v128)
+    (param $2 i32)
+    (param $3 f64)
+    (result i32)
+    (local $4 f32)
+    atomic.fence
+    f64.const 0x1.da5680e94f94bp-747
+    i32.const 352420238
+    v32x4.load_splat offset=89937394
+    local.tee $1
+    v128.const i32x4 0xa17a67e8 0xcaec78fc 0xdea77062 0xe405c807
+    v8x16.swizzle
+    i32x4.bitmask
+    i32x4.load16x4_u offset=983062711
+    i32x4.bitmask
+    v64x2.load_interleaved_4 $6 offset=3864204027 align=4
+    f32x4.gt
+    i16x8.min_s
+    i8x16.bitmask
+    if $if
+      ref.null extern
+      br $if
+    else
+      unreachable
+    end ;; $if
+    local.set $1
+    ref.null func
+    ref.is_null
+    br 0
+    ))

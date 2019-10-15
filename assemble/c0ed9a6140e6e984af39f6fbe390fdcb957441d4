@@ -1,0 +1,57 @@
+(module
+  (type $0 (func (param externref funcref) (result funcref)))
+  (type $1 (func (param i64 f64) (result externref)))
+  (import "env" "memory" (memory $4 72 7625))
+  (import "env" "table" (table $2 62 4294967295 funcref))
+  (import "env" "global0" (global $7 i64))
+  (import "env" "global2" (global $8 i64))
+  (import "env" "global4" (global $9 (mut f32)))
+  (import "env" "global6" (global $10 externref))
+  (import "env" "global7" (global $11 (mut v128)))
+  (import "env" "global8" (global $12 (mut externref)))
+  (import "env" "global9" (global $13 v128))
+  (memory $5  80 37262 shared)
+  (memory $6  77 11351 shared)
+  (table $3  25 4294967295 shared externref)
+  (global $14  externref (ref.null extern))
+  (global $15  f64 (f64.const 0x1.730fdeda7d74ep+63))
+  (global $16  (mut funcref) (ref.null func))
+  
+  (func $17 (type $0)
+    (param $0 externref)
+    (param $1 funcref)
+    (result funcref)
+    (local $2 f64)
+    (local $3 f32)
+    (local $4 i32)
+    ref.null func
+    global.get $8
+    i64.const 746156861815273005
+    global.get $8
+    f64.convert_i64_u
+    loop $loop (param i64 f64) (result externref)
+      global.get $9
+      local.get $3
+      f32.trunc
+      i32.trunc_f32_s
+      table.size $2
+      atomic.fence
+      i32.atomic.rmw16.sub_u $5 offset=3960693309
+      i32.atomic.load8_u $6 offset=1516883236
+      global.get $12
+      table.set $3
+      ref.null func
+      ref.is_null
+      table.get $3
+      ref.is_null
+      unreachable
+    end ;; $loop
+    ref.null func
+    ref.is_null
+    drop
+    ref.is_null
+    ref.null extern
+    ref.is_null
+    i32.atomic.rmw16.sub_u $6 offset=2410780713
+    unreachable
+    ))

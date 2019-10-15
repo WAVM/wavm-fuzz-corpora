@@ -1,0 +1,49 @@
+(module
+  (type $0 (func (result v128 v128)))
+  (type $1 (func (param i32) (result funcref i64 i64)))
+  (type $2 (func (param i64) (result funcref)))
+  (type $3 (func (result f32 externref externref i64)))
+  (table $4  64 4294967295 shared externref)
+  (global $5  f32 (f32.const 0x1.562ef0p+29))
+  (elem $6 declare
+    $8 $8 $8 $8 $8 $8 $8 $8
+    $8 $8 $8 $8 $8 $8 $8 $8
+    $8 $8 $8 $8 $8 $8 $8 $8
+    $8 $8 $8 $8 $8 $8 $8 $8
+    $8 $8 $8 $8 $8 $8 $8 $8
+    $8 $8 $8 $8 $8 $8 $8 $8
+    $8 $8 $8 $8 $8 $8 $8 $8
+    $8 $8 $8 $8 $8 $8 $8 $8
+    $8 $8 $8 $8 $8 $8 $8 $8
+    $8 $8)
+  
+  (func $8 (type $0)
+    (result v128 v128)
+    nop
+    i64.const -3702831394667145525
+    i64.extend8_s
+    f32.convert_i64_s
+    f32.nearest
+    i32.const 147045224
+    loop $loop (param i32) (result funcref i64 i64)
+      i8x16.splat
+      i16x8.bitmask
+      i32.popcnt
+      br $loop
+    end ;; $loop
+    loop $loop_0 (param i64) (result funcref)
+      i64.clz
+      i32.wrap_i64
+      loop $loop_1 (result f32 externref externref i64)
+        br $loop_1
+      end ;; $loop_1
+      br $loop_0
+    end ;; $loop_0
+    ref.null extern
+    ref.null func
+    ref.null func
+    unreachable
+    )
+  
+  (data $7 
+    "9\a3\04\d9r\02\be\a2\"\b4\9a\9c2\a0\d2\f3Q\87PjXk\94\95C\b6\be]\d1\86\a7r\ccX\12\f7\cf\07^X\80\9b\12^[76\fe)\05E\b2\fcw\9de"))

@@ -1,0 +1,1 @@
+(func (0$) (i8x16.gt_s(i64.le_u))(i8x16.gt_s(i64.le_u)) (i8x16.gt_s(i64.le_u) ) (i8x16.gt_s(i8x16.gt_s(i64.le_u))(i8x16.gt_s(i64.le_u)) (i8x16.gt_s(i64.le_u) ) (i8x16.gt_s(i64.le_u) ) (i64.le_u) ) )

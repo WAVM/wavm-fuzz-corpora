@@ -1,0 +1,1 @@
+ (func $1 call_indirect $2   call_indirect $3     call_indirect $1 call_indirect $4  call_indirect $2      call_indirect $1 call_indirect $4  call_indirect $2 $ )

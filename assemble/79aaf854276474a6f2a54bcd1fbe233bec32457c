@@ -1,0 +1,19 @@
+(module
+  (type $0 (func (param funcref)))
+  (import "env" "memory" (memory $1 89 52307 shared))
+  (import "env" "global0" (global $4 f64))
+  (memory $2  84 53997 shared)
+  (memory $3  62 331)
+  (global $5  (mut v128) (v128.const i32x4 0x3064c8a7 0xaa346eea 0xf80b96e7 0x4ed5db9e))
+  (global $6  v128 (v128.const i32x4 0x1a85e244 0x83773ecc 0x9f5593d9 0x5534055d))
+  
+  (func $7 (type $0)
+    (param $0 funcref)
+    (local $1 i32)
+    (local $2 funcref)
+    (local $3 i32)
+    local.get $3
+    i32.const 2146685402
+    i32.atomic.store8 offset=2333117799
+    br 0
+    ))

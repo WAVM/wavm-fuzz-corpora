@@ -1,0 +1,77 @@
+(module
+  (type $0 (func (param f32 f32)))
+  (type $1 (func (param i32)))
+  (type $2 (func (param externref)))
+  (type $3 (func (param funcref f64) (result f32)))
+  (type $4 (func (param f32 i64 i32) (result externref f32 f32 i64)))
+  (type $5 (func (param i64) (result externref funcref externref f64)))
+  (import "env" "memory" (memory $8 100 4636))
+  (import "env" "table" (table $6 26 4294967295 shared funcref))
+  (import "env" "global1" (global $11 (mut f32)))
+  (import "env" "global2" (global $12 f64))
+  (import "env" "func0" (func $14 (param funcref f64) (result f32)))
+  (memory $9  0 61711 shared)
+  (memory $10  44 11656)
+  (table $7  24 4294967295 shared funcref)
+  (global $13  (mut v128) (v128.const i32x4 0x0fa77d35 0xdedd0e9e 0x8445487b 0x1187db8a))
+  
+  (func $15 (type $0)
+    (param $0 f32)
+    (param $1 f32)
+    (local $2 v128)
+    (local $3 v128)
+    (local $4 i64)
+    (local $5 externref)
+    local.get $5
+    unreachable
+    )
+  
+  (func $16 (type $1)
+    (param $0 i32)
+    (local $1 i32)
+    (local $2 i32)
+    (local $3 f32)
+    global.get $12
+    i64.trunc_sat_f64_s
+    global.get $11
+    i64.const -3191357419202146267
+    global.get $13
+    i16x8.extract_lane_u 6
+    f32.load $10 offset=1951233729
+    f32x4.splat
+    i8x16.all_true
+    local.tee $1
+    loop $loop (param f32 i64 i32) (result externref f32 f32 i64)
+      table.get $7
+      global.get $13
+      i64x2.extract_lane 1
+      loop $loop_0 (param i64) (result externref funcref externref f64)
+        ref.null extern
+        return
+      end ;; $loop_0
+      br 1
+    end ;; $loop
+    unreachable
+    )
+  
+  (func $17 (type $2)
+    (param $0 externref)
+    (local $1 v128)
+    (local $2 i32)
+    memory.size
+    i64.load $10 offset=812511865
+    f32.const 0x1.33ae4ap-23
+    global.set $11
+    memory.size $9
+    i64.atomic.load32_u $10 offset=3752174075
+    local.get $0
+    local.tee $0
+    call $17
+    i64.ge_u
+    i64.const -8301857212407686094
+    i64.const 2428981277414462564
+    i64.extend16_s
+    i64.or
+    i64.atomic.rmw16.add_u $10 offset=974280720
+    br 0
+    ))

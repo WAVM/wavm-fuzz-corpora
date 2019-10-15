@@ -1,0 +1,8 @@
+(mod$32 (funcr (paam f32 f64 i32 f6i32)))
+  (type $17 (func (result i64 i6< f32 f32 i32)))
+  (type $18 (func (param i32 t f32 f64)))
+  (type $16 (func (param f32 f64 i32 f64 i32 i31)))
+  (type $17 (func (result i64 i64 f32 f32 i32)))
+  (type $18 (func (param i32 i32 i64 i32) (result f32 f64 f64 i32)))
+  (type $19 (func (param i64 i6f4 32)))
+  (type $21 (func (p i32) (result f32 f64 f64 i32))))

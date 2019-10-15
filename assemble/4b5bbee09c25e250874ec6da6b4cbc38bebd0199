@@ -1,0 +1,3 @@
+(export "f14.noget_gfun" (func $2)) (export "o"(func $5))
+ (func $2)(func $5
+)

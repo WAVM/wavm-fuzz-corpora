@@ -1,0 +1,68 @@
+(module
+  (type $0 (func (param funcref funcref) (result funcref)))
+  (type $1 (func (param funcref) (result i32)))
+  (type $2 (func (param i64 funcref i32 f64)))
+  (import "env" "memory" (memory $4 99 11783 shared))
+  (import "env" "table" (table $3 33 4294967295 funcref))
+  (import "env" "global1" (global $6 (mut externref)))
+  (import "env" "global2" (global $7 (mut i32)))
+  (memory $5  41 24797 shared)
+  (global $8  (mut f32) (f32.const 0x1.d2a2f0p+31))
+  (elem $9 declare funcref
+    (ref.null func) (ref.func $12) (ref.func $12) (ref.func $12)
+    (ref.func $12) (ref.null func) (ref.func $12) (ref.null func)
+    (ref.null func) (ref.func $12) (ref.null func) (ref.null func)
+    (ref.func $12) (ref.func $12) (ref.func $12) (ref.func $12)
+    (ref.func $12) (ref.null func) (ref.func $12) (ref.null func)
+    (ref.func $12) (ref.func $12) (ref.func $12) (ref.null func)
+    (ref.func $12) (ref.null func) (ref.func $12) (ref.null func)
+    (ref.func $12) (ref.null func) (ref.null func) (ref.null func)
+    (ref.func $12) (ref.func $12) (ref.func $12) (ref.null func)
+    (ref.func $12) (ref.null func) (ref.null func) (ref.func $12)
+    (ref.func $12) (ref.func $12) (ref.null func) (ref.func $12)
+    (ref.func $12) (ref.func $12) (ref.func $12) (ref.null func)
+    (ref.null func) (ref.func $12) (ref.null func) (ref.func $12)
+    (ref.null func) (ref.null func) (ref.null func) (ref.null func)
+    (ref.func $12) (ref.null func) (ref.null func) (ref.null func)
+    (ref.null func) (ref.null func) (ref.null func) (ref.null func)
+    (ref.null func) (ref.func $12) (ref.func $12) (ref.null func))
+  
+  (func $12 (type $0)
+    (param $0 funcref)
+    (param $1 funcref)
+    (result funcref)
+    (local $2 i32)
+    table.size $3
+    local.get $2
+    elem.drop $9
+    i32.atomic.rmw16.add_u $5 offset=2539869340
+    i32x4.load16x4_s offset=2521295224 align=1
+    local.get $1
+    data.drop $10
+    elem.drop $9
+    loop $loop (param funcref) (result i32)
+      local.get $2
+      i64.atomic.load16_u offset=3136729810
+      local.get $1
+      local.get $2
+      f64.const 0x1.189d1bc8ae729p+683
+      block $block (param i64 funcref i32 f64)
+        ref.null extern
+        drop
+        f64.store offset=3626097013 align=1
+        ref.is_null
+        br $block
+      end ;; $block
+      br $loop
+    end ;; $loop
+    drop
+    drop
+    f32.const 0x1.16e41cp-55
+    unreachable
+    )
+  
+  (data $10 
+    "\dd\n\a2\fb\bb\c4\16\d8\99\0cY\a9\c3\0d\0b\f4w\89S\0d-\ceP\a5\83G\f2\f5D\1e\ff\bcU\e7V'\e4\dac!\c1\e8W\c1\a3\9b\e3-\a5\ab<\ce[8")
+  
+  (data $11 (i32.const -1724652773)
+    "\faW\ad,Z\bd1\a9\10(\b7 \99 \b0E\c2d|7?\a8\f5vl@'"))

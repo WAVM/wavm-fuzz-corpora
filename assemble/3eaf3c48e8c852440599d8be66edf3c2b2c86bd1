@@ -1,0 +1,1 @@
+(memory 5)(data)(func memory.ini(func(i32.atomictomirmw8.cmpxchw_u)))(func(i32.atomic.rmw8.cmpxchg_u(i.u))(i32.atomic.rmw8.cmpxchg_u)(i32.atomic.rmw8.cmpxchg_u(i32.atom.ic.rm_u)))(func(i32.atomic.rmw8.cmpxchg_u(i.u))(i32.atomic.rmw8.cmpxchg_u)(i32.atomic.rmw8.cmpxchg_u(i32.atomic.rmw8.cmpxchg_u)))(func(i32.atomic.rmw8.cmpxchg_u(i32omipxcpu)))

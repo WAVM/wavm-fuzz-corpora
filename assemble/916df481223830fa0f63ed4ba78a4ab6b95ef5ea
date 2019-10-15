@@ -1,0 +1,85 @@
+(module
+  (type $0 (func (param f64 funcref f32 funcref) (result v128)))
+  (type $1 (func))
+  (type $2 (func (param externref externref f32) (result funcref)))
+  (type $3 (func (param i32 f64) (result funcref v128 externref f64)))
+  (import "env" "memory" (memory $6 81 38580 shared))
+  (import "env" "memory" (memory $7 56 57323 shared))
+  (import "env" "memory" (memory $8 57 42863 shared))
+  (table $4  59 4294967295 shared externref)
+  (table $5  60 4294967295 shared funcref)
+  (global $9  (mut funcref) (ref.null func))
+  (elem $10 (i32.const 796106772) table
+    $4 $5 $5 $4 $4 $4 $5 $5
+    $4 $5 $5 $4 $5 $4 $5)
+  
+  (func $13 (type $0)
+    (param $0 f64)
+    (param $1 funcref)
+    (param $2 f32)
+    (param $3 funcref)
+    (result v128)
+    (local $4 f32)
+    local.get $0
+    f64.const -0x1.514c575747624p+454
+    i64.trunc_sat_f64_s
+    i64.extend32_s
+    nop
+    i64.popcnt
+    i64.extend8_s
+    local.get $4
+    i32.trunc_f32_u
+    i16x8.load8x8_s $7 offset=3982007562 align=4
+    i8x16.bitmask
+    f64.const 0x1.60f2bca147da9p-4
+    loop $loop (param i32 f64) (result funcref v128 externref f64)
+      f64.floor
+      unreachable
+    end ;; $loop
+    ref.null func
+    local.set $1
+    ref.null extern
+    drop
+    ref.null extern
+    drop
+    local.set $0
+    ref.null extern
+    ref.is_null
+    table.get $4
+    drop
+    drop
+    br 0
+    )
+  
+  (func $14 (type $1)
+    (local $0 externref)
+    (local $1 f64)
+    return
+    )
+  
+  (func $15 (type $2)
+    (param $0 externref)
+    (param $1 externref)
+    (param $2 f32)
+    (result funcref)
+    (local $3 i32)
+    i32.const -1057056709
+    ref.null func
+    f32.const 0x1.6428aap+50
+    f32.ceil
+    f32.abs
+    call $14
+    f32x4.splat
+    f64x2.abs
+    i32x4.widen_high_i16x8_s
+    f32x4.convert_i32x4_s
+    i32x4.widen_low_i16x8_u
+    unreachable
+    )
+  
+  (data $11 (memory $7) (i32.const -66148864)
+    "3\8c\bdy\b0 \bd\c9p\a1\d5\116l\8a`jCp\18\03\08?\e47\a3Z\f9b\e3:\e0(\8d\d7\82.${<\a4\88\07\14T.\e2\d17\b2\d0\17E\15\d4\nSi\bd|\e5\c9+\fd"
+    "\8b\1f\f1\83\ce\b2z\f2\01\f7\d8XQW\bf\e68\8f\fb\b9\dfB\91\82@\b7")
+  
+  (data $12 (memory $8) (i32.const -759283185)
+    "\9aN\16%\93\ed\17e\1d\90\dbB8\8a\1f\ccq,bpI\9d\b2Z\cb\11Y\eb\b2x\8a\10\8f\a2\ce"))

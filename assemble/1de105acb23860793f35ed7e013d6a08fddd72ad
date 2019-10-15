@@ -1,0 +1,94 @@
+(module
+  (type $0 (func (param v128 v128 v128 f32)))
+  (type $1 (func))
+  (type $2 (func (param i64 funcref i32)))
+  (type $3 (func (param f64 f32 f64)))
+  (type $4 (func (param f64) (result f32 funcref)))
+  (type $5 (func (param funcref f64 f32 funcref funcref) (result funcref)))
+  (import "env" "memory" (memory $7 47 16384))
+  (import "env" "table" (table $6 58 4294967295 shared externref))
+  (import "env" "global1" (global $10 (mut v128)))
+  (import "env" "global2" (global $11 i32))
+  (import "env" "global3" (global $12 externref))
+  (import "env" "global4" (global $13 i64))
+  (import "env" "func0" (func $16 (param f64 f32 f64)))
+  (memory $8  31 54166 shared)
+  (memory $9  14 62941 shared)
+  (global $14  funcref (ref.null func))
+  (elem $15 memory
+    $8 $7 $9 $9 $9 $8
+    $9 $8 $9 $7 $9 $9 $7 $9
+    $7 $9 $8 $9 $7 $7 $8 $9
+    $8 $7 $7 $8 $8 $7 $9 $8
+    $7 $7 $8 $7 $8 $8 $7 $9
+    $7 $7 $8 $7 $7 $7 $9 $8
+    $7 $9 $7 $8 $8 $8 $8 $9
+    $7 $9 $8 $9 $8 $8 $7 $8
+    $9 $7 $9 $9 $9 $9 $7 $8
+    $9 $8 $9 $8)
+  
+  (func $17 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (param $2 v128)
+    (param $3 f32)
+    (local $4 f64)
+    (local $5 funcref)
+    (local $6 f64)
+    (local $7 i32)
+    local.get $1
+    i32x4.bitmask
+    elem.drop $15
+    i32.popcnt
+    global.get $14
+    f64.const 0x1.3227c075de252p-616
+    local.get $6
+    block $block (param f64) (result f32 funcref)
+      i32.const -2072848519
+      memory.grow
+      unreachable
+    end ;; $block
+    local.get $5
+    block $block_0 (param funcref f64 f32 funcref funcref) (result funcref)
+      global.get $14
+      f64.const -0x1.8c55e071cc4fcp+48
+      br 1
+    end ;; $block_0
+    local.set $5
+    ref.null func
+    ref.is_null
+    i32.atomic.rmw8.and_u $9 offset=2679915760
+    table.get $6
+    drop
+    return
+    )
+  
+  (func $18 (type $1)
+    f64.const 0x1.247614aec4861p+981
+    f32.const 0x1.8d4e82p-49
+    unreachable
+    )
+  
+  (func $19 (type $2)
+    (param $0 i64)
+    (param $1 funcref)
+    (param $2 i32)
+    (local $3 i64)
+    local.get $2
+    i32.eqz
+    i32.load $9 offset=3926216060 align=1
+    f64.convert_i32_s
+    i64.trunc_sat_f64_u
+    f64.convert_i64_s
+    i64.trunc_sat_f64_u
+    f64.convert_i64_s
+    i32.trunc_sat_f64_s
+    drop
+    atomic.fence
+    global.get $14
+    i64.const 8503742790413112384
+    i64.extend32_s
+    call $18
+    ref.null extern
+    return
+    ))

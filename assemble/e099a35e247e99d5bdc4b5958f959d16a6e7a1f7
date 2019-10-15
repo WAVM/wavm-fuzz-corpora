@@ -1,0 +1,3 @@
+(func
+i64.const 71
+i64.const 4 return)

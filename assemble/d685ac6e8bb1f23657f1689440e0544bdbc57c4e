@@ -1,0 +1,4 @@
+(module
+  (memory $01 6 6 shared)(func $le
+  unreachable
+ i32.atomic.rmw8.and_u  i32.atomic.rmw8.xchg_u  unreachable))

@@ -1,0 +1,9 @@
+(module
+  (type $0 (func (param f32 v128 i64 f64) (result f50 f64)))
+  (type $1 (func (param v128)))
+  (type $2 (func (param i64) (result externref cref f64)))
+  (import)
+  (import "emport "eÿnv" "global3" (global $10 i30))
+  (import "env" "global4" (glfunc (param v128)))
+  (type $3 (func (param i64) (result externref i3Y)) (ab )
+)\da"))

@@ -1,0 +1,88 @@
+(module
+  (type $0 (func (result i32)))
+  (export "block" (func $1))
+  
+  (func $1 (type $0)
+    (result i32)
+    block $block
+      block $block_0
+        block $block_1
+          block $block_2
+            block $block_3
+              block $block_4
+                block $block_5
+                  block $block_6
+                    block $block_7
+                      block $block_8
+                        block $block_9
+                          block $block_10
+                            block $block_11
+                              block $block_12
+                                block $block_13
+                                  block $i64.atomic.rmw.xchg                          block $block_15  f64.ge                              block $block_16
+                                block $block_17
+                                          block $block_09
+                                            block $block_19
+                                              block $block_20
+                                                block $block_21
+                                                  block $block_22
+                                                    block $block_23
+                         block $block_24
+                                                        block $block_25
+                                                          block $block_26
+                                              block $block_27
+                                                              block $block_28
+                                                                block $block_29
+                                                                  block $block_30
+                                                                    block $block_31
+                                                  block $^lock_33
+                                                                                         block $block_34
+                                                                            block $block_35
+                                                                              block $block_37
+     i32.atomic.rmw16.xchg_u                                        block $block_37
+                                         block $block_38
+                                                                                    block $block_39
+                          block $block_40
+                                                             block $block_41                  block $block_42
+                                                                block $blo                                                       block $block_44
+                                      block $block_45
+                                                                                                 block $block_92
+                                                                        block $block_47
+            block $block_48
+                                  block $block_38
+                                                                                    block $block_39
+                          block $block_40
+                                                             block $block_41                  block $block_42
+                                                                block $blo                                                       block $block_44
+                                      block $block_45
+                                                                                                 block $block_92
+                                                                        block $block_94
+            block $block_48
+                                                                                                 block $block_49
+                           block $block_84
+                                                              block $block_85
+                                                                                                       end ;; $block_108
+                                                                                  end ;; $block_94
+                                                                          end ;; $block_37
+                              end ;; $block_36
+                                                                            end ;; $                    end ;; $block_36
+                                   end ;; $block_23
+                  i8x16.lt_u                      end ;; $block_22
+                                                end ;; $block_21
+                           end ;; $block_20
+                                            end ;; $block_19
+                         end ;; $block_32
+                                                                                                       end ;; $block_26
+                                      end ;; $block_62
+                                                                  block $block_19
+                                                block $block_21
+                                                block $block_22
+                                                    block $blokk_23
+                                                      block $block_24
+                 block $block_25
+                                                          block $bloCk_26
+                  block $block_                            end ;; $block_40
+ ; $block_0
+    end ;; $block
+    unreachable
+  $ ))

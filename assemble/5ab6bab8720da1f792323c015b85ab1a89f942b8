@@ -1,0 +1,1 @@
+(memory 3)(func()i64.atomic.load()i64.atomic.load)

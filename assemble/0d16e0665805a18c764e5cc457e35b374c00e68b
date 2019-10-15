@@ -1,0 +1,3 @@
+(func $i64.e(para i32))
+ (global funcref (ref.func 0))
+  

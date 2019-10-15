@@ -1,0 +1,50 @@
+(module
+  (type $0 (func (result f32 i32)))
+  (type $1 (func (result externref f64 funcref v128)))
+  (import "env" "table" (table $2 55 4294967295 shared externref))
+  (import "env" "global3" (global $5 i32))
+  (memory $4  73 57350 shared)
+  (table $3  58 4294967295 shared externref)
+  (global $6  externref (ref.null extern))
+  (global $7  f64 (f64.const 0x1.b43227cd17809p+63))
+  (global $8  (mut funcref) (ref.null func))
+  
+  (func $9 (type $0)
+    (result f32 i32)
+    (local $0 funcref)
+    (local $1 funcref)
+    (local $2 funcref)
+    (local $3 externref)
+    f32.const 0x1.30e3cap+121
+    local.get $2
+    i32.const -1641711503
+    table.get $2
+    loop $loop (result externref f64 funcref v128)
+      i32.const 612980656   atomic.fence
+      call $9
+      ref.null extern
+      br $loop
+    end ;; $loop
+    drop
+    global.set $8
+    drop
+    ref.null extern
+    local.set $3
+    ref.is_null
+    drop
+    ref.is_null
+    table.get $3
+    ref.is_null
+    table.get $3
+    ref.is_null
+    table.get $3
+    local.set $3
+    drop
+    i32.trunc_f32_u
+    ref.null func
+    local.set $1
+    table.get $3
+    ref.null extern
+    ref.is_null
+    unreachable
+    ))

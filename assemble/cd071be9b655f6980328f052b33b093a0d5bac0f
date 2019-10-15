@@ -1,0 +1,73 @@
+(module
+  (type $0 (func (param i32 f64 f64 i32) (result funcref externref)))
+  (type $1 (func (param funcref i32 i32)))
+  (type $2 (func (result f64 i32)))
+  (type $3 (func (result f32)))
+  (type $4 (func (param f64) (result v128)))
+  (import "env" "memory" (memory $8 60 18576 shared))
+  (import "env" "memory" (memory $9 55 57953))
+  (import "env" "memory" (memory $10 63 30053))
+  (import "env" "func0" (func $15 (param i32 f64 f64 i32) (result funcref externref)))
+  (import "env" "func1" (func $16 (result f64 i32)))
+  (table $5  29 4294967295 funcref)
+  (table $6  39 4294967295 funcref)
+  (table $7  77 4294967295 externref)
+  (global $11  v128 (v128.const i32x4 0x622373e2 0xa69cf2d2 0x650bcacd 0xb5187378))
+  (elem $12 declare table
+    $6 $6 $6 $7 $5 $6 $7 $5)
+  
+  (func $17 (type $1)
+    (param $0 funcref)
+    (param $1 i32)
+    (param $2 i32)
+    nop
+    i64.const 3215774262190062184
+    i64.const -3320575744180465734
+    f64.convert_i64_s
+    ref.null extern
+    local.get $1
+    v8x16.load_splat offset=3315231239
+    atomic.fence
+    local.get $2
+    v8x16.load_interleaved_3 $10 offset=1130610988 align=1
+    f64x2.max
+    i16x8.ge_s
+    i16x8.all_true
+    v64x2.load_interleaved_4 $10 offset=2422061444 align=2
+    unreachable
+    )
+  
+  (func $18 (type $3)
+    (result f32)
+    (local $0 f64)
+    ref.null func
+    table.size $7
+    i64.load16_s $10 offset=2454879165
+    i64x2.splat
+    local.get $0
+    loop $loop (param f64) (result v128)
+      call $18
+      i32.const -694423002
+      i32x4.splat
+      i8x16.extract_lane_s 8
+      i64.load32_u $9 offset=2904604830 align=2
+      loop $loop_0 (result v128)
+        i64.const 7845242645874920758
+        i64.popcnt
+        i64.clz
+        unreachable
+      end ;; $loop_0
+      unreachable
+    end ;; $loop
+    i32x4.sub
+    ref.null func
+    ref.null func
+    unreachable
+    )
+  
+  (data $13 (i32.const -782738812)
+    "\c1\c3\cb\fe\fc12\8a\12\dd\1a\f9\98x0\eb\d3\b34&W\87n\10\feP\fe")
+  
+  (data $14 
+    "g\18:\c3\91\89 r;W\18\d1X\e1t\80\f7\ae\8d\b3'?Qj0\02\f4\83H\a2\13\dd9\"\c8\08\fcm\d9\ba%diwY\ba\83\aa4\ad\81\8d2\b4\be\a9\da\a6\ca\84c\b7'\10"
+    "?\17=*\0b.\\\84"))

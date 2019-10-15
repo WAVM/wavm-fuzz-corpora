@@ -1,0 +1,53 @@
+(module
+  (type $0 (func (param i64 f32 f32 i64)))
+  (type $1 (func (result i64)))
+  (type $2 (func (param f32 funcref) (result f64 funcref)))
+  (type $3 (func (result v128)))
+  (import "env" "global1" (global $5 (mut funcref)))
+  (import "env" "global2" (global $6 (mut i64)))
+  (import "env" "func0" (func $13 (result i64)))
+  (import "env" "func1" (func $14 (param f32 funcref) (result f64 funcref)))
+  (memory $4  55 8019 shared)
+  (global $7  externref (ref.null extern))
+  (global $8  (mut f32) (f32.const 0x1.3666c4p+31))
+  (global $9  (mut i32) (i32.const -224924961))
+  (global $10  v128 (v128.const i32x4 0x859df341 0xd535228b 0xf799c590 0xf16304a4))
+  (elem $11 declare table)
+  (elem $12 declare funcref
+    (ref.null func))
+  
+  (func $15 (type $0)
+    (param $0 i64)
+    (param $1 f32)
+    (param $2 f32)
+    (param $3 i64)
+    (local $4 i64)
+    atomic.fence
+    )
+  
+  (func $16 (type $3)
+    (result v128)
+    (local $0 externref)
+    memory.size
+    i64.load8_u offset=1481625277
+    global.get $7
+    local.set $0
+    i64.extend32_s
+    drop
+    f32.const -0x1.42f2e4p-7
+    call $13
+    f32.convert_i64_s
+    f32.ge
+    v128.const i32x4 0xcd88978f 0xe6de2cdb 0x24d5844a 0x304237e4
+    i32x4.all_true
+    i32.xor
+    elem.drop $11
+    i64.load16_u offset=3416982440 align=1
+    ref.null func
+    ref.null func
+    global.set $5
+    drop
+    ref.null func
+    ref.null extern
+    unreachable
+    ))

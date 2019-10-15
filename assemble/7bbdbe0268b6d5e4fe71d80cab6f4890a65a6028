@@ -1,0 +1,30 @@
+(module
+  (type $0 (func))
+  (export "id-hr_u" (func $19))
+  (memory $1  2)
+  
+  (func $2 (type $0)
+   
+    )
+  
+  (func $22 (type $0)
+   i32.const 0
+    v128.load
+    i32.const 1
+    i8x16.shl  drop
+    )
+  
+  (func $12 (type $0)
+    i32.const 0
+ drop
+    )
+  
+  (func $19 (type $0)
+    i32.const 0
+    v128.load
+    i32.const 1
+      i8x16.shl
+    i32.const 1
+   i32x4.shr_u
+    drop
+    ))

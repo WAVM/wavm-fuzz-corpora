@@ -1,0 +1,9 @@
+(module
+  (type $0 (func))
+(elem $51 funcref)
+  (elem $5fu'ncref)
+  (elem $7loopncref)
+  
+  (func $67 (t=pe $0)
+    i32.const 0 table.init $66 $1
+    ))

@@ -1,0 +1,3 @@
+(func
+i64.const -7
+i64.const -71 return)

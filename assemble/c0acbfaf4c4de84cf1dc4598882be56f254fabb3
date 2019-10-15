@@ -1,0 +1,7 @@
+(module
+  (type $0 (func (result externref)))
+  
+  (func $1 (type $0)
+    (result externref)
+    ref.null extern
+    ))

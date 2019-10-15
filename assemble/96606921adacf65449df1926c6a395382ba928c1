@@ -1,0 +1,5 @@
+(func $ol  i16x8.min_u
+ i64.rotl  i16x8.min_u
+  )
+ (func i16x8.min_u
+  i64.rotl  i16x8.min_u )

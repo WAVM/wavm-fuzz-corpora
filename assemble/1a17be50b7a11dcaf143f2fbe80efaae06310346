@@ -1,0 +1,2 @@
+(type(func(param i64 v128) (result i32 funcref)))
+(func (param i64 v128) (result i32 funcref)))))

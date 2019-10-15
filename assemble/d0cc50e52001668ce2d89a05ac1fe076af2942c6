@@ -1,0 +1,51 @@
+(module
+  (type $0 (func (param v128 v128 v128) (result v128)))
+  (type $1 (func (param v128 v128) (result v128)))
+  (export "max-min" (func $2))
+  (export "min-max" (func $3))
+ (export "max-abs" (func $4))
+  (export "min-abs" (func $5))
+  
+  (func $2 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (param $2 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    f32x4.min
+    local.get $2
+    f32x4.max
+    )
+  
+  (func $3 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (param $2 v128)
+    (result v128)
+   local.get $0
+    local.get $1
+    f32x4.max
+    local.get $2
+    f32x4.min
+    )
+  
+  (func $4 (type $1)
+    (param $0 v128)
+    (param $1 v128)
+    (result v128)
+    local.get $0
+    f32x4.abs
+    local.get $1
+    f32x4.max
+    )
+  
+  (func $5 (type $1)
+    (param $0 v128) 
+   (param $1 v128)
+    (result v128)
+    local.get $0
+    f32x4.abs
+    local.get $1
+    f32x4.min
+    ))

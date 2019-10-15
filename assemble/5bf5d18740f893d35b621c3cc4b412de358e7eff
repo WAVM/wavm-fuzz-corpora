@@ -1,0 +1,86 @@
+(module
+  (type $0 (func (param f32 i64 v128 v128) (result v128)))
+  (type $1 (func (param f32 f64 funcref) (result f32)))
+  (type $2 (func (param i64 externref f32 f64) (result funcref)))
+  (import "env" "global0" (global $4 i32))
+  (import "env" "global1" (global $5 i32))
+  (import "env" "global2" (global $6 f32))
+  (import "env" "func0" (func $12 (param f32 i64 v128 v128) (result v128)))
+  (memory $3  6 45946 shared)
+  (global $7  i32 (i32.const -513956961))
+  (elem $8 declare
+    $13 $14 $12 $12 $13 $13 $13 $12
+    $12 $14 $13 $12 $13 $14 $12 $14
+    $14 $13 $14 $14 $12 $12 $13 $12
+    $14 $13 $14 $14 $12 $12 $12 $14
+    $14 $13 $12 $12 $12 $13)
+  (elem $9 declare
+    $12 $13 $14 $14 $12 $13 $12 $13
+    $12 $14 $13 $13 $14 $14 $12 $14
+    $13 $13 $12 $14 $12 $14 $12 $14
+    $12 $14 $14 $13 $13 $13 $12 $14
+    $12 $12 $13 $13 $12 $12 $12 $12
+    $13 $14 $12 $14 $13 $14 $13 $12)
+  
+  (func $13 (type $1)
+    (param $0 f32)
+    (param $1 f64)
+    (param $2 funcref)
+    (result f32)
+    (local $3 f64)
+    (local $4 v128)
+    (local $5 externref)
+    (local $6 funcref)
+    local.get $3
+    i32.trunc_f64_u
+    local.get $3
+    i32.trunc_f64_s
+    i32.gt_s
+    v64x2.load_splat offset=3642486822
+    i32x4.neg
+    drop
+    memory.size
+    i32.atomic.load16_u offset=2211868337
+    memory.grow
+    local.get $3
+    f64.floor
+    f64.neg
+    i32.trunc_f64_s
+    i32.gt_s
+    unreachable
+    )
+  
+  (func $14 (type $2)
+    (param $0 i64)
+    (param $1 externref)
+    (param $2 f32)
+    (param $3 f64)
+    (result funcref)
+    (local $4 f64)
+    (local $5 f64)
+    i64.const -2588001719611824982
+    i32.const 102909711
+    v16x8.load_interleaved_2 offset=2299546263 align=2
+    f32x4.sqrt
+    i8x16.sub_saturate_u
+    i16x8.widen_high_i8x16_u
+    i32x4.widen_high_i16x8_s
+    loop $loop (result externref)
+      f32.const -0x1.6c8a06p+13
+      i32.trunc_sat_f32_u
+      ref.null extern
+      ref.is_null
+      i32x4.load16x4_u offset=1813569892
+      i8x16.all_true
+      i32.div_u
+      ref.null extern
+      br $loop
+    end ;; $loop
+    unreachable
+    )
+  
+  (data $10 
+    "\8c\96\8f\1a\f5@)\0f$\fc\a9\bf\c6{\83h\ab\a0'=\bb\c6\e9\ad\acF)\8b\ed")
+  
+  (data $11 (i32.const -1002402120)
+    "\\\df'O\8d\fc{\f8[\f14-\17\87\da\afq\10d\f8\e5\0cd\f8\bf\eb\c8\b1\da\a0E\fc\09\d4:\fb\f4\n\a4\06\d2\be\a9"))

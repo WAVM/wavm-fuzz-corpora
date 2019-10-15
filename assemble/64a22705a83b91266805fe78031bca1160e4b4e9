@@ -1,0 +1,72 @@
+(module
+  (type $0 (func (param f64 f64)))
+  (type $1 (func))
+  (type $2 (func (param i32 f32) (result i32)))
+  (import "env" "global0" (global $4 f64))
+  (import "env" "func0" (func $7 (param f64 f64)))
+  (table $3  12 4294967295 shared externref)
+  
+  (func $8 (type $1)
+    ref.null func
+    v128.const i32x4 0xa30a6a27 0xd05d6219 0xb842d602 0xbcf569d6
+    i32x4.widen_low_i16x8_s
+    i32x4.extract_lane 3
+    br 0
+    )
+  
+  (func $9 (type $1)
+    (local $0 externref)
+    (local $1 f32)
+    table.size $3
+    i64.extend_i32_s
+    nop
+    f64.reinterpret_i64
+    i64.trunc_f64_s
+    loop $loop (result externref)
+      global.get $4
+      call $8
+      i64.trunc_f64_s
+      nop
+      global.get $4
+      i32.trunc_f64_s
+      local.get $0
+      nop
+      ref.is_null
+      i32.gt_s
+      return
+    end ;; $loop
+    local.set $0
+    return
+    )
+  
+  (func $10 (type $2)
+    (param $0 i32)
+    (param $1 f32)
+    (result i32)
+    (local $2 i64)
+    (local $3 f64)
+    i64.const 5416811382255609006
+    i64x2.splat
+    i8x16.abs
+    f32x4.extract_lane 0
+    i32.trunc_sat_f32_s
+    i32.ctz
+    v128.const i32x4 0xecbe0793 0x3f10ea57 0xf9aefdff 0x8e669a48
+    i16x8.widen_high_i8x16_u
+    i8x16.neg
+    i32x4.neg
+    i32x4.extract_lane 0
+    i16x8.splat
+    i16x8.widen_high_i8x16_u
+    i32.const -1498800804
+    ref.null func
+    drop
+    unreachable
+    )
+  
+  (data $5 
+    "\18\86\88`8\8d\87k\aa\f6>\be\d2\89")
+  
+  (data $6 
+    "kC,\08\8cW\8dR\f7.\b7i`\ad\0be8\e7,\16\83\11is6\13\10R\81\98[\1a\a7M\bb\83\0b\13\01\d9\f9\a2\16\e0W\ce\c1\f9\06\d5u\ce\e5]\98\cc\1b\ce\f36\f1Lw<"
+    "\cdV#\faX\ac\dd\e1\adR\12\d7`\d2\9a\89P\04Y\b8\17\ae\94m"))

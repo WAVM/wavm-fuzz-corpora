@@ -1,0 +1,13 @@
+(func
+i32.ge_u
+i32.ge_u i32.ge_u
+i32.ge_u
+i32.ge_u
+i32.ge_u i32.ge_u
+i32.ge_u
+i32.ge_u
+i32.ge_u i32.ge_u
+i32.ge_u
+i32.ge_u
+i32.ge_u i32.ge_u
+i32.ge_u )

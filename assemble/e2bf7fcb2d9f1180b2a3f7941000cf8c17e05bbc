@@ -1,0 +1,5 @@
+(memory 1)(func()f32.store
+f32.store
+f32.store
+f32.store
+f32.store f32.store f32.store f32.store )

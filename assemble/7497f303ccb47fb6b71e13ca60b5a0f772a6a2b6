@@ -1,0 +1,10 @@
+(module
+   (memory $2  1)
+
+  
+ (func  i32.const 6   i64.const 0
+    i64.atomic.rmw.xor  drop
+   )  
+ (func  i32.const 7   i64.const 0
+    i64.atomic.rmw.xor  drop
+   ))

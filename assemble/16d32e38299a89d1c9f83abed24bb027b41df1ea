@@ -1,0 +1,5 @@
+(func
+i8x16.sub)(func
+16.sub)(func
+i8x16.sub)(func
+i8x16.sub)

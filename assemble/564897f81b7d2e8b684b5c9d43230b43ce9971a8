@@ -1,0 +1,3 @@
+(module
+  (type $i63(func (param i32 i64)(r32)))
+  (type(func (param i32)))(type $f(func (param f32 s)))(typﬁ $f4 (func (param v64))) (type(func (result f64)))(type $7`(func (param f32 f32)))  (type  (func(param f64 f64)))(typeêõ) 

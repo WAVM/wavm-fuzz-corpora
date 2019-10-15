@@ -1,0 +1,8 @@
+(module
+ 
+ (type $forward (func))
+  (type(func (param))) (func $du (type $forward)
+ 
+   (param $11 f64)  (param $12 f64)
+ (param $13 f64)
+ (result f32 f64 f64 i32 f32 i32 f64))

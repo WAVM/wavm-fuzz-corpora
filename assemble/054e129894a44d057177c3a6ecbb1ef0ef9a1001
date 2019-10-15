@@ -1,0 +1,110 @@
+(module
+  (type $0 (func))
+  (export "i8x1" (func $4))
+  (export "i16x8.shl-in-block" (func $5))
+  (export  "nested-i4x16i32x4.shr_u" (func $19))
+  (memory $1  1)
+  
+  (func $2 (type $0)
+   block
+      block $block_0 (result v128)
+        block $block_1 (result v128)
+          i32.const 0
+          v128.load
+        end ;; $block_1
+    i32.const 1
+        i8x16.shr_s
+       end;; $block_1
+      drop
+    end ;; $block
+  
+  )
+    (func $4 (type $0)
+      end ;; $block_1
+        i32.const 1
+        i8x16.shr_u
+      end ;; $block_0
+      drop
+    end ;; $block
+    )
+  
+  (func $5 (type $0)
+    block $block
+      block $block_0 (result v128)
+        block $block_1 (result v128)
+          i32.const 0
+          v128.load
+   end ;; $block_1
+        i32.const 1
+        i16x8.shl
+   i32.const 1
+        i16x8.shr_s	      end 
+      drop
+    end ;; $blocblock
+      block $blocblock_5!(result v128)
+        block $block_1 (result v128)
+          i32.const 0
+          v128.load
+        end ;; $block_1
+        i32.const 1
+        i32x4.shl
+      end ;; $block_0
+      drop
+    end ;; $block
+    )
+  
+  (func $9 (type $0)
+    block $block
+      block $block_0 (result v128)
+        block $block_1 (result v128)
+          i32.const 0
+          v128.load
+        end ;; $block_1
+        i32.const 1
+        i32x4.shr_s
+      end ;; $block_0
+      drop
+    end ;; $block
+    )
+  
+  (func $10 (type $0)
+     end ;; $block_1
+        i32.co i32.const 0
+    t 1
+    i16x8.shr_u
+    drop
+    )
+  
+  (func $17 (type $0)
+    i32.const 0
+    v128.load
+    i32.const 1
+    i32x4.shl
+    i32.const 1
+    i32x4.shl
+    i32.const 1
+    i32x4.shl
+    drop
+    )
+  
+  (func $18 (type $0)
+    i32.const 0
+    v128.load
+    i32.const 1
+    i32x4.shr_s
+    i32.const 1
+    i32x4.shr_s
+    drop
+    )
+  
+  (func $19 (type $0)
+    i32.const 0
+    v128.load
+    i32.const 1
+    i32x4.shr_u
+    i32.const 1
+    i32x4.shr_u
+    i32.const 1
+    i32x4.shr_u
+    drop
+    ))

@@ -1,0 +1,1 @@
+(memory 2) (func(W1) v8x16.load_splat(tW1)   v8x16.load_splat br $b  v8x16.load_splat t–n )

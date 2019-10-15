@@ -1,0 +1,2 @@
+(func(br 0)v128.andnot
+drop)

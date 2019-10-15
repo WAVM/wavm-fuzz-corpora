@@ -1,0 +1,1 @@
+(func v128.const i32x4 0X0 0X4 0X0 0X0)(func v128.const i32x4 0X2 0X5 0X0 0X0)

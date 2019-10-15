@@ -1,0 +1,1 @@
+(memory 1 ) (func (drop (i64.atomic.rmw32.sub_u (i32.const 4) (i64.const 0))))

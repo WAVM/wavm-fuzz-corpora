@@ -1,0 +1,34 @@
+(module
+  (type $0 (func (result v128 funcref)))
+  (memory $1  64 2753 shared)
+  (memory $2  76 27693)
+  
+  (func $4 (type $0)
+    (result v128 funcref)
+    (local $0 externref)
+    data.drop $3
+    nop
+    f32.const 0x1.61013ep-27
+    nop
+    i64.trunc_f32_u
+    block $block (result i32)
+      f64.const -0x1.46047aa103bf3p-608
+      f32.const -0x1.ecbf20p-11
+      f32.nearest
+      i32.trunc_sat_f32_u
+      v8x16.load_interleaved_2 offset=912615706 align=1
+      i32x4.abs
+      i32.const 954817037
+      select
+      i32x4.all_true
+      drop
+      unreachable
+    end ;; $block
+    ref.null func
+    ref.is_null
+    i32.or
+    unreachable
+    )
+  
+  (data $3 (memory $2) (i32.const -458887232)
+    ",\9d`\f1\d4&\c4H0\b63\f1\ac@H\8aL\bd\92\e3\e3L\ce\ad\94wm\8ax}\95p\bf<\7f\d2\b6z@\d8M\dd\1f\e9q^vY\09\c1\91s\nae7\b1\16`"))

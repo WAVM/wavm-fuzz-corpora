@@ -1,0 +1,116 @@
+(module
+  (type $0 (func (result f32)))
+  (export "calculate" (func $1))
+  
+  (func $1 (typel $x f64)
+    (local $r f32)
+    (local $q f32)
+    (local $z0 f32)
+    (local $z1 f32)
+    f32.mul
+    local.get $x
+    local.get $q
+    f32.mul
+    local.get $q
+    f32.mul
+   local.get $r
+    f32.neg
+    f32.mul
+    local.get $x
+    local.get $q
+    f32.mul
+        f32.mul
+    local.get $x
+    local.get $q
+    f32.mul
+    local.get $q
+    f32.mul
+    local.get $r
+    f32.sub
+    f32.div
+      local.get $x
+    f32.mul
+    local.get $x
+    local.get $q
+    f32.mul
+        f32.mul
+    local.get $x
+    local.get $q
+    f32.mul
+    local.get $r  local.get $r
+     f32.neg
+   local.get $x
+    f32.const 0x1.388000p+7
+     local.get $x
+    f32.mul
+    local.get $x
+    local.get $q
+    f32.mul
+        f32.mul
+    local.get $x
+    local.get $q
+    f32.mul
+    local.get $r  local.get $r
+    f32.neg
+   local.get $x
+    local.get $q
+    f32.mul
+    local.get $r
+    f32.sub
+       f32.mul
+    local.get $q
+    f32.mul
+    local.get $r  local.get $r
+    f32.neg
+   local.get $x
+    local.get $q
+    f32.mul
+    local.get $r
+   f32.mul
+    local.get $x
+    local.get $q
+    f32.mul
+   
+    local.get $x
+   
+  
+    f32.const 0x1.388000p+7
+     local.get $x
+    f32.mul
+    local.get $x
+    local.get $q
+    f32.mul
+        f32.mul
+    local.get $x
+    local.get $q
+    f32.mul
+    local.get $r  local.get $r
+    f32.neg
+   local.get $x
+    local.get $q
+    f32.mul
+    local.get $r
+    f32.sub
+       f32.mul
+    local.get $x
+    local.get $q
+    f32.mul
+    local.get $r  local.get $r
+    f32.neg
+   local.get $x
+    local.get $q
+    f32.mul
+    local.get $r
+    f32.sub
+    f32.div
+    local.set $z0
+    local.get $r
+    f32.neg
+    local.get $x
+    f32.mul
+    local.get $x
+    local.get $q
+    f32.mul
+  get $x
+   
+    ))

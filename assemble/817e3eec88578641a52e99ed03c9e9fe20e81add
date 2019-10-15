@@ -1,0 +1,118 @@
+(module
+  (type $0 (func (result externref f64)))
+  (type $1 (func (param i64 v128)))
+  (type $2 (func))
+  (type $3 (func (param i32 funcref funcref)))
+  (type $4 (func (result f32 f32 funcref)))
+  (type $5 (func (result v128 externref funcref)))
+  (type $6 (func (result i64 i32 v128 i32)))
+  (import "env" "memory" (memory $7 30 39214 shared))
+  (import "env" "memory" (memory $8 10 9333 shared))
+  (import "env" "memory" (memory $9 73 64399 shared))
+  (import "env" "global0" (global $10 (mut f32)))
+  (import "env" "global1" (global $11 (mut i32)))
+  (import "env" "global3" (global $12 funcref))
+  (import "env" "func0" (func $17 (result externref f64)))
+  (import "env" "func1" (func $18 (param i64 v128)))
+  (global $13  (mut f32) (f32.const 0x1.6371e2p+27))
+  (global $14  (mut f32) (f32.const 0x1.881894p+28))
+  (elem $15 global
+    $11 $12 $13 $11 $11 $14 $11 $13
+    $10 $12 $10 $10 $13 $14 $14 $10
+    $13 $11 $14 $12 $13 $13 $12 $13
+    $13 $13 $10 $14 $12 $10 $12 $14
+    $12 $14 $10 $12 $14 $11 $10 $14
+    $12 $14 $14 $11 $10 $13 $11 $12
+    $12 $14 $10 $12 $10 $12 $13 $14
+    $12 $14 $12 $11 $11 $14 $13 $12
+    $11 $11 $11 $11 $11 $13 $11 $10
+    $10 $13 $10 $13 $10 $14 $12 $12
+    $14 $14 $12 $14 $14 $14 $11 $10
+    $13 $13 $14 $14 $11 $10 $14 $10
+    $13 $14)
+  
+  (func $19 (type $2)
+    (local $0 v128)
+    (local $1 f64)
+    (local $2 f32)
+    ref.null extern
+    f32.const -0x1.56edfep+53
+    atomic.fence
+    atomic.fence
+    i32.const -1686907304
+    f64.const -0x1.44865984e12a9p+581
+    local.get $2
+    local.get $2
+    drop
+    f32.const -0x1.f1150ap-5
+    f32.lt
+    i32.clz
+    drop
+    i32.trunc_f64_s
+    i32.atomic.rmw.sub $8 offset=2394059416
+    global.set $11
+    unreachable
+    )
+  
+  (func $20 (type $2)
+    (local $0 v128)
+    (local $1 f32)
+    (local $2 i32)
+    (local $3 f32)
+    elem.drop $15
+    call $19
+    local.get $3
+    block $block (result f32 f32 funcref)
+      global.get $14
+      memory.size
+      i32.clz
+      v32x4.load_interleaved_3 offset=3764856888 align=2
+      i8x16.any_true
+      v128.const i32x4 0x00bd86c7 0x42565598 0x1974f579 0xf69bd81f
+      i32x4.extract_lane 1
+      v16x8.load_interleaved_3 $8 offset=3550923944 align=2
+      v64x2.store_interleaved_3 offset=228771032
+      drop
+      global.get $13
+      loop $loop (result v128 externref funcref)
+        elem.drop $15
+        i32.const 946499725
+        br $loop
+      end ;; $loop
+      ref.is_null
+      return
+    end ;; $block
+    br 0
+    )
+  
+  (func $21 (type $3)
+    (param $0 i32)
+    (param $1 funcref)
+    (param $2 funcref)
+    (local $3 v128)
+    local.get $2
+    global.get $12
+    atomic.fence
+    loop $loop
+      atomic.fence
+      f64.const -0x1.e78eb9ee40573p+459
+      local.get $2
+      block $block (result i64 i32 v128 i32)
+        atomic.fence
+        memory.size $9
+        i16x8.load8x8_s offset=3936235948 align=2
+        i16x8.all_true
+        f32.const 0x1.32a32ap+26
+        data.drop $16
+        local.get $0
+        br 2
+      end ;; $block
+      i8x16.shr_u
+      br 1
+    end ;; $loop
+    ref.is_null
+    return
+    )
+  
+  (data $16 (i32.const -721250398)
+    "\b063\da\84\17\ca\d4$\8b\80\8d\b1Z)\eb\f5\16\f4^\853\85\c5\02"))

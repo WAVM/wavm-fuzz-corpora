@@ -1,0 +1,18 @@
+(module
+  (type $0 (func (param i64)))
+  (memory $1  1 1 shared)
+  
+  (func $2 (type $0)
+    (param $2 i64)
+    loop $loop
+      local.get $2
+      i32.const 0
+      i64.load8_u
+      i64.rem_s
+      local.set $2
+      i32.const 0
+      br_if $loop
+      return
+    end ;; $loop
+    unreachable
+    ))

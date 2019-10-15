@@ -1,0 +1,14 @@
+ (func (param $1 f32) (l4)
+ local.tee $1
+ 
+local.tee $1
+ 
+  local.tee $1
+ local.tee $1
+  local.tee $1
+ 
+local.tee $1
+  local.tee $1
+ 
+local.tee $1
+ l)

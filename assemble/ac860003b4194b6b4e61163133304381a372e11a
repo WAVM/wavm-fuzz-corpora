@@ -1,0 +1,12 @@
+(module  (type $0 (func))
+ (memory $2  1)
+  
+  (func $1 i32.const 7
+    i32.const 0
+     i32.const 7
+ i32.const 0
+    i32.atomic.rmw16.xchg_u
+  drop
+       i32.atomic.rmw16.xchg_u
+    drop 
+   ))

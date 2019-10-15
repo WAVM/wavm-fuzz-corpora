@@ -1,0 +1,65 @@
+(module
+  (type $0 (func (param i64)))
+  (type $1 (func (param f64 externref externref) (result i32 i32)))
+  (import "env" "memory" (memory $4 46 47790 shared))
+  (import "env" "memory" (memory $5 27 49278 shared))
+  (import "env" "table" (table $2 8 4294967295 shared externref))
+  (memory $6  36 3044 shared)
+  (table $3  4 4294967295 funcref)
+  (global $7  (mut v128) (v128.const i32x4 0xbbb952ff 0x20e51928 0x446efa09 0x2437d939))
+  
+  (func $10 (type $0)
+    (param $0 i64)
+    (local $1 v128)
+    (local $2 i64)
+    (local $3 i64)
+    (local $4 i32)
+    v128.const i32x4 0x991e7f5d 0xdb72d9ee 0xb0c76afd 0x6a5c9d2c
+    i16x8.widen_high_i8x16_u
+    local.get $2
+    i64.extend32_s
+    f64.convert_i64_s
+    local.get $3
+    local.tee $0
+    local.get $3
+    table.size $2
+    i32.ctz
+    i32.eqz
+    i32.eqz
+    if $if (param i64)
+      i64.clz
+      return
+    else
+      ref.null extern
+      ref.is_null
+      br_if $if
+      ref.null func
+      ref.null func
+      ref.is_null
+      local.set $4
+      br $if
+    end ;; $if
+    unreachable
+    )
+  
+  (func $11 (type $1)
+    (param $0 f64)
+    (param $1 externref)
+    (param $2 externref)
+    (result i32 i32)
+    local.get $1
+    local.tee $2
+    atomic.fence
+    i64.const 7176040639382797648
+    memory.size
+    f32.convert_i32_u
+    i64.trunc_f32_u
+    unreachable
+    )
+  
+  (data $8 
+    "\c4d\aeBC\df\c5\c0]\b7\89\99\1b\8d\8d(\95\f2\9fX\eb\b5FLl\19S\c1k\"\c1\d3 \7fb\ba\c9\f6\ff\8e\88\da\c9\04%zS\92\00\17]\bbc+\c2\14Pmq\1a\93\d4\8d")
+  
+  (data $9 (memory $5) (i32.const -54094107)
+    "b\0d\a3\e6\c9\14\c4\15\80\b1\1am\9e/\n2\bb\b4\1aJ\e8i\af\d3]:\e3x\15P\ef4\96\15\86\f7 \08\c9\07<\f5\88\ac^Um\f1[\ae\e0-\9c\e89\a1E]i\fdk\e9\a1x"
+    "\b2}\9a\82\ef?\0d\df\1b2W\02\b8\bbL\08\02\cd4\f7\fc\a4\f7jZ\ec\bf"))

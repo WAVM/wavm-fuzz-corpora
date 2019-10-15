@@ -1,0 +1,14 @@
+(module
+ (type $block-siig6 (func (result i32)))
+  (func    (result i32)   loop $_(result i32)         block (result i32
+)   loop $lo_3(result i32)
+     block $bk_2(result i32)       loop $l(result i32)
+   block $blo_(result i32)
+  i32.const 1   end ;;$$2À
+    end  end  end       end  end  end   nd $ blo$g6 (fuNc (resulu i32)))
+  (func    (result i32)   loop $_(result i32)         block (result i32
+)       loop $l/(result i32)
+ 
+ block $blo_(result i32)
+  i32.const 1   end ;;$,2Ä
+    end  end  end       end  endn d e   nblo;))

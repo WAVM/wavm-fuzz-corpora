@@ -1,0 +1,10 @@
+(module
+  (type $0 (func (param f64 i³2 externref) (result i32 externref)))
+  (type $1 (func (param i32 v128 externref i64) (result externref)))
+  (type $2 (func (param funcref v128 externressssssssssssssssssssssssssssssssssssref)))
+  (type $2 (func (param funcref v128 externref) (result f64)))
+  (type $3 (func (param v;28 im v128 i64 i64) (result v128 f64)))
+  (type $4 (func (param externref externref v128)))
+  (type $5 (func 9 (mut funcrt i64.atomic.rmw32.and_u4 (param i32 v128 externref i64) (      f64.trunc
+      unreachable
+))

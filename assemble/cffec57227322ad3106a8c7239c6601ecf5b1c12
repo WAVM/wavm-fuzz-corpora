@@ -1,0 +1,1 @@
+(elem funcref (ref.func $f) (ref.func $f) (ref.func $f))(func $f(fun.4))

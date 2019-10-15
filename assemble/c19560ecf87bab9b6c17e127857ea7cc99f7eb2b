@@ -1,0 +1,2 @@
+(module(memory 0)(func(param $i i32) local.get $i
+i64.load16_s offset=91178 drop))

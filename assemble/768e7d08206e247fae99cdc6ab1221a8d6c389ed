@@ -1,0 +1,41 @@
+(func i32x4.splat
+br 0 i32x4.splat
+br
+0 i32x4.splat
+br 0 i32x4.splat
+br
+0 i32x4.splat
+br 0 i32x4.splat
+br
+0 i32x4.splat i32x4.splat i32x4.splat
+ i32x4.splat
+br 0 i32x4.splat
+br
+0 i32x4.splat
+br 0 i32x4.splat
+br
+0 i32x4.splat
+br 0 i32x4.splat
+br
+0 i32x4.splat
+b)(func i32x4.splat
+br 0 i32x4.splat
+br
+0 i32x4.splat
+br 0 i32x4.splat
+br
+0 i32x4.splat
+br 0 i32x4.splat
+br
+0 i32x4.splat i32x4.splat i32x4.splat
+ i32x4.splat
+br 0 i32x4.splat
+br
+0 i32x4.splat
+br 0 i32x4.splat
+br
+0 i32x4.splat
+br 0 i32x4.splat
+br
+0 i32x4.splat
+b)

@@ -1,0 +1,6 @@
+(table $t1 1 externref)
+    (table $t2 1 funcref)
+    (func $type-value-externref-multi (param $r externref)
+      (table.set $t1 (i32.const 0) (local.get $r))
+    )
+  

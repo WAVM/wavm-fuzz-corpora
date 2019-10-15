@@ -1,0 +1,6 @@
+(module
+(import "" "e" (func))
+  
+ (custom_section "c"(after import))
+ 
+ (custom_section "c" (after import))) (cuer import))

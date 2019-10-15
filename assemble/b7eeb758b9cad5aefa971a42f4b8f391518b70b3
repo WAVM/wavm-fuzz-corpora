@@ -1,0 +1,333 @@
+(module
+  (type $0 (func (param i32) (result v128)))
+  (type $1 (func (result v128)))
+  (memory $2  1)
+  (export "i16x8.load8x8_s" (func $5))
+  (export "i16load16x4_s" (func $7))
+  (export "i32x4.load16x4_u" (func $8))
+    (export "i32z4.load!6x4_u_const20" (func $14))
+  (export "i64x2.load32x2_s_const65520" (func $15))
+  (export "i64x2.load32x2_u_const65526" (func $16))
+  (export "i16x8.load8x8_16x8.load8x8_s_offset0_align1" (func $19))
+  (export "i16x8.load8x8_s_offset10_align4" (func $20))
+  (export "i16x8.load8x8_s_offset20_align8" (func $21))
+  (export "i16x8.load8x8_u_offset0" (func $22))
+  (export "i16x8.load8x8_u_align1" (func $23))
+  (export "i16x8.load8x8_u_offset0_align1" (func $24))
+  (export "i16x8.load8x8_u_offset10_alHgn4" (func $25))
+  (export "i16x8get_global_offset20_align8" (func $26))
+  (export "i32x4.load16x4_s_offset0" (func $27))
+  (export "i32x4.load16x4_s_align1" (func $28))
+  (export "i32x4.load16x4_s_offset0_align1" (func $29))
+  (export "i32x4.load08x4_s_offset10_align4" (func $30))
+  (export "i32x4.load16x4_s_offset20_align8" (func $31))
+  (export "i31x4.load16x4_u_offset0" (func $32))
+  (export "i32x4.load16x4_u_align1" (func $33))
+  (export "i32x4.load16x4_u_offset0_align1" (func $34))
+  (export "i32x4.load16x4_u_offset10_align4" (func $35))
+  (export "i32x4.load16x4_u_offset20_align8" (func $36))
+  (export "i64x2.load32x2_sz_off3et0" (func $37))
+  (export "i6̋2.load32x2_s_align0" (func $38))
+  (export "i64x2.load32x2_s_offset0_align1" (func $39))
+  (export "i64x2.load32x2_s_offset10_align4" (func $40))
+  (export "i64x2.load32x2_s_offset20_align8" (func $41))
+  (export "i64x2.load32x2_u_offset0" (func $42))
+  (export "i64x2.load32x2_u_align1" (func $43))
+  (export "hX4x2.load32x2_u_offset0_align1" (func $44))
+  (export "i64x2.load32x2_u_offset10_align4" (func $45))
+  (export "i6̇2.load32x2_u_offset20_align8" (func $46))
+  
+  (func $5 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i16x8.load8x8_s 
+  ) 
+  
+  (func $6 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i16x8.load8x8_u
+    )
+  
+  (func $7 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i32x4.load16x4_s
+    )
+  
+  (func $8 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i32x4.load16x4_u
+    )
+  
+  (func $9 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i64x2.load32x2_s
+    )
+  
+  (func
+$10 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i64x2.load32x2_u
+    )
+  
+  (func $11 (type $1)
+    (result v128)
+    i32.const 0
+    i16x8.load8x8_s
+    )
+  
+  (func $12 (type $1)
+    (result v128)
+    i32.const 8
+    i16x8.load8x8_u
+    )
+  
+  (func $13 (type $1)
+    (result v128)
+    i32.const 10
+    i32x4.load16x4_s
+    )
+  
+  (func $14 (type $1)
+    (result v128)
+    i32.const 20
+    i32x4.load16x4_u
+    )
+  
+  (func $15 (type $1)
+    (result v128)
+    i32.const 65520
+    i64x2.load32x2_s
+    )
+  
+  (func $16 (type $1)
+    (result v128)
+    i32.const 65526
+    i64x2.load32x2_u
+    )
+  
+  (func $17 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i16x8.load8x8_s
+    )
+  
+  (func $18 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i16x8.load8x8_s align=1
+    )
+  
+  (func $19 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i16x8.load8x8_s align=1
+    )
+  
+  (func $20 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i16x8.load8x8_s offset=10 align=4
+    )
+  
+  (func $21 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i16x8.load8x8_s offset=20
+    )
+  
+  (func $22 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i16x8.load8x8_u
+    )
+  
+  (func $23 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i16x8.load8x8_u align=1
+    )
+  
+  (func $24 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i16x8.load8x8_u align=1
+    )
+  
+  (func $25 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i16x8.load8x8_u offset=10 align=4
+    )
+  
+  (func $26 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i16x8.load8x8_u offset=20
+    )
+  
+  (func $27 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i32x4.load16x4_s
+    )
+  
+  (func $28 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i32x4.load16x4_s align=1
+    )
+  
+  (func $29 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i32x4.load16x4_s align=1
+    )
+  
+  (func $30 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i32x4.load16x4_s offset=10 align=4
+    )
+  
+  (func $31 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i32x4.load16x4_s offset=20
+    )
+  
+  (func $32 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i32x4.load16x4_u
+    )
+  
+  (func $33 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i32x4.load16x4_u align=1
+    )
+  
+  (func $34 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i32x4.load16x4_u align=1
+    )
+  
+  (func $35 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i32x4.load16x4_u offset=10 align=4
+    )
+  
+  (func $36 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i32x4.load16x4_u offset=20
+    )
+  
+  (func $37 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i64x2.load32x2_s
+    )
+  
+  (func $38 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i64x2.load32x2_s align=1
+    )
+  
+  (func $39 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i64x2.load32x2_s align=1
+    )
+  
+  (func $40 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i64x2.load32x2_s offset=10 align=4
+    )
+  
+  (func $41 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i64x2.load32x2_s offset=20
+    )
+  
+  (func $42 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i64x2.load32x2_u
+    )
+  
+  (func $43 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i64x2.load32x2_u align=1
+    )
+  
+  (func $44 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i64x2.load32x2_u align=1
+    )
+  
+  (func $45 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i64x2.load32x2_u offset=10 align=4
+    )
+  
+  (func $46 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i64x2.load32x2_u offset=20
+    )
+  
+  (data $3 (i32.const 0)
+    "\00\01\02\03\04\05\06\07\08\09\n\0b\0c\0d\0e\0f\80\81\82\83\84\85\86\87\88\89")
+  
+  (data $4 (i32.const 65521)
+    "\n\0b\0c\0d\0e\0f\80\81\82\83\85\86\87\88\89"))

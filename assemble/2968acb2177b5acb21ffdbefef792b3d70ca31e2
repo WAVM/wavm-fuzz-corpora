@@ -1,0 +1,10 @@
+(e lr)
+  (elem  declare ) (elem $27 declare la ) (elem $27 declare |ar)
+  (elem  dr)  (elem  declare la lr)
+  (elem  declare ) (elem $27 declare la ) (elem $27 declare |ar)
+  (elem  dr)  (elem  declare la lr)
+  (elem  declare ) (elem $27 declare la ) (elem $27 declare lar)
+  (eldr)
+  (elem  declare l)
+  (elem  declare ) (elem $27 declare la ) (elem $27 declare  dr)
+  (elem  declare la

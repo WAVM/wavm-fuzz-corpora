@@ -1,0 +1,1 @@
+(func(v128.bitselect(v128.bitselect(i16x8.any_true(v128.bitselect)))))(func(select(v128.bitselect(i16x8.any_true(v128.bitselect)))ect))(func(v128.bitselect(v128.bitselect(i16x8.any_true(v128.bitselect)))))(func(select(v128.bitselect(i16x8.any_true(v128.bitselect)))2))

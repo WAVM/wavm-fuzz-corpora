@@ -1,0 +1,44 @@
+(module
+  (type $0 (func (param i64 externref funcref externref)))
+  (type $1 (func (param f64 f32 i64)))
+  (import "env" "global0" (global $4 v128))
+  (import "env" "global1" (global $5 (mut i32)))
+  (import "env" "global2" (global $6 (mut externref)))
+  (import "env" "global3" (global $7 (mut i32)))
+  (import "env" "global5" (global $8 (mut externref)))
+  (import "env" "global6" (global $9 (mut v128)))
+  (import "env" "func0" (func $12 (param f64 f32 i64)))
+  (memory $2  100 4726 shared)
+  (memory $3  31 20252)
+  (global $10  externref (ref.null extern))
+  
+  (func $13 (type $0)
+    (param $0 i64)
+    (param $1 externref)
+    (param $2 funcref)
+    (param $3 externref)
+    (local $4 externref)
+    (local $5 i64)
+    (local $6 v128)
+    (local $7 funcref)
+    nop
+    f64.const 0x1.53a2320fe5015p-507
+    i64.trunc_sat_f64_u
+    i64.eqz
+    i32.clz
+    f64.const -0x1.a2362ddd43ac0p-180
+    f64.abs
+    f32.const -0x1.c77c90p+116
+    f32.nearest
+    global.get $9
+    f32x4.convert_i32x4_s
+    i16x8.extract_lane_u 1
+    br_if 0
+    i32.trunc_f32_u
+    v16x8.load_splat $3 offset=3178355478 align=1
+    return
+    )
+  
+  (data $11 (i32.const 1852126682)
+    "\cdC\df\80\b3\cd\a8\fb_\c2A+j\aa\8a\eb\80$&5\93CQ\1a\95\f8\12\cf\fc0I\13\04\b2P\82\09\1b,2\87O}Ut\17\beX\e3\10kT\e8\07\b9A\0d\8f\9a\8c\07\08\b4\16"
+    "\1c_\fc\a2_\f7^\91!\d6\ed"))

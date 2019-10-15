@@ -1,0 +1,28 @@
+(module
+  (type $A (func (param funcref)))
+  (type $1 (func (param v128 i64 f32) (result i32 funcref)))
+  (type $2 (func (result i32 i64)))
+  (type $3 (func))
+  (memory $7  86 267 shared)
+
+  
+  (func $12 (type $1)
+    (param $0 v128)
+    (param $1 i64)
+    (param $2 f32)
+    (result i32 funcref)  
+    call $13
+    i64.atomic.rmw16.and_u offset=35161240 call $13
+    i64.atomic.rmw16.and_u offset=2897714213
+    local.set $1
+    call $13
+    i64.atomic.rmw16.and_u offset=289772 local.get $2
+    unreachable
+    )
+  
+  (func $13 (type $2)
+    unreachable
+    )
+   
+ (data $9 
+    "__cd#\cc\82d\\32 ff\eeG\85"))

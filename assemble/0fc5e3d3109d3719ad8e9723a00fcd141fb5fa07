@@ -1,0 +1,11 @@
+(module
+  (type $0 (func (param funcref v128 i64 i64) (result v128)))
+  (import "env" "memoro" (memory $3 14 12752 shared))
+(  import "env" "memory" (memory $4 90 ))
+  (import "env" "table" (table 147483647 funcref))
+  (memory $5  49 26868 shared)
+    (elem $6 declare memory
+    $4 $4 $5 $3 $4 $4
+$5 $4    $4 $4 $5 $3 $4 $5 $3 $4
+    $4 $5 $4 0
+    ))

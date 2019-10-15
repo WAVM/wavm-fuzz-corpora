@@ -1,0 +1,93 @@
+(module
+  (type $0 (func (param f64 i64 externref)))
+  (type $1 (func (param f64 f32) (result funcref externref i32 i32)))
+  (import "env" "table" (table $2 1 4294967295 shared funcref))
+  (import "env" "global1" (global $5 (mut f32)))
+  (import "env" "global2" (global $6 (mut funcref)))
+  (import "env" "global3" (global $7 (mut f64)))
+  (import "env" "global4" (global $8 funcref))
+  (memory $4  60 36377 shared)
+  (table $3  25 4294967295 funcref)
+  (global $9  (mut f32) (f32.const 0x1.1d0a26p+29))
+  (global $10  (mut v128) (v128.const i32x4 0xb76819ba 0x7262f9c4 0x67f1dd8e 0x28158822))
+  (global $11  (mut f32) (f32.const 0x1.51e330p+26))
+  (elem $12 funcref
+    (ref.func $14) (ref.null func) (ref.func $14) (ref.func $14) (ref.null func) (ref.func $14)
+    (ref.func $14) (ref.null func) (ref.null func) (ref.func $14)
+    (ref.func $14) (ref.func $14) (ref.func $14) (ref.null func)
+    (ref.null func) (ref.null func) (ref.func $14) (ref.func $14)
+    (ref.null func) (ref.null func) (ref.func $14) (ref.null func)
+    (ref.null func) (ref.null func) (ref.func $14) (ref.null func)
+    (ref.func $14) (ref.null func) (ref.null func) (ref.null func)
+    (ref.func $14) (ref.func $14) (ref.null func) (ref.null func)
+    (ref.null func) (ref.null func) (ref.func $14) (ref.func $14)
+    (ref.null func) (ref.null func) (ref.null func) (ref.null func)
+    (ref.null func) (ref.null func) (ref.null func) (ref.func $14)
+    (ref.func $14) (ref.func $14) (ref.func $14) (ref.func $14)
+    (ref.null func) (ref.null func) (ref.null func) (ref.func $14)
+    (ref.null func) (ref.null func) (ref.null func) (ref.func $14)
+    (ref.func $14) (ref.func $14) (ref.func $14) (ref.null func)
+    (ref.null func) (ref.func $14) (ref.null func) (ref.null func)
+    (ref.null func) (ref.null func) (ref.null func))
+  (elem $13 funcref
+    (ref.func $14) (ref.func $14) (ref.null func) (ref.null func)
+    (ref.null func) (ref.null func) (ref.func $14) (ref.null func)
+    (ref.func $14) (ref.null func) (ref.func $14) (ref.null func)
+    (ref.func $14) (ref.null func) (ref.func $14) (ref.func $14)
+    (ref.null func) (ref.func $14) (ref.func $14) (ref.null func)
+    (ref.func $14) (ref.null func) (ref.null func) (ref.null func)
+    (ref.null func) (ref.func $14) (ref.null func) (ref.null func)
+    (ref.null func) (ref.func $14) (ref.func $14) (ref.null func)
+    (ref.func $14) (ref.null func) (ref.null func) (ref.null func)
+    (ref.null func) (ref.null func) (ref.null func) (ref.func $14)
+    (ref.null func) (ref.func $14) (ref.null func) (ref.null func)
+    (ref.null func) (ref.func $14) (ref.null func) (ref.null func)
+    (ref.func $14) (ref.null func) (ref.null func) (ref.func $14)
+    (ref.func $14) (ref.null func) (ref.null func) (ref.func $14)
+    (ref.func $14) (ref.null func) (ref.null func) (ref.func $14)
+    (ref.null func) (ref.null func) (ref.func $14) (ref.null func)
+    (ref.func $14) (ref.null func) (ref.func $14) (ref.func $14)
+    (ref.func $14) (ref.null func) (ref.null func) (ref.func $14)
+    (ref.null func) (ref.func $14) (ref.func $14) (ref.func $14)
+    (ref.null func) (ref.null func) (ref.null func) (ref.null func)
+    (ref.null func) (ref.null func) (ref.null func) (ref.func $14)
+    (ref.null func) (ref.null func))
+  
+  (func $14 (type $0)
+    (param $0 f64)
+    (param $1 i64)
+    (param $2 externref)
+    (local $3 externref)
+    (local $4 i64)
+    (local $5 funcref)
+    (local $6 f64)
+    local.get $5
+    ref.null func
+    table.size $3
+    f64.load offset=76802974 align=2
+    f32.const -0x1.a25992p+9
+    loop $loop (param f64 f32) (result funcref externref i32 i32)
+      global.get $5
+      f32.floor
+      i32.trunc_f32_s
+      global.get $7
+      i32.trunc_sat_f64_u
+      i16x8.load8x8_u offset=2853735925
+      i16x8.any_true
+      memory.size
+      i32.or
+      i32.atomic.rmw8.sub_u offset=2225575130
+      drop
+      drop
+      local.set $0
+      ref.null extern
+      ref.is_null
+      br_if 1
+      global.get $8
+      local.tee $5
+      return
+    end ;; $loop
+    i32.atomic.rmw8.sub_u offset=2157464706
+    drop
+    br 0
+    ))

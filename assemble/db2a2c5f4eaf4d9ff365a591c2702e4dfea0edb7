@@ -1,0 +1,8 @@
+(module
+  (type $0 (func))
+  (type(func(result i32)))
+  (import "env" "table" (table $4 68 4294967295 externref))
+  (import "env" "func0" (func $8))
+  (import "env" "func1" (func $9 (param i64 funcref) (result f32 funcref)))
+  (import "env" "func2" (func $10 (param f32 v128 f64) (result )))
+  (memory $7  12 37322))

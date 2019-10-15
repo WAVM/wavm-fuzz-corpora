@@ -1,0 +1,94 @@
+(module
+  (type $0 (func (param f64 i32 i32) (result i64 i32)))
+  (type $1 (func))
+  (type $2 (func (param f64 funcref externref) (result f32)))
+  (type $3 (func (param f64 i32 v128)))
+  (type $4 (func (result externref i32)))
+  (type $5 (func (param funcref i64 funcref)))
+  (type $6 (func (param funcref)))
+  (import "env" "memory" (memory $10 3 17860 shared))
+  (import "env" "table" (table $7 49 4294967295 externref))
+  (import "env" "table" (table $8 79 4294967295 funcref))
+  (import "env" "global1" (global $12 (mut funcref)))
+  (import "env" "global2" (global $13 i64))
+  (import "env" "global3" (global $14 (mut i64)))
+  (import "env" "global4" (global $15 i64))
+  (import "env" "global5" (global $16 (mut externref)))
+  (import "env" "func0" (func $20 (param f64 i32 i32) (result i64 i32)))
+  (import "env" "func1" (func $21))
+  (import "env" "func2" (func $22 (param f64 i32 v128)))
+  (memory $11  74 49821 shared)
+  (table $9  6 4294967295 externref)
+  (global $17  (mut funcref) (ref.null func))
+  (elem $18 declare exception_type)
+  (elem $19 memory
+    $11 $11 $11 $10 $10 $10 $10 $10
+    $10 $11 $11 $11 $11 $10 $10 $11
+    $10 $11 $10 $10 $11 $11 $11 $11
+    $11 $11 $11 $10 $10 $11 $10 $10
+    $11 $11 $11 $10 $11 $10 $11 $10
+    $11 $11 $11 $10 $11 $11 $11 $10
+    $10 $11 $10 $11 $11 $10 $11 $10
+    $11 $10 $11 $10 $10 $11 $10 $11
+    $11 $10 $10 $10 $10 $10 $11 $11
+    $11 $11 $10 $10 $10 $11 $10 $10
+    $11 $10 $10 $11 $10 $10 $11 $10
+    $11 $11 $10 $11 $10 $11)
+  
+  (func $23 (type $2)
+    (param $0 f64)
+    (param $1 funcref)
+    (param $2 externref)
+    (result f32)
+    (local $3 funcref)
+    (local $4 externref)
+    (local $5 externref)
+    (local $6 i64)
+    call $24
+    i32.extend16_s
+    v32x4.load_interleaved_3 $11 offset=3058535374 align=8
+    f32x4.sub
+    i16x8.ge_s
+    global.get $12
+    i64.const 6846240958456203337
+    local.get $3
+    loop $loop (param funcref i64 funcref)
+      loop $loop_0 (param funcref)
+        local.get $2
+        global.get $17
+        br $loop_0
+      end ;; $loop_0
+      f32.convert_i64_s
+      f64.const 0x1.0c9ecdca25099p+175
+      unreachable
+    end ;; $loop
+    drop
+    unreachable
+    )
+  
+  (func $24 (type $4)
+    (result externref i32)
+    (local $0 i64)
+    (local $1 f64)
+    (local $2 v128)
+    (local $3 i64)
+    local.get $3
+    i64.eqz
+    f32.const -0x1.a79d82p-36
+    call $21
+    f32.ceil
+    f32.nearest
+    i32.reinterpret_f32
+    v32x4.load_interleaved_3 offset=2270402412
+    i16x8.any_true
+    v32x4.load_interleaved_2 $11 offset=2114260774
+    i8x16.narrow_i16x8_s
+    i8x16.add_saturate_u
+    i8x16.add_saturate_u
+    i32x4.neg
+    f64.const 0x1.acc38bab611e8p+65
+    ref.null extern
+    drop
+    f64x2.replace_lane 0
+    unreachable
+    ))

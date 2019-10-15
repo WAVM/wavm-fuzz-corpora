@@ -1,0 +1,26 @@
+(module
+  (type $0 (func))
+  (memory $1  1)
+ (func    )
+  
+  (func $8 (type $0)
+    i32.const 0
+    v128.load
+    i32.const 1
+    v128.load
+    v128.and
+    i32.const 0
+    v128.load
+    i32.const 1
+    v128.load   v128.and
+   i32.const 1
+    v128.load
+    i32.const 2
+    v128.load
+    v128.bitselect
+    i32.const 0
+    v128.load
+  v128.xor
+    v128.or
+    drop
+    ))

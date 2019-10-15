@@ -1,0 +1,9 @@
+(module(func i32.const 75   i32.const 84
+i32.const 6584
+i32.const 65
+  i32.const 66
+
+  i32.const 90    i32.const 91 i32.const 84
+i32.const 666
+
+   i32.const 90   return))

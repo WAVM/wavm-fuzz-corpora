@@ -1,0 +1,84 @@
+(module
+  (type $0 (func (param v128 v128) (result v128)))
+  (type $1 (func (result i32)))
+  (type $2 (func (result f32 i32)))
+  (type $3 (func (param externref v128 f64) (result i64 externref)))
+  (type $4 (func (param i32 f32 i32 f64) (result f32 v128)))
+  (import "env" "global0" (global $6 (mut funcref)))
+  (import "env" "func0" (func $12 (param v128 v128) (result v128)))
+  (import "env" "func1" (func $13 (result f32 i32)))
+  (import "env" "func2" (func $14 (param externref v128 f64) (result i64 externref)))
+  (import "env" "func3" (func $15 (param i32 f32 i32 f64) (result f32 v128)))
+  (table $5  12 4294967295 funcref)
+  (global $7  (mut f32) (f32.const 0x1.5f1cc2p+30))
+  (global $8  (mut f64) (f64.const 0x1.813f2fa31e07bp+63))
+  (global $9  (mut f64) (f64.const 0x1.5709bd774b791p+63))
+  (elem $10 externref
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern))
+  (elem $11 externref
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern))
+  
+  (func $16 (type $1)
+    (result i32)
+    (local $0 funcref)
+    (local $1 i64)
+    (local $2 f32)
+    (local $3 f64)
+    elem.drop $10
+    i64.const 9022919289488619056
+    i64.extend32_s
+    local.tee $1
+    global.get $9
+    atomic.fence
+    i64.trunc_sat_f64_s
+    i64.and
+    f32.convert_i64_u
+    f64.promote_f32
+    f64.nearest
+    local.get $2
+    i32.reinterpret_f32
+    call_indirect $5 (type $1)
+    ref.null func
+    table.set $5
+    local.set $3
+    global.get $8
+    local.set $3
+    i64.const 7190341901828631670
+    local.set $1
+    nop
+    global.get $9
+    ref.null func
+    ref.null func
+    ref.is_null
+    drop
+    drop
+    unreachable
+    ))

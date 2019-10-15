@@ -1,0 +1,1 @@
+(memory 0)(func(i3)(i32.load(i32.load ))(i32.load)(i32.load(i32.load)(i32.load))()(i32.load)(i32.load(i32.load)(i32.load))(i32.load)(i32.load(i32.load)(i32.load))(i32.load)(i32.load)(i32.load(d))(i32.load)(i32.load(i32.load))(i32.load)(i32.load(i32.load)(i32.load))(i32.load)(i32.load(i32.load)(i32.load))(i32.load)(i32.load(i32.load)(i32.load)))

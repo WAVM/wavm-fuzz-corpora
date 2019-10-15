@@ -1,0 +1,2 @@
+(memory 16
+i32.atomic.store16)

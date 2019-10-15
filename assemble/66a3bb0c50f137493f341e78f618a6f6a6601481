@@ -1,0 +1,50 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param i64 i64 i32)))
+  (type $2 (func (param f32 f64 f64 f64)))
+  (import "env" "global0" (global $5 i32))
+  (import "env" "global2" (global $6 externref))
+  (import "env" "func0" (func $9 (param f32 f64 f64 f64)))
+  (memory $3  18 37820 shared)
+  (memory $4  70 16025)
+  (global $7  (mut funcref) (ref.null func))
+  
+  (func $10 (type $0)
+    (local $0 i32)
+    (local $1 funcref)
+    (local $2 v128)
+    (local $3 funcref)
+    v128.const i32x4 0x323e52c7 0x5bd744e9 0x0497365c 0xc5eccff9
+    drop
+    memory.size
+    v64x2.load_interleaved_3 $4 offset=4189647750 align=2
+    i16x8.add_saturate_u
+    i16x8.all_true
+    f32.reinterpret_i32
+    i32.trunc_sat_f32_s
+    i8x16.shr_s
+    f64x2.extract_lane 1
+    i32.trunc_sat_f64_u
+    i64.atomic.load8_u $4 offset=3519242922
+    f32.convert_i64_u
+    i32.trunc_f32_u
+    data.drop $8
+    br 0
+    )
+  
+  (func $11 (type $1)
+    (param $0 i64)
+    (param $1 i64)
+    (param $2 i32)
+    v128.const i32x4 0x90f22a55 0x9aab1bf8 0xf7eb5101 0x3a5f3250
+    i16x8.extract_lane_s 2
+    i64.atomic.load8_u offset=875052816
+    f32.convert_i64_s
+    i64.trunc_f32_s
+    call $10
+    return
+    )
+  
+  (data $8 
+    "\8aJ\144\bb\cd\c1\e0=\"\0f\b6U4\8a0\be+\a0X\a6\f9\97\a7\c4J\fe[\cb0q\10\c4\97}E5[G@79\c0\86\ccQ\d5\c1\9e\c7\d0\8d\dd\1a\a6\d41\8b2Tv\05\02\14"
+    "\04\bf`\15\a9"))

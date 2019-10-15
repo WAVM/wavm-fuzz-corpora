@@ -1,0 +1,113 @@
+(module
+  (type $0 (func (param i32) (result i32)))
+  (type $1 (func))
+  (type $2 (func (result i32)))
+  (import "M" "f" (func $f (param i32) (result i32)))
+  (table $t  1 funcref)
+  (global $3  funcref (ref.func $f))
+  (global $4  funcref (ref.func $g))
+  (global $v  (mut funcref) (ref.func $f))
+  (global $5  funcref (ref.func $gf1))
+  (global $6  funcref (ref.func $gf2))
+  (export "is_null-f" (func $11))
+  (export "is_null-g" (func $12))
+  (export "is_null-v" (func $13))
+  (export "set-f" (func $14))
+  (export "set-g" (func $15))
+  (export "call-f" (func $16))
+  (export "call-g" (func $17))
+  (export "call-v" (func $18))
+  (elem $7 declare
+    $gf1 $ff1)
+  (elem $8 declare funcref
+    (ref.func $gf2) (ref.func $ff2))
+  (elem $9 declare
+    $f $g)
+  
+  (func $g (type $0)
+    (param $x i32)
+    (result i32)
+    local.get $x
+    i32.const 1
+    i32.add
+    )
+  
+  (func $10 (type $1)
+    ref.func $ff1
+    drop
+    ref.func $ff2
+    drop
+    )
+  
+  (func $gf1 (type $1)
+    )
+  
+  (func $gf2 (type $1)
+    )
+  
+  (func $ff1 (type $1)
+    )
+  
+  (func $ff2 (type $1)
+    )
+  
+  (func $11 (type $2)
+    (result i32)
+    ref.func $f
+    ref.is_null
+    )
+  
+  (func $12 (type $2)
+    (result i32)
+    ref.func $g
+    ref.is_null
+    )
+  
+  (func $13 (type $2)
+    (result i32)
+    global.get $v
+    ref.is_null
+    )
+  
+  (func $14 (type $1)
+    ref.func $f
+    global.set $v
+    )
+  
+  (func $15 (type $1)
+    ref.func $g
+    global.set $v
+    )
+  
+  (func $16 (type $0)
+    (param $x i32)
+    (result i32)
+    i32.const 0
+    ref.func $f
+    table.set $t
+    local.get $x
+    i32.const 0
+    call_indirect $t (type $0)
+    )
+  
+  (func $17 (type $0)
+    (param $x i32)
+    (result i32)
+    i32.const 0
+    ref.func $g
+    table.set $t
+    local.get $x
+    i32.const 0
+    call_indirect $t (type $0)
+    )
+  
+  (func $18 (type $0)
+    (param $x i32)
+    (result i32)
+    i32.const 0
+    global.get $v
+    table.set $t
+    local.get $x
+    i32.const 0
+    call_indirect $t (type $0)
+    ))

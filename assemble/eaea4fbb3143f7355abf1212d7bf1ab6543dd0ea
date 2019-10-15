@@ -1,0 +1,2 @@
+(memory 11)
+(func (t) i64.atomic.rmw.or i64.atomic.rmw.or(f) i64.atomic.rmw.or i64.atomic.rmw.or(f) i64.atomic.rmw.or i64.atomic.rmw.or(fun8 t)(t) i64.atomic.rmw.or i64.atomic.rmw.or(fun8 t)$ tab)

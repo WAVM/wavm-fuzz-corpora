@@ -1,0 +1,59 @@
+(module
+  (type $0 (func (param externref) (result i32)))
+  (type $1 (func (param i32 funcref)))
+  (import "env" "table" (table $2 3 4294967295 shared funcref))
+  (import "env" "global0" (global $6 v128))
+  (memory $4  36 6876 shared)
+  (memory $5  75 27527)
+  (table $3  80 4294967295 shared externref)
+  (elem $7 declare exception_type)
+  
+  (func $8 (type $0)
+    (param $0 externref)
+    (result i32)
+    (local $1 externref)
+    (local $2 i64)
+    (local $3 i64)
+    table.size $2
+    i32.atomic.load offset=2105677991
+    i64.atomic.load32_u offset=150271828
+    f32.const -0x1.40809ap+69
+    i32.const 645585848
+    v8x16.load_interleaved_4 offset=1438722523 align=2
+    i8x16.lt_u
+    i32x4.abs
+    i32x4.mul
+    f64x2.mul
+    i16x8.extract_lane_u 6
+    memory.size
+    i32.atomic.rmw8.xchg_u $5 offset=1645036227
+    local.get $1
+    call $8
+    table.get $3
+    local.set $1
+    ref.null func
+    call $9
+    unreachable
+    )
+  
+  (func $9 (type $1)
+    (param $0 i32)
+    (param $1 funcref)
+    (local $2 funcref)
+    f64.const -0x1.4290cd754f1b1p-558
+    i64.const -3033938471918479805
+    i64.ctz
+    drop
+    memory.size
+    v32x4.load_interleaved_4 offset=1282580727 align=1
+    f64x2.max
+    i32x4.widen_low_i16x8_u
+    v128.and
+    i32x4.le_s
+    f64x2.neg
+    f64x2.abs
+    i32x4.widen_low_i16x8_u
+    i32x4.any_true
+    i16x8.load8x8_s offset=3857498660 align=1
+    return
+    ))

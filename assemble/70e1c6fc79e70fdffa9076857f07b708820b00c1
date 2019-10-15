@@ -1,0 +1,37 @@
+(module
+
+  (type (func))(   
+
+ custom_section "b"
+(after type))
+  
+    (type (func))(   
+
+ custom_section "b"
+   (after type))
+  
+    (   
+
+ custom_section "b"
+   (after type))
+
+  (type (func))(   
+
+ custom_section "b"
+   (after type))
+  
+    (type (func))(   
+
+ custom_section "b"
+   (after type))
+
+  (type (func))(   
+
+ custom_section "b"
+   (after type))
+    (   
+
+ custom_section "b"
+   (after type))
+  
+  )

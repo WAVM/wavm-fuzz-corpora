@@ -1,0 +1,45 @@
+(module
+  (type $0 (func (param i32 i32 externref) (result i64 f64)))
+  (import "env" "global5" (global $2 f64))
+  (import "env" "global6" (global $3 (mut i64)))
+  (memory $1  57 53968 shared)
+  (global $4  i64 (i64.const 2924187806842599635))
+  (global $5  f64 (f64.const 0x1.50e35518a079fp+61))
+  (global $6  f32 (f32.const 0x1.b6a6bap+31))
+  (global $7  (mut i64) (i64.const -9042138435701854932))
+  (global $8  (mut f64) (f64.const 0x1.dbac6cfcc373ap+63))
+  
+  (func $10 (type $0)
+    (param $0 i32)
+    (param $1 i32)
+    (param $2 externref)
+    (result i64 f64)
+    (local $3 v128)
+    global.get $4
+    i64.eqz
+    i64.const -7872220456051602806
+    i64.atomic.rmw8.xor_u offset=2025325915
+    global.get $8
+    global.get $7
+    i32.const 1403091806
+    data.drop $9
+    i64.load8_s offset=2865608743
+    global.set $7
+    i64.extend16_s
+    v128.const i32x4 0xf9c90916 0x8c39c355 0xfb73350e 0x8e7adf5c
+    f64x2.neg
+    f64x2.sqrt
+    i8x16.bitmask
+    local.set $1
+    drop
+    drop
+    v128.const i32x4 0x5550d717 0xd12d700e 0xac3ee29c 0x71537862
+    drop
+    i64.extend8_s
+    i64.extend16_s
+    global.get $6
+    unreachable
+    )
+  
+  (data $9 
+    ")\f0\d5\c9r\d0\96.0\f4\06\ad\c5z_\fa\93\06qQcI%\81\07\cb\9e\01Z7c\da\bc\b2\8bS\b6\80\d7!\c1"))

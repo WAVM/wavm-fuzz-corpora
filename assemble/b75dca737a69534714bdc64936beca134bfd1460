@@ -1,0 +1,4 @@
+(func br 0
+f64.sqrt br 0
+f64.sqrt f64.sqrt f64.sqrt br
+0)

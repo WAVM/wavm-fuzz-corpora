@@ -1,0 +1,4 @@
+(table $t 1 externref)
+    (func $tysult-(table.size $t)
+ )
+  

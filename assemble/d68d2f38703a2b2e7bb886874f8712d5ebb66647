@@ -1,0 +1,43 @@
+(module
+  (type $0 (func (param i64 funcref) (result f32)))
+  (type $1 (func (result i64 funcref)))
+  (import "env" "memory" (memory $3 80 37614 shared))
+  (import "env" "global0" (global $6 i64))
+  (memory $4  12 50017 shared)
+  (memory $5  58 33238)
+  (table $2  100 4294967295 shared externref)
+  (global $7  i32 (i32.const -1220399419))
+  
+  (func $10 (type $0)
+    (param $0 i64)
+    (param $1 funcref)
+    (result f32)
+    global.get $7
+    i32.atomic.load8_u offset=494338473
+    v16x8.load_interleaved_3 $5 offset=1904821653 align=8
+    i16x8.add_saturate_s
+    i16x8.min_u
+    i16x8.bitmask
+    i64.load16_s $4 offset=1925457475 align=1
+    ref.null func
+    loop $loop (result i64 funcref)
+      global.get $7
+      memory.size
+      memory.size
+      memory.copy $5
+      ref.null extern
+      nop
+      ref.is_null
+      table.get $2
+      unreachable
+    end ;; $loop
+    call $10
+    unreachable
+    )
+  
+  (data $8 
+    "6u4f\08\aadw\95\e7\1a\e1\15C\b6c=\86\f0XMK\90")
+  
+  (data $9 
+    "zdi\dc\00kk\d9d\cc\b2\c4rP\cb\f3\e4\0cCx\d9\93\ff\ec\9b)\bcl\9f\91\9cv\a1\b35\f1\9a\97\9d\e4\b9\d0\92!\84\\\83C#Cj\11\1cuH\0f&\f5\f4\94\c9\d9\de\8e"
+    "\e5\e7\be\81\0f\d4\91\9a\e2}\8d'\06W\a7HM\e3\d4\d5{\a1\19\fd!\98xiR\0e4\fc?w"))

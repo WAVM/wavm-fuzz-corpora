@@ -1,0 +1,40 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param i32) (result i32 f32)))
+  (type $2 (func (param i32 externref i32) (result f64)))
+  (type $3 (func (param i32 f64 f64)))
+  (import "env" "memory" (memory $5 47 2366 shared))
+  (import "env" "memory" (memory $6 69 13934))
+  (import "env" "table" (table $4 53 4294967295 funcref))
+  (import "env" "global0" (global $7 (mut i32)))
+  (import "env" "func0" (func $10 (param i32) (result i32 f32)))
+  (import "env" "func1" (func $11 (param i32 externref i32) (result f64)))
+  (import "env" "func2" (func $12 (param i32 f64 f64)))
+  (elem $8 table
+    $4 $4 $4 $4 $4)
+  
+  (func $13 (type $0)
+    (local $0 i32)
+    (local $1 externref)
+    memory.size
+    i64.atomic.load8_u offset=1490967934
+    memory.size $6
+    i64.load16_s offset=2417215288
+    i64.and
+    i64.eqz
+    i32.extend16_s
+    i64.atomic.load32_u $6 offset=2638334422
+    memory.size
+    memory.size
+    i32.atomic.store16 offset=1065692833
+    f64.reinterpret_i64
+    elem.drop $8
+    f32.const -0x1.2aed64p-110
+    i32.trunc_f32_s
+    ref.null extern
+    return
+    )
+  
+  (data $9 (i32.const -1443687977)
+    "r\c9p\19\a1\b3]\b1\94\84\c8[\a3J\ef\c7g\c6KC\f2zi$\99\9a\1f\a1$\f0\8d\96\99U18_5\dd\d2s\1f12\f3\1c\b4<K\d8\f8\a9\04\a4\83\a0\a1>l\f5\a6\eaG\ba"
+    "\ef#P\1aa\cf"))

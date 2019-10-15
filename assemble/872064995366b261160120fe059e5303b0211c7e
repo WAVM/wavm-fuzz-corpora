@@ -1,0 +1,4 @@
+(func br 0 br 0
+i8x16.narrow_i16x8_s
+f64x2.max br
+0)

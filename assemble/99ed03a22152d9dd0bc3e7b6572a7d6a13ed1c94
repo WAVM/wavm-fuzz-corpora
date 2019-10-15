@@ -1,0 +1,10 @@
+(module
+  (type $0 (func))
+  (memory $1
+  1  1   )
+(func $1 (type $0)
+    i32.const 7
+    i32.const 0
+    i32.atomic.rmw16.and_u
+    drop
+    ))

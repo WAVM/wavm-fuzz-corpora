@@ -1,0 +1,1 @@
+(func f64.const 0x1p-1 f64.const 0xfp-3 f64.const 0xfp-9)

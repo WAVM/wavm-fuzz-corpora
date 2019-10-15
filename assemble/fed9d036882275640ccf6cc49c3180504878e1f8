@@ -1,0 +1,77 @@
+(module
+  (type $0 (func (param i32 funcref) (result v128 funcref)))
+  (type $1 (func (param f64 f64 f64 i64) (result i32)))
+  (type $2 (func (result i64)))
+  (type $3 (func (param i32) (result externref i32 i64 funcref)))
+  (type $4 (func (param i32) (result f32 v128 i64 v128)))
+  (type $5 (func (param v128 f64 i64)))
+  (import "env" "global0" (global $8 v128))
+  (import "env" "func0" (func $11 (param i32 funcref) (result v128 funcref)))
+  (memory $6  97 63134 shared)
+  (memory $7  67 14006)
+  (elem $9 declare table)
+  
+  (func $12 (type $1)
+    (param $0 f64)
+    (param $1 f64)
+    (param $2 f64)
+    (param $3 i64)
+    (result i32)
+    (local $4 externref)
+    i32.const -66734146
+    v32x4.load_interleaved_3 offset=2143814800 align=2
+    i8x16.neg
+    i8x16.abs
+    i16x8.all_true
+    block $block (param i32) (result externref i32 i64 funcref)
+      v64x2.load_interleaved_2 offset=3503809754 align=2
+      i8x16.extract_lane_s 1
+      i32.extend8_s
+      i32.atomic.load8_u offset=1290225566
+      call $13
+      i64.ctz
+      i64.atomic.rmw.xchg $7 offset=2701287064
+      i32.const -2096572662
+      i64x2.load32x2_u $7 offset=4213983129 align=4
+      unreachable
+    end ;; $block
+    drop
+    i64.atomic.rmw32.add_u offset=598416017
+    unreachable
+    )
+  
+  (func $13 (type $2)
+    (result i64)
+    (local $0 f64)
+    (local $1 i64)
+    memory.size
+    v128.const i32x4 0xc2c2129a 0x0c207ded 0xd6bf406b 0xde9e27e5
+    i32x4.any_true
+    loop $loop (param i32) (result f32 v128 i64 v128)
+      v8x16.load_interleaved_4 $7 offset=3119287065 align=8
+      i8x16.sub_saturate_s
+      i32x4.add
+      f32x4.convert_i32x4_s
+      f64.const -0x1.85a613348f2d2p+183
+      atomic.fence
+      call $13
+      loop $loop_0 (param v128 f64 i64)
+        unreachable
+      end ;; $loop_0
+      i32.const -403848419
+      i16x8.shl
+      ref.null func
+      ref.is_null
+      ref.null func
+      drop
+      i8x16.replace_lane 7
+      unreachable
+    end ;; $loop
+    drop
+    drop
+    unreachable
+    )
+  
+  (data $10 (memory $7) (i32.const 1464940990)
+    ":\b7\08\fb`\deQq}\a0\06\97\8c\0f\a3\09\9e\85\a6\06\e0\90\f7I\02\f2\b5\cb!\a8\ab\c70\ca\b6\1dN\80.\a5\9e\ad7\0d\b9P<\87\ed\c7)\fa\eb+\d0\dc\94\d6\f2\ef\d1\ce\c9\9b"
+    ",\b5"))

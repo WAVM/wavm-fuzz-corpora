@@ -1,0 +1,14 @@
+(module
+  (type $0 (func (param v128 v128 v128) (result v128)))
+  (func $7 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (param $2 v128)
+    (result v128)
+    local.get $0
+    local.get $1 i8x16.min_s
+    local.get $2
+        i8x16.min_s
+    local.get $2
+      i8x16.min_s
+  ))

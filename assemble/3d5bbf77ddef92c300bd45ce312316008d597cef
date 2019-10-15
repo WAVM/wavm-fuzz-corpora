@@ -1,0 +1,56 @@
+(module
+  (type $0 (func (param funcref) (result funcref)))
+  (type $1 (func))
+  (type $2 (func (result v128 externref funcref funcref)))
+  (type $3 (func (result funcref externref)))
+  (import "env" "memory" (memory $5 27 30939 shared))
+  (import "env" "global2" (global $6 (mut funcref)))
+  (import "env" "global3" (global $7 i64))
+  (import "env" "global4" (global $8 v128))
+  (import "env" "func0" (func $13))
+  (table $4  20 4294967295 shared funcref)
+  (global $9  (mut f64) (f64.const 0x1.947308ad0af56p+63))
+  (global $10  (mut v128) (v128.const i32x4 0xa45d7c8c 0x4dcfad57 0xf0f6b8ae 0x3b0ccad6))
+  
+  (func $14 (type $0)
+    (param $0 funcref)
+    (result funcref)
+    (local $1 v128)
+    (local $2 i32)
+    (local $3 i64)
+    (local $4 f32)
+    local.get $1
+    f64x2.abs
+    i64x2.neg
+    block $block (result v128 externref funcref funcref)
+      call $13
+      table.size $4
+      call_indirect $4 (type $2)
+      ref.is_null
+      v8x16.load_interleaved_3 offset=942225197 align=1
+      f32x4.sub
+      i32x4.widen_high_i16x8_s
+      i32x4.gt_s
+      i16x8.bitmask
+      i32x4.splat
+      global.set $10
+      i32.const -511716565
+      call_indirect $4 (type $0)
+      global.get $7
+      drop
+      loop $loop (result funcref externref)
+        global.get $6
+        unreachable
+      end ;; $loop
+      unreachable
+    end ;; $block
+    local.set $0
+    drop
+    unreachable
+    )
+  
+  (data $11 (i32.const 1839569264)
+    "A\1cU\81\da!\d5q\8b\03\91oDf\c3\c9l")
+  
+  (data $12 (i32.const -1468161729)
+    "3\f3\1d\b7\ce\09\be\bd\a0%N\b2\e9\aaI\80\92\f76Z\cbw]q\fb\83\08\a1\bdF\be\af\0c\b1\a7\90\f6\e7M\c3[\88\"\1e\bc\00\16"))

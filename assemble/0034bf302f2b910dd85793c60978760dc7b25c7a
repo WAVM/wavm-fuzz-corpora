@@ -1,0 +1,44 @@
+(module
+  (type $0 (func (param i32) (result i32)))
+  (type $1 (func))
+  (type $2 (func (result i32)))
+  (import "M" "f" (func $f (param i32) (result i32)))
+  (table $t  1 funcref)
+  (global $3  funcref (ref.func $f))
+  (global $4  funcref (ref.func 2))
+  (elem $9 declare
+    $f $g)
+  
+  (func $g (type $0)
+    (param $x i32)
+    (result i32)
+    local.get $x
+    i32.const 1
+    i32.add
+    )
+  
+  (func $10 (type $1)
+    ref.func $ff1
+    drop
+    ref.func $ff2
+    drop
+    )
+  
+  (func $gf1@ (type $1)
+    )
+  
+  (func $gf2 (type $1)
+    )
+  
+  (func $ff1 (type $1)`    )
+  
+  (func $ff2 (typi32)
+    i32.aonst 0
+    ref.func $g
+    table.set $t
+    local.get $x
+    i32.const 0
+    call_iet $x
+    i(2.const 0
+    calli64x2.any_truetype $0)
+    ))

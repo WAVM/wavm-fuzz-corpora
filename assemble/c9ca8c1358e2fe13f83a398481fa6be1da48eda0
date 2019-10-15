@@ -1,0 +1,8 @@
+(func   local.get $0
+    v8x16.store_interleaved_2
+    v8x16.store_interleaved_2
+    v8x16.store_interleaved_2  v8x16.store_interleaved_2
+    v8x16.store_interleaved_2
+    v8x16.store_interleaved_2 v8x16.store_interleaved_2
+   v8x16.store_interleaved_2
+))2r v8x1

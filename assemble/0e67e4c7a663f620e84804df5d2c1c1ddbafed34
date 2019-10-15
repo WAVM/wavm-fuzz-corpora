@@ -1,0 +1,13 @@
+(func  i32.const 1    i32.const 1
+  i64x2.load32x2_u i64x2.load32x2_u
+10
+  i64x2.load32x2_u i64x2.load32x2_u
+s1)  
+  (func  i32.const 1
+  i64x2.load32x2_u
+i64x2.load32x2_u
+y2.ly1 1)  
+  (func   
+  i64x2.load32x2_u
+i64x2.load32x2_u
+y2.load )

@@ -1,0 +1,81 @@
+(module
+  (type $0 (func (param f32) (result i32)))
+  (type $1 (func (param funcref externref f32 v128) (result v128)))
+  (type $2 (func (param f32 f32) (result funcref)))
+  (type $3 (func (param i64 f32 i64) (result i32 f32)))
+  (import "env" "memory" (memory $6 11 300 shared))
+  (import "env" "table" (table $4 51 4294967295 shared funcref))
+  (import "env" "global0" (global $7 i64))
+  (import "env" "global2" (global $8 (mut externref)))
+  (import "env" "global3" (global $9 (mut f64)))
+  (import "env" "func0" (func $14 (param f32) (result i32)))
+  (import "env" "func1" (func $15 (param f32 f32) (result funcref)))
+  (table $5  32 4294967295 shared externref)
+  (global $10  (mut f32) (f32.const 0x1.9fae06p+31))
+  (global $11  (mut i32) (i32.const 574660681))
+  (elem $12 global
+    $7 $8 $8 $8 $8 $8 $9 $8
+    $7 $8 $10 $9 $8 $11 $9 $8
+    $9 $8 $8 $11 $7 $7 $9 $8
+    $10 $10 $7 $11 $8 $7 $7 $11
+    $8 $7 $7 $9 $11 $8 $8 $10
+    $9 $10 $7 $9 $10 $9 $7 $9
+    $9 $7 $8 $7 $7 $10)
+  
+  (func $16 (type $1)
+    (param $0 funcref)
+    (param $1 externref)
+    (param $2 f32)
+    (param $3 v128)
+    (result v128)
+    (local $4 externref)
+    (local $5 funcref)
+    (local $6 v128)
+    (local $7 f32)
+    local.get $0
+    loop $loop
+      global.get $7
+      memory.size
+      v16x8.load_interleaved_4 offset=1432088322 align=8
+      i32x4.widen_high_i16x8_s
+      br 1
+    end ;; $loop
+    drop
+    local.get $4
+    local.get $3
+    v128.not
+    i64x2.extract_lane 1
+    i64.extend8_s
+    f32.const 0x1.5fe662p-54
+    v128.const i32x4 0x82d1de3f 0x2c1f5902 0xd29a1fcf 0x3f753f22
+    ref.null extern
+    ref.is_null
+    i8x16.shr_u
+    br 0
+    )
+  
+  (func $17 (type $3)
+    (param $0 i64)
+    (param $1 f32)
+    (param $2 i64)
+    (result i32 f32)
+    local.get $1
+    atomic.fence
+    data.drop $13
+    i32.const -146781276
+    global.get $11
+    i16x8.load8x8_s offset=1899563893 align=1
+    f32x4.extract_lane 3
+    f32.sqrt
+    i64.trunc_sat_f32_s
+    i32.wrap_i64
+    global.get $8
+    drop
+    i32.add
+    i64.load32_u offset=986722845 align=2
+    global.get $8
+    unreachable
+    )
+  
+  (data $13 (i32.const 1116722349)
+    "\c2\86\e8^\df\d0B`\1f_\94\b9\a1\97{\ca\fcEO\1e\nV"))

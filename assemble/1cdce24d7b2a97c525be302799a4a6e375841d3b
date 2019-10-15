@@ -1,0 +1,1 @@
+(memory 0)(func(br 0)i32.load8_s(br 0))

@@ -1,0 +1,1 @@
+(memory 1)(func()(i32.atomic.rmw16.cmpxchg_u)(i32.atomic.rmw16.cmpxchg_u)(i32.atomic.rmw16.cmpxchg_u)(i32.atomic.rmw16.cmpxchg_u)(i3mic.rog_u)(i32.atomic.rmw16.cmpxchg_u)(i32.axchg_umw16u)(i32.atomic.rmw16.cmpxchg_u)(i32.atomic.rmw16.cmpxchg_u)(i32.atomic.rmw16.cmpxchg_u)(im)(i67.6i8gt_u.cmp)_2x4.)

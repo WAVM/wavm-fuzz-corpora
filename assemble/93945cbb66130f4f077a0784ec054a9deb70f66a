@@ -1,0 +1,47 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param f32) (result externref i32)))
+  (type $2 (func (param v128 v128 f64) (result i64 f32 i64 f32)))
+  (import "env" "table" (table $3 0 4294967295 funcref))
+  (import "env" "global0" (global $7 v128))
+  (import "env" "global3" (global $8 externref))
+  (import "env" "global4" (global $9 (mut f32)))
+  (import "env" "global5" (global $10 i32))
+  (import "env" "global6" (global $11 (mut f64)))
+  (import "env" "global7" (global $12 f32))
+  (import "env" "global9" (global $13 (mut funcref)))
+  (memory $6  93 57802 shared)
+  (table $4  21 4294967295 shared externref)
+  (table $5  98 4294967295 shared funcref)
+  (global $14  (mut v128) (v128.const i32x4 0x87e75680 0xe1c635fe 0x3a6e6106 0x14722885))
+  (global $15  (mut v128) (v128.const i32x4 0x9dc95f1d 0x5a713dcd 0x11e25c74 0xd89fb773))
+  (global $16  (mut f64) (f64.const 0x1.5a7280ab172b7p+62))
+  
+  (func $18 (type $0)
+    (local $0 f32)
+    (local $1 funcref)
+    (local $2 f64)
+    call $18
+    global.get $12
+    f64.const -0x1.a4c30b1bfe2efp+765
+    f32.demote_f64
+    f32.eq
+    i32.load8_u offset=719681692
+    f32.const -0x1.22db44p-69
+    block $block (param f32) (result externref i32)
+      v128.const i32x4 0xae8a8e73 0x21a9fc82 0x1792bfa0 0x3c536e44
+      br 1
+    end ;; $block
+    v32x4.load_interleaved_3 offset=925641250 align=8
+    f64.const 0x1.7f783ddd36d14p+308
+    block $block_0 (param v128 v128 f64) (result i64 f32 i64 f32)
+      i64.trunc_f64_u
+      global.get $13
+      unreachable
+    end ;; $block_0
+    ref.null extern
+    return
+    )
+  
+  (data $17 (i32.const 2038680445)
+    "H\ffw\d70\b1\f9\85\7f7\8f\e3"))

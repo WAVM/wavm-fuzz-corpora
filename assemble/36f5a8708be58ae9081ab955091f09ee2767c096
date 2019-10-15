@@ -1,0 +1,2 @@
+(import "env" "table" (table 965297 shared funcref))
+  (import "env" "func0" (func $2)))

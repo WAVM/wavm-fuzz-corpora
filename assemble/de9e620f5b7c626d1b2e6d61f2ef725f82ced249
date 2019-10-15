@@ -1,0 +1,1 @@
+(func(local $x f32)(local $x f64))

@@ -1,0 +1,52 @@
+(module
+  (type $0 (func (param v128 f32) (result f32 f64)))
+  (type $1 (func (param i64 funcref f64 funcref)))
+  (type $2 (func))
+  (type $3 (func (param funcref) (result i32)))
+  (type $4 (func (result i64)))
+  (type $5 (func (param i64) (result f32 i32 i32 funcref)))
+  (import "env" "global1" (global $7 (mut externref)))
+  (import "env" "global2" (global $8 (mut i32)))
+  (import "env" "func0" (func $13 (param v128 f32) (result f32 f64)))
+  (import "env" "func1" (func $14 (param i64 funcref f64 funcref)))
+  (import "env" "func2" (func $15))
+  (import "env" "func3" (func $16 (param funcref) (result i32)))
+  (table $6  29 4294967295 funcref)
+  (global $9  funcref (ref.null func))
+  (global $10  (mut f64) (f64.const 0x1.0e40edc70556cp+63))
+  
+  (func $17 (type $4)
+    (result i64)
+    f64.const 0x1.4d8fc61aef663p+875
+    table.size $6
+    i64.extend_i32_s
+    i64.extend16_s
+    global.get $10
+    i32.trunc_f64_s
+    if $if (param i64) (result f32 i32 i32 funcref)
+      call $15
+      i64.extend16_s
+      f32.convert_i64_u
+      i64.trunc_f32_u
+      return
+    else
+      ref.null extern
+      block $block (result f32)
+        f64.const -0x1.c3861a195ccbap-476
+        ref.null func
+        ref.null extern
+        ref.null extern
+        unreachable
+      end ;; $block
+      drop
+      unreachable
+    end ;; $if
+    ref.null func
+    unreachable
+    )
+  
+  (data $11 
+    "\c1eT\e7\00\\!\e6<\fb\e9\f7\8c\e0\8af\93\96|\8cr\e7g\84\bc9f_\f5$c\82\f3\88\9bH\d9\81r\e9\96")
+  
+  (data $12 
+    "f\09[R~\"\8d\bf\08k[:Dh\da\17Q\fcP\f8v\cf\f9\82\d1\ae\eef\b97\11\ac\a0R5HRh%\d5"))

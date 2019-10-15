@@ -1,0 +1,48 @@
+(module
+  (type $0 (func (param f32 funcref i64 i64) (result funcref)))
+  (type $1 (func (param v128 i64) (result i32 i32)))
+  (import "env" "table" (table $2 92 4294967295 funcref))
+  (import "env" "table" (table $3 73 4294967295 shared funcref))
+  (import "env" "global0" (global $6 externref))
+  (import "env" "global2" (global $7 (mut f32)))
+  (import "env" "func0" (func $11 (param f32 funcref i64 i64) (result funcref)))
+  (memory $5  49 23464 shared)
+  (table $4  5 4294967295 externref)
+  (global $8  (mut i64) (i64.const 734551018772224321))
+  (elem $9 declare global
+    $6 $7 $6 $8 $7 $7 $7 $6
+    $8 $7 $8 $7 $6 $8 $7 $7
+    $8 $7 $7 $6 $6 $6 $6 $7
+    $7 $7 $7 $6 $8 $7 $7 $7
+    $6 $7 $8 $7 $8 $7 $6 $7
+    $6 $6 $6 $6 $7 $8 $7 $8
+    $7 $7 $6 $7)
+  
+  (func $12 (type $1)
+    (param $0 v128)
+    (param $1 i64)
+    (result i32 i32)
+    nop
+    f64.const 0x1.cc4ff1f8c60e1p-559
+    global.get $6
+    i32.const -474790094
+    f32.load offset=71945764 align=1
+    local.get $1
+    v128.const i32x4 0x959cfafd 0xda3b7494 0x6beeee41 0x986c4018
+    i8x16.neg
+    i8x16.all_true
+    i64.atomic.load16_u offset=1061737200
+  i64.xor  table.size $3
+    ref.null func
+    table.set $2
+    local.get $0
+    i32x4.widen_high_i16x8_u
+    global.get $8
+    local.set $1
+    local.set $0
+    local.set $1
+    unreachable
+    )
+  
+  (data $10 
+    "\a1\aa\18\c1&\ef\d2\cf\e9\f56\87"))

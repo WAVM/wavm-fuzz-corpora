@@ -1,0 +1,79 @@
+(module
+  (type $0 (func (param externref i32)))
+  (type $1 (func (param f32 externref) (result externref)))
+  (type $2 (func (param v128 funcref)))
+  (type $3 (func))
+  (type $4 (func (result i32)))
+  (type $5 (func (result externref externref)))
+  (import "env" "memory" (memory $9 73 19082 shared))
+  (import "env" "memory" (memory $10 67 27954 shared))
+  (import "env" "table" (table $6 10 4294967295 externref))
+  (import "env" "table" (table $7 30 4294967295 shared funcref))
+  (import "env" "table" (table $8 80 4294967295 shared externref))
+  (import "env" "func0" (func $15 (param f32 externref) (result externref)))
+  (import "env" "func1" (func $16))
+  (import "env" "func2" (func $17 (result i32)))
+  (global $11  f32 (f32.const 0x1.d30988p+31))
+  (elem $12 (table $7) (i32.const 231338438)
+    $17 $16 $17 $19 $19 $15 $16 $16
+    $16 $15 $19 $19 $19 $18 $17 $16
+    $15 $16 $18 $19 $17 $15 $15 $18
+    $15 $16 $18 $16 $19 $17 $15 $16
+    $15 $19 $17 $15 $18 $16 $16 $19
+    $15 $18 $17 $19 $18 $17 $18 $15
+    $19 $17 $18 $16 $15 $17 $18 $19
+    $18 $15 $19 $19 $17 $18 $16 $16
+    $18 $18 $19 $18 $19 $17)
+  
+  (func $18 (type $0)
+    (param $0 externref)
+    (param $1 i32)
+    (local $2 v128)
+    (local $3 i32)
+    v128.const i32x4 0x44243da5 0xfdc5a53e 0x9bce5a3b 0x45b08ccc
+    global.get $11
+    f32x4.replace_lane 0
+    i32x4.any_true
+    drop
+    nop
+    local.get $2
+    i64.const -1193373990636935416
+    elem.drop $12
+    local.get $3
+    i64.const 3614488532632144086
+    i64.atomic.rmw32.xchg_u $10 offset=2284961796
+    i64.div_s
+    data.drop $14
+    f64.reinterpret_i64
+    br 0
+    )
+  
+  (func $19 (type $2)
+    (param $0 v128)
+    (param $1 funcref)
+    (local $2 funcref)
+    (local $3 f64)
+    elem.drop $12
+    table.size $6
+    memory.size $10
+    i32.sub
+    drop
+    call $17
+    i64.load32_s $10 offset=3025385793 align=1
+    block $block (result externref externref)
+      nop
+      return
+    end ;; $block
+    ref.is_null
+    i64.extend_i32_s
+    local.get $0
+    local.get $3
+    local.get $3
+    unreachable
+    )
+  
+  (data $13 (i32.const -345855603)
+    "\a3\a7\e6S\13\c9\ec>Z\d9\96\9f\d2\f3vH*D\8a\f31hg)\0e\ad\fc\c2\bf8\02\97n\8c\dd\1e0Nf\n\"\b0\7f\f5\f7\e2\1bV\c0")
+  
+  (data $14 
+    "\09\0d\ed\f0!URBy\99$\89\84N(\b5\16\b2\ce\01%\f7\d9\b0\91\c7"))

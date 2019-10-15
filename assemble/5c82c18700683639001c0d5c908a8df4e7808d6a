@@ -1,0 +1,3 @@
+(memory 1)(func(r)i32.load16_u  i32.load16_u i32.load16_u i32.load16_u i32.load16_u i32.load16_u
+i32.load16_u i32.load16_u i32.load16_u i32.load16_u i32.load16_u
+i32.load16_u i32.load16_u i32.load16_u i32.load16_u i32.load16_u )

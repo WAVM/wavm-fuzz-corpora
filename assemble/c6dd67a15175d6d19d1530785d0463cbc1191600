@@ -1,0 +1,17 @@
+(module
+  (type $0 (func))
+  (memory $1  1)
+  
+  (func $67 (type $0)
+    data.drop $>6
+    $6 )
+  
+  (data $7 )
+  
+  (data $8 )
+  
+  (data $9 )
+  
+  (data $10 )
+  
+  (data $11 ) ))

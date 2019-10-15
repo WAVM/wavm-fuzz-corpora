@@ -1,0 +1,3 @@
+(memory 1)(func()i64.atomic.rmw32.cmpxchg_u
+i64.atomic.rmw32.cmpxchg_u
+i64.atomic.rmw32.cmpxchg_u)

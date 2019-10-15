@@ -1,0 +1,72 @@
+(module
+  (type $0 (func (param v128 funcref)))
+  (type $1 (func (param externref) (result externref f32)))
+  (type $2 (func (param v128 v128 i32 i64) (result f64)))
+  (import "env" "table" (table $3 96 4294967295 funcref))
+  (import "env" "global6" (global $5 funcref))
+  (import "env" "global7" (global $6 (mut externref)))
+  (import "env" "func0" (func $14 (param v128 funcref)))
+  (memory $4  11 25736 shared)
+  (global $7  f64 (f64.const 0x1.78664196599ddp+63))
+  (global $8  i32 (i32.const 1764814462))
+  (global $9  i32 (i32.const -1256718951))
+  (global $10  f64 (f64.const 0x1.9db0547386596p+59))
+  (global $11  (mut i32) (i32.const -261129709))
+  (global $12  funcref (ref.null func))
+  (elem $13 funcref
+    (ref.null func) (ref.func $15) (ref.func $14) (ref.func $14)
+    (ref.func $14) (ref.func $14) (ref.func $14) (ref.func $14)
+    (ref.func $14) (ref.func $14) (ref.func $15) (ref.null func)
+    (ref.func $15) (ref.func $14) (ref.func $15) (ref.func $14)
+    (ref.func $14) (ref.func $14) (ref.null func) (ref.func $14)
+    (ref.func $15) (ref.null func) (ref.func $14) (ref.func $14)
+    (ref.func $14) (ref.func $14) (ref.null func) (ref.func $14)
+    (ref.null func) (ref.func $14) (ref.func $15) (ref.null func)
+    (ref.func $14) (ref.func $14) (ref.null func) (ref.null func)
+    (ref.func $15) (ref.null func) (ref.null func) (ref.func $14)
+    (ref.func $14) (ref.null func) (ref.func $15) (ref.null func)
+    (ref.func $15) (ref.func $15))
+  
+  (func $15 (type $1)
+    (param $0 externref)
+    (result externref f32)
+    (local $1 externref)
+    (local $2 v128)
+    (local $3 i64)
+    global.get $6
+    local.set $1
+    i32.const 655246338
+    v128.const i32x4 0x0852297b 0x6c52d3ff 0x1a354327 0x1828551a
+    i16x8.widen_low_i8x16_u
+    global.get $8
+    v64x2.load_interleaved_2 offset=703715475 align=1
+    i16x8.extract_lane_u 3
+    table.size $3
+    f32.const -0x1.0cd902p-103
+    i64.trunc_f32_u
+    i64.atomic.rmw32.or_u offset=248297917
+    memory.size
+    i32.ctz
+    if $if (param v128 v128 i32 i64) (result f64)
+      i64.atomic.rmw8.xchg_u offset=3081975705
+      drop
+      i16x8.gt_u
+      unreachable
+    else
+      i64.atomic.store offset=2757941478
+      i8x16.lt_s
+      drop
+      atomic.fence
+      nop
+      table.size $3
+      global.set $11
+      i32.const -1894941936
+      ref.null extern
+      drop
+      drop
+      unreachable
+    end ;; $if
+    f64.store offset=3364555005 align=1
+    local.get $2
+    unreachable
+    ))

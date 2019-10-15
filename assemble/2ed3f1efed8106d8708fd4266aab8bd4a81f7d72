@@ -1,0 +1,47 @@
+(module
+  (type $0 (func (param v128 f32 f32)))
+  (type $1 (func))
+  (type $2 (func (param i64 f32 v128 f64) (result funcref i32)))
+  (import "env" "memory" (memory $5 81 8862 shared))
+  (import "env" "table" (table $3 47 4294967295 shared externref))
+  (import "env" "global0" (global $7 i64))
+  (import "env" "global1" (global $8 f64))
+  (import "env" "func0" (func $11 (param v128 f32 f32)))
+  (memory $6  59 49975 shared)
+  (table $4  56 4294967295 funcref)
+  (global $9  (mut v128) (v128.const i32x4 0xb08bab54 0x156069a0 0xff45b76a 0x6563130a))
+  (elem $10 declare funcref
+    (ref.func $11) (ref.null func) (ref.func $11) (ref.func $12)
+    (ref.null func) (ref.func $12) (ref.func $11) (ref.func $11)
+    (ref.func $13) (ref.func $12) (ref.func $11) (ref.func $11)
+    (ref.func $12) (ref.null func) (ref.func $13))
+  
+  (func $12 (type $1)
+    (local $0 i32)
+    elem.drop $10
+    atomic.fence
+    table.size $3
+    i32x4.load16x4_s $6 offset=812405689 align=1
+    f32x4.convert_i32x4_s
+    i16x8.neg
+    i16x8.widen_high_i8x16_s
+    f32x4.sqrt
+    i32x4.widen_low_i16x8_u
+    i16x8.bitmask
+    table.size $3
+    table.size $4
+    call $12
+    i32x4.splat
+    i16x8.widen_high_i8x16_s
+    unreachable
+    )
+  
+  (func $13 (type $2)
+    (param $0 i64)
+    (param $1 f32)
+    (param $2 v128)
+    (param $3 f64)
+    (result funcref i32)
+    atomic.fence
+    unreachable
+    ))

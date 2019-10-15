@@ -1,0 +1,86 @@
+(module
+  (type $0 (func (param i32 externref f64 funcref)))
+  (type $1 (func (param f32 f32) (result funcref)))
+  (type $2 (func (param funcref) (result f32)))
+  (type $3 (func (param i32 funcref i64 f64) (result i32 f64)))
+  (type $4 (func (param funcref i64 i32 f64 funcref) (result v128 f64 i64)))
+  (type $5 (func (param f64 funcref) (result f64)))
+  (type $6 (func (result i64 externref)))
+  (import "env" "table" (table $7 33 4294967295 shared funcref))
+  (import "env" "global0" (global $10 (mut f64)))
+  (import "env" "global3" (global $11 externref))
+  (import "env" "global5" (global $12 (mut i64)))
+  (import "env" "func0" (func $18 (param i32 externref f64 funcref)))
+  (import "env" "func1" (func $19 (param i32 funcref i64 f64) (result i32 f64)))
+  (table $8  77 4294967295 externref)
+  (table $9  95 4294967295 shared externref)
+  (global $13  externref (ref.null extern))
+  (global $14  funcref (ref.null func))
+  (global $15  funcref (ref.null func))
+  
+  (func $20 (type $1)
+    (param $0 f32)
+    (param $1 f32)
+    (result funcref)
+    (local $2 f64)
+    global.get $13
+    global.get $14
+    data.drop $16
+    i64.const 5376902757377918128
+    i32.const -1370576924
+    local.get $2
+    global.get $15
+    f64.const 0x1.b44c802a11a67p-793
+    local.set $2
+    block $block (param funcref i64 i32 f64 funcref) (result v128 f64 i64)
+      loop $loop (param f64 funcref) (result f64)
+        local.get $0
+        global.get $14
+        block $block_0 (result i64 externref)
+          atomic.fence
+          i32.const -1102363325
+          unreachable
+        end ;; $block_0
+        ref.is_null
+        drop
+        unreachable
+      end ;; $loop
+      unreachable
+    end ;; $block
+    global.set $12
+    drop
+    drop
+    unreachable
+    )
+  
+  (func $21 (type $2)
+    (param $0 funcref)
+    (result f32)
+    v128.const i32x4 0xea4712bf 0xe9fbf1a1 0x56770da4 0x63ec5bbf
+    global.get $12
+    i64x2.splat
+    i16x8.widen_high_i8x16_s
+    i8x16.le_u
+    i32x4.widen_low_i16x8_u
+    i32x4.widen_high_i16x8_u
+    i32x4.widen_low_i16x8_s
+    f64x2.neg
+    global.get $15
+    f32.const 0x1.2d9782p+7
+    v128.const i32x4 0x8321dfe9 0x717ead76 0xd920dec2 0x6e1c5bc7
+    i16x8.all_true
+    i16x8.splat
+    v128.const i32x4 0x1f8ab8b6 0x8fa2d77e 0x7780c1fa 0xb264a358
+    i16x8.le_u
+    ref.null extern
+    ref.is_null
+    i8x16.shr_u
+    unreachable
+    )
+  
+  (data $16 
+    "22\b0Y\b2\ea\b6\04\c9V\d8\c2\91'\fb+\80y3\ca\fb\cd\\9\aaR\c4\89.\f1\11\c7\99\d1v\f6\0c\16\fa\97\91\b5t*+s \f98\e4b\d4\c3\a4DS\bb\16\9f\9e\8b\f4\f3="
+    "\1a\82\a3\98\e6\124\84O\9c\98\0dR\aa\9e`\9e\da\9bk\de\19")
+  
+  (data $17 
+    "c\17A~\b6\d1\96A\f1Y\95\08\d15\8b z}\bfD\89\de\1cK\f7n!\8c\97\eds\8a(\d7\1d;"))

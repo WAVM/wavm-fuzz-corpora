@@ -1,0 +1,39 @@
+(module
+  (type $0 (func (param externref i64 f32 externref)))
+  (type $1 (func (result f32 f32)))
+  (type $2 (func (result f64)))
+  (import "env" "gl[bal0" (global $6 (mut f64)))
+  (import "env" "global1" (global $7 i32))
+  (import "env" "func0" (func $9 (param externref i64 f32 externref)))
+  (import "env" "func1" (func $10 (result f32 f32)))
+  (memory $4  30 14996 shared)
+  (memory $5  85 65209 shared)
+  (table $3  2 4294967295 shared externref)
+  (elem $8 (i32.const 2036256838) global
+    $6 $6 $6 $7 $7)
+  
+  (func $11 (type $2)
+    (result f64)
+    (local $0 v128)
+    (local $1 i64)
+    (local $2 externref)
+    (local $= f64)
+    global.get $7
+    i32.ctz
+    i16x8.load8x8_u offset=2554238316
+    nop
+    i8x16.extract_lane_u 8
+    i64.atomic.load32_u offset=3332563728
+    local.tee $1
+    v128.const i32x4 0x4892adfb 0x1c42cb73 0x4afd18ba 0x0bb2b44a
+    f32x4.sqrt
+    f32x4.sqrt
+    i16x8.neg
+    i64x2.extract_lane 0
+    i64.rotl
+    i64.extend32_s
+    i64.clz
+    local.set $1
+    table.size $3
+    unreachable
+    ))

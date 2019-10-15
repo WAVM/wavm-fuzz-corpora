@@ -1,0 +1,65 @@
+(module
+  (type $0 (func (param f64 i32 externref f32) (result v128 i64)))
+  (type $1 (func (param i32) (result i64 i32)))
+  (type $2 (func (param f64 i64) (result f64)))
+  (type $3 (func (param i64) (result f32)))
+  (import "env" "memory" (memory $4 76 25574 shared))
+  (import "env" "global0" (global $7 (mut i64)))
+  (import "env" "global1" (global $8 (mut f64)))
+  (import "env" "global2" (global $9 funcref))
+  (import "env" "global3" (global $10 (mut externref)))
+  (import "env" "global5" (global $11 (mut i32)))
+  (import "env" "func0" (func $16 (param i32) (result i64 i32)))
+  (memory $5  40 5342)
+  (memory $6  89 28280 shared)
+  (global $12  (mut v128) (v128.const i32x4 0x9c2e0ebd 0xeaa031f5 0x89e1d175 0x3b2001b2))
+  (global $13  v128 (v128.const i32x4 0x3f9bc97f 0xef61f541 0x1cac9d65 0x71f31fba))
+  (elem $14 funcref
+    (ref.func $17) (ref.null func) (ref.null func) (ref.func $17)
+    (ref.null func) (ref.func $16) (ref.null func) (ref.null func)
+    (ref.null func) (ref.null func) (ref.null func) (ref.func $16)
+    (ref.func $17) (ref.func $16) (ref.func $16) (ref.func $16)
+    (ref.func $17) (ref.null func) (ref.null func) (ref.func $17)
+    (ref.null func) (ref.func $17) (ref.null func) (ref.func $17)
+    (ref.null func) (ref.func $17) (ref.func $16) (ref.func $17))
+  
+  (func $17 (type $0)
+    (param $0 f64)
+    (param $1 i32)
+    (param $2 externref)
+    (param $3 f32)
+    (result v128 i64)
+    (local $4 externref)
+    global.get $10
+    global.get $7
+    f64.convert_i64_s
+    global.get $7
+    loop $loop (param f64 i64) (result f64)
+      i64.const 8859239205036014653
+      i64.rotl
+      local.get $3
+      i64.trunc_sat_f32_u
+      i64.rotr
+      elem.drop $14
+      loop $loop_0 (param i64) (result f32)
+        i64.const -1199450496834778256
+        i64.extend8_s
+        i64.rotl
+        ref.null extern
+        ref.is_null
+        global.set $11
+        global.set $7
+        global.get $12
+        drop
+        global.get $13
+        unreachable
+      end ;; $loop_0
+      ref.null func
+      ref.null func
+      unreachable
+    end ;; $loop
+    unreachable
+    )
+  
+  (data $15 
+    "Y+)\99\9cG\9f\fd\9c\13\06\15\ccC,8b\bf"))

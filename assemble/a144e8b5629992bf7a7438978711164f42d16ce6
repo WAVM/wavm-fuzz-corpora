@@ -1,0 +1,25 @@
+(module
+  (type $0 (func (result f32 funcref)))
+  (import "env" "memory" (memory $1 81 2581 shared))
+  (import "env" "global1" (global $4 i64))
+  (memory $2  83 19425 shared)
+  (memory $3  96 30489 shared) (global $5  i32 (i32.const -1575723009))
+  (global $6  (mut i32) (i32.const 1473355472))
+  (global $7  v128 (v128.const i32x4 0x37b25dae 0x1e6cbea5 0x5ce3f210 0xc9fdb913))
+  (elem $8 declare global)
+  (elem $9 declare exception_type)
+  
+  (func $11 (type $0)
+    (result f32 funcref)
+    (local $0 f32)
+     ref.null func
+    ref.null extern
+    ref.is_null
+    global.set $6
+    ref.is_null
+    drop
+    unreachable
+    )
+  
+  (data $10 
+    "\f0.\17c0\ce\e6f\87\ae.D\8b&c\e5y\ed"))

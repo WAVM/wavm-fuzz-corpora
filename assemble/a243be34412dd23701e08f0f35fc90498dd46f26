@@ -1,0 +1,4 @@
+(func  i32.trunc_f32_s i32.trunc_f32_s
+ i32.trunc_f32_s
+ i32.trunc_f32_s _f)(func i32.trunc_f32_s i32.trunc_f32_s
+ i32.trunc_f32_s i32.trunc_f32_s)

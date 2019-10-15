@@ -1,0 +1,96 @@
+(module
+  (type $0 (func (param i64 externref externref i64)))
+  (type $1 (func (result v128)))
+  (type $2 (func))
+  (type $3 (func (param f64)))
+  (import "env" "memory" (memory $6 6 37438 shared))
+  (import "env" "global0" (global $7 (mut i64)))
+  (import "env" "global1" (global $8 externref))
+  (import "env" "func0" (func $13 (param funcref funcref) (result v128)))
+  (table $4  38 4294967295 shared externref)
+  (table $5  59 4294967295 funcref)
+  (global $9  i64 (i64.const -2675412106272225218))
+  (global $10  v128 (v128.const i32x4 0xcb46dbb8 0x6ce3dd32 0xf434ddfb 0xbdb0505b))
+  
+  (func $14 (type $0)
+    (param $0 i64)
+    (param $1 externref)
+    (param $2 externref)
+    (param $3 i64)
+    (local $4 i64)
+    (local $5 funcref)
+    (local $6 i32)
+    local.get $5
+    local.get $5
+    local.get $0
+    global.set $7
+    memory.size
+    data.drop $12
+    i64.load8_u offset=145262637
+    f32.const 0x1.10af88p-27
+    unreachable
+    )
+  
+  (func $15 (type $2)
+    (local $0 i32)
+    atomic.fence
+    atomic.fence
+    global.get $9
+    data.drop $11
+    table.size $4
+    local.get $0
+    i32.atomic.rmw.add offset=2227800557
+    v32x4.load_interleaved_3 offset=1381919421 align=4
+    v128.and
+    i32x4.max_s
+    i32x4.widen_low_i16x8_s
+    return
+    )
+  
+  (func $16 (type $2)
+    ref.null func
+    table.size $4
+    v32x4.load_interleaved_3 offset=421761117 align=8
+    f32x4.neg
+    i16x8.ge_s
+    f64x2.mul
+    v128.const i32x4 0x9ab567f1 0xbb79832c 0xfdf66a0c 0xb6c72fe7
+    f64x2.eq
+    br 0
+    )
+  
+  (func $17 (type $3)
+    (param $0 f64)
+    (local $1 f64)
+    (local $2 f64)
+    (local $3 i64)
+    nop
+    i64.const 4047067717257424508
+    local.tee $3
+    drop
+    call $16
+    i32.const 377690209
+    v32x4.load_interleaved_3 offset=3206323009 align=4
+    i16x8.sub
+    i8x16.all_true
+    f64.const 0x1.7ce643da7307ap+55
+    v128.const i32x4 0xa4c7ddfa 0xee92d15c 0x66602553 0x07262baa
+    i32x4.all_true
+    memory.size
+    i8x16.splat
+    i8x16.extract_lane_s 9
+    i32.gt_u
+    table.get $4
+    ref.null extern
+    ref.is_null
+    ref.null func
+    ref.is_null
+    i32.atomic.rmw8.and_u offset=2217876037
+    unreachable
+    )
+  
+  (data $11 
+    "/q\fa\e6\fa\f72x\de3\df\aa\ad>\97\99V\ca\b9\b0\e7\e8~\0c\fa\nR\fd\baj2k\fb\8f\80")
+  
+  (data $12 (i32.const 712438998)
+    "q\12u\e2\d5l~\f9@"))

@@ -1,0 +1,73 @@
+(module
+  (type $0 (func (param externref)))
+  (type $1 (func (param externref externref i64)))
+  (type $2 (func (param v128)))
+  (import "env" "memory" (memory $6 20 16269 shared))
+  (import "env" "table" (table $3 42 4294967295 externref))
+  (import "env" "table" (table $4 31 4294967295 shared externref))
+  (import "env" "global0" (global $7 i64))
+  (import "env" "global1" (global $8 f32))
+  (import "env" "global4" (global $9 (mut i32)))
+  (import "env" "global5" (global $10 (mut i64)))
+  (import "env" "global6" (global $11 (mut i64)))
+  (import "env" "global7" (global $12 (mut externref)))
+  (import "env" "func0" (func $17 (param v128)))
+  (table $5  67 4294967295 externref)
+  (global $13  (mut f64) (f64.const 0x1.a52dbd23da944p+63))
+  (global $14  (mut i64) (i64.const 1576755184705666233))
+  
+  (func $18 (type $0)
+    (param $0 externref)
+    (local $1 v128)
+    (local $2 i32)
+    (local $3 funcref)
+    memory.size
+    v8x16.load_interleaved_3 offset=1597167421 align=1
+    i16x8.avgr_u
+    i16x8.extract_lane_u 4
+    memory.size
+    i32.and
+    data.drop $16
+    v8x16.load_interleaved_3 offset=1264109419
+    i32x4.min_s
+    v128.andnot
+    f32x4.abs
+    f32x4.gt
+    f32x4.extract_lane 3
+    memory.size
+    v128.const i32x4 0x61c8bb28 0xf8b9ebb5 0xbe984a48 0x055c135f
+    br 0
+    )
+  
+  (func $19 (type $1)
+    (param $0 externref)
+    (param $1 externref)
+    (param $2 i64)
+    (local $3 i64)
+    local.get $3
+    nop
+    nop
+    i64.clz
+    global.get $9
+    i32.load offset=4091090611 align=2
+    data.drop $15
+    v32x4.load_interleaved_4 offset=2229785557
+    v128.andnot
+    i32x4.add
+    i32x4.widen_low_i16x8_s
+    f32x4.le
+    i8x16.extract_lane_u 8
+    i8x16.splat
+    table.size $5
+    i64x2.shr_s
+    call $17
+    drop
+    return
+    )
+  
+  (data $15 (i32.const -2014708777)
+    "Iw#Yf\98\0c)\90\e0\86M7;|\95V\92\ffI\c3\96\a6\1d`\e8~\b5x\1d\a7#\c6\ee\f3-\e4\b3w\c1\be\e7\f7;\9d\9d\11\05\dd\b5\d2+lSY\9b\\/%\b2\8aT\f6D"
+    "qe\9d6\d4\cb\b9\cb\03j\"b\04h>\8b\e3\8a\89$\f9")
+  
+  (data $16 (i32.const 993052308)
+    "\9c\c34\89_\cc\8b\bb\fa\81\d7\d8-\d6"))

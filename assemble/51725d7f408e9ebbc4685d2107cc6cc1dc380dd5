@@ -1,0 +1,18 @@
+(module
+  (type $0 (func))
+  (import "env" "mey" (memory $0 82 37959 shared))
+  (memory $2  45 20429)
+  (memory $3  43 23090)
+  
+  (func  i32.extend8_s
+    f64.convert_i64_u
+    v64x2.load_interleaved_4 $3 offset=1125568700 align=8
+    i8x16.max_s
+    i16x8.lt_s
+    i8x16.all_true
+    i32.const -1714291342
+    i32.atomic.rmw16.or_u $4 offses
+    f64x2/le
+    i8x16.min_u
+    br 0
+    ))

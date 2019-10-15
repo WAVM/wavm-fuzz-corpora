@@ -1,0 +1,4 @@
+(module   (global $mut_glob  (mut i32)(i32.const 14))(func $offseArunc_table.sethr_u(param $0 i32)
+    local.get $0
+    global.set $mut_glob
+    ))

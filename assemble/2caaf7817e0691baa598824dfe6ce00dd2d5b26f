@@ -1,0 +1,55 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param v128) (result f32 v128)))
+  (type $2 (func (param funcref) (result f32 v128)))
+  (type $3 (func (result funcref f32 i32 i32)))
+  (import "env" "table" (table $4 40 4294967295 shared funcref))
+  (import "env" "table" (table $5 50 4294967295 externref))
+  (import "env" "table" (table $6 38 4294967295 externref))
+  (import "env" "func0" (func $10))
+  (import "env" "func1" (func $11 (param v128) (result f32 v128)))
+  (global $7  funcref (ref.null func))
+  
+  (func $12 (type $2)
+    (param $0 funcref)
+    (result f32 v128)
+    (local $1 i32)
+    local.get $1
+    f32.convert_i32_s
+    v128.const i32x4 0x645c6d7c 0x82f87427 0x67b9358e 0x7fc5465b
+    i16x8.extract_lane_u 3
+    local.get $0
+    call $10
+    table.set $4
+    block $block (result funcref f32 i32 i32)
+      i32.const -33571140
+      f32.const 0x1.861c24p+65
+      f32.nearest
+      f32.neg
+      f32.sqrt
+      i32.trunc_f32_s
+      i32.le_u
+      table.get $6
+      unreachable
+    end ;; $block
+    i32.le_u
+    local.set $1
+    ref.null extern
+    unreachable
+    )
+  
+  (func $13 (type $0)
+    f64.const 0x1.bcb136e01a7e5p-815
+    drop
+    nop
+    call $10
+    data.drop $9
+    return
+    )
+  
+  (data $8 
+    "k\df\947\c2;\aa\ba")
+  
+  (data $9 
+    "M\c9\d8\cbB\fb\fe[I)\a4\01\\\e1)\00\02,\cc\17\b67\f3u\82\96V\c4:*Jm\cb-\9b\e0\e6%\be\90\c5\f0O\0e\08[\9e\f8:be\0b\b7^\03\87ym<"
+    "i\7f\9a$\16\00\ea{\a1\04 \96\e4\00\9a\97\ae"))

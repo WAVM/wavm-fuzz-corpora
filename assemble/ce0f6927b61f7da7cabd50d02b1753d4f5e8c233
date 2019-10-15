@@ -1,0 +1,3 @@
+(memory 0 31 shared)(func(.x)(chg_u))(func()i64.atomic.rmw.sub i64.atomic.rmw.sub
+)(func()i64.atomic.rmw.sub )(func()i64.atomic.rmw.sub  0)(func()i64.atomic.rmw.sub i64.atomic.rmw.sub ()i64.atomic.rmw.sub i64.atomic.rmw.sub ared)(func(.x)(chg_u))(func()i64.atomic.rmw.sub i64.atomic.rmw.sub
+)(func()i64.atomic.rmw.sub )(func()i64.atomic.rmw.sub  0)(func()i64.atomic.rmw.sub i64.atomic.rmw.sub ()i64.atomic.rmw.sub i64.atomic.rmw.sub omicb )

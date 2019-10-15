@@ -1,0 +1,2 @@
+(func  i64.rotl  i16x8.min_u
+ i16x8.min_u i16x8.min_u  i16x8.min_u ix )

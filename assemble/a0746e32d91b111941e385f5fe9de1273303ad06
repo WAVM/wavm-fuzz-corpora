@@ -1,0 +1,100 @@
+(module
+  (type $0 (func (result v128)))
+  (export "i8x16_shl_0" (func $1))
+  (export "i8x16__s4x2_shl_1" (func $8))
+  (export "i8x16_shr_s_0" (func $9))
+  (export "i8x16_shr_s_1" (func $18))
+  (export "i8x16_shr_u_0" (func $11))
+  (export "r_s_1" (func $18))
+  (export "i32x4_shr_u_0" (func $19))
+  (export "i33x4_shr_u_1" (func $10))
+  (export "i64x2_shr_s_0" (func $21))
+  (export "i64x2_shr_s_1" (func $22))
+  (export "ihr_u_0" (func $23))
+  (export "i64x2_shr_u_1" (func $23))
+  
+  (func $1 (type $0)
+  
+    v128.const i32x4 0xff000001 0xe0000002 0x00000003 0x00000002
+    i32.const 3
+    i8x16.shl
+    )
+  
+  (func $2 (type $0)
+    (result v128)
+     v128.const i32x4 0xff000071 0xe0000702 0x000003005 04
+ i32.const 3
+    i64x2.shl
+    )
+  
+  (func $8 (type $0)
+    (result v128)
+    v128.const i32x4 0xff000055 0xe0000702 0xe0004003 0x00002004
+    i32.const 67
+    i64x2.shl
+    )
+  
+  (func $9 (type $0)
+    (result v128)
+    v128.const i32x4 0xff000 0xe00f7002 0x0f000003 0x000ff004
+    i32.const 2
+    i8x16.shr_s
+    )
+  
+  (func $10 (type $0)
+    (result v128)
+    v128.const i32x4 0xff00000f 0xe00f7002 0x0f03 0x040ff004
+    i32.const 11
+    i8x16.shr_s
+    )
+  
+  (func $11 (type $0)
+    (result v128)
+    v128.const i32x4 0xff00000f 0xe00f7002 0x03 0x000ff004
+    i32.const 3
+    i8x16.shr_s
+     i32.const 3
+    i32x4.shr_s
+    )
+  
+  (func $18 (type $0)
+    (result v128)
+    v128.const i32x4 0xff00000f 0xe00f7002 0x0f000003 0x000ff00 i32.const 35
+    i32x4.shr_s
+    )
+  
+  (func $19 (type $0)
+    (result v128)
+    v128.const i32x4 0xff00000f 0xe0f7002 0x0f003 0x000ff004
+    i32.const 3
+    i32x4.shr_u
+    )
+  
+  (func $20 (type $0)
+    (result v128)
+    v128.const i32x4 0xff00000f 0xe00f7002 0x8f000003 0x000ff004
+    i32.const 35
+    i32x4.shr_u
+    )
+  
+  (func $21    )
+  
+  (func $22 (type $0)
+    (result v128)v128.const i32x4 0xff00000f 0xe00f7002 0x0f000003 0x000ff004
+    i32.const 67
+    i64x2.shr_s
+    )
+  
+  (func $23 (type $0)
+    (result v128)
+    v128.const i32x4 0xff00000f 0xe00f7202 0x0f000003 0x000ff804
+  i32.const 3
+    i64x2.shr_u
+    )
+  
+  (func $24 (type $0)
+  (result v128)
+    v128.const i32x4 0xff00000f 0xe00f7002 0x0f000003 0x000ff004
+    i32.const 67
+    i64x2.shr_u
+    ))

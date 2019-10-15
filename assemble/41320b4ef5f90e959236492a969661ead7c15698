@@ -1,0 +1,63 @@
+(module
+  (type $0 (func (param i64)))
+  (type $1 (func (param i64 externref externref externref) (result i32)))
+  (type $2 (func (param v128) (result f64)))
+  (type $3 (func (param f64 i64 f32 externref) (result i64)))
+  (import "env" "memory" (memory $7 14 26920 shared))
+  (import "env" "table" (table $4 47 4294967295 funcref))
+  (import "env" "global0" (global $8 (mut funcref)))
+  (import "env" "global3" (global $9 (mut f32)))
+  (import "env" "func0" (func $15 (param i64 externref externref externref) (result i32)))
+  (import "env" "func1" (func $16 (param f64 i64 f32 externref) (result i64)))
+  (table $5  78 4294967295 shared externref)
+  (table $6  23 4294967295 externref)
+  (global $10  v128 (v128.const i32x4 0xb953e395 0x25fbf1ea 0x83997f9d 0xae972ba8))
+  (global $11  i32 (i32.const -23563378))
+  (elem $12 (table $5) (i32.const -1994480399) global
+    $8 $9 $9 $9 $9 $9 $8 $9
+    $10 $11 $8 $11 $10 $10 $11 $8
+    $10 $8 $9 $8 $10 $9 $11 $11
+    $9 $11)
+  (elem $13 (table $5) (i32.const -1901727166) memory
+    $7 $7 $7 $7 $7 $7 $7 $7
+    $7 $7 $7 $7 $7 $7 $7 $7
+    $7 $7 $7 $7 $7 $7 $7 $7
+    $7 $7 $7 $7 $7 $7 $7 $7
+    $7 $7 $7 $7 $7 $7 $7 $7
+    $7 $7 $7 $7 $7 $7 $7 $7
+    $7 $7 $7 $7 $7 $7 $7 $7
+    $7 $7 $7 $7 $7 $7 $7 $7
+    $7)
+  
+  (func $17 (type $0)
+    (param $0 i64)
+    memory.size
+    nop
+    v32x4.load_interleaved_2 offset=2013748936 align=2
+    i16x8.bitmask
+    i16x8.load8x8_u offset=3056148550 align=2
+    f64x2.gt
+    global.get $9
+    f32x4.replace_lane 2
+    f32x4.abs
+    global.get $11
+    i8x16.shr_u
+    i8x16.neg
+    i8x16.extract_lane_u 10
+    i64x2.load32x2_u offset=1107287578 align=2
+    drop
+    br 0
+    )
+  
+  (func $18 (type $2)
+    (param $0 v128)
+    (result f64)
+    (local $1 i64)
+    (local $2 v128)
+    (local $3 i32)
+    (local $4 funcref)
+    unreachable
+    )
+  
+  (data $14 (i32.const 1152314465)
+    "\03\89<iu\f0n\1f\d6W\ec\0B\a4S-A\a4U3\f8\d5\ab\1f\cf\a8(\f09k\1f\8f"))

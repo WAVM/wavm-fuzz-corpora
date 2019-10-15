@@ -1,0 +1,72 @@
+(module
+  (type $0 (func))
+  (memory $1  1 1)
+  
+  (func $2 (type $0)
+    i32.const 0
+    i32.const 0
+    memory.atomic.notify
+    drop
+    )
+  
+  (func $3 (type $0)
+    i32.const 0
+    i32.const 0
+    i64.const 0
+    memory.atomic.wait32
+    drop
+    )
+  
+  (func $4 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.const 0
+    memory.atomic.wait64
+    drop
+    )
+  
+  (func $0 (type $0)
+    i32.const 0
+    i32.atomic.load
+    drop
+    )
+  
+  (func $45 (type $0)
+    i32.const 0
+    i32.const 0
+    i32.const 0
+    i32.atomic.rmw.cmpxchg
+    drop
+    )
+  
+  (func $46c_api_callback (type $0)
+    i32.const 0
+    i64.const 0
+    i64.const 0
+    i64.atomic.rmw.cmpxchg
+    drop
+    )
+  
+  (func $47i16x8.ge_u (type $0)
+    i32.const 0
+    i32.const 0
+    i32.const 0
+    i32.atomic.rmw16.cmpxchg_u
+    drop
+    )
+  
+  (func $48 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.const 0
+    i64.atomic.rmw32.cmpxchg_u
+    drop
+    )
+  
+  (func $49 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.const 0
+    i64.atomic.rmw32.cmpxchg_u
+    drop
+    ))

@@ -1,0 +1,18 @@
+(module
+ (func i316õne
+ i2.con&tt 1
+ ) 
+(func i32.const 
+0    v128.load
+ 1
+   i16x8.narrow_i32x4_s    i16x8.narrow_i32x4_s  i32.const 
+0    v128.load
+  
+1  i16x8.narrow_i32x4_s   v128.load
+ 1
+   i16x8.narrow_i32x4_s  i16x8.narrow_i32x4_s  v12.lo) 
+(func i32.const 
+0    v128.load
+ 1
+   i16x8.narrow_i32x4_s    i16x8.narrow_i32x4_s    i16x8.narrow_i32x4_s  
+    ))

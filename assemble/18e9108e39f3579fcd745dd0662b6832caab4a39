@@ -1,0 +1,60 @@
+(module
+  (type $0 (func (param i64) (result f64 externref)))
+  (type $1 (func (param v128 f64 f64) (result externref funcref)))
+  (type $2 (func (param i64) (result v128 funcref funcref i64)))
+  (import "env" "memory" (memory $6 38 49164 shared))
+  (import "env" "global0" (global $7 i32))
+  (import "env" "global1" (global $8 (mut f64)))
+  (import "env" "func0" (func $15 (param v128 f64 f64) (result externref funcref)))
+  (table $3  66 4294967295 shared externref)
+  (table $4  51 4294967295 shared funcref)
+  (table $5  84 4294967295 shared funcref)
+  (global $9  v128 (v128.const i32x4 0xd5254600 0xd635c9c9 0x6d2550c4 0xc13744fb))
+  (global $10  externref (ref.null extern))
+  (global $11  (mut i32) (i32.const 1755210223))
+  (elem $12 table
+    $5 $3 $4 $3 $3 $5 $4 $4
+    $5 $4 $5 $5 $4 $4 $3 $5
+    $3 $3 $4 $3 $4 $4 $5 $5
+    $3 $4 $3 $5 $5 $4 $5 $5
+    $3 $3 $4 $3 $3 $4 $3 $3
+    $3 $3 $3 $4 $5 $4 $5 $5
+    $5 $3 $3 $3 $5 $3 $3 $5
+    $4 $5 $4 $4 $4 $4 $5 $4
+    $3)
+  
+  (func $16 (type $0)
+    (param $0 i64)
+    (result f64 externref)
+    ref.null func
+    local.get $0
+    i64.popcnt
+    f32.convert_i64_s
+    i32.trunc_sat_f32_u
+    global.get $7
+    i32.atomic.store8 offset=148463400
+    f32.const -0x1.9a449cp+25
+    f32x4.splat
+    i32x4.neg
+    drop
+    drop
+    i32.const 2134990891
+    local.get $0
+    block $block (param i64) (result v128 funcref funcref i64)
+      local.set $0
+      global.get $9
+      i32.const -1528287636
+      i16x8.shl
+      i32x4.bitmask
+      unreachable
+    end ;; $block
+    unreachable
+    )
+  
+  (data $13 
+    "$\e5\01w p\18\d8\bf\04n@\f6\b8a}^\a8u\f6\eb\b4\"|\11C\142\fa{$NAT\00D\d8t\1b\d2I4~\0b\e9\88\0ci\15C\ea\c9\ad\01\a993\f8e@e\9c\f5\a6"
+    "\dd\n\80\af\a7\c6\b1J}`9\13\c7\97\0d'\\\d5")
+  
+  (data $14 (i32.const 1748794834)
+    "}\83\d9<\fa \1c\99W\e77|.\14H\07/\n\b8\05d\\\ee\e2{\18\0d\b8\12\bb^\f3\e3\83rN\80'\1f\1962\02\1b\b5uw\beo\15\b33\fa\c5B\d9,\81\d9\da\e3\13J\15"
+    "\e2\ec\ca\1f\d2\9e\f7\bb\84/\9cW\1f\8a\c5z}*"))

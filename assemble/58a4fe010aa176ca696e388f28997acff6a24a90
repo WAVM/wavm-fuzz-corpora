@@ -1,0 +1,17 @@
+(memory 0)(func(e)
+i64.atomic.rmw8.xchg_u i64.atomic.rmw8.xchg_u
+i64.atomic.rmw8.xchg_u i64.atomic.rmw8.xchg_u
+i64.atomic.rmw8.xchg_u i64.atomic.rmw8.xchg_u
+i64.atomic.rmw8.xchg_u
+i64.atomic.rmw8.xchg_u i64.atomic.rmw8.xchg_u
+i64.atomic.rmw8.xchg_u i64.atomic.rmw8.xchg_u
+i64.atomic.rmw8.xchg_u
+i64.atomic.rmw8.xchg_u i64.atomic.rmw8.xchg_u i64.atomic.rmw8.xchg_u i64.atomic.rmw8.xchg_u;5memory 0)(func(e)
+i64.atomic.rmw8.xchg_u i64.atomic.rmw8.xchg_u
+i64.atomic.rmw8.xchg_u i64.atomic.rmw8.xchg_u
+i64.atomic.rmw8.xchg_u i64.atomic.rmw8.xchg_u
+i64.atomic.rmw8.xchg_u
+i64.atomic.rmw8.xchg_u i64.atomic.rmw8.xchg_u
+i64.atomic.rmw8.xchg_u i64.atomic.rmw8.xchg_u
+i64.atomic.rmw8.xchg_u
+i64.atomic.rmw8.xchg_u i64.atomic.rmw8.xchg_u i64.atomic.rmw8.xchg_u i64.atomic.rmw8.xchg_u;5)

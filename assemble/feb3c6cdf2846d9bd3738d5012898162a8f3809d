@@ -1,0 +1,2 @@
+(module
+ (memory  0) (func unreachable i64.atomic.rmw8.xor_u   unreachable))

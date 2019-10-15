@@ -1,0 +1,1 @@
+(func v128.load 0 v128.load 0xc v128.load 0)

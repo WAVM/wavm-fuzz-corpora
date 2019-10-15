@@ -1,0 +1,8 @@
+(module
+  (type $1 (func (param funcref f32)))
+  (import "env" "func0" (func $9 (param i64) (result i64)))
+  (memory $3  49 58981 shared)
+  (memory $4  55 49838 shared)
+  (memory $5  34 3611 shared)
+  (table $2  41447 1723647 funcref)
+  )

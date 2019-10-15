@@ -1,0 +1,3 @@
+
+(import "" ""(table 6 funcref))
+(import "" ""(table 5 funcref))(import "" ""(table 8 funcref))(import "" "H"(table 50 funcref))

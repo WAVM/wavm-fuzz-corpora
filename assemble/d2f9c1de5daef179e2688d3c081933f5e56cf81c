@@ -1,0 +1,3 @@
+(table $t 10 externref)(func $ty   (table.fill $t`(i16t P1))
+    )
+  

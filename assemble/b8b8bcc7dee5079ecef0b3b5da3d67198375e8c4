@@ -1,0 +1,66 @@
+(module
+  (type $0 (func (result f64)))
+  (type $1 (func (param f32 f64 i64 i64)))
+  (type $2 (func (result i32 v128)))
+  (type $3 (func (param i64 f32) (result externref)))
+  (type $4 (func (param i32)))
+  (import "env" "memory" (memory $6 72 54654 shared))
+  (import "env" "table" (table $5 78 4294967295 externref))
+  (import "env" "func0" (func $8 (param f32 f64 i64 i64)))
+  (import "env" "func1" (func $9 (result i32 v128)))
+  (global $7  (mut v128) (v128.const i32x4 0x328bc637 0x02210dfe 0xea2b962f 0x56232e27))
+  
+  (func $10 (type $0)
+    (result f64)
+    (local $0 f64)
+    unreachable
+    )
+  
+  (func $11 (type $3)
+    (param $0 i64)
+    (param $1 f32)
+    (result externref)
+    (local $2 externref)
+    (local $3 i64)
+    (local $4 f32)
+    (local $5 i64)
+    v128.const i32x4 0x965a5520 0xe71eec5d 0x9c6dac4d 0x68b5dba1
+    f32x4.abs
+    i32x4.any_true
+    i32.eqz
+    nop
+    i32.load16_u offset=1273796662
+    memory.size
+    i32.extend16_s
+    i32.atomic.rmw16.xor_u offset=205747928
+    drop
+    f64.const 0x1.b819a49f5c160p-273
+    local.get $0
+    f64.reinterpret_i64
+    global.get $7
+    i32x4.widen_low_i16x8_s
+    drop
+    f64.ne
+    table.get $5
+    )
+  
+  (func $12 (type $4)
+    (param $0 i32)
+    (local $1 externref)
+    f32.const -0x1.e11cf8p-19
+    local.get $0
+    v8x16.load_interleaved_2 offset=3307086123 align=8
+    global.set $7
+    ref.null func
+    atomic.fence
+    drop
+    i8x16.neg
+    i16x8.widen_high_i8x16_s
+    i8x16.any_true
+    local.get $0
+    i64.load32_s offset=4165191401 align=1
+    i64.atomic.rmw16.xor_u offset=4244315300
+    local.get $1
+    i32.const 830599963
+    br 0
+    ))

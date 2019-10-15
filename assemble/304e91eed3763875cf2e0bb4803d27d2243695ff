@@ -1,0 +1,115 @@
+(module
+  (type $0 (func (param f32 funcref f64) (result i64)))
+  (type $1 (func (param i64 i64 i64 externref) (result v128)))
+  (type $2 (func (param i64 f32) (result i64)))
+  (type $3 (func (param f32 i64) (result v128 v128)))
+  (type $4 (func (param funcref funcref f64 f64)))
+  (type $5 (func (result funcref f32 v128)))
+  (type $6 (func (param f32) (result funcref i64 v128 i32)))
+  (import "env" "global0" (global $11 i64))
+  (import "env" "global2" (global $12 funcref))
+  (import "env" "global6" (global $13 (mut f32)))
+  (import "env" "global8" (global $14 f32))
+  (import "env" "func0" (func $23 (param f32 funcref f64) (result i64)))
+  (import "env" "func1" (func $24 (param i64 f32) (result i64)))
+  (memory $10  91 59701 shared)
+  (table $7  15 4294967295 shared externref)
+  (table $8  99 4294967295 funcref)
+  (table $9  31 4294967295 shared funcref)
+  (global $15  (mut f64) (f64.const 0x1.2721abfb7d9adp+62))
+  (global $16  (mut f32) (f32.const 0x1.0e366ep+31))
+  (global $17  (mut v128) (v128.const i32x4 0xf7b14f52 0xcd906a26 0xba4a790f 0x6606dfd1))
+  (global $18  (mut f64) (f64.const 0x1.261f0b3161f3bp+63))
+  (global $19  funcref (ref.null func))
+  (global $20  f64 (f64.const 0x1.606be30deb1fap+60))
+  (elem $21 (table $9) (i32.const 1470842051) funcref
+    (ref.func $24) (ref.func $23) (ref.func $27) (ref.func $26)
+    (ref.func $26) (ref.null func) (ref.null func) (ref.func $25)
+    (ref.func $27) (ref.func $23) (ref.func $25) (ref.func $26)
+    (ref.func $26) (ref.func $26) (ref.null func) (ref.func $25)
+    (ref.null func) (ref.func $25) (ref.func $25) (ref.func $23)
+    (ref.func $26) (ref.func $24) (ref.null func) (ref.func $23)
+    (ref.func $23) (ref.func $25) (ref.func $27) (ref.func $24)
+    (ref.null func) (ref.func $26) (ref.func $23) (ref.func $23)
+    (ref.func $23) (ref.func $23) (ref.null func) (ref.func $23)
+    (ref.func $27) (ref.func $27) (ref.func $27) (ref.func $25)
+    (ref.func $26) (ref.func $23) (ref.func $24) (ref.func $26)
+    (ref.func $26) (ref.func $27) (ref.func $24) (ref.func $23)
+    (ref.null func) (ref.func $24) (ref.func $24) (ref.func $23)
+    (ref.func $23) (ref.func $24) (ref.null func) (ref.func $25)
+    (ref.func $23) (ref.func $26) (ref.func $24) (ref.func $25)
+    (ref.func $25) (ref.null func) (ref.func $25) (ref.func $24)
+    (ref.func $27) (ref.null func) (ref.null func) (ref.null func)
+    (ref.func $27) (ref.null func) (ref.func $23) (ref.func $25)
+    (ref.func $24) (ref.null func) (ref.null func) (ref.null func)
+    (ref.func $24) (ref.func $24) (ref.func $23) (ref.func $25)
+    (ref.func $24) (ref.func $26) (ref.func $25) (ref.func $25))
+  (elem $22 memory
+    $10 $10 $10 $10 $10 $10 $10 $10
+    $10 $10 $10 $10 $10 $10 $10 $10
+    $10 $10 $10 $10 $10 $10 $10 $10
+    $10 $10 $10 $10 $10 $10 $10 $10
+    $10 $10 $10 $10 $10 $10 $10)
+  
+  (func $25 (type $1)
+    (param $0 i64)
+    (param $1 i64)
+    (param $2 i64)
+    (param $3 externref)
+    (result v128)
+    (local $4 externref)
+    local.get $4
+    elem.drop $21
+    memory.size
+    block $block (result funcref f32 v128)
+      i32.const -1227082842
+      call_indirect $8 (type $5)
+      i16x8.extract_lane_u 4
+      global.get $11
+      i64.store8 offset=2613776864
+      f32x4.splat
+      global.get $15
+      global.get $13
+      elem.drop $21
+      nop
+      block $block_0 (param f32) (result funcref i64 v128 i32)
+        drop
+        local.get $3
+        drop
+        global.get $15
+        unreachable
+      end ;; $block_0
+      i8x16.replace_lane 4
+      drop
+      local.set $0
+      drop
+      global.set $15
+      unreachable
+    end ;; $block
+    drop
+    global.set $13
+    unreachable
+    )
+  
+  (func $26 (type $3)
+    (param $0 f32)
+    (param $1 i64)
+    (result v128 v128)
+    (local $2 i64)
+    (local $3 externref)
+    local.get $1
+    unreachable
+    )
+  
+  (func $27 (type $4)
+    (param $0 funcref)
+    (param $1 funcref)
+    (param $2 f64)
+    (param $3 f64)
+    (local $4 v128)
+    global.get $17
+    i16x8.extract_lane_s 5
+    i64.load32_u offset=235325903
+    elem.drop $21
+    br 0
+    ))

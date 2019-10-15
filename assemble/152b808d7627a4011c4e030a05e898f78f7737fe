@@ -1,0 +1,72 @@
+(module
+  (type $0 (func (param i32 i32 f32)))
+  (type $1 (func (param externref i64 i64 f32)))
+  (type $2 (func (result i32)))
+  (import "env" "memory" (memory $6 77 48593 shared))
+  (import "env" "memory" (memory $7 18 58935))
+  (import "env" "table" (table $3 100 4294967295 externref))
+  (import "env" "table" (table $4 87 4294967295 externref))
+  (import "env" "global0" (global $9 (mut f64)))
+  (import "env" "global4" (global $10 externref))
+  (import "env" "func0" (func $19 (param externref i64 i64 f32)))
+  (memory $8  55 9910 shared)
+  (table $5  68 4294967295 shared funcref)
+  (global $11  funcref (ref.null func))
+  (global $12  i32 (i32.const 2091409597))
+  (global $13  (mut externref) (ref.null extern))
+  (global $14  v128 (v128.const i32x4 0x2ed5f821 0x697ac0de 0x06a3c152 0xc53e8b72))
+  (global $15  (mut i32) (i32.const -1890792251))
+  (elem $16 declare externref
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern))
+  
+  (func $20 (type $0)
+    (param $0 i32)
+    (param $1 i32)
+    (param $2 f32)
+    f32.const 0x1.087de0p-62
+    nop
+    local.get $2
+    local.set $2
+    global.get $13
+    global.get $12
+    i32.atomic.load offset=15087215
+    i32x4.load16x4_s $7 offset=105306715
+    i32x4.widen_low_i16x8_u
+    i32x4.neg
+    v128.const i32x4 0xf1422bd6 0xb2f98938 0x3b542b17 0x53416698
+    i32x4.lt_u
+    i32x4.widen_low_i16x8_u
+    i32x4.neg
+    br 0
+    )
+  
+  (func $21 (type $2)
+    (result i32)
+    (local $0 i64)
+    (local $1 f64)
+    f32.const 0x1.5ea82cp+38
+    f32.neg
+    f32.sqrt
+    i32.trunc_f32_s
+    i64.load8_u $7 offset=2311060972
+    global.get $12
+    i64.load16_s $7 offset=3023666693 align=1
+    i64.const -4287274579426101221
+    i64.shr_s
+    i64.gt_u
+    global.get $11
+    nop
+    f64.const -0x1.ba46ad9d5eac4p-102
+    f64.abs
+    global.get $10
+    ref.null extern
+    unreachable
+    )
+  
+  (data $17 (memory $8) (i32.const -2119181103)
+    "\94OU\d2.\b4U\18\92\92U\ef\dc\c3\ce\0e~\a4\f5")
+  
+  (data $18 
+    "{\0ey-\ae\ce\9e|\c0\0eS\02\dd\89g\c4$\b2\e6\dcd\d8\08Q\82j\04\edj\ae\e4Ist\cf\fcv5\af\da\0d@\a7\d2\d3ZW\fbt\b0\c1wP\e1\a8\89\f5zFG\c3\16|Q"
+    "\81PF\bc[\11\cb0\02\0bDZ"))

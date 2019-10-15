@@ -1,0 +1,76 @@
+(module
+  (type $0 (func (param i64 i64 i32) (result funcref)))
+  (type $1 (func (param f64 f32) (result i64 i32)))
+  (type $2 (func (param f64 funcref i32) (result f64)))
+  (import "env" "table" (table $3 57 4294967295 shared externref))
+  (import "env" "global1" (global $6 (mut v128)))
+  (import "env" "func0" (func $10 (param i64 i64 i32) (result funcref)))
+  (table $4  13 4294967295 shared externref)
+  (table $5  17 4294967295 shared funcref)
+  (global $7  v128 (v128.const i32x4 0x2f892d3e 0x498b8808 0x5df511f5 0x850278c9))
+  (elem $8 (table $4) (i32.const 947121284) externref
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern))
+  (elem $9 funcref
+    (ref.func $12) (ref.func $10) (ref.func $12) (ref.null func)
+    (ref.func $11) (ref.func $12) (ref.func $11) (ref.func $11)
+    (ref.null func) (ref.func $11) (ref.func $11) (ref.func $12)
+    (ref.func $11) (ref.func $12) (ref.func $12) (ref.func $12)
+    (ref.func $12) (ref.func $11) (ref.func $10) (ref.func $11)
+    (ref.func $12) (ref.func $11) (ref.null func) (ref.null func)
+    (ref.func $10) (ref.null func))
+  
+  (func $11 (type $1)
+    (param $0 f64)
+    (param $1 f32)
+    (result i64 i32)
+    (local $2 externref)
+    i32.const -1105797869
+    table.size $5
+    i32.eqz
+    i32.clz
+    i32.rotr
+    i8x16.splat
+    f32x4.sqrt
+    i32x4.widen_high_i16x8_s
+    i32x4.neg
+    i32x4.widen_high_i16x8_s
+    i8x16.extract_lane_u 1
+    global.get $7
+    i16x8.neg
+    f64x2.extract_lane 1
+    local.get $0
+    f64.eq
+    i32.ne
+    table.get $4
+    ref.null func
+    unreachable
+    )
+  
+  (func $12 (type $2)
+    (param $0 f64)
+    (param $1 funcref)
+    (param $2 i32)
+    (result f64)
+    (local $3 funcref)
+    (local $4 f32)
+    (local $5 i32)
+    (local $6 f32)
+    atomic.fence
+    local.get $6
+    f64.const 0x1.d56ec8a8b41b2p-1007
+    global.get $6
+    f64x2.abs
+    i32x4.widen_high_i16x8_s
+    i32x4.all_true
+    i32.clz
+    i64.const 4449055651749006344
+    global.get $6
+    i16x8.all_true
+    local.set $5
+    i32.wrap_i64
+    unreachable
+    ))

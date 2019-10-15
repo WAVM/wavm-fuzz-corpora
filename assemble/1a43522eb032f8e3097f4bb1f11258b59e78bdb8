@@ -1,0 +1,51 @@
+(module
+  (type $0 (func (result v128 externref)))
+  (type $1 (func (param i32) (result f64)))
+  (type $2 (func (param externref i64) (result i32)))
+  (type $3 (func (param f32) (result f32 f64)))
+  (type $4 (func (result i64 externref externref)))
+  (import "env" "global1" (global $9 (mut externref)))
+  (import "env" "func0" (func $13 (param externref i64) (result i32)))
+  (import "env" "func1" (func $14 (param f32) (result f32 f64)))
+  (memory $7  43 63623 shared)
+  (memory $8  39 54 shared)
+  (table $5  33 4294967295 funcref)
+  (table $6  19 4294967295 externref)
+  (global $10  (mut f64) (f64.const 0x1.34c71e61f12e5p+62))
+  (global $11  externref (ref.null extern))
+  
+  (func $15 (type $0)
+    (result v128 externref)
+    (local $0 f32)
+    (l $1 i64)
+    i32.const 942329930
+    i16x8.load8x8_u $8 offset=1132264798 align=4
+    atomic.fence
+    f32x4.neg
+    i16x8.bitmask
+    v8x16.load_splat offset=4286036584
+    i8x16.bitmask
+    i32.atomic.load16_u $8 offset=659467587
+    v32x4.load_splat offset=3045159153
+    i8x16.bitmask
+    i32.popcnt
+    i64.atomic.load16_u $8 offset=375808222
+    atomic.fence
+    i64.eqz
+    v16x8.load_splat    f32x4.neg
+    i16x8.bitmask
+    v8x16.load_splat offset=4286036584
+    i8x16.bitmask
+    i32.atomic.load16_u $8 offset=659467587
+    v32x4.load_splat offset=3045159153
+    i8x16.bitmask
+    i32.popcnt
+    i64.atomic.load16_u $8 offset=375808222
+    atomic.fence
+    i64.eqz
+    v16x8.load_splat $8 offset=701605633 align=1
+    unreachable
+    )
+  
+  (data $12 
+    "\d4\a9\ee\18\1eU\b1\dd\eb.\c3\a0\bf\d9c4s\cc\87\ff\80\07g\n\ac\f9\b9\c9\b0\0bv\df\9d_O\88\1f\89\ff\85\ec\e5}>\07\f8G\18?"))

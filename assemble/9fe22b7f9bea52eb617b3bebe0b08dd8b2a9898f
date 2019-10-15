@@ -1,0 +1,5 @@
+(memory  1)(func()i64.atomic.rmw.xor i64.atomic.rmw.xor
+)(func()i64.atomic.rmw.xor i64.atomic.rmw.xor
+i64.atomic.rmw.xor i
+ 1)(func()i64.atomic.rmw.xor i64.atomic.rmw.xor
+i64.atomic.rmw.xor i6)

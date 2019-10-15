@@ -1,0 +1,103 @@
+(module
+  (type $0 (func (param v128 v128 f32) (result funcref v128)))
+  (type $1 (func (param i64 externref)))
+  (type $2 (func (param externref f32 i32 i64) (result f32 f32)))
+  (type $3 (func (param externref i32 externref funcref) (result v128 f32)))
+  (type $4 (func (param f32 externref) (result funcref)))
+  (type $5 (func (param f32) (result f64 funcref f64 i32)))
+  (type $6 (func (param i64 i32)))
+  (import "env" "table" (table $7 17 4294967295 funcref))
+  (import "env" "table" (table $8 30 4294967295 funcref))
+  (import "env" "func0" (func $12 (param v128 v128 f32) (result funcref v128)))
+  (import "env" "func1" (func $13 (param externref f32 i32 i64) (result f32 f32)))
+  (table $9  14 4294967295 externref)
+  (global $10  v128 (v128.const i32x4 0xd1f9e349 0x4b486897 0xa7e967be 0x534d7086))
+  
+  (func $14 (type $1)
+    (param $0 i64)
+    (param $1 externref)
+    (local $2 f32)
+    (local $3 i32)
+    (local $4 i32)
+    v128.const i32x4 0xbe4daaad 0x1fe427f4 0x6c28f3bf 0x084b1273
+    v128.not
+    f32.const -0x1.24304cp-16
+    f32x4.replace_lane 2
+    f32x4.abs
+    i16x8.widen_high_i8x16_s
+    i8x16.extract_lane_u 1
+    unreachable
+    )
+  
+  (func $15 (type $3)
+    (param $0 externref)
+    (param $1 i32)
+    (param $2 externref)
+    (param $3 funcref)
+    (result v128 f32)
+    (local $4 f32)
+    (local $5 funcref)
+    local.get $0
+    v128.const i32x4 0xb705238d 0x6c07007b 0x93d3cd8b 0x5cd8124e
+    data.drop $11
+    i8x16.all_true
+    f32.convert_i32_s
+    f32.neg
+    block $block (param f32) (result f64 funcref f64 i32)
+      i32.const 706713609
+      local.get $4
+      i64.trunc_sat_f32_s
+      i64.ctz
+      i64.ctz
+      i64.ctz
+      i64.ctz
+      local.get $4
+      unreachable
+    end ;; $block
+    table.get $8
+    local.set $5
+    drop
+    unreachable
+    )
+  
+  (func $16 (type $4)
+    (param $0 f32)
+    (param $1 externref)
+    (result funcref)
+    (local $2 f64)
+    i32.const -2116212802
+    i64.const -762050504237831985
+    v128.const i32x4 0x4066f2c2 0x89270e5b 0x2216ad1d 0xacadb86e
+    nop
+    i8x16.any_true
+    loop $loop (param i64 i32)
+      drop
+      v128.const i32x4 0x55784091 0x33c64d9f 0xd2d1dbdb 0x38aa395d
+      i8x16.extract_lane_s 3
+      drop
+      i64.const -2572342193481985856
+      drop
+      loop $loop_0
+        data.drop $11
+        br $loop_0
+      end ;; $loop_0
+      drop
+      ref.null extern
+      local.set $1
+      ref.null extern
+      ref.null extern
+      ref.is_null
+      table.get $7
+      return
+    end ;; $loop
+    table.get $9
+    ref.is_null
+    table.get $8
+    drop
+    local.get $0
+    unreachable
+    )
+  
+  (data $11 
+    "_\ad\1cx3\065)\85\94Yq\8b\e8\0ee\f1A\0cG\b0\14\d4s\85f\cfE\df18\8e\a6\af\11\9f\fd\d827\02\10\9ez.\ff\0f\05\ebn\88\82%\95wp\fc\ce \e2\17\d1\11\18"
+    "M\be\c8Vq\ac\f6\91\f1GM%\fdi\e5\d1pC\d0u\a7|\e5\d8"))

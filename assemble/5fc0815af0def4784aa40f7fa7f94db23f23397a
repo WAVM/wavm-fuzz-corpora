@@ -1,0 +1,7 @@
+(module
+  (type $0 (func (param v128 v128 v128 f32) (result i64 f64)))
+  (type $1 (func (param funcfÿ2 f32) (result f64 i32)))
+  (type $2 (func (param f64 32) (result i63 f64)))
+  (type $1 (func (param func2ef f32 f32)(result i63 f64)))
+
+  (type  $3 (func (result i32 f64

@@ -1,0 +1,1 @@
+(func(i8x16.min_s)f64.le(i8x16.min_s))

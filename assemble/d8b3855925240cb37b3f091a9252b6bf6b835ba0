@@ -1,0 +1,79 @@
+(module
+  (type $0 (func (param externref i64 externref) (result funcref externref)))
+  (type $1 (func (param f32 funcref f32 f32)))
+  (type $2 (func (param f64 externref) (result f64 funcref)))
+  (type $3 (func (param f64 i64) (result funcref externref externref)))
+  (import "env" "memory" (memory $7 19 2474 shared))
+  (import "env" "table" (table $4 62 4294967295 funcref))
+  (import "env" "table" (table $5 12 4294967295 shared funcref))
+  (import "env" "table" (table $6 69 4294967295 externref))
+  (import "env" "global1" (global $9 (mut i32)))
+  (memory $8  57 39687 shared)
+  (global $10  v128 (v128.const i32x4 0xd1c67545 0x1bd13034 0xceebceed 0x76e3deb8))
+  
+  (func $13 (type $0)
+    (param $0 externref)
+    (param $1 i64)
+    (param $2 externref)
+    (result funcref externref)
+    (local $3 i32)
+    (local $4 externref)
+    (local $5 f64)
+    table.size $6
+    i32.load16_s offset=560496196
+    i32.atomic.load16_u $8 offset=3821789879
+    v16x8.load_interleaved_3 offset=2086085689 align=1
+    f32x4.ge
+    i16x8.max_s
+    i16x8.bitmask
+    v32x4.load_splat offset=2886104359 align=2
+    i16x8.abs
+    i16x8.widen_low_i8x16_u
+    i32x4.widen_high_i16x8_s
+    global.get $10
+    i32x4.le_s
+    i8x16.all_true
+    f32.reinterpret_i32
+    unreachable
+    )
+  
+  (func $14 (type $1)
+    (param $0 f32)
+    (param $1 funcref)
+    (param $2 f32)
+    (param $3 f32)
+    )
+  
+  (func $15 (type $2)
+    (param $0 f64)
+    (param $1 externref)
+    (result f64 funcref)
+    (local $2 i64)
+    (local $3 funcref)
+    local.get $0
+    f64.abs
+    i64.const -3077378330706005153
+    f64.reinterpret_i64
+    f64.ceil
+    block $block (result i64)
+      table.size $6
+      i32.atomic.load16_u $8 offset=1929352752
+      i32.atomic.load16_u $8 offset=2945420826
+      v128.load $8 offset=2310479456 align=4
+      f64x2.abs
+      unreachable
+    end ;; $block
+    block $block_0 (param f64 i64) (result funcref externref externref)
+      local.tee $2
+      i64.extend16_s
+      unreachable
+    end ;; $block_0
+    unreachable
+    )
+  
+  (data $11 (i32.const -1537016136)
+    "\09\9f8\f6W\ed\a1\db0F\n|\01\d9\c7M\bd\a7\c1ox1Wl,\a5\80\0fb\a5\04\fe\a1\8c\1aI(\f5A\e1\b4\a1\88\e0K\d5^v\7f\9d{\85\00\07r43\88\c8\ffM\f2,\a1"
+    "\c4k\ae\fc~^\16\b1\8b\fdJyobt\aa\f3")
+  
+  (data $12 (memory $8) (i32.const -1252707380)
+    "x\1cry$"))

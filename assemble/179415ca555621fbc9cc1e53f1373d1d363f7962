@@ -1,0 +1,6 @@
+(module
+  (memory $3  11 66 shared  
+)
+  (func $u unreachable
+ i64.atomic.rmw8.xor_u assert_malformed 
+i64.atomic.rmw8le+)

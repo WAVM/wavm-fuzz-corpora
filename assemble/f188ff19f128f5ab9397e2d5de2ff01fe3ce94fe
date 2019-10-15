@@ -1,0 +1,4 @@
+(func (i64.load16_u align=0(m))  (i64.load16_u align=0 (i64.load16_u align=0()(drop(i64.load16_u align=0 ))
+))(i64.load16_u align=0 (drop(i64.load16_u align=0 (i64.load16_u align=0 3())
+(i64.load16_u align=0(i64.load16_u align=0  (i64.load16_u align=0 )(i64.load16_u align=0(i32.load16_u align=0
+   (i64.load16_u align=0)9-)))32))s2)  (i64.load16_u align=0  (i64.load16_u align=0(drop(i64.load16_u align=0))  )) ))

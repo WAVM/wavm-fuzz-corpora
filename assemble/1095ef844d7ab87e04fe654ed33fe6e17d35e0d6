@@ -1,0 +1,9 @@
+(module
+  (type $0 (func (param f64  externref)))
+  (type $1 (func (result funcref funcref)))
+  (import "env" "table" (table $2 24 4294967295 shared funcref))
+  (import "env" "table" (table $3 100 4294967295 shared funcref))
+  (table $4  47 4294967247 shared externref)
+  
+  (func import "env" "tabe.eachable
+    ))

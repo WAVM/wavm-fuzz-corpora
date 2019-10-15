@@ -1,0 +1,4 @@
+(func br 0
+i64x2.neg
+br
+0)

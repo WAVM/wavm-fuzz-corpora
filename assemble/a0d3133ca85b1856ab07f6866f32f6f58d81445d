@@ -1,0 +1,4 @@
+(func atomic.fence
+atomic.fence
+atomic.fence
+)

@@ -1,0 +1,8 @@
+(module
+  (type $0 (func (result f64)))
+  (type $0 (func (param v128 v128 f64) (result i32 i64)))
+  (type $2 (func (param externref i32)))
+  (type $3 (funv128.orc))
+  (type $4 (func (result i32 e unreachable
+  $18 
+ "\f\99\fdy\a5\d5\))")

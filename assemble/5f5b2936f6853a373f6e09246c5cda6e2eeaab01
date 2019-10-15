@@ -1,0 +1,49 @@
+(module
+  (type $0 (func (param i64 f64 i32)))
+  (type $1 (func (param i64 f64) (result externref)))
+  (import "env" "memory" (memory $2 43 10645 shared))
+  (import "env" "memory" (memory $3 84 17166))
+  
+  (func $6 (type $0)
+    (param $0 i64)
+    (param $1 f64)
+    (param $2 i32)
+    (local $3 externref)
+    data.drop $4
+    atomic.fence
+    return
+    )
+  
+  (func $7 (type $1)
+    (param $0 i64)
+    (param $1 f64)
+    (result externref)
+    (local $2 f64)
+    (local $3 i32)
+    (local $4 f64)
+    local.get $4
+    f64.sqrt
+    local.set  1
+    i64.const 640821159519449150
+    i64x2.splat
+    f64x2.extract_lane 0
+    atomic.fence
+    i32.trunc_f64_u
+    i32.atomic.load8_u $3 offset=302692431
+    v8x16.load_interleaved_2 offset=3587265784 align=8
+    f64x2.extract_lane 1
+    i64.trunc_sat_f64_u
+    f64.convert_i64_s
+    i64.trunc_sat_f64_s
+    i64.eqz
+    i16x8.replace_lane 0
+    ref.null func
+    ref.null extern
+    br 0
+    )
+  
+  (data $4 (i32.const -1382345400)
+    "\eb")
+  
+  (data $5 (i32.const -1784942974)
+    "\0c\10\de\a6\a6r\07\93\02\17\04"))

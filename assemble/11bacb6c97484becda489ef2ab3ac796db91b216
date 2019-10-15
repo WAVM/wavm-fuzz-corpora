@@ -1,0 +1,3 @@
+(memory 9)(func()i32.atomic.store16
+i32.atomic.store16
+i32.atomic.store16)

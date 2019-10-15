@@ -1,0 +1,1 @@
+(memory 0)(func i32.const 6 v64x2.load_splat return)

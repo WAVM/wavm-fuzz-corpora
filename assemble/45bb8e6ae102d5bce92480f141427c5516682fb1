@@ -1,0 +1,4 @@
+(memory 1)(func()(i32.atomic.rmw16.and_u
+)(i32.atomic.rmw16.and_u
+)(i32.atomic.rmw16.and_u
+))

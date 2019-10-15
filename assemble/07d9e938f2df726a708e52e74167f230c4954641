@@ -1,0 +1,16 @@
+(func(i8lasect(i32.const 0)ion "j"
+   (after elemH))custom_se  (after elem))
+
+  (custom_section "j"
+   (after elem))
+ 
+
+ (custom_section "0j"
+   (after elem))
+  (custom_section "j"
+  (after elem))
+
+  (custom_section "j"
+   (after elem))
+ 
+  )

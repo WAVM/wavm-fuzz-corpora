@@ -1,0 +1,28 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param v128 i64)))
+  (import "env" "global0" (global $3 (mut f32)))
+  (import "env" "global1" (global $4 (mut v128)))
+  (memory $2  39 32270 shared)
+  (elem $5 declare exception_type)
+  
+  (func $6 (type $0)
+    f32.const 0x1.45cdc8p-123
+    i32.const 740995002
+    v32x4.load_interleaved_4 offset=1723881291 align=1
+    f64.const 0x1.7794a36e55974p+422
+    f64.abs
+    i64.trunc_sat_f64_s
+    elem.drop $5
+    i64.extend32_s
+    loop $loop (param v128 i64)
+      i64.clz
+      br $loop
+    end ;; $loop
+    i8x16.gt_u
+    f64x2.sqrt
+    i16x8.gt_s
+    atomic.fence
+    drop
+    unreachable
+    ))

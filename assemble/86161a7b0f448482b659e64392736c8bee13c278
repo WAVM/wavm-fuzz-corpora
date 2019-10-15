@@ -1,0 +1,7 @@
+(module (table $t1  1 funcref)
+  (elem $elncref)
+  (elem $el funcref)
+  
+ (func table.init $el init $el  funcref)
+  
+ (func table.init $el $)

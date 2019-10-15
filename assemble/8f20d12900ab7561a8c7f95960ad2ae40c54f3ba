@@ -1,0 +1,6 @@
+(module
+  (type $0 (func (param v128) (result i32)))
+  (export "i32x4.bitmask" (func $1))
+  
+  (func $1     i32x4.bitmask
+    ))

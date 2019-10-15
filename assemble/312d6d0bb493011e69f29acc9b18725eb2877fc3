@@ -1,0 +1,2 @@
+(table 0 funcref)(func table.copy
+table.copy table.copy)

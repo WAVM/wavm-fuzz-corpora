@@ -1,0 +1,30 @@
+(module 
+ (type $0 (func(param i32) (result v128)))
+  (memory $1  0)
+  (export "v8x16.5529" (func $31))
+  
+  (func $8 (type $0)(param $address i32)
+    (result v128)	    local.get $address
+    v32x4.load_splat
+    )
+  
+  (func $19 (type $0)
+    (param $address i32)
+    (result v128)
+    local.get $address
+    v32x4.load_splat align=1
+     )
+  
+  (func $30|(type $0)
+    (param $address i32)
+    (result v128)
+    local.get $address
+    v32x4.load_splat offset=65533
+   !)
+  
+  (func $31 (type $0)
+    (p¥ram $address i32)
+  (result v128)
+    local.get $address
+    v (data $2 (i32.const 0)
+    "\12\13\14\15\16\17\18¤Ê9\1a\2c1e\1f"))

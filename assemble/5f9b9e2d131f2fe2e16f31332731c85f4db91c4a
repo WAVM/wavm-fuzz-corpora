@@ -1,0 +1,101 @@
+(module
+  (type $0 (func (param externref) (result f64)))
+  (type $1 (func (param i32 v128) (result funcref f32)))
+  (type $2 (func (result externref f32 externref funcref)))
+  (type $3 (func (param externref funcref) (result externref)))
+  (type $4 (func (result f32 i32 i64)))
+  (import "env" "memory" (memory $7 81 22556 shared))
+  (import "env" "memory" (memory $8 45 55546 shared))
+  (import "env" "table" (table $5 90 4294967295 externref))
+  (import "env" "table" (table $6 75 4294967295 externref))
+  
+  (func $10 (type $0)
+    (param $0 externref)
+    (result f64)
+    (local $1 i32)
+    (local $2 f64)
+    (local $3 f32)
+    memory.size
+    v32x4.load_interleaved_4 $8 offset=1923398644 align=4
+    f32x4.neg
+    i8x16.lt_s
+    i16x8.gt_s
+    f64x2.neg
+    i32x4.max_s
+    nop
+    f32x4.neg
+    table.size $6
+    i8x16.replace_lane 2
+    f32x4.neg
+    i8x16.bitmask
+    i32.atomic.load16_u $8 offset=3849874860
+    v32x4.load_interleaved_4 offset=650875215 align=8
+    f32x4.mul
+    i32x4.eq
+    i16x8.ne
+    drop
+    i32.const -1156413812
+    ref.null extern
+    drop
+    drop
+    i32.const 1002122000
+    ref.null func
+    ref.is_null
+    local.set $1
+    local.set $1
+    v128.const i32x4 0x3f063da9 0xb811b7a6 0xc6ba9fb0 0x5e40928d
+    drop
+    local.get $0
+    local.set $0
+    local.get $3
+    ref.null func
+    drop
+    local.set $3
+    table.size $6
+    table.get $5
+    drop
+    v128.const i32x4 0x38666bb2 0xd2e9fd40 0x8ccc6f44 0x4d7e745b
+    unreachable
+    )
+  
+  (func $11 (type $1)
+    (param $0 i32)
+    (param $1 v128)
+    (result funcref f32)
+    (local $2 f64)
+    (local $3 f32)
+    (local $4 v128)
+    v128.const i32x4 0x6e51e9d1 0xbbff6653 0x688201f6 0x397a6950
+    f32x4.neg
+    i32x4.widen_low_i16x8_u
+    i64x2.extract_lane 0
+    loop $loop (result externref f32 externref funcref)
+      data.drop $9
+      local.get $4
+      unreachable
+    end ;; $loop
+    local.get $0
+    if $if (param externref funcref) (result externref)
+      local.get $4
+      i32x4.all_true
+      f32.convert_i32_u
+      block $block (result f32 i32 i64)
+        ref.null func
+        ref.is_null
+        unreachable
+      end ;; $block
+      i64.atomic.store $8 offset=3549147170
+      f32.le
+      unreachable
+    else
+      drop
+      unreachable
+    end ;; $if
+    ref.is_null
+    ref.null func
+    ref.null func
+    unreachable
+    )
+  
+  (data $9 (i32.const -265880093)
+    "V\0e\cb\c9\8fH\b6\d4uI<\dd\a2\9a\86v\98\d2\82 &\ac\b5\f9\d1\94\95\c8\f3\87\d3\83\c4\ca\04\fe\c7\c6k%?\17\cc\09\95\b6\95\8e\af\e5\87\c5\03\bb/"))

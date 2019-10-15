@@ -1,0 +1,59 @@
+(module
+  (type $0 (func (result f64)))
+  (type $1 (func (param externref v128) (result f64 funcref)))
+  (import "env" "memory" (memory $2 46 1490 shared))
+  (import "env" "memory" (memory $3 59 19900))
+  (import "env" "global0" (global $5 i32))
+  (import "env" "global1" (global $6 (mut i64)))
+  (memory $4  51 28241)
+  (elem $7 declare funcref
+    (ref.func $9) (ref.func $9) (ref.null func) (ref.null func)
+    (ref.null func) (ref.func $9) (ref.null func) (ref.func $8)
+    (ref.func $8) (ref.null func) (ref.func $8) (ref.func $8)
+    (ref.null func) (ref.func $9) (ref.func $8) (ref.func $8)
+    (ref.func $8) (ref.func $8) (ref.null func) (ref.func $9)
+    (ref.func $9) (ref.func $9) (ref.func $9) (ref.func $9)
+    (ref.func $9) (ref.null func) (ref.func $9))
+  
+  (func $8 (type $0)
+    (result f64)
+    global.get $6
+    drop
+    memory.size $4
+    i64.load8_u $3 offset=3635898786
+    f32.convert_i64_u
+    i32.reinterpret_f32
+    i16x8.splat
+    i32x4.trunc_sat_f32x4_u
+    i16x8.widen_high_i8x16_s
+    i16x8.all_true
+    i8x16.splat
+    i8x16.extract_lane_s 11
+    f32.convert_i32_u
+    i64.trunc_sat_f32_s
+    f64.reinterpret_i64
+    )
+  
+  (func $9 (type $1)
+    (param $0 externref)
+    (param $1 v128)
+    (result f64 funcref)
+    (local $2 f32)
+    ref.null extern
+    local.set $0
+    f64.const -0x1.5e33dbefef6b7p-175
+    memory.size
+    call $8
+    f64.floor
+    f64x2.splat
+    i32x4.abs
+    i32x4.widen_high_i16x8_s
+    local.tee $1
+    f64x2.extract_lane 0
+    f64.nearest
+    f64.sqrt
+    f32.const -0x1.3f2d2cp+103
+    f64.const -0x1.bed9e2818f52ap+210
+    ref.null extern
+    unreachable
+    ))

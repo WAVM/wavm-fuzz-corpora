@@ -1,0 +1,1 @@
+(func br 0 i32.mul i32.mul i32.mul br 0)

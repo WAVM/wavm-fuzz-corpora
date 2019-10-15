@@ -1,0 +1,12 @@
+(func
+f64.gt
+f64.gt f64.gt
+f64.gt f64.gt f64.gt f64.gt f64.gt
+f64.gt
+f64.gt f64.gt
+f64.gt
+f64.gt f64.gt
+f64.gt f64.gt f64.gt f64.gt f64.gt
+f64.gt
+f64.gt f64.gt
+f64.gt f64.gt f64.gt f64.gt f64.gt f64.gt f64.gt f64.gt f64.gt)

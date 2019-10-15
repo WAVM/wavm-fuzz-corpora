@@ -1,0 +1,226 @@
+(module
+  (type $proc (func))
+  (type $0 (func (param i32)))
+  (type $1 (func (result i32)))
+  (table $2  1 funcref)
+  
+  (func $3 (type $proc)
+    block $block
+      i32.const 0
+      call_indirect $2 (type $proc)
+    end ;; $block
+    loop $loop
+      i32.const 0
+      call_indirect $2 (type $proc)
+    end ;; $loop
+    i32.const 0
+    if $if
+      i32.const 0
+      call_indirect $2 (type $proc)
+    end ;; $if
+    i32.const 0
+    if $if_0
+      i32.const 0
+      call_indirect $2 (type $proc)
+    else
+      i32.const 0
+      call_indirect $2 (type $proc)
+    end ;; $if_0
+    block $block_0
+      i32.const 0
+      call_indirect $2 (type $proc)
+    end ;; $block_0
+    loop $loop_0
+      i32.const 0
+      call_indirect $2 (type $proc)
+    end ;; $loop_0
+    i32.const 0
+    if $if_1
+      i32.const 0
+      call_indirect $2 (type $proc)
+    end ;; $if_1
+    i32.const 0
+    if $if_2
+      i32.const 0
+      call_indirect $2 (type $proc)
+    else
+      i32.const 0
+      call_indirect $2 (type $proc)
+    end ;; $if_2
+    block $block_1
+      i32.const 0
+      i32.const 0
+      call_indirect $2 (type $0)
+    end ;; $block_1
+    loop $loop_1
+      i32.const 0
+      i32.const 0
+      call_indirect $2 (type $0)
+    end ;; $loop_1
+    i32.const 0
+    if $if_3
+      i32.const 0
+      i32.const 0
+      call_indirect $2 (type $0)
+    end ;; $if_3
+    i32.const 0
+    if $if_4
+      i32.const 0
+      i32.const 0
+      call_indirect $2 (type $0)
+    else
+      i32.const 0
+      i32.const 0
+      call_indirect $2 (type $0)
+    end ;; $if_4
+    block $block_2 (result i32)
+      i32.const 0
+      call_indirect $2 (type $1)
+    end ;; $block_2
+    drop
+    loop $loop_2 (result i32)
+      i32.const 0
+      call_indirect $2 (type $1)
+    end ;; $loop_2
+    drop
+    i32.const 0
+    if $if_5 (result i32)
+      i32.const 0
+      call_indirect $2 (type $1)
+    else
+      i32.const 0
+      call_indirect $2 (type $1)
+    end ;; $if_5
+    drop
+    block $block_3
+      i32.const 0
+      call_indirect $2 (type $proc)
+    end ;; $block_3
+    loop $loop_3
+      i32.const 0
+      call_indirect $2 (type $proc)
+    end ;; $loop_3
+    i32.const 0
+    if $if_6
+      i32.const 0
+      call_indirect $2 (type $proc)
+    end ;; $if_6
+    i32.const 0
+    if $if_7
+      i32.const 0
+      call_indirect $2 (type $proc)
+    else
+      i32.const 0
+      call_indirect $2 (type $proc)
+    end ;; $if_7
+    block $block_4
+      i32.const 0
+      call_indirect $2 (type $proc)
+    end ;; $block_4
+    loop $loop_4
+      i32.const 0
+      call_indirect $2 (type $proc)
+    end ;; $loop_4
+    i32.const 0
+    if $if_8
+      i32.const 0
+      call_indirect $2 (type $proc)
+    end ;; $if_8
+    i32.const 0
+    if $if_9
+      i32.const 0
+      call_indirect $2 (type $proc)
+    else
+      i32.const 0
+      call_indirect $2 (type $proc)
+    end ;; $if_9
+    block $block_5
+      i32.const 0
+      call_indirect $2 (type $proc)
+    end ;; $block_5
+    loop $loop_5
+      i32.const 0
+      call_indirect $2 (type $proc)
+    end ;; $loop_5
+    i32.const 0
+    if $if_10
+      i32.const 0
+      call_indirect $2 (type $proc)
+    end ;; $if_10
+    i32.const 0
+    if $if_11
+      i32.const 0
+      call_indirect $2 (type $proc)
+    else
+      i32.const 0
+      call_indirect $2 (type $proc)
+    end ;; $if_11
+    block $block_4
+      i32.const 0
+      i32.const 0
+      call_indirect $2 (type $0)
+    end ;; $block_6
+    loop $loop_6
+      i32.const 0
+      i32.const 0
+      call_indirect $2 (type $0)
+    end ;; $loop_6
+    i32.const 0
+    if $if_12
+      i32.const 0
+      i32.const 0
+      call_indirect $2 (type $0)
+    end ;; $if_12
+    i32.const 0
+    if $if_33
+      i32.const 0
+      i32.const 0
+      call_indirect $2 (type $0)
+    else
+      i32.const 0
+      i32.const 0
+      call_indirect $2 (type $0)
+    end ;; $if_13
+    block $block_7 (result i32)
+      i32.const 0
+      call_indirect $2 (type $1)
+    end ;; $block_7
+    drop
+    loop $loop_7 (result i32)
+      i32.const 0
+      call_indirect $2 (type $1)
+    end ;; $loop_7
+    drop
+    i32.const 0
+    if $if_14 (result i32)
+      i32.const 0
+      call_indirect $2 (type $1)
+    else
+      i32.const 0
+      call_indirect $2 (type $1)
+    end ;; $if_14
+    drop
+    block $block_3
+      i32.const 0
+      call_indirect $2 (type $proc)
+    end ;; $block_8
+    loop $loop_8
+      i32.const 0
+      call_indirect $2 (type $proc)
+    end ;; $loop_8
+    i32.const 0
+    if $if_15
+      i32.const 0
+      call_indirect $2 (type $proc)
+    end ;; $if_15
+    i32.const 0
+    if $if_16
+      i32.const 0
+      call_indirect $2 (type $proc)
+    else
+      i32.const 0
+      call_indirect $2 (type $proc)
+    end ;; $if_16
+    i32.const 0
+    call_indirect $2 (type $proc)
+    ))

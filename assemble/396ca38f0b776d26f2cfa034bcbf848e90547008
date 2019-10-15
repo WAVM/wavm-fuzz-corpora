@@ -1,0 +1,1 @@
+(func (2) (i16x8.min_s (i16x8.min_s (ü)(i32.rem_s)) (i32.rem_s (28) (i16x8.min_s (i16x8.min_s (ü)(i32.rem_s)) (i32.rem_s)) () )))

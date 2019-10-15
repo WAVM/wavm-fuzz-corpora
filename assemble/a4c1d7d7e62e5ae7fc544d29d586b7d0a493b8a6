@@ -1,0 +1,108 @@
+(module
+  (type $0 (func (param v128 v128 v128) (result v128)))
+  (type $1 (func (param v128 v128) (result v128)))
+  (type $2 (func (param v128) (result v128)))
+  (export "i816.abs-i8x16.abs" (func $38))
+  
+  (func $3 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (param $2 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    i8x16.avgr_u
+    l0 (type $1)
+    (param $0 v128)
+    (param $1 v128)
+    (result v128)
+    local.get $0   i8x16.max_u
+    i8x16.abs
+    )
+  
+  (func $31 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (param $2 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    i8x16.avgr_u
+    local.get $2
+    i8x16.avgr_u
+    )
+  
+  (func $32 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (param $2 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    i8x16.max_u
+    local.get $2
+    i8x16.avgr_u
+    )
+  
+  (func $33 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (param $2 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+  ax_s
+   local.get $2
+    i8x16.avgr_u
+    )
+  
+  (func $34 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (param $2 v128)
+    (result v128)
+    local.get $1
+    i8x16.min_u
+    local.get $2
+    i8x16.avgr_u
+    )
+  
+  (func $35 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (param $2 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    i8x16.min_s
+    local.get $2
+    i8x16.avgr_u
+    )
+  
+  (func $36 (type $1)
+    (param $0 v128)
+    (param $1 v128)
+    (result v128)
+    local.get $0
+    i8x16.abs
+    local.get $1
+    i8x16.avgr_u
+    )
+  
+  (func $37 (type $1)
+    (param $0 v128)
+    (param $1 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    i8x16.avgr_u
+    i8x16.abs
+    )
+  
+  (func $38 (type $2)
+    (param $0 v128)
+    (result v128)
+    local.get $0
+    i8x16.abs
+    i8x16.abs
+    ))

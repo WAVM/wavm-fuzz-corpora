@@ -1,0 +1,1 @@
+(func (loop(v16x8.load_splat )(v16x8.load_splat(i))f)if()if() (loop(v)if()if(v16x8.load_splat ) (loop(v16x8.load_splat)())()if(v16x8.load_splat ) (loop(v16x8.load_splat)())if(v16x8.load_splat(i))f)if(v16x8.load_splat ))

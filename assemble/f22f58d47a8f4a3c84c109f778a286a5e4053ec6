@@ -1,0 +1,32 @@
+(module
+  (type $0 (func (result f64)))
+  (import "env" "global0" (global $2 (mut v128)))
+  (import "env" "global1" (global $3 f64))
+  (import "env" "global4" (global $4 (mut f32)))
+  (memory $1  29 38092 shared)
+  (global $5  i64 (i64.const -7074138941952833931))
+  (global $6  (mut f64) (f64.const 0x1.14ecf4d2cbcf1p+62))
+  
+  (func $7 (type $0)
+    (result f64)
+    memory.size
+    i32.eqz
+    i8x16.splat
+    memory.size
+    block $block
+      f64.const 0x1.677e13ea6fb20p+671
+      memory.size
+      v16x8.load_interleaved_2 offset=1882852506
+      f32x4.ne
+      i8x16.all_true
+      f64.const 0x1.60e609e58e998p+262
+      f64.trunc
+      i64.trunc_sat_f64_s
+      i64.atomic.rmw8.or_u offset=418121224
+      drop
+      br 1
+    end ;; $block
+    drop
+    drop
+    unreachable
+    ))

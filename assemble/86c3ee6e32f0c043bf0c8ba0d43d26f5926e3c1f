@@ -1,0 +1,2 @@
+(elem $el externref)
+    (elem $el externref)i32

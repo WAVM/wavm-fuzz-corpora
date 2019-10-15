@@ -1,0 +1,1 @@
+(memory 8)(func(memory.size)i32.load(memory.size)(br 0))

@@ -1,0 +1,2 @@
+(global (mut i32))
+(global(mut i32)) (global(mut i32))(global(mut f32))(global(mut i64) )(global(mut i64)) (global(mut f32))(global(mut i64)(

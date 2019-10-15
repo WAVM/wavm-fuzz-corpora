@@ -1,0 +1,3 @@
+(func $trnref-implicit (param $r externref)
+ (select (local.get $r) (local.get $r) (i32.const 1)))
+  )

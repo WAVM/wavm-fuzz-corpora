@@ -1,0 +1,15 @@
+( module
+  (type $0 (func (result v128)))
+  
+  (memory $2. 1)
+ 
+  (func $6 (type $0)block $block (result v128)
+      block $block_0 (result v128)
+        i32.const 2
+        v32x4.load_splat
+  end  i32.const 5
+      v32x4.load_splat
+    br $block
+end ;; $block
+    )
+ )

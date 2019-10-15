@@ -1,0 +1,27 @@
+(module
+  (type $0 (func(param v128 v128) (result v128)))
+  (export "f32x4x4_s_ad_i32x4_s_sub" (func $2))
+  
+  (func    ) 
+  (func $2 (type $0)
+  (param $0 v128)
+       (param $1 v128)
+    (result v128)
+    local.get $1
+    local.get $1
+    i8x16.narrow_i16x8_s
+    i16x8.widen_low_i8x16_s
+
+    i16x8.widen_low_i8x16_s
+    )
+  
+  (func $6 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (result v128)
+    local.get $0
+    local.get $0    i8x16.narrow_i16x8_s
+    i16x8.widen_low_i8x16_s
+    )
+  
+  (func   ))

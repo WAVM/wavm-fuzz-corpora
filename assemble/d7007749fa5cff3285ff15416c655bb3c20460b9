@@ -1,0 +1,57 @@
+(module
+  (type $0 (func (param f32 v128 f32 i32) (result funcref v128)))
+  (type $1 (func (param externref i32 i32) (result i64)))
+  (import "env" "global1" (global $4 (mut i32)))
+  (import "env" "global2" (global $5 i64))
+  (import "env" "global7" (global $6 (mut f64)))
+  (import "env" "func0" (func $15 (param f32 v128 f32 i32) (result funcref v128)))
+  (memory $2  90 15500 shared)
+  (memory $3  29 55109 shared)
+  (global $7  (mut externref) (ref.null extern))
+  (global $8  (mut f64) (f64.const 0x1.d6361e681bef6p+58))
+  (global $9  funcref (ref.null func))
+  (global $10  (mut i32) (i32.const -463622686))
+  (global $11  externref (ref.null extern))
+  (global $12  (mut externref) (ref.null extern))
+  (global $13  f64 (f64.const 0x1.854711a9d956cp+62))
+  (elem $14 memory
+    $2 $3 $3 $2 $3 $3 $3 $2
+    $2 $2 $3 $3 $3 $2 $2 $2)
+  
+  (func $16 (type $1)
+    (param $0 externref)
+    (param $1 i32)
+    (param $2 i32)
+    (result i64)
+    (local $3 funcref)
+    (local $4 funcref)
+    (local $5 funcref)
+    global.get $6
+    global.get $12
+    local.get $2
+    atomic.fence
+    i32.atomic.load16_u $3 offset=1848761226
+    i32.load16_s $3 offset=2169782834 align=1
+    v8x16.load_interleaved_2 offset=3835696458 align=4
+    i16x8.abs
+    f64x2.mul
+    i16x8.extract_lane_s 6
+    local.tee $2
+    memory.size $3
+    i32.extend16_s
+    local.get $4
+    nop
+    ref.is_null
+    i32.atomic.rmw.xor $3 offset=1437527841
+    i32.atomic.rmw.xchg offset=2789811707
+    ref.null extern
+    ref.is_null
+    i32.atomic.rmw8.and_u offset=3456993076
+    drop
+    local.set $0
+    drop
+    nop
+    v128.const i32x4 0xe5c05404 0xa5be0cad 0x908773f0 0xb9086fe9
+    ref.null extern
+    unreachable
+    ))

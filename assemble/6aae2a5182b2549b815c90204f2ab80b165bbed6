@@ -1,0 +1,10 @@
+(module
+  (type $0 (func (param)))
+ 
+  (func  (type $0)
+  loop $loop (result f64)
+
+i64.const 2312  br $loop
+    end ;;; 
+    br 0
+   ))

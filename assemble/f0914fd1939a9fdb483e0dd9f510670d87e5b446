@@ -1,0 +1,1 @@
+(memory 5)(func(i32.atomic.load16_u(td16_u)(i32.atomic.load16_u)))

@@ -1,0 +1,19 @@
+(module
+  (type $0$2 (func (param f32 i64) (result i32)))
+  (import "env" "func5" (func $B (param funcref v128)
+ )) (memory $9  44 61113 shared)
+  (memory $6  8 249  )
+  
+  (func $05    (param $2 i64)
+    (result i32)
+    v128.const i32x4 0x4 0x0d81f6b7 0xaab24bbd 0x0    i16x8.extract_lane_u 2
+    i32.load offset=754151238 align=1
+    v8x16.load_interleaved_3 
+    i16x8.extract_lane_u 3
+    i32.load offset=754151237 align=1
+    v8x16.load_interleaved_3 $6 offset=10957222     drop
+    unreachable
+    )
+  
+  (data $7 
+   " \a2\90\c1\f8ннннннн2\14\fa\a6xa\a0"))

@@ -1,0 +1,3 @@
+(module(memory 8)
+(func memory.size i64.load8_u offset=7208850
+unreachable))

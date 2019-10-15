@@ -1,0 +1,43 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param f64 f64 f64 externref) (result f64 v128)))
+  (type $2 (func (param funcref) (result f32 externref)))
+  (import "env" "func0" (func $8))
+  (import "env" "func1" (func $9 (param f64 f64 f64 externref) (result f64 v128)))
+  (memory $5  68 19943 shared)
+  (memory $6  48 43854)
+  (table $3  78 4294967295 shared externref)
+  (table $4  100 4294967295 shared funcref)
+  (global $7  funcref (ref.null func))
+  
+  (func $10 (type $2)
+    (param $0 funcref)
+    (result f32 externref)
+    (local $1 externref)
+    (local $2 i32)
+    v128.const i32x4 0x3b8b448c 0xd2fbb26a 0xe904e523 0x081d84df
+    i8x16.abs
+    i16x8.widen_high_i8x16_u
+    f32x4.sqrt
+    i8x16.bitmask
+    i64.atomic.load offset=1907022869
+    i64x2.splat
+    i32x4.trunc_sat_f32x4_u
+    table.size $3
+    v128.load $6 offset=2602815070 align=2
+    f64x2.sub
+    i8x16.all_true
+    i64.load32_s $6 offset=2653204376 align=2
+    f64.const -0x1.0183d9c53c869p+954
+    i64.trunc_sat_f64_u
+    i64.le_s
+    call_indirect $4 (type $0)
+    f64.const 0x1.b71c409110f7ap+81
+    drop
+    memory.size
+    table.get $4
+    ref.null func
+    ref.null extern
+    ref.is_null
+    unreachable
+    ))

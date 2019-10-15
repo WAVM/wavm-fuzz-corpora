@@ -1,0 +1,84 @@
+(module
+  (type $0 (func (param i64 f64 f64 externref) (result f32 externref)))
+  (type $1 (func (param externref) (result externref)))
+  (type $2 (func (result i32 externref v128)))
+  (type $3 (func (param v128 i32) (result i32 v128 funcref)))
+  (table $4  62 4294967295 shared funcref)
+  (elem $5 (i32.const -229303727) funcref
+    (ref.func $8) (ref.func $8) (ref.func $8) (ref.func $9)
+    (ref.null func) (ref.null func) (ref.func $9) (ref.func $9)
+    (ref.func $9) (ref.null func) (ref.func $8) (ref.null func)
+    (ref.func $8) (ref.null func) (ref.func $8) (ref.null func)
+    (ref.func $8) (ref.func $8) (ref.null func) (ref.func $8)
+    (ref.null func) (ref.null func) (ref.func $8) (ref.func $8)
+    (ref.null func) (ref.func $8) (ref.func $8) (ref.func $9)
+    (ref.func $8) (ref.func $8) (ref.func $8) (ref.func $9)
+    (ref.func $9) (ref.func $8) (ref.null func) (ref.func $9)
+    (ref.func $9) (ref.func $8) (ref.func $8) (ref.func $9)
+    (ref.func $9) (ref.func $8) (ref.func $8) (ref.func $8)
+    (ref.func $9) (ref.null func) (ref.func $8) (ref.func $9)
+    (ref.func $8) (ref.null func) (ref.func $9) (ref.null func)
+    (ref.func $9) (ref.null func) (ref.func $9) (ref.func $9)
+    (ref.null func) (ref.func $8) (ref.func $9) (ref.null func)
+    (ref.null func) (ref.func $8) (ref.func $9) (ref.func $8)
+    (ref.func $9) (ref.func $9) (ref.func $8) (ref.null func)
+    (ref.null func) (ref.func $9) (ref.func $9) (ref.func $9)
+    (ref.null func) (ref.func $9))
+  
+  (func $8 (type $0)
+    (param $0 i64)
+    (param $1 f64)
+    (param $2 f64)
+    (param $3 externref)
+    (result f32 externref)
+    (local $4 v128)
+    i32.const -2114087163
+    f32.reinterpret_i32
+    i32.const 176464027
+    i32.extend16_s
+    f32.reinterpret_i32
+    f32x4.splat
+    i32x4.any_true
+    i64.const 3917323280539387928
+    f32.convert_i64_u
+    v128.const i32x4 0x4b2968cb 0x9ef66553 0xc9b9109b 0x33b71ddf
+    i32x4.all_true
+    f64.const -0x1.f7bf990be2492p+1
+    i32.trunc_sat_f64_u
+    local.get $2
+    i64.trunc_sat_f64_u
+    unreachable
+    )
+  
+  (func $9 (type $1)
+    (param $0 externref)
+    (result externref)
+    (local $1 externref)
+    local.get $1
+    local.get $0
+    local.set $1
+    block $block (result i32 externref v128)
+      atomic.fence
+      table.size $4
+      i16x8.splat
+      i32x4.bitmask
+      f32.reinterpret_i32
+      f64.const 0x1.581edeef0289ep+110
+      table.size $4
+      i16x8.splat
+      f64.const 0x1.5e8205fe6b2c0p-302
+      i32.trunc_f64_u
+      block $block_0 (param v128 i32) (result i32 v128 funcref)
+        i64x2.shl
+        unreachable
+      end ;; $block_0
+      unreachable
+    end ;; $block
+    unreachable
+    )
+  
+  (data $6 
+    "\b1\d2O\d4\09\ab\14?\b5\9b\eac\e6\e6\0b\f6\87\a6\1a\c6E\f8@S:\aa\c7\99v\08\07t\ce\e1\e9")
+  
+  (data $7 
+    "\8b\d3\01\f1\090\cd>8\d4gQU\1c\b2\1e\a4\8b\cb`\ba0\17\f0\c2|A\18\c4\d1\f0\10\12\ebW\b5\10\94\b7Q0\f8\c9\8b\82\16\f4\f8.\a2u\c3\e32\90\0d\1c\d6\ed\fd)\ea\1dz"))

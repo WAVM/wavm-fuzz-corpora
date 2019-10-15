@@ -1,0 +1,7 @@
+(func $. i64.sub i16x8.min_u i16x8.min_u  i16x8.min_u
+ i16x8.min_u
+  i64.rotl  i16x8.min_u
+     i16x8.min_u
+ i16x8.min_u
+      i16x8.min_u
+    ))

@@ -1,0 +1,1 @@
+(type $sig (func (param i64)))(func  (block (type $sig) (iarr32)))(func (i32.const 0)(block (type $sig) (par)))(func (block (type $sig) (i16)))(func ( 0) (i32.const 0) (block (type $sig)k))(func (i32.const 0) (block (type $sig) (parm 2)))(func  (block(type $sig) (tpefm 2)))(func  (block (type $sig) 2nst 0))(func (i32.const 0) (block (type $sig)))

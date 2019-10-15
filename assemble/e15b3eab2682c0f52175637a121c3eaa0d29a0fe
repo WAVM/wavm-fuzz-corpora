@@ -1,0 +1,1 @@
+(memory 0)(func( i32.atomic.rmw8.and_u)() ( i32.atomic.rmw8.and_u)(i32.atomiw8.and_u) ( i32.atomic.rmw8.and_u))

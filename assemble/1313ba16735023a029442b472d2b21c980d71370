@@ -1,0 +1,1 @@
+(memory 000)(func()i64.atomic.rmw8.or_u)(func()i6)(func()i64.atomic.rmw8.or_u)(func()i64.atomic.rmw8.or_u()iu)(func()i6memory 000)(func()i64.atomic.rmw8.or_u)(func()i6)(func()i64.atomic.rmw8.or_u)(func()i64.atomic.rmw8.or_u()iu)(func()i6)(func()i64.atomic.rmw8.or_u)(func)(func()i64.atomic.rmw8.or_u)(func())

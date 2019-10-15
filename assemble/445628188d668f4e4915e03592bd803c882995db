@@ -1,0 +1,8 @@
+(module
+  (type $0 (func (param externref i32)))
+  (import "env" "memory" (memory 8717 shared))
+  (import "env" "func0" (func $16 (param externref i32)))
+  (global $11  (mut funcref) (ref.null func))
+  (global $12  f32 (f32.const 0x1.b1cfa6p+27))
+  (global $13  (mut i32) (i32.const -1021765310))
+  (elem  $5$13 $9 $11))

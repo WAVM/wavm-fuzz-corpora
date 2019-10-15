@@ -1,0 +1,21 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param i32) (result i32)))
+  (import "m" "f" (func $f))
+  (export "testLLVM-D58049" (func $3))
+  (elem $2 declare
+    $f)
+  
+  (func $3 (type $1)
+    (param $x i32)
+    (result i32)
+    ref.func $f
+    ref.is_null
+    local.get $x
+    i32.shr_u
+    ref.func $f
+    ref.is_null
+    i32.const 1
+    i32.shl
+    i32.or
+    ))

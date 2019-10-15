@@ -1,0 +1,9 @@
+(func br 0
+i8x16.lt_u i8x16.lt_u
+i8x16.lt_u
+i8x16.lt_u br
+ 0
+i8x16.lt_u i8x16.lt_u
+i8x16.lt_u
+i8x16.lt_u br
+0)

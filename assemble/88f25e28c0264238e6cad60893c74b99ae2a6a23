@@ -1,0 +1,58 @@
+(module
+  (type $0 (func (param f32)))
+  (type $1 (func (param externref f64)))
+  (type $2 (func (param externref f32) (result v128)))
+  (type $3 (func (param funcref externref v128) (result f32 v128)))
+  (type $4 (func (param i32 f64 f64) (result f32)))
+  (import "env" "global1" (global $8 i32))
+  (import "env" "func0" (func $14 (param f32)))
+  (import "env" "func1" (func $15 (param externref f64)))
+  (import "env" "func2" (func $16 (param externref f32) (result v128)))
+  (table $5  13 4294967295 shared funcref)
+  (table $6  14 4294967295 shared externref)
+  (table $7  52 4294967295 externref)
+  (global $9  (mut f32) (f32.const 0x1.226dfep+30))
+  (global $10  (mut funcref) (ref.null func))
+  (global $11  (mut f64) (f64.const 0x1.af5eebb2ac117p+63))
+  (elem $12 funcref
+    (ref.func $16) (ref.null func) (ref.func $17) (ref.func $17)
+    (ref.func $15) (ref.func $14) (ref.func $16) (ref.func $15)
+    (ref.null func) (ref.func $15) (ref.func $16) (ref.null func)
+    (ref.func $17) (ref.func $16) (ref.func $15) (ref.func $14)
+    (ref.func $14) (ref.null func) (ref.func $17) (ref.null func)
+    (ref.func $14) (ref.func $17) (ref.func $15) (ref.func $14)
+    (ref.func $16) (ref.func $15) (ref.func $17) (ref.func $16)
+    (ref.func $17) (ref.null func) (ref.null func) (ref.func $14)
+    (ref.func $14) (ref.func $17) (ref.func $16) (ref.func $14)
+    (ref.null func) (ref.func $16))
+  
+  (func $17 (type $3)
+    (param $0 funcref)
+    (param $1 externref)
+    (param $2 v128)
+    (result f32 v128)
+    (local $3 i32)
+    (local $4 v128)
+    global.get $9
+    global.get $9
+    nop
+    i32.trunc_f32_u
+    atomic.fence
+    local.get $2
+    i32x4.bitmask
+    nop
+    f64.const 0x1.87c0488e33d26p+609
+    f64.const 0x1.b275e01b82f4cp+732
+    block $block (param i32 f64 f64) (result f32)
+      f64.div
+      i32.trunc_sat_f64_u
+      i32.ge_s
+      i32.extend8_s
+      unreachable
+    end ;; $block
+    unreachable
+    )
+  
+  (data $13 
+    "\87r\1a\d4\05\f7\e5)\0b\d0\14\df\1d\c2\a8\d5g'\deM\8c\ee\18\bf\03\b6\ddD\af\83\f8-_\97\bc!#\9d\e1-\94K\a4\ae\bcmZ-p\03\8b\a15\93\fe\ad\ec\10\a6d\96\fa6i"
+    "=\dbtN\b9\a4/\aaL\bc\ee"))

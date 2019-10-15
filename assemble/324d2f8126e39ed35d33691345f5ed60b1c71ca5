@@ -1,0 +1,56 @@
+(module
+  (type $0 (func (param externref v128 f32) (result v128)))
+  (type $1 (func (param i64)))
+  (type $2 (func (param f64 funcref)))
+  (type $3 (func (param externref externref i64 funcref) (result funcref)))
+  (type $4 (func (param funcref funcref funcref funcref)))
+  (import "env" "memory" (memory $5 82 24987 shared))
+  (import "env" "memory" (memory $6 91 21420))
+  (import "env" "global0" (global $7 (mut i32)))
+  (import "env" "global1" (global $8 (mut funcref)))
+  (import "env" "func0" (func $10 (param f64 funcref)))
+  (import "env" "func1" (func $11 (param externref externref i64 funcref) (result funcref)))
+  (import "env" "func2" (func $12 (param funcref funcref funcref funcref)))
+  (elem $9
+    $12 $11 $13 $13 $12 $12 $11 $12
+    $12 $13)
+  
+  (func $13 (type $0)
+    (param $0 externref)
+    (param $1 v128)
+    (param $2 f32)
+    (result v128)
+    (local $3 i64)
+    (local $4 f64)
+    f32.const 0x1.b365fcp+103
+    local.get $1
+    i32x4.all_true
+    v32x4.load_splat $6 offset=2354765820 align=2
+    i16x8.extract_lane_u 2
+    i64.atomic.load8_u offset=3628668777
+    i64.popcnt
+    i64.extend8_s
+    elem.drop $9
+    unreachable
+    )
+  
+  (func $14 (type $1)
+    (param $0 i64)
+    (local $1 funcref)
+    (local $2 f32)
+    (local $3 i64)
+    (local $4 f64)
+    local.get $1
+    drop
+    global.get $8
+    drop
+    i32.const -915368321
+    global.get $7
+    v64x2.load_interleaved_2 $6 offset=771436896 align=4
+    v128.const i32x4 0x3f788ed4 0x9548b3c6 0x0c7007e8 0x0a93fec0
+    f32x4.convert_i32x4_s
+    v32x4.store_interleaved_3 $6 offset=864963721 align=2
+    f32.const 0x1.1a74dap+55
+    local.tee $2
+    unreachable
+    ))

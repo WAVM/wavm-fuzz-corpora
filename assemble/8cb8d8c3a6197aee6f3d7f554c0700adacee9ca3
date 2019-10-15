@@ -1,0 +1,1 @@
+(import "" ""(func))(import "y" ""(func))(import "" ""(func))(import "" ""(func))(import "" ""(func))(import "i32.atomic.rmw.add" ""(func))(import "" ""(func))(import "" ""(func))

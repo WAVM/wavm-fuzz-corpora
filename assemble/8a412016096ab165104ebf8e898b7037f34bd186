@@ -1,0 +1,50 @@
+(module
+  (type $0 (func (param f32) (result f64)))
+  (type $1 (func (param v128) (result funcref i64)))
+  (type $2 (func))
+  (type $3 (func (param f64 funcref)))
+  (type $4 (func (param f32) (result funcref i32)))
+  (import "env" "memory" (memory $7 13 4131 shared))
+  (import "env" "table" (table $5 49 4294967295 funcref))
+  (import "env" "func0" (func $11 (param v128) (result funcref i64)))
+  (import "env" "func1" (func $12))
+  (import "env" "func2" (func $13 (param f64 funcref)))
+  (import "env" "func3" (func $14 (param f32) (result funcref i32)))
+  (memory $8  99 48642)
+  (table $6  59 4294967295 externref)
+  (elem $9 global)
+  (elem $10 funcref
+    (ref.func $11) (ref.func $13) (ref.func $13) (ref.func $11)
+    (ref.func $14) (ref.func $12) (ref.func $11) (ref.func $11)
+    (ref.func $12) (ref.func $13) (ref.null func) (ref.func $11)
+    (ref.func $13) (ref.null func) (ref.func $14) (ref.func $14)
+    (ref.func $11) (ref.func $12) (ref.func $11) (ref.func $11)
+    (ref.func $12) (ref.func $15) (ref.func $11) (ref.null func)
+    (ref.func $15) (ref.func $13) (ref.func $14) (ref.func $13)
+    (ref.func $15))
+  
+  (func $15 (type $0)
+    (param $0 f32)
+    (result f64)
+    memory.size
+    i32.load8_s offset=2054870438
+    atomic.fence
+    i32.load offset=3996891246 align=1
+    v128.load offset=2637913606 align=1
+    i8x16.neg
+    i8x16.all_true
+    i64.extend_i32_s
+    i64.eqz
+    v8x16.load_splat $8 offset=939868345
+    i8x16.bitmask
+    i16x8.splat
+    drop
+    table.size $5
+    v8x16.load_splat $8 offset=1655825584
+    drop
+    call $12
+    f32.const -0x1.03096ap-27
+    drop
+    i64.const 9150238032084733719
+    unreachable
+    ))

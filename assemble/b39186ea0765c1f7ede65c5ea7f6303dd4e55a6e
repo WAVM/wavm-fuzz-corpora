@@ -1,0 +1,30 @@
+(module
+  (type $0 (func (param f32) (result f32 funcref)))
+  (type $1 (func (result i32 i32)))
+  (import "env" "global3" (global $3 (mut f32)))
+  (import "env" "global4" (global $4 (mut f64)))
+  (memory $2  26 47184 shared)
+  (global $5  i32 (i32.const 472934806))
+  (global $6  i64 (i64.const -2828185821836734277))
+  (global $7  (mut i64) (i64.const 6348591148344702586))
+  (global $8  funcref (ref.null func))
+  (global $9  externref (ref.null extern))
+  (global $10  (mut i32) (i32.const -218855740))
+  (global $11  f64 (f64.const 0x1.8e2882a59e041p+63))
+  (elem $12 memory
+    $2 $2 $2 $2 $2 $2 $2)
+  
+  (func $13 (type $0)
+    (param $0 f32)
+    (result f32 funcref)
+    (local $1 i64)
+    (local $2 v128)
+    global.get $3 ref.null extern
+    ref.null extern
+    ref.null extern
+    drop
+    ref.is_null
+    ref.null func
+    drop
+    unreachable
+    ))

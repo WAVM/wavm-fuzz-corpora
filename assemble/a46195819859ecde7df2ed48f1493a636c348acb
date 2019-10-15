@@ -1,0 +1,8 @@
+(func br 0
+f64.gt
+br 0
+f64.gt
+br 0
+f64.gt br 0
+f64.gt br
+0)

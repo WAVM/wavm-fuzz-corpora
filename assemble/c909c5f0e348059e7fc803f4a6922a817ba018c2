@@ -1,0 +1,44 @@
+(module
+  (type $0 (func (param externref)))
+  (type $1 (func (param externref f64 f64) (result f64 f32 i32 i32)))
+  (import "env" "global0" (global $5 (mut f64)))
+  (memory $4  3 36850 shared)
+  (table $2  6 4294967295 shared externref)
+  (table $3  97 4294967295 shared externref)
+  (global $6  (mut f32) (f32.const 0x1.c100f4p+29))
+  (global $7  i32 (i32.const 1630772797))
+  (global $8  (mut f64) (f64.const 0x1.42d65d38e310fp+63))
+  (global $9  (mut f64) (f64.const 0x1.4b9d555c0c3b2p+63))
+  (elem $10 (table $3) (i32.const -131970342) global
+    $5 $8 $8 $8 $5 $8 $7 $7
+    $6 $7 $8 $5 $5 $9 $9 $8
+    $6)
+  
+  (func $11 (type $0)
+    (param $0 externref)
+    (local $1 i32)
+    global.get $8
+    i32.trunc_sat_f64_s
+    i32.extend16_s
+    i32.extend8_s
+    i32.load16_u offset=2889299221
+    v32x4.load_interleaved_4 offset=1026835504 align=1
+    elem.drop $10
+    f32x4.max
+    f64x2.eq
+    i64x2.add
+    local.get $0
+    global.get $8
+    global.get $9
+    loop $loop (param externref f64 f64) (result f64 f32 i32 i32)
+      f64.gt
+      br_if 1
+      ref.is_null
+      br_if 1
+      table.size $2
+      br_if 1
+      br 1
+    end ;; $loop
+    i32.atomic.rmw16.xchg_u offset=2218815553
+    br 0
+    ))

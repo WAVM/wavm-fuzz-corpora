@@ -1,0 +1,7 @@
+(func br 0
+f64x2.neg
+f64x2.neg
+f64x2.neg
+f64x2.neg
+br
+0)

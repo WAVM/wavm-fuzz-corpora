@@ -1,0 +1,4 @@
+(func f32.load
+v128.or v128.or v128.or v128.or v128.or v128.or v128.or v128.or
+v128.or v128.or v128.or v128.or v128.or v128.or v128.or v128.or v128.or v128.or v128.or v128.or v128.or v128.or v128.or v128.or
+v128.or v128.or v128.or v128.or v128.or v128.or v128.or v128.or)

@@ -1,0 +1,78 @@
+(module
+  (type $0 (func (param v128 funcref v128 funcref)))
+  (type $1 (func (param i64) (result externref)))
+  (type $2 (func (param v128 i32 f64) (result i32 f32 i64 funcref)))
+  (type $3 (func (param f64)))
+  (import "env" "memory" (memory $6 18 19073 shared))
+  (import "env" "table" (table $4 66 4294967295 shared externref))
+  (table $5  44 4294967295 shared externref)
+  (elem $7 declare global)
+  
+  (func $10 (type $0)
+    (param $0 v128)
+    (param $1 funcref)
+    (param $2 v128)
+    (param $3 funcref)
+    (local $4 v128)
+    (local $5 v128)
+    i32.const -752538502
+    local.get $2
+    local.get $5
+    local.get $0
+    f32x4.convert_i32x4_u
+    i16x8.extract_lane_u 0
+    f64.const -0x1.0b062e0546defp-233
+    data.drop $9
+    loop $loop (param v128 i32 f64) (result i32 f32 i64 funcref)
+      loop $loop_0 (param f64)
+        i64.trunc_sat_f64_s
+        i64.extend16_s
+        br 2
+      end ;; $loop_0
+      local.get $4
+      v128.store offset=625700063 align=8
+      local.set $2
+      local.get $2
+      drop
+      ref.null extern
+      drop
+      data.drop $9
+      f64.const 0x1.afc22804b1c9ap+925
+      return
+    end ;; $loop
+    drop
+    return
+    )
+  
+  (func $11 (type $1)
+    (param $0 i64)
+    (result externref)
+    (local $1 v128)
+    (local $2 i32)
+    (local $3 i64)
+    (local $4 i64)
+    elem.drop $7
+    data.drop $9
+    data.drop $9
+    local.get $4
+    local.set $4
+    table.size $4
+    i64.extend_i32_u
+    table.size $5
+    v16x8.load_splat offset=2947520457
+    i16x8.bitmask
+    nop
+    i32x4.splat
+    i32x4.abs
+    i8x16.any_true
+    i64.load32_s offset=3315139789 align=2
+    i64.gt_s
+    table.get $4
+    )
+  
+  (data $8 (i32.const 2103945805)
+    "\03\b6\\!\eb\de\f0L\7fo\c69o\7fL\81\80U\e8\bc\fd\b7?nj]\d4\d8\88\05\ea;\c4\10\db\e8\13\cd\e6\dc\05\07\d8{\93\c0\95\8eF*\ea\f1z\fd\b5&l\f1\8cqE\ec\95\c4"
+    "\10S_\adq\90\ac\d4")
+  
+  (data $9 
+    ":YD\ed\165r\b9\ea\87\c4\08\ebq@\daA{\83\ba\9f\afsa\99F\91s\ce\cd\a9\88"))

@@ -1,0 +1,1 @@
+(func(v16x8.load_splat )(v1 ) (loop(v16x8.load_splat)())if(v16x8.load_splat(i))fat ))

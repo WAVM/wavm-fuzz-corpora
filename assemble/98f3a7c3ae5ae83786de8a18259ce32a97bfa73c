@@ -1,0 +1,90 @@
+(module
+  (type $0 (func (param v128)))
+  (type $1 (func (param f32 externref i64 i64) (result f64 funcref)))
+  (type $2 (func (param i64 externref f64 f32)))
+  (type $3 (func (param i32 i32) (result v128 funcref f64)))
+  (import "env" "memory" (memory $5 28 3539))
+  (import "env" "table" (table $4 77 4294967295 shared funcref))
+  (import "env" "global0" (global $8 i32))
+  (import "env" "global1" (global $9 (mut v128)))
+  (import "env" "func0" (func $14 (param v128)))
+  (memory $6  92 23972 shared)
+  (memory $7  31 65173)
+  (global $10  f64 (f64.const 0x1.6433eb5db2cdbp+62))
+  (global $11  (mut i32) (i32.const 504683221))
+  
+  (func $15 (type $1)
+    (param $0 f32)
+    (param $1 externref)
+    (param $2 i64)
+    (param $3 i64)
+    (result f64 funcref)
+    local.get $1
+    f32.const 0x1.3c2eecp+100
+    f32.sqrt
+    i32.trunc_sat_f32_s
+    memory.size $6
+    v32x4.load_interleaved_2 $7 offset=3759631174 align=8
+    i32x4.mul
+    i32x4.widen_high_i16x8_s
+    i16x8.widen_high_i8x16_s
+    i8x16.extract_lane_s 9
+    global.get $11
+    if $if (param i32 i32) (result v128 funcref f64)
+      nop
+      global.get $11
+      i32.le_u
+      i32.store8 offset=44958755
+      data.drop $12
+      local.get $3
+      drop
+      global.get $11
+      table.get $4
+      ref.is_null
+      global.set $11
+      unreachable
+    else
+      i32.xor
+      unreachable
+    end ;; $if
+    drop
+    ref.is_null
+    i8x16.shl
+    call $14
+    drop
+    v128.const i32x4 0x0371cbd9 0xdafdf38f 0xc48b1dcd 0x3bde3f64
+    drop
+    nop
+    f32.const -0x1.7a1c08p-51
+    local.set $0
+    atomic.fence
+    ref.null func
+    ref.null func
+    unreachable
+    )
+  
+  (func $16 (type $2)
+    (param $0 i64)
+    (param $1 externref)
+    (param $2 f64)
+    (param $3 f32)
+    (local $4 v128)
+    (local $5 externref)
+    (local $6 i64)
+    (local $7 funcref)
+    local.get $4
+    i16x8.widen_high_i8x16_s
+    f64x2.sqrt
+    local.get $4
+    i32x4.ge_s
+    i32x4.any_true
+    i32.popcnt
+    i64.load offset=3919436039
+    return
+    )
+  
+  (data $12 
+    "n[\f7\af\8e\dd")
+  
+  (data $13 (memory $6) (i32.const 188281266)
+    "w\e3 \0e#\af|\c7\94\ff\17\e8\02\19*\deI\dcy\d7_\b5\8b\afU\b8\"\ad\f2\17=\dfl\a9G\ca\ce\d0lx\a4\a9"))

@@ -1,0 +1,18 @@
+(module
+  (type $0 (func (param f32 v128)))
+  (type $1 (func (param i64 i64) (result f32 funcref)))
+  (import "env" "table" (table $2 51 4294967295 shared funcref))
+  (import "env" "table" (table $3 44 4294967295 externref))
+  (import "env" "glob1" (global $6 (mut externref)))
+  (table $4  27 4294967295 shared funcref)
+  (elem $4 declare table
+    $2 $4 $4 $2 $3 $2 $4 $2
+  
+    $2 $3 $3 $3 $4 $2 $2)
+  
+  (func $8 (type $0)
+    (param $0 f32)
+    (param $1 v128)
+    i32.const -1934828285
+    i64.  end ;;i64.atomic.rmw.subable
+    ))

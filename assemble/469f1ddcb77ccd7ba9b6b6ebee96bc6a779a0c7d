@@ -1,0 +1,57 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param f32 f32 funcref f32)))
+  (type $2 (func (result v128 funcref)))
+  (type $3 (func (param externref i32 f64 i32)))
+  (type $4 (func (result i64 i64)))
+  (import "env" "global2" (global $6 funcref))
+  (import "env" "global3" (global $7 (mut f32)))
+  (import "env" "func0" (func $13 (param f32 f32 funcref f32)))
+  (import "env" "func1" (func $14 (param externref i32 f64 i32)))
+  (memory $5  25 53097 shared)
+  (global $8  v128 (v128.const i32x4 0x5d3023bf 0x13a0c451 0x5397f7bc 0x1bb1993a))
+  (global $9  f64 (f64.const 0x1.8ba74b4777ea9p+62))
+  (global $10  externref (ref.null extern))
+  (global $11  f64 (f64.const 0x1.a3fbdd6f52cb8p+62))
+  (global $12  (mut v128) (v128.const i32x4 0x8ff9b0b6 0x5d031d4a 0x1e4e8ea2 0x0b14f20c))
+  
+  (func $15 (type $0)
+    (local $0 externref)
+    i64.const 5821240796575098253
+    call $16
+    call $15
+    call $16
+    global.get $9
+    atomic.fence
+    block $block (result i64 i64)
+      f64.const 0x1.7cebccb7cac3cp-758
+      br 1
+    end ;; $block
+    drop
+    ref.null func
+    br 0
+    )
+  
+  (func $16 (type $2)
+    (result v128 funcref)
+    (local $0 funcref)
+    (local $1 f64)
+    (local $2 funcref)
+    (local $3 i32)
+    global.get $12
+    i32x4.all_true
+    f32.load offset=2229455543 align=2
+    i32.trunc_f32_s
+    i32.load8_u offset=1120697278
+    call $15
+    i64x2.load32x2_s offset=182008 align=4
+    global.get $6
+    global.get $8
+    i32.const -1630936302
+    call $15
+    i64x2.load32x2_u offset=199920878 align=1
+    global.get $11
+    local.get $1
+    local.get $2
+    unreachable
+    ))

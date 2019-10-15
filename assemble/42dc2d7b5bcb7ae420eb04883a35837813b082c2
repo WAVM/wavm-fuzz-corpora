@@ -1,0 +1,20 @@
+(module
+  (type $0 (func (result externref externref)))
+  (import "env" "memory" (memory $1 28 34696 shared))
+  (global $2  f32 (f32.const 0x1.0d1a94p+30))
+  
+  (func $5 (type $0)
+    (result externref externref)
+    i32.const -1064959560
+    i32.load16_s offset=462091282
+    memory.grow
+    unreachable
+    )
+  
+  (data $3 (i32.const -1246137112)
+    "\03y0j\f2A\92\d2\ee\1f#E\c9\c3{\e3\b0\fbah\a6JE\1eHn\cc\89\c6?\04\c1\ca3\13\11\f6`\f9\f8\07\bc\fal\a3t\b4\8e\cfu\9aQsl(H\d9\9f\c2G\c4\e8\b0`"
+    "\92\a10\96\f6^\0du")
+  
+  (data $4 
+    "\07\ef\b6\119XRb\e5Q9\82\a3\c2)\8f\ae\d6Tv\e7\9e?\f7{\cag9\de\c1r\13'=\98\0bg\a4\18\f5Ru\eb\1f\b0\98\b2\f0h\e1\94@\ed\d2\n\13\c0\dd~\d1Q\9f\8d$"
+    "\e9\e8\b1:\8f\13\c05\a1\d4\9b\881."))

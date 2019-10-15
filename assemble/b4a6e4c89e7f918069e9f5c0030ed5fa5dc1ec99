@@ -1,0 +1,63 @@
+(module
+  (type $0 (func (param externref) (result i64)))
+  (type $1 (func (param v128 funcref i64) (result f32)))
+  (type $2 (func (param i64) (result i32 v128 i64 externref)))
+  (import "env" "func0" (func $10 (param v128 funcref i64) (result f32)))
+  (memory $5  69 44401 shared)
+  (memory $6  32 53443 shared)
+  (table $3  40 4294967295 externref)
+  (table $4  34 4294967295 shared externref)
+  (elem $7 (i32.const 1920293234) table
+    $3 $4 $3 $4 $3 $4 $4 $3
+    $3 $3 $3 $3 $4 $4 $3 $3
+    $4 $4 $3 $3 $3 $4 $3 $3
+    $4 $3 $4 $3 $4 $4 $3 $4
+    $3 $4 $4 $3 $4 $4 $4 $3
+    $3 $3 $3 $3 $4 $4 $3 $3
+    $4 $4 $3 $3 $4 $3 $3 $4
+    $3 $4 $4 $3 $4 $3 $3 $3
+    $4 $3 $4 $4 $4 $3 $3 $4
+    $4 $4 $4 $4 $4 $4 $4 $3
+    $3 $3 $4 $4 $4)
+  
+  (func $11 (type $0)
+    (param $0 externref)
+    (result i64)
+    ref.null extern
+    i64.const -8194888351362452016
+    loop $loop (param i64) (result i32 v128 i64 externref)
+      f64.reinterpret_i64
+      i64.reinterpret_f64
+      i64.extend32_s
+      i64x2.splat
+      i16x8.extract_lane_u 7
+      i64.atomic.load $6 offset=4033723007
+      f32.const 0x1.e01afap+43
+      data.drop $8
+      block $block (result funcref)
+        f64.const -0x1.b21349b54c835p+420
+        table.size $4
+        if $if (result v128)
+          i64.const 6263480798481166217
+          br $loop
+        else
+          elem.drop $7
+          atomic.fence
+          f32.const -0x1.db95bcp-112
+          unreachable
+        end ;; $if
+        unreachable
+      end ;; $block
+      ref.null extern
+      unreachable
+    end ;; $loop
+    drop
+    br 0
+    )
+  
+  (data $8 (memory $6) (i32.const -1066265230)
+    "\13\05\c8\00\9f\c4\043\1e\de\c6\a0\b6\ce\1d\ca\ed\92\adiK\ce\f6\9f\92e8ZrA\91@-\ca\08\b7`\09\e6R\1eW.\84\ec\fe\1f[+\a0n,;\cf\d1\95N:\aa\cd\93\8a\nd"
+    "\9c\9a\b4\d3\ecX\c8\d7\d9\c3\8b\fa\d3")
+  
+  (data $9 
+    "\15$\bc\9d\9a\c1`O\98"))

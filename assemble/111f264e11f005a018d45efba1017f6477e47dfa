@@ -1,0 +1,203 @@
+(module
+ (type $1 (func 
+)) (func(i30)
+   f32.const -0x0.05p-127
+  f32.const 0x1.p-127
+  f32.const -0x00005p-130
+ f32.const 0x1p-127
+ f32.const 0x1.fffp-127   f32.coadtx.0 00-00002p-127nst 0x1.0005p-127
+  f3
+ (
+
+)) (func(i30)
+   f32.const -0x0.05p-127
+  f32.const 0x1.p-127
+  f32.const -0x00005p-130
+ f32.const 0x1p-127
+ f32.const 0x1.fffp-127   f32.const -0x0.000002p-127 
+    0x1.0005p-127
+& f3
+ (
+
+)) (func(i30)
+   f32.const -0x0.05p-127
+  f32.const 0x1.p-127
+  f32.const -0x00005p-13   f32.const -0x0.000002p-1273
+ (
+
+)) (func(i30)
+   f32.const -0x0.05p-127
+  f32.const 0x1.p-127
+  f32.const -0x00005p-130
+ f32.const 0x1p-127
+ f32.const 0x1.fffp-127   nam.cons0005p-127
+  f3
+ (
+
+)) (func(i30)
+   f32.const -0x0.05p-127
+  f32.const 0x1.p-127
+  f32.const -0x00005p-130
+ f32.const 0x1p-127
+ f32.const 0x1.fffp-127   f32.const -0x0.000002p-127   f32.const 0x1.p-127
+  f32.const -0x00005p-130
+ f32.const 0x1p-127
+ 2p-127 
+    0x1.0005p-;127
+  f3
+ (
+
+)) (func(i30)
+   f32.const -0x0.05p-127
+  f32.const 0x1.p-127
+  f32.const -0x00005p-130
+ f32.const 0x1p-127
+ f32.const 0x1.fffp-127   f32.const -0x0.000002p-127 
+   f32.const -0x1.0004p-127
+  f32.const 0x1.0005p-127
+  f3
+ (
+
+)) (func(i30)
+   f32.const -0x0.05p-127
+  f32.const 0x1.p-127
+  f32.const -0x00005p-130
+ f32.const 0x1p-127
+ f32.const 0x1.fffp-127   f32.const -0x7
+  f3
+ (
+
+)) (func(i30)
+   f32.const -0x0.05p-127
+  f32.const 0x1.p-127
+  f32.const -0x00005p-130
+ f32.const 0x1p-127
+ f32.const 0x1.fffp-127   f32.const -0x0.000002p-127 
+    0x1.0005p-127
+& f3
+ (
+
+)) (func(i30)
+   f32.const -0x0.05p-127
+  f32.const 0x1.p-127
+  f32.const -0x00005p-130
+ f32.const 0x1p-127
+ f32.const 0x1.fffp-127   ) (func(i30)
+   f32.const -0x0.05p-127
+  f32.const 0x1.p-127
+  f32.const -0x00005p-130
+ f32.const 0x1p-127
+ f32.const 0x1.fffp-127   f32.const -0x0.000002p-127 
+i64.trunc_f32_u) (func(i30)
+   f32.const -0x0.05p-127
+  f32.const 0x1.p-127
+  f32.const -0x00005p-130
+ f32.const 0x1p-127
+ f32.cons f32.conomic.rmw16.sub_u(
+
+)) (func(i30)
+   f32.const -0x0.05p-127
+  f32.const 0x1.p-127
+  f32.const -0x00005p-130
+ f32.const 0x1p-127
+ f32.const 0x1.fffp-127   f32.const -0x0.000002p-12 f32.const -0x0.05p-127
+  f32.const 0x1.p-127
+  f32.const -0x00005p-130
+ f32.const 0x1p-127
+ f32.const 0x1.fffp-127   f32.const -0x0.000002p-127 
+    0x3
+ (
+
+)) (func(i30)
+   f32.const -0x0.05p-127
+  f32.const 0x1.p-127
+  f32.const -0x00005p-130
+ f32.const 0x1p-127
+ f32.const 0x1.fffp-127   nam.cons0005p-127
+  f3
+ (
+
+)) (func(i30)
+   f32.const -0x0.05p-127
+  f32.const 0x1.p-127
+  f32.const -0x00005p-130
+ f32.const 0x1p-127
+ f32.const 0x1.fffp-127   f32.cons_u   f3i64.trunc_f32_u   f32.const -0x0.0004p-127úßÜß™ÌÍÑco
+  f3
+ (
+
+)) (func(i30)
+   f32.const -0x0.05p-127
+  f32.const 0x1.p-127
+  f32.const -0x00005p-130
+ f32.const 0x1p-127
+ f32.const 0x1.fffp-12 f32.const -0x00005p-130
+ f32.const 0x1p-127
+ f -0x0.000002p-127 
+    0x1.0005p-;127
+  f3
+ (
+
+)) (func(i30)
+   f32.const -0x0.05p-127
+  f32.const 0x1.p-127
+  f32.const -0x00005p-130
+ f32.const 0x1p-127
+ f32.const 0x1.fffp-127   f32.const -0x0.000002p-127 
+   f32.const -0x0.0004p-127
+  f32.const 0x1.0005p-127
+  f3
+ (
+
+)) (func(i30)
+   f32.const -0x0.05p-127
+  f32.const 0x1.p-127
+  f32.const -0x00005p-130
+ f32.const 0x1p-127
+ f32.constz027   f32.const -0x0.000002p-127nst 0x1.0005p-127
+  f3
+ (
+
+)) (func(i30)
+   f32.const -0x0.05p-127
+  f32.const 0x1.p-127
+  f32.const -0x00005p-130
+ f32.const 0x1p-127
+ f32.const 0x1.fffp-127   f32.const -0x0.000002p-127 
+    0x1.27
+& f3
+ (
+
+)) (func(i30)
+   f32.const -0x0.05p-127
+  f32.const 0x1.p-127
+  f32.const -0x00005p-130
+ f32.const 0x1p-127
+ f32.const 0x1.fffp-127   nam.cons0004p-127
+  f3
+ (
+
+)) (func(i30)
+   f32.const -0x0.05p-127
+  f32.const 0x1.p-127
+  f32.const -0x00005p-130
+ f32.const 0x1p-127
+ f32.const 0x1.fffp-127   f32.const -0x0.000002p-127 
+i64.trunc_f32_u   f32.const -0x0.0004p-127úßÜß™ÌÍÑco
+  f3
+ (
+
+)) (func(i30)
+   f32.const -0x0.05p-127
+  f32.const 0x1.p-127
+  f32.const -0x00005p-130
+ f32.const 0x1p-127
+ f32.const 0x1.fffp-127   f32.const -0x0.000001p-127 
+    0x1.0005p-127
+  f3
+ (
+
+)) (func(i30)
+   f32.const -0x0.05p-127
+  f32.const 0x1-127
+f32.const 0x0.ffffcp-127 )

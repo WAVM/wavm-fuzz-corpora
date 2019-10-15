@@ -1,0 +1,67 @@
+(module
+  (type $0 (func (param funcref v128 i32) (result i64)))
+  (type $1 (func (param f64) (result v128)))
+  (type $2 (func (param v128) (result f32)))
+  (type $3 (func (param funcref funcref) (result f64 funcref)))
+  (type $4 (func (param externref f32 v128) (result i64 externref)))
+  (import "env" "memory" (memory $6 68 32484 shared))
+  (import "env" "table" (table $5 28 4294967295 funcref))
+  (import "env" "global0" (global $8 i32))
+  (import "env" "global1" (global $9 externref))
+  (import "env" "global2" (global $10 v128))
+  (import "env" "func0" (func $16 (param funcref v128 i32) (result i64)))
+  (import "env" "func1" (func $17 (param v128) (result f32)))
+  (import "env" "func2" (func $18 (param funcref funcref) (result f64 funcref)))
+  (memory $7  73 9992 shared)
+  (global $11  f64 (f64.const 0x1.4e8df547733bep+61))
+  (global $12  (mut i64) (i64.const 4830239794290193605))
+  (global $13  i32 (i32.const 1155508133))
+  
+  (func $19 (type $1)
+    (param $0 f64)
+    (result v128)
+    global.get $8
+    v8x16.load_interleaved_4 $7 offset=4072669807
+    i16x8.abs
+    f32x4.extract_lane 0
+    i32.trunc_sat_f32_u
+    v128.load $7 offset=2193454137 align=8
+    i8x16.all_true
+    i32.clz
+    i16x8.splat
+    i16x8.bitmask
+    i64.load8_s $7 offset=2436056613
+    drop
+    f64x2.min
+    f64x2.min
+    i64x2.neg
+    return
+    )
+  
+  (func $20 (type $4)
+    (param $0 externref)
+    (param $1 f32)
+    (param $2 v128)
+    (result i64 externref)
+    (local $3 funcref)
+    (local $4 i64)
+    (local $5 v128)
+    (local $6 i32)
+    global.get $10
+    i32x4.widen_high_i16x8_s
+    i8x16.bitmask
+    i64.load32_s $7 offset=1295064098 align=2
+    local.get $1
+    ref.null extern
+    global.get $13
+    i32.load16_u offset=3878510880
+    global.get $10
+    local.get $4
+    unreachable
+    )
+  
+  (data $14 (i32.const 96370213)
+    "\de")
+  
+  (data $15 (memory $7) (i32.const 1582097023)
+    "\eb\f7[\1ebz\e2\80\f1\e1\1elj\d2D\06\8c\ec\a9~\e9\ab\06\e5Gd\b7\f3\1d\8bB\00*\edF\d0kh\18Zh\e3\9f\96j\07\fa'\9f\08\e5!x\ad"))

@@ -1,0 +1,4 @@
+(func
+i16x8.lt_u
+i16x8.lt_u i16x8.lt_u
+i16x8.lt_u)

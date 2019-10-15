@@ -1,0 +1,42 @@
+(module
+  (type $0 (func (param f32 funcref f32 i64)))
+  (type $1 (func (param f32)))
+  (type $2 (func (result f32 i64)))
+  (type $3 (func (result f32 funcref)))
+  (import "env" "global0" (global $5 (mut i32)))
+  (import "env" "func0" (func $9 (param f32)))
+  (memory $4  8 42732 shared)
+  (global $6  (mut externref) (ref.null extern))
+  (elem $7 exception_type)
+  (elem $8 table)
+  
+  (func $10 (type $0)
+    (param $0 f32)
+    (param $1 funcref)
+    (param $2 f32)
+    (param $3 i64)
+    (local $4 v128)
+    (local $5 funcref)
+    (local $6 f64)
+    local.get $3
+    local.get $3
+    i64.rem_u
+    i64.ctz
+    drop
+    local.get $1
+    local.get $2
+    local.set $2
+    local.tee $1
+    ref.is_null
+    i64.atomic.load16_u offset=320799806
+    block $block (result f32 i64)
+      global.get $5
+      block $block_0 (result f32 funcref)
+        v128.const i32x4 0x97164758 0xd51afeb2 0xd77c7d16 0x81ccf65e
+        ref.null func
+        unreachable
+      end ;; $block_0
+      return
+    end ;; $block
+    unreachable
+    ))

@@ -1,0 +1,91 @@
+(module
+  (type $0 (func (result f64)))
+  (type $1 (func (param i32) (result i32 i32)))
+  (type $2 (func (param i32 f32 i64 f64) (result i32 i32)))
+  (type $3 (func (param f32 v128 i32 f64) (result v128)))
+  (type $4 (func (param v128 v128 i32 f32) (result f64 f32)))
+  (type $5 (func (result i64 funcref)))
+  (import "env" "table" (table $6 98 4294967295 shared funcref))
+  (import "env" "table" (table $7 10 4294967295 shared funcref))
+  (import "env" "table" (table $8 42 4294967295 shared externref))
+  (import "env" "global0" (global $9 (mut i32)))
+  (import "env" "func0" (func $11 (result f64)))
+  (import "env" "func1" (func $12 (param v128 v128 i32 f32) (result f64 f32)))
+  
+  (func $13 (type $1)
+    (param $0 i32)
+    (result i32 i32)
+    i32.const -454837976
+    f32.reinterpret_i32
+    f32.ceil
+    f64.promote_f32
+    f64.floor
+    f64.nearest
+    unreachable
+    )
+  
+  (func $14 (type $2)
+    (param $0 i32)
+    (param $1 f32)
+    (param $2 i64)
+    (param $3 f64)
+    (result i32 i32)
+    (local $4 externref)
+    (local $5 f64)
+    table.size $8
+    loop $loop (result f32)
+      local.get $3
+      drop
+      v128.const i32x4 0x8782707a 0x3306d55e 0x0b7e5b99 0xf1a1c177
+      drop
+      i64.const 4583177590452805169
+      atomic.fence
+      local.get $3
+      f64.trunc
+      f32.const 0x1.fadfa0p+61
+      f64.promote_f32
+      f64.floor
+      i32.trunc_f64_u
+      if $if (result i64 funcref)
+        nop
+        local.get $4
+        drop
+        local.get $4
+        drop
+        local.get $0
+        br_if $loop
+        nop
+        i32.const 265465024
+        table.get $7
+        br $loop
+      else
+        atomic.fence
+        local.get $2
+        i64.popcnt
+        br $loop
+      end ;; $if
+      br $loop
+    end ;; $loop
+    unreachable
+    )
+  
+  (func $15 (type $3)
+    (param $0 f32)
+    (param $1 v128)
+    (param $2 i32)
+    (param $3 f64)
+    (result v128)
+    (local $4 f32)
+    (local $5 i64)
+    table.size $8
+    f32.convert_i32_s
+    v128.const i32x4 0x890475d9 0x7ac29a77 0x42ce079c 0x30873a85
+    i32x4.abs
+    f64x2.sqrt
+    nop
+    f64x2.neg
+    unreachable
+    )
+  
+  (data $10 
+    "\13"))

@@ -1,0 +1,52 @@
+(module
+  (type $0 (func (param i32) (result v128)))
+  (type $1 (func (result v128)))
+  (type $2 (func (result funcref f64 f32 f64)))
+  (import "env" "table" (table $3 72 4294967295 funcref))
+  (import "env" "global0" (global $9 v128))
+  (import "env" "global1" (global $10 f32))
+  (import "env" "global2" (global $11 externref))
+  (import "env" "global3" (global $12 (mut f64)))
+  (import "env" "global4" (global $13 (mut i64)))
+  (import "env" "func0" (func $15 (param i32) (result v128)))
+  (memory $6  53 20603 shared)
+  (memory $7  67 60549 shared)
+  (memory $8  9 47563)
+  (table $4  76 4294967295 shared funcref)
+  (table $5  63 4294967295 shared externref)
+  (global $14  i64 (i64.const 483659792602520624))
+  
+  (func $16 (type $1)
+    (result v128)
+    ref.null extern
+    drop
+    ref.null func
+    global.get $14
+    loop $loop (result funcref f64 f32 f64)
+      ref.null extern
+      i32.const -666354388
+      v8x16.load_interleaved_4 $8 offset=2058769449
+      i8x16.eq
+      i8x16.eq
+      v128.or
+      f64x2.sqrt
+      call $16
+      i32x4.abs
+      i16x8.sub
+      return
+    end ;; $loop
+    drop
+    drop
+    ref.null extern
+    ref.null extern
+    ref.is_null
+    table.get $3
+    ref.null extern
+    drop
+    ref.is_null
+    table.get $5
+    ref.is_null
+    table.get $5
+    ref.null func
+    unreachable
+    ))

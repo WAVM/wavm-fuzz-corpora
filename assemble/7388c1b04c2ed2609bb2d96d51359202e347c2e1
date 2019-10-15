@@ -1,0 +1,1 @@
+(memory 2)(func(r 0)v64x2.store_interleaved_2 v64x2.store_interleaved_2 v64x2.store_interleaved_2 v64x2.store_interleaved_2 (br r 0)v64x2.store_interleaved_2 v64x2.store_interleaved_2 (fx2.ge)v64x2.store_interleaved_2 v64x2.store_interleaved_2 (br 00))

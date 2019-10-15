@@ -1,0 +1,3 @@
+(module  (export "	_"(func $6)) (export "f26.to_s" (func $4)) (export "f&i4.1aof_to_a" (func $4))(export "6_abs"(func $9))(func $3 ) (func $4 ) (func $5 )(func $6)
+
+(func $9)

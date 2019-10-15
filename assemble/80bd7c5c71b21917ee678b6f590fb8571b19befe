@@ -1,0 +1,150 @@
+(module
+   (func  local.get $a extract_lane_€ 13 i8x16.extract_xtract_lane_u 1  2 i8x16.extract_lane_  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 5    i8x16.exact_lanextract_lane_u  12 i8x16.extract_lane)
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1 !  i8x16  116.extract_lane_u _  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1  
+  i8x_  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1  
+  i8x_  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 x16.extract_lane_u  12 i8x16.exttract_lt_lane_u 2  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1  2  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane)
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1 !  i8x16  116.extract_lane_u _  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1  
+  i8x_  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u  12 i8x16.extract_lane_u 1  
+  i8x_  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 x16.extract_lane_u  12 i8x16.extract_lane_u 1316.e)
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane)
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1 !  i8x16  116.extract_u _  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1  
+  i8x_  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1  
+  i8x_  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1
+  lane_  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1    i8x16.extract_lt_lane_u 2  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1  2  ane_‚ 13 i8x16.extract_lane_  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 5    i8x16.exact_lane_u  12 i8x16.extract_lane_u 1316.e)
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane)
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1 !  i8x16  116.extract_lane_u _  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1  
+  i8x_  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1  
+  i8x_  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 xtract_lane_u  12 i8x16.exttract_lt_lane_u 2  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1  2  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane)
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1 !  i8x16  116.extract_lane_u _  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1  
+  i8x_  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1  
+  i8x_  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 x16.extract_lane_u  12 i8x16.extract_lane_u 1316.e)
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane)
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1  
+  i8x_  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1
+   i8x1_u 13 i8x16.extract_lane_u 1  
+  i8x_  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1  
+  i8x_  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1
+  lane_  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1    i8x16.extract_lt_lane_u 2  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1  ract_lane_  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 5    i8x16.exact_lane_u  12 i8x16.extract_lane_u 1316.e)
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane)
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1 !  i8x16  116.extract_lane_u _  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1  
+  i8x_  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1  
+  i8x_  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 xtract_lane_u  12 i8x16.exttract_lt_lane_u 2  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1  2  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane)
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1 !  i8x16  116.extract_lane_u _  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1  
+  i8x_  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1  
+  i8x_  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 x16.extract_lane_u  12 i8x16.extract_lane_u 1316.e)
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane)
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1  
+  i8x_  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1  
+  i8x_  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1  
+  i8x_  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 x16.extract_lane_u  12 i8x16.extract_lane_u 1316.extract_lane_u 14)

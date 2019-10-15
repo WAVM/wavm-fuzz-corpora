@@ -1,0 +1,46 @@
+(module
+  (type $0 (func (param f64 f64) (result i32 v128)))
+  (type $1 (func (param f32)))
+  (type $2 (func (param funcref) (result f32)))
+  (type $3 (func (param i32 i64 f32 v128)))
+  (type $4 (func (param i64 externref f32) (result f64)))
+  (type $5 (func (param f64) (result funcref)))
+  (import "env" "memory" (memory $8 85 2389 shared))
+  (import "env" "table" (table $6 13 4294967295 funcref))
+  (import "env" "global0" (global $9 (mut i64)))
+  (import "env" "global2" (global $10 v128))
+  (import "env" "global3" (global $11 i64))
+  (import "env" "func0" (func $18 (param f64 f64) (result i32 v128)))
+  (import "env" "func1" (func $19 (param funcref) (result f32)))
+  (import "env" "func2" (func $20 (param i64 externref f32) (result f64)))
+  (table $7  5 4294967295 funcref)
+  (global $12  funcref (ref.null func))
+  (global $13  externref (ref.null extern))
+  (elem $14 global
+    $13 $10 $12 $12 $9 $12 $9 $10
+    $12 $13 $9 $11)
+  (elem $15 declare funcref
+    (ref.func $20) (ref.func $19) (ref.func $21) (ref.func $18)
+    (ref.func $21))
+  
+  (func $21 (type $1)
+    (param $0 f32)
+    (local $1 v128)
+    (local $2 i64)
+    f64.const -0x1.0ed841115ede9p-508
+    global.get $9
+    i64.popcnt
+    unreachable
+    )
+  
+  (func $22 (type $3)
+    (param $0 i32)
+    (param $1 i64)
+    (param $2 f32)
+    (param $3 v128)
+    (local $4 f32)
+    table.size $7
+    v8x16.load_interleaved_2 offset=2794375936 align=8
+ 2 $11 i64))
+ i32.const 267410195)
+    ":\fa\00l\d2\c1z\b1\ff\07\b8K#&\16\80\a4y"))

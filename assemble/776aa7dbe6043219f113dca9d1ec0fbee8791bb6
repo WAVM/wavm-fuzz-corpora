@@ -1,0 +1,96 @@
+(module
+  (type $0 (func (result i32)))
+  (type $1 (func (param v128 i32 externref funcref) (result i64 f32)))
+  (type $2 (func (param i32 v128) (result externref v128)))
+  (type $3 (func (param externref externref) (result i32 f64)))
+  (type $4 (func (param funcref)))
+  (import "env" "table" (table $5 22 4294967295 externref))
+  (import "env" "global1" (global $6 (mut f64)))
+  (import "env" "global2" (global $7 funcref))
+  (import "env" "func0" (func $15 (result i32)))
+  (global $8  (mut externref) (ref.null extern))
+  (global $9  funcref (ref.null func))
+  (global $10  f64 (f64.const 0x1.3272976e70439p+63))
+  (global $11  (mut funcref) (ref.null func))
+  (global $12  (mut v128) (v128.const i32x4 0xad9553d8 0x68b945f1 0xd40ef848 0x03a3281b))
+  (elem $13 (i32.const -2010885038) table
+    $5 $5 $5 $5 $5 $5 $5 $5
+    $5 $5 $5 $5 $5 $5 $5 $5
+    $5 $5 $5 $5 $5 $5 $5 $5
+    $5 $5 $5 $5 $5 $5 $5 $5
+    $5 $5 $5 $5 $5 $5 $5 $5
+    $5 $5 $5 $5 $5 $5 $5 $5
+    $5 $5 $5 $5 $5 $5 $5 $5
+    $5 $5 $5 $5 $5 $5 $5 $5
+    $5 $5 $5 $5 $5 $5 $5 $5
+    $5 $5 $5 $5 $5 $5 $5 $5
+    $5 $5 $5 $5 $5 $5)
+  
+  (func $16 (type $1)
+    (param $0 v128)
+    (param $1 i32)
+    (param $2 externref)
+    (param $3 funcref)
+    (result i64 f32)
+    (local $4 externref)
+    (local $5 funcref)
+    f64.const 0x1.6d03752a94d33p+230
+    f64.trunc
+    f64.floor
+    global.get $7
+    global.get $12
+    global.get $12
+    i32x4.trunc_sat_f32x4_u
+    i32x4.gt_s
+    local.set $0
+    loop $loop (param funcref)
+      global.get $12
+      i8x16.all_true
+      global.get $10
+      f32.demote_f64
+      table.size $5
+      ref.null func
+      unreachable
+    end ;; $loop
+    unreachable
+    )
+  
+  (func $17 (type $2)
+    (param $0 i32)
+    (param $1 v128)
+    (result externref v128)
+    (local $2 f32)
+    (local $3 i32)
+    (local $4 f64)
+    v128.const i32x4 0xbfb489c3 0x6ad6e373 0xadc477c1 0xb50e86ee
+    i16x8.extract_lane_s 5
+    nop
+    local.set $0
+    unreachable
+    )
+  
+  (func $18 (type $3)
+    (param $0 externref)
+    (param $1 externref)
+    (result i32 f64)
+    (local $2 f32)
+    global.get $8
+    local.set $0
+    nop
+    global.get $11
+    global.get $7
+    local.get $0
+    global.get $10
+    i32.const -1619997351
+    local.get $1
+    i64.const 223689792463876450
+    ref.null func
+    ref.is_null
+    table.get $5
+    global.set $8
+    unreachable
+    )
+  
+  (data $14 
+    "\e2\fc\e0N*N\df\eer\f5{\13\ecp\e5M\f5>\fc\83\9b\1c\d4\d9\1b\eaa;\ef\c7\19\0c\15S\96\05J\f7\d8\dc\05\e6xS\88\e7{\e4\b1\d8\df\8e\c6(\0f\1f\85p\cbM\afF\bd\18"
+    "%\16\9c\f7Z \8d\ae\nF\c4\f4b\cfG\90\99\0d\af)\f1\a6\91\dd\976Z\eb8e\84\b9\c0\a1\16\d1"))

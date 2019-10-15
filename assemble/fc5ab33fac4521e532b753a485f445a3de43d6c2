@@ -1,0 +1,12 @@
+(module
+  (type $0 (func))
+  (table $1  2 funcref)
+  (elem $2 (i32.const 0)
+    $3)
+  
+  (func $3 (type $0)
+    i32.const 0
+    i32.const 0
+    i32.const 0
+    table.init $2
+    ))

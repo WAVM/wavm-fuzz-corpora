@@ -1,0 +1,113 @@
+(module
+  (type $1 (func (param i32 i32)))(memory  0 )
+(func    iload_in  0 )
+(func    i32.const 5
+    i32.const 5
+   v32x4.load_interleaved_3       vnte““†  0 )
+(func    i32.const 5
+    i32.const 5
+   v32x4.load_interleaved_3   tinterleaved_2   si32.lt_st 5
+v load_inte“aved_3      nterleaved_2   st loa  si8x16.addt load_in  0 )
+(func    i32.const 5
+    i32.const 5
+   v32x4.load_interleaved_3       vnte““†  load_in  0 )
+(func    i32.const 5
+    i32.const 5
+   v32x4.load_interleaved_3      vnte““†  0 )
+(func    i32.const 5
+    i32.const 5
+   0 )
+(func    i32.const 5
+    i32.const 5
+   v32x4.load_interleaved_3       vnte““†  0 )
+(func    i32.const 5
+    i32.const 5
+   v32x4.load_interleaved_3   tinterleaved_2   si32.lt_st 5
+v load_inte““†  0 )
+(func    erleaved_3       vnte““†  0 )
+(func    i32.const 5
+    i32.const 5
+   v32x4.load_interleaved_3   tinterleaved_2   si32.lt_st 5
+v load_inte““†  0 )
+(func    i32.const 5
+    i32.const 5
+   v32x4.load_interleaved_3   i32.const 5
+   v32x4.load_interleaved_3   tinterleaved_2   si32.lt_st 5
+v load_inte““†  0 )
+(func    i32.const 5
+    i32.const 5
+   v32x4.load_interleaved_3   i32.const 5
+   vrleaveinte““†  0 )
+(func    i32.const 5
+    i32.const 5
+   v32x4.load_interleaved_3   i32.const 5
+   v32x4.load_interleaved_3   tinterleaved_2   si32.lt_st 5
+v load_inte““†  0 )
+(func    i32.const 5
+    i32.const 5
+   v32x4.load_interleaved_3   i32.const 5
+   v32x4.load_interleaved_3       vnte““†  0 )
+(func    i32.const 5
+     i32.const 5
+    i32.const 5
+   v32x4.load_interleaved_3       vnte““†  0 )
+(func    i32.const 5
+    i32.const 5
+   v32x4.load_interleaved_3   tinterleaved_2   si32.lt_st 5
+v load_inte““†  0 )
+(func    
+    i32.const 5
+   v32x4.load_interleaved_3       v2.const 5
+    i32.const 5
+   v32x4.load_interleavt load_in  0 )
+(func    i32.const 5
+    i32.const 5
+   v32x4.load_interleaved_3       vnte““†  0 )
+(func    i32.const 5
+    i32.const 5
+   v32x4.load_interleaved_3   tinterleaved_2   si32.lt_st 5
+v load_inte““†  0 )
+(func    i32.const 5
+terlt load_in  0 )
+(func    i32.const 5
+    i32.const 5
+   v32x4.load_interleaved_3       vnte““†  0 )
+(func      i32.const 5
+   v32x4.load_interleaved_3   i32.const 5
+   v32x4.load_interleaved_3       vnte““†  0 )
+(func    i32.const 5
+     i32.const 5
+    i32.const 5
+   v32x4.load_interleaved_3       vnte““†  0 )
+(func    i32.const 5
+    i32.const 5
+   v32x4.load_interleaved_3   tinterleaved_2   si32.lt_st 5
+v load_inte““†  0 )
+(func    
+    i32.const 5
+   v32x4.load_interleaved_3       v2.const 5
+    i32.const 5
+   v32x4.load_interleavt load_in  0 )
+(func    i32.const 5
+    i32.const 5
+   v32x4.load_interleaved_3       vnte““†  0 )
+(func    i32.const 5
+    i32.const 5
+   v32x4.load_interleaved_3   tinterleaved_2   si3load_inte““†  0 )
+(func    i32.const 5
+terlt load_in  0 )
+(func    i32.const 5
+    i32.const 5
+   v32x4.load_interleaved_3       vnte““†  0 )
+(func    i32.const 5
+    i32.const 5
+   v32x4.load_interleaved_3   tinterleaved_2   si32.lt_st 5
+v load_inte““†  0 )
+(func    i32.const 5
+    i32.const 5
+   v32x4.load_interleaved_3   i32.const 5
+   v32x4.load_interleaved_3   tinterleaved_2   si16.lt_st 5
+v load_inte““†  0 )
+(func    i32.const 5
+    i32.const 5
+   v32x4.load_interleaved_3   turn))

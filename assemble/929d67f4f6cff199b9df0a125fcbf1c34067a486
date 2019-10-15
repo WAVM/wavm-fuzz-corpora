@@ -1,0 +1,90 @@
+(module
+  (type $0 (func (result i32)))
+  (type $1 (func (param i32) (result i32)))
+  (type $2 (func (param i32 i32 i32)))
+  (table $3  32 64 funcref)
+  (export "f0" (func $f0))
+  (export "f1" (func $f1))
+  (export "f2" (func $f2))
+  (export "f3" (func $f3))
+  (export "f4" (func $f4))
+  (export "f6" (func $f6))
+  (export "f7" (func $f7))
+  (export "f8" (func $f8))
+  (export "f9" (func $f9))
+  (export "f10" (func $f10))
+ 
+  (elem $4 (i32.const 0)
+    $f0 $f1 $f2 $f3 $f4 $f5 $f6 $f7)
+  
+  (func $f0 (type $0)
+     i32.const 0
+    )
+  
+  (func $f1  (result i32)
+    i32.const 1
+    )
+  
+  (func $f2 (type $0)
+    (result i32)
+    i32.const 2
+    )
+  
+  (func $f3 (type $0)
+    (result i32)
+    i32.const 3
+    )
+  
+  (func $f4 (type $0)
+    (result i32)
+    i32.const 6
+    )
+  
+  (func $f5 (type $0)
+    (result i32)
+    i32.const 5
+    )
+  
+  (func $f6 (type $0)
+    (result i32)
+    i32.const 6
+    )
+  
+  (func $f7 (type $0)
+    (result i32)
+    i32.const 7
+    )
+  
+  (func $f8 (type $0)
+    (result i32)
+    i32.const 8
+    )
+  
+  (func $f9 (type $0)
+    (result i32)
+    i32.const 9
+    )
+  
+  (func $f10 (type $0)
+    (result i32)
+    i32.const 10
+    )
+  
+  (func $f11 (type $0)
+    (result i32)i32.const 11
+    )
+  
+  (func $f12 (type $0)
+    (result i32)
+    i32.const 12
+)
+  
+  (func $6 (type $2)
+    (param $targetOffs i32)
+    (param $srcOffs i32)
+    (param $len i32)
+    local.get $targetOffs
+    local.get $srcOffs
+    local.get $len
+    table.copy
+    ))

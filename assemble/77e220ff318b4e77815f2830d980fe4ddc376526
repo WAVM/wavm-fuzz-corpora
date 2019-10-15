@@ -1,0 +1,3 @@
+(func block $1 br_table
+$1 $1
+$1 $1)

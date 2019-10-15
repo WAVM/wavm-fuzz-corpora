@@ -1,0 +1,60 @@
+(module
+  (type $0 (func (param f32 f64 externref) (result f64)))
+  (type $1 (func))
+  (type $2 (func (param f64)))
+  (type $3 (func (param funcref f64) (result v128 externref)))
+  (type $4 (func (result i32 funcref v128)))
+  (import "env" "memory" (memory $6 49 54445 shared))
+  (import "env" "table" (table $5 83 4294967295 shared funcref))
+  (import "env" "global2" (global $8 externref))
+  (import "env" "global4" (global $9 (mut externref)))
+  (import "env" "global6" (global $10 (mut i32)))
+  (import "env" "func0" (func $20 (param f32 f64 externref) (result f64)))
+  (import "env" "func1" (func $21))
+  (memory $7  32 6169)
+  (global $11  i32 (i32.const -1184478150))
+  (global $12  externref (ref.null extern))
+  (global $13  (mut funcref) (ref.null func))
+  (global $14  (mut i64) (i64.const -3232728563679189658))
+  (global $15  (mut f32) (f32.const 0x1.fbdfd2p+29))
+  (global $16  (mut externref) (ref.null extern))
+  (global $17  (mut v128) (v128.const i32x4 0x958a726f 0x591f1bd9 0xadcfd6c8 0xe522de4f))
+  
+  (func $22 (type $2)
+    (param $0 f64)
+    (local $1 externref)
+    (local $2 i64)
+    (local $3 f64)
+    i32.const -27413874
+    global.get $12
+    global.get $13
+    global.get $14
+    f64.reinterpret_i64
+    block $block (param funcref f64) (result v128 externref)
+      i32.trunc_sat_f64_u
+      global.get $11
+      i32.atomic.rmw.xor offset=809746772
+      local.get $3
+      loop $loop (result i32 funcref v128)
+        i32.const 1548833266
+        br $loop
+      end ;; $loop
+      global.get $17
+      i16x8.ge_u
+      global.set $17
+      drop
+      ref.null func
+      ref.is_null
+      i32.atomic.rmw16.add_u offset=4184344171
+      br 1
+    end ;; $block
+    drop
+    return
+    )
+  
+  (data $18 (memory $7) (i32.const -222047688)
+    "\7f\1f\19\9dI\a2\8f\1dA\04Gq\acv\d7\bd\15\83\c8\nF\fc\89\a9\dd\012\d9R\f8\n\7f\81\d3\cd3*\9c\b5\f6~!h\a8\fdk\f7<\e9\145\f3R\c6\06\86\c7s\cc\07\8c\8d\83\94"
+    "#\90\d4c\8e\11@\e6\90\99\ff'\e8\\/\acK\d8")
+  
+  (data $19 (memory $7) (i32.const 519055352)
+    "\dd\8d\ef.\18\ba.*\1b+E\ba\ca\fc\d1\dc\17\eb\98d\fdW"))

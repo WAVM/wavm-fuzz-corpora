@@ -1,0 +1,39 @@
+(module
+  (type $0 (func (param externref funcref f32) (result f32 f64)))
+  (type $1 (func))
+  (import "env" "memory" (memory $5 3 60985 shared))
+  (import "env" "table" (table $2 19 4294967295 externref))
+  (import "env" "table" (table $3 24 4294967295 externref))
+  (import "env" "table" (table $4 12 4294765299 funcref))
+  (elem $6 (table $3) (i32.const 1597450107) table
+    $4 $3 $2 $3 $4 $4 $4 $3
+    $2 $2 $3 $3 $4 $2 $4 $4
+    $4 $3 $2 $4 $4 $2 $2 $4
+    $4 $3 $4 $2)
+  (elem $7 global)
+  
+  (func  (param $0 funcref)
+    (param $2 f64)
+    (result f32 f64)
+    (local $3 f32)
+    (local $4 v128)
+    (local $5 i64)
+    memory.size
+    f32.load offset=3486118723
+    memory.size
+    i32.load8_s offset=1845444667
+    nop
+    v8x16.load_splat offset=3895628929
+    i64x2.extract_lane  
+0   i64.extend32_s
+    call $9
+    f64.convert_i64_s
+    return
+     )
+  
+  (func $9 (type $1)
+    nop
+    ref.null extern
+    drop
+    unreachable
+    ))

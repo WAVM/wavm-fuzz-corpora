@@ -1,0 +1,49 @@
+(module
+  (type $0 (func (param i64) (result funcref v128)))
+  (import "env" "table" (table $1 15 4294967295 shared funcref))
+  (import "env" "table" (table $2 100 4294967295 shared externref))
+  (table $3  49 4294967295 shared funcref)
+  (global $4  funcref (ref.null func))
+  (elem $5 declare funcref
+    (ref.func $8))
+  (elem $6 declare global
+    $4 $4 $4 $4 $4 $4 $4 $4
+    $4 $4 $4 $4 $4 $4 $4 $4
+    $4 $4 $4 $4 $4 $4 $4 $4
+    $4 $4 $4 $4 $4 $4 $4 $4)
+  
+  (func $8 (type $0)
+    (param $0 i64)
+    (result funcref v128)
+    (local $1 externref)
+    (local $2 externref)
+    table.size $1
+    nop
+    i64.extend_i32_s
+    i64.extend8_s
+    i64.popcnt
+    i32.wrap_i64
+    i32x4.splat
+    i16x8.widen_high_i8x16_s
+    i32x4.all_true
+    v128.const i32x4 0x23917028 0x12186bf9 0x92ae1c7a 0x41af6f7c
+    i16x8.bitmask
+    i32.mul
+    i32.extend16_s
+    i32.extend16_s
+    atomic.fence
+    ref.null func
+    drop
+    table.get $2
+    ref.is_null
+    table.get $2
+    drop
+    nop
+    table.size $1
+    drop
+    f32.const -0x1.d80958p-51
+    unreachable
+    )
+  
+  (data $7 
+    "\a3\a0{{\a4\cb\f8$\dc\08\ef\10\f2\de\c1\a7\e0\0f\e5W\90\"\d4\04\90\c6\1a\97k\9c\cc\cet\14_7~!5RP\\#\d6E\02\12\03\0fO^\14\"\e7L\a9\8f@"))

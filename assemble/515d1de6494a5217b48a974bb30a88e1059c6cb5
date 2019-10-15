@@ -1,0 +1,1 @@
+(module(memory 0)(func i32.const 3 v8x16.load_splat return))

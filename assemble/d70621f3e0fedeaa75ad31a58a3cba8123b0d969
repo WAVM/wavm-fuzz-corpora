@@ -1,0 +1,1 @@
+(func(drop(mu)(i64.atomic.rmw16.sub_u)) (i64.atomic.rmw16.sub_u (i64.atomic.rmw16.sub_u)(i64.atomic.rmw16.sub_u))(i64.atomic.rmw16.sub_u (i64.atomic.rmw16.sub_u)(i64.atomic.rmw16.sub_u))(i64.atomic.rmw16.sub_u))

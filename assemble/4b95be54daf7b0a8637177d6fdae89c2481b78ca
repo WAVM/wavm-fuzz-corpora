@@ -1,0 +1,6 @@
+(func br 0 i32x4.le_u
+i32x4.le_u i32x4.le_u
+i32x4.le_u i32x4.le_u i32x4.le_u i32x4.le_u i32x4.le_u i32x4.le_u
+i32x4.le_u i32x4.le_u
+i32x4.le_u i32x4.le_u i32x4.le_u i32x4.le_u i32x4.le_u br
+0)

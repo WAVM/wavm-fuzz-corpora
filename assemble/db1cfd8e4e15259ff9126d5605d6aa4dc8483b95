@@ -1,0 +1,30 @@
+(module
+  (type $0 (func (param funcref v128) (result f32)))
+  (import "env" "memory" (memory $1 47 39344 shared))
+  (import "env" "memory" (memory $2 83 5112 shared))
+  (memory $3  4 35079)
+  
+  (func $4 (type $0)
+    (param $0 funcref)
+    (param $1 v128)
+    (result f32)
+    (local $2 f64)
+    f32.const 0x1.40d104p+6
+    f64.promote_f32
+    i64.trunc_sat_f64_s
+    memory.size $3
+    v8x16.load_interleaved_3 $2 offset=3551663316 align=2
+    i16x8.widen_high_i8x16_s
+    i16x8.narrow_i32x4_s
+    f64x2.gt
+    i32x4.any_true
+    i32x4.load16x4_u $2 offset=1376259148 align=1
+    i8x16.abs
+    i32x4.trunc_sat_f32x4_s
+    i16x8.neg
+    i8x16.extract_lane_s 4
+    v8x16.load_interleaved_3 offset=2896322449 align=1
+    f64x2.min
+    i32x4.eq
+    unreachable
+    ))

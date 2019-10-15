@@ -1,0 +1,76 @@
+(module
+  (type $0 (func (param f32 externref f64 v128) (result funcref i64)))
+  (type $1 (func (param funcref funcref v128) (result f32 externref)))
+  (import "env" "memory" (memory $5 72 13930 shared))
+  (import "env" "memory" (memory $6 41 36669))
+  (import "env" "table" (table $2 7 4294967295 shared funcref))
+  (import "env" "table" (table $3 4 4294967295 externref))
+  (import "env" "table" (table $4 7 4294967295 funcref))
+  (import "env" "global0" (global $8 i64))
+  (import "env" "global4" (global $9 funcref))
+  (import "env" "global6" (global $10 f64))
+  (import "env" "global8" (global $11 externref))
+  (import "env" "func0" (func $20 (param funcref funcref v128) (result f32 externref)))
+  (memory $7  36 5076 shared)
+  (global $12  (mut i64) (i64.const -1730772186722465872))
+  (global $13  v128 (v128.const i32x4 0xb077fc85 0x4b715604 0x7f1af9e3 0x7b116f7a))
+  (global $14  (mut externref) (ref.null extern))
+  (global $15  v128 (v128.const i32x4 0x8e2c959d 0x41999c0b 0x71c8d412 0x7eacb7f4))
+  (global $16  f32 (f32.const 0x1.99c11cp+31))
+  (elem $17 (table $3) (i32.const -410349778) exception_type)
+  
+  (func $21 (type $0)
+    (param $0 f32)
+    (param $1 externref)
+    (param $2 f64)
+    (param $3 v128)
+    (result funcref i64)
+    (local $4 funcref)
+    (local $5 i32)
+    (local $6 f32)
+    local.get $0
+    local.get $1
+    table.size $4
+    i32.const 508421020
+    i32.mul
+    f64.const 0x1.fffba149ee2e4p-259
+    global.get $14
+    global.set $14
+    v128.const i32x4 0x6fb61f95 0x68899f97 0x5c135c63 0x651bbe70
+    local.get $5
+    i64.load16_u $7 offset=2608014595
+    f32.convert_i64_s
+    f32x4.replace_lane 3
+    local.get $3
+    i8x16.narrow_i16x8_u
+    drop
+    ref.null extern
+    drop
+    ref.null extern
+    global.set $14
+    f64.store offset=2474218535
+    local.set $1
+    local.set $0
+    v128.const i32x4 0xf28de72d 0x2087382c 0xf17ae4e6 0x88a292e2
+    ref.null func
+    ref.is_null
+    i32x4.shl
+    local.set $3
+    local.get $5
+    table.get $3
+    ref.null extern
+    drop
+    global.set $14
+    v128.const i32x4 0x719a0591 0x185925af 0x7a48e8e1 0x86705854
+    drop
+    global.get $9
+    unreachable
+    )
+  
+  (data $18 
+    "\8c@\14\99\9a\cf\8ckv{\8b\8e\8e\99\n]\e4\94\c1\96m\88\ee\f3\95;\16\98W\ea\01E\96\\pZ4_H\ae\b7+OAR}=\fb\">\d9\1d]|\c0\c9CX!\cc\9b\d9\a1\99"
+    "!B\db\b7\92\f3N\d5\b0\\oh\96\f1\"\a4\0e/\84\feX\d0\c2tI\1f\bde[\1d\90")
+  
+  (data $19 
+    "\86\86\df8\1f\7f\b3\a9\d7T\\\0b=\95\bb\d7\bd\de%\12\ca\9c\e4\afI\be\b7\9c?\01\1aC\fb\"\f4\0d\01s\e8\81e\a3\b3\09\c0\97\e5f\9aDf\c3v\a2\ae'\ac\eeU\9cG\"'\f3"
+    "\f5S+"))

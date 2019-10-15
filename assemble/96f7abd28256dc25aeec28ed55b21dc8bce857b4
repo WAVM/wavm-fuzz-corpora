@@ -1,0 +1,1 @@
+(func br 0 ref.is_null br 0 ref.is_null drop)

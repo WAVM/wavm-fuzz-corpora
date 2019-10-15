@@ -1,0 +1,1 @@
+(memory 4 4)(func(i)v32x4.store_interleaved_4(i0)v32x4.store_interleaved_4(i)v32x4.store_interleaved_4(i0)v32x4.store_interleaved_4(  0))

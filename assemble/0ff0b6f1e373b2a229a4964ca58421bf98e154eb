@@ -1,0 +1,68 @@
+(module
+  (type $0 (func (param v128 f32 i64 i32) (result i32)))
+  (type $1 (func (param f32 f64) (result i64 externref)))
+  (type $2 (func (param f32 v128 f64 funcref) (result funcref)))
+  (type $3 (func (param v128) (result funcref)))
+  (import "env" "func0" (func $9 (param f32 f64) (result i64 externref)))
+  (import "env" "func1" (func $10 (param f32 v128 f64 funcref) (result funcref)))
+  (import "env" "func2" (func $11 (param v128) (result funcref)))
+  (memory $6  21 42171 shared)
+  (table $4  35 4294967295 externref)
+  (table $5  32 4294967295 externref)
+  (elem $7 (i32.const 1185992719) externref
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern))
+  (elem $8 externref
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern))
+  
+  (func $12 (type $0)
+    (param $0 v128)
+    (param $1 f32)
+    (param $2 i64)
+    (param $3 i32)
+    (result i32)
+    i64.const -1516098762516740117
+    memory.size
+    v64x2.load_splat offset=3156528452 align=2
+    i64x2.neg
+    i32.const -1616861291
+    i16x8.load8x8_s offset=3984643721 align=2
+    i32x4.bitmask
+    atomic.fence
+    i64x2.load32x2_s offset=134765714 align=4
+    v128.or
+    i16x8.extract_lane_u 5
+    memory.grow
+    ref.null func
+    v128.const i32x4 0xf7ce866c 0x0b89edcd 0x7e997d57 0xb6329c10
+    f64x2.sqrt
+    unreachable
+    ))

@@ -1,0 +1,12 @@
+(module
+  (type $0 (func))
+  (memory $1  1)
+  (export "test" (func $3))
+  
+  (func $3 (type $0)
+    data.drop $2
+    data.drop $2
+    )
+  
+  (data $2 
+    "7"))

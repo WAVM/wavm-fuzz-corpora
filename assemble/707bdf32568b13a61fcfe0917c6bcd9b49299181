@@ -1,0 +1,1 @@
+(func(am i32)()(local.set 0(local.set 0(local.set  0(local.set 0)))2)()(local.set 0(local.set 0(local.set  0(local.set 0)))(local.set 0(local.set 0(local.set  0(local.set 0))))()(local.set 0(local.set 0(local.set  0(local.set 0)))()e))sep 0)

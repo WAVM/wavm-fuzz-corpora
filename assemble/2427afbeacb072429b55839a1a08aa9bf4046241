@@ -1,0 +1,45 @@
+(module
+  (type $0 (func (param f64 f64) (result f32)))
+  (type $1 (func (param f32) (result externref i64)))
+  (type $2 (func (param f64)))
+  (type $3 (func (result funcref f32)))
+  (import "env" "memory" (memory $4 59 44051 shared))
+  (import "env" "func0" (func $7 (param f64 f64) (result f32)))
+  (global $5  funcref (ref.null func))
+  (global $6  f32 (f32.const 0x1.46f00cp+28))
+  
+  (func $8 (type $1)
+    (param $0 f32)
+    (result externref i64)
+    (local $1 v128)
+    i64.const -5425568647195008163
+    local.get $0
+    i64.trunc_sat_f32_s
+    i64.div_s
+    atomic.fence
+    i64.ctz
+    i64.extend16_s
+    global.get $5
+    i64.const -5289255209070209874
+    nop
+    f64.reinterpret_i64
+    block $block (param f64)
+      f64.sqrt
+      f64.trunc
+      block $block_0 (result funcref f32)
+        i64.const -3177413748312440153
+        drop
+        global.get $6
+        ref.null extern
+        drop
+        ref.null extern
+        drop
+        ref.null extern
+        drop
+        br $block
+      end ;; $block_0
+      unreachable
+    end ;; $block
+    ref.null func
+    unreachable
+    ))

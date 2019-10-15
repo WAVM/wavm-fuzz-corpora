@@ -1,0 +1,134 @@
+(module
+  (type $0 (func (param funcref f64 externref)))
+  (type $1 (func (param externref f32 funcref)))
+  (type $2 (func (param i64 f32 i64) (result funcref)))
+  (type $3 (func (result funcref v128)))
+  (type $4 (func (param f64 externref funcref) (result i32 externref)))
+  (type $5 (func (param funcref) (result i32 v128 f64)))
+  (import "env" "memory" (memory $9 99 41191 shared))
+  (import "env" "memory" (memory $10 24 58464 shared))
+  (import "env" "global0" (global $12 v128))
+  (import "env" "global1" (global $13 (mut v128)))
+  (import "env" "global3" (global $14 f32))
+  (memory $11  85 36608)
+  (table $6  82 4294967295 funcref)
+  (table $7  59 4294967295 shared externref)
+  (table $8  61 4294967295 funcref)
+  (global $15  i64 (i64.const -5734213459478603954))
+  (global $16  (mut f32) (f32.const 0x1.b2110cp+31))
+  (elem $17 (table $7) (i32.const -80318437) exception_type)
+  (elem $18 externref
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern))
+  
+  (func $21 (type $0)
+    (param $0 funcref)
+    (param $1 f64)
+    (param $2 externref)
+    global.get $12
+    i16x8.any_true
+    i32.atomic.load $10 offset=452330070
+    i64.atomic.load16_u $10 offset=2018923030
+    i64.const -6997361431989499387
+    i64.lt_s
+    v8x16.load_splat offset=3941805005
+    loop $loop (result funcref v128)
+      nop
+      f64.const 0x1.2c92888648e34p-985
+      local.get $1
+      i64.trunc_f64_u
+      i64.const 7153470176324540357
+      f64.convert_i64_s
+      f64.const -0x1.165ead55c956dp-761
+      f64.add
+      local.set $1
+      ref.null extern
+      drop
+      br $loop
+    end ;; $loop
+    br 0
+    )
+  
+  (func $22 (type $1)
+    (param $0 externref)
+    (param $1 f32)
+    (param $2 funcref)
+    (local $3 funcref)
+    atomic.fence
+    elem.drop $18
+    table.size $6
+    i64.atomic.load8_u $11 offset=2561454076
+    table.size $7
+    f64.load $11 offset=4173923501 align=4
+    f64.sqrt
+    ref.null extern
+    data.drop $20
+    data.drop $20
+    data.drop $19
+    ref.null func
+    block $block (param f64 externref funcref) (result i32 externref)
+      block $block_0 (param funcref) (result i32 v128 f64)
+        local.get $0
+        br 2
+      end ;; $block_0
+      return
+    end ;; $block
+    drop
+    table.get $8
+    unreachable
+    )
+  
+  (func $23 (type $2)
+    (param $0 i64)
+    (param $1 f32)
+    (param $2 i64)
+    (result funcref)
+    (local $3 v128)
+    (local $4 v128)
+    (local $5 v128)
+    local.get $3
+    i16x8.widen_low_i8x16_u
+    global.get $12
+    i8x16.gt_u
+    i16x8.any_true
+    v32x4.load_interleaved_4 $10 offset=3754946311 align=4
+    v128.xor
+    i8x16.avgr_u
+    i32x4.min_u
+    i16x8.all_true
+    v8x16.load_interleaved_3 $10 offset=1684542402 align=2
+    i16x8.ne
+    f64x2.ne
+    f32.const 0x1.3d7c26p+123
+    f32.nearest
+    global.set $16
+    ref.null extern
+    drop
+    local.set $4
+    global.get $14
+    global.set $16
+    local.get $5
+    local.set $3
+    ref.null func
+    drop
+    data.drop $20
+    unreachable
+    )
+  
+  (data $19 (i32.const 1157696487)
+    "d\b2\0c\dd\87c\18\b0\8b\0e q#\ebZ\b2\e9g\d0\cfP\ba\88i\0743\1f\d2@\dd\12\039\83\ee\91B\ec\09\eb\e3\aa8>,\eeo\c9~\d5\b9\b9\bc,\ea\d0\ca\88\84\8c\85L^"
+    "RM\ad\a3f[\1f\99\04\e23%N@\dd\e18\0e^\96\beVT\84")
+  
+  (data $20 
+    "\a5\9dB\df\bc\a7\e6\f0B\84\cb\8c\13-\aa\93\97%\04\94k\8b\fd\0c#B|\1cb\1e&\c2=o7\b9\9a\06/Bf\cc"))

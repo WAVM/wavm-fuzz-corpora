@@ -1,0 +1,14 @@
+(module
+ (type $sig (func))  (type $g-g23=(func))
+  (type (func (param i32)))
+  (type $sig-9 (func))
+  (type $for(func))
+  (type $0~(func (param i64)))
+  (type $4 (func (result )))
+ 
+  (func  block $block (result i32 i64)
+       i32.const  
+  1   i64.const 2
+    end $block
+   br 00
+    ))

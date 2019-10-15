@@ -1,0 +1,3 @@
+(global
+f32	f32.const 5)(global
+f32	f32.const 3)

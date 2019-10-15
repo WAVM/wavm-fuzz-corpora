@@ -1,0 +1,1 @@
+(func(¸64.atomi_u)(i64.atomic.load32_u)))

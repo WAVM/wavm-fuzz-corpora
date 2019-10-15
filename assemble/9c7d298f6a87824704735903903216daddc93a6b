@@ -1,0 +1,25 @@
+(func br 0 i32x4.splat
+br
+0 i32x4.splat
+br 0 i32x4.splat
+br
+00 i32x4.splat
+br
+0 i32x4.splat
+br 0 i32x4.splat
+br
+0 i32x4.splat
+br 0 i32x4.splat
+br
+0 i32x4.splat
+br 0 i32x4.splat
+br
+0 i32x4.splat
+br
+0 i32x4.splat
+br 0 i32x4.splat
+br
+0 i32x4.splat
+br 0 i32x4.splat
+br
+0 i32x4.splat)

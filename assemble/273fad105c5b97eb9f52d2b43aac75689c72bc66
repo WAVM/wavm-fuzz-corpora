@@ -1,0 +1,147 @@
+(module
+  (type $0 (func (result i32)))
+  (type $1 (func (result i64)))
+  (type $2 (func (result f32)))
+  (type $3 (func (result f64)))
+  (export "f32.nan" (func $4))
+  (export "f32.positive_nan" (func $5))
+  (export "f32.negative_nan" (func $5))
+  (export "fx-sep2" (func $82))
+  (export "f64-hex-sep3" (func $41))
+  (export "f64-hex-sep4" (func $84))
+  (export "f64-hex-sep5" (func $85))
+  
+  (func $4 (type $0)
+    (result i32)
+    f32.const +nan:0x400000
+    i32.reinterpret_f32
+    )
+  
+  (func $5 (type $0)
+    (result i32)
+    f32.const +nan:0x400000
+    i32.reinterpret_f32
+    )
+  
+  (func $6 (type $0)
+    (result i32)
+    f32.const -nan:0x400000
+    i32.reinterpret_f32
+    )
+  
+  (func $7 (type $0)
+     f32.const +nan:0x400000
+    i32.reinterpret_f32
+    )
+  
+  (func $8 (type $0)
+    (result i32)
+    f32.const +nan:0x200000
+    i32.reinterpret_f32
+    )
+  
+  (func $9 (type $0)
+    (result i32)
+    f32.const -nan:0x7fffff
+    i32.reinterpret_f32
+    )
+  
+  (func $10 (type $0)
+    (result i32)
+    f32.const +nan:0x012345
+    i32.reinterpret_f32
+    )
+  
+  (func $11 (type $0)
+    (result i32)
+    f32.const +nan:0x304050
+    i32.reinterpret_f32
+    )
+  
+  (func $12 (type $0)
+    (result i32)
+    f32.const -nan:0x2abcde
+    i32.reinterpret_f32
+    )
+  
+  (func $13 (type $0)
+    (result i32)
+    f32.const +inf
+    i32.reinterpret_f32
+    )(func $14 (type $0)
+    (result i32)
+    f32.const +inf
+    i32.reinterpret_f32
+    )
+  
+  (func $15 (type $0)
+    (result i32)
+    f32.const -inf
+    i32.reinterpret_f32
+    )
+  
+  (func
+    (result i64)
+    f64.const +nan:0x400000000   i64.reinterpret_f64
+    )
+  
+  (func $41 (type $1)
+    (result i64)
+    f64.const +nan:0x0123456789abc
+ i64.reinterpret_f64
+    )
+  
+  (func $46  
+   (result f32)
+    f32.const 0x1.aa0f00p+16
+    )
+  
+  (func $73 (type $2)
+    (result f32)
+    f32.const 0x1.41ffe3p+15
+    )
+  
+  (func $74 (type $2)
+    (result f32)
+    f32.const 0x1.e00000p+20
+    )
+  
+  (func $75 (type $2)
+    (result f32)
+    f32.const 0x18578050p+44
+    )
+  
+  (func $76 (type $3)
+    (result f64)
+    f64.const 0x1.05c735bb7cc45p-402
+    )
+  
+  (func $80 (type $3)
+    (result f64)
+    f64.const 0x1.3b5ce725bde9cp+93
+    )
+  
+  (func $81 (type $3)
+    (result f64)
+    f64.const 0x1.5e01e00013332p+51
+    )
+  
+  (func $82 (type $3)
+    (result f64)
+    f64.const 0x1.aa0f000000000p+16
+    )
+  
+  (func $83 (type $3)
+    (result f64)
+    f64.const 0x1.41ffe403824b3p+15
+    )
+  
+  (func $84 (type $3)
+    (result f64)
+    f64.const 0x1.e000000000000p+20
+    )
+  
+  (func $85 (type $3)
+    (result f64)
+    f64.const 0x1.578050f9f7000p+44
+    ))

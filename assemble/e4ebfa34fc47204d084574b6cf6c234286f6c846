@@ -1,0 +1,20 @@
+(module
+  (type $0 (func (param f32) (result i32)))
+  (import "env" "table" (table $1 100 4294967295 funcref))
+  (import "env" "func0" (func $6 (param f32) (result i32)))
+  (elem $2 declare externref
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern))
+  (elem $1 global)
+  
+  (data $4 
+    "6\00\0c~y\16u\fa~\b6S\fc\80\fe\ec\bbFp\19\00\e3\81\89@\97\bd\d1t\da\b1\fb\04\b6\0e\81\99\f1\d3\c29\e9\ab&\da\14\f7\a5|\01SAq!VCs\af\db\9b\ffg\b1\19")
+  
+  (data $5 
+    "\89'\c3:%.\97\1f\90O\05\a2\8cu\9d!$\e1+\e2|s\b8\9d\1c\cc\e1\eb\dd\n\e8s\e1\0f\90\fax\1e\8f\9e\86"))

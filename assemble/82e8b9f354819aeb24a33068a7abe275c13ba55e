@@ -1,0 +1,1 @@
+(func()i8x1.max_s)(func(i8x16.max_s)i64.rem_s(i8x16.max_s)(8xma16.)is)(func(i8x16.max_s)i64.rem_s(i8x16.max_s)Ÿ)

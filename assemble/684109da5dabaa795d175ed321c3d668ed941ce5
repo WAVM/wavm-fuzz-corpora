@@ -1,0 +1,34 @@
+(func $.rotl  i16x8.min_u
+  i64
+    )
+  
+  (func i16x8.min_u
+ i64.rotl  i16x8.min_u
+     )
+  
+  (func i16x8.min_u
+  i64.rotl  i16x8.min_u
+     )
+ (func i16x8.min_u
+  i64.rotl  i16x8.min_u  )
+  
+  (func i16x8.min_u
+ i64.rotl  i16x8.min_u
++    )
+  
+    
+  (func i16x8.min_u
+ i64.rotl  i16x8.min_u
+ 
+     )
+  
+  (func i16x8.min_u
+ i64.rotl  i16x8.min_u   )
+  
+  (func i16x8.min_u
+ iotl  i16x8.min_u
+     )
+  
+  (func i16x8.min_u
+  i64.rotl  i16x8.min_u
+    rotl  i16x       ))

@@ -1,0 +1,3 @@
+(func   try(if (i)) catch_all)
+(func  try (if i32(i)) catch_all  )
+(func  try(if i32())catch_all )(func  try (if (i)) catch_all )

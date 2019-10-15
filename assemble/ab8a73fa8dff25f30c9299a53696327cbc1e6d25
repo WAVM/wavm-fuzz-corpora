@@ -1,0 +1,56 @@
+(module
+  (type $0 (func (param externref f32 i64 f32) (result funcref externref)))
+  (type $1 (func (param i64)))
+  (import "env" "memory" (memory $3 53 63336 shared))
+  (import "env" "table" (table $2 94 4294967295 shared funcref))
+  (import "env" "global3" (global $4 (mut i64)))
+  (global $5  i64 (i64.const -8124594642530929726))
+  (global $6  i32 (i32.const 965769775))
+  (global $7  (mut f64) (f64.const 0x1.b429c4dedbff5p+63))
+  (global $8  (mut f64) (f64.const 0x1.b4eef03b521ccp+63))
+  (global $9  v128 (v128.const i32x4 0x79b5ea75 0xa1f15669 0x7735b898 0x0fb3d74f))
+  
+  (func $11 (type $0)
+    (param $0 externref)
+    (param $1 f32)
+    (param $2 i64)
+    (param $3 f32)
+    (result funcref externref)
+    (local $4 i32)
+    (local $5 externref)
+    global.get $6
+    i32.load8_u offset=2880319825
+    i32.load offset=1782591684 align=1
+    v64x2.load_interleaved_2 offset=2070492252 align=1
+    i8x16.min_s
+    i16x8.extract_lane_u 6
+    drop
+    data.drop $10
+    v128.const i32x4 0x48ba5887 0xb8c72109 0x56cbc1a2 0xc09b47b8
+    table.size $2
+    i8x16.replace_lane 4
+    i16x8.neg
+    i8x16.any_true
+    i32.ctz
+    v64x2.load_interleaved_3 offset=457833471 align=2
+    i16x8.mul
+    i8x16.min_s
+    ref.null extern
+    ref.null func
+    ref.null func
+    unreachable
+    )
+  
+  (func $12 (type $1)
+    (param $0 i64)
+    (local $1 funcref)
+    i64.const -1979201235197830816
+    f64.reinterpret_i64
+    i64.trunc_f64_u
+    local.set $0
+    v128.const i32x4 0xc6c452c5 0x0bc7e693 0x26d0f4fd 0xf4d8bcbc
+    return
+    )
+  
+  (data $10 
+    "\06\1e\18"))

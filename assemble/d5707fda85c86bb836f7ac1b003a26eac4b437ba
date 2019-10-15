@@ -1,0 +1,90 @@
+(module
+  (type $0 (func (result funcref)))
+  (type $1 (func (param f32) (result i64 f32)))
+  (import "env" "global1" (global $3 (mut i32)))
+  (memory $2  44 44632 shared)
+  (global $4  (mut externref) (ref.null extern))
+  (global $5  externref (ref.null extern))
+  (global $6  (mut i32) (i32.const 349151825))
+  (global $7  (mut i64) (i64.const -4782843970744978486))
+  (global $8  (mut i32) (i32.const -686906395))
+  (elem $9 declare
+    $12 $12 $12 $12 $12 $12 $12 $12
+    $12 $12 $13 $13 $12 $13 $12 $12
+    $12 $12 $13 $13 $12 $13 $13 $13
+    $12 $13 $13 $12 $12 $13 $12 $13
+    $13 $13 $13 $12 $13 $13 $12 $12
+    $13 $13 $12 $13 $13 $12 $13 $12
+    $12 $12 $12 $12 $12 $12 $12 $12
+    $12 $13 $12 $12 $12 $12 $13 $13
+    $13 $12 $13 $13 $13 $13 $13 $12
+    $12 $12)
+  
+  (func $12 (type $0)
+    (result funcref)
+    (local $0 i64)
+    (local $1 funcref)
+    (local $2 v128)
+    (local $3 v128)
+    local.get $0
+    local.get $3
+    f64x2.sqrt
+    i16x8.extract_lane_u 0
+    local.get $2
+    i32x4.bitmask
+    v64x2.load_interleaved_2 offset=3877004451
+    i16x8.any_true
+    i64.atomic.load32_u offset=2773637648
+    drop
+    local.get $2
+    i8x16.lt_s
+    global.get $5
+    loop $loop
+      local.get $2
+      br $loop
+    end ;; $loop
+    drop
+    local.set $3
+    global.set $3
+    drop
+    local.get $2
+    local.set $3
+    f64.const 0x1.98b1cd902cfe5p+459
+    unreachable
+    )
+  
+  (func $13 (type $1)
+    (param $0 f32)
+    (result i64 f32)
+    (local $1 v128)
+    (local $2 funcref)
+    (local $3 funcref)
+    (local $4 v128)
+    global.get $6
+    v32x4.load_interleaved_4 offset=2161087884 align=2
+    local.get $4
+    i16x8.max_s
+    f64x2.sub
+    i16x8.max_s
+    v8x16.swizzle
+    f32x4.abs
+    i16x8.all_true
+    i32.const -27340771
+    i64.load16_s offset=456930849
+    i64.atomic.rmw.xchg offset=3707512271
+    i64.extend16_s
+    local.get $3
+    local.tee $3
+    ref.is_null
+    global.set $3
+    f64.convert_i64_s
+    ref.null func
+    unreachable
+    )
+  
+  (data $10 
+    "\fb\d3v9\b6+\ef\nKM\b2J\8a|6\04\bc\fc\9d-\ea\bf\11")
+  
+  (data $11 
+    "iH\e4\ef\ce\fc\103\ca\92\dc\e0D\ea\12\f6`!\ec\03\de\df\fd\c3~\e9M@\da"
+    "=\9fp3\fa\92D\1bs3\05]\d9\9a\fa\00\0f/7Cw\fc\88\aa_"))

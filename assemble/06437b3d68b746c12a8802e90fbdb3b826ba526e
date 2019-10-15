@@ -1,0 +1,1 @@
+(func(_s)i32.atomic.store8 8 i32.atomic.store8 8 i32.atomic.store8 8)

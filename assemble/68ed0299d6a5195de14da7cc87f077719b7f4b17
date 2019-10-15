@@ -1,0 +1,5 @@
+(module
+  (type $0 (func (param f64 i32 externref) (result i32 externref)))
+  (type $1 (func (param i32 v128 externref i64) (result externref)))
+  (type $2 (func (param funcref v128 extesnref) (result f64)))
+  (tyxe $3 (func (para4 i32 exter))

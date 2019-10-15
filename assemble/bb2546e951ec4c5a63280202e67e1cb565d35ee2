@@ -1,0 +1,98 @@
+(module
+  (type $0 (func (param f32)))
+  (type $1 (func (param v128 externref externref f32)))
+  (type $2 (func (result v128 f64)))
+  (type $3 (func (param f32 i32)))
+  (type $4 (func (result externref f64)))
+  (type $5 (func (param externref f64)))
+  (import "env" "table" (table $6 96 4294967295 funcref))
+  (import "env" "table" (table $7 61 4294967295 shared funcref))
+  (import "env" "global1" (global $10 funcref))
+  (import "env" "global2" (global $11 (mut f32)))
+  (import "env" "global4" (global $12 (mut f32)))
+  (import "env" "global5" (global $13 (mut f64)))
+  (import "env" "func0" (func $21 (result v128 f64)))
+  (memory $9  2 21803 shared)
+  (table $8  21 4294967295 shared externref)
+  (global $14  funcref (ref.null func))
+  (global $15  i64 (i64.const 3394224474139636350))
+  (global $16  i32 (i32.const -934509329))
+  (global $17  f32 (f32.const 0x1.235c3ap+30))
+  (global $18  v128 (v128.const i32x4 0x1d6c04c9 0x098ee533 0xb56c5432 0x3f394b88))
+  (elem $19 declare exception_type)
+  
+  (func $22 (type $0)
+    (param $0 f32)
+    (local $1 funcref)
+    (local $2 f32)
+    ref.null extern
+    global.get $12
+    i32.trunc_sat_f32_u
+    i16x8.load8x8_u offset=1490577364 align=4
+    v128.const i32x4 0x086b3a22 0xc066668f 0x8b15f0f9 0x10112592
+    f32x4.ge
+    loop $loop (result externref f64)
+      unreachable
+    end ;; $loop
+    f64.nearest
+    f64.ceil
+    block $block (param externref f64)
+      f64.nearest
+      block $block_0
+        br 2
+      end ;; $block_0
+      f64.nearest
+      br $block
+    end ;; $block
+    drop
+    br 0
+    )
+  
+  (func $23 (type $1)
+    (param $0 v128)
+    (param $1 externref)
+    (param $2 externref)
+    (param $3 f32)
+    (local $4 f32)
+    (local $5 funcref)
+    global.get $15
+    global.get $12
+    table.size $7
+    table.get $7
+    data.drop $20
+    drop
+    global.get $10
+    local.get $4
+    table.size $8
+    i32.load16_u offset=3641335913
+    v64x2.load_interleaved_2 offset=202927638 align=4
+    global.get $14
+    br 0
+    )
+  
+  (func $24 (type $3)
+    (param $0 f32)
+    (param $1 i32)
+    (local $2 f32)
+    (local $3 f64)
+    nop
+    table.size $7
+    v8x16.load_interleaved_2 offset=1536117228 align=8
+    i8x16.neg
+    i16x8.gt_u
+    i64x2.extract_lane 0
+    global.get $15
+    i64.shr_u
+    nop
+    i64.eqz
+    i32.atomic.load8_u offset=3391090883
+    atomic.fence
+    v128.load offset=3998527874 align=4
+    i32x4.trunc_sat_f32x4_s
+    atomic.fence
+    ref.null func
+    unreachable
+    )
+  
+  (data $20 
+    "`\\x\05\f9"))

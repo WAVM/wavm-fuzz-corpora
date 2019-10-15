@@ -1,0 +1,4 @@
+(module
+  (type $0 (func (param funcref i64 v128 externref) (result f64)))
+  (type $1 (func (param f64)))
+  i64.clz2 (fun

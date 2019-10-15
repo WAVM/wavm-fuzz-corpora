@@ -1,0 +1,51 @@
+(module
+  (type $0 (func (param funcref i32 i64 i64)))
+  (type $1 (func (param f64 externref)))
+  (type $2 (func (param f32) (result externref i64)))
+  (type $3 (func (param f32)))
+  (type $4 (func))
+  (import "env" "func0" (func $13 (param funcref i32 i64 i64)))
+  (import "env" "func1" (func $14 (param f64 externref)))
+  (import "env" "func2" (func $15 (param f32)))
+  (import "env" "func3" (func $16))
+  (memory $6  40 62049 shared)
+  (memory $7  55 60006 shared)
+  (table $5  54 4294967295 funcref)
+  (global $8  (mut externref) (ref.null extern))
+  (global $9  v128 (v128.const i32x4 0xec4a953c 0x2d82ed4a 0xb8dcadd3 0x9a2f665c))
+  (elem $10 declare table
+    $5 $5 $5)
+  (elem $11 global
+    $9 $9 $9 $9 $8 $9 $9 $8
+    $8 $9 $9 $9 $8 $8 $8 $9)
+  
+  (func $17 (type $2)
+    (param $0 f32)
+    (result externref i64)
+    i64.const -3979766833360511357
+    global.get $9
+    i8x16.extract_lane_s 10
+    ref.null func
+    drop
+    i64.load16_u $7 offset=2497155320 align=1
+    local.get $0
+    loop $loop (param f32)
+      i32.trunc_f32_s
+      i32.clz
+      f32.convert_i32_s
+      i64.trunc_sat_f32_s
+      global.get $8
+      global.get $8
+      i32.const -2014952851
+      ref.null func
+      drop
+      select (result externref)
+      unreachable
+    end ;; $loop
+    i64.and
+    unreachable
+    )
+  
+  (data $12 (i32.const 976547006)
+    "\9b\db\b0N\d0\e6b\d9\15t\86R\e2\f4\b5\05u\1e\bf\bb\e0\91\90,E!3\\cf\c3"
+    "S\1d-^i\d6Q\83d"))

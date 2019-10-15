@@ -1,0 +1,9 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param f32 externref v128 f32) (result funcref funcref)))
+  (type $2 (func (result v128)))
+  (type $1 (func (result i64 funcref)))
+  (type $4 (func (param v128)))
+  (type $5 (func (result ef32x4.convert_i32x4_uf)))
+  (type $6 (func (result i32 extfernre f32)))
+  (type $7 (func (result funref f32 externre0 8)))

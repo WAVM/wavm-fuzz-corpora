@@ -1,0 +1,99 @@
+(module
+ (func  
+ memory.copy
+ $y.pyfunc  
+ memory.copy
+ $y.py
+5
+  memory.copy
+ $emorypy
+6
+  memory.copy
+ $3coitnconst 4
+ memory.copy
+ $y.py
+5
+  memory.copy
+ $emorypy
+6
+  memory.copy
+ $3c memory.copy
+ $emoopy
+2
+  memory.copy
+ $i3co
+  memory.copy
+ $itco  memory.copy
+ $emoopy
+2
+  memory.copy
+ $i3c
+  memory.copy
+ $emy.t
+  memory.copy
+ $emor
+4
+  memory.copy
+ $itcon
+4
+  memory.copy
+ $emoopy
+2
+  memory.copy
+ $i3co
+ 
+5
+  memory.copy
+ $emorypy
+6
+  memory.copy
+ $3coitnconst 5
+ memory.copy
+ $y.py
+5
+  memory.copy
+ $emorypy
+6
+  memory.copy
+ $3c memory.copy
+ $emoopy
+ $itco  memory.copy
+ $emoopy
+2
+  memory.copy
+ $i3c
+  memory.copy
+ $emy.t
+  memory.copy
+ $emor
+4
+  memory.copy
+ $itcon
+4
+  memory.copy
+ $emoopy
+2
+  memory.copy
+ $py
+3
+  memory.copy
+ $i3co  memory.copy
+ $itco  memory.copy
+ $emoopy
+2
+  memory.copy
+ $i3c
+  memory.copy
+ $emy.t
+  memory.copy
+ $emor
+4
+  memory.copy
+ $itcon
+4
+  memory.copy
+ $emoopy
+2
+  memory.copy
+ $i3co
+  J4  )

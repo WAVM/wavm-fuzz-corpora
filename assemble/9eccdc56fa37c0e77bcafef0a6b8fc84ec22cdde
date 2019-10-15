@@ -1,0 +1,39 @@
+(module
+  (type $0 (func (param i64 i32 v128 i64)))
+  (type $1 (func (param i64)))
+  (type $2 (func (result funcref f64 i32)))
+  (import "env" "memory" (memory $3 38 47540 shared))
+  (import "env" "func0" (func $8 (param i64)))
+  (global $4  f32 (f32.const 0x1.509e56p+31))
+  (global $5  (mut v128) (v128.const i32x4 0xd1ba1769 0xe4411eb1 0xb9d66e2e 0xa1446a09))
+  
+  (func $9 (type $0)
+    (param $0 i64)
+    (param $1 i32)
+    (param $2 v128)
+    (param $3 i64)
+    memory.size
+    v32x4.load_interleaved_2 offset=1737177248 align=2
+    i16x8.sub_saturate_u
+    i8x16.extract_lane_u 15
+    memory.grow
+    i32.atomic.load offset=386856384
+    i32.atomic.load offset=2934991779
+    loop $loop (result funcref f64 i32)
+      unreachable
+    end ;; $loop
+    local.tee $1
+    i32.atomic.load offset=787673371
+    memory.size
+    i16x8.load8x8_u offset=1726011359 align=2
+    i16x8.abs
+    i16x8.extract_lane_u 7
+    i32.atomic.rmw16.xor_u offset=1693229936
+    unreachable
+    )
+  
+  (data $6 
+    "\07\9a\c4\83\a1I\a6\b9\db\fc\bf\a1\9d\cd.\cd\dd&1s\15+>\cb\9e+\fc\86\aeQK\bf\db\17\aeK\7f\f2C\1c")
+  
+  (data $7 
+    "RR\09\86\a3\d3\c8\11MsW\b5\04\16ukUo\82\f1\9al\f2IxK9L\d7:\8c\a7a3\9a['\ccC\83\c6\e95\9eF_\bf\b5\b7\f0\a3\05{\c1/k>\c6\a9\cahe\b3"))

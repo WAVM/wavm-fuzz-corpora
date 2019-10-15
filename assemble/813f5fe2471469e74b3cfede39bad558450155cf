@@ -1,0 +1,77 @@
+(module
+  (type $0 (func (result i64 i64)))
+  (type $1 (func (param i32 i32) (result v128 funcref)))
+  (type $2 (func (param f64 i32) (result f32 externref)))
+  (type $3 (func (param v128) (result v128 i64 i64)))
+  (type $4 (func (param i64)))
+  (import "env" "global1" (global $6 (mut i32)))
+  (import "env" "func0" (func $11 (result i64 i64)))
+  (import "env" "func1" (func $12 (param f64 i32) (result f32 externref)))
+  (table $5  9 4294967295 externref)
+  (global $7  (mut i64) (i64.const 2607832153231802997))
+  (elem $8 (i32.const -1902119264) global
+    $7 $6 $6 $7 $6 $6 $7 $7
+    $7 $7 $6 $7 $6 $7 $7 $6
+    $6 $7 $6 $7 $7 $6 $7 $6
+    $7 $7 $7 $7 $7 $7 $6 $6
+    $7 $7 $6 $7 $6 $6 $7 $6
+    $7 $7 $6 $7 $6 $6 $7 $6
+    $7 $6 $6 $6 $7 $7 $6 $7
+    $6 $7 $7 $6 $6 $6 $6 $7
+    $6 $7 $6 $7 $6 $6 $7 $6
+    $7 $7 $6 $6 $6 $6 $6 $6
+    $7)
+  
+  (func $13 (type $1)
+    (param $0 i32)
+    (param $1 i32)
+    (result v128 funcref)
+    (local $2 v128)
+    (local $3 i64)
+    ref.null extern
+    v128.const i32x4 0x72ebefe3 0x2c9bdb1e 0x6e73ff25 0x394c9188
+    v128.const i32x4 0x2330c429 0xde0881ba 0x6b1a49dd 0xfb9ac73e
+    i8x16.extract_lane_u 15
+    local.tee $0
+    i16x8.shl
+    local.get $0
+    i32.eqz
+    i8x16.replace_lane 7
+    i32x4.widen_high_i16x8_s
+    block $block (param v128) (result v128 i64 i64)
+      i32x4.widen_low_i16x8_u
+      f64x2.sqrt
+      f64x2.sqrt
+      i32x4.neg
+      f64x2.sqrt
+      local.get $0
+      i32x4.shr_u
+      f64x2.sqrt
+      global.get $7
+      loop $loop (param i64)
+        ref.null func
+        ref.null extern
+        unreachable
+      end ;; $loop
+      f64x2.extract_lane 0
+      drop
+      global.get $7
+      ref.null extern
+      ref.is_null
+      global.set $6
+      drop
+      unreachable
+    end ;; $block
+    i64.or
+    drop
+    ref.null extern
+    drop
+    unreachable
+    )
+  
+  (data $9 
+    "\ad\f3\d4\b9\"\8d\e4\dc\f9\cb\ead\c2Z\f8A_\fa\1e\e9\dcY\1e~\ce\851\fa\1d\f8\02\a6\83\a5\f7\cb'z\0c\92\f6\c2X\dd{\89J\18Q#^N\ebE\edjp\e5\d8\11\e4F\f5$"
+    "N7\b39\81$D\d3#\a2h2")
+  
+  (data $10 
+    "\ad\fe\af\16$\bc8\16\8a\7f\a0\91,\1f\9d`\c8\d9\f8Y\c1\dd\d7?\96\8b\8b{\9f\03\7f\08p\b5\abg\f2\de\05&T5\aa\"\e3\c1`\91\d9\03\83\cf\f2\97\1a"))

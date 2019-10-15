@@ -1,0 +1,49 @@
+(module
+  (type $0 (func (param i64)))
+  (type $1 (func (param funcref v128)))
+  (import "env" "memory" (memory $8 6 21812 shared))
+  (import "env" "memory" (memory $5 20 45620 shared))
+  (memory $6  83 9935 shared)
+  (table $2  15 4294967295 shared externref)
+  (table $3  84 4294967295 externref)
+  (global $7  (mut f32) (f32.const 0x1.3ca25ap+30))
+  (global $8  externref (ref.null extern))
+  
+  (func $10 (type $0)
+    (param $0 i64)
+    (local $1 v128)
+    (local $2 i32)
+    (local $3 funcref)
+    (local $4 i64)
+    i64.const -771760263879838846
+    nop
+    global.get $8
+    unreachable
+    )
+  
+  (func $11 (type $1)
+    (param $0 funcref)
+    (param $1 v128)
+    data.drop $9
+    v128.const i32x4 0x81a85fa0 0xa269d882 0x03ef0995 0xd0f8cc7f
+    i8x16.abs
+    i8x16.bitmask
+    global.get $8
+    loop $loop (result i32)
+      local.get $1
+      f32x4.convert_i32x4_u
+      i16x8.widen_high_i8x16_u
+      f32x4.convert_i32x4_u
+      v128.not
+      br 1
+    end ;; $loop
+    f32.const 0x1.4305cap+9
+    block $block (result i64)
+      br 1
+    end ;; $block
+    return
+    )
+  
+  (data $9 (i32.const -64355206)
+    "I5\a7\0b\17\17+\91\e2r\dcK\1d\e1\10\a61\d4\abA*\15h\dd+\fa\f3\02k{'\nE\c8\aaP\8eB\f4\9e\a0\n\1cRR\c1\d8h\9a\bb\f4\08Q\caJ\1d\f45\e2\a0BX\07\d4"
+    "\9e\e1\"TlM\1bp7\9c\13\86\b9\fb\03\dd\bd\ea\e3\c2\cc\efh$lEV]\e4\d7\f1\87\b3o*"))

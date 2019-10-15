@@ -1,0 +1,104 @@
+(module
+  (type $v_v (func (param v128) (result v128)))
+  (type $vv_v (func (param v128 v128) (result v128)))
+  (type $0 (func (param v128 i32) (result f64)))
+  (type $1 (func (param v128 v128 i32) (result f64)))
+  (table $2  6 6 funcref)
+  (export "call_ine_1" (func $6))
+  (export "call_indirect_vv_v_f64x2_extract_lane_1" (func $7))
+  (elem $3 (i32.const 0)
+    $64x2_neg $64x2_sqrt $64x2_add $64x2_sub $64x2_mul $64x2_div)
+  
+  (func $64x2_neg (type $v_v)
+    (param $0 v128)
+    (result v128)
+    local.get $0
+    f64x2.neg
+    )
+  
+  (func $64x2_sqrt (type $v_v)
+    (param $0 v128)
+    (result v128)
+    local.get $0
+    f64x2.sqrt
+    )
+  
+  (func $64x2_add (type $vv_v)
+    (param $0 v128)
+    (param $1 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    f64x2.add
+    )
+  
+  (func $64x2_sub (type $vv_v)
+    (param $0 v128)
+    (param $1 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    f64x2.sub
+    )
+ 
+  (func $64x2_mul (type $vv_v)
+    (param $0 v128)
+    (param $1 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    f64x2.mul
+    )
+  
+  (func $64x2_div (type $vv_v)
+    (param $0 v128)
+    (param $1 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    f64x2.div
+    )
+  
+  (func $4 (type $0)
+    (param $0 v128)
+    (param $1 i32)
+    (result f64)
+    local.get $0
+    local.get $1
+    call_indirect $2 (type $v_v)
+    f64x2.extract_lane 0
+    )
+  
+  (func $5 (type $1)
+    (param $0 v128)
+    (param $1 v128)
+    (param $2 i32)
+    (result f64)
+    local.get $0
+    local.get $1
+    local.get $2
+    call_indirect $2 (type $vv_v)
+    f64x2.extract_lane 0
+    )
+  
+  (func $6 (type $0)
+    (param $0 v128)
+    (param $1 i32)
+    (result f64)
+    local.get $0
+    local.get $1
+    call_indirect $2 (type $v_v)
+    f64x2.extract_lane 1
+    )
+  
+  (func $7 (type $1)
+    (param $0 v128)
+    (param $1 v128)
+    (param $2 i32)
+    (result f64)
+    local.get $0
+    local.get $1
+    local.get $2
+    call_indirect $2 (type $vv_v)
+    f64x2.extract_lane 1
+    ))

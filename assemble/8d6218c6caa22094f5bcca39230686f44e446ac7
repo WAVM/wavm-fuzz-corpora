@@ -1,0 +1,2 @@
+(func br 0 i64.add i64.add i64.add br
+0)

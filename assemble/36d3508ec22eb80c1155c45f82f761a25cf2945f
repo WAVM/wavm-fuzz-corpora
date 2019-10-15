@@ -1,0 +1,45 @@
+(module
+   (func $8 ()
+i16x8.splat
+   (result i328)
+i16x8.splat
+ local.get $1
+    i16x8.splat
+    i16x8.splat
+    local.get $24 i16x8.splat
+       i16x8.splat
+    local.get $0
+    i16x8.splat i16x8.splat
+     local.get $0
+    i16x8.splat
+    
+ local.get $1
+    i16x8.splat   i16x8.splat
+    local.get $24 i16x8.splat
+       i16x8.splat
+    local.get $0
+    i16x8.splat ()
+i16x8.splat
+    (result i328)
+i16x8.splat
+ local.get $2
+    i16x8.splat  i16x8.splat
+    local.get $24 i16x8.splat
+    i16x8.splat
+    local.get $0
+    i16x8.splat i16x8.splat
+     local.get $0
+    i16x8.splat
+    
+ local.get $1
+    i16x8.splat
+    i16x8.splat
+    local.get $24 i16x8.splat
+       i16x8.splat
+    local.get $1
+    i16x8.splat i16x8.splat
+     local.get $0
+    i16x8.splat
+  i16x8.splat
+     local.get $0
+    i16x8.splat  i16x8 á )

@@ -1,0 +1,52 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param v128 funcref)))
+  (type $2 (func (param externref f32) (result externref i32)))
+  (import "env" "memory" (memory $4 82 20854))
+  (import "env" "memory" (memory $5 87 23955))
+  (import "env" "func0" (func $12))
+  (import "env" "func1" (func $13 (param v128 funcref)))
+  (memory $6  72 10746 shared)
+  (table $3  53 4294967295 externref)
+  (global $7  funcref (ref.null func))
+  (elem $8 exception_type)
+  (elem $9 (i32.const 1552946192) exception_type)
+  
+  (func $14 (type $2)
+    (param $0 externref)
+    (param $1 f32)
+    (result externref i32)
+    (local $2 f32)
+    call $12
+    v128.const i32x4 0x9a6bec98 0x4c88ba78 0x81a4c624 0xc4268bc3
+    i32.const -1303499133
+    v64x2.load_interleaved_2 $6 offset=3518203355 align=2
+    f32x4.sub
+    f32x4.sub
+    i8x16.all_true
+    f64.load offset=2664980215 align=4
+    local.get $0
+    atomic.fence
+    loop $loop (result v128)
+      table.size $3
+      i32.load16_u $6 offset=1419607688 align=1
+      i32.load offset=3337756595 align=1
+      data.drop $10
+      ref.null func
+      ref.null func
+      ref.null func
+      ref.is_null
+      unreachable
+    end ;; $loop
+    ref.null extern
+    ref.is_null
+    i64x2.shr_u
+    unreachable
+    )
+  
+  (data $10 
+    "\fc\e3\be+\a0g\e3h\1a\b7\8c\dd#\n\e5 N\01\99_\c0\81")
+  
+  (data $11 
+    "\f5\e4\b7\10N\"\87\0c\06\02\feN\de\c7\96\d7\8a\d4\bf,\f6*\a8\c1o\1c%\8fQPH\e8\19\96z\ea\7f$.\12\86X8PI\cc\9a-\8a.b\dc\a7\aa\e5!\d0\12\ef\d7jo\cb-"
+    ")\b4\de\9e\b2\bc\f9hq\e7\c00\f8@\f4\0f\df\89\e3w\92\08\8fvg\ac\d7\ff\07x\85[\cdc"))

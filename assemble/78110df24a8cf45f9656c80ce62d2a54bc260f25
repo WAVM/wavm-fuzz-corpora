@@ -1,0 +1,87 @@
+(module
+  (type $0 (func (param f64)))
+  (type $1 (func (param funcref funcref f32 f64) (result i32)))
+  (type $2 (func (param i32 f32 v128)))
+  (type $3 (func (param f64 f32) (result f64)))
+  (type $4 (func (param i32 i64) (result externref i32)))
+  (import "env" "memory" (memory $7 25 4867 shared))
+  (import "env" "memory" (memory $8 42 31481 shared))
+  (import "env" "table" (table $5 22 4294967295 shared externref))
+  (import "env" "table" (table $6 16 4294967295 funcref))
+  (import "env" "global0" (global $9 externref))
+  (import "env" "global1" (global $10 i32))
+  (import "env" "global2" (global $11 (mut i64)))
+  (import "env" "global5" (global $12 i32))
+  (import "env" "global6" (global $13 f64))
+  (import "env" "func0" (func $19 (param f64)))
+  (import "env" "func1" (func $20 (param funcref funcref f32 f64) (result i32)))
+  (import "env" "func2" (func $21 (param i32 i64) (result externref i32)))
+  (global $14  funcref (ref.null func))
+  (global $15  f32 (f32.const 0x1.c4b3acp+31))
+  (elem $16 declare externref
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern))
+  (elem $17 declare global
+    $14 $9 $11 $15 $11 $14 $14 $14
+    $10 $10 $10 $12 $12 $15 $14 $9
+    $12 $10 $9 $14 $11 $14 $10 $12
+    $13 $14 $11 $10 $14 $14 $14 $12
+    $11 $12 $10 $13 $11 $10 $14 $11
+    $14 $13 $9 $12 $15 $14 $14 $15
+    $14 $13 $13 $12)
+  
+  (func $22 (type $2)
+    (param $0 i32)
+    (param $1 f32)
+    (param $2 v128)
+    (local $3 i64)
+    br 0
+    )
+  
+  (func $23 (type $3)
+    (param $0 f64)
+    (param $1 f32)
+    (result f64)
+    ref.null extern
+    global.get $13
+    f64x2.splat
+    drop
+    memory.size
+    i64.const 4594521679931126223
+    i64.atomic.rmw16.and_u $8 offset=402364552
+    global.get $10
+    global.get $9
+    table.size $6
+    table.size $6
+    i32x4.splat
+    i16x8.widen_low_i8x16_s
+    i32x4.bitmask
+    i64.atomic.load $8 offset=1315180231
+    i64.atomic.rmw16.add_u offset=1678984498
+    global.set $11
+    table.set $5
+    global.set $11
+    ref.is_null
+    drop
+    v128.const i32x4 0x5ad80e9f 0x9b0a488b 0x751d2d8b 0xf6e3c4fd
+    drop
+    ref.null func
+    ref.is_null
+    drop
+    f64.const -0x1.748a6d6bc2ad2p+306
+    unreachable
+    )
+  
+  (data $18 (i32.const -1152274561)
+    "\80\d1\fb#\85\e1\99-\b9b\c5p|\a7\c1G\a6FG\d4\e3\00\97/\04,\e0\7fn\d6\7f\f0\f6\b2\195\1c[\ca\11yV\9fs~\16\da&`\17\c4]w\ccZ\ca)P[D\f1"))

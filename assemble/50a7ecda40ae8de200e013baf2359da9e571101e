@@ -1,0 +1,68 @@
+(module
+  (type $0 (func (param f32 f64 i64) (result i64 f32)))
+  (type $1 (func (param i32 v128) (result i64)))
+  (import "env" "table" (table $2 0 4294967295 shared externref))
+  (import "env" "table" (table $3 83 4294967295 shared funcref))
+  (import "env" "global0" (global $6 v128))
+  (memory $5  34 11538 shared)
+  (table $4  78 4294967295 shared externref)
+  (global $7  (mut i32) (i32.const 1723613742))
+  (elem $8 declare
+    $10 $10 $10 $10 $10 $10 $10 $10
+    $10 $10 $10 $10 $10 $10 $10 $10
+    $10 $10 $10 $10 $10 $10 $10 $10
+    $10 $10 $10 $10 $10 $10 $10 $10
+    $10 $10 $10 $10 $10 $10 $10 $10
+    $10 $10 $10 $10 $10 $10 $10 $10
+    $10 $10 $10 $10 $10 $10 $10 $10
+    $10 $10 $10 $10 $10 $10 $10 $10
+    $10 $10)
+  
+  (func $10 (type $0)
+    (param $0 f32)
+    (param $1 f64)
+    (param $2 i64)
+    (result i64 f32)
+    (local $3 funcref)
+    (local $4 v128)
+    local.get $2
+    i64.ctz
+    i64.extend32_s
+    memory.size
+    nop
+    global.get $6
+    i32x4.abs
+    memory.size
+    local.get $1
+    i32.trunc_sat_f64_u
+    i32.div_s
+    i32x4.shl
+    loop $loop (param i32 v128) (result i64)
+      i64x2.extract_lane 1
+      loop $loop_0 (result v128)
+        i32.const -1818400499
+        drop
+        atomic.fence
+        local.get $3
+        br $loop_0
+      end ;; $loop_0
+      local.set $4
+      i64.atomic.rmw8.xor_u offset=4293004909
+      drop
+      memory.size
+      table.get $4
+      ref.null extern
+      ref.is_null
+      unreachable
+    end ;; $loop
+    i64.lt_u
+    ref.null extern
+    table.set $4
+    f32.const -0x1.46bee6p-61
+    drop
+    v128.const i32x4 0x0e1fbcfb 0x020a67fa 0xad123025 0x5ebe22db
+    unreachable
+    )
+  
+  (data $9 
+    "uy\16\00\90\ddU\81>(\13t\e8\9e_"))

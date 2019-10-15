@@ -1,0 +1,7 @@
+(module
+  (memory  9)
+  (func  i32.const 4
+i32.const 02
+ i32.atomic.rmw16.xor_u
+ drop
+  ))

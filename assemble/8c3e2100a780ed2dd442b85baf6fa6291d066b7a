@@ -1,0 +1,81 @@
+(module
+  (type $0 (func (result f64 f32)))
+  (type $1 (func (result f32)))
+  (type $2 (func))
+  (type $3 (func (param funcref i64)))
+  (type $4 (func (param i32)))
+  (type $5 (func (param i64) (result i32)))
+  (import "env" "memory" (memory $9 33 62538 shared))
+  (import "env" "table" (table $6 30 4294967295 funcref))
+  (import "env" "func0" (func $14 (result f64 f32)))
+  (import "env" "func1" (func $15 (param i32)))
+  (memory $10  94 53473 shared)
+  (memory $11  45 52106)
+  (table $7  31 4294967295 shared externref)
+  (table $8  48 4294967295 shared externref)
+  (global $12  (mut i32) (i32.const -876305776))
+  (global $13  (mut funcref) (ref.null func))
+  
+  (func $16 (type $1)
+    (result f32)
+    (local $0 f32)
+    ref.null extern
+    ref.is_null
+    i32.atomic.load8_u $11 offset=3435312468
+    i64.load16_s $11 offset=4056032303 align=1
+    f64.convert_i64_u
+    i32.trunc_f64_s
+    v8x16.load_splat offset=3812456025
+    i16x8.all_true
+    i64.atomic.load8_u $11 offset=1247799825
+    i32.wrap_i64
+    i32.extend8_s
+    v32x4.load_interleaved_4 $11 offset=2895030756 align=8
+    i8x16.narrow_i16x8_u
+    i16x8.add
+    f64x2.eq
+    unreachable
+    )
+  
+  (func $17 (type $2)
+    (local $0 funcref)
+    call $16
+    f32.ceil
+    f32x4.splat
+    i32x4.all_true
+    call $16
+    f64.promote_f32
+    i32.trunc_sat_f64_s
+    i32.load16_s $10 offset=755685637 align=1
+    table.get $6
+    unreachable
+    )
+  
+  (func $18 (type $3)
+    (param $0 funcref)
+    (param $1 i64)
+    atomic.fence
+    ref.null func
+    i64.const -6445564483713794269
+    loop $loop (param i64) (result i32)
+      i64.popcnt
+      memory.size
+      i32.const 2045265983
+      i32.or
+      table.get $8
+      f32.const 0x1.f72798p-27
+      global.get $13
+      nop
+      block $block
+        f32.const -0x1.5a7f10p-78
+        local.get $1
+        drop
+        br $block
+      end ;; $block
+      br 1
+    end ;; $loop
+    table.get $7
+    drop
+    drop
+    unreachable
+    ))

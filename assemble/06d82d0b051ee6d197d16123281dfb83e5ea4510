@@ -1,0 +1,1 @@
+(func v128.load  0x1=n)(func v128.load 1)(func v128.load 1)(func ~0)(func v128.load 1)(func v128.load  0x1=n)(func v128.load 1)(func v128.load 1)(func v128.load  0x1=n)(func v128.load 0)(func v128.load 1)(func ~0)(func v128.load 1)(func v128.load  0x1)(func v128.load 1)(func v128.load 1)(func ~0xi8.lx=n)(func v128.load 1)(func vd 1)(func v128.load 1)(func v01)

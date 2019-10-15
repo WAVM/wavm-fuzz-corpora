@@ -1,0 +1,33 @@
+(module
+  (type $0 (func (result i32 funcref)))
+  (type $1 (func (param i32 funcref i32 externref)))
+  (type $2 (func))
+  (type $3 (func (result i32 funcref v128)))
+  (type $4 (func (param externref)))
+  (import "env" "table" (table $5 82 4294967295 shared externref))
+  (import "env" "func0" (func $8 (result i32 funcref)))
+  (import "env" "func1" (func $9 (param i32 funcref i32 externref)))
+  (table $6  83 4294967295 externref)
+  (table $7  39 4294967295 shared externref)
+  
+  (func $10 (type $2)
+    (local $0 f64)
+    f64.const 0x1.b0ad2dbe8e590p+573
+    drop
+    local.get $0
+    f64.sqrt
+    f64.floor
+    f64.nearest
+    i32.trunc_f64_s
+    block $block (result i32 funcref v128)
+      call $8
+      return
+    end ;; $block
+    drop
+    ref.null extern
+    loop $loop (param externref)
+      return
+    end ;; $loop
+    call $10
+    return
+    ))

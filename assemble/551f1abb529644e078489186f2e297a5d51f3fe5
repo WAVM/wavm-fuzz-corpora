@@ -1,0 +1,33 @@
+(module
+  (type $0 (func (param externref)))
+  (type $1 (func))
+  (import "env" "memory" (memory $3 37 61968 shared))
+  (memory $4  85 30295 shared)
+  (memory $5  98 52824)
+  (table $2  20 4294967295 funcref)
+  
+  (func $7 (type $0)
+    (param $0 externref)
+    (local $1 funcref)
+    (local $2 i32)
+    (local $3 funcref)
+    )
+  
+  (func $8 (type $1)
+    (local $0 f32)
+    (local $1 i32)
+    (local $2 f32)
+    f32.const -0x1.450c1cp-51
+    v128.const i32x4 0xff1e23f7 0x560e98c6 0x0377afdd 0xc0f0d8c2
+    i8x16.bitmask
+    f32.convert_i32_s
+    f32.gt
+    i64.load32_s $4 offset=2499041922
+    i64.extend8_s
+    i32.wrap_i64
+    f32.load offset=2828480399 align=2
+    table.size $2
+    v64x2.load_interleaved_4 offset=636277925 align=1
+    i8x16.bitmask
+    nop
+    i32x4ca\cb\f2\cb\c6\be\fb\e50=\16\02\1e\f9\d3\10"))

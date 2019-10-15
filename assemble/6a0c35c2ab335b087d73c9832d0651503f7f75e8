@@ -1,0 +1,1 @@
+ (table 1 funcref)(func f64.eq call_indirect call_indirect)

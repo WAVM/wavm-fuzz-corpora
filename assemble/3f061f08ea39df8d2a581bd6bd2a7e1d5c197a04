@@ -1,0 +1,99 @@
+(memory     1 1)
+   (func i32.const 0
+    i32x4 ix2
+   1)
+   (func i32.const 0
+    i32x4.load16x4_s
+  i32x4.load16x4_s
+    i32x4.load16x4_s     i32x4.load16x4_s
+    i32x4.load16x4_s i32.const 0   i32x4.load16x4_s   i32x4.load16x4_s
+    i32x4.load16x4_s i32x4.load1  i32x4.loa i32x4.load16x4_s    i32x4.loai32.const 0
+    i32x4.load16x4_s
+   0
+   1)
+   (func i32.const 0
+    i32x4.load16x4_s
+  i32x4.load16x432x4.load16x4_s
+    i32   1)
+   (func i32.const 0
+    i32x4.load16x4_s
+  i32x4.load16x4_s
+    i32x4.load16x4_s     i32x4.load16x4_s
+    i32x4.load16x4_s i32.const 0   i32x4.load16x4_s   i32x4.load16x4_s
+    i32x4.load16x4_s i32x4.load16x4_s
+    i32x4.load16x4_s    i32x4.loai32.const 0
+    i32x4.load16x4_s
+   0
+   1)
+   (func i32.const 0
+    i32x4.load16x4_s
+  i32x4.load16x4_s
+    i32x4.load16x4_s     i32x4.load16x4_s
+    i32x4.load16x4_s i32.const 0   i32x4.load16x4_s   i32x4.load16x4_s
+    i32x4.load16x4_s i32x4.load16x4_s
+    i32x4.load16x4_s    i32x4.load16x4_s
+    i32x4.load16x4_s i32.const 0   i32x4.load16x4_s   i32x4.load16x4_s
+    i32x4.load16x4_s ix2
+   1)
+   (func i32.const 0
+    i32x4.load16x4_s
+  i32x4.load16x4_s
+    i32x4.load16x4_s     i32x4.load16x4_s
+    i32x4.load16x4_s i32.const 0   i32x4.load16x4_s   i32x4.load16x4_s
+    i32x4.load16x4_s i32x4.load16x4_s
+    i32x4.load16x4_s    i32x4.load16x4_s
+    i32x4.load16x4_s
+    i32x4.load16x4_s i32x4.load16x4_s
+    i32x4.load16x4_s    i32x4.loai32.const 0
+    i32x4.load16x4_s
+   0
+   1)
+   (func i32.const 0
+    i32x4.load16x4_s
+  i32x4.load16x4_s
+    i32x4.load16x4_s     i32x4.load16x4_s
+    i32x4.load16x4_s i32.const 0   i32x4.load16x4_s   i32x4.load16x4_s
+    i32x4.load16x4_s i32x4.load16x4_s
+    i32x4.load16x4_s    i32x4.load16x4_s
+    i32x4.load16x4_s i32.const 0   i32x4.load16x4_s   i32x4.load16x4_s
+    i32x4.load16x4_s ix2
+   1)
+   (func i32.const 0
+    i32x4.load16x4_s
+  i32x4.load16x4_s
+    i32x4.load16x4_s     i32x4.load16x4_s
+    i32x4.load16x4_s i32.const 0   i32x4.load16x4_s   i32x4.load16x4_s
+    i32x4.load16x4_s i32x4.load16x4_s
+    i32x4.load16x4_s    i32x4.load16x4_s
+    i32x4.load16x4_s i32.const 0   i32x4.load16x4_s   i32x4.load16x4_s
+    i32x4.load16x4_s
+    i32x4.load16x4_s i32.const 0   i32x4.load16x4_s   i32x4.load16x4_s
+    i32x4.load16x4_s i32x4.load16x4_s
+    i32x4.load16x4_s    i32x4.load16x4_s
+    i32x4.load16x4_s i32.const 0   i32x4.load16x4_s  2x4.load16x4_s   i32x4.load16x4_s
+    i32x4.load ix2
+   1)
+   (func i32.const 0
+    i32x4.load16x4_s
+  i32x4.load16x4_s
+i64.atomic.rmw16.xor_u    i32x4.load16x4_s     i32x4.load16x4_s
+    i32x4.load16x4_s i32.const 0   i32x4.load16x4_s   i32x4.load16x4_s
+    i32x4.load16x4_s i32x4.load16x4_s
+    i32x4.load16x4_s    i32x4.load16x4_s
+    i32x4.load16x4_s i32.const 0   i32x4.load16x4_s   i32x4.load16x4_s
+    i32x4.load16x4_s
+    i32x4.load16x4_s i32.const 0   i32x4.load16x4_s   i32x4.load16x4_s
+    i32x4.load16x4_s i32x4.load16x4_s
+    i32x4.load16x4_s    i32x4.load16x4_s
+    i32x4.load16x4_s i32.const 0   i32x4.load16x4_s   i32x4.load16x4_s
+    i32x4.load16x4_s ix2
+   1)
+   (func i32.const 0
+    i32x4.load16x4_s
+  i32x4.load16x4_s
+    i32x4.load16x4_s     i32x4.load16x4_s
+    i32x4.load16x4_s i32.const 0   i32x4.load16x4_s   i32x4.load16x4_s
+    i32x4.load16x4_s i32x4.load16x4_s
+    i32x4.load16x4_s    i32x4.load16x4_s
+    i32x4.load16x4_s i32.const 0   i32x4.load16x4_s   i32x4.load16x4_s
+    i32x4ғoad16x4_s ix2.)

@@ -1,0 +1,34 @@
+(module
+  (type $0 (func (param f64 funcref)))
+  (type $1 (func (result v128 funcref)))
+  (type $2 (func (param funcref i64) (result f64 i32 i32)))
+  (import "env" "memory" (memory $3 13 60083 shared))
+  (import "env" "global1" (global $4 externref))
+  (import "env" "global3" (global $5 (mut externref)))
+  (import "env" "func0" (func $0 (param f64 funcref)))
+  (global $6  i64 (i64.const -8098518991535339076))
+  (global $7  i64 (i64.const 6154022189135732088))
+  (global $8  funcref (ref.null func))
+  
+  (func $10 (type $1)
+    (result v128 funcref)
+    global.get $8
+    nop
+    ref.null func
+    nop
+    f32.const -0x1.48f5fcp-3
+    i64.trunc_f32_s
+    block $block (param funcref i64) (result f64 i32 i32)
+      f32.convert_i64_s
+      global.get $6
+      f64.convert_i64_u
+      i64.trunc_f64_s
+      i64.const 4515536050798908273
+      i64.extend8_s
+      i64.mul
+      f32.const 0x1.438b94p+32
+      unreachable
+    end ;; $block
+    i32.atomic.rmw8.or_u offset=3021951080
+    unreachable
+    ))

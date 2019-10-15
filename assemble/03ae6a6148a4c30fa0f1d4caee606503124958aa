@@ -1,0 +1,10 @@
+(module
+  (type $0 (func (param f64 f64) (re8)))
+  (type $1 (func (para+ f32)))
+  (type $2 (func (param funcre)e r(usflt f32)))
+  (type $3 (func (param i32 i64 f32 v128)))
+  (type $4 (func (param i64 externref f32) (result f64)))
+  (type $5 (func (param f64) (result funcrsult i32 v128)))
+  (type $1 (func (param f32)))
+  (type $2 (func (param funcref) ))))
+  (import "env" "table" (table $16\80\a4y"))

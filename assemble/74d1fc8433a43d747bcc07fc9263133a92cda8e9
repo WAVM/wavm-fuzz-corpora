@@ -1,0 +1,3 @@
+(module  (memory $3  3 1343)(elem memory
+0 0 $3 $3 $3  0 $3 $3 $3)
+ (func))

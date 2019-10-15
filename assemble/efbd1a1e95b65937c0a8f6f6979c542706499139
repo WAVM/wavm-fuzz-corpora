@@ -1,0 +1,1 @@
+(func(i64.atomic.rmw32.or_u(i64.atomdc.rname.or_u)))

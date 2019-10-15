@@ -1,0 +1,191 @@
+(module
+  (type $f32_to_i32 (func (param f32) (result i32)))
+  (type $0 (func (param f32)))
+  (type $1 (func (param f64)))
+  (type $2 (func (param i32)))
+  (type $3 (func (param i64)))
+  (type $4 (func (param f64) (result i32)))
+  (type $5 (func (param f32) (result i64)))
+  (type $6 (func (param f64) (result i64)))
+  (type $7 (func (param i32 i32) (result i32)))
+  (type $8 (func (result i32)))
+  (import "spectest" "print_f32" (func $spectest_print_f32 (param f32)))
+  (import "spectest" "print_f64" (func $spectest_print_f64 (param f64)))
+  (import "spectest" "print_i32" (func $spectest_print_i32 (param i32)))
+  (import "spectest" "print_i64" (func $spectest_print_i64 (param i64)))
+  (table $9  4 funcref)
+  (export "i32.trunc_sat_f32_s" (func $i32_trunc_s_sat_f32))
+  (export "i32.trunc_sat_f32_u" (func $i32_trunc_u_sat_f32))
+  (export "i32.trunc_sat_f64_s" (func $i32_trunc_s_sat_f64))
+  (export "i32.trunc_sat_f64_u" (func $i32_trunc_u_sat_f64))
+  (export "i64.trunc_sat_f32_s" (func $i64_trunc_s_sat_f32))
+  (export "i64.trunc_sat_f32_u" (func $i64_trunc_u_sat_f32))
+  (export "i64.trunc_sat_f64_s" (func $i64_trunc_s_sat_f64))
+  (export "i64.trunc_sat_f64_u" (func $i64_trunc_u_sat_f64))
+  (export "test all i32.trunc_sat_f32_s" (func $11))
+  (export "test all i32.trunc_sat_f32_u" (func $12))
+  (elem $10 (i32.const 0)
+    $i32_trunc_s_sat_f32 $emulated_i32_trunc_s_sat_f32 $i32_trunc_u_sat_f32 $emulated_i32_trunc_u_sat_f32)
+  
+  (func $i32_trunc_s_sat_f32 (type $f32_to_i32)
+    (param $a f32)
+    (result i32)
+    local.get $a
+    i32.trunc_sat_f32_s
+    )
+  
+  (func $i32_trunc_u_sat_f32 (type $f32_to_i32)
+    (param $a f32)
+    (result i32)
+    local.get $a
+    i32.trunc_sat_f32_u
+    )
+  
+  (func $i32_trunc_s_sat_f64 (type $4)
+    (param $a f64)
+    (result i32)
+    local.get $a
+    i32.trunc_sat_f64_s
+    )
+  
+  (func $i32_trunc_u_sat_f64 (type $4)
+    (param $a f64)
+    (result i32)
+    local.get $a
+    i32.trunc_sat_f64_u
+    )
+  
+  (func $i64_trunc_s_sat_f32 (type $5)
+    (param $a f32)
+    (result i64)
+    local.get $a
+    i64.trunc_sat_f32_s
+    )
+  
+  (func $i64_trunc_u_sat_f32 (type $5)
+    (param $a f32)
+    (result i64)
+    local.get $a
+    i64.trunc_sat_f32_u
+    )
+  
+  (func $i64_trunc_s_sat_f64 (type $6)
+    (param $a f64)
+    (result i64)
+    local.get $a
+    i64.trunc_sat_f64_s
+    )
+  
+  (func $i64_trunc_u_sat_f64 (type $6)
+    (param $a f64)
+    (result i64)
+    local.get $a
+    i64.trunc_sat_f64_u
+    )
+  
+  (func $emulated_i32_trunc_s_sat_f32 (type $f32_to_i32)
+    (param $f f32)
+    (result i32)
+    i32.const 0
+    local.get $f
+    local.get $f
+    f32.ne
+    br_if 0
+    i32.const -2147483648
+    local.get $f
+    f32.const -0x1.000000p+31
+    f32.le
+    br_if 0
+    i32.const 2147483647
+    local.get $f
+    f32.const 0x1.000000p+31
+    f32.ge
+    br_if 0
+    local.get $f
+    i32.trunc_f32_s
+    return
+    )
+  
+  (func $emulated_i32_trunc_u_sat_f32 (type $f32_to_i32)
+    (param $f f32)
+    (result i32)
+    i32.const 0
+    local.get $f
+    local.get $f
+    f32.ne
+    br_if 0
+    i32.const 0
+    local.get $f
+    f32.const 0x0.000000p-127
+    f32.le
+    br_if 0
+    i32.const -1
+    local.get $f
+    f32.const 0x1.000000p+32
+    f32.ge
+    br_if 0
+    local.get $f
+    i32.trunc_f32_u
+    return
+    )
+  
+  (func $test_all_f32_to_i32 (type $7)
+    (param $funcA i32)
+    (param $funcB i32)
+    (result i32)
+    (local $i i32)
+    loop $loop
+      local.get $i
+      f32.reinterpret_i32
+      local.get $funcA
+      call_indirect $9 (type $f32_to_i32)
+      local.get $i
+      f32.reinterpret_i32
+      local.get $funcB
+      call_indirect $9 (type $f32_to_i32)
+      i32.ne
+      if $if
+        local.get $i
+        f32.reinterpret_i32
+        call $spectest_print_f32
+        local.get $i
+        f32.reinterpret_i32
+        local.get $funcA
+        call_indirect $9 (type $f32_to_i32)
+        call $spectest_print_i32
+        local.get $i
+        f32.reinterpret_i32
+        local.get $funcB
+        call_indirect $9 (type $f32_to_i32)
+        call $spectest_print_i32
+        i32.const 0
+        return
+      end ;; $if
+      i32.const 1
+      local.get $i
+      i32.add
+      local.set $i
+      local.get $i
+      i32.const 0
+      i32.ne
+      br_if $loop
+    end ;; $loop
+    i32.const 1
+    return
+    )
+  
+  (func $11 (type $8)
+    (result i32)
+    i32.const 0
+    i32.const 1
+    call $test_all_f32_to_i32
+    return
+    )
+  
+  (func $12 (type $8)
+    (result i32)
+    i32.const 2
+    i32.const 3
+    call $test_all_f32_to_i32
+    return
+    ))

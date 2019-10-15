@@ -1,0 +1,15 @@
+(memory 1)(func() i64.atomic.store32
+i64.a1)(func() i64.atomic.store32
+i64.atomic.store32
+i64.atomic.store32
+i64.atomic.store32
+i64.atomic.store32
+i64.atomic.store32()i64.atomic.store32
+i646ty 1)(func() i64.atomic.store32
+i64.atomic.store32
+i64.atomic.store32
+()i64.atomic.store32
+i64.atomic.store32
+i64.atomic.store32
+i64.atomic.store32
+i64.atomic.store32()64.atomic.2)

@@ -1,0 +1,39 @@
+(module
+  (type $0 (func (param f32 f32)))
+  (import "env" "table" (table $1 74 4294967295 shared externref))
+  (import "env" "global0" (global $2 externref))
+  (import "env" "global1" (global $3 i32))
+  (import "env" "global2" (global $4 externref))
+  (import "env" "global3" (global $5 (mut v128)))
+  (import "env" "global5" (global $6 (mut v128)))
+  (import "env" "global7" (global $7 f32))
+  (import "env" "global8" (global $8 (mut externref)))
+  (import "env" "func0" (func $15 (param f32 f32)))
+  (global $9  (mut f32) (f32.const 0x1.c8de3cp+31))
+  (global $10  (mut externref) (ref.null extern))
+  (elem $11 declare table
+    $1 $1 $1 $1 $1 $1 $1 $1
+    $1 $1 $1 $1 $1 $1 $1 $1
+    $1 $1 $1 $1 $1 $1 $1 $1
+    $1 $1 $1 $1 $1 $1 $1 $1
+    $1 $1 $1 $1 $1 $1 $1 $1
+    $1 $1 $1 $1 $1 $1 $1 $1
+    $1 $1 $1 $1 $1 $1)
+  (elem $12 declare global
+    $8 $7 $6 $8 $4 $3 $3 $4
+    $10 $10 $8 $8 $3 $6 $9 $8
+    $10 $9 $8 $5 $8 $6 $6 $7
+    $10 $4 $4 $10 $2 $10 $7 $8
+    $10 $6 $10 $6 $8 $4 $10 $2
+    $8 $8 $5 $9 $7 $8 $8 $6
+    $7 $2 $4 $10 $4 $8 $6 $2
+    $2 $9 $8 $6 $3 $7 $7 $4
+    $6 $9 $6 $3 $10 $2 $10 $9
+    $5 $7 $2 $4 $5 $2 $7 $3
+    $5 $10 $2 $4 $7 $7 $2)
+  
+  (data $13 
+    "\c1\f0\n\f2\8e\05D\b9\e4<\bf\c3B\03\89S}\ac\7f\c0\b6h")
+  
+  (data $14 
+    "\e2\91\cf\f4-T\e5_h<\aeS\c3\02\"\d97\b0\1d\9e\18\9br\9a\be\030\c03YD\ac{\89w\02B\ebB\cf\e6"))

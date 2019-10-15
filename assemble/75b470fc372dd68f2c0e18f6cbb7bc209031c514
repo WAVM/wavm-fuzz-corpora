@@ -1,0 +1,46 @@
+(module
+  (type $0 (func (param i32 i64 f64 f32) (result funcref)))
+  (type $1 (func (param i64 f32 externref) (result v128)))
+  (type $2 (func (param funcref f32) (result v128 f32)))
+  (type $3 (func (param i64 i64 externref)))
+  (import "env" "table" (table $4 89 4294967295 externref))
+  (import "env" "table" (table $5 76 4294967295 externref))
+  (import "env" "global0" (global $7 externref))
+  (import "env" "global1" (global $8 (mut i64)))
+  (import "env" "global2" (global $9 f64))
+  (import "env" "func0" (func $10 (param i32 i64 f64 f32) (result funcref)))
+  (import "env" "func1" (func $11 (param funcref f32) (result v128 f32)))
+  (import "env" "func2" (func $12 (param i64 i64 externref)))
+  (table $6  27 4294967295 shared funcref)
+  
+  (func $13 (type $1)
+    (param $0 i64)
+    (param $1 f32)
+    (param $2 externref)
+    (result v128)
+    (local $3 f64)
+    (local $4 i64)
+    v128.const i32x4 0x0750d1eb 0x218f3962 0x660ba9ad 0x1554655c
+    local.get $0
+    f64.convert_i64_u
+    f64.trunc
+    f64x2.replace_lane 1
+    v128.const i32x4 0x9950841b 0xabc52872 0xf96474f1 0xb8155cb3
+    i32x4.max_s
+    i32x4.any_true
+    i32.extend8_s
+    i32.clz
+    table.size $5
+    i32.le_s
+    i32.popcnt
+    ref.null extern
+    local.get $3
+    ref.null extern
+    drop
+    local.set $3
+    local.set $2
+    table.get $6
+    ref.null extern
+    ref.null extern
+    unreachable
+    ))

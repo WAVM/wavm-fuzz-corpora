@@ -1,0 +1,50 @@
+(module
+  (type $0 (func (param f32 externref) (result funcref v128)))
+  (type $1 (func (param i32 i32) (result v128 i32)))
+  (type $2 (func (param v128) (result f64 i32)))
+  (import "env" "memory" (memory $6 31 33828 shared))
+  (import "env" "table" (table $3 74 4294967295 funcref))
+  (import "env" "global1" (global $9 (mut f64)))
+  (import "env" "global2" (global $10 f32))
+  (import "env" "global4" (global $11 (mut externref)))
+  (import "env" "func0" (func $17 (param f32 externref) (result funcref v128)))
+  (import "env" "func1" (func $18 (param v128) (result f64 i32)))
+  (memory $7  14 26196)
+  (memory $8  97 15811)
+  (table $4  99 4294967295 externref)
+  (table $5  18 4294967295 funcref)
+  (global $12  (mut i32) (i32.const -1792929166))
+  (global $13  funcref (ref.null func))
+  (global $14  f64 (f64.const 0x1.697f726809ebfp+63))
+  
+  (func $19 (type $1)
+    (param $0 i32)
+    (param $1 i32)
+    (result v128 i32)
+    (local $2 funcref)
+    (local $3 externref)
+    (local $4 v128)
+    (local $5 f64)
+    local.get $0
+    local.get $4
+    v128.const i32x4 0x385c9183 0xffb114fb 0x8edc7fa8 0x5670ba7d
+    i16x8.extract_lane_u 7
+    i32.atomic.load $7 offset=2208645420
+    v8x16.load_interleaved_4 offset=656364965
+    i64x2.mul
+    v32x4.store_interleaved_4 $8 offset=2251067069 align=2
+    i64.const 4639155669120093975
+    global.get $12
+    i64.load8_u $7 offset=2510248881
+    i64.clz
+    i64.extend8_s
+    i64.or
+    i64.popcnt
+    unreachable
+    )
+  
+  (data $15 
+    "g0\bf\"H?]")
+  
+  (data $16 (i32.const 1992691752)
+    "\db\81F\a2s\cd.7\e3\ff\bfOSu\cdP\dcO\1f\d9]s\00\05\dei\96\b0y\1f"))

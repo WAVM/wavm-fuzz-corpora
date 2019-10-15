@@ -1,0 +1,5 @@
+(func br 0
+f64x2.ge
+f64x2.ge br 0
+f64x2.ge
+f64x2.ge br 0)

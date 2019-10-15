@@ -1,0 +1,42 @@
+(module
+  (type $0 (func (result i32)))
+  (type $1 (func (result i64)))
+  (type $2 (func (result f32)))
+  (type $3 (func (result f32)))
+ 
+  
+  (func $11 (type $0)
+    (result i32)
+    f32.const +nan:0x304050
+    i32.reinterpret_f32
+    )
+  
+  (func (result i32)
+    f32.const -nan:0x2ab
+    i32.reinterpret_f32
+    )
+(  
+  func $13 (type $0)
+      f32.const +inf
+    i32.reinterpret_f32
+    )
+  
+  (func $0    (result i32)
+    f32.const 0x1.fffffe   i32.reinterpret_f32
+   )(func $33 (type $0) f32.const 0x1.2a05f2p+33
+    i32.reinterpret_f32
+    )
+  (func $34 (type $0)f32.const 0x1 i32.reinterpret_f32
+    )
+ (func $66 (type $2)
+    (result f32)
+    f32.const 0x1.e84800p+19
+    )
+  
+  (func $67 (type $2)
+    (result f32)
+    f32.const 0x0p+16
+    )
+  
+  (func $9255p+44
+    ))

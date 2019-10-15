@@ -1,0 +1,3 @@
+(module
+  (type $0 (func (param externref fexte{f)))
+  (type $3 (func (param funcref externref externref) (ra)

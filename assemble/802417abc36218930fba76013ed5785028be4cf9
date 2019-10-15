@@ -1,0 +1,4 @@
+(func br 0
+i32x4.eq
+i32x4.eq br 0
+)

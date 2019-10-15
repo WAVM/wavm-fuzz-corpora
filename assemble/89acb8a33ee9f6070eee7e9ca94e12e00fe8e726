@@ -1,0 +1,58 @@
+(module
+  (type $0 (func (param i32 v128 i64 f32) (result v128)))
+  (type $1 (func (param i32 i64 i32)))
+  (type $2 (func (param v128 f32 i32) (result i32 i32)))
+  (import "env" "table" (table $3 28 4294967295 funcref))
+  (import "env" "global1" (global $5 f32))
+  (import "env" "global6" (global $6 (mut v128)))
+  (import "env" "global8" (global $7 (mut funcref)))
+  (import "env" "func0" (func $17 (param i32 v128 i64 f32) (result v128)))
+  (import "env" "func1" (func $18 (param i32 i64 i32)))
+  (memory $4  93 37266 shared)
+  (global $8  (mut f32) (f32.const 0x1.83b43ep+31))
+  (global $9  f32 (f32.const 0x1.e16eb8p+31))
+  (global $10  i64 (i64.const -8128218573154012975))
+  (global $11  f64 (f64.const 0x1.cc70993442867p+63))
+  (global $12  v128 (v128.const i32x4 0xc870a074 0xe085e86c 0xc8e2a565 0xf5c46b7a))
+  (global $13  (mut i64) (i64.const 2891980628239620197))
+  (global $14  (mut funcref) (ref.null func))
+  (elem $15 declare exception_type)
+  
+  (func $19 (type $2)
+    (param $0 v128)
+    (param $1 f32)
+    (param $2 i32)
+    (result i32 i32)
+    (local $3 v128)
+    (local $4 f64)
+    (local $5 f32)
+    (local $6 funcref)
+    global.get $8
+    i32.trunc_sat_f32_s
+    i32.clz
+    table.size $3
+    v16x8.load_interleaved_2 offset=709497636 align=8
+    i16x8.lt_u
+    nop
+    i8x16.extract_lane_u 10
+    i32.store offset=778319516 align=1
+    global.get $6
+    i16x8.widen_low_i8x16_u
+    i16x8.widen_low_i8x16_u
+    i16x8.widen_low_i8x16_u
+    i64x2.extract_lane 0
+    global.get $11
+    drop
+    global.set $13
+    global.get $12
+    local.set $0
+    global.get $14
+    global.set $14
+    global.get $6
+    drop
+    global.get $10
+    unreachable
+    )
+  
+  (data $16 (i32.const 1229697825)
+    "\9e\d1\9b\ab\c8"))

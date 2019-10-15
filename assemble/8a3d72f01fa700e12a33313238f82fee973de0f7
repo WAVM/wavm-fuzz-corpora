@@ -1,0 +1,11 @@
+(module
+  (type $0 (func (result i32)))
+  
+  (func $1 (type $0)
+    (result i32)
+    i32.const 1814652150
+    v128.const i32x4 0x3f800000 0x40000000 0x40145331 0x40800000
+    f32x4.extract_lane 0
+    i32.reinterpret_f32
+    i32.eq
+    ))

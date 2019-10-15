@@ -1,0 +1,105 @@
+(module
+  (type $0 (func (param v128) (result i32)))
+  (type $1 (func (param i32 v128) (result i64)))
+  (type $2 (func (param f64 v128 i32) (result funcref)))
+  (type $3 (func (param funcref v128 i32 i64) (result f32)))
+  (type $4 (func (param i32) (result f64 i64)))
+  (type $5 (func (result externref externref i64 funcref)))
+  (import "env" "memory" (memory $6 37 14264 shared))
+  (import "env" "global0" (global $7 f32))
+  (import "env" "func0" (func $10 (param v128) (result i32)))
+  
+  (func $11 (type $1)
+    (param $0 i32)
+    (param $1 v128)
+    (result i64)
+    (local $2 i64)
+    local.get $1
+    i32x4.widen_high_i16x8_u
+    local.get $0
+    v16x8.load_interleaved_3 offset=2244929494 align=1
+    i32x4.widen_high_i16x8_u
+    i32x4.widen_low_i16x8_u
+    i16x8.add_saturate_s
+    f64x2.sub
+    f64x2.sub
+    i32x4.any_true
+    local.get $1
+    i32x4.widen_high_i16x8_s
+    i16x8.neg
+    i8x16.extract_lane_u 0
+    i32.store offset=631088319
+    i64.const -1275541433893132907
+    ref.null extern
+    ref.is_null
+    br_if 0
+    br 0
+    )
+  
+  (func $12 (type $2)
+    (param $0 f64)
+    (param $1 v128)
+    (param $2 i32)
+    (result funcref)
+    local.get $0
+    memory.size
+    block $block (param i32) (result f64 i64)
+      local.get $2
+      i32.lt_u
+      v32x4.load_interleaved_3 offset=238298522 align=1
+      i16x8.narrow_i32x4_s
+      i8x16.le_u
+      unreachable
+    end ;; $block
+    block $block_0 (result externref externref i64 funcref)
+      nop
+      local.get $1
+      local.get $1
+      i16x8.lt_u
+      local.get $1
+      i8x16.add_saturate_s
+      ref.null func
+      ref.is_null
+      i64x2.shr_u
+      ref.null func
+      return
+    end ;; $block_0
+    ref.null func
+    ref.null extern
+    drop
+    drop
+    return
+    )
+  
+  (func $13 (type $3)
+    (param $0 funcref)
+    (param $1 v128)
+    (param $2 i32)
+    (param $3 i64)
+    (result f32)
+    (local $4 v128)
+    local.get $2
+    data.drop $8
+    v16x8.load_interleaved_4 offset=804385809 align=4
+    i16x8.max_u
+    i32x4.widen_high_i16x8_u
+    i32x4.max_u
+    i8x16.ge_u
+    i32x4.all_true
+    i32.extend16_s
+    i64.load offset=1454106653 align=2
+    atomic.fence
+    i64.eqz
+    local.get $3
+    i64.atomic.rmw8.xchg_u offset=3177766783
+    atomic.fence
+    drop
+    v128.const i32x4 0x36a6162c 0x02ef08a8 0xe5bcbd0a 0x934cd241
+    unreachable
+    )
+  
+  (data $8 
+    "E\d5\a2\d1Q??n\8a\c9\cb")
+  
+  (data $9 
+    "y\n\12.\e4\9f\9c\e1\d6v4\\6\ad\94pp\e1\8b\b0W\8b\05\f4\abdL\82\b9\1d\f8\08\fdL"))

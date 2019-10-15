@@ -1,0 +1,202 @@
+(module
+  (type $sig (func (param v128 v128 v128) (result v128)))
+  (type $0 (func (result v128)))
+  (type $1 (func))
+  (memory $3  1)
+  (table $2  2 2 funcref)
+  (export "as-br-retval" (func $5))
+  (export "as-br_if-retval" (func $6))
+  (export "as-return-retval" (func $7))
+  (export "as-if-then-retval" (func $8))
+  (export "as-if-else-retval" (func $9))
+  (export "as-call-param" (func $10))
+  (export "as-block-retval" (func $11))
+  (export "as-loop-retval" (func $12))
+  (export "as-drop-operand" (func $13))
+  (export "as-br-retval2" (func $14))
+  (export "as-br_if-retval2" (func $15))
+  (export "as-return-retval2" (func $16))
+  (export "as-if-then-retval2" (func $17))
+  (export "as-if-else-retval2" (func $18))
+  (export "as-call-param2" (func $19))
+  (export "as-call_indirect-param" (func $20))
+  (export "as-call_indirect-param2" (func $21))
+  (export "as-block-retval2" (func $22))
+  (export "as-loop-retval2" (func $23))
+  (export "as-drop-operand2" (func $24))
+  (elem $4 (i32.const 0)
+    $f $f2)
+  
+  (func $5 (type $0)
+    (result v128)
+    block $block (result v128)
+      v128.const i32x4 0x03020100 0x07060504 0x0b0a0908 0x0f0e0d0c
+      br $block
+    end ;; $block
+    )
+  
+  (func $6 (type $0)
+    (result v128)
+    block $block (result v128)
+      v128.const i32x4 0x00000000 0x00000001 0x00000002 0x00000003
+      i32.const 1
+      br_if $block
+    end ;; $block
+    )
+  
+  (func $7 (type $0)
+    (result v128)
+    v128.const i32x4 0x00000000 0x00000001 0x00000002 0x00000003
+    return
+    )
+  
+  (func $8 (type $0)
+    (result v128)
+    i32.const 1
+    if $if (result v128)
+      v128.const i32x4 0x00000000 0x00000001 0x00000002 0x00000003
+    else
+      v128.const i32x4 0x00000003 0x00000002 0x00000001 0x00000000
+    end ;; $if
+    )
+  
+  (func $9 (type $0)
+    (result v128)
+    i32.const 0
+    if $if (result v128)
+      v128.const i32x4 0x00000000 0x00000001 0x00000002 0x00000003
+    else
+      v128.const i32x4 0x00000003 0x00000002 0x00000001 0x00000000
+    end ;; $if
+    )
+  
+  (func $f (type $sig)
+    (param $0 v128)
+    (param $1 v128)
+    (param $2 v128)
+    (result v128)
+    v128.const i32x4 0x00000000 0x00000001 0x00000002 0x00000003
+    )
+  
+  (func $10 (type $0)
+    (result v128)
+    v128.const i32x4 0x00000000 0x00000001 0x00000002 0x00000003
+    v128.const i32x4 0x00000000 0x00000001 0x00000002 0x00000003
+    v128.const i32x4 0x00000000 0x00000001 0x00000002 0x00000003
+    call $f
+    )
+  
+  (func $11 (type $0)
+    (result v128)
+    block $block (result v128)
+      v128.const i32x4 0x00000000 0x00000001 0x00000002 0x00000003
+    end ;; $block
+    )
+  
+  (func $12 (type $0)
+    (result v128)
+    loop $loop (result v128)
+      v128.const i32x4 0x00000000 0x00000001 0x00000002 0x00000003
+    end ;; $loop
+    )
+  
+  (func $13 (type $1)
+    v128.const i32x4 0x00000000 0x00000001 0x00000002 0x00000003
+    drop
+    )
+  
+  (func $14 (type $0)
+    (result v128)
+    block $block (result v128)
+      v128.const i32x4 0x07060504 0x03020100 0x0f0e0d0c 0x0b0a0908
+      br $block
+    end ;; $block
+    )
+  
+  (func $15 (type $0)
+    (result v128)
+    block $block (result v128)
+      v128.const i32x4 0x00000000 0x00000000 0x00000001 0x00000000
+      i32.const 1
+      br_if $block
+    end ;; $block
+    )
+  
+  (func $16 (type $0)
+    (result v128)
+    v128.const i32x4 0x00000000 0x00000000 0x00000001 0x00000000
+    return
+    )
+  
+  (func $17 (type $0)
+    (result v128)
+    i32.const 1
+    if $if (result v128)
+      v128.const i32x4 0x00000000 0x00000000 0x00000001 0x00000000
+    else
+      v128.const i32x4 0x00000001 0x00000000 0x00000000 0x00000000
+    end ;; $if
+    )
+  
+  (func $18 (type $0)
+    (result v128)
+    i32.const 0
+    if $if (result v128)
+      v128.const i32x4 0x00000000 0x00000000 0x00000001 0x00000000
+    else
+      v128.const i32x4 0x00000001 0x00000000 0x00000000 0x00000000
+    end ;; $if
+    )
+  
+  (func $f2 (type $sig)
+    (param $0 v128)
+    (param $1 v128)
+    (param $2 v128)
+    (result v128)
+    v128.const i32x4 0x00000000 0x00000000 0x00000001 0x00000000
+    )
+  
+  (func $19 (type $0)
+    (result v128)
+    v128.const i32x4 0x00000000 0x00000000 0x00000001 0x00000000
+    v128.const i32x4 0x00000000 0x00000000 0x00000001 0x00000000
+    v128.const i32x4 0x00000000 0x00000000 0x00000001 0x00000000
+    call $f2
+    )
+  
+  (func $20 (type $0)
+    (result v128)
+    v128.const i32x4 0x00000000 0x00000001 0x00000002 0x00000003
+    v128.const i32x4 0x00000000 0x00000001 0x00000002 0x00000003
+    v128.const i32x4 0x00000000 0x00000001 0x00000002 0x00000003
+    i32.const 0
+    call_indirect $2 (type $sig)
+    )
+  
+  (func $21 (type $0)
+    (result v128)
+    v128.const i32x4 0x00000000 0x00000000 0x00000001 0x00000000
+    v128.const i32x4 0x00000000 0x00000000 0x00000001 0x00000000
+    v128.const i32x4 0x00000000 0x00000000 0x00000001 0x00000000
+    i32.const 1
+    call_indirect $2 (type $sig)
+    )
+  
+  (func $22 (type $0)
+    (result v128)
+    block $block (result v128)
+      v128.const i32x4 0x00000000 0x00000000 0x00000001 0x00000000
+    end ;; $block
+    )
+  
+  (func $23 (type $0)
+    (result v128)
+    loop $loop (result v128)
+      v128.const i32x4 0x00000000 0x00000000 0x00000001 0x00000000
+    end ;; $loop
+    )
+  
+  (func $24 (type $1)
+    v128.const i32x4 0x00000000 0x00000000 0x00000001 0x00000000
+    drop
+    ))

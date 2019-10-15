@@ -1,0 +1,11 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param f64 v128 f64)))
+  (type $2 (func (param funcref i64) (result externref externref)))
+  (type $3 (func (param v128 i32)))
+  (type $4 (func (param f64) (result i64 v12864 v128 f64)))
+  (type $2 (func (param funcref i642)))
+  (type $4 (func (param f64) (result i64 v128shared furow
+    local.get $0
+    unreachable
+    ))

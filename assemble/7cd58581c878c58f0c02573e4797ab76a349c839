@@ -1,0 +1,160 @@
+(module
+  (type $0 (func (result v128)))
+  (type $1 (func (result f64 i32)))
+  (type $2 (func (param v128 externref) (result externref i64)))
+  (type $3 (func (param i32 f64) (result f32 i32 f64 i64)))
+  (type $4 (func (result f32 v128 f32)))
+  (type $5 (func (param externref f64 f32 f64) (result externref i64 funcref)))
+  (type $6 (func (param f64 f32 i64 v128) (result i64 i64)))
+  (import "env" "memory" (memory $8 13 34353 shared))
+  (import "env" "global0" (global $9 (mut funcref)))
+  (import "env" "global2" (global $10 (mut v128)))
+  (import "env" "global3" (global $11 funcref))
+  (table $7  20 4247483647 shared externref)
+  (global $12  f64 (f64.const 0x1.73d5b6294a03ap+61))
+  (global $13  (mut f64) (f64.const 0x1.2adf591ab5164p+63))
+  (elem $14 funcref
+    (ref.func $19) (ref.func $19) (ref.null func) (ref.null func))
+  
+  (func $17 (type $0)
+    (result v128)
+    global.get $9
+    global.get $11
+    global.get $11
+    drop
+    global.get $10
+    i16x8.widen_high_i8x16_u
+    i8x16.bitmask
+    global.get $13
+    loop $loop (param i32 f64) (result f32 i32 f64 i64)
+      f64.const 0x1.658e90d17993fp-391
+      f64.ge
+      i32.atomic.rmw8.or_u offset=3893818357
+      i32x4.load16x4_s offset=2227368198
+      i32x4.trunc_sat_f32x4_u
+      i16x8.all_true
+      drop
+      call $18
+      drop
+      global.set $13
+      unreachable
+    end ;; $loop
+    drop
+    global.set $13
+    ref.null func
+    ref.is_null
+    i32.atomic.store8 offset=145801579
+    drop
+    global.set $9
+    ref.is_null
+    drop
+    atomic.fence
+    f64.const -0x1.02569f9de9581p-778
+    global.set $13
+    i32.const 102918523
+    ref.null extern
+    table.set $7
+    table.size $7
+    table.get $7
+    ref.null func
+    ref.is_null
+    unreachable
+    )
+  
+  (func $18 (type $1)
+    (result f64 i32)
+    (local $0 i32)
+    (local $1 i64)
+    local.get $0
+    i64.load32_u offset=2884413144
+    block $block (result f32 v128 f32)
+      global.get $10
+      f32x4.sqrt
+      i16x8.neg
+      global.get $13
+      table.size $7
+      v64x2.load_interleaved_3 offset=4120185169
+      i8x16.narrow_i16x8_s
+      i8x16.sub_saturate_s
+      i16x8.abs
+      i32x4.trunc_sat_f32x4_s
+      i16x8.neg
+      drop
+      global.set $13
+      global.set $10
+      f32.const -0x1.e41da2p-78
+      i32.trunc_f32_s
+      table.get $7
+      unreachable
+    end ;; $block
+    drop
+    unreachable
+    )
+  
+  (func $19 (type $2)
+    (param $0 v128)
+    (param $1 externref)
+    (result externref i64)
+    (local $2 v128)
+    (local $3 externref)
+    (local $4 f64)
+    (local $5 externref)
+    local.get $1
+    i64.const -4586436060259400024
+    local.get $1
+    local.get $4
+    f32.const -0x1.6c0ac4p+100
+    f64.const 0x1.e3cebc79a2f38p-362
+    local.get $2
+    local.set $0
+    block $block (param externref f64 f32 f64) (result externref i64 funcref)
+      elem.drop $14
+      i64.trunc_sat_f64_s
+      call $17
+      block $block_0 (param f64 f32 i64 v128) (result i64 i64)
+        i32x4.widen_high_i16x8_u
+        i32x4.widen_low_i16x8_u
+        local.get $0
+        i8x16.sub_saturate_u
+        unreachable
+      end ;; $block_0
+      i64.add
+      i64.clz
+      i64.clz
+      f64.convert_i64_s
+      global.set $13
+      local.set $3
+      call $18
+      ref.null extern
+      ref.is_null
+      i32.atomic.rmw.xchg offset=3815502002
+      ref.null func
+      drop
+      ref.null func
+      ref.null extern
+      local.set $5
+      ref.is_null
+      i32.le_u
+      table.get $7
+      local.set $5
+      local.set $4
+      memory.size
+      drop
+      global.get $11
+      global.set $9
+      i32.const 1755536838
+      table.get $7
+      local.get $4
+      unreachable
+    end ;; $block
+    ref.null func
+    ref.null func
+    unreachable
+    )
+  
+  (data $15 
+    "\b0\fd\d0!5[\d0\aa\07\8f\88\d9?\b2?.\86\db\12\01\cf.O\e5\cbn:\198_\8f\1a\f89--\ab4\f2\">\fdH\c8%\0f\12B\ea\8b\c9")
+  
+  (data $16 
+    "U>\041\05$\f5\f2\ef\de\e0\17\ffqr\ee\b3\0b\eb-\0f\17\87\da\1f\ed\d2\91I\8cl\e6\1c\d70\180G\bb\05\18\d0t\17\98\11\88\90C9\d3\a3\e8\d5\f7\e7\a8\96\e3E\b2=\"a"
+    "\f4~\d5psAE\ef!\d1\e7\ef\1b\f0\dd\9c\cc\cf\ba\82K\df\fb,\b9\11\db"))

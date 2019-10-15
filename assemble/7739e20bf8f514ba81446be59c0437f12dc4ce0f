@@ -1,0 +1,71 @@
+(module
+  (type $0 (func (result funcref i32)))
+  (type $1 (func (param externref funcref) (result i32 externref)))
+  (type $2 (func))
+  (type $3 (func (param i64) (result externref)))
+  (type $4 (func (param i32) (result v128 i64)))
+  (import "env" "memory" (memory $7 69 44953 shared))
+  (import "env" "memory" (memory $8 65 35538))
+  (import "env" "table" (table $5 93 4294967295 shared externref))
+  (import "env" "global0" (global $9 (mut i32)))
+  (import "env" "global2" (global $10 f32))
+  (import "env" "global3" (global $11 f32))
+  (import "env" "func0" (func $17))
+  (import "env" "func1" (func $18 (param i64) (result externref)))
+  (table $6  93 4294967295 externref)
+  (global $12  (mut v128) (v128.const i32x4 0x88d2a584 0xdefbf29c 0x5121eb54 0xc0306b5e))
+  (global $13  externref (ref.null extern))
+  (global $14  i32 (i32.const -1492841105))
+  (global $15  f32 (f32.const 0x1.686584p+31))
+  
+  (func $19 (type $0)
+    (result funcref i32)
+    i32.const -1715637885
+    i32.ctz
+    v64x2.load_interleaved_4 $8 offset=1057634851
+    i8x16.lt_u
+    i32x4.min_u
+    v128.or
+    i32x4.any_true
+    v64x2.load_interleaved_3 $8 offset=3539448680
+    i16x8.extract_lane_u 1
+    i8x16.splat
+    i32x4.widen_high_i16x8_s
+    i32x4.ge_u
+    f64x2.ge
+    i32x4.bitmask
+    i64.load8_u $8 offset=83673158
+    unreachable
+    )
+  
+  (func $20 (type $1)
+    (param $0 externref)
+    (param $1 funcref)
+    (result i32 externref)
+    (local $2 externref)
+    (local $3 f64)
+    global.get $11
+    atomic.fence
+    i32.trunc_sat_f32_u
+    i64.load8_s $8 offset=324427055
+    data.drop $16
+    i32.const 1772883343
+    i64.extend_i32_u
+    block $block
+      global.get $10
+      global.get $13
+      br $block
+    end ;; $block
+    i64.rotr
+    local.get $2
+    global.get $9
+    block $block_0 (param i32) (result v128 i64)
+      unreachable
+    end ;; $block_0
+    ref.null func
+    ref.null extern
+    unreachable
+    )
+  
+  (data $16 (i32.const -1024343956)
+    "\af"))

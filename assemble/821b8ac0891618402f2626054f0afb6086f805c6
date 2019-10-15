@@ -1,0 +1,46 @@
+(module
+  (type $0 (func (param i64 i64 v128) (result f32)))
+  (type $1 (func (param funcref) (result i32 i64)))
+  (type $2 (func (param i64)))
+  (type $3 (func (param f64) (result f32 i64 i64)))
+  (import "env" "global1" (global $5 i32))
+  (import "env" "global2" (global $6 (mut i64)))
+  (import "env" "global4" (global $7 (mut i32)))
+  (import "env" "func0" (func $10 (param funcref) (result i32 i64)))
+  (import "env" "func1" (func $11 (param i64)))
+  (table $4  79 4294967295 shared funcref)
+  (global $8  (mut v128) (v128.const i32x4 0x851ac2e2 0x82b1cc0b 0xa3532ace 0x98b1de80))
+  (global $9  (mut f64) (f64.const 0x1.3d5941670483bp+61))
+  
+  (func $12 (type $0)
+    (param $0 i64)
+    (param $1 i64)
+    (param $2 v128)
+    (result f32)
+    (local $3 i64)
+    (local $4 i64)
+    global.get $6
+    v128.const i32x4 0x7d57bf53 0xa1c7e9c6 0x2f128be5 0xf9dba5c0
+    i16x8.widen_low_i8x16_u
+    f64.const 0x1.2e07dc92a4e12p-791
+    local.get $3
+    local.set $0
+    nop
+    i64.trunc_f64_u
+    global.get $7
+    global.get $9
+    block $block (param f64) (result f32 i64 i64)
+      local.get $2
+      v128.not
+      i16x8.widen_high_i8x16_s
+      i32x4.widen_low_i16x8_u
+      global.set $8
+      unreachable
+    end ;; $block
+    i64.eq
+    drop
+    ref.null extern
+    ref.is_null
+    global.set $7
+    return
+    ))

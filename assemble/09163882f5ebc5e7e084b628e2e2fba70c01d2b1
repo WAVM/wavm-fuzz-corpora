@@ -1,0 +1,11 @@
+(module
+  (type $0 (func (param f64) (result v128)))
+ 
+  (func $2     (param $x f64)
+    (result v128)
+    local.get $x
+    f64x2.splat
+    loop $loop (param v128) (result v128)
+      f64x2.neg
+    end ;; $loop
+    ))

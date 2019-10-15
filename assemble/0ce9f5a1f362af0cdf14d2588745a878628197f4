@@ -1,0 +1,39 @@
+(module
+  (type $0 (func (param i64 i32 f32 f64) (result v128 i32)))
+  (import "env" "memory" (memory $1 83 50739 shared))
+  (import "env" "memory" (memory $2 53 54844 shared))
+  (import "env" "global0" (global $4 (mut externref)))
+  (memory $3  63 45302)
+  
+  (func $6 (type $0)
+    (param $0 i64)
+    (param $1 i32)
+    (param $2 f32)
+    (param $3 f64)
+    (result v128 i32)
+    (local $4 i64)
+    (local $5 f32)
+    (local $6 v128)
+    f64.const -0x1.280363b518ce7p+760
+    f64.const 0x1.d97828ba927b7p+109
+    i64.trunc_sat_f64_u
+    ref.null extern
+    global.set $4
+    i64.extend32_s
+    local.get $0
+    i64.shr_u
+    i32.wrap_i64
+    i64.load8_u $2 offset=3077296975
+    local.tee $4
+    local.set $4
+    local.tee $3
+    global.get $4
+    global.set $4
+    drop
+    local.get $2
+    unreachable
+    )
+  
+  (data $5 (memory $3) (i32.const -1407647172)
+    "i\ee\c0\f3I[\fb-2p\fa\e8\d7$\a6\9d\80\8e\17\c2E\9cy\f5%\a4=vgu\a3\8e\a0\c0'\80\c0\7f\f3J(\ee\87'iC\9d\11\fd\f8\a5\b8\bb\85\12\da\89y\01\07\cd]\e8\0f"
+    "\86\bf=v\9d\a2\a3\11\ec\10\12"))

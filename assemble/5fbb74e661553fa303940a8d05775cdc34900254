@@ -1,0 +1,10 @@
+(module
+  
+  (func $1 
+    (param $a v128)
+(param $b v128)
+    (result v128)
+    local.get $a
+    local.get $b
+    v8x16.shuffle 0 1 2 3 4 5 19 20 21 22 23 24 25 26 27 28 6 16 16
+    ))

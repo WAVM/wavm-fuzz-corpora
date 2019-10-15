@@ -1,0 +1,75 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param v128) (result i32 externref i32 v128)))
+  (import "env" "global1" (global $5 (mut i32)))
+  (import "env" "global3" (global $6 (mut f64)))
+  (import "env" "global4" (global $7 (mut i32)))
+  (table $2  21 4294967295 shared funcref)
+  (table $3  40 4294967295 shared funcref)
+  (table $4  62 4294967295 shared externref)
+  (global $8  f64 (f64.const 0x1.0e3e4f3751aa0p+63))
+  (global $9  v128 (v128.const i32x4 0xf0046272 0xadea64e5 0xb1582cbb 0x68320bf4))
+  (elem $10 (table $4) (i32.const 1810007556) table
+    $3 $3 $3 $4 $3 $2 $2 $3
+    $3 $3 $2 $3 $2 $3 $3 $3
+    $2 $2 $3 $2 $4 $3 $4 $2
+    $2 $4 $2 $2 $2 $2 $3 $4
+    $3 $3 $4 $2 $2 $2 $4 $4
+    $3 $4 $3 $3 $3 $2 $3 $4
+    $2 $3 $4 $4 $4 $2 $3)
+  
+  (func $13 (type $0)
+    (local $0 v128)
+    (local $1 externref)
+    (local $2 i64)
+    (local $3 v128)
+    global.get $9
+    i8x16.neg
+    local.get $3
+    v128.not
+    i16x8.max_s
+    i16x8.extract_lane_u 1
+    drop
+    global.get $7
+    call_indirect $2 (type $0)
+    local.get $3
+    local.get $2
+    nop
+    global.get $8
+    i64.reinterpret_f64
+    ref.null extern
+    local.set $1
+    i64.ge_u
+    i8x16.shl
+    ref.null extern
+    br 0
+    )
+  
+  (func $14 (type $0)
+    global.get $5
+    atomic.fence
+    f64.convert_i32_u
+    global.get $9
+    f64x2.sqrt
+    v128.const i32x4 0x7a546e4e 0xdade1c83 0xfd605ccd 0x2faf140b
+    v8x16.swizzle
+    global.get $5
+    atomic.fence
+    if $if (param v128) (result i32 externref i32 v128)
+      i16x8.widen_high_i8x16_s
+      i32x4.abs
+      data.drop $11
+      drop
+      f32.const -0x1.5ed75ep-84
+      return
+    else
+      return
+    end ;; $if
+    br 0
+    )
+  
+  (data $11 
+    "w\c8\97\9e\e5<")
+  
+  (data $12 
+    "\98\9a1\c3\cbh\d4\b8b\1c\13\fd_\1d\d5\ab%\c9LK\10,\c6\08\b7\9fT\f8\f3\03\d9-"))

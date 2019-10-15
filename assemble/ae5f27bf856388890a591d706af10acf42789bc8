@@ -1,0 +1,16 @@
+(module
+  (type $5 (func (param i32 i32)))
+  (type $1 (func (param i32) (result i32)))
+  (memory $b  2 2 shared)(func $3
+    (param $address i32)
+    (param $vaddress i32)
+    (result i32)
+    local.get $address
+    i32.atomic.load
+    )
+   (func $5 (type $1)
+    (param $address i32)
+    (result i32)
+    local.get $address
+    i32.atomic.load $b
+    ))

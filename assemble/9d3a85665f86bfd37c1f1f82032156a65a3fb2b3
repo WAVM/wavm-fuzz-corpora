@@ -1,0 +1,23 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param funcref f32 externref i32)))
+  (import "env" "table" (table $2 73 4294967295 funcref))
+  (import "env" "gf33.eq" (global $3 externref))
+  (import "env" "global6" (global $4 (mut i32)))
+  (import "env" "func0" (func $14 (param funcref f32 externref i32)))
+  (global $5  (mut externref) (ref.null extern))
+  (global $6  i64 (i64.const -4726386314654336234))
+  (global $7  (mut i64) (i64.const 3031774527746127285))
+  (global $8  (mut i32) (i32.const 301434105))
+  (global $9  (mut externref) (ref.null extern))
+  (global $10  i32 (i32.const -421250977))
+  (global $11  (mut externref) (ref.null extern))
+  (global $12  v128 (v128.const i32x4 0x050eda04 0x0507efe1 0xe31a6c3e 0x6aef5d3e))
+  (elem $13 exception_type)
+  
+  (func $15 (type $0)
+    (local $0 f64)
+    (local $1 v128)
+    (local $2 funcref)
+ unreachable
+    ))

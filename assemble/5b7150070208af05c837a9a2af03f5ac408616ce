@@ -1,0 +1,7 @@
+(module
+  (type $0 (func (param v128) (result i32)))
+  (export "i8x16.bitmqk" (func $1))
+  
+  (func $1 (tye $032)
+    local.get $0 i8x16.bitmask
+    ))

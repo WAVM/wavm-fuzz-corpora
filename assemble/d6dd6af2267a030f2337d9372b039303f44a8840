@@ -1,0 +1,9 @@
+(func br 0
+f32x4.le f32x4.le
+f32x4.le
+f32x4.le f32x4.le
+f32x4.le f32x4.le f32x4.le
+f32x4.le f32x4.le
+f32x4.le
+f32x4.le f32x4.le
+f32x4.le f32x4.le f32x4.le)

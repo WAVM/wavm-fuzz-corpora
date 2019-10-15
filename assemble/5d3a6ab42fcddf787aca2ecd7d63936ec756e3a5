@@ -1,0 +1,124 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param v128 i32 f32 funcref) (result externref v128)))
+  (type $2 (func (param externref funcref funcref f32) (result externref)))
+  (type $3 (func (param f32) (result v128)))
+  (type $4 (func (param i32 f32) (result externref externref)))
+  (type $5 (func (result i64 f32)))
+  (import "env" "table" (table $6 63 4294967295 externref))
+  (import "env" "table" (table $7 7 4294967295 externref))
+  (import "env" "table" (table $8 45 4294967295 shared funcref))
+  (import "env" "global0" (global $9 i32))
+  (import "env" "global2" (global $10 v128))
+  (import "env" "func0" (func $14 (param externref funcref funcref f32) (result externref)))
+  (global $11  externref (ref.null extern))
+  (elem $12 funcref
+    (ref.func $15) (ref.func $16) (ref.func $17) (ref.func $17)
+    (ref.func $14) (ref.func $17) (ref.func $14) (ref.func $14)
+    (ref.func $16) (ref.func $17) (ref.func $14) (ref.null func)
+    (ref.func $16) (ref.null func) (ref.null func) (ref.func $15)
+    (ref.func $17) (ref.null func) (ref.null func) (ref.null func)
+    (ref.func $14) (ref.func $14) (ref.null func) (ref.func $14)
+    (ref.null func) (ref.func $14) (ref.func $14) (ref.func $16)
+    (ref.func $16) (ref.func $17) (ref.func $17) (ref.func $14)
+    (ref.func $15) (ref.func $17) (ref.func $16) (ref.func $16)
+    (ref.null func) (ref.func $15) (ref.func $15) (ref.func $17)
+    (ref.func $14) (ref.func $14) (ref.func $14) (ref.func $16)
+    (ref.func $14) (ref.null func) (ref.func $17) (ref.func $17)
+    (ref.func $15) (ref.null func) (ref.func $14) (ref.func $16)
+    (ref.null func) (ref.func $16) (ref.func $15) (ref.func $15)
+    (ref.null func) (ref.null func) (ref.func $17) (ref.func $15)
+    (ref.func $17) (ref.func $15) (ref.func $14) (ref.null func)
+    (ref.func $16) (ref.func $15) (ref.null func) (ref.func $15)
+    (ref.func $14) (ref.func $15) (ref.func $17) (ref.func $16)
+    (ref.func $16) (ref.func $15) (ref.func $15) (ref.func $16)
+    (ref.func $17) (ref.func $15) (ref.func $17) (ref.func $15)
+    (ref.func $16) (ref.func $17) (ref.func $15) (ref.func $14)
+    (ref.func $16) (ref.func $16) (ref.func $16) (ref.func $17))
+  (elem $13 (i32.const 582343376) table
+    $7 $7 $6 $8 $7 $7 $7 $6
+    $7 $6 $7 $8 $7 $6 $6 $6
+    $6 $7 $8 $7 $7 $6 $7 $8
+    $6 $6 $7 $8 $7 $8 $8 $7
+    $8 $8 $7 $6 $6 $8 $7 $6
+    $7 $8 $8 $8 $6 $7 $6 $7
+    $8 $7 $7 $8 $8 $7 $7 $6
+    $7 $7 $7 $7 $7 $8 $7 $7
+    $8 $8 $8 $8 $6 $6 $8 $8
+    $7 $8 $8 $8 $6 $8 $7 $6
+    $6 $8)
+  
+  (func $15 (type $0)
+    (local $0 f32)
+    (local $1 i32)
+    (local $2 funcref)
+    v128.const i32x4 0x0f286325 0xe62efa02 0x8a7ad35d 0x0176cb5b
+    i16x8.widen_high_i8x16_u
+    i32x4.extract_lane 3
+    unreachable
+    )
+  
+  (func $16 (type $1)
+    (param $0 v128)
+    (param $1 i32)
+    (param $2 f32)
+    (param $3 funcref)
+    (result externref v128)
+    (local $4 f64)
+    (local $5 funcref)
+    v128.const i32x4 0x417b8e11 0x6b640e66 0xa8c06aea 0xeda0a6b5
+    i16x8.widen_low_i8x16_s
+    global.get $9
+    i8x16.shr_u
+    i8x16.abs
+    i8x16.extract_lane_u 5
+    f32.reinterpret_i32
+    i32.reinterpret_f32
+    local.get $0
+    i32x4.bitmask
+    i32.or
+    f32.convert_i32_u
+    i32.const 1320646410
+    i32.extend16_s
+    call_indirect $8 (type $3)
+    local.set $0
+    ref.null func
+    local.set $3
+    f32.const -0x1.850d7ep-63
+    ref.null func
+    local.set $3
+    drop
+    nop
+    local.get $0
+    unreachable
+    )
+  
+  (func $17 (type $3)
+    (param $0 f32)
+    (result v128)
+    (local $1 i64)
+    (local $2 f32)
+    (local $3 f32)
+    local.get $2
+    drop
+    call $15
+    global.get $11
+    global.get $9
+    drop
+    f32.const 0x1.645bccp-120
+    local.tee $0
+    i32.trunc_f32_s
+    local.get $2
+    block $block (param i32 f32) (result externref externref)
+      block $block_0 (result i64 f32)
+        local.get $0
+        i32.trunc_sat_f32_u
+        i16x8.splat
+        return
+      end ;; $block_0
+      local.set $2
+      unreachable
+    end ;; $block
+    drop
+    unreachable
+    ))

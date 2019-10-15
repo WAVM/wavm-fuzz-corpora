@@ -1,0 +1,25 @@
+(module
+  (type $0 (func (param f32 f32 externref f64)))
+  (type $1 (func (param externref) (result i64)))
+  (type $2 (func (param i32 i32 externref)))
+  (type $3 (func (param f64)))
+  (type $4 (func (param f64 externref v128 v128)))
+  (import "env" "func0" (func $8 (param f32 f32 externref f64)))
+  (import "env" "func1" (func $9 (param f64 externref v128 v128)))
+  (table $5  22 4294967295 shared externref)
+  (global $6  v128 (v128.const i32x4 0x54d57924 0x1c9ec3e0 0x08a296af 0xcf9c1aa2))
+  (global $7  v128 (v128.const i32x4 0x57c06fca 0x2b67f494 0xa4b36c9b 0xc81189e3))
+  
+  (func $10     (par4)
+    atomic.fence
+    f32.const -0x1.46ae78p+47
+    i32.trunc_f32_s
+    i16x8.splat
+    i16x8.bitmask
+  call_indirect  v128.const i32x4 0xd00db018 0xf9d5e59ane n
+    64.extend_i32_s
+    f64.reinterpret_i64
+    f64.ceil
+    i64.trunc_f64_s
+    return
+    ))

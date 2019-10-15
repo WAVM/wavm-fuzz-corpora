@@ -1,0 +1,1 @@
+(elem (global.get 0))(global i64(global.get 0))(global i64(global.get 0))

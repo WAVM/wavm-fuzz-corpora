@@ -1,0 +1,43 @@
+(module
+  (type $0 (func (param i64)))
+  (type $1 (func (param externref f64) (result f64)))
+  (type $2 (func (param i32 v128 f32 i64) (result funcref f64)))
+  (type $3 (func (param funcref v128) (result i32)))
+  (type $4 (func))
+  (type $5 (func (param v128) (result v128 i32 f64)))
+  (import "env" "memory" (memory $9 14 20485 shared))
+  (import "env" "memory" (memory $10 54 61591))
+  (import "env" "table" (table $6 42 4294967295 externref))
+  (import "env" "table" (table $7 58 4294967295 shared externref))
+  (import "env" "func0" (func $12 (param externref f64) (result f64)))
+  (import "env" "func1" (func $13 (param i32 v128 f32 i64) (result funcref f64)))
+  (import "env" "func2" (func $14 (param funcref v128) (result i32)))
+  (import "env" "func3" (func $15))
+  (memory $11  90 56655 shared)
+  (table $8  53 4294967295 funcref)
+  
+  (func $16 (type $0)
+    (param $0 i64)
+    (local $1 f32)
+    (local $2 i64)
+    f64.const 0x1.36d81c80856abp+598
+    f32.demote_f64
+    i32.const -661214062
+    i32.load16_s offset=285368356 align=1
+    i32.atomic.load16_u offset=2651375634
+    i32.load8_s $10 offset=1078419100
+    i32.popcnt
+    v32x4.load_splat $10 offset=1959905297 align=1
+    i16x8.all_true
+    v128.load $11 offset=3531863868
+    loop $loop (param v128) (result v128 i32 f64)
+      f32.const 0x1.f99c90p-57
+      i64.trunc_sat_f32_s
+      i64x2.replace_lane 0
+      i32x4.neg
+      i8x16.bitmask
+      table.get $6
+      unreachable
+    end ;; $loop
+    return
+    ))

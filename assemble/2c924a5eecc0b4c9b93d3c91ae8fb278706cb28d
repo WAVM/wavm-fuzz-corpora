@@ -1,0 +1,31 @@
+(module
+  (type $0 (func (param v128) (result f32)))
+  (import "env" "memory" (memory $2 56 33513 shared))
+  (import "env" "global1" (global $3 (mut f64)))
+  (table $1  83 4294967295 shared funcref)
+  (global $4  (mut externref) (ref.null extern))
+  (elem $5 declare global
+    $3 $3 $3 $4 $3 $4 $3 $4
+    $3 $4 $4 $4 $3 $3 $3 $4
+    $3 $3 $3 $3 $3 $3 $4 $4
+    $3 $4 $3 $4 $3 $4 $3 $4
+    $3 $3 $4 $3 $3 $4 $4 $3
+    $4 $4 $4 $3 $3 $4 $4 $3
+    $3 $4 $3 $3 $4 $3 $4 $3
+    $3 $4 $4 $3 $3 $4 $3 $3
+    $4 $4 $4 $4 $4 $3 $4 $3
+    $3 $3 $3 $4)
+  
+  (func $6 (type $0)
+    (param $0 v128)
+    (result f32)
+    (local $1 f32)
+    (local $2 v128)
+    (local $3 externref)
+    (local $4 f32)
+    ref.null func
+    f32.const -0x1.f1846ap+126
+    f32x4.splat
+    call $6
+    unreachable
+    ))

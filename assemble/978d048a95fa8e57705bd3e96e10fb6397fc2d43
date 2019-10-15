@@ -1,0 +1,66 @@
+(module
+  (type $0 (func (param i64 v128 v128 v128)))
+  (type $1 (func))
+  (type $2 (func (param f32 v128)))
+  (type $3 (func (param i64 f64 i32) (result f32)))
+  (import "env" "memory" (memory $6 40 41751))
+  (import "env" "table" (table $4 66 4294967295 shared funcref))
+  (import "env" "global2" (global $9 (mut externref)))
+  (import "env" "global5" (global $10 (mut i64)))
+  (import "env" "func0" (func $17))
+  (import "env" "func1" (func $18 (param i64 f64 i32) (result f32)))
+  (memory $7  27 47302 shared)
+  (memory $8  82 3056)
+  (table $5  24 4294967295 funcref)
+  (global $11  (mut i32) (i32.const -301243803))
+  (global $12  i32 (i32.const 1736365970))
+  (global $13  f32 (f32.const 0x1.3f6c02p+31))
+  (global $14  (mut v128) (v128.const i32x4 0x9112b89d 0x7ac967ef 0xcad315b7 0x02758ac8))
+  (elem $15 (i32.const -1154681867) funcref
+    (ref.func $18) (ref.func $19) (ref.func $19) (ref.func $20)
+    (ref.func $17) (ref.null func) (ref.func $19) (ref.func $17)
+    (ref.func $17) (ref.null func) (ref.func $20) (ref.func $19)
+    (ref.func $20) (ref.func $20) (ref.func $20))
+  
+  (func $19 (type $0)
+    (param $0 i64)
+    (param $1 v128)
+    (param $2 v128)
+    (param $3 v128)
+    (local $4 funcref)
+    (local $5 f32)
+    global.get $14
+    i32x4.trunc_sat_f32x4_u
+    global.get $14
+    i16x8.lt_u
+    i16x8.bitmask
+    v32x4.load_splat $8 offset=194753537
+    local.set $2
+    data.drop $16
+    unreachable
+    )
+  
+  (func $20 (type $2)
+    (param $0 f32)
+    (param $1 v128)
+    (local $2 f64)
+    (local $3 externref)
+    (local $4 externref)
+    (local $5 f64)
+    memory.size $7
+    v8x16.load_interleaved_2 $7 offset=2204543488 align=1
+    i8x16.extract_lane_s 5
+    f32.convert_i32_s
+    i32.trunc_sat_f32_s
+    i8x16.shl
+    f64x2.neg
+    drop
+    data.drop $16
+    local.get $2
+    local.get $2
+    global.get $14
+    br 0
+    )
+  
+  (data $16 (memory $8) (i32.const -303791451)
+    "q\89\c0\n\03\a9\ba\9f\aa\ba\b7%\1f\13\e8|\a3\aa!\af\e3\8a\e4\eaia\a6\1bC\fdy\fc\81ZD\97a\a3\9a\b3\0fuN\16\d4Q,\a7\a4\fb$N"))

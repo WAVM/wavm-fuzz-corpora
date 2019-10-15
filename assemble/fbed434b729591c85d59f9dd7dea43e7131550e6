@@ -1,0 +1,8 @@
+(table 0 funcref)
+(func  call_in funcref)
+(func  call_indirect(type 1)K)
+(func  call_indirect(type 1)call_indirect(type 1)K)
+(func  call_indirect(type 1)Kdirectc_indirect(type 1)K)
+(func  call_indirect(type 1)call_indirect(type 1)K)
+(func  call_indirect(type 1)K)
+(func call_indirect(type 1))

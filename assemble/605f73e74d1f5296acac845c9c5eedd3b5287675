@@ -1,0 +1,52 @@
+(func $.rotl i64.sub i16x8.min_u
+  i64.rotl  i16  )
+ 
+  (func i64.rotl   i68x1.min_u
+    i16x8.mini16x8.neg_u
+  i64.rotl  i16x8.m_u)
+ 
+  (func i64.rotl  i16x8.min_u
+          i16x8.min_u
+  i64.rotl u
+  i64.rot
+      )
+ 
+  (func i64.rotl  i16x8.min_u
+           i16x8.min_u
+    i16x8.min_u
+  i64.rotl  i16x8.min_u
+     n_u
+  )
+ 
+  (func i64.rotl  i16x8.min_u
+      _u
+ nc i6i         i16x8.mi_u
+    i16x8.min_u
+  i64.rotl  i1
+inm u_ i64.rotl  i16in_u
+      )
+ 
+  (func i64.rotl  i16x8.min_u
+           i64.rotl `     )
+ 
+  (func i64.rotl  i16x8.m    )
+ 
+  (func i64.rotl  i16x8.min_u  i16x8.min_u
+    i16x8.min_u
+  i64.rotl  i1
+inm u_ i64.rotl  i16in_u
+      )
+ 
+  (func i64.rotl  i16x8.min_u
+           i64.rotl `     )
+ 
+  (func i64.rotl     6x8.min_u
+ u
+     )
+ 
+  (func i64.rotl  i16xn_8u
+        n_u
+     n_u     n_u
+     )
+ 
+  (func i64.runreachable))

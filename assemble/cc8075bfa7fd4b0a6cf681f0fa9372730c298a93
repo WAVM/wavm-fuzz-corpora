@@ -1,0 +1,86 @@
+(module
+  (type $0 (func (result i64)))
+  (type $1 (func (param funcref f32 externref) (result v128)))
+  (type $2 (func (result f64)))
+  (type $3 (func (result f64 v128 i32 funcref)))
+  (type $4 (func (param f32 funcref) (result i64 f32 v128)))
+  (type $5 (func (param funcref) (result i32 f64 i32 i32)))
+  (import "env" "table" (table $6 58 4294967295 shared externref))
+  (import "env" "func0" (func $10 (param funcref f32 externref) (result v128)))
+  (elem $7 declare funcref
+    (ref.func $11) (ref.func $10) (ref.func $12) (ref.func $12)
+    (ref.func $12) (ref.func $12) (ref.null func) (ref.null func)
+    (ref.func $12) (ref.func $12) (ref.null func) (ref.func $12)
+    (ref.null func) (ref.func $10) (ref.null func) (ref.func $12)
+    (ref.func $11) (ref.func $11) (ref.func $10) (ref.func $12)
+    (ref.func $10) (ref.func $10) (ref.null func))
+  (elem $8 declare memory)
+  
+  (func $11 (type $0)
+    (result i64)
+    (local $0 externref)
+    (local $1 f64)
+    (local $2 v128)
+    (local $3 f32)
+    atomic.fence
+    table.size $6
+    local.get $1
+    block $block (result f64 v128 i32 funcref)
+      local.get $0
+      local.get $3
+      ref.null func
+      data.drop $9
+      table.size $6
+      data.drop $9
+      table.size $6
+      i32.rem_s
+      if $if (param f32 funcref) (result i64 f32 v128)
+        ref.null func
+        drop
+        ref.null func
+        drop
+        ref.is_null
+        table.get $6
+        local.set $0
+        local.set $3
+        f64.const -0x1.1853ae57ba584p-458
+        local.set $1
+        data.drop $9
+        call $11
+        drop
+        v128.const i32x4 0x69545bab 0x13b927cf 0xc803ae7a 0xfe1cdad0
+        unreachable
+      else
+        unreachable
+      end ;; $if
+      unreachable
+    end ;; $block
+    drop
+    i8x16.replace_lane 7
+    local.set $2
+    ref.null func
+    ref.null func
+    unreachable
+    )
+  
+  (func $12 (type $2)
+    (result f64)
+    (local $0 f64)
+    (local $1 f32)
+    (local $2 externref)
+    v128.const i32x4 0x064a659e 0x70608dc8 0x7a539151 0x9b7b3cd1
+    f32x4.sqrt
+    i16x8.widen_low_i8x16_s
+    i32x4.any_true
+    ref.null func
+    loop $loop (param funcref) (result i32 f64 i32 i32)
+      unreachable
+    end ;; $loop
+    i32.sub
+    i32.eqz
+    unreachable
+    )
+  
+  (data $9 
+    "M\85W\bc\0c\87(+\ca\dc~\c2\fdP\82\03Z\ae\09\db\9d\91\d5\12\bf\a6r\17fz9\e1\dc#\bchuR|\9c\ea\c7\0c\f0.i\e9wo\82Y\c7\\\8f\b5`\1c\14\03\99\e1\ae\df\ab"
+    "WJ\bdjr5@;\06h\c7\19\a9\c9o\bf\ba\e0\85o\83\968\99\c3BQ\bf\d9\f8\16\0b"))

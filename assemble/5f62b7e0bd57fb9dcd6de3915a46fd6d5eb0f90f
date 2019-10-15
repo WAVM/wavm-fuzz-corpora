@@ -1,0 +1,2 @@
+(func br 00 i32.add i32.add i32.add i32.add br
+0)

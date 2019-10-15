@@ -1,0 +1,42 @@
+(module
+  (type $0 (func (param funcref i64 f64 f32) (result funcref externref)))
+  (import "env" "memory" (memory $4 26 21098 shared))
+  (import "env" "global0" (global $6 v128))
+  (memory $5  58 40313 shared)
+  (table $1  69 4294967295 shared funcref)
+  (table $2  14 4294967295 shared externref)
+  (table $3  25 4294967295 externref)
+  
+  (func $9 (type $0)
+    (param $0 funcref)
+    (param $1 i64)
+    (param $2 f64)
+    (param $3 f32)
+    (result funcref externref)
+    memory.size $5
+    i64.atomic.load offset=1836973816
+    memory.size
+    i32.extend8_s
+    i32.eqz
+    table.size $2
+    i32.store16 offset=1461796490
+    i32.const -1546220906
+    f64.const 0x1.34f3366d2e469p-462
+    f64.const -0x1.77e7016f81471p+528
+    f64x2.splat
+    nop
+    nop
+    i64x2.neg
+    i16x8.extract_lane_u 5
+    table.get $1
+    drop
+    local.set $2
+    drop
+    unreachable
+    )
+  
+  (data $7 
+    "\11\cd(##\9eA\dfk:\91\e7>z\ebp\9e*\cd\d8\ff\bc\83\ed\deTRp\be\d87\faA\9e\aa\19\09\b4\03m\1aA\b69q\d4\f8B\aa?\c0\87\e2")
+  
+  (data $8 
+    "\e2n\9e\94\10\15\9ag\8c\09\af7\a7L\cc\e3\8e\ed\861\14c\c4\09\ffe_u.#\0d<B\1cl\ee<o\d2\f3\ad\fax\a4\95\aa\02\fe\e8\ee"))

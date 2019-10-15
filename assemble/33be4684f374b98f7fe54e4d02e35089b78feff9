@@ -1,0 +1,71 @@
+(module
+  (type $0 (func (param i32 funcref v128) (result f32 externref)))
+  (type $1 (func (param f64) (result funcref funcref)))
+  (type $2 (func (param i64)))
+  (type $3 (func (result v128 v128 v128 v128)))
+  (import "env" "table" (table $4 84 4294967295 shared externref))
+  (import "env" "global0" (global $5 (mut f32)))
+  (import "env" "global5" (global $6 i32))
+  (import "env" "func0" (func $13 (param i64)))
+  (global $7  externref (ref.null extern))
+  (global $8  (mut f64) (f64.const 0x1.49e9fa6a5f604p+63))
+  (global $9  i32 (i32.const -1212965024))
+  (global $10  i32 (i32.const 23316901))
+  (global $11  funcref (ref.null func))
+  (elem $12 (i32.const 746621698) memory)
+  
+  (func $14 (type $0)
+    (param $0 i32)
+    (param $1 funcref)
+    (param $2 v128)
+    (result f32 externref)
+    global.get $5
+    i64.trunc_f32_u
+    i64x2.splat
+    v128.const i32x4 0xdbbe2338 0xa2abf44a 0x808cb490 0xfdfd1515
+    i32x4.gt_s
+    f32x4.abs
+    f32x4.convert_i32x4_s
+    i32x4.trunc_sat_f32x4_u
+    i8x16.all_true
+    global.get $6
+    i32.shl
+    i16x8.splat
+    i8x16.neg
+    unreachable
+    )
+  
+  (func $15 (type $1)
+    (param $0 f64)
+    (result funcref funcref)
+    global.get $8
+    local.set $0
+    elem.drop $12
+    i64.const -6863914630275484575
+    global.get $9
+    i32.const -967875331
+    if $if (result v128 v128 v128 v128)
+      elem.drop $12
+      elem.drop $12
+      global.get $11
+      global.get $11
+      i64.const 7559734140822145909
+      f64.convert_i64_u
+      i64.trunc_sat_f64_u
+      atomic.fence
+      unreachable
+    else
+      global.get $6
+      unreachable
+    end ;; $if
+    i16x8.mul
+    i8x16.max_u
+    f64x2.lt
+    drop
+    table.get $4
+    drop
+    ref.null func
+    ref.is_null
+    table.get $4
+    unreachable
+    ))

@@ -1,0 +1,57 @@
+(module
+  (type $0 (func (param v128 funcref f32 i64) (result i32 externref)))
+  (type $1 (func (param funcref funcref externref) (result funcref f32)))
+  (type $2 (func (param f64 f64 externref f32) (result externref externref)))
+  (type $3 (func (param externref externref i32) (result funcref)))
+  (import "env" "memory" (memory $6 8 31757 shared))
+  (import "env" "global0" (global $7 (mut externref)))
+  (import "env" "global1" (global $8 (mut funcref)))
+  (import "env" "global3" (global $9 f64))
+  (import "env" "global4" (global $10 externref))
+  (import "env" "global6" (global $11 (mut v128)))
+  (import "env" "func0" (func $14 (param v128 funcref f32 i64) (result i32 externref)))
+  (import "env" "func1" (func $15 (param funcref funcref externref) (result funcref f32)))
+  (table $4  32 4294967295 externref)
+  (table $5  49 4294967295 externref)
+  (global $12  (mut f32) (f32.const 0x1.7595c8p+30))
+  (global $13  (mut f32) (f32.const 0x1.4e98b4p+30))
+  
+  (func $16 (type $2)
+    (param $0 f64)
+    (param $1 f64)
+    (param $2 externref)
+    (param $3 f32)
+    (result externref externref)
+    (local $4 funcref)
+    global.get $8
+    local.set $4
+    ref.null extern
+    i64.const -5640633660447142350
+    unreachable
+    )
+  
+  (func $17 (type $3)
+    (param $0 externref)
+    (param $1 externref)
+    (param $2 i32)
+    (result funcref)
+    (local $3 v128)
+    (local $4 f32)
+    memory.size
+    v16x8.load_interleaved_4 offset=4265354649 align=4
+    i8x16.sub_saturate_s
+    f32.const -0x1.4c7150p-7
+    atomic.fence
+    local.set $4
+    i32x4.max_s
+    v128.or
+    i32x4.bitmask
+    v128.const i32x4 0x82d98bf4 0xb4b83a78 0x18b03bd1 0x51a2f423
+    i16x8.widen_low_i8x16_u
+    i8x16.all_true
+    i32.const 998610585
+    i32.load offset=1018264122
+    i32.lt_u
+    i32.atomic.rmw.sub offset=3064085213
+    unreachable
+    ))

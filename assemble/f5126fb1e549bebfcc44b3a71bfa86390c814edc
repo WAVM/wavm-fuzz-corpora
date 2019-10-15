@@ -1,0 +1,1 @@
+(import "" "S~"(table 5 funcref))(func(table.grow(table.grow))(table.grow(table.grow)(table.grow(table.grow()))(table.grow(table.)))(table.grow(table.grow)))

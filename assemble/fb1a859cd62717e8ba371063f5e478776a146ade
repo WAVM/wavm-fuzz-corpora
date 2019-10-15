@@ -1,0 +1,77 @@
+(module
+  (type $0 (func (param f64 v128 v128) (result f32 i64)))
+  (type $1 (func (param v128 funcref f64 externref)))
+  (type $2 (func (param externref f64 funcref f64) (result funcref)))
+  (type $3 (func (param i64) (result externref f64 f64 f64)))
+  (import "env" "global0" (global $5 i64))
+  (import "env" "func0" (func $10 (param v128 funcref f64 externref)))
+  (table $4  59 4294967295 externref)
+  (elem $6i32x4.load16x4_s5 $5 $5 $5 $5 $5 $5
+    $5 $5 $5 $5 $5 $5 $5 $5
+    $5 $5 $5 $5 $5 $5 $5 $5
+    $5 $5 $5 $5 $5 $5 $5 $5
+    $5 $5 $5 $5 $5 $5 $5 $5
+    $5 $5 $5 $5 $5 $5 $5 $5
+    $5 $5 $5 $5 $5 $5 $5 $5
+    $5 $5 $5 $5 $5 $5 $5 $5
+    $5 $5 $5 $5 $5 $5 $5 $5
+    $5 $5 $5 $5 $5 $5 $5 $5
+    $5 $5 $5 $5 $5 $5 $5 $5
+    $5 $5 $5 $5)
+  (elem $7 declare exception_type)
+  
+  (func $11 (type $0)
+    (param $0 f64)
+    (param $1 v128)
+    (param $2 v128)
+    (result f32 i64)
+    (local $3 i64)
+    (local $4 i64)
+    i32.const 75455532
+    i32.eqz
+    i32.extend8_s
+    i16x8.splat
+    f32x4.convert_i32x4_s
+    i8x16.extract_lane_u 8
+    elem.drop $7
+    i32.eqz
+    i16x8.splat
+    i16x8.all_true
+    f32.const 0x1.f99512p+52
+    i64.trunc_f32_s
+    loop $loop (param i64) (result externref f64 f64 f64)
+      elem.drop $7
+      i64.extend32_s
+      br $loop
+    end ;; $loop
+    local.set $0
+    f64.ge
+    ref.null extern
+    unreachable
+    )
+  
+  (func $12 (type $2)
+    (param $0 externref)
+    (param $1 f64)
+    (param $2 funcref)
+    (param $3 f64)
+    (result funcref)
+    (local $4 funcref)
+    (local $5 f32)
+    (local $6 funcref)
+    (local $7 funcref)
+    elem.drop $7
+    local.get $5
+    i32.const -1939069662
+    f32.reinterpret_i32
+    elem.drop $6
+    f32.lt
+    atomic.fence
+    elem.drop $6le
+    )
+  
+  (data $8 
+    ";&^\90Mm\a6R8\89\0e\a03\17\b5\f4\ad\da\98\fa")
+  
+  (data $9 
+    "\92\f9\ae\ef\919g\a8\db\01\8e\d9\ef\e0"))

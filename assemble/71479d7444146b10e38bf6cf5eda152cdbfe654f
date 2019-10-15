@@ -1,0 +1,3 @@
+(func br 0
+i64.ge_u br 0
+i64.ge_u br 0)

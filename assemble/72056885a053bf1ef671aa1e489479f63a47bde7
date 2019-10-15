@@ -1,0 +1,11 @@
+(module
+
+ (table $04 4 funcref)
+  (exception_type $a32i )
+  (exception_type $b i64)
+
+  (exception_type   )
+  
+  (func $divide_by_zero    try $try (resu) catch $a
+  y
+)

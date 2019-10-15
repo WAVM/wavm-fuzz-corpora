@@ -1,0 +1,20 @@
+(module (import "envv" "emory" (memory $1 67 2537 shared))
+(func
+f32.convert_i64_s  i32.atomic.rmw8.xor_u s" "emory" (memor5377 shared))
+(func
+    local.get $8
+    i32.atomic.rmw8.xor_u   local.get $3
+    i32.atomic.rmw8.xor_u  i32.atomic.rmw8.xor_u s"emory" (memory  67d))
+(func
+    local.get $3
+    i32.atomic.rmw8.xor_u s (memory $3 67 2537 shared))
+(func
+    local.get $3
+    i32.atomic.rmw8.xor_u sy"ry"(meed))
+(func
+    local.get $3
+    i32.atomic.rmw8.xor_u s (memhared))
+(func
+    local.get $3
+    i32.atomic.rmw8.xor_u sal.get $1
+ t=2))

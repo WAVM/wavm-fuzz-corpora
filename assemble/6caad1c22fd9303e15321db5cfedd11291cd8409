@@ -1,0 +1,77 @@
+(module
+  (type $0 (func (result f32 i64)))
+  (type $1 (func (param i64 f64 externref) (result f32 funcref)))
+  (import "env" "global5" (global $3 (mut i64)))
+  (import "env" "global7" (global $4 i32))
+  (import "env" "global8" (global $5 f64))
+  (import "env" "global9" (global $6 (mut f64)))
+  (table $2  25 4294967295 shared externref)
+  (global $7  (mut funcref) (ref.null func))
+  (global $8  (mut i32) (i32.const -1115330827))
+  (global $9  (mut v128) (v128.const i32x4 0x9d86cce7 0x45d6fd26 0xc017ce97 0x6a4d7c86))
+  (global $10  (mut f32) (f32.const 0x1.4d8384p+31))
+  (global $11  (mut i32) (i32.const -737853071))
+  (global $12  (mut externref) (ref.null extern))
+  (elem $13 externref
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern))
+  
+  (func $15 (type $0)
+    (result f32 i64)
+    (local $0 i64)
+    (local $1 externref)
+    (local $2 f64)
+    global.get $11
+    global.set $11
+    ref.null extern
+    f32.const -0x1.464220p-44
+    f64.promote_f32
+    f64x2.splat
+    i32x4.trunc_sat_f32x4_u
+    i32x4.extract_lane 1
+    i64.extend_i32_s
+    nop
+    global.get $4
+    nop
+    f64.convert_i32_u
+    local.get $1
+    loop $loop (param i64 f64 externref) (result f32 funcref)
+      local.set $1
+      local.set $2
+      ref.null extern
+      global.set $12
+      local.set $0
+      global.get $5
+      drop
+      global.get $8
+      drop
+      global.get $8
+      ref.null func
+      drop
+      ref.null func
+      drop
+      global.set $8
+      global.get $9
+      ref.null extern
+      global.set $12
+      unreachable
+    end ;; $loop
+    ref.is_null
+    ref.null extern
+    ref.null extern
+    drop
+    global.set $12
+    global.set $11
+    global.set $10
+    global.set $12
+    f32.const -0x1.c95e4ep-40
+    drop
+    global.get $11
+    unreachable
+    )
+  
+  (data $14 
+    "%\f4\05\ba$k\9b\1c\07\03X\fb|\9c\bc\1b7\88wfH\da\8aV\87\df\b7u\fb\8ec\a4\f4}\1a\e5yJ\ec\8cp\1b94A\f03\a8\f0@\b2\06\af\c2\eaMj?C\ef}\92"
+    "!\0d\ef\cb=u\12t\f5Ay9\dd"))

@@ -1,0 +1,61 @@
+(module
+  (type $0 (func (param externref funcref funcref) (result v128 funcref)))
+  (type $1 (func (param i32 f32 f64)))
+  (type $2 (func (param v128 v128) (result funcref)))
+  (type $3 (func (result v128 v128)))
+  (type $4 (func (result i32 i64 externref)))
+  (import "env" "memory" (memory $6 18 65222 shared))
+  (import "env" "memory" (memory $7 37 29158))
+  (import "env" "table" (table $5 84 4294967295 externref))
+  (import "env" "global0" (global $9 i32))
+  (import "env" "global2" (global $10 i64))
+  (import "env" "global5" (global $11 funcref))
+  (import "env" "global6" (global $12 (mut f32)))
+  (import "env" "global7" (global $13 (mut i64)))
+  (import "env" "func0" (func $18 (param externref funcref funcref) (result v128 funcref)))
+  (memory $8  32 12888 shared)
+  (global $14  (mut v128) (v128.const i32x4 0x44bfe9de 0x0586ea7a 0xc0ea150a 0x25c834b6))
+  (global $15  (mut v128) (v128.const i32x4 0x69dc874c 0x9c0781b4 0xc87653d8 0x6d7665ce))
+  (global $16  (mut externref) (ref.null extern))
+  (elem $17 (i32.const -87045562) memory
+    $8 $8 $8 $8 $6 $7 $6 $6
+    $6 $6 $7 $8 $6 $7 $6 $8
+    $6 $7 $8 $6 $7 $7 $6 $7
+    $7 $6 $6 $7 $7 $8 $6 $8)
+  
+  (func $19 (type $1)
+    (param $0 i32)
+    (param $1 f32)
+    (param $2 f64)
+    (local $3 f64)
+    (local $4 funcref)
+    (local $5 f32)
+    table.size $5
+    i32.const 453511290
+    v8x16.load_interleaved_4 $7 offset=901704102 align=2
+    i16x8.avgr_u
+    block $block (param v128 v128) (result funcref)
+      i16x8.avgr_u
+      global.set $15
+      elem.drop $17
+      global.get $16
+      block $block_0 (result v128 v128)
+        local.get $3
+        block $block_1 (result i32 i64 externref)
+          f64.const 0x1.5a4923b951d07p+103
+          nop
+          local.set $2
+          local.get $4
+          return
+        end ;; $block_1
+        br 2
+      end ;; $block_0
+      i16x8.eq
+      return
+    end ;; $block
+    ref.null extern
+    ref.null extern
+    ref.null func
+    local.set $4
+    return
+    ))

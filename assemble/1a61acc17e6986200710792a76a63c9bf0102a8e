@@ -1,0 +1,20 @@
+(func  global.get $x
+global.get $unc  global.get $x
+global.get $x global.get $x global.get $x  global.get $x
+global.get $x
+  global.get $x
+global.get $u  global.get $x
+global.get $x
+ global.get $xx
+ global.get $x global.get $x  global.get $x
+global.get $x
+ global.get $x global.get $x global.get $x global.get $xx
+ global.get $x global.get $x  global.get $x global.get $x  global.get $x
+global.get $x
+ global.get $x global.get $xx
+ global.get $x global.get $z  global.get $x
+global.get $x
+ global.get $x global.get $x global.get $x global.get $xx
+ global.get $x global.get $x  global.get $x
+global.get $x
+ global.get $x global.get $x )

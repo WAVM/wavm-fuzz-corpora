@@ -1,0 +1,110 @@
+(module
+  (type $0 (func (param v128) (result f64 i64)))
+  (type $1 (func (param f32) (result f64)))
+  (type $2 (func (param f64 i32 i32) (result i32)))
+  (type $3 (func (param f64 funcref) (result i32 i32)))
+  (import "env" "memory" (memory $5 27 46157))
+  (import "env" "global1" (global $7 externref))
+  (import "env" "global2" (global $8 (mut v128)))
+  (memory $6  56 61686 shared)
+  (table $4  72 4294967295 funcref)
+  (global $9  f32 (f32.const 0x1.114274p+31))
+  (global $10  i32 (i32.const 398848765))
+  (elem $11 declare global
+    $8 $7 $9 $8 $7 $10 $7 $8
+    $8 $9 $7 $9 $8 $10 $10 $8
+    $9 $10 $7 $10 $9 $10 $9 $8
+    $9 $10 $8 $9 $8 $9 $9 $8
+    $9 $9 $9 $9 $8 $8 $10 $7
+    $10 $10 $9 $10)
+  
+  (func $12 (type $0)
+    (param $0 v128)
+    (result f64 i64)
+    local.get $0
+    global.get $8
+    memory.size
+    v64x2.load_interleaved_2 offset=2386909212 align=4
+    local.get $0
+    ref.null extern
+    f32.const -0x1.20e02cp-25
+    drop
+    global.get $9
+    drop
+    global.get $7
+    ref.null func
+    unreachable
+    )
+  
+  (func $13 (type $1)
+    (param $0 f32)
+    (result f64)
+    (local $1 f32)
+    memory.size $6
+    i16x8.load8x8_s $6 offset=1319089044 align=1
+    f64x2.abs
+    i8x16.bitmask
+    i32.const -1024332450
+    f32.load $6 offset=1773772363
+    i32.const 1609261211
+    v16x8.load_interleaved_4 offset=1317100085 align=1
+    i32x4.max_u
+    f32x4.ge
+    i16x8.max_s
+    elem.drop $11
+    global.get $7
+    ref.is_null
+    i8x16.shr_s
+    global.set $8
+    local.set $1
+    ref.null func
+    table.set $4
+    memory.size $6
+    unreachable
+    )
+  
+  (func $14 (type $2)
+    (param $0 f64)
+    (param $1 i32)
+    (param $2 i32)
+    (result i32)
+    (local $3 i32)
+    (local $4 funcref)
+    global.get $7
+    memory.size $6
+    i64.extend_i32_u
+    i64x2.splat
+    f32x4.convert_i32x4_u
+    i32x4.trunc_sat_f32x4_u
+    memory.size
+    i16x8.load8x8_u offset=2108022088
+    f64x2.gt
+    f32.const 0x1.986038p+6
+    f64.promote_f32
+    local.get $4
+    block $block (param f64 funcref) (result i32 i32)
+      local.get $2
+      block $block_0
+      end ;; $block_0
+      call_indirect $4 (type $3)
+      i32.atomic.rmw16.xchg_u $6 offset=3262995278
+      f32.convert_i32_u
+      drop
+      f64.const -0x1.2e4cee688f40ep-759
+      local.set $0
+      table.size $4
+      local.tee $2
+      f64.convert_i32_s
+      ref.null extern
+      drop
+      local.set $0
+      global.get $8
+      drop
+      unreachable
+    end ;; $block
+    br_if 0
+    i8x16.shr_s
+    ref.null func
+    local.set $4
+    unreachable
+    ))

@@ -1,0 +1,7 @@
+(func br 0
+i16x8.splat br 0
+i16x8.splat 
+i16x8.splat br 0
+i16x8.splat i16x8.splat
+i16x8.splat br 0
+i16x8.splat i16x8.splat )

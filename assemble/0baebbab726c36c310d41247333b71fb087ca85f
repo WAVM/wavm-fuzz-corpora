@@ -1,0 +1,72 @@
+(module
+  (type $0 (func (param v128 f32 externref i64)))
+  (type $1 (func (param f32 funcref funcref f64) (result f64 i64)))
+  (type $2 (func (param funcref) (result v128 funcref)))
+  (type $3 (func (result i64 funcref)))
+  (type $4 (func (param i64 f32) (result f32)))
+  (import "env" "memory" (memory $7 37 59608 shared))
+  (import "env" "memory" (memory $8 79 43351))
+  (import "env" "table" (table $5 50 4294967295 funcref))
+  (import "env" "global0" (global $10 externref))
+  (import "env" "global1" (global $11 i64))
+  (import "env" "global3" (global $12 (mut v128)))
+  (import "env" "global5" (global $13 i32))
+  (import "env" "global6" (global $14 (mut i64)))
+  (import "env" "global7" (global $15 v128))
+  (import "env" "global8" (global $16 (mut v128)))
+  (import "env" "func0" (func $21 (param v128 f32 externref i64)))
+  (import "env" "func1" (func $22 (param funcref) (result v128 funcref)))
+  (import "env" "func2" (func $23 (param i64 f32) (result f32)))
+  (memory $9  98 30387)
+  (table $6  21 4294967295 shared externref)
+  (global $17  i64 (i64.const 2780037419003173019))
+  (global $18  (mut f32) (f32.const 0x1.fc1cf8p+31))
+  (elem $19 (i32.const 990688411) funcref
+    (ref.func $25) (ref.func $21) (ref.func $25) (ref.func $25)
+    (ref.func $22) (ref.null func) (ref.func $22) (ref.func $22)
+    (ref.null func) (ref.func $24) (ref.func $23) (ref.func $22)
+    (ref.func $25) (ref.func $23) (ref.func $21) (ref.null func)
+    (ref.func $23) (ref.func $22) (ref.func $22) (ref.func $21)
+    (ref.func $21) (ref.func $25) (ref.func $22) (ref.func $23)
+    (ref.null func) (ref.func $23) (ref.func $23) (ref.null func)
+    (ref.func $25) (ref.func $23) (ref.null func) (ref.func $25)
+    (ref.func $24) (ref.func $24))
+  (elem $20 (table $6) (i32.const 1990396193) table
+    $6 $5 $5 $6 $6 $5 $5 $5
+    $5 $6 $5 $5 $5 $6 $6 $5
+    $5 $5 $6 $6 $6)
+  
+  (func $24 (type $1)
+    (param $0 f32)
+    (param $1 funcref)
+    (param $2 funcref)
+    (param $3 f64)
+    (result f64 i64)
+    (local $4 i32)
+    global.get $12
+    i8x16.bitmask
+    i32.const -1473649710
+    i32x4.splat
+    i16x8.abs
+    ref.null func
+    local.get $3
+    memory.size $9
+    i64.extend_i32_u
+    local.get $3
+    global.get $17
+    br 0
+    )
+  
+  (func $25 (type $3)
+    (result i64 funcref)
+    (local $0 v128)
+    (local $1 v128)
+    memory.size $9
+    v32x4.load_interleaved_4 offset=2420550118 align=2
+    f32x4.neg
+    i8x16.extract_lane_s 2
+    i32x4.shr_u
+    i8x16.extract_lane_s 1
+    i64.atomic.load16_u $9 offset=4261563055
+    unreachable
+    ))

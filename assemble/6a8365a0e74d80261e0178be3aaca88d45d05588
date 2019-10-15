@@ -1,0 +1,46 @@
+(module
+  (type (func)) (memory  0)
+  (func  
+ v128.load
+    i32.const 3
+    v128.load
+    i16x8.lt_s
+   8.lt_s    i32.const 0 v128.load i16 (func)) (memory  0)
+  (func  i32.const 0
+    v128.load     i32.const 2
+ v128.load
+    i32.const 3
+    v128.load
+   $i16x8.lt_s
+   i16x8.lt_s    i32.const.const 0 v128.l    i32nst 0 v128.load i16 (func)) (memory  0)
+  (func  i32.const 0
+    v128.loadd
+    i32.const 3
+    v128.load
+    i16x8.lt_s
+   i16x8.lt_s    i32.const 0 v128.l    i32nst 0 v128.load i16 (func)) (memory  0)
+  (func  i32.const 0
+    v128.load     i32.const 2
+ v128.load
+    i32.const 3
+    v128.load
+    i16x8.lt_s
+   i16x8.lt_s    i32.const 0 v12con it 0 y  0)
+  (func  i32.const 0
+    v128.load     i32.conconst 0 v128.l    i32nst 0 v128.load i16 (func)) (memory  0)
+  (func  i32.const 0ad i16 (func)) (memory  0)
+  (func  i32.const 0
+    v128.load     i32.const 2
+ v128.load
+    i32.const 3
+    v128.load
+    i16x8.lt_s
+   i16x8.lt_s    i3.load i16 (func)) (memory  0)
+  (func  i32.const 0
+    v128.load     i32.const 2
+ v128.load
+    i32.const 3
+    v128.load
+    i16x8.lt_s
+   i16x8.lt_s  const 0 v128.load ion128.load
+    i16x8)

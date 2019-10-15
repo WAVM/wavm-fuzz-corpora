@@ -1,0 +1,52 @@
+(module
+  (type $0 (func (param i32)))
+  (type $1 (func (result i64)))
+  (type $2 (func (result f64)))
+  (import "env" "memory" (memory $4 13 59997 shared))
+  (import "env" "global1" (global $6 (mut f32)))
+  (import "env" "func0" (func $13 (param i32)))
+  (import "env" "func1" (func $14 (result f64)))
+  (import "env" "func2" (func $15 (result i64)))
+  (memory $5  81 20475 shared)
+  (table $3  90 4294967295 funcref)
+  (global $7  (mut i32) (i32.const -106182773))
+  (global $8  (mut f64) (f64.const 0x1.96cd35e268db2p+61))
+  (elem $9 (i32.const -675032435)
+    $14 $14 $14 $15 $16 $13 $14 $16
+    $13 $13 $16 $16 $16 $15 $14 $13
+    $14 $13 $14 $13 $13 $13 $16 $16
+    $14 $16 $15 $13 $15 $13 $14 $16)
+  (elem $10 table
+    $3 $3 $3 $3 $3 $3 $3 $3
+    $3 $3 $3 $3 $3 $3 $3 $3
+    $3 $3 $3 $3 $3 $3 $3 $3
+    $3 $3 $3 $3)
+  
+  (func $16 (type $1)
+    (result i64)
+    (local $0 i64)
+    (local $1 v128)
+    (local $2 externref)
+    f32.const 0x1.65352ep-79
+    f32.sqrt
+    f32.ceil
+    f32x4.splat
+    i8x16.abs
+    i32x4.neg
+    i32x4.any_true
+    v8x16.load_interleaved_4 offset=1219556527
+    f32x4.max
+    v128.or
+    i8x16.all_true
+    global.get $6
+    f32.const -0x1.5aba82p+23
+    f32.const 0x1.158a22p-35
+    i64.trunc_sat_f32_s
+    return
+    )
+  
+  (data $11 (i32.const 1043944153)
+    "\05\b7q#X\f4\13\d4\b9`\ce\e0M\d8")
+  
+  (data $12 (memory $5) (i32.const -1175293558)
+    "{\c6y\c1:\93P:\ed\bd\f3\e0b\fc8\0c5\cc\01"))

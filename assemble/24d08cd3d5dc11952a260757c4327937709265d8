@@ -1,0 +1,31 @@
+(module
+  (type $0 (func (param externref) (result f32)))
+  (import "env" "memory" (memory $1 27 37537 shared))
+  (import "env" "memory" (memory $2 19 16504))
+  (import "env" "memory" (memory $3 62 45677 shared))
+  (global $4  (mut v128) (v128.const i32x4 0x747d7091 0x8d704c12 0x0983d144 0x17afca68))
+  
+  (func $7 (type $0)
+    (param $0 externref)
+    (result f32)
+    (local $1 f64)
+    (local $2 i32)
+    (local $3 v128)
+    (local $4 externref)
+    memory.size $3
+    i32.popcnt
+    v8x16.load_interleaved_4 offset=4019592694 align=2
+    f64x2.neg
+    i8x16.gt_u
+    i8x16.bitmask
+    i32x4.shr_s
+    local.tee $3
+    f32x4.max
+    unreachable
+    )
+  
+  (data $5 )
+  
+  (data $6 (i32.const 989737264)
+    "\n\e21\b0*,I%|\c8\13s\bc:\16W\d4\c1\89\e7\b4\a2\11\80v\d9\d3\b92Ak\a71\1dO9Y\8e\f8\b1\a5H4\bd[\a3\b9\97)[B\cc5Z\00\c7\a5n\b7x\c8\db\082"
+    "8\bf\1c\a8b\00\0d\15[~\ecu\19K\93\d2\ab\d53\9e\b9B\ee\89\e5\8aS\92\eaD\\\82"))

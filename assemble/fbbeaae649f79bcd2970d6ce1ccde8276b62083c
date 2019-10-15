@@ -1,0 +1,185 @@
+(module
+  (type $i32_to_void_sig (func (param i32)))
+  (type $0 (func (param i32 f64)))
+  (type $1 (func))
+  (type $2 (func (result i32)))
+  (type $3 (func (param i32) (result i32)))
+  (table $4  4 4 funcref)
+  (exception_type $a i32)
+  (exception_type $b i32)
+  (exception_type $c i32 f64)
+  (exception_type $d)
+  (export "a" (exception_type $a))
+  (export "b" (exception_type $b))
+  (export "c" (exception_type $c))
+  (export "d" (exception_type $d))
+  (export "throw_a" (func $throw_a))
+  (export "throw_b" (func $throw_b))
+  (export "throw_c" (func $throw_c))
+  (export "throw_d" (func $throw_d))
+  (export "thout_throw" (func $7))
+  (export "try_with_divide_by_zero" (func $7))
+  (export "catch_throw" (func $8))
+  (export "catch_call_throw" (func $9))
+  (export "catch_with_different_throw" (func $11))
+  (export "catch_all" (func $11))
+  (export "try_inside_catch" (func $12))
+  (export "catch_rethrow" (func $13))
+  (export "catch_all_rethrow" (func $14))
+  (export "throw_from_catch" (func $15))
+  (elem $5 (i32.const 0)
+    $no_throw $divide_by_zero $throw_a $throw_b)
+  
+  (func $throw_a (type $i32_to_void_sig)
+    (param $0 i32)
+    local.get $0
+    throw $a
+    )
+  
+  (func $throw_b (type $i32_to_void_sig)
+    (param $0 i32)
+    local.get $0
+    throw $b
+    )
+  
+  (func $throw_c (type $0)
+    (param $0 i32)
+    (param $1 f64)
+    local.get $0
+    local.get $1
+    throw $c
+    )
+  
+  (func $throw_d (type $1)
+    throw $d
+    )
+  
+  (func $no_throw (type $i32_to_void_sig)
+    (param $0 i32)
+    )
+  
+  (func $divide_by_zero (type $i32_to_void_sig)
+    (param $0 i32)
+    local.get $0
+    i32.const 0
+    i32.div_s
+    drop
+    )
+  
+  (func $6 (type $2)
+    (result i32)
+    try $try (result i32)
+      i32.const 5
+    catch_all
+      i32.const 6
+    end ;; $try
+    )
+  
+  (func $7 (type $2)
+    (result i32)
+    try $try (result i32)
+      i32.const 0
+      i32.const 0
+      i32.div_s
+      drop
+      i32.const 7
+    catch_all
+      i32.const 8
+    end ;; $try
+    )
+  
+  (func $8 (type $2)
+    (result i32)
+    try $try (result i32)
+      i32.const 9
+      throw $a
+    catch $a
+    end ;; $try
+    )
+  
+  (func $9 (type $2)
+    (result i32)
+    try $try (result i32)
+      i32.const 9
+      call $throw_a
+      i32.const 10
+    catch $a
+    end ;; $try
+    )
+  
+  (func $10 (type $2)
+    (result i32)
+    try $try (result i32)
+      i32.const 11
+      throw $a
+    catch $b
+    end ;; $try
+    )
+  
+  (func $11 (type $3)
+    (param $thunk i32)
+    (result i32)
+    try $try (result i32)
+      i32.const 13
+      local.get $thunk
+      call_indirect $4 (type $i32_to_void_sig)
+      i32.const 14
+    catch_all
+      i32.const 15
+    end ;; $try
+    )
+  
+  (func $12 (type $2)
+    (result i32)
+    try $try (result i32)
+      i32.const 16
+      throw $a
+    catch_all
+      try $try_0 (result i32)
+        i32.const 18
+        throw $b
+      catch $b
+      end ;; $try_0
+    end ;; $try
+    )
+  
+  (func $13 (type $2)
+    (result i32)
+    try $try (result i32)
+      i32.const 20
+      throw $a
+    catch $a
+      try $try_0
+        i32.const 22
+        throw $b
+      catch $b
+        rethrow $try
+      end ;; $try_0
+    end ;; $try
+    )
+  
+  (func $14 (type $2)
+    (result i32)
+    try $try (result i32)
+      i32.const 23
+      throw $a
+    catch_all
+      try $try_0
+        i32.const 25
+        throw $b
+      catch $b
+        rethrow $try
+      end ;; $try_0
+      i32.const 26
+    end ;; $try
+    )
+  
+  (func $15 (type $2)
+    (result i32)
+    try $try (result i32)
+      i32.const 27
+      throw $a
+    catch $a
+      throw $b
+    end ;; $try
+    ))

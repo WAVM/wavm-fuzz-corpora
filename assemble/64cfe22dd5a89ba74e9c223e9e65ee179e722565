@@ -1,0 +1,1 @@
+(module(memory  63) (func (param $i i32) (local  f64)(local $x3 f32)local.get $i f32.load local.get $i f32.load local.set $x3 local.set $x3  local.set $x3 local.set $x3 local.get $i f32.load local.set $x3))

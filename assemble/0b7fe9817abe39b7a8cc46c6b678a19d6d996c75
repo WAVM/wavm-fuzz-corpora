@@ -1,0 +1,1 @@
+(memory 2)(func i32.atomic.store( r)v64x2.load_interleaved_2(*  Ç)v64x2.load_interleaved_2(r)v64x2.load_interleaved_2(*  0)v64x2.load_interleaved_2(Ó)vterte)

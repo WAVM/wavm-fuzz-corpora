@@ -1,0 +1,1 @@
+(memory 0)(func(i)(i64.atomic.rmw8.and_u)(i64.atomic.rmw8.and_u))

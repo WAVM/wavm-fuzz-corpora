@@ -1,0 +1,20 @@
+(func table.init 5 table.init 0
+0 table.init 0 table.init 0
+1  table.init 0
+0 table.init 0
+0  table.init 00 table.init 0
+0 table.init 0
+ table.init 0 table.init
+0 table.init 5 table.init 0 table.init
+0 table.init 0 table.init 0
+0  table.init 0 table.init 0
+0  table.init 0
+0 table.init 00 table.init 0
+table.init 00 table.init 0
+ table.init 0
+0 table.init 00 table.init 3 table.init 0
+0  table.init 0
+0 table.init 0
+0 table.init 0
+0  table.init 0
+0 table.init 0)

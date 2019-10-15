@@ -1,0 +1,36 @@
+(module
+  (type $0 (func (result v128)))
+  (type $1 (func (param i64) (result funcref f64 v128)))
+  (import "env" "table" (table $2 18 4294967295 shared funcref))
+  (memory $4  49 22212 shared)
+  (table $3  89 4294967295 externref)
+  (elem $5 table
+    $2 $3 $2 $2 $3 $2 $3 $2)
+  
+  (func $6 (type $0)
+    (result v128)
+    (local $0 externref)
+    (local $1 i32)
+    (local $2 i64)
+    f64.const -0x1.4b27f3274a137p+1000
+    f64.const 0x1.e4dabeb673631p+161
+    i64.const -4660207937305206319
+    call $6
+    i64.const 2079833988552974131
+    block $block (param i64) (result funcref f64 v128)
+      nop
+      call $6
+      i32x4.widen_high_i16x8_s
+      atomic.fence
+      i16x8.extract_lane_s 4
+      i64.extend_i32_u
+      f64.convert_i64_s
+      i32.trunc_sat_f64_u
+      i64.load16_s offset=2765615536 align=1
+      ref.null extern
+      drop
+      i64.sub
+      unreachable
+    end ;; $block
+    return
+    ))

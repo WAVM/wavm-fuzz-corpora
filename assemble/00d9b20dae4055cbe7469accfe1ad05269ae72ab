@@ -1,0 +1,1 @@
+(func $type-mixed-arg-num-vs-num (param f32) (local i32) (local.set 1 (f32.const 0)))

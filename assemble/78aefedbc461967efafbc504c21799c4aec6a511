@@ -1,0 +1,18 @@
+(func br  00 i32.div_s
+i32.div_s i32.div_s i32.div_s
+i32.div_s i32.div_s i32.div_s
+i32.div_s i32.div_s i32.div_s i32.div_s  i32.div_s
+i32.div_s i32.div_s i32.div_s
+i32.div_s i32.div_s i32.div_s i32.div_s i32.div_s
+i32.div_s i32.div_s i32.div_s i32.div_s  i32.div_s
+i32.div_s i32.div_s i32.div_s
+i32.div_s i32.div_s i32.div_s i32.div_s i32.div_s
+i32.div_s i32.div_s i32.div_s
+i32.div_s i32.div_s i32.div_s
+i32.div_s i32.div_s i32.div_s i32.div_s  i32.div_s
+i32.div_s i32.div_s i32.div_s
+i32.div_s i32.div_s i32.div_s i32.div_s i32.div_s
+i32.div_s i32.div_s i32.div_s i32.div_s  i32.div_s
+i32.div_s i32.div_s i32.div_s
+i32.div_s i32.div_s i32.div_s i32.div_s br
+0)

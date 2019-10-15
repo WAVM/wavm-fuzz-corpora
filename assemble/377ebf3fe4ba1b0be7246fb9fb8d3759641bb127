@@ -1,0 +1,152 @@
+(module
+  (type $0 (func (param i32 funcref) (result v128 i64)))
+  (type $1 (func (param i64 funcref) (result funcref)))
+  (type $2 (func (param funcref f64 f64) (result externref)))
+  (type $3 (func (param f64 funcref f64 f32) (result funcref)))
+  (type $4 (func (param f32 f64)))
+  (type $5 (func (param funcref) (result f32 v128 externref f32)))
+  (type $6 (func (param i32 f32 funcref i64 funcref) (result funcref f64 externref)))
+  (type $7 (func (param funcref i64 funcref v128)))
+  (type $8 (func (param i64 funcref v128) (result i64 i64 externref v128)))
+  (type $9 (func (result externref i64 externref)))
+  (type $10 (func (param funcref v128 f64 externref) (result funcref)))
+  (type $11 (func (param f64 externref) (result funcref)))
+  (import "env" "global0" (global $15 externref))
+  (import "env" "global3" (global $16 funcref))
+  (import "env" "global4" (global $17 (mut funcref)))
+  (import "env" "global5" (global $18 (mut externref)))
+  (import "env" "global6" (global $19 (mut externref)))
+  (import "env" "global8" (global $20 i64))
+  (memory $12  75 25567 shared)
+  (memory $13  65 17886 shared)
+  (memory $14  86 11942 shared)
+  (global $21  funcref (ref.null func))
+  (global $22  (mut i32) (i32.const -931311374))
+  (global $23  (mut funcref) (ref.null func))
+  (global $24  (mut f64) (f64.const 0x1.6031ac27c0effp+61))
+  (elem $25 declare exception_type)
+  
+  (func $26 (type $0)
+    (param $0 i32)
+    (param $1 funcref)
+    (result v128 i64)
+    (local $2 i64)
+    global.get $18
+    global.get $17
+    elem.drop $25
+    block $block (param funcref) (result f32 v128 externref f32)
+      i64.const 2673090963766150693
+      f32.const 0x1.8ab2eep-99
+      nop
+      loop $loop
+        local.get $1
+        local.get $0
+        i32x4.load16x4_s $14 offset=2619166226
+        i32x4.extract_lane 2
+        i16x8.splat
+        i64x2.neg
+        i32x4.extract_lane 2
+        local.set $0
+        ref.is_null
+        global.set $22
+        br $loop
+      end ;; $loop
+      unreachable
+    end ;; $block
+    drop
+    global.set $19
+    drop
+    drop
+    ref.null func
+    unreachable
+    )
+  
+  (func $27 (type $1)
+    (param $0 i64)
+    (param $1 funcref)
+    (result funcref)
+    (local $2 i32)
+    (local $3 externref)
+    (local $4 v128)
+    (local $5 funcref)
+    global.get $19
+    global.get $18
+    global.set $19
+    i32.const -1045425408
+    f32.const -0x1.49f750p+87
+    global.get $21
+    local.get $0
+    local.get $1
+    loop $loop (param i32 f32 funcref i64 funcref) (result funcref f64 externref)
+      nop
+      local.get $4
+      local.get $2
+      i16x8.shr_s
+      block $block (param funcref i64 funcref v128)
+        block $block_0 (param i64 funcref v128) (result i64 i64 externref v128)
+          i32x4.any_true
+          global.set $22
+          return
+        end ;; $block_0
+        unreachable
+      end ;; $block
+      unreachable
+    end ;; $loop
+    local.set $3
+    unreachable
+    )
+  
+  (func $28 (type $2)
+    (param $0 funcref)
+    (param $1 f64)
+    (param $2 f64)
+    (result externref)
+    (local $3 v128)
+    (local $4 funcref)
+    atomic.fence
+    f64.const 0x1.93d3e615293acp+341
+    global.get $18
+    br 0
+    )
+  
+  (func $29 (type $3)
+    (param $0 f64)
+    (param $1 funcref)
+    (param $2 f64)
+    (param $3 f32)
+    (result funcref)
+    (local $4 i32)
+    global.gexa3ee242e 0x505067f0 0x91b22e24 0x6a567be8
+      local.get $0
+      ref.null extern
+      block $block (param funcref v128 f64 externref) (result funcref)
+        loop $loop (param f64 externref)    global.set $23
+      global.set $19
+      global.set $23
+      local.get $3
+      unreachable
+    else
+      nop
+      local.get $2
+      local.set $0
+      global.get $23
+      ref.null func
+      ref.null func
+      br 1
+    end ;; $if
+    ref.null extern
+    drop
+    ref.is_null
+    ref.null extern
+    ref.null func
+    unreachable
+    )
+  
+  (func $30 (type $4)
+    (param $0 f32)
+    (param $1 f64)
+    global.get $18
+    v128.const i32x4 0xb4f677b8 0xbcd0e687 0x3e1ea589 0x9743d5bf
+    global.get $17
+    br 0
+    ))

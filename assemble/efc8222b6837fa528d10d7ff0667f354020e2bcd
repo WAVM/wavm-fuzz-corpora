@@ -1,0 +1,4 @@
+(func br 0
+i64.popcnt i64.popcnt
+i64.popcnt i64.popcnt br
+0)

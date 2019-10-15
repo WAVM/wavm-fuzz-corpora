@@ -1,0 +1,6 @@
+(func br 5
+i16x8.ge_u
+i16x8.ge_u
+i16x8.ge_u i16x8.ge_u
+i16x8.ge_u
+i16x8.ge_u i16x8.ge_u i16x8.ge_u)

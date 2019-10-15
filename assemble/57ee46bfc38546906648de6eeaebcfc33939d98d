@@ -1,0 +1,50 @@
+(module
+  (type $0 (func (param externref funcref i64 f32) (result f32)))
+  (type $1 (func (result f64 f64 i64)))
+  (import "env" "table" (table $2 83 4294967295 externref))
+  (global $3  (mut v128) (v128.const i32x4 0x96518bc3 0x8f06ac2f 0x5ddd9824 0x41b7c91b))
+  (global $4  (mut v128) (v128.const i32x4 0xee76f965 0x2cab4deb 0x159651c3 0x65624dc0))
+  (global $5  i32 (i32.const 1579559522))
+  (elem $6 (i32.const 2007413858) table
+    $2 $2 $2 $2 $2 $2 $2 $2
+    $2 $2 $2 $2 $2 $2 $2 $2
+    $2 $2 $2 $2 $2 $2 $2 $2
+    $2 $2 $2 $2 $2 $2 $2 $2
+    $2 $2 $2 $2 $2 $2 $2)
+  
+  (func $7 (type $0)
+    (param $0 externref)
+    (param $1 funcref)
+    (param $2 i64)
+    (param $3 f32)
+    (result f32)
+    (local $4 f32)
+    (local $5 v128)
+    (local $6 externref)
+    local.get $6
+    i64.const -8427061417070082041
+    table.size $2
+    nop
+    f32.convert_i32_s
+    block $block (result f64 f64 i64)
+      atomic.fence
+      global.get $4
+      local.get $0
+      f32.const -0x1.1bfe56p+32
+      f32.nearest
+      local.set $4
+      ref.is_null
+      f32.convert_i32_u
+      elem.drop $6
+      f32x4.replace_lane 2
+      global.set $3
+      f64.const -0x1.90bfff369f195p+71
+      local.get $1
+      ref.null func
+      ref.is_null
+      ref.null extern
+      table.set $2
+      unreachable
+    end ;; $block
+    unreachable
+    ))

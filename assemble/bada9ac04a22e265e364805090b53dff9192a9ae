@@ -1,0 +1,1 @@
+(func local.set 5 local.set 0 local.set 2 local.set 4)

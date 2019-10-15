@@ -1,0 +1,55 @@
+(func
+br 0
+i8x16.add
+
+i8x16.add
+i8x16.add
+br 0
+
+i8x16.add
+
+i8x16.add
+i8x16.add
+br 0
+i8x16.add
+i8x16.add
+i8x16.add
+br 0
+i8x16.add
+
+i8x16.add
+i8x16.add
+br 0
+i8x16.add
+i8x16.add
+
+i8x16.add
+i8x16.add
+br 0
+
+i8x16.add
+
+i8x16.add
+i8x16.add
+br 0
+i8x16.add
+i8x16.add
+i8x16.add
+br 0
+i8x16.add
+
+i8x16.add
+i8x16.add
+br 0
+i8x16.add
+i8x16.add
+br 0
+i8x16.add
+
+i8x16.add
+i8x16.add
+br 0
+i8x16.add
+
+i8x16.add
+br 0)

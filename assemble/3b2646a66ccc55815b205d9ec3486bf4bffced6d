@@ -1,0 +1,5 @@
+( 
+module
+(memory $aaaaiaaaaeaaaaaaaaaaaaaaav16x8.load_interleaved_2 0)(func 
+ unreachable
+ i64.atomic.rmw16.xchg_u unreachable))

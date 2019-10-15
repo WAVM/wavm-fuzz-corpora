@@ -1,0 +1,4 @@
+(func br 000
+i32x4.trunc_sat_f32x4_s
+i32x4.trunc_sat_f32x4_s 
+i32x4.trunc_sat_f32x4_s br 0)

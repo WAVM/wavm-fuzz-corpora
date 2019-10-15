@@ -1,0 +1,1 @@
+(memory 3)(func(br 0)i64.store32)

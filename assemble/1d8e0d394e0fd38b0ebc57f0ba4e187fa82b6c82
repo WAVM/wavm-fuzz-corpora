@@ -1,0 +1,9 @@
+(func br 0
+i16x8.sub_saturate_s
+i16x8.sub_saturate_s
+i16x8.sub_saturate_s
+i16x8.sub_saturate_s
+i16x8.sub_saturate_s
+i16x8.sub_saturate_s
+i16x8.sub_saturate_s
+i16x8.sub_saturate_s)

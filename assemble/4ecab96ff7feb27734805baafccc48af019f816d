@@ -1,0 +1,16 @@
+(	module
+(type $4(func ))
+  (export "no_dce._fc32_s"(func $3))
+  (export "joO8ix9Sh.6nltu._f64_u" (func $7))
+(export "no_d`2.0cietAunc_f64_s" (func $4)) (export "tiytrun@f4_6(" (func $4))
+  (export "v321-]loai32x4.adds_23" (func $6))
+  (export "ni32.lt_uo?reu" (func $8))(export "fo_dce8i28.trunc_f64_s" (func $8))
+  (export "i68.trunc_f63_5c_fA3_u" (func $4)) 
+  (func $3)
+(func $4     )
+  
+  (func $6   )
+
+  (func $7) (func $8  )
+  
+ (func (param)))

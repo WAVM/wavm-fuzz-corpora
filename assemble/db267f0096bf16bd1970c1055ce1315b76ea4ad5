@@ -1,0 +1,72 @@
+(module
+  (type $0 (func (param f32 v128 i64 v128)))
+  (type $1 (func (param i32 f32 funcref v128)))
+  (type $2 (func (result f32)))
+  (type $3 (func (result f32 f64 v128)))
+  (type $4 (func (param f32 f64 i64 f32) (result f64 f32)))
+  (type $5 (func (result f64 v128 externref)))
+  (import "env" "memory" (memory $9 19 50505 shared))
+  (import "env" "global0" (global $11 funcref))
+  (import "env" "global2" (global $12 f32))
+  (import "env" "func0" (func $14 (result f32)))
+  (memory $10  70 53829)
+  (table $6  32 4294967295 externref)
+  (table $7  80 4294967295 shared externref)
+  (table $8  27 4294967295 shared funcref)
+  (global $13  i64 (i64.const -3867448324801798111))
+  
+  (func $15 (type $0)
+    (param $0 f32)
+    (param $1 v128)
+    (param $2 i64)
+    (param $3 v128)
+    (local $4 f32)
+    nop
+    f32.const -0x1.00dc90p+31
+    f32.neg
+    local.get $2
+    global.get $13
+    i64.le_u
+    i32.const -50308443
+    i32.atomic.rmw.and offset=513187085
+    i16x8.load8x8_s offset=1187709331 align=1
+    table.size $6
+    i64x2.shr_s
+    i32x4.widen_low_i16x8_s
+    i8x16.all_true
+    f64.convert_i32_u
+    i64.reinterpret_f64
+    br 0
+    )
+  
+  (func $16 (type $1)
+    (param $0 i32)
+    (param $1 f32)
+    (param $2 funcref)
+    (param $3 v128)
+    (local $4 i64)
+    global.get $11
+    local.tee $2
+    v128.const i32x4 0x9453002e 0x3df33498 0x21d8cb1b 0x823de38c
+    i8x16.all_true
+    i32.extend8_s
+    i32.load16_u $10 offset=3597594356 align=1
+    loop $loop (result f32 f64 v128)
+      br 1
+    end ;; $loop
+    drop
+    memory.size $10
+    local.get $4
+    i64.atomic.rmw16.xchg_u $10 offset=4239391354
+    local.get $1
+    block $block (param f32 f64 i64 f32) (result f64 f32)
+      loop $loop_0 (result f64 v128 externref)
+        memory.size
+        br_if 2
+        local.get $3
+        br 2
+      end ;; $loop_0
+      br 1
+    end ;; $block
+    return
+    ))

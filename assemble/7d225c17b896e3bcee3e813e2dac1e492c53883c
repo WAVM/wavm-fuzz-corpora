@@ -1,0 +1,2 @@
+(func br 0 i16x8.le_u br 0 i16x8.le_u i16x8.le_u i16x8.le_u br
+0)

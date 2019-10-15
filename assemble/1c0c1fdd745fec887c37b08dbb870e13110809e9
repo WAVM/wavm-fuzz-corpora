@@ -1,0 +1,37 @@
+(module
+  (type $0 (func (param i64 f64) (result i64)))
+  (type $1 (func (param i64)))
+  (import "env" "memory" (memory $4 22 24028 shared))
+  (memory $5  91 57027 shared)
+  (table $2  69 4294967295 externref)
+  (table $3  40 4294967295 funcref)
+  (global $6  f32 (f32.const 0x1.9fb792p+26))
+  
+  (func $7 (type $0)
+    (param $0 i64)
+    (param $1 f64)
+    (result i64)
+    (local $2 externref)
+    local.get $2
+    local.get $2
+    i64.const 2684011724262204210
+    local.get $0
+    i64.and
+    loop $loop (param i64)
+      i32.wrap_i64
+      v32x4.load_interleaved_4 offset=298740426 align=1
+      i16x8.narrow_i32x4_s
+      f64x2.div
+      i16x8.avgr_u
+      i64x2.extract_lane 1
+      i64.clz
+      f64.const 0x1.6844c0ee591b3p+97
+      local.get $0
+      ref.null extern
+      local.set $2
+      drop
+      call $7
+      br $loop
+    end ;; $loop
+    unreachable
+    ))

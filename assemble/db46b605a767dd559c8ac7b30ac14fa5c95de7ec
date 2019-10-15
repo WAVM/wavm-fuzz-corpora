@@ -1,0 +1,37 @@
+(module
+  (type $0 (func (param i32) (result f32 i32)))
+  (type $1 (func (param externref f32) (result i64)))
+  (import "env" "memory" (memory $2 62 63072 shared))
+  (import "env" "memory" (memory $3 79 15717 shared))
+  (import "env" "memory" (memory $4 98 8053))
+  (import "env" "global0" (global $5 (mut funcref)))
+  (import "env" "func0" (func $9 (param externref f32) (result i64)))
+  (global $6  v128 (v128.const i32x4 0xf50c5f3a 0x5115dc2e 0x1ff20c09 0xfeb2176b))
+  (global $7  funcref (ref.null func))
+  
+  (func $10 (type $0)
+    (param $0 i32)
+    (result f32 i32)
+    atomic.fence
+    data.drop $8
+    data.drop $8
+    global.get $6
+    i8x16.neg
+    drop
+    data.drop $8
+    data.drop $8
+    i32.const 2129473548
+    i64.load32_s $4 offset=2029206149 align=2
+    f64.convert_i64_s
+    f64.abs
+    i32.trunc_sat_f64_s
+    v64x2.load_interleaved_3 $3 offset=4260330827 align=8
+    i8x16.narrow_i16x8_u
+    i16x8.sub
+    drop
+    memory.size $4
+    unreachable
+    )
+  
+  (data $8 
+    "\8f-\96"))

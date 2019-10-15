@@ -1,0 +1,52 @@
+(module
+  (type $0 (func (result f64 externref)))
+  (type $1 (func (result i32 i32)))
+  (type $2 (func (param i32 f64 i32)))
+  (type $3 (func (param externref f32) (result v128 v128 i64 v128)))
+  (import "env" "table" (table $4 73 4294967295 shared externref))
+  (import "env" "func0" (func $6 (result i32 i32)))
+  (import "env" "func1" (func $7 (param i32 f64 i32)))
+  
+  (func $8 (type $0)
+    (result f64 externref)
+    (local $0 f32)
+    (local $1 externref)
+    (local $2 funcref)
+    i32.const -2029001264
+    f64.const -0x1.a94c39b9bccb8p+229
+    local.get $1
+    i32.const -925400404
+    f32.convert_i32_s
+    call $6
+    i32.div_s
+    i32.extend8_s
+    i32.eqz
+    if $if (param externref f32) (result v128 v128 i64 v128)
+      i32.trunc_sat_f32_s
+      if $if_0
+        v128.const i32x4 0x45dd9ccb 0xb1ad9774 0x5bd375e8 0xa1ab6243
+        i32x4.trunc_sat_f32x4_u
+        f64x2.sqrt
+        br $if_0
+      else
+        unreachable
+      end ;; $if_0
+      drop
+      unreachable
+    else
+      ref.null func
+      local.set $2
+      ref.null extern
+      ref.is_null
+      drop
+      unreachable
+    end ;; $if
+    ref.null extern
+    ref.null extern
+    ref.null extern
+    ref.is_null
+    unreachable
+    )
+  
+  (data $5 
+    "r\da\05\e7\b0\cc\\\7f8\80\ae\13\8e38\c2\d7"))

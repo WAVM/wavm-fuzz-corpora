@@ -1,0 +1,145 @@
+(module
+  (type $0 (func (param f64 f32 i64 f32) (result funcref i64)))
+  (type $1 (func (result f64)))
+  (type $2 (func (param f64 f64) (result externref)))
+  (type $3 (func (param i64) (result v128)))
+  (type $4 (func (param externref f32 v128)))
+  (type $5 (func (param externref funcref i32 v128)))
+  (type $6 (func (result externref i32 externref)))
+  (type $7 (func (result i32 i32 i32 i64)))
+  (import "env" "global0" (global $12 (mut funcref)))
+  (import "env" "global3" (global $13 i64))
+  (import "env" "global4" (global $14 (mut funcref)))
+  (import "env" "global5" (global $15 i32))
+  (import "env" "global6" (global $16 i32))
+  (import "env" "global8" (global $17 f64))
+  (import "env" "func0" (func $25 (result f64)))
+  (import "env" "func1" (func $26 (param i64) (result v128)))
+  (memory $11  22 20145 shared)
+  (table $8  62 4294967295 shared externref)
+  (table $9  99 4294967295 externref)
+  (table $10  72 4294967295 funcref)
+  (global $18  f64 (f64.const 0x1.e61c7c85c0e8fp+63))
+  (global $19  i32 (i32.const 1767171631))
+  (global $20  i32 (i32.const 476651582))
+  (global $21  f32 (f32.const 0x1.20776cp+29))
+  (elem $22 declare
+    $27 $29 $28 $29 $28 $28 $25 $27
+    $27 $29 $26 $25 $29 $28 $25 $25
+    $26 $27 $26 $28 $28 $28 $26 $25
+    $27 $26 $27 $28)
+  
+  (func $27 (type $0)
+    (param $0 f64)
+    (param $1 f32)
+    (param $2 i64)
+    (param $3 f32)
+    (result funcref i64)
+    (local $4 v128)
+    (local $5 funcref)
+    (local $6 f32)
+    (local $7 funcref)
+    local.get $4
+    local.get $7
+    global.set $12
+    local.get $4
+    i16x8.any_true
+    ref.null extern
+    local.get $5
+    elem.drop $22
+    table.size $10
+    f32.convert_i32_u
+    i32.trunc_f32_u
+    local.get $3
+    i32.trunc_f32_s
+    v32x4.load_splat offset=1578663243 align=1
+    loop $loop (param externref funcref i32 v128)
+      v128.store offset=316404007 align=4
+      ref.is_null
+      unreachable
+    end ;; $loop
+    i8x16.shr_u
+    ref.null extern
+    ref.is_null
+    i64x2.shr_u
+    local.set $4
+    local.get $3
+    local.set $3
+    elem.drop $22
+    i32.const -72439018
+    table.get $8
+    ref.null extern
+    ref.is_null
+    unreachable
+    )
+  
+  (func $28 (type $2)
+    (param $0 f64)
+    (param $1 f64)
+    (result externref)
+    global.get $13
+    i64.clz
+    global.get $13
+    i64.rotl
+    f32.convert_i64_s
+    global.get $21
+    loop $loop (result externref i32 externref)
+      data.drop $23
+      atomic.fence
+      global.get $16
+      f64.load offset=1084878496 align=4
+      local.get $1
+      i64.trunc_sat_f64_u
+      f64.convert_i64_s
+      v128.const i32x4 0x4f898ab8 0xb12b8503 0x8427af3d 0x4f9ea79b
+      unreachable
+    end ;; $loop
+    ref.is_null
+    i32.gt_s
+    drop
+    ref.null func
+    drop
+    return
+    )
+  
+  (func $29 (type $4)
+    (param $0 externref)
+    (param $1 f32)
+    (param $2 v128)
+    (local $3 f32)
+    (local $4 i64)
+    (local $5 externref)
+    (local $6 funcref)
+    i32.const -815891451
+    i16x8.load8x8_u offset=2762319352 align=1
+    drop
+    memory.size
+    call $25
+    i32.trunc_sat_f64_s
+    v8x16.load_interleaved_2 offset=3265424019 align=1
+    block $block (result i32 i32 i32 i64)
+      f32.const 0x1.ce7610p+114
+      local.get $6
+      i32.const -578676081
+      i32.ctz
+      i64x2.load32x2_s offset=1020925528 align=1
+      i8x16.extract_lane_u 11
+      f64.convert_i32_s
+      drop
+      ref.null func
+      global.set $14
+      ref.is_null
+      br 1
+    end ;; $block
+    i64.atomic.rmw32.and_u offset=2185041711
+    i64.atomic.rmw32.and_u offset=3879286670
+    i64.atomic.rmw32.and_u offset=3412641547
+    br 0
+    )
+  
+  (data $23 
+    "\e8<gk=\b4U\ccT/\ecZsm\d2\8d\96\a7\94\ba1\c8\e5\bb!\1dG\02d\ad{W<\83\93\a7a\c5\b2\15r\1f\e1\cf\da\ab{y\a6\df\e9\1b\d8\1c@\e3\e64Q/\11\05\93h"
+    "\f9\89\n<\88\82\dc#\de\c0:\0d\ed\02\c1z\94\15\a0Z_v\00t")
+  
+  (data $24 (i32.const 994759984)
+    "\e7\08\da\93\a1K]\fb\a5v\a3\bb\b51\81\d4\c9\84\d1\17lD'IF\c0{\10\f54\d6>b\"_\02aH/`$\d5\d2 \033\a1\cf"))

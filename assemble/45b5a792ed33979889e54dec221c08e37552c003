@@ -1,0 +1,87 @@
+(module
+  (type $0 (func (param i64 funcref i64) (result f32)))
+  (type $1 (func (result i32)))
+  (type $2 (func))
+  (type $3 (func (param f32 v128 funcref i64)))
+  (type $4 (func (param v128 i64)))
+  (type $5 (func (result externref i32)))
+  (import "env" "memory" (memory $7 1 23422 shared))
+  (import "env" "memory" (memory $8 52 61006 shared))
+  (import "env" "func0" (func $12 (param i64 funcref i64) (result f32)))
+  (import "env" "func1" (func $13))
+  (import "env" "func2" (func $14 (param v128 i64)))
+  (memory $9  34 26462 shared)
+  (table $6  33 4294967295 shared externref)
+  
+  (func $15 (type $1)
+    (result i32)
+    data.drop $11
+    i64.const 6190975673088706654
+    f64.const -0x1.45967bef322a8p+59
+    f32.demote_f64
+    i64.trunc_sat_f32_s
+    i64.rem_s
+    block $block (result externref i32)
+      f64.const 0x1.0dce53bc81d4cp+818
+      i32.trunc_sat_f64_u
+      i64.load $8 offset=29551557
+      f64.reinterpret_i64
+      i64.trunc_sat_f64_s
+      i64.extend16_s
+      i64.ctz
+      i64.eqz
+      ref.null extern
+      ref.null func
+      unreachable
+    end ;; $block
+    ref.null extern
+    ref.null func
+    drop
+    ref.null extern
+    ref.null extern
+    ref.null func
+    drop
+    ref.null func
+    ref.is_null
+    ref.null func
+    ref.is_null
+    i32.atomic.rmw8.and_u $8 offset=435983008
+    ref.null func
+    ref.is_null
+    i32.store $8 offset=3406714633
+    drop
+    ref.is_null
+    return
+    )
+  
+  (func $16 (type $3)
+    (param $0 f32)
+    (param $1 v128)
+    (param $2 funcref)
+    (param $3 i64)
+    (local $4 f64)
+    (local $5 f32)
+    (local $6 f32)
+    i64.const 6933874270485909537
+    local.get $3
+    nop
+    i64.rem_s
+    i64.extend32_s
+    i64x2.splat
+    i8x16.extract_lane_s 6
+    i32x4.load16x4_u offset=2229163537 align=4
+    i16x8.bitmask
+    v128.const i32x4 0xe5adfede 0xb25e7025 0x9f0f301c 0x79a1f8cf
+    i8x16.any_true
+    v32x4.load_interleaved_2 offset=2995030318 align=1
+    i8x16.neg
+    v32x4.store_interleaved_2 $8 offset=747247557
+    memory.size $8
+    return
+    )
+  
+  (data $10 
+    "\e7|\e5")
+  
+  (data $11 (memory $9) (i32.const 431772402)
+    "\99\d7"))

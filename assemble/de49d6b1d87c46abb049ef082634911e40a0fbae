@@ -1,0 +1,81 @@
+(module
+  (type $0 (func (param f64 i32 externref)))
+  (type $1 (func (param i64 i64 funcref f64) (result i64)))
+  (type $2 (func (param v128) (result f64 i64)))
+  (type $3 (func))
+  (type $4 (func (param f32 f32 i32 f64)))
+  (type $5 (func (result f64 i32 f32)))
+  (import "env" "global1" (global $7 f64))
+  (import "env" "func0" (func $9 (param i64 i64 funcref f64) (result i64)))
+  (import "env" "func1" (func $10))
+  (memory $6  63 46316 shared)
+  (global $8  externref (ref.null extern))
+  
+  (func $11 (type $0)
+    (param $0 f64)
+    (param $1 i32)
+    (param $2 externref)
+    (local $3 f32)
+    local.get $0
+    i64.trunc_sat_f64_s
+    i64.extend16_s
+    i64.ctz
+    local.get $3
+    i64.trunc_sat_f32_s
+    i64.eq
+    i32.popcnt
+    global.get $7
+    nop
+    local.get $1
+    f32.convert_i32_u
+    memory.size
+    i32.load16_s offset=1157033598
+    v32x4.load_splat offset=1919339543 align=1
+    ref.null extern
+    unreachable
+    )
+  
+  (func $12 (type $2)
+    (param $0 v128)
+    (result f64 i64)
+    f32.const -0x1.a4be56p-35
+    loop $loop (result f64 i32 f32)
+      unreachable
+    end ;; $loop
+    f32.sqrt
+    i64.trunc_f32_u
+    i64.atomic.store8 offset=425720532
+    f64.floor
+    f64.const 0x1.17f0db52ae160p-461
+    f64.ceil
+    memory.size
+    f64.convert_i32_u
+    f64.const 0x1.a3987d45e66aep+739
+    f64.floor
+    f64.neg
+    nop
+    f64.le
+    select
+    drop
+    drop
+    f64.const -0x1.f906139b7986fp-701
+    f64.nearest
+    block $block
+      unreachable
+    end ;; $block
+    f64.floor
+    i64.trunc_sat_f64_u
+    unreachable
+    )
+  
+  (func $13 (type $4)
+    (param $0 f32)
+    (param $1 f32)
+    (param $2 i32)
+    (param $3 f64)
+    (local $4 funcref)
+    (local $5 externref)
+    (local $6 i64)
+    i64.const 6353378253264187544
+    br 0
+    ))

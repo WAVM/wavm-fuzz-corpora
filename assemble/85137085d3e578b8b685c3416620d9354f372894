@@ -1,0 +1,1 @@
+(memory 0)(func(br 0)v64x2.store_interleaved_3 v64x2.store_interleaved_2(br 0)v64x2.store_interleaved_2 v64x2.store_interleaved_2)

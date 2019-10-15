@@ -1,0 +1,9 @@
+(func()f32.const 0 i32.const 0
+select i32.const 0
+select i32.const 0
+select i32.const 0
+select i32.const 0
+select i32.const 0
+select i32.const 0
+select i32.const 0
+select)

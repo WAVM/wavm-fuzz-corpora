@@ -1,0 +1,28 @@
+(module
+  (type $0 (func (param v128 v128) (result v128)))
+  (type $1 (func (result v128)))
+  (type $2 (func (param v128) (result v128)))
+   
+  (func $6 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    i16x8.max_u
+    )
+  
+  (func $7 (type $1)
+    (result v128)
+    v128.const i32x4 0x80008000 0x7fff7fff 0x41004000 0xffffff
+    v128.const i32x4 0xffffffff 0x40004000 0x7fff7fff 0x80008000
+    i16x8.max_u
+    )
+  
+  (func $22 (type $2)
+    (param $0 v128)
+    (result v128)
+    local.get $0
+    v128.const i32x4 0x00000000 0x00010001 0x0002 0x0030003
+    i16x8.max_u
+    ))

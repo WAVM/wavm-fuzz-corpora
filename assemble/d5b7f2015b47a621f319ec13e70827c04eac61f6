@@ -1,0 +1,12 @@
+(module
+ (type $1 (func (result f64)))
+ (func  $1 (func (result f64)))
+ (func   f32.const 0x00005p-130
+ f32.const 0x1p-127
+ f32.const 0x1.fffp-127   f32.const -0x0.000005p-127 
+   f32.const -0x00.5p-127
+  f32.const 0x1.p-127
+  f32.const -0x00005p-130
+ f32.const 0x1p-127
+ f32.cons4p-¨27
+  ft 0x0.ffffcp-127 )

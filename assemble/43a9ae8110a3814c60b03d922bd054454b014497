@@ -1,0 +1,47 @@
+(module
+  (type $0 (func (param i32 f32) (result funcref i32)))
+  (type $1 (func (result v128)))
+  (type $2 (func (param f64) (result f64 i32)))
+  (import "env" "memory" (memory $4 91 24924 shared))
+  (import "env" "table" (table $3 30 4294967295 shared funcref))
+  (import "env" "global0" (global $6 i32))
+  (import "env" "func0" (func $8 (param i32 f32) (result funcref i32)))
+  (memory $5  25 57555 shared)
+  (global $7  i64 (i64.const -1313535937245379260))
+  
+  (func $9 (type $1)
+    (result v128)
+    i64.const 5652086458922410008
+    f64.const 0x1.11f981087e5f8p+750
+    f64.trunc
+    global.get $6
+    if $if (param f64) (result f64 i32)
+      f32.const 0x1.499898p+2
+      nop
+      call $9
+      f32x4.convert_i32x4_s
+      f64x2.sqrt
+      i16x8.extract_lane_u 6
+      v64x2.load_interleaved_2 offset=1286795884 align=2
+      i32x4.max_u
+      i8x16.any_true
+      ref.null func
+      ref.is_null
+      ref.null func
+      drop
+      i32.shr_u
+      ref.null extern
+      drop
+      table.get $3
+      drop
+      drop
+      f64.const 0x1.5517484d5d58cp+230
+      unreachable
+    else
+      call $9
+      drop
+      unreachable
+    end ;; $if
+    drop
+    unreachable
+    ))

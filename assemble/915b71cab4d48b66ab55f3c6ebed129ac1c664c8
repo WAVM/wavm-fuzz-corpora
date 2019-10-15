@@ -1,0 +1,1 @@
+(import "" ""(table 7 funcref))(elem(i64.const 1))

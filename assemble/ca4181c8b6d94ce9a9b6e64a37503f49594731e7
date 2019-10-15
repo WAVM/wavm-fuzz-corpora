@@ -1,0 +1,1 @@
+(memory 8)(func(br0)v16x8.store_interleaved_2(i6 0)v16x8.store_interleaved_2)(func(br0)v16x8.store_interleaved_2(i6 0)v16x8.store_interleaved_2)(func(b)v16x8.store_interleaved_2(0)v16x8.store_interleaved_2(i6 0)v16x8.store_interleaved_2)(func(b)v16x8.store_interleaved_2(0)v16x8.store_intc(b#r`))

@@ -1,0 +1,71 @@
+(module
+  (type $0 (func (param f64 f64 funcref i32) (result funcref externref)))
+  (type $1 (func (param f64 funcref) (result v128)))
+  (type $2 (func (result f32)))
+  (import "env" "memory" (memory $4 3 62970 shared))
+  (import "env" "global0" (global $7 (mut f32)))
+  (import "env" "global1" (global $8 (mut f32)))
+  (import "env" "global7" (global $9 (mut f32)))
+  (import "env" "global8" (global $10 (mut f64)))
+  (import "env" "func0" (func $17 (param f64 funcref) (result v128)))
+  (memory $5  38 55342 shared)
+  (memory $6  14 28345 shared)
+  (table $3  43 4294967295 funcref)
+  (global $11  (mut f64) (f64.const 0x1.9c8c670bfdcb6p+63))
+  (global $12  (mut f64) (f64.const 0x1.11d7f11dc216ep+63))
+  (global $13  f32 (f32.const 0x1.c2bcacp+27))
+  (global $14  (mut f64) (f64.const 0x1.7d85a10845bb4p+63))
+  (global $15  (mut funcref) (ref.null func))
+  (elem $16 global
+    $12 $7 $13 $15 $12 $11 $8 $8
+    $14 $7 $14 $14 $14 $13 $15 $12
+    $9 $9 $9 $12 $8 $11 $14 $12
+    $10 $8 $14 $10 $11 $9 $14 $8
+    $12 $12 $14 $14 $12 $8 $9 $11
+    $13 $11 $7 $11 $15 $14)
+  
+  (func $18 (type $0)
+    (param $0 f64)
+    (param $1 f64)
+    (param $2 funcref)
+    (param $3 i32)
+    (result funcref externref)
+    (local $4 i64)
+    (local $5 i64)
+    (local $6 v128)
+    atomic.fence
+    elem.drop $16
+    table.size $3
+    i64x2.load32x2_s offset=230742028
+    local.set $6
+    global.get $14
+    global.get $12
+    i64.trunc_f64_u
+    table.size $3
+    unreachable
+    )
+  
+  (func $19 (type $2)
+    (result f32)
+    (local $0 externref)
+    (local $1 f64)
+    (local $2 v128)
+    memory.size
+    v8x16.load_interleaved_4 offset=2462858170 align=2
+    i8x16.all_true
+    i16x8.shr_u
+    i16x8.bitmask
+    i8x16.replace_lane 8
+    f64x2.gt
+    i8x16.any_true
+    i32.atomic.load8_u $5 offset=1131954691
+    v64x2.load_interleaved_3 offset=1257905937
+    i64x2.sub
+    i32x4.lt_u
+    i32x4.widen_low_i16x8_u
+    global.get $8
+    i32.trunc_f32_s
+    i8x16.shr_s
+    drop
+    unreachable
+    ))

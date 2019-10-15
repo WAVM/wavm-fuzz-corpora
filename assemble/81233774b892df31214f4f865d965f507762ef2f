@@ -1,0 +1,6 @@
+(module(memory 83) 
+  (func ( result v128) i32.const 0
+i64x2.load32x2_u )
+(memory 83) 
+  (func ( result v128) i32.const 0
+i64x2.load32x2_u ))

@@ -1,0 +1,1 @@
+(memory 1)(func(br 0)i64.atomic.rmw.xchg(br 0))

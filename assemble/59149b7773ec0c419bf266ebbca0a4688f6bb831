@@ -1,0 +1,14 @@
+(memory 1)(func i32.const 0 memory.grow memory.grow  memory.grow memory.grow memory.grow  memory.grow memory.grow memory.grow
+memory.grow memory.grow memory.grow memory.grow memory.grow  memory.grow memory.grow memory.grow
+memory.grow memory.grow memory.grow memory.grow memory.grow  memory.grow
+ memory.grow
+memory.grow memory.grow
+memory.grow memory.grow memory.grow memory.grow
+memory.grow memory.grow memory.grow
+ memory.grow
+memory.grow memory.grow
+memory.grow memory.grow memory.grow memory.grow
+memory.grow memory.grow memory.grow memory.grow memory.grow  memory.grow
+ memory.grow
+memory.grow memory.grow
+memory.grow memory.grow(return))

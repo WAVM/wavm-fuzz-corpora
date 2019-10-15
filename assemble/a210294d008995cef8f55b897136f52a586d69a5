@@ -1,0 +1,4 @@
+(func
+i32.shr_u i32.shr_u
+i32.shr_u i32.shr_u i32.shr_u
+i32.shr_u i32.shr_u i32.shr_u)

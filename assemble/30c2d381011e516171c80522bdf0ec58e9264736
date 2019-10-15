@@ -1,0 +1,4 @@
+(table $t 10 externref)
+    (func $t(table.get $T))
+    )
+  

@@ -1,0 +1,54 @@
+(module
+  (type $0 (func (param i64) (result f32 v128)))
+  (type $1 (func (param i64 i32 f32)))
+  (type $2 (func (param funcref i32 f32 i32)))
+  (type $3 (func (param i32 f32 i64) (result v128)))
+  (type $4 (func (param i32) (result v128 v128 externref v128)))
+  (import "env" "memory" (memory $5 51 33967))
+  (import "env" "func0" (func $9 (param i64) (result f32 v128)))
+  (import "env" "func1" (func $10 (param funcref i32 f32 i32)))
+  (memory $6  59 21146 shared)
+  
+  (func $11 (type $1)
+    (param $0 i64)
+    (param $1 i32)
+    (param $2 f32)
+    (local $3 i32)
+    (local $4 f64)
+    (local $5 funcref)
+    local.get $1
+    i64.const 2646950321743010070
+    br 0
+    )
+  
+  (func $12 (type $3)
+    (param $0 i32)
+    (param $1 f32)
+    (param $2 i64)
+    (result v128)
+    (local $3 i32)
+    ref.null func
+    data.drop $7
+    i32.const 423977972
+    block $block (param i32) (result v128 v128 externref v128)
+      local.tee $0
+      v8x16.load_interleaved_3 $6 offset=2924380074 align=8
+      i32x4.widen_high_i16x8_u
+      i16x8.all_true
+      i64.atomic.load32_u $6 offset=366235995
+      i64.clz
+      memory.size $6
+      i32.eqz
+      i32.clz
+      v32x4.load_splat $6 offset=2565640440 align=2
+      data.drop $8
+      br 1
+    end ;; $block
+    br 0
+    )
+  
+  (data $7 (memory $6) (i32.const -659138796)
+    "\14\b8\c8-ya<\93\f3\9a\bf\b6m\08!")
+  
+  (data $8 (i32.const 274337662)
+    "_\00\90\c2\dfQKD-\c1:_*\"\86hS\bb\"=\99.4\7f\9c"))

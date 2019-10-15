@@ -1,0 +1,52 @@
+(module
+  (type $0 (func (param externref) (result v128)))
+  (type $1 (func (result externref f32)))
+  (type $2 (func (param v128 v128 externref)))
+  (type $3 (func (param i32)))
+  (import "env" "memory" (memory $6 4 62685 shared))
+  (import "env" "memory" (memory $7 70 4189))
+  (import "env" "table" (table $4 71 4294967295 shared externref))
+  (import "env" "table" (table $5 25 4294967295 funcref))
+  (import "env" "global1" (global $8 (mut v128)))
+  (import "env" "func0" (func $14 (param externref) (result v128)))
+  (import "env" "func1" (func $15 (result externref f32)))
+  (global $9  (mut f64) (f64.const 0x1.b559c16435779p+63))
+  (global $10  funcref (ref.null func))
+  (global $11  i64 (i64.const 5339143017486146651))
+  (elem $12 declare exception_type)
+  (elem $13 declare global
+    $8 $10 $10 $9 $8 $10 $8 $11
+    $9 $10 $9 $9 $11 $10 $8 $11
+    $9 $8 $11 $10 $10 $8 $11 $8
+    $10 $10 $9 $10 $11 $11 $11 $10
+    $10 $8 $8 $9 $11 $10 $10 $9
+    $9 $8 $8 $10 $11)
+  
+  (func $16 (type $2)
+    (param $0 v128)
+    (param $1 v128)
+    (param $2 externref)
+    (local $3 i64)
+    (local $4 f64)
+    (local $5 f32)
+    global.get $10
+    i32.const 887686563
+    v8x16.load_interleaved_2 $7 offset=3119528715
+    i32x4.mul
+    f32x4.convert_i32x4_u
+    local.tee $0
+    local.get $0
+    f32x4.extract_lane 0
+    f32x4.replace_lane 0
+    f64x2.extract_lane 1
+    i32.const -300331083
+    loop $loop (param i32)
+      v128.const i32x4 0x71e1ce3c 0x504760c3 0x383485ca 0x3d9a457b
+      i16x8.widen_low_i8x16_s
+      call $15
+      return
+    end ;; $loop
+    global.set $9
+    ref.null extern
+    br 0
+    ))

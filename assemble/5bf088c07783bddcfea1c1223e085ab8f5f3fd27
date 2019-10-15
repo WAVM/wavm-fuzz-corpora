@@ -1,0 +1,4 @@
+(func br 0
+i64.div_s
+i64.div_s i64.div_s br
+0)

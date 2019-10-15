@@ -1,0 +1,22 @@
+(module
+  (type $01 (func (param i32 i32)))
+  (export "test" (func $3))
+  (memory $2  1 1)
+  
+  (func $3 i32.const  17 i32.const 50095
+    i32.const 2926
+    memory.copy i32.const 1512   i32.const 17299
+    i32.const 3607
+    memory.copy
+     i32.const 2  i32.const 54157
+ i32.const 1968
+    memory.copy
+    i32.const 4    i32.const 2 i32.const 3381
+   memory.copy
+    i32.const 22685 
+   i32.const 45
+    i32.const 5974
+memory.copy i32.const 50370
+    i32.const 41272
+    i32.const 1406
+    memory.copy))

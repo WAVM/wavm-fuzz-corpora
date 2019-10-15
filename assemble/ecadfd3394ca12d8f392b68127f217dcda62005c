@@ -1,0 +1,109 @@
+(module
+  (type $0 (func (param i64 v128 f32)))
+  (type $1 (func (result i32 i32)))
+  (type $2 (func (param externref f32 f64) (result i32)))
+  (type $3 (func (result externref v128)))
+  (type $4 (func (param i32) (result f32)))
+  (type $5 (func (param f64 f32) (result externref f32 funcref i64)))
+  (import "env" "memory" (memory $7 46 51274 shared))
+  (import "env" "func0" (func $12 (result i32 i32)))
+  (memory $8  11 48818 shared)
+  (table $6  66 4294967295 shared funcref)
+  (global $9  f32 (f32.const 0x1.24733cp+31))
+  
+  (func $13 (type $0)
+    (param $0 i64)
+    (param $1 v128)
+    (param $2 f32)
+    global.get $9
+    drop
+    i32.const -327521656
+    v32x4.load_interleaved_2 $8 offset=1190763302 align=1
+    global.get $9
+    return
+    )
+  
+  (func $14 (type $2)
+    (param $0 externref)
+    (param $1 f32)
+    (param $2 f64)
+    (result i32)
+    (local $3 externref)
+    call $12
+    i32.atomic.rmw16.xor_u $8 offset=3085001214
+    call_indirect $6 (type $1)
+    v32x4.load_interleaved_2 offset=1626942197 align=1
+    f32x4.sub
+    local.get $1
+    f32.abs
+    v128.const i32x4 0xfe002863 0x095ad10c 0x5374e590 0xf1814f86
+    f32x4.abs
+    f32x4.neg
+    local.get $1
+    f32.neg
+    drop
+    f32x4.convert_i32x4_s
+    f64x2.abs
+    unreachable
+    )
+  
+  (func $15 (type $3)
+    (result externref v128)
+    (local $0 v128)
+    (local $1 i32)
+    (local $2 f32)
+    memory.size $8
+    i32x4.splat
+    f32.const -0x1.798fe2p-117
+    local.set $2
+    i8x16.neg
+    i16x8.bitmask
+    i64.extend_i32_s
+    f64.const -0x1.a68a724e3356ap+709
+    f64.nearest
+    i64.trunc_sat_f64_u
+    i64.rem_u
+    i64x2.splat
+    f64.const -0x1.176d361907625p+411
+    f32.const -0x1.bff18cp-79
+    loop $loop (param f64 f32) (result externref f32 funcref i64)
+      ref.null extern
+      unreachable
+    end ;; $loop
+    ref.null extern
+    ref.is_null
+    local.set $1
+    drop
+    unreachable
+    )
+  
+  (func $16 (type $4)
+    (param $0 i32)
+    (result f32)
+    (local $1 i32)
+    (local $2 i32)
+    (local $3 funcref)
+    data.drop $10
+    call $15
+    nop
+    i32x4.bitmask
+    i32.extend8_s
+    v32x4.load_interleaved_2 $8 offset=4059469276 align=4
+    i8x16.gt_s
+    table.size $6
+    v16x8.load_splat $8 offset=570359314 align=1
+    i32x4.bitmask
+    f32.const -0x1.8e7a14p+124
+    i64.trunc_sat_f32_u
+    i64.atomic.rmw8.xor_u $8 offset=1335105418
+    f64.reinterpret_i64
+    f64x2.replace_lane 1
+    drop
+    unreachable
+    )
+  
+  (data $10 (i32.const -1191626920)
+    "\19")
+  
+  (data $11 (memory $8) (i32.const -523051357)
+    "\b0\c3\04E1\d5\8d\98\04\d8RN\ec\a4d}6\ba\be\eb\92\f3\98q\8b\e10\ab< \aa#\88<\81\b3;\0d\9d\a3_\1d\9b\1e\9b\be\e7A1>m\e9ih\e7\ef\e0\ea"))

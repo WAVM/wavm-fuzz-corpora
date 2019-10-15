@@ -1,0 +1,1 @@
+(func br 0 i64.clz i64.clz br 0)

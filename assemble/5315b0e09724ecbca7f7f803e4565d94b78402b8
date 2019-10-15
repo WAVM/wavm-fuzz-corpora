@@ -1,0 +1,12 @@
+(module(func (i64.const 4 
+  (i64.atomic.store32   e)
+  (i64.atomic.store32  )
+ (i64.atomic.store32 (i64.atomic.store32))(i64.atomic.store32 ()) (i64.atomic.store32  (i64.atomic.store32 ))) (i64.atomic.store32 ) (i64.atomic.store32 (i64.atomic.store32(i64.atomic.store32)
+   (i64.atomic.store32  (i64.atomic.store32
+ (i64.atomic.store32   e)
+  (i64.atomic.store32  )
+ (i64.atomic.store32 (i64.atomic.store32))(i64.atomic.store32 ()) (i64.atomic.store32  (i64.atomic.store32 )))  (i64.atomic.store32 ) (i64.atomic.store32  31  (i64.atomic.store32(i64.atomic.store32)
+   (i64.atomic.store32  (i64.atomic.store32
+(i64.atomic.store32  .)e) (i64.atomic.store32 )
+ (i64.atomic.store32)a0)))(i64.atomic.store32  .)e) (i64.atomic.store32 )
+ (i64.atomic.store32)a0)))

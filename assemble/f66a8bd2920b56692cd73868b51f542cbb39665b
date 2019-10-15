@@ -1,0 +1,1 @@
+(import "" ""(global i64))(global i64(global.get 0))

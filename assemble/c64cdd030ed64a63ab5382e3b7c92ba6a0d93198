@@ -1,0 +1,3 @@
+(func(memory.init 2 0) (memory.init 4 0)(memory.init 3 0)(memory.init 9 0)(memory.init 2 0)(y)(memory.init 4 0)
+(memory.init 4 1) )(func(memory.init 2 0)(memory.init 4 0)(memory.init 3 0)(memory.init 3 0)(memory.init 4 0)(memory.init 4 0)(memory.init  4 40)(memory.init 4 0)
+(memory.init 4 1))

@@ -1,0 +1,1 @@
+(func(i16x8.extract_lane_u 7)(i16x8.extract_lane_u 7)(i16x8.extract_lane_u 7)(i16x8.extract_lane_u 7)(i16x8.extract_lane_u 1)(i16x8.extract_lane_u 5(i16x8.extract_lane_u  8(i16x8.extract_lane_u 7))))

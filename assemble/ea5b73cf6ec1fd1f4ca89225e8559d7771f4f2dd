@@ -1,0 +1,4 @@
+(func(i16x8.mul)(i16x8.mul(i16x8.mul(i16x8.mul)))
+(i16x8.mul)(i16x8.mul(i16x8.mul(i16x8.mul)+)(i16x8.mul)(i16x8.mul(i16x8.mul(i16x8.mul)(i16x8.mul(i16x8.mul(i16x8.mul(i16x8.mul)))
+(i16x8.mul)(i16x8.mul(i16x8.mul(i16x8.mul)+)(i16x8.mul)(i16x8.mul(i16x8.mul(i16x8.mul)))(i16x8.mul)(i16x8.mul(i16x8.mul(i16x8.mul)))))))
+(i16x8.mul)(i16x8.mul(i16x8.mul(i16x8.mul)))))

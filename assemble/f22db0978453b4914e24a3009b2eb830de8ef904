@@ -1,0 +1,112 @@
+(module
+  (type $0 (func (param f64 v128 externref) (result v128 f64)))
+  (type $1 (func (result i32 i64)))
+  (type $2 (func (param externref) (result f64 externref)))
+  (type $3 (func (param funcref) (result i32)))
+  (type $4 (func (param funcref) (result i64 externref f32)))
+  (import "env" "memory" (memory $7 19 44329 shared))
+  (import "env" "table" (table $5 84 4294967295 shared externref))
+  (import "env" "table" (table $6 90 4294967295 shared externref))
+  (import "env" "global0" (global $8 i32))
+  (import "env" "global1" (global $9 f32))
+  (import "env" "func0" (func $14 (param funcref) (result i32)))
+  (elem $10 declare
+    $16 $14 $15 $15 $14 $16 $15 $15
+    $15 $17 $17 $17 $14 $16 $15 $16
+    $15 $14 $16 $15 $16 $17 $16 $14
+    $14 $15 $17 $14 $15 $16 $17 $14
+    $14 $14 $16 $14 $16 $15 $16 $15
+    $16)
+  (elem $11 declare funcref
+    (ref.null func) (ref.func $17) (ref.func $16) (ref.null func)
+    (ref.null func) (ref.func $17) (ref.func $17) (ref.func $15)
+    (ref.func $15) (ref.func $15) (ref.null func) (ref.null func)
+    (ref.func $17) (ref.func $16) (ref.func $16) (ref.func $15)
+    (ref.func $16) (ref.null func) (ref.func $17) (ref.func $16)
+    (ref.func $16) (ref.func $17) (ref.null func) (ref.func $14)
+    (ref.func $17) (ref.func $15) (ref.func $16) (ref.func $16)
+    (ref.null func) (ref.null func) (ref.func $17) (ref.func $14)
+    (ref.null func) (ref.func $15) (ref.func $17) (ref.func $16)
+    (ref.null func) (ref.func $15) (ref.null func) (ref.func $17)
+    (ref.null func) (ref.func $16) (ref.null func) (ref.func $15)
+    (ref.func $14) (ref.func $17) (ref.func $16) (ref.func $16)
+    (ref.func $16) (ref.func $14) (ref.null func) (ref.null func)
+    (ref.func $14) (ref.func $14) (ref.func $17) (ref.func $17)
+    (ref.func $15) (ref.func $14) (ref.func $17) (ref.func $14)
+    (ref.func $17) (ref.func $16) (ref.func $16) (ref.null func)
+    (ref.func $17) (ref.null func) (ref.func $16) (ref.func $14)
+    (ref.func $15) (ref.func $14) (ref.func $15) (ref.func $14)
+    (ref.func $15) (ref.func $17) (ref.null func) (ref.func $16)
+    (ref.null func) (ref.func $14))
+  
+  (func $15 (type $0)
+    (param $0 f64)
+    (param $1 v128)
+    (param $2 externref)
+    (result v128 f64)
+    (local $3 i32)
+    local.get $3
+    elem.drop $11
+    i32x4.load16x4_u offset=1787067596
+    i64.const 891870288971458316
+    i32.const -1432955908
+    drop
+    f64.convert_i64_u
+    table.size $5
+    i64.load offset=3038595001 align=2
+    data.drop $13
+    local.get $1
+    i32.const -2056600241
+    unreachable
+    )
+  
+  (func $16 (type $1)
+    (result i32 i64)
+    global.get $8
+    call $16
+    memory.atomic.wait32 offset=3850096945
+    i64x2.load32x2_u offset=3734781989
+    i32x4.extract_lane 3
+    drop
+    v128.const i32x4 0x3ff8d065 0x075a2cdf 0x09eb60e2 0xe75e2e7e
+    call $16
+    i64.atomic.rmw.xchg offset=800844838
+    i64.extend16_s
+    global.get $8
+    f32.load offset=2092501460 align=2
+    i64.trunc_sat_f32_s
+    i64.gt_s
+    f32.const 0x1.5342a0p-78
+    drop
+    i8x16.shr_s
+    drop
+    call $16
+    i64.atomic.rmw.xchg offset=530038621
+    unreachable
+    )
+  
+  (func $17 (type $2)
+    (param $0 externref)
+    (result f64 externref)
+    i32.const 242743760
+    ref.null func
+    loop $loop (param funcref) (result i64 externref f32)
+      br $loop
+    end ;; $loop
+    f32.sqrt
+    call $16
+    i64.atomic.rmw16.or_u offset=1935790732
+    ref.null func
+    ref.is_null
+    i32.popcnt
+    i64.extend_i32_s
+    i64.add
+    i64.clz
+    unreachable
+    )
+  
+  (data $12 
+    "y*9+\c5\8dM\83\04\ab\b8)\f3r\df\bcg\f8\87\1a\n\dbt9P\fd\99h\c7v3>=\95\9d?\8b\07\e2\8bN6")
+  
+  (data $13 
+    "u@>GY9(&\f2W\ed;\9dLF"))

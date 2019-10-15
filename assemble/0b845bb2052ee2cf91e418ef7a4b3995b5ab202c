@@ -1,0 +1,41 @@
+(module
+  (type $0 (func (result f32 v128)))
+  (type $1 (func (param v128) (result v128)))
+  (import "env" "memory" (memory $5 13 52752 shared))
+  (import "env" "memory" (memory $6 51 26381 shared))
+  (import "env" "table" (table $2 49 4294967295 shared externref))
+  (import "env" "table" (table $3 13 4294967295 externref))
+  (import "env" "func0" (func $11 (param v128) (result v128)))
+  (memory $7  37 7928)
+  (table $4  34 4294967295 funcref)
+  (elem $8 declare global)
+  
+  (func $12 (type $0)
+    (result f32 v128)
+    (local $0 externref)
+    i64.const 5890575455152362780
+    f64.convert_i64_s
+    i64.trunc_f64_s
+    i64.eqz
+    f32.load $6 offset=550560729 align=1
+    i32.trunc_sat_f32_u
+    i32.load16_u offset=1275665693
+    atomic.fence
+    i64.load8_s $6 offset=3579451095
+    i32.const -733837523
+    v64x2.load_splat $6 offset=2403275092 align=1
+    i64x2.extract_lane 0
+    i64.xor
+    f32.convert_i64_u
+    f32.trunc
+    i64.trunc_f32_s
+    ref.null func
+    drop
+    unreachable
+    )
+  
+  (data $9 
+    "\c1J\0f\e88\a1")
+  
+  (data $10 
+    "J@\c01\fc\c4\0c\c4\fd\01\1a\e8\d4A\bc\0d\01\eb\b9\87\91\82*\17\87\c2\92^\c3\ea\92\"["))

@@ -1,0 +1,115 @@
+(module
+  (type $0 (func (param funcref i64 i32)))
+  (type $1 (func (param i64 f64 funcref f64) (result i64 f64)))
+  (type $2 (func (param i32 f32) (result f32 i64)))
+  (type $3 (func (param i32)))
+  (type $4 (func (result i32 i32 v128)))
+  (import "env" "global0" (global $7 (mut i64)))
+  (import "env" "func0" (func $18 (param funcref i64 i32)))
+  (memory $6  17 23423 shared)
+  (table $5  20 4294967295 shared externref)
+  (global $8  (mut i32) (i32.const -1529448485))
+  (global $9  i32 (i32.const 437037625))
+  (global $10  (mut v128) (v128.const i32x4 0xa5bfeeb3 0xa935dd18 0x153bfc67 0x41ca03d7))
+  (global $11  f64 (f64.const 0x1.9b2ca6645be48p+62))
+  (global $12  v128 (v128.const i32x4 0xb5e18123 0x53300c3e 0x2d385567 0x64617650))
+  (global $13  f32 (f32.const 0x1.895d0ap+29))
+  (global $14  i32 (i32.const 865653919))
+  (global $15  (mut v128) (v128.const i32x4 0x21f8b3ff 0xd2ccb976 0xbcec79dc 0x08576a2e))
+  (global $16  (mut i32) (i32.const -1268960059))
+  
+  (func $19 (type $1)
+    (param $0 i64)
+    (param $1 f64)
+    (param $2 funcref)
+    (param $3 f64)
+    (result i64 f64)
+    (local $4 externref)
+    (local $5 f64)
+    (local $6 f64)
+    (local $7 v128)
+    global.get $13
+    local.get $4
+    f32.const 0x1.1ab7b6p-21
+    local.get $6
+    f32.const -0x1.a70d22p+75
+    local.get $7
+    i16x8.extract_lane_s 4
+    i32.load8_u offset=1455136505
+    ref.null func
+    drop
+    local.get $4
+    ref.null extern
+    drop
+    local.set $4
+    v64x2.load_interleaved_2 offset=296205109 align=2
+    ref.null func
+    drop
+    f32x4.sub
+    f64x2.sqrt
+    global.get $10
+    v128.and
+    global.get $8
+    i64x2.shl
+    local.get $5
+    local.set $5
+    drop
+    unreachable
+    )
+  
+  (func $20 (type $2)
+    (param $0 i32)
+    (param $1 f32)
+    (result f32 i64)
+    (local $2 funcref)
+    (local $3 i32)
+    (local $4 i64)
+    (local $5 f64)
+    local.get $1
+    data.drop $17
+    atomic.fence
+    data.drop $17
+    memory.size
+    v8x16.load_interleaved_3 offset=2369858849 align=2
+    i16x8.widen_low_i8x16_s
+    local.get $1
+    block $block (result i32 i32 v128)
+      global.get $11
+      global.get $10
+      i32x4.widen_low_i16x8_u
+      i16x8.widen_low_i8x16_s
+      i64x2.extract_lane 0
+      i64.eqz
+      table.get $5
+      unreachable
+    end ;; $block
+    drop
+    i32.atomic.store offset=4253218678
+    local.set $1
+    i16x8.ge_s
+    i16x8.sub_saturate_u
+    global.set $10
+    global.get $9
+    global.set $16
+    global.get $14
+    local.set $0
+    f32.trunc
+    i32.trunc_sat_f32_s
+    global.set $16
+    f32.const -0x1.dfb228p-116
+    global.get $9
+    ref.null extern
+    unreachable
+    )
+  
+  (func $21 (type $3)
+    (param $0 i32)
+    (local $1 funcref)
+    (local $2 f64)
+    global.get $8
+    f32.convert_i32_s
+    return
+    )
+  
+  (data $17 
+    "\82\19w{\n\0e\05\13\n\e4\e2\beP\11\9c\05v\8b\03m\1fT\f5\bcO\8d4\9f\ab \06\90\d5x\08\06\86\e1t\1d\f5\9a\a3p\e5\1dV\c9\11'\b3'\fbu\ac\07T\c1\0d"))

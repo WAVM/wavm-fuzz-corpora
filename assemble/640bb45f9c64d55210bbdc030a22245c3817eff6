@@ -1,0 +1,1 @@
+(func(if i32())br_table 1 0)(func(if ())br_table 0 0)(func(if i³2()i())br_table 1 0)

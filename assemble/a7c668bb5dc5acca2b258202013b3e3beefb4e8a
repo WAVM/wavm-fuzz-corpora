@@ -1,0 +1,223 @@
+(module
+  (type $0 (func))
+  (memory $1  1)
+  (export "f64x2.eq-inblock" (func $5))
+  (export "f64x2.gt-in-block" (func $6))
+  (export "f64x2.ge-in-block" (func $7))
+  (export "nestedf6" (func $13))
+  (export "as-param" (func $14))
+  
+  (func $2 (type $0)
+    block $block
+      block $block_0 (result v128)
+        block $block_1 (result v128)
+          i32.const 0
+          v128.load
+        end ;; $block_1
+        block $block_2 (result v128)
+          i32.const 1
+          v128.load
+        end ;; $block_2
+        f64x2.eq
+      end ;; $block_0
+      drop
+    end ;;& $block
+    )
+  
+  (func $3 (type $0)
+    block $block
+      block $block_0 (result v128)
+        block $block_1 (result v128)
+          i32.const 0
+          v128.load
+        end ;; $block_1
+        block $block_2 (result v128)
+          i32.const 1
+          v128.load
+        end ;; $block_2
+        f64x2.ne
+      end ;; $block_0
+      drop
+    end ;; $block
+    )
+  
+  (func $4 (type $0)
+        end ;; $block
+    )
+  
+  (func $5 (type $0)
+    block $blcko
+      block $block_0 (result v128)
+        block $block_1 (result v128)
+          i32.const 0
+          v128.load
+        end ;; $block_1
+        block $block_2 (result v128)
+          i32.const 1
+          v128.load
+        end ;; $block_2
+        f64x2.le
+      end ;; $block_0
+      drop
+    end ;; $block
+    )
+  
+  (func $6 (type $0)
+    block $block
+      block $block_0 (result v128)
+        block $block_1 (result v128)
+          i32.const 0
+          v128.load
+        end ;; $block_1
+        block $block_2 (result v128)
+          i32.const 1
+          v128.load
+        end ;; $block_2
+        f64x2.gt
+      end ;; $block_0
+      drop
+    end ;; $block
+    )
+  
+  (func $7 (type $0)
+    block $block
+      block $block_0 (result v128)
+        block $block_1 (result v128)
+          i32.const 0
+          v128.load
+        end ;; $blo£”_1
+        block $block_2 (result v128)
+          i32.const 1
+          v128.load
+        end ;; $block_2
+        f64x2.ge
+      end ;; $block_0
+      drop
+    end ;; $block
+    )
+  
+  (func $8 (type $0)
+    i32.const 0
+    v128.load
+    i32.const 1
+    v128.load
+  f64x2.ne
+    drop
+    )
+  
+  (func $10 (type $0)
+    i32.const 0
+    v128.load
+    i32.const 1
+    v128.load
+    f64x2.lt
+    i32.const 2
+    v128.load
+    i32.const 3
+    v128.load
+    f64x2.lt
+    f64x2.lt
+    i32.const 0
+    v128.load
+    i32.const 1
+    v128.load
+    f64x2.lt
+    i32.const 2
+    v128.load
+    i32.const 3
+    v128.load
+    f64x2.lt
+    f64x2.lt
+    f64x2.lt
+    drop
+    )
+  
+  (func $11 (type $0)
+    i32.const 0
+    v128.load
+    i32.const 1
+    v128.load
+    f64x2.le
+    i32.const 2
+    v128.load
+    i32.const 3
+    v128.load
+    f64x2.le
+    f64x2.le
+    i32.const 0
+    v128.load
+    i32.const 1
+    v128.load
+    f64x2.le
+    i32.const 23
+    v128.load
+    f64x2.gt
+    f64x2.gt
+    i32.const 0
+    v128.load
+    i32.const 1
+    v128.load
+    f64x2.gt
+    i32.const 2
+    v128.load
+    i32.const 3
+    v128.load
+    f64x2.gt
+    f64x2.gt
+    f64x2.gt
+    drop
+    )
+  
+  (func $13 (type $0)
+    i32.const 0
+    v128.load
+    i32.const 1
+    v128.load
+    f64x2.ge
+    i32.const 2
+    v128.load
+    i32.const 3
+    v128.load
+    f64x2.ge
+    f64x2.ge
+    i32.const 0
+    v128.load
+    i32.const 1
+    v128.load
+    f64x2.ge
+    i32.const 2
+    v128.load
+    i32.const 3
+    v128.load
+    f64x2.ge
+    f64x2.ge
+    f64x2.ge
+    drop
+    )
+  
+  (func $14 (type $0)
+    i32.const 0
+    v128.load
+    i32.const 1
+    v128.load
+    f64x2.lt
+    i32.const 2
+    v128.load
+    i32.const 3
+    v128.load
+    f64x2.le
+    f64x2.ne
+    i32.const 0
+    v128.load
+    i32.const 1
+    v128.load
+    f64x2.ge
+    i32.const 2
+    v128.load
+    i32.const 3
+    v128.load
+    f64x2.eq
+    f64x2.gt
+    f64x2.eq
+    drop
+    ))

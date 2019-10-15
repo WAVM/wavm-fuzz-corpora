@@ -1,0 +1,4 @@
+(custom_section ""(after memory))
+ (memory $1 0) (custom_section ""
+ (after memory)) (custom_section ""   (after memory))
+ (custom_section "" (after memory))  

@@ -1,0 +1,1 @@
+(func(iw()()))(memory 1)(func()c.l)(func()i32.atomic.load16_u()i32.atomic.load16_u()i32.atomic.load16_u()i32.atomic.load16_u()i32.atomic.load16_u()i32.atomic.load16_u()i32.atomic.load16_u()i32.atomic.load16_u)

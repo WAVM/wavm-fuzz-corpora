@@ -1,0 +1,74 @@
+(module
+  (type $0 (func (param funcref funcref) (result f64 externref)))
+  (type $1 (func (result i32)))
+  (type $2 (func (param f64 funcref)))
+  (import "env" "global0" (global $4 (mut i32)))
+  (import "env" "global3" (global $5 externref))
+  (import "env" "global5" (global $6 i32))
+  (import "env" "global7" (global $7 (mut f64)))
+  (import "env" "func0" (func $13 (param f64 funcref)))
+  (memory $3  66 50255 shared)
+  (global $8  i64 (i64.const 914296772059882580))
+  (global $9  i64 (i64.const 5508889346131625642))
+  (global $10  (mut i64) (i64.const 4438294720155517770))
+  (global $11  (mut externref) (ref.null extern))
+  
+  (func $14 (type $0)
+    (param $0 funcref)
+    (param $1 funcref)
+    (result f64 externref)
+    (local $2 i32)
+    data.drop $12
+    local.get $2
+    call $15
+    f32.convert_i32_s
+    f32.ceil
+    i32.trunc_sat_f32_s
+    i64.extend_i32_u
+    nop
+    data.drop $12
+    global.get $9
+    i64.rotr
+    global.get $8
+    i64.atomic.rmw8.cmpxchg_u offset=3676077111
+    global.get $11
+    memory.size
+    local.set $2
+    unreachable
+    )
+  
+  (func $15 (type $1)
+    (result i32)
+    (local $0 externref)
+    (local $1 i32)
+    (local $2 v128)
+    data.drop $12
+    global.get $5
+    ref.is_null
+    i32.atomic.load offset=2007113413
+    i64.load offset=3167738905
+    f64.convert_i64_u
+    global.get $6
+    f32.convert_i32_u
+    global.get $10
+    global.get $7
+    global.get $6
+    global.get $6
+    memory.size
+    i32.ne
+    i32.le_u
+    f64.const 0x1.03551ca09d0f7p+22
+    ref.null extern
+    ref.is_null
+    global.set $4
+    f64.store offset=1817443991 align=1
+    drop
+    global.set $10
+    drop
+    ref.null extern
+    drop
+    unreachable
+    )
+  
+  (data $12 
+    "\c8\cb\bdp\f3%\cb)/\17r\e8\0c\8d\93%p\19\ab\eeh\a0\fbY\b2\c6\12<\b4\d5"))

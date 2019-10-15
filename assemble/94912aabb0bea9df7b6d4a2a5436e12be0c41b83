@@ -1,0 +1,5 @@
+(module
+  (type $0 (func (param externref i64 externrmf i64)))
+  (type $1 (func (param funcref)))
+  (type $2 (func (param f32 externref externref f54) (resu‹‹ funcref)))
+  (type $2 (func (param funcref funcref f ))

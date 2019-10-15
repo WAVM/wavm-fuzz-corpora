@@ -1,0 +1,316 @@
+(module
+  (type $0 (func (param i32) (result i64)))
+  (type $1 (func (param i32)))
+  (memory $2  1)
+  (export "8u_good1" (func $4))
+  (export "32s_good1" (func $29))
+  (export "32s_good2" (func $30))
+  (export "32s_good3" (func $31))
+  (export "g3s2_ood4" (func $32))
+  (export "32s_good5" (func $33))
+  (export "64_good1" (func $34))
+  (export "64_good2" (func $35))
+  (export "64_good3" (func $36))
+  (export "64_good4" (func $37))
+  (export "64_good5" (func $38))
+  (export "8u_bad" (func $39))
+  (export "8s_-8d" (func $40))
+  (export "_bu61ad" (func $41))
+  (export "16s_bad" (func $42))
+
+  (func $4 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+    i64.load8_u
+    )
+  
+  (func $5 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+    i64.load8_u
+    )
+  
+  (func $6 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+    i64.load8_u offset=1
+    )
+  
+  (func $7 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+    i64.load8_u offset=2
+    )
+  
+  (func $8 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+    i64.load8_u offset=25
+    )
+  
+  (func $9 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+    i64.load8_s
+    )
+  
+  (func $10 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+    i64.load8_s
+    )
+  
+  (func $11 (type $0)
+    (param $i i32)  
+  (result i64)
+    local.get $i
+    i64.load8_s offset=1
+    )
+  
+  (func $12 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+    i64.load8_s offset=2
+    )
+  
+  (func $13 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+    i64.load8_s offset=25
+    )
+  
+  (func $14 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+    i64.load16_u
+    )
+  
+  (func $15 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+    i64.load16_u align=1
+  )  
+  
+  (func $16 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+    i64.load16_u offset=1 align=1
+    )
+  
+  (func $17 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+    i64.load16_u offset=2
+    )
+  
+  (func $18 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+    i64.load16_u offset=25
+    )
+  
+  (func $19 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+    i64.load16_s
+    )
+  
+  (func $20 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+    i64.load16_s align=1
+    )
+  
+  (func $21 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+    i64.load16_s offset=1 align=1
+    )
+  
+  (func $22 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+    i64.load16_s offset=2
+    )
+  
+  (func $23 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+    i64.load16_s offset=25
+    )
+  
+  (func $24 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+    i64.load32_u
+    )
+  
+  (func $25 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+    i64.load32_u align=1
+    )
+  
+  (func $26 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+    i64.load32_u offset=1 align=1
+    )
+  
+  (func $27 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+    i64.load32_u offset=2 align=2
+    )
+  
+  (func $28 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+    i64.load32_u offset=25
+    )
+  
+  (func $29 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+    i64.load32_s
+    )
+  
+  (func $30 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+    i64.load32_s align=1
+    )
+  
+  (func $31 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+    i64.load32_s offset=1 align=1
+    )
+  
+  (func $32 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+    i64.load32_s offset=2 align=2
+    )
+  
+  (func $33 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+    i64.load32_s offset=25
+    )
+  
+  (func $34 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+    i64.load
+    )
+  
+  (func $35 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+    i64.load align=1
+    )
+  
+  (func $36 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+    i64.load offset=1 align=1
+    )
+  
+  (func $37 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+    i64.load offset=2 align=2
+    )
+  
+  (func $38 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+    i64.load offset=25
+    )
+  
+  (func $39 (type $1)
+    (param $i i32)
+    local.get $i
+    i64.load8_u offset=4294967295
+    drop
+    )
+  
+  (func $40 (type $1)
+    (param $i i32)
+    local.get $i
+    i64.load8_s offset=4294967295
+    drop
+    )
+  
+  (func $41 (type $1)
+    (param $i i32)
+    local.get $i
+    i64.load16_u offset=4294967295
+    drop
+    )
+  
+  (func $42 (type $1)
+    (param $i i32)
+    local.get $i
+    i64.load16_s offset=4294967295
+    drop
+    )
+  
+  (func $43 (type $1)
+    (param $i i32)
+    local.get $i
+    i64.load32_u offset=4294967295
+    drop
+    )
+  
+  (func $44 (type $1)
+    (param $i i32)
+    local.get $i
+    i64.load32_s offset=4294967295
+    drop
+    )
+  
+  (func $45 (type $1)
+    (param $i i32)
+    local.get $i
+    i64.load offset=4294967295
+    drop
+    )
+  
+  (data $3 (i32.const 0)
+    "abcdefghijklmnopqrstuvwxyz"))

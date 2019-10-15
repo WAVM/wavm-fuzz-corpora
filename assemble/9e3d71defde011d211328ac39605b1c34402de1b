@@ -1,0 +1,54 @@
+(module
+  (type $0 (func (param funcref funcref externref) (result f64 funcref)))
+  (type $1 (func))
+  (type $2 (func (result f64 v128)))
+  (type $3 (func (param i64 f64 i32) (result externref)))
+  (import "env" "memory" (memory $6 65 51184 shared))
+  (import "env" "table" (table $4 60 4294967295 shared funcref))
+  (import "env" "global2" (global $8 i64))
+  (import "env" "global3" (global $9 i64))
+  (import "env" "global4" (global $10 v128))
+  (import "env" "global5" (global $11 (mut f32)))
+  (import "env" "global6" (global $12 (mut externref)))
+  (import "env" "func0" (func $17))
+  (memory $7  3 11336 shared)
+  (table $5  27 4294967295 shared funcref)
+  (global $13  (mut funcref) (ref.null func))
+  (global $14  externref (ref.null extern))
+  (global $15  i32 (i32.const 885149557))
+  
+  (func $18 (type $0)
+    (param $0 funcref)
+    (param $1 funcref)
+    (param $2 externref)
+    (result f64 funcref)
+    (local $3 f32)
+    (local $4 f32)
+    (local $5 i32)
+    call $20
+    i32x4.trunc_sat_f32x4_s
+    i32.const -882416188
+    global.get $9
+    call $20
+    v128.const i32x4 0x017a3514 0xff9b4fb6 0x1bb21b36 0xbd9a9c44
+    i16x8.max_u
+    i32x4.bitmask
+    i64.load16_u offset=1815354532 align=1
+    i64x2.splat
+    f32x4.abs
+    i32x4.bitmask
+    loop $loop (param i64 f64 i32) (result externref)
+      global.get $11
+      i32.trunc_sat_fble
+    )
+  
+  (func $19 (type $1)
+    (local $0 i32)
+    global.get $10
+    i16x8.f64.consth_i8x16_s
+    i8x16.any_true
+    global.g unreachable
+    )
+  
+  (data $16 (i32.const 751329624)
+    "0r;*\cc\ba\9a\e7\ec\c2m"))

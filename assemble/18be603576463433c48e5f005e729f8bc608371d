@@ -1,0 +1,26 @@
+(module
+  (type $0 (func (param i64 f64 i64 f64) (result v128 funcref)))
+  (type $1 (func (param f32 funcref f64 v128)))
+  (type $2 (func (param v128 i32)))
+  (import "env" "memory" (memory $3 83 46412))
+  (import "env" "func0" (func $7 (param i64 f64 i64 f64) (result v128 funcref)))
+  (import "env" "func1" (func $8 (param f32 funcref f64 v128)))
+  (memory $4  10 40787 shared)
+  (memory $5  33 7823 shared)
+  
+  (func $9 (type $2)
+    (param $0 v128)
+    (param $1 i32)
+    (local $2 f32)
+    f64.const -0x1.88385da2e3c07p+932
+    f64x2.splat
+    i8x16.abs
+    f64x2.extract_lane 0
+    i64.trunc_f64_u
+    i64.extend16_s
+    i64.extend8_s
+    br 0
+    )
+  
+  (data $6 (memory $5) (i32.const 1035635931)
+    "\7fW\e0z\aa\c6Q\b1\1b\8c\b2P"))

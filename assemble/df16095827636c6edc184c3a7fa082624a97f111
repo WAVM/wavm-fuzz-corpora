@@ -1,0 +1,2 @@
+(func f64.const 0x1p+0
+f64.const 0X0p+7)

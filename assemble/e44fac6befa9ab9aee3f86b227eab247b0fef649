@@ -1,0 +1,3 @@
+(func $t  memory.atomic.wait64
+memory.atomic.wait64 memory.atomic.wait64
+))

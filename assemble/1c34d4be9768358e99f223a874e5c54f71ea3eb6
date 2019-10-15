@@ -1,0 +1,44 @@
+(module
+  (type $0 (func (param funcref f32 externref v128) (result f64)))
+  (type $1 (func (param v128 f32 funcref)))
+  (import "env" "memory" (memory $3 1 27514 shared))
+  (import "env" "func0" (func $5 (param v128 f32 funcref)))
+  (table $2  10 4294967295 shared funcref)
+  
+  (func $6 (type $0)
+    (param $0 funcref)
+    (param $1 f32)
+    (param $2 externref)
+    (param $3 v128)
+    (result f64)
+    (local $4 i32)
+    local.get $1
+    i64.trunc_sat_f32_u
+    memory.size
+    i32.load offset=793350593 align=2
+    i32.load16_s offset=952568976 align=1
+    v32x4.load_splat offset=2096360922 align=1
+    local.set $3
+    local.get $1
+    i32.trunc_f32_s
+    i64.extend_i32_u
+    i64.ge_s
+    i64.load16_s offset=2863387536
+    f32.convert_i64_u
+    v128.const i32x4 0x6100e3a4 0x8b21230e 0x66cbd95c 0x16fbb0ff
+    f64x2.extract_lane 0
+    drop
+    drop
+    ref.null func
+    drop
+    table.size $2
+    ref.null func
+    table.set $2
+    i64.const 780523654648921985
+    ref.null func
+    unreachable
+    )
+  
+  (data $4 
+    "V\94+\e3\d9EH\8f\03>\0dr\de\d5U\cc\bc+.\0bp.\85\06\f7!\a7\e6qY\f4\c5S\82\10\95\"n\bb\13\b6\82r\"\0c\ab\0c\bdUo\14IIw\b27k\1a\cf;\9f\9f\ef\d9"
+    "Xh,\98r\f1\a1K\97\c7\bd\c1\"!\ef\cc\a7\ad\d2\1aa\9a\b9"))

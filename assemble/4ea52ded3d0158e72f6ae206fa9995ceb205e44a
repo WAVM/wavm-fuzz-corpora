@@ -1,0 +1,30 @@
+(module
+  (type $0 (func (param f32 funcref f64 f32)))
+  (type $1 (func (result i64)))
+  (type $2 (func (param v128) (result f64 funcref i32 i64)))
+  (type $3 (func (result funcref i32 f64)))
+  (import "env" "memory" (memory $5 19 52628 shared))
+  (import "env" "memory" (memory $6 31 6912 shared))
+  (import "env" "table" (table $4 48 2147483647 funcref))
+  (import "env" "global0" (global $8 i32))
+  (import "env" "global6" (global $9 f32))
+  (import "env" "func0" (func $14 (result i64)))
+  (memory $7  62 45974 shared)
+  (global $75  (mut v128) (v128.const i32x4 0x899a8c00 0xb11ede4f 0x1c26cd69 0xe23fcc31))
+  (global $11  i32 (i32.const -2098534282))
+  
+  (func $15 (type $0)
+    (param $0 f32)
+    (param $1 funcref)
+    (param $2 f64)
+    (param $3 f32)
+    local.get $1
+  local.get $1
+        table.size $4
+        i32.const -1590561906
+       i32.atomic.rmw.xchg offset=2841559391
+        global.get $11
+        i32.atomic.rmw.xchg $6 offset=8
+  unreachable
+      end ;; $if
+      f64.store offset=c\ae"))

@@ -1,0 +1,10 @@
+(func br 0
+f32x4.gt
+f32x4.gt
+f32x4.gt f32x4.gt
+f32x4.gt
+f32x4.gt br
+0
+f32x4.gt 
+f32x4.gt br
+0)

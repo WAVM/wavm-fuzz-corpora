@@ -1,0 +1,33 @@
+(module
+  (type $0 (func (param i64) (result i64 v128)))
+  (import "env" "memory" (memory $2 45 35495 shared))
+  (import "env" "table" (table $1 34 4294967295 shared externref))
+  (memory $3  14 12670 shared)
+  (memory $4  88 52207 shared)
+  
+  (func $5 (type $0)
+    (param $0 i64)
+    (result i64 v128)
+    (local $1 funcref)
+    ref.null func
+    local.get $1
+    i32.const -1566098526
+    i16x8.load8x8_u offset=2820718219
+    i32x4.trunc_sat_f32x4_s
+    f64x2.sqrt
+    i16x8.all_true
+    i64.load32_u offset=3325545809
+    f64.convert_i64_u
+    i64.reinterpret_f64
+    i32.const -1154866697
+    i64.load32_s offset=31660104 align=1
+    i64.eq
+    i32.atomic.load $4 offset=3817432056
+    v64x2.load_interleaved_2 $4 offset=2101458042 align=2
+    i8x16.sub
+    drop
+    local.set $1
+    ref.is_null
+    ref.null func
+    unreachable
+    ))

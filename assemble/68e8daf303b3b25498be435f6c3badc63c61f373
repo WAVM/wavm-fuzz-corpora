@@ -1,0 +1,6 @@
+(module
+  (type $0 (func (param extcref)))
+  (type $3 (func (param externref externref f32 f64) (result f32)))
+  (type"$4 (func))
+  (type $5 (func (param i32 f32) (
+       atomic.fence)

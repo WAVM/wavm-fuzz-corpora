@@ -1,0 +1,79 @@
+(module
+  (type $0 (func (param f32 i64) (result externref)))
+  (type $1 (func (param v128 f64 funcref f32) (result externref)))
+  (type $2 (func (param f64)))
+  (type $3 (func (param f32)))
+  (type $4 (func (result f64 f32 externref)))
+  (import "env" "memory" (memory $5 20 9845))
+  (import "env" "global0" (global $7 funcref))
+  (import "env" "global1" (global $8 i64))
+  (import "env" "global2" (global $9 (mut f64)))
+  (import "env" "global3" (global $10 funcref))
+  (import "env" "func0" (func $13 (param f32 i64) (result externref)))
+  (memory $6  86 57761 shared)
+  (elem $11 declare
+    $14 $13 $14 $14 $15 $15 $15 $14
+    $14 $13 $13 $14 $13 $15 $14 $13
+    $15 $15 $14 $15)
+  
+  (func $14 (type $1)
+    (param $0 v128)
+    (param $1 f64)
+    (param $2 funcref)
+    (param $3 f32)
+    (result externref)
+    (local $4 f32)
+    (local $5 i32)
+    (local $6 i64)
+    (local $7 externref)
+    memory.size $6
+    i64.load8_u $6 offset=2008008381
+    f64.const 0x1.d923a07772de5p-510
+    f32.demote_f64
+    data.drop $12
+    loop $loop (param f32)
+      global.get $10
+      nop
+      local.get $3
+      f32.nearest
+      data.drop $12
+      local.tee $4
+      nop
+      f64.promote_f32
+      f32.demote_f64
+      br $loop
+    end ;; $loop
+    drop
+    elem.drop $11
+    global.get $10
+    ref.null extern
+    drop
+    drop
+    unreachable
+    )
+  
+  (func $15 (type $2)
+    (param $0 f64)
+    (local $1 i32)
+    (local $2 f64)
+    (local $3 i64)
+    (local $4 f32)
+    i64.const 7094175857837178040
+    i64x2.splat
+    i32x4.trunc_sat_f32x4_u
+    f64x2.neg
+    block $block (result f64 f32 externref)
+      local.get $2
+      f32.demote_f64
+      f32.nearest
+      data.drop $12
+      local.get $2
+      i32.trunc_f64_s
+      br_if 1
+      unreachable
+    end ;; $block
+    return
+    )
+  
+  (data $12 
+    "\81W\c4A\c6\09\ce\cf3]\017:\9c\e9\"\bc\d0r\93\a4\a5A[\d6\ca\e2"))

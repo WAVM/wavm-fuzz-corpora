@@ -1,0 +1,5 @@
+(func(i32)
+f32.const -0x0.05p-127
+ f32.const 0x1.cp-19727 f32.const 0x0.5000p-127
+ f32.const 0x1p-127
+ f32.const 0x1.fp-127 )

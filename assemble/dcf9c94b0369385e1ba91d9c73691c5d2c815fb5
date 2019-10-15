@@ -1,0 +1,2 @@
+(memory 0 31 shared)(func())(func()i64.atomic.rmw.sub i64.atomic.rmw.sub
+)(func()i64.atomic.rmw.sub )(func()i64.atomic.rmw.sub i64.atomic.rmw.sub i64.atomic.rmw.sub ()i64.atomic.rmw.sub i64.atomic.rmw.sub )

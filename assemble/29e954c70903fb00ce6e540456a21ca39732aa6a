@@ -1,0 +1,29 @@
+(module
+  (type $0 (func (param f32 externref)))
+  (type $1 (func (param f64 f32) (result f64)))
+  (type $2 (func (param f64)))
+  (type $3 (func (param funcref) (result i64 f64)))
+  (type $4 (func (result v128 i64 funcref)))
+  (type $5 (func (result f64 f32 f64)))
+  (import "env" "table" (table $6 66 4294967295 externref))
+  (import "env" "table" (table $7 12 4294967295 shared funcref))
+  (import "env" "global0" (global $9 i32))
+  (import "env" "global1" (global $10 (mut funcref)))
+  (import "env" "func0" (func $12 (param f64 f32) (result f64)))
+  (table $8  77 4294967295 shared externref)
+  
+  (func $13 (type $0)
+   5017690
+    ref.null func
+    local.tee $0
+    table.size $8
+    data.drop $11
+    i16x8.splat
+    i16x8.bitmask
+    global.get $9
+    i32.clz
+    i32.shr_s
+    if $if
+      atomic.fence
+      lo11 
+    "\d2\dan\dc\0ev/\b6xm+\9c\14\acZ\b6\91\f0\f8\96T\1d\dc\0e\a2U\c8]\bb\9d\b3\cb\e3\b2\b2\b4_M\01\a0C\fc\n"))

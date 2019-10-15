@@ -1,0 +1,40 @@
+(func
+br 0 f32.reinterpret_i32
+br 0 br 0  
+f32.reinterpret_i32
+br 0
+  f32.reinterpret_i32
+br 0 
+f32.reinterpret_i32
+f32.reinterpret_i32
+br 32
+f32.reinterpret_i32
+br 0 br  0 
+f32.reinterpret_i32
+f32.reinterpret_i32
+br 0
+  f32.reinterpret_i32
+br 0 br 0 
+f32.reinterpret_i32
+br 0
+ f32.reinterpret_i32
+br 0 
+f32.reinterpret_i32
+f32.reinterpret_i32
+br 0 br  0 
+f32.reinterpret_i32
+br 2
+f32.reinterpret_i32
+br 0
+  f32.reinterpret_i32
+br 0 br 0 
+f32.reinterpret_i32
+br 0
+ f32.reinterpret_i32
+br 0 br  0 
+
+f32.reinterpret_i32
+br 0
+  f32.reintret_i32
+br erpr br  0 
+et_ir 0 )

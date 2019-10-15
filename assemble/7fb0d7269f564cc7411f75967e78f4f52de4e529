@@ -1,0 +1,131 @@
+(module
+  (type $0 (func (param i32) (result v128 funcref)))
+  (type $1 (func (param i64 f32 externref externref) (result f32)))
+  (type $2 (func (param funcref f32 f32 v128)))
+  (type $3 (func (param i64 f64 funcref)))
+  (type $4 (func (result v128 v128)))
+  (type $5 (func (param v128) (result v128)))
+  (type $6 (func (param v128 v128)))
+  (memory $7  34 13970 shared)
+  (memory $8  43 64647 shared)
+  (memory $9  63 56043 shared)
+  
+  (func $11 (type $0)
+    (param $0 i32)
+    (result v128 funcref)
+    (local $1 externref)
+    (local $2 f64)
+    (local $3 i32)
+    local.get $1
+    v128.const i32x4 0xe231f4ff 0x82934ae0 0xa8eaf38e 0x3cbdbc0a
+    loop $loop (param v128) (result v128)
+      i16x8.widen_low_i8x16_s
+      f64x2.abs
+      data.drop $10
+      memory.size $9
+      i64.load8_u $8 offset=1241829524
+      local.get $3
+      f64.convert_i32_s
+      local.get $3
+      i64.load8_u offset=3450163528
+      local.get $1
+      ref.null func
+      f64.const 0x1.c5882801cc1d6p+132
+      ref.null func
+      ref.is_null
+      local.set $3
+      local.set $2
+      ref.is_null
+      local.set $3
+      ref.is_null
+      ref.null extern
+      unreachable
+    end ;; $loop
+    unreachable
+    )
+  
+  (func $12 (type $1)
+    (param $0 i64)
+    (param $1 f32)
+    (param $2 externref)
+    (param $3 externref)
+    (result f32)
+    i64.const 4767720877342919271
+    data.drop $10
+    f32.convert_i64_s
+    memory.size
+    i32.load $9 offset=2460523535
+    f32.load $9 offset=4094639043 align=1
+    f32.max
+    data.drop $10
+    i32.reinterpret_f32
+    f64.load $9 offset=676855442
+    i32.trunc_f64_s
+    v32x4.load_interleaved_4 $9 offset=663571487 align=2
+    loop $loop (param v128 v128)
+      i16x8.all_true
+      unreachable
+    end ;; $loop
+    i32x4.min_s
+    drop
+    v128.const i32x4 0x9ed7baa0 0x659c3cc2 0x62d75576 0x7b29386e
+    ref.null extern
+    ref.null extern
+    ref.is_null
+    unreachable
+    )
+  
+  (func $13 (type $2)
+    (param $0 funcref)
+    (param $1 f32)
+    (param $2 f32)
+    (param $3 v128)
+    (local $4 v128)
+    local.get $1
+    atomic.fence
+    local.get $4
+    i8x16.any_true
+    v8x16.load_interleaved_4 offset=2665550674
+    i16x8.extract_lane_u 6
+    i64.atomic.load16_u $9 offset=2207033383
+    i32.wrap_i64
+    i32.ctz
+    ref.null func
+    ref.null extern
+    ref.is_null
+    return
+    )
+  
+  (func $14 (type $3)
+    (param $0 i64)
+    (param $1 f64)
+    (param $2 funcref)
+    (local $3 i64)
+    (local $4 f32)
+    (local $5 i64)
+    (local $6 funcref)
+    unreachable
+    )
+  
+  (func $15 (type $4)
+    (result v128 v128)
+    f32.const +nan:0x699af4
+    memory.size $9
+    i64.atomic.load16_u $9 offset=3345397539
+    i32.wrap_i64
+    i32.atomic.load8_u $8 offset=584971184
+    i64.load $9 offset=3286671330 align=4
+    i64.extend16_s
+    i64.extend16_s
+    i32.const -1822080904
+    i32.load8_u $8 offset=2743379225
+    i64.atomic.load16_u offset=3688373397
+    f64.convert_i64_u
+    nop
+    f64.nearest
+    ref.null extern
+    unreachable
+    )
+  
+  (data $10 
+    "\07T\07\1e\c1g\86\0e"))

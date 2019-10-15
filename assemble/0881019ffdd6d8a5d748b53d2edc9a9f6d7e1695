@@ -1,0 +1,29 @@
+(func  br 0
+i8x16.shr_s br 0
+i8x16.shr_s br
+0
+i8x16.shr_s br
+0
+i8x16.shr_s br 0
+i8x16.shr_s br  00)(func br 0
+i8x16.shr_s br 0
+i8x16.shr_s br
+0
+i8x16.shr_s br
+0
+i8x16.shr_s br 0
+i8x16.shr_s br  0
+i8x16.shr_s br
+0
+i8x16.shr_s  br
+0
+i8x16.shr_s br
+0 br
+ 0
+i8x16.shr_s br
+0
+i8x16.shr_s  br
+0
+i8x16.shr_s br
+0 br
+0)

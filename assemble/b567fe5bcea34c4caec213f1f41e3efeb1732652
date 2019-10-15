@@ -1,0 +1,64 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param externref funcref funcref) (result i64)))
+  (type $2 (func (param i64) (result externref)))
+  (type $3 (func (param i32 f32 v128 i64) (result f64 externref)))
+  (type $4 (func (param i64)))
+  (import "env" "func0" (func $9 (param externref funcref funcref) (result i64)))
+  (import "env" "func1" (func $10 (param i64) (result externref)))
+  (memory $5  14 59965 shared)
+  (memory $6  77 63940)
+  (global $7  i32 (i32.const 1074023962))
+  
+  (func $11 (type $0)
+    (local $0 funcref)
+    (local $1 v128)
+    local.get $0
+    drop
+    br 0
+    )
+  
+  (func $12 (type $3)
+    (param $0 i32)
+    (param $1 f32)
+    (param $2 v128)
+    (param $3 i64)
+    (result f64 externref)
+    (local $4 i32)
+    local.get $4
+    local.get $0
+    i32.const -8025393
+    memory.fill $6
+    f32.const 0x1.9b5104p-55
+    block $block
+      i64.const 8659754318176247548
+      i64.eqz
+      f64.load $6 offset=2655932105 align=4
+      i32.const -263028801
+      i64.load32_s $6 offset=980362078 align=1
+      block $block_0 (param i64)
+        f32.const 0x1.be8b3ap+67
+        i32.trunc_sat_f32_s
+        i16x8.splat
+        unreachable
+      end ;; $block_0
+      unreachable
+    end ;; $block
+    local.set $1
+    f32.const -0x1.692ac6p+46
+    local.set $1
+    atomic.fence
+    v128.const i32x4 0x2a1decf2 0xa9446aff 0xd8c86671 0x117500be
+    drop
+    call $11
+    atomic.fence
+    ref.null extern
+    ref.is_null
+    ref.null func
+    drop
+    unreachable
+    )
+  
+  (data $8 (i32.const -1494957423)
+    "\93\1f\dc-o\91\9f\b6\8f\08r7\fb\80tI\1cv\a0\d5\fb?\86\a3\14\98\c2\d2\d7:3\8d\c3\ea\a9\c0\86?\ca\8c\08\d3(\9d\94V/\1a=M\18\a2\92\ff\bbDe\a2;EJ\18\041"
+    "\06!"))

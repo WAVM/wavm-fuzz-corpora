@@ -1,0 +1,39 @@
+(module
+  (type $0 (func (param i64 externref f32)))
+  (import "env" "table" (table $1 83 4294967295 funcref))
+  (import "env" "table" (table $2 21 4294967295 externref))
+  (import "env" "table" (table $3 94 4294967295 funcref))
+  (import "env" "global0" (global $7 i32))
+  (memory $4  74 26981 shared)
+  (memory $5  91 30052)
+  (memory $6  97 15070 shared)
+  
+  (func $8 (type $0)
+    (param $0 i64)
+    (param $1 externref)
+    (param $2 f32)
+    (local $3 i64)
+    (local $4 i32)
+    (local $5 v128)
+    v128.const i32x4 0x02ffe97c 0x4ee34161 0x266370d5 0xa1316db5
+    i8x16.extract_lane_s 15
+    f32.const -0x1.eb655ap-37
+    i32.trunc_sat_f32_s
+    v8x16.load_interleaved_3 offset=3162524756 align=1
+    i32x4.mul
+    i16x8.widen_high_i8x16_s
+    i32x4.mul
+    i16x8.extract_lane_s 4
+    v8x16.load_splat $5 offset=3288497206
+    local.get $2
+    loop $loop
+      f64.const 0x1.21cfa172f0c45p-583
+      global.get $7
+      f64.convert_i32_u
+      br $loop
+    end ;; $loop
+    drop
+    drop
+    table.get $3
+    unreachable
+    ))

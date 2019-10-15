@@ -1,0 +1,1 @@
+(memory 0)(func()i32.atomic.rmw16.or_u i32.atomic.rmw16.or_u  i–2t0)(func()i32.atomic.rmw16.or_u i32.atomic.rmw16.or_u i32.atomic.rmw16.or_u i32.atomic.rmw16.or_u i32.atomic.rmw16.or_u i32.atomic.rmw16.or_u iw2)

@@ -1,0 +1,43 @@
+(module
+  (type $0 (func))
+  (type $1 (func (result f32 f32 f64 f64)))
+  (type $2 (func (result i64 i64 externref)))
+  (type $3 (func (param externref)))
+  (import "env" "table" (table $4 65 4294967295 shared funcref))
+  (import "env" "table" (table $5 14 4294967295 shared funcref))
+  (import "env" "global1" (global $7 (mut externref)))
+  (import "env" "func0" (func $11))
+  (memory $6  2 35884 shared)
+  (global $8  (mut i32) (i32.const 1668437526))
+  (global $9  (mut i64) (i64.const 8121497375763178032))
+  
+  (func $12 (type $0)
+    (local $0 externref)
+    local.get $0
+    global.get $8
+    if $if (result f32 f32 f64 f64)
+      f64.const 0x1.e88588d4fca8bp-176
+      f64.ceil
+      br 1
+    else
+      call $12
+      local.get $0
+      local.tee $0
+      f32.const 0x1.af423cp+61
+      loop $loop (result i64 i64 externref)
+        ref.null func
+        global.get $7
+        br 2
+      end ;; $loop
+      loop $loop_0 (param externref)
+        return
+      end ;; $loop_0
+      i64.rotr
+      unreachable
+    end ;; $if
+    f64.add
+    unreachable
+    )
+  
+  (data $10 (i32.const 185533281)
+    "\11n\cc\n\a7\ad<\b4\ae\c7e\19u\ab\8b\03\f1S5\ad/\bb\d1\8d|\b5\b6l\b0vq\0e"))

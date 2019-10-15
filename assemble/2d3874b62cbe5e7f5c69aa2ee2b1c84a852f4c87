@@ -1,0 +1,47 @@
+(module
+  (type $0 (func (param f64 v128 i64)))
+  (type $1 (func (param i64) (result funcref)))
+  (type $2 (func (param v128) (result f64 i32 v128)))
+  (import "env" "table" (table $3 8 4294967295 shared funcref))
+  (import "env" "global0" (global $6 f32))
+  (import "env" "global1" (global $7 (mut v128)))
+  (import "env" "global2" (global $8 externref))
+  (import "env" "func0" (func $12 (param f64 v128 i64)))
+  (memory $5  17 20224 shared)
+  (table $4  44 4294967295 shared externref)
+  (global $9  (mut f64) (f64.const 0x1.657fd54216cfcp+60))
+  
+  (func $13 (type $1)
+    (param $0 i64)
+    (result funcref)
+    (local $1 i64)
+    (local $2 externref)
+    (local $3 f32)
+    (local $4 externref)
+    global.get $8
+    table.size $3
+    i32.load16_s offset=1752449017
+    i32.atomic.load16_u offset=3494345988
+    data.drop $11
+    v8x16.load_interleaved_3 offset=3200206699
+    i32x4.lt_s
+    i32x4.sub
+    i8x16.bitmask
+    v8x16.load_interleaved_2 offset=3823381456 align=8
+    i16x8.widen_high_i8x16_s
+    loop $loop (param v128) (result f64 i32 v128)
+      i32x4.widen_low_i16x8_s
+      i32x4.trunc_sat_f32x4_u
+      i16x8.widen_low_i8x16_s
+      br $loop
+    end ;; $loop
+    global.set $7
+    table.get $3
+    return
+    )
+  
+  (data $10 (i32.const -322902141))
+  
+  (data $11 (i32.const -1627601249)
+    "b\a2b\b3J\8a\bfE?\08e\f5\a4/I\81.\81\85\8d\1c\f7\16\b3\fb\87=\ae\fd\a3h\e8\d9\92H,5\ff\bf\162\96\c7\bb\e7/]\07i\9a\d4\e3r\ec\89{_\11e\ac\eb\0e|Z"
+    "\07\aa\88\del\d96\81"))

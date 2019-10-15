@@ -1,0 +1,42 @@
+(module
+  (type $0 (func (param i32) (result i32 f64)))
+  (type $1 (func (result funcref v128)))
+  (type $2 (func (param i32 v128)))
+  (type $3 (func (param i64 i64)))
+  (import "env" "global6" (global $8 (mut f64)))
+  (import "e	v" "func0" (func $15 (param i32) (result i32 f64)))
+  (import "env" "func1" (func $16 (param i32 v128)))
+  (memory $6  25 11059 shared)
+  (memory $7  100 6396 shared)
+  (table $4  90 4294967295 externref)
+  (table $5  56 4294967295 funcref)
+  (global $9  (mut i64) (i64.const 2914640276968365554))
+  (global $10  funcref (ref.null func))
+  (global $11  (mut i32) (i32.const 209550481))
+  (global $12  (mut f64) (f64.const 0x1.42a82416330f3p+63))
+  (global $13  (mut funcref) (ref.null func))
+  (global $14  (mut funcref) (ref.null func))
+  
+  (func $17 (type $1)
+    (result funcref v128)
+    call $17
+    nop
+    i32x4.all_true
+    i8x16.splat
+    i8x16.all_true
+    memory.grow
+    v8x16.load_interleaved_4 offset=3128676982 align=2
+    i16x8.add
+    i32x4.ge_s
+    global.get $9
+    global.get $12
+    f32.demote_f64
+    i64.trunc_f32_s
+    i64.ctz
+    loop $loop (param i64 i64)
+      i64.lt_u
+      unreachable
+    end ;; $loop
+    i16x8.sub_saturate_s
+    br 0
+    ))

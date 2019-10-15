@@ -1,0 +1,61 @@
+(module
+  (type $0 (func (param i32 v128) (result v128 v128)))
+  (type $1 (func (param f64)))
+  (import "env" "memory" (memory $5 52 20709 shared))
+  (import "env" "table" (table $2 90 4294967295 funcref))
+  (table $3  75 4294967295 funcref)
+  (table $4  77 4294967295 shared externref)
+  
+  (func $6 (type $0)
+    (param $0 i32)
+    (param $1 v128)
+    (result v128 v128)
+    (local $2 f64)
+    atomic.fence
+    table.size $4
+    i64.load16_u offset=486846846
+    i64.extend8_s
+    f64.convert_i64_u
+    i32.trunc_sat_f64_u
+    drop
+    unreachable
+    )
+  
+  (func $7 (type $1)
+    (param $0 f64)
+    v128.const i32x4 0xf28f37ad 0x0dc425c4 0x67b5f736 0x19efb8e1
+    i32x4.widen_low_i16x8_s
+    i16x8.widen_low_i8x16_u
+    i16x8.neg
+    i32x4.widen_low_i16x8_s
+    i16x8.all_true
+    i64.extend_i32_u
+    i64.extend16_s
+    i64.extend16_s
+    f32.convert_i64_u
+    f32.nearest
+    return
+    )
+  
+  (func $8 (type $1)
+    (param $0 f64)
+    atomic.fence
+    table.size $3
+    i64.load8_s offset=428540049
+    i64.clz
+    f64.convert_i64_u
+    f64x2.splat
+    drop
+    table.size $2
+    v8x16.load_splat offset=186654563
+    f64x2.neg
+    i8x16.any_true
+    i32.extend8_s
+    i64.load32_s offset=4024371279
+    loop $loop (result i64)
+      return
+    end ;; $loop
+    i64.gt_u
+    table.get $2
+    unreachable
+    ))

@@ -1,0 +1,1 @@
+(func (res) (i32x4.max_s st27) (i32x4.max_s (i32x4.max_s (i32^res) (i32x4.max_s 7) (i32x4.max_s  0) (i32x4.max_s(inst) (i32x4.max_s)bloc$<)) (i32x4.max_s st27) (i32x4.max_s (i32x4.max_s (i32^res) (i32x4.max_s 7) (i32x4.max_s  0) (i32x4.max_s(inst) (i32x4.max_s)bloc$<)28) (i32x4.max_s  0)b28) (i32x4.max_s  0)bl))

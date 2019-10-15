@@ -1,0 +1,20 @@
+(module
+  (type $0 (func (param i32) (result i32)))
+  (memory $a  0)
+  (memory $b  0)
+  (export "a.grow" (func $1))
+  (export "b.grow" (func $2))
+  
+  (func $1 (type $0)
+    (param $0 i32)
+    (result i32)
+    local.get $0
+    memory.grow
+    )
+  
+  (func $2 (type $0)
+    (param $0 i32)
+    (result i32)
+    local.get $0
+    memory.grow $b
+    ))

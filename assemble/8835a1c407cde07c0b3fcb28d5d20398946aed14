@@ -1,0 +1,13 @@
+(module
+ (memory $1  1  )
+ (func  i32.const 0
+   v128.load
+i32.const 1 v128.load
+i32.const 3
+  
+    v128.load
+ i32.const 3
+  v128.load
+   i16x8.ge_s   i16x8.ge_s   i16x8.ge_s drop   
+
+ ))

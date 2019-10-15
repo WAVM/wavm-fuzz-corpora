@@ -1,0 +1,103 @@
+(module
+  (type $0 (func (param f64 f64) (result f32)))
+  (type $1 (func (param f64) (result v128)))
+  (type $2 (func (param f64 f64 f32) (result v128)))
+  (type $3 (func))
+  (type $4 (func (param i32 i32) (result v128 externref i64)))
+  (type $5 (func (param i64) (result externref funcref funcref)))
+  (type $6 (func (param externref funcref funcref) (result externref)))
+  (import "env" "memory" (memory $10 96 33723 shared))
+  (import "env" "memory" (memory $11 32 4772 shared))
+  (import "env" "table" (table $7 43 4294967295 funcref))
+  (import "env" "table" (table $8 39 4294967295 externref))
+  (import "env" "global0" (global $13 (mut v128)))
+  (import "env" "global1" (global $14 i64))
+  (import "env" "global3" (global $15 v128))
+  (import "env" "func0" (func $21 (param f64 f64 f32) (result v128)))
+  (memory $12  16 31237 shared)
+  (table $9  61 4294967295 shared funcref)
+  (global $16  funcref (ref.null func))
+  (elem $17 exception_type)
+  (elem $18 exception_type)
+  
+  (func $22 (type $0)
+    (param $0 f64)
+    (param $1 f64)
+    (result f32)
+    (local $2 funcref)
+    (local $3 i32)
+    call $24
+    i32.const 612829136
+    i32.load8_u $11 offset=2818916441
+    i64.extend_i32_s
+    memory.size
+    table.size $7
+    i32.extend16_s
+    i32.store16 $12 offset=3616312087
+    local.get $0
+    i32.trunc_sat_f64_s
+    local.get $1
+    i32.trunc_sat_f64_u
+    loop $loop (param i32 i32) (result v128 externref i64)
+      v8x16.load_splat offset=1150219236
+      i8x16.extract_lane_s 0
+      i32.atomic.store8 $12 offset=289958776
+      global.get $13
+      unreachable
+    end ;; $loop
+    unreachable
+    )
+  
+  (func $23 (type $1)
+    (param $0 f64)
+    (result v128)
+    (local $1 externref)
+    (local $2 f32)
+    (local $3 f32)
+    (local $4 v128)
+    f64.const 0x1.c17f48a3bddc3p-79
+    i64.const 5070448823949805425
+    global.get $14
+    i64.shl
+    f32.const -0x1.1ae8b0p+127
+    f32.floor
+    i64.trunc_f32_u
+    unreachable
+    )
+  
+  (func $24 (type $3)
+    f32.const -0x1.f29e26p+125
+    i64.const -2875557768287948839
+    block $block (param i64) (result externref funcref funcref)
+      i64.extend32_s
+      nop
+      i64.popcnt
+      unreachable
+    end ;; $block
+    memory.size $11
+    if $if (param externref funcref funcref) (result externref)
+      block $block_0
+        call $24
+        unreachable
+      end ;; $block_0
+      global.get $15
+      f32x4.abs
+      i8x16.extract_lane_u 12
+      call_indirect $9 (type $3)
+      ref.null func
+      unreachable
+    else
+      drop
+      drop
+      unreachable
+    end ;; $if
+    drop
+    unreachable
+    )
+  
+  (data $19 (memory $12) (i32.const 1779056980)
+    "@A\1a\fd+9y^ \9a\ca->\c6C\fc\b4\bd\bf\f5\a3\cb\d5\00\05\95h\dc\c9\89\13\95\e3e\9a\c5\84Mds\a8\82\9a/\91\d4")
+  
+  (data $20 (memory $12) (i32.const 1174897313)
+    "c)\1f\1e\b4a+\a2\a0Z[\f0[\ea\c8\ae\e3>\f3\15\d5P\1bs\17\c5W\da)\99\db\bfg\bf4MF\fe\07\83\a7\dd\18\07\04&%4\a6)\bc\08Q=QP1\09\d0\eb\14f\85\ea"
+    "\"\b8\e4\b1\050\ad\c8"))

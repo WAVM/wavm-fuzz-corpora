@@ -1,0 +1,9 @@
+(module(memory 8)(func br 0
+i64.atomic.rmw8.xor_u i64.atomic.rmw8.xor_u
+i64.atomic.rmw8.xor_u i64xor_u i64.atomic.rmw 8)(func br 0
+i64.atomic.rmw8.xor_u i64.atomic.rmw8.xor_u
+i64.atomic.rmw8.xor_u i64.atomic.rmw8.xor_u i64.atomic.rmw8.xor_u i64.atomic.rmw8.xor_u i64.atomic.rmw8.xor_u i64.atomic.rmw8.xor_u i64.atomic.rmw8.xor_u i64.atomic.rmw8.xor_u  i64.atomic.rmw8.xor_u br 0
+i64.atomic.rmw8.xor_u i64.atomic.rmw8.xor_u i64.atomic.rmw8.xor_u i 8)(func br 0
+i64.atomic.rmw8.xor_u i64.atomic.rmw8.xor_u
+i64.atomic.rmw8.xor_u i64.atomic.rmw8.xor_u i64.atomic.rmw8.xor_u i64.atomic.rmw8.xor_u i64.atomic.rmw8.xor_u i64.atomic.rmw8.xor_u i64.atomic.rmw8.xor_u i64.atomic.rmw8.xor_u  i64.atomic.rmw8.xor_u br 0
+i64.atomic.rmw8.xor_u i64.atomic.rmw8.xor_u i64.atomic.rmw8.xor_u i64.atomic.rmw8.xor_u i68.xor_u i64.atomrmw8.xor_u i64.atomic.rmw8.xor_u l_)

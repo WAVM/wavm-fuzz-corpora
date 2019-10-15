@@ -1,0 +1,77 @@
+(module
+  (type $0 (func (param funcref externref externref)))
+  (type $1 (func (param f32 i64) (result externref)))
+  (type $2 (func (param v128) (result f32)))
+  (type $3 (func (param i32 v128) (result i64 f64)))
+  (type $4 (func (param i64 f64 i64) (result i64 f64)))
+  (import "env" "memory" (memory $8 26 19456 shared))
+  (import "env" "table" (table $5 43 4294967295 funcref))
+  (import "env" "table" (table $6 34 4294967295 funcref))
+  (import "env" "func0" (func $11 (param f32 i64) (result externref)))
+  (import "env" "func1" (func $12 (param v128) (result f32)))
+  (import "env" "func2" (func $13 (param i32 v128) (result i64 f64)))
+  (table $7  38 4294967295 externref)
+  
+  (func $14 (type $0)
+    (param $0 funcref)
+    (param $1 externref)
+    (param $2 externref)
+    data.drop $10
+    ref.null extern
+    ref.is_null
+    i32x4.load16x4_u offset=2418230933 align=2
+    v128.const i32x4 0x66cd6f6b 0xf0f37b64 0xdcc85b04 0x7d97e351
+    i32x4.widen_low_i16x8_s
+    i16x8.add
+    i8x16.all_true
+    i32.load8_u offset=3389901650
+    f32.convert_i32_s
+    i32.const 1828194273
+    f64.load offset=3393465534
+    f32.const 0x1.2d7ffcp+98
+    i32.trunc_f32_u
+    i32.extend16_s
+    br 0
+    )
+  
+  (func $15 (type $4)
+    (param $0 i64)
+    (param $1 f64)
+    (param $2 i64)
+    (result i64 f64)
+    f64.const 0x1.0952f985f0676p-445
+    f64.const 0x1.6daadebeef5afp+975
+    f64.neg
+    local.set $1
+    local.get $2
+    data.drop $10
+    f64.convert_i64_u
+    ref.null func
+    block $block (result f64)
+      nop
+      f32.const -0x1.bccc16p-42
+      i32.trunc_sat_f32_u
+      nop
+      v64x2.load_interleaved_4 offset=1964644160 align=1
+      i16x8.sub_saturate_s
+      v8x16.shuffle 29 6 28 25 14 5 22 21 31 19 21 2 30 10 30 12
+      i32x4.sub
+      ref.null func
+      unreachable
+    end ;; $block
+    drop
+    ref.null extern
+    ref.is_null
+    drop
+    ref.null func
+    ref.null func
+    drop
+    ref.is_null
+    unreachable
+    )
+  
+  (data $9 (i32.const -1929372124)
+    "Y\9f\b8\04B\06$\e9\86,\90\aa\c2\ab9\aa\88")
+  
+  (data $10 (i32.const -1065642693)
+    "u\b2r\0e \e6\e7\94P\ce6\8bNz\cfUl\13Tnx\84\10O\a9LC\"\1c\bb\88\08.\10K\0c\f3\05\f9\9f\ff\b1\1aeX2z\91\d7\94\e4\80\f3\df&\7f\9cn\fd\91\07\fe\9a"))

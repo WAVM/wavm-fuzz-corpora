@@ -1,0 +1,4 @@
+(module(func  (f64.gt(i16x8.all_true (i16x8.all_true )(f64.gt(i16x8.all_true (i16x8.all_true()))
+(f64.gt(i16x8.all_true () (i16x8.all_true(ft)(i16x8.all_true(f))(i16x8.all_true)))
+(i1(f ))) (f64.gt(i16x8.all_true ))(i16x8.all_true)))) (i16x8.all_true)
+.al)

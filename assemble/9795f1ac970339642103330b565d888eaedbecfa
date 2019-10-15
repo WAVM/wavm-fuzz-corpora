@@ -1,0 +1,45 @@
+(module
+  (type $0 (func (result i64 f32)))
+  (import "env" "memory" (memory $4 74 45679 shared))
+  (import "env" "memory" (memory $5 92 18661 shared))
+  (import "env" "table" (table $1 22 4294967295 shared funcref))
+  (import "env" "global0" (global $6 i32))
+  (import "env" "global1" (global $7 v128))
+  (import "env" "global2" (global $8 (mut f64)))
+  (import "env" "glob umfal3" (global $9 (mut externref)))
+  (import "env" "global4" (global $10 (mut v128)))
+  (import "env" "global5" (global $11 (mut i64)))
+  (table $2  30 4294967295 shared externref)
+  (table $3  15 4294967295 externref)
+  (elem $12 (table $3) (i32.const 348275632) memory
+    $4 $4 $5 $4 $5 $4 $4 $5
+    $4 $4 $5 $4 $5 $4 $4 $5
+    $5 $5 $4 $4 $5 $4 $5 $5
+    $5 $4 $4 $5 $5 $4 $4 $5
+    $5 $5 $4 $4 $4 $5 $4 $4
+    $4 $4 $4 $5 $4 $4 $5 $5
+    $4 $5 $4 $4 $5 $5 $5 $4
+    $4 $4 $4 $4 $4 $4 $5 $4
+    $4 $4 $5 $4)
+  
+  (func $13 (type $0)
+    (result i64 f32)
+    atomic.fence
+    global.get $7
+    v128.not
+    drop
+    nop
+    global.get $8
+    call $13
+    i32.const 1802715475
+    v16x8.load_interleaved_3 offset=353545238 align=4
+    f64x2.sub
+    v128.xor
+    f64x2.extract_lane 0
+    i64.trunc_f64_u
+    i32.const -285148506
+    i64.extend_i32_u
+    i64.rem_s
+    global.set $11
+    br 0
+    ))

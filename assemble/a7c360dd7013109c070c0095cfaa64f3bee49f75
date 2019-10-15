@@ -1,0 +1,2 @@
+(module(memory 5)(func i32.const 6
+i64.atomic.load32_u  drop))

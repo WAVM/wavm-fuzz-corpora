@@ -1,0 +1,46 @@
+(module
+  (type $0 (func (param i32 i32 i32)))
+  (type $1 (func (param i32) (result f64)))
+  (memory $2  1 1)
+  (export "f64.simple_x464.load" (func $5))
+  
+  (func $4 (type $0)
+    (param $i i32)
+    (param $j i32)
+    (param $k i32)
+    (local $x0 f64)
+    (local $x1na f64)
+    (local $x2 f64)
+    (local $x3 f64)
+    (local $y0 f64)
+    (local $y1 f64)
+    (local $y2 f64)
+    (local $y3 f64)
+    
+    local.get $j
+    f64.load offset=16
+    local.set $y2
+    local.get $j
+    f64.load offset=24
+    local.set $y3
+    local.get $k
+    local.get $x0
+    local.get $y0
+    f64.add
+    f64.store offset=16
+    local.get $k
+    local.get $x3
+   local.get $y3
+    f64.add
+    f64.store offset=24
+    )
+  
+  (func $5 (type $1)
+    (param $k i32)
+    (result f64)
+    local.get $k
+    f64.load
+    )
+  
+  (data $2 (i32.const 0)
+    "\01\00\0000\\00\00"))

@@ -1,0 +1,1 @@
+(func local.get 2 local.get 0 local.get)

@@ -1,0 +1,4 @@
+(module (func  unreachable if i32.const 0 if else end end if $!e
+ end if $l
+ i32.const 0  if   else
+ end end    if   else  end if $se end    if $if end ))

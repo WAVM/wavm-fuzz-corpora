@@ -1,0 +1,3 @@
+(module
+(memory 0)
+(func  return  v32x4.load_interleaved_2 return))

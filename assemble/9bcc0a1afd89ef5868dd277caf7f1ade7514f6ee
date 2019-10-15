@@ -1,0 +1,77 @@
+(module
+  (type $0 (func (param f64 v128 v128 funcref)))
+  (type $1 (func (param funcref i32) (result f32 v128)))
+  (type $2 (func (param f32 v128 f32) (result f64 i32)))
+  (type $3 (func (param f64 f64 funcref) (result i32 f32)))
+  (import "env" "memory" (memory $7 12 45241))
+  (import "env" "table" (table $4 13 4294967295 funcref))
+  (import "env" "func0" (func $13 (param funcref i32) (result f32 v128)))
+  (import "env" "func1" (func $14 (param f64 f64 funcref) (result i32 f32)))
+  (memory $8  24 32419 shared)
+  (memory $9  0 52943 shared)
+  (table $5  36 4294967295 funcref)
+  (table $6  65 4294967295 shared externref)
+  (elem $10 (table $6) (i32.const -922823083) memory
+    $9 $8 $7 $9 $7 $7 $7 $9
+    $9 $7 $9 $7 $7 $7 $9 $8
+    $9 $8 $7 $9 $9 $9 $9 $7
+    $7 $8 $8 $9 $9 $8 $8 $8
+    $8 $7 $9 $9 $7 $7 $8 $8
+    $7 $7 $7 $9)
+  
+  (func $15 (type $0)
+    (param $0 f64)
+    (param $1 v128)
+    (param $2 v128)
+    (param $3 funcref)
+    (local $4 i64)
+    i64.const 2672673469838793260
+    f64.convert_i64_u
+    i32.trunc_f64_s
+    i64.atomic.load16_u offset=2345483313
+    local.get $2
+    i64x2.neg
+    i8x16.extract_lane_u 6
+    v16x8.load_splat offset=2675353533 align=1
+    i16x8.widen_high_i8x16_u
+    f32x4.abs
+    i64x2.extract_lane 0
+    i32.const -363218810
+    memory.size $8
+    i32.xor
+    v32x4.load_interleaved_3 $9 offset=2565201712 align=2
+    f32x4.min
+    i8x16.eq
+    return
+    )
+  
+  (func $16 (type $2)
+    (param $0 f32)
+    (param $1 v128)
+    (param $2 f32)
+    (result f64 i32)
+    (local $3 f64)
+    (local $4 i32)
+    local.get $2
+    i32.trunc_sat_f32_u
+    i64x2.load32x2_u $9 offset=2961211321 align=4
+    local.tee $1
+    local.get $3
+    atomic.fence
+    memory.size $9
+    atomic.fence
+    f32.const -0x1.a0749ep+20
+    i64.const 3217085879461784865
+    drop
+    i64.trunc_f32_s
+    i64.atomic.rmw32.xor_u offset=1756951122
+    f32.convert_i64_s
+    local.set $0
+    unreachable
+    )
+  
+  (data $11 
+    "}\db\ff\8f\01\0em\81")
+  
+  (data $12 
+    "\8e\e4\14{e\e5D\\D\0e~\ae\8c0\88\f0Zm\c0\04\9a\b5\f1f\ac\0d\a6"))

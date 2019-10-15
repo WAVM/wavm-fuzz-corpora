@@ -1,0 +1,63 @@
+(module
+  (type $0 (func (param f64 externref v128 i32) (result v128 i32)))
+  (type $1 (func (param i64) (result i64 funcref externref)))
+  (type $2 (func (result funcref i32 f64)))
+  (import "env" "table" (table $3 8 4294967295 shared externref))
+  (import "env" "table" (table $4 64 4294967295 funcref))
+  (import "env" "global0" (global $6 externref))
+  (import "env" "global1" (global $7 (mut externref)))
+  (import "env" "global2" (global $8 funcref))
+  (table $5  69 4294967295 externref)
+  (global $9  (mut externref) (ref.null extern))
+  
+  (func $12 (type $0)
+    (param $0 f64)
+    (param $1 externref)
+    (param $2 v128)
+    (param $3 i32)
+    (result v128 i32)
+    (local $4 i64)
+    (local $5 i32)
+    (local $6 i64)
+    i64.const 5671744456988413867
+    f64.reinterpret_i64
+    local.get $6
+    loop $loop (param i64) (result i64 funcref externref)
+      local.tee $4
+      local.get $3
+      table.size $3
+      i32.extend16_s
+      local.get $5
+      i32.le_s
+      loop $loop_0 (result funcref i32 f64)
+        local.get $5
+        i32.clz
+        local.get $5
+        i32.or
+        local.set $5
+        local.get $1
+        ref.null func
+        ref.null extern
+        drop
+        br $loop_0
+      end ;; $loop_0
+      drop
+      local.set $3
+      ref.null extern
+      ref.is_null
+      local.set $3
+      ref.is_null
+      i32.or
+      i32.shl
+      unreachable
+    end ;; $loop
+    unreachable
+    )
+  
+  (data $10 
+    "\8f\8e\ee\b7\b6\a3\b5\c0`b N\8c\b8\eb\\\98c\fdj/'\0e\b80\16t\86\0c\18\bb\e5#\c1\b79\c4\17Z\a4\1b\18GgK+N\a5\13\d10\f2\0e\ed\d8)7\8ap\8d\b0\ae\ca\c7"
+    "\94\b47;\ea2\d4CVB\b2<\ac\dc\ca\92\db\e4\f3")
+  
+  (data $11 
+    "\10\efV\d5\88vNLU`\11\ad\aa\"\96a\d4\f3\10\d6o=S4\e0\c8\ni\8aw\82_\d4\0et^\d2\dc\08\ad.\c4\n\86\f4\17\8c\12J'^\b62\b7\bc\ee\d9\ddp\f3\f2r\f0\db"
+    "\d1\ac\e9d\e2G!\7fR\e9u\be\\\9f\de\ad\85X\a1\cb&#S\9a,\c0\af\fa\d3\0d\1e\dcj\8eQ"))

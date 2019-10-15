@@ -1,0 +1,4 @@
+(table $t1 1 funcref)
+        (func $pytAult   (table.get $t1 (—ÌÌÌconst 0))
+    )
+ 

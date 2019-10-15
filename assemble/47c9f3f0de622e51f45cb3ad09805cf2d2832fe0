@@ -1,0 +1,41 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param v128 funcref externref f64) (result funcref)))
+  (type $2 (func (param externref)))
+  (type $3 (func (result funcref)))
+  (type $4 (func (param funcref v128)))
+  (import "env" "table" (table $5 47 4294967295 shared funcref))
+  (import "env" "global0" (global $6 (mut funcref)))
+  (import "env" "global1" (global $7 (mut i64)))
+  (import "env" "global2" (global $8 (mut funcref)))
+  (import "env" "global3" (global $9 (mut f64)))
+  (import "env" "global4" (global $10 v128))
+  (import "env" "global5" (global $11 (mut funcref)))
+  (import "env" "func0" (func $14))
+  (import "env" "func1" (func $15 (param v128 funcref externref f64) (result funcref)))
+  (import "env" "func2" (func $16 (result funcref)))
+  (global $12  externref (ref.null extern))
+  (global $13  (mut v128) (v128.const i32x4 0xca2dc461 0xe18c0940 0x861796e6 0x650466ad))
+  
+  (func $17 (type $2)
+    (param $0 externref)
+    (local $1 v128)
+    (local $2 funcref)
+    (local $3 i64)
+    (local $4 v128)
+    local.get $1
+    drop
+    br 0
+    )
+  
+  (func $18 (type $4)
+    (param $0 funcref)
+    (param $= v128)
+    (local $2 funcref)
+    (local $3 v128)
+    local.get $2
+    global.get $13
+    global.get $9
+    f64.neg
+    unreachable
+    ))

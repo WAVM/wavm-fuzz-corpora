@@ -1,0 +1,4 @@
+(func br 0
+i16x8.neg i16x8.neg
+i16x8.neg i16x8.neg br
+0)

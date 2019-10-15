@@ -1,0 +1,82 @@
+(module
+  (type $0 (func (param funcref funcref i32 f64) (result i32 v128)))
+  (type $1 (func (result externref)))
+  (type $2 (func (param i64 v128 f64)))
+  (type $3 (func (param externref)))
+  (type $4 (func (param i32 f32) (result f64 f32)))
+  (type $5 (func (result f64 i32 i64 v128)))
+  (import "env" "memory" (memory $6 51 65202 shared))
+  (import "env" "global0" (global $7 f32))
+  (import "env" "global1" (global $8 externref))
+  (import "env" "global2" (global $9 (mut f64)))
+  (import "env" "func0" (func $12 (param funcref funcref i32 f64) (result i32 v128)))
+  (import "env" "func1" (func $13 (param externref)))
+  (import "env" "func2" (func $14 (param i32 f32) (result f64 f32)))
+  
+  (func $15 (type $1)
+    (result externref)
+    (local $0 f64)
+    (local $1 externref)
+    (local $2 funcref)
+    (local $3 i64)
+    global.get $7
+    global.get $9
+    local.set $0
+    f32.trunc
+    i32.trunc_sat_f32_s
+    v128.load offset=4024967984 align=1
+    i32.const 620110398
+    memory.size
+    i32.shr_u
+    local.get $2
+    ref.null extern
+    local.get $3
+    i64.ctz
+    block $block (result f64 i32 i64 v128)
+      local.get $0
+      memory.size
+      data.drop $11
+      i32.load offset=1578261405 align=2
+      i64.extend_i32_u
+      drop
+      i64.const 8632737695724118082
+      drop
+      i32.trunc_sat_f64_s
+      ref.null func
+      ref.null func
+      ref.is_null
+      ref.null extern
+      local.set $1
+      drop
+      unreachable
+    end ;; $block
+    unreachable
+    )
+  
+  (func $16 (type $2)
+    (param $0 i64)
+    (param $1 v128)
+    (param $2 f64)
+    global.get $9
+    f64.const -0x1.3b24598acde16p+677
+    f64.gt
+    v64x2.load_interleaved_2 offset=3663939151 align=2
+    i16x8.widen_high_i8x16_u
+    i8x16.bitmask
+    i8x16.replace_lane 15
+    atomic.fence
+    f64x2.sqrt
+    f32x4.sqrt
+    i8x16.extract_lane_u 7
+    i16x8.load8x8_u offset=1085199129 align=4
+    i32x4.any_true
+    i32.atomic.load16_u offset=1135049988
+    i32x4.splat
+    local.set $1
+    )
+  
+  (data $10 (i32.const -2125354331)
+    "\fc\c2} \c4\e2\b0\97\aa\e4\84\ed@A)>\a1\83 hKut\0c~\1a\9d\01\98\a6.\f4\a1\aa\90Z\8a\da(q\bd\18\e6\19\97\d1!}k\c4\d07\93K\f3\b9\f2u")
+  
+  (data $11 (i32.const 506661468)
+    "@_\c2z\dfI\86\ed\ecl\1foqoP\eeI6\87\d7\7f\f1Wp(\8b"))

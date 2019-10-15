@@ -1,0 +1,24 @@
+(module
+  (type $0 (func (param f64) (result funcref)))
+  (type $1 (func (param i64 externref funcref) (result i64)))
+  (import "env" "memory" (memory $3 35 17997 shared))
+  (import "env" "func0" (func $8 (param f64) (result funcref)))
+  (table $2  22 4294967295 shared externref)
+  (elem $4 declare global)
+  (elem $5 declare global)
+  
+  (func $9 (type $1)
+    (param $0 i64)
+    (param $1 externref)
+    (param $2 funcref)
+    (result i64)
+    unreachable
+    )
+  
+  (data $6 (i32.const -1684503047)
+    "\94,\af\0fVh\81a@\abDHX\f8\e7@\97\bbt\ec\1e\f6\c4l\b5\e6\919\9d\d3\92z\ad\8b\18\db\16\8b\b4#&\04\fd\12\9cK\1e\0f\a9\\e\fc+\88\c0\01\ac\df[\c1\da\11\86\cf"
+    "\99\01.\c7RO\bb\fa\96B\e3q\a7\c5\f9>\b6\b3Mc\fd\1bZm\0b\e3\e2\96")
+  
+  (data $7 
+    "\89.`\d0\9aYO\14\fd\90UK# \c6\de\b8kM\8a\9a\a7Y\e3\b0\92+\0c\e7.\1a\b8\19\02Q\b5mV\ff\08M\f2\a7\82k\8e\0c[\9e\e7\daZ&O\95\8f\99v\02X\87;\ad\c1"
+    "\fb^_\8c\d6M:\da\1c4\f1\e6\a1i\f4uT\1b\d9\ce\e6\e3\9d'\a5GO"))

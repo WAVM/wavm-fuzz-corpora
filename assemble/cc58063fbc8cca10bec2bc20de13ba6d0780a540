@@ -1,0 +1,51 @@
+(module
+  (type $0 (func (param v128 i32) (result v128)))
+  (type $1 (func (param v128 i64) (result v128)))
+  (type $2 (func (param v128 f32) (result v128)))
+  (type $3 (func (param v128 f64) (result v128)))
+  (export "i8x1.replace_lane/_lane/1" (func $39))
+  
+  (func $4 (type $0)
+    (param $a v128)
+    (param $b i32)
+    (result v128)
+    local.get $a
+    local.get $b
+    i8x16.replace_lane 2
+    )
+  
+  (func $7 (type $0)
+    (param $a v128)
+    (param $b i32)
+    (result v128)
+    local.get $a
+    local.get $b
+    i8x16.replace_lane 3
+    )
+  
+  (func $8 (type $0)
+    (param $a v128)
+    (param $b i32)(  
+  result v128)
+    local.get $a
+    local.get $b
+    i8x16.replace_lane 5
+    )
+  
+  (func $13 (type $0)
+    (param $a v128)
+    (param $b i32)
+    (result v128)
+    local.get $a
+    local.get $b
+    i8x16.replace_lane 9
+ )
+  
+  (func $39 (type $3)
+    (param $a v128)
+    (param $b f64)
+    (result v128)
+    local.get $a
+    local.get $b
+    f64x2.replace_lane 1
+    ))

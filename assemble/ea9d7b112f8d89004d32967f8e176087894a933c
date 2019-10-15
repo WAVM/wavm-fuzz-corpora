@@ -1,0 +1,82 @@
+(module
+  (type $0 (func (param externref i32 f32 externref) (result i64 v128)))
+  (type $1 (func (param f32 f32 f64) (result i32 f64)))
+  (type $2 (func (param f64 i32) (result f32)))
+  (type $3 (func (param i32 externref f64) (result i32)))
+  (type $4 (func (param funcref i32 f64) (result funcref v128)))
+  (import "env" "memory" (memory $7 41 10866 shared))
+  (import "env" "global0" (global $10 f64))
+  (import "env" "func0" (func $13 (param f32 f32 f64) (result i32 f64)))
+  (import "env" "func1" (func $14 (param funcref i32 f64) (result funcref v128)))
+  (memory $8  88 9524 shared)
+  (memory $9  96 46139)
+  (table $5  91 4294967295 externref)
+  (table $6  80 4294967295 funcref)
+  
+  (func $15 (type $0)
+    (param $0 externref)
+    (param $1 i32)
+    (param $2 f32)
+    (param $3 externref)
+    (result i64 v128)
+    (local $4 f64)
+    (local $5 i64)
+    local.get $3
+    local.tee $0
+    local.get $0
+    i32.const 1637882932
+    v32x4.load_interleaved_2 $8 offset=681184748 align=1
+    i16x8.lt_s
+    i32x4.neg
+    f32x4.abs
+    i32x4.bitmask
+    i32.load offset=725143219 align=1
+    local.get $3
+    ref.is_null
+    i64.extend_i32_u
+    f32.const -0x1.5687cap+79
+    table.size $5
+    unreachable
+    )
+  
+  (func $16 (type $2)
+    (param $0 f64)
+    (param $1 i32)
+    (result f32)
+    (local $2 v128)
+    memory.size $8
+    unreachable
+    )
+  
+  (func $17 (type $3)
+    (param $0 i32)
+    (param $1 externref)
+    (param $2 f64)
+    (result i32)
+    (local $3 i64)
+    (local $4 externref)
+    (local $5 v128)
+    (local $6 i32)
+    local.get $0
+    i32x4.load16x4_u $8 offset=1010444837 align=2
+    i8x16.neg
+    data.drop $12
+    i16x8.widen_high_i8x16_s
+    i16x8.widen_low_i8x16_s
+    local.tee $5
+    i16x8.bitmask
+    v64x2.load_splat $8 offset=593447793 align=4
+    i8x16.bitmask
+    v8x16.load_interleaved_4 $9 offset=2471745796 align=4
+    i16x8.lt_u
+    i16x8.add_saturate_u
+    i16x8.max_u
+    f64x2.abs
+    unreachable
+    )
+  
+  (data $11 
+    "X\fdT\eb\bc\c4\n\f9!_\b5t-\b9lWn\cc\9cG\b9\0f\c0\80c\da\0f\19\b9\8d\f6L\03\f6O\01\83$F\b3O'\90\b5\d4\14y\89\f8\0eA\e5\0e\98\dc\19\06")
+  
+  (data $12 
+    "\1d3D"))

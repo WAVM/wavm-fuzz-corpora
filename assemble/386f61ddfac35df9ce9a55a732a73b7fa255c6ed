@@ -1,0 +1,8 @@
+ (func(0)i64.atomic.rmw16.add_u  i64.atomic.rmw16.add_u(0)i64.atomic.rmw16.add_u  i64.atomic.rmw16.add_u
+i64.atomic.rmw16.add_u i64.atomic.rmw16.add_u 
+i64.atomic.rmw16.add_u i64.atomic.rmw16.add_u
+ i64.atomic.rmw16.add_u  i64.atomic.rmw16.add_u(0)i64.atomic.rmw16.add_u  i64.atomic.rmw16.add_u
+i64.atomic.rmw16.add_u i64.atomic.rmw16.add_u
+ 
+i64.atomic.rmw16.add_u i64.atomic.rmw16.add_u
+ )

@@ -1,0 +1,14 @@
+(module
+  (type $0 (func (param f32) (result i32)))
+  (import "env" "table" (table $1 100 4294967295 funcref))
+  (import "env" "func0" (func $6 (param f32) (result i32)))
+  (elem $2 declare externref
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern))
+  (el   "\89'\c3:%.\97\1f\90O\05\a2\8cu\9d!$\e1+\e2|s\b8\9d\1c\cc\e1\eb\dd\n\e8s\e1\0f\90\fax\1e\8f\9e\86"))

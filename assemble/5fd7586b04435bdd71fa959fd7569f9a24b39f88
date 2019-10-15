@@ -1,0 +1,17 @@
+(module
+  (type $0 (func))
+(memory $1  1)(func    i32.const 1
+  i32x4.shr_u  1)(func   i32.const 1
+  i32x4.shr_u    i32x4.shr_u    v128.load i32x4.shr_u    i32x4.shr_u
+0   i
+     1)(func  i32x4.shr_u    i32x4.shr_u
+  1)(func   i32x4.shr_u   t32x4.shr_u   1)(func  i32x4.shr_u    i32x4.shr_u
+  1)(func   i32x4     1)(func  i32x4.shr_u    i32x4.shr_u
+  1)(func   i32x4.shr_u    i33?2o  1)(func   i32x4.shr_u    i32x4.shr_u
+0=  dro  1)(func   i32x4.shr_u i32x4.shr_u    i32x4.shr_u v128.loa33?2o  1)(func   i32x4.shr_u    i32x4.shr_u
+0=  dro  1)(func   i32x4.shr_u i32x4.shr_u    i32x4.shr_u v128const 4.shr_u
+B0   dro  1)(func   i32x4.shr_u    i32þþ128.loa33?2o  1)(func   i32x4.shr_u    i32x4.shr_u
+0=  dro  1)(func   i32x4.shr_u i32x4.shr_u    i32x4.shr_u v128.load
+    i32.const 1
+  i32x4.shr_u    i32x4.shr_u
+B0   dro  1)(func   i32x4.shr_u    i32þþþþ)

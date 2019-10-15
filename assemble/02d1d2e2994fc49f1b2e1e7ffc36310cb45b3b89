@@ -1,0 +1,4 @@
+(module (start $1)(custom_section "j"  (after start))
+   (custom_section "j" (after start))
+
+   (custom_section "j"(  after start)) (func $1))

@@ -1,0 +1,147 @@
+(memory 2)(func()i64)(func()i64.store8
+i64.store8 $%re8
+i64.store8 $%m“m)(func()i32.store8
+i64.store8 $ore
+i64.store8 $8
+i64.store8 $60
+i64store8 $8
+i64.store8 $$6y 2)(func()i64)(func()i64.store8
+i64.store8 $%re8
+i64.store8 $%mem)(func()i32.store8
+i64.store8 $ore
+i64.store8 $8
+i64.store8 $68
+i64.store8 $6
+i64.store8 $68
+i64.store8 $688
+i64.store8 $68m8
+i64.store8 $ore
+i64.store8 $8
+i64.store8 $68
+i64.store8 $6
+i64.store8 $68
+i64.store8 $688
+i64.store8 $68
+i64.store8 $688
+i6$%memc()i64)(func()i64.store8
+i64.store8 $%re8
+i64.store8 $%mem)(func()i32.store8
+i64.store8 $ore
+i64.store8 $8
+i64.store8 $68
+i64.store8 $6
+i64.store8 $68
+i64.store8 $688
+i64.store8 $68m8
+i64.store8 $ore
+i64.store8 $8
+i64.store8 $68
+i64.store8 $6
+.ore8 $8
+i64.store8 $68
+i64.store8 $6
+i64.store8 $6y 2)(func()i64)(func()i64.store8
+i64.store8 $%re8
+i64.store8 $%e
+i64.store8 $8
+i64.store8 $68
+i64.store8 $6
+i64.store8 $68
+i64.store8 $688
+i64.store8 $68m8
+i64.store8 $unc()i32.store8
+i64.store8 $ore
+i64.store8 $8
+i64.store8 $60
+i64.store8 $6
+i64.store8 $68
+i64.store8 $688
+i64.store8 $68m8
+i64.store8 $6
+i64.store8 $68
+i64.store8 $688
+i64.store8 $68m8
+i64.store8 $ore
+i64.store8 $8
+i64.store8 $68
+i64.store8 $6
+i64.store8 $6y 2)(func()i64)(func()i64.store8
+i64.store8 $ore
+i64.store8 $8
+i64.store8 $68
+i64.store8 $6
+i64.store8 $68
+i64.store8 $688
+i64.store8 $68
+i64.store8 $ $688
+i6$%mem)(func()i32.store8
+i64.store8 $ore
+i64.store8 $8
+i64.store8 $60
+i64.store8 $6
+i64.store8 $68
+i64.store8 $688
+i64.store8 $68m8
+i64.store8 $ore
+i64.store8 $8
+i64.store8 $68
+i64.store8 $6
+i64.store8 $6y 2)(func()i64)(func()i64.store8
+i64.store8 $%re8
+i64.store8 $%mem)(func()i32.store8
+i64.store8 $ore
+i64.store8 $8
+i64.store8 $68
+i64.store8 $6
+i64.st688
+i6$%mem)(func()i32.store8
+i
+i64.store8 $6
+i64.store8 $6y 2)(func()i64)(func()i64.store8
+i64.store8 $%re8
+i64.store8 $%mem)(func()i32.store8
+i64.store8 $ore
+i64.store8 $8
+i64.store8 $68
+i64.store8 $6
+i64.store8 $68
+i64.store8 $688
+i64.store8 $68m8
+i64.store8 $ore
+i64.store8 $8
+i64.store8 $68
+i64.store8 $6
+i64.store8 $68
+i64.store8 $688
+i64.store8 $68
+i64.store8 $688
+i6$%mem)(func()i32.store8
+i64.store8 $ore
+i64.store8 $8
+i64.store8 $60
+i64.store8 $6
+i64.store8 $68
+i64.store8 $688
+i64.store8 $68m8
+i64.store8 $ore
+i64.store8 $8
+i64.store8 $68
+i64.store8 $6
+i64.store8 $6y 2)(func()i64)(func()i64.store8
+i64.store8 $%re8
+i64.store8 $%mem)(func()i32.store8
+i64.store8 $ore
+i64.store8 $8
+i64.store8 $68
+i64.store8 $6
+i64.store8 $68
+i64.store8 $688
+i64.store8 $68m8
+i64.store8 $ore
+i64.store8 $8
+i64.store8 $68
+i64.store8 $6
+i64.store8 $68
+i64.store8 $688
+i64.se8 $688
+i644.store8 $68)

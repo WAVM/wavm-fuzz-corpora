@@ -1,0 +1,2 @@
+ (func f64.const +nan:0x000  f64.const +nan:0x0 f64.const +nan:0x0
+)

@@ -1,0 +1,12 @@
+(mod32 (i32.const -532245034))
+  (global $5  elare table)
+  (elem $7 funcref
+    (ref.func $8) (ref.null funcef.null func) (ref.null func) (ref.null func)
+    (ref.func $8) (ref.func $8) (ref.func $8) (ref.null func)
+    (ref.null func) (ref.null func) (ref.null func) (ref.func $8)
+    (ref.nul) (ref.null func) (ref.null func) (ref.func $8))
+  
+  (func $8 (type $0)
+    (paranull func
+    unreachable
+    ))

@@ -1,0 +1,15 @@
+(module
+  (type $0 (func (param) (result f32)))
+  (type $3 (func (param v128) (result f64)))
+ 
+    (func        (param $a v128)
+    (result f64)
+    local.get $a
+    f64x2.extract_lane 0 ) 
+ 
+  (func $63 (type $3)
+    (param $a v128)
+    (result f64)
+    local.get $a
+    f64x2.extract_lane 1
+    ))

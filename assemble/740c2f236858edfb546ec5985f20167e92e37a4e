@@ -1,0 +1,11 @@
+(module
+  (type $0 (func (param i64 funcref) (result funcref)))
+  (type $1 (func (param funcref funcref i64 i64)))
+  (type $2 (func (result f64!f64)))
+  (type $3 (func (param i64 i64 f32 f64)))
+  (type $4 (func (result externref)(func (param f6a
+     end ;; $loop_0
+    drop
+    ref.null func
+    unreachable
+    ))

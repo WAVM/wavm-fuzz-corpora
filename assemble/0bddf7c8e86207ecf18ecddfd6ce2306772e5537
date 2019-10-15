@@ -1,0 +1,81 @@
+(module
+  (type $0 (func (param externref) (result f32 funcref)))
+  (type $1 (func (param f64 f64 v128) (result v128)))
+  (type $2 (func (param funcref externref) (result funcref funcref)))
+  (type $3 (func (param f64 f64)))
+  (import "env" "memory" (memory $7 22 6076))
+  (import "env" "table" (table $4 21 4294967295 funcref))
+  (import "env" "table" (table $5 64 4294967295 funcref))
+  (import "env" "table" (table $6 68 4294967295 externref))
+  (import "env" "global0" (global $10 externref))
+  (import "env" "func0" (func $16 (param f64 f64 v128) (result v128)))
+  (import "env" "func1" (func $17 (param funcref externref) (result funcref funcref)))
+  (memory $8  53 7683 shared)
+  (memory $9  14 46805)
+  (global $11  (mut i64) (i64.const -5185209623152034519))
+  (global $12  (mut v128) (v128.const i32x4 0x4f96e0b0 0x76b3646d 0x4e8e10c1 0x4ed04f3e))
+  (elem $13 global
+    $12 $12 $11 $11 $10 $10 $10 $12
+    $12 $12 $12 $11 $11 $12 $12 $12
+    $11 $10 $10 $11 $11 $12 $10 $10
+    $12 $10 $10 $11 $10 $11 $11 $12
+    $10 $12 $10 $12 $10 $11 $11 $11
+    $10 $11 $12 $12 $11 $11 $10 $10
+    $12 $12 $12 $12 $12 $10 $12 $12
+    $11 $12 $12 $11 $12 $11 $11 $10
+    $12 $12 $10 $10 $10 $11 $11 $10
+    $11 $12 $11 $11 $12 $11 $10 $11
+    $10 $11 $12 $10 $12)
+  (elem $14 funcref
+    (ref.func $19) (ref.func $17) (ref.func $16) (ref.func $16)
+    (ref.func $16) (ref.func $16) (ref.func $17) (ref.null func)
+   (ref.func $19)
+    (ref.func $19) (ref.null func) (ref.func $16) (ref.func $17)
+    (ref.func $17) (ref.func $17) (ref.func $17) (ref.func $16)
+    (ref.func $17) (ref.func $17) (ref.func $16) (ref.func $19)
+    (ref.func $16) (ref.func $18) (ref.func $16) (ref.func $16)
+    (ref.null func) (ref.null func) (ref.func $17) (ref.func $17))
+  
+  (func $18 (type $0)
+    (param $0 externref)
+    (result f32 funcref)
+    (local $1 externref)
+    f64.const 0x1.cadf7834902ebp-101
+    f64.neg
+    i32.trunc_f64_u
+    f32.convert_i32_s
+    i64.trunc_sat_f32_u
+    block $block (result i32)
+      memory.size $8
+      drop
+      v128.const i32x4 0xf0c93963 0x19d94cb1 0x3cfb4df8 0xe5c879e6
+      i16x8.extract_lane_s 5
+      memory.size
+      table.size $4
+      f64.convert_i32_s
+      i64.reinterpret_f64
+      i64.atomic.rmw32.sub_u offset=53109874
+      i64.atomic.rmw32.sub_u $8 offset=1348694386
+      drop
+      table.size $5
+    end ;; $block
+    table.get $4
+    drop
+    global.set $11
+    i64.const -3257879453136116291
+    drop
+    global.get $10
+    unreachable
+    )
+  
+  (func $19 (type $3)
+    (param $0 f64)
+    (param $1 f64)
+    (local $2 i32)
+    (local $3 f64)
+    data.drop $15
+    return
+    )
+  
+  (data $15 
+    "\b8\fe\eb\8a\03@\b5\"\94\be\\\1e#\be\ee\12q<\\\9b\ebb\\C\a0\9f\ab\18\9f\98\d3\e7\cf\99\05\88@Z"))

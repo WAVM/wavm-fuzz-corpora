@@ -1,0 +1,60 @@
+(module
+  (type $0 (func (param funcref v128 v128 funcref)))
+  (type $1 (func (param externref) (result i32 funcref)))
+  (import "env" "memory" (memory $3 4 5995 shared))
+  (memory $4  10 21100 shared)
+  (table $2  56 4294967295 funcref)
+  (elem $5 (i32.const -174096710) funcref
+    (ref.func $8) (ref.null func) (ref.null func) (ref.func $8)
+    (ref.null func) (ref.null func) (ref.null func) (ref.func $8)
+    (ref.null func) (ref.func $8) (ref.func $8) (ref.func $8)
+    (ref.func $8) (ref.null func) (ref.func $8) (ref.null func)
+    (ref.null func) (ref.null func) (ref.null func) (ref.func $8)
+    (ref.null func) (ref.func $8) (ref.null func) (ref.null func)
+    (ref.null func) (ref.func $8) (ref.func $8) (ref.null func)
+    (ref.null func) (ref.null func) (ref.null func) (ref.null func)
+    (ref.null func) (ref.func $8) (ref.null func) (ref.null func)
+    (ref.func $8) (ref.func $8) (ref.func $8) (ref.func $8)
+    (ref.func $8) (ref.func $8) (ref.func $8))
+  
+  (func $8 (type $0)
+    (param $0 funcref)
+    (param $1 v128)
+    (param $2 v128)
+    (param $3 funcref)
+    (local $4 f32)
+    (local $5 externref)
+    table.size $2
+    i32.const 1373854693
+    i64x2.load32x2_u $4 offset=1832552093
+    i32x4.trunc_sat_f32x4_u
+    i32x4.all_true
+    block $block
+      data.drop $7
+      atomic.fence
+      local.get $1
+      i8x16.all_true
+      v128.load offset=4147384760 align=8
+      local.get $5
+      i64.const -5191390856717304725
+      local.get $5
+      loop $loop (param externref) (result i32 funcref)
+        ref.null extern
+        ref.null func
+        br $block
+      end ;; $loop
+      drop
+      br $block
+    end ;; $block
+    i32.atomic.rmw16.and_u $4 offset=2829115001
+    table.get $2
+    local.set $0
+    unreachable
+    )
+  
+  (data $6 
+    "\aaG\ae7\00>\ee\b4d\e4\91\a6\e4}\9crS\f8\8b\dcC\06\e6\b2\f5\ec\9a7\00\8b=\02A_E\fbr"
+    "\bb\cdA\1bG\ed")
+  
+  (data $7 
+    "\da\c8\99\7f"))

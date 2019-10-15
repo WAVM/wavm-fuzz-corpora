@@ -1,0 +1,9 @@
+(func br 0 i64.eqz br
+0 i64.eqz br
+ 0 i64.eqz br 0 i64.eqz br
+0 i64.eqz br
+ 0 i64.eqz br
+0 i64.eqz br
+
+0 i64.eqz br
+0)

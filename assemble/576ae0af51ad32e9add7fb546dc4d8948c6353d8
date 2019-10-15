@@ -1,0 +1,122 @@
+(module
+  (type $0 (func (result i64 funcref)))
+  (type $1 (func (param f32)))
+  (type $2 (func (result i32)))
+  (type $3 (func (param f32 externref f32) (result i64 funcref)))
+  (type $4 (func (param funcref) (result v128)))
+  (type $5 (func (result i64 externref v128)))
+  (type $6 (func (param i64 f32 v128)))
+  (type $7 (func (param v128 i32) (result i32 i32)))
+  (import "env" "memory" (memory $11 47 47667 shared))
+  (import "env" "memory" (memory $12 89 771))
+  (import "env" "table" (table $8 29 4294967295 externref))
+  (import "env" "table" (table $9 68 4294967295 externref))
+  (import "env" "func0" (func $17 (result i32)))
+  (memory $13  43 11293)
+  (table $10  48 4294967295 externref)
+  (elem $14 externref
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern))
+  
+  (func $18 (type $0)
+    (result i64 funcref)
+    (local $0 i32)
+    call $17
+    v64x2.load_interleaved_4 $13 offset=4213341231
+    v8x16.shuffle 8 27 18 10 27 9 6 2 24 9 22 6 18 6 10 8
+    v8x16.swizzle
+    f32.const 0x1.43e072p+51
+    i32.trunc_f32_u
+    elem.drop $14
+    table.get $8
+    elem.drop $14
+    data.drop $15
+    block $block
+      data.drop $15
+      call $18
+      block $block_0 (param funcref) (result v128)
+        block $block_1 (result i64 externref v128)
+          i64.const -3106493416809232481
+          br $block
+        end ;; $block_1
+        br $block
+      end ;; $block_0
+      ref.null extern
+      unreachable
+    end ;; $block
+    ref.is_null
+    select
+    ref.null extern
+    unreachable
+    )
+  
+  (func $19 (type $1)
+    (param $0 f32)
+    v128.const i32x4 0xe6e7c4d1 0xf9b49675 0x26ee1ff9 0xf36bd4be
+    i32x4.widen_high_i16x8_s
+    f32x4.convert_i32x4_u
+    i32x4.trunc_sat_f32x4_u
+    nop
+    i32x4.trunc_sat_f32x4_u
+    i32x4.abs
+    f32.const 0x1.15eb94p+37
+    i32.trunc_f32_u
+    i64.load8_s offset=3938641588
+    f32.const -0x1.eed7eap+33
+    v128.const i32x4 0x659df7f7 0x123a56e1 0xe7bae79c 0x3f729993
+    loop $loop (param i64 f32 v128)
+      i32x4.widen_low_i16x8_s
+      i32x4.bitmask
+      drop
+      unreachable
+    end ;; $loop
+    unreachable
+    )
+  
+  (func $20 (type $3)
+    (param $0 f32)
+    (param $1 externref)
+    (param $2 f32)
+    (result i64 funcref)
+    table.size $8
+    v32x4.load_interleaved_4 offset=2399390722 align=2
+    i16x8.any_true
+    loop $loop (param v128 i32) (result i32 i32)
+      v8x16.load_interleaved_2 $13 offset=3065685315
+      loop $loop_0
+        local.get $2
+        call $18
+        br 2
+      end ;; $loop_0
+      i8x16.all_true
+      select
+      memory.size $12
+      i8x16.splat
+      i64x2.add
+      f32x4.abs
+      ref.null extern
+      drop
+      drop
+      unreachable
+    end ;; $loop
+    table.get $8
+    ref.null func
+    unreachable
+    )
+  
+  (data $15 (memory $13) (i32.const 268625422)
+    "I\b3\7f\9fRLw\99z\d1\90\cc\91\07\ec\80\f0\d5w\7f8")
+  
+  (data $16 
+    "\1dJ\93IE\c1\93\01cc\81k\a5S\84q(\d4\e5I\9d\1a\b4\c1\b6\a7\10\15\bcZ\cehg-\bd\fa0r!"))

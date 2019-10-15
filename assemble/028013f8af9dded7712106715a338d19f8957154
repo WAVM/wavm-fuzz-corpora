@@ -1,0 +1,93 @@
+(module
+  (type $0 (func (param i64 i32) (result funcref)))
+  (type $1 (func (result i64 f64)))
+  (type $2 (func))
+  (type $3 (func (param externref f64 f32) (result v128)))
+  (type $4 (func (param i32 funcref externref) (result funcref v128)))
+  (type $5 (func (result i64 funcref)))
+  (import "env" "table" (table $6 61 4294967295 shared externref))
+  (import "env" "table" (table $7 58 4294967295 shared funcref))
+  (import "env" "table" (table $8 97 4294967295 shared externref))
+  (import "env" "func0" (func $13 (result i64 f64)))
+  (import "env" "func1" (func $14 (param externref f64 f32) (result v128)))
+  (memory $9  99 36994 shared)
+  (memory $10  68 19280)
+  (elem $11 table
+    $7 $7 $8 $6 $6 $8 $7 $8
+    $8 $8 $7 $6 $7 $7 $7 $8
+    $7 $7 $6 $7 $8 $7 $7 $7
+    $7 $8 $7 $6 $7 $6 $6 $8
+    $6 $7 $7 $6 $6 $6 $6 $8
+    $8 $8 $6 $6 $6 $7 $7 $7
+    $8 $6 $7 $7 $8 $8 $6 $7
+    $6 $6 $7 $7 $7 $8 $7 $7
+    $6 $7 $7 $7 $7 $6 $7 $6
+    $7 $6 $7 $7 $6 $7 $8 $7
+    $7 $6 $7 $8 $7 $6 $6 $6
+    $8 $7)
+  
+  (func $15 (type $0)
+    (param $0 i64)
+    (param $1 i32)
+    (result funcref)
+    (local $2 f64)
+    (local $3 funcref)
+    ref.null extern
+    data.drop $12
+    block $block (result i64 funcref)
+      local.get $0
+      call $16
+      i64.extend16_s
+      f32.convert_i64_u
+      i32.trunc_f32_s
+      i16x8.splat
+      local.get $1
+      i32.load16_u $10 offset=4249948958 align=1
+      v16x8.load_interleaved_2 offset=1367283122 align=8
+      i32x4.trunc_sat_f32x4_s
+      i32x4.sub
+      f32x4.min
+      drop
+      local.get $3
+      return
+    end ;; $block
+    unreachable
+    )
+  
+  (func $16 (type $2)
+    (local $0 v128)
+    (local $1 f64)
+    (local $2 i64)
+    nop
+    i64.const -2477024308938406623
+    atomic.fence
+    br 0
+    )
+  
+  (func $17 (type $4)
+    (param $0 i32)
+    (param $1 funcref)
+    (param $2 externref)
+    (result funcref v128)
+    (local $3 externref)
+    call $13
+    table.size $6
+    local.tee $0
+    v8x16.load_interleaved_4 $10 offset=2076712177 align=4
+    i16x8.add_saturate_s
+    i16x8.narrow_i32x4_s
+    table.size $8
+    v8x16.load_interleaved_4 offset=4161766135 align=1
+    f64x2.mul
+    i16x8.narrow_i32x4_u
+    i16x8.add_saturate_u
+    i16x8.widen_high_i8x16_u
+    i32x4.min_u
+    i16x8.narrow_i32x4_u
+    i8x16.abs
+    i8x16.neg
+    unreachable
+    )
+  
+  (data $12 (memory $10) (i32.const 1137256016)
+    "\e9\003r\1a\0b\bd\86\c4D\fcLO\9d\f9\81\00f\85T-I@X\c7\b6\b0\94\c8\fa\be\fb\a0\ee\e9\cc#\bf\92b\86\eaJ\f8\e2\a0\n\\\adv\87\0d\a3\d2\d1\d5\b1\a40\8a\f0\b3\d6"))

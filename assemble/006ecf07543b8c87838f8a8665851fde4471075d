@@ -1,0 +1,7 @@
+(module(memory 1)(func br 0
+i32.atomic.rmw8.add_u i32.atomic.rmw8.add_u i32.atomic.rmw8.add_u br 0
+i32.atomic.rmw8.add_u 
+i32.atomic.rmw8.add_u i32.atomic.rmw8.add_u i32.atomic.rmw8.add_u
+i32.atomic.rmw8.add_u i32.atomic.rmw8.add_u i32.atomic.rmw8.add_u i32.atomic.rmw8.add_u  i32.atomic.rmw8.add_u 
+i32.atomic.rmw8.add_u i32.atomic.rmw8.add_u i32.atomic.rmw8.add_u
+i32.atomic.rmw8.add_u )

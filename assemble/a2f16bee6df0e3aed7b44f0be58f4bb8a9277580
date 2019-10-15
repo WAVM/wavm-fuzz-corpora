@@ -1,0 +1,40 @@
+(module
+  (type $0 (func))
+  (import "env" "memory" (memory $1 82 37959 shared))
+  (memory $2  45 20429)
+  (memory $3  43 23090)
+  
+  (func $4 (type $0)
+    (local $0 funcref)
+    (local $2 funcref)
+    i32.const -645856292
+    i32.extend8_s
+    f64.convert_i32_u
+    i32.const -645856293
+    i32.extend8_s
+    f64.convert_i32_u
+    f64.sqrt
+    i32.trunc_sat_f64_u
+    v64x2.load_interleaved_4 $3 offset=1125568700 align=8
+    i8x16.max_s
+    i16x8.lt_s
+    i8x16.all_true
+    i32.const -1714291342
+    i32.atomic.rmw16.or_u $2 offset=1078220133
+    v128.const i32x4 0xec71c7b1 0xebb5605b 0x4550039d 0x7267360e
+    i16x8.all_true
+    i32.atomic.rmw8.or_u $2 offset=2714906525
+    v16x8.load_interleaved_3 $2 
+    i16x8.lt_s
+    i8x16.all_true
+    i32.const -1714291342
+    i32.atomic.rmw16.or_u $2 offset=1038220133
+    v128.const i32x4 0xec1c717b 0xebb5605b 0x4550039d 0x7267360e
+    i16x8.all_true
+    i32.atomic.rmw8.or_u $2 offset=2724906525
+    v16x8.load_interleaved_3 $2 offset=3727576012
+    i16x8.gt_s
+    f64x2.le
+    i8x16.min_u
+    br 0
+    ))

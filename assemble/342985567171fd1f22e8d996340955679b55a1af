@@ -1,0 +1,3 @@
+(func() call_indirect call_indirect call_indirect
+call_indirect call_indirect call_indirect call_indirect()call_indirect)(func() call_indirect call_indirect call_indirect
+call_indirect call_indirect call_indirect call_indirect()call_indirect)

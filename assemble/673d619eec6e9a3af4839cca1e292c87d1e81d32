@@ -1,0 +1,72 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param externref funcref i64) (result f64 i32)))
+  (type $2 (func (param v128 f32) (result externref)))
+  (type $3 (func (param externref v128 f64 i64) (result externref f32)))
+  (type $4 (func (result funcref i64)))
+  (type $5 (func (param funcref i64)))
+  (import "env" "memory" (memory $6 94 19015 shared))
+  (import "env" "global0" (global $7 funcref))
+  (import "env" "func0" (func $11))
+  (import "env" "func1" (func $12 (param externref funcref i64) (result f64 i32)))
+  (import "env" "func2" (func $13 (param externref v128 f64 i64) (result externref f32)))
+  (global $8  externref (ref.null extern))
+  
+  (func $14 (type $2)
+    (param $0 v128)
+    (param $1 f32)
+    (result externref)
+    (local $2 i32)
+    ref.null extern
+    f64.const -0x1.778761ddd8685p-578
+    i32.trunc_f64_u
+    i32x4.load16x4_u offset=868967075 align=2
+    f32x4.extract_lane 0
+    memory.size
+    f32.const 0x1.3f4e3cp-45
+    call $15
+    atomic.fence
+    call $15
+    drop
+    ref.null func
+    drop
+    drop
+    local.get $0
+    drop
+    v128.const i32x4 0x2ef10e22 0xecce4eda 0x7153f04f 0x33fbe8bc
+    drop
+    block $block (param funcref i64)
+      f32.convert_i64_u
+      local.tee $1
+      ref.null extern
+      unreachable
+    end ;; $block
+    ref.null func
+    ref.null extern
+    ref.is_null
+    drop
+    ref.null func
+    ref.is_null
+    unreachable
+    )
+  
+  (func $15 (type $4)
+    (result funcref i64)
+    atomic.fence
+    call $11
+    f32.const -0x1.bfc81cp-71
+    f32.const -0x1.2d20b2p-50
+    f32.max
+    ref.null extern
+    ref.is_null
+    i32.const -1974149841
+    i32.atomic.rmw8.or_u offset=2001951123
+    i64x2.load32x2_u offset=4228449866 align=4
+    unreachable
+    )
+  
+  (data $9 (i32.const -466674688)
+    "HQ\\?\cb.\c9\ca\b2\b4\ca\b9>i\d6o\92^\be\c8m\8f\e4\d7\b0\e0R!\d1M\b8\96\b5,\a8GRU\ff=\8d\8f\90\e4Iv\8f\ffVxa\d9\f2\80\eeD\7fJ\a6|&@\bc\b1")
+  
+  (data $10 (i32.const 2125347039)
+    "\fb\fes\fb\96@\d9u\ae\f7\07l8\94\df\1d\fb\\a\c5X/\12*P\07a0~V-M\b4\9d\e1b.\a6\04q3\83\fd\d3y\8a{\1a\a7uSE\f0\c6z\84\8a\c1S\8f"))

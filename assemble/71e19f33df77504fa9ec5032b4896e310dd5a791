@@ -1,0 +1,53 @@
+(module
+  (type $0 (func (result i32)))
+  (type $1 (func (param i32)))
+  (type $2 (func (param funcref f32 i32) (result i32)))
+  (type $3 (func (param f32) (result externref)))
+  (type $4 (func (param v128 v128 i32) (result i64 f64)))
+  (type $5 (func (param i64)))
+  (import "env" "memory" (memory $6 53 30377 shared))
+  (import "env" "global0" (global $9 i64))
+  (import "env" "global3" (global $10 f64))
+  (import "env" "global6" (global $11 funcref))
+  (import "env" "func0" (func $18 (result i32)))
+  (import "env" "func1" (func $19 (param i32)))
+  (import "env" "func2" (func $20 (param funcref f32 i32) (result i32)))
+  (import "env" "func3" (func $21 (param v128 v128 i32) (result i64 f64)))
+  (memory $7  23 53234)
+  (memory $8  19 29380 shared)
+  (global $12  funcref (ref.null func))
+  (global $13  v128 (v128.const i32x4 0x7a505bb7 0x3d5ea1ee 0x5cbcdb21 0x32f160cd))
+  (global $14  f64 (f64.const 0x1.c03c8f8f63671p+62))
+  (global $15  f32 (f32.const 0x1.e1abccp+31))
+  (elem $16 declare memory
+    $7 $8)
+  
+  (func $22 (type $3)
+    (param $0 f32)
+    (result externref)
+    ref.null func
+    data.drop $17
+    call $18
+    f32.convert_i32_s
+    f32.ceil
+    data.drop $17
+    f32.nearest
+    i64.trunc_f32_s
+    i64.eqz
+    i32.load offset=2370769485
+    call $18
+    i32.rem_s
+    global.get $9
+    i64.atomic.rmw.and $7 offset=3928393227
+    block $block (param i64)
+      ref.null func
+      ref.is_null
+      br_if $block
+      unreachable
+    end ;; $block
+    drop
+    unreachable
+    )
+  
+  (data $17 
+    "\96\b1>\aaZ\cc\0b\1e`@\a9'\ac\85\d8i\1dm`V!\e1\b6K4\ff\e3:\dcD\a5\0d\a9\ef\1c2#\19lN\95u"))

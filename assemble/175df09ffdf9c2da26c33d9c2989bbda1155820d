@@ -1,0 +1,1 @@
+(memory 6)(func(r /)v8x16.load_interleaved_3(b 0)v8x16.load_interleaved_3())(func()v8x16.load_6)(func(b/)v8x16.load_interleaved_3(b 0b0)v8x16.load_interleaved_3())(func()v8x16.load_interleaved_3(b 0b0)v6.load_i 6)(func(br /)v8x16.load_interleaved_3(b 0b0)v8x16.load_interleaved_3())(func()v8x16.load_interleaved_3(b 0b0)v)

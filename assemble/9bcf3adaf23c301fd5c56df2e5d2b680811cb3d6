@@ -1,0 +1,62 @@
+(module
+  (type $0 (func (param funcref i64) (result externref)))
+  (type $1 (func (param f64 f64) (result f32 f64 i32)))
+  (import "env" "memory" (memory $2 54 21228 shared))
+  (import "env" "global0" (global $3 (mut v128)))
+  (elem $4 funcref
+    (ref.func $5) (ref.null func) (ref.null func) (ref.null func)
+    (ref.null func) (ref.func $5) (ref.null func) (ref.null func)
+    (ref.func $5) (ref.null func) (ref.func $5) (ref.func $5)
+    (ref.func $5) (ref.func $5) (ref.func $5) (ref.null func)
+    (ref.null func) (ref.func $5) (ref.null func) (ref.null func)
+    (ref.func $5) (ref.func $5) (ref.null func) (ref.func $5)
+    (ref.null func) (ref.func $5) (ref.func $5) (ref.func $5)
+    (ref.null func) (ref.null func) (ref.func $5) (ref.null func)
+    (ref.null func) (ref.func $5) (ref.null func) (ref.func $5)
+    (ref.null func) (ref.null func) (ref.null func))
+  
+  (func $5 (type $0)
+    (param $0 funcref)
+    (param $1 i64)
+    (result externref)
+    (local $2 f64)
+    (local $3 i32)
+    (local $4 f64)
+    local.get $2
+    memory.size
+    i16x8.splat
+    i32x4.trunc_sat_f32x4_s
+    i8x16.any_true
+    i64.load8_s offset=430456062
+    f64.const 0x1.634397ce6342ap+19
+    local.get $2
+    block $block (param f64 f64) (result f32 f64 i32)
+      loop $loop (result i64)
+        local.get $3
+        i32.const -1110671876
+        elem.drop $4
+        i32.atomic.rmw8.add_u offset=502395279
+        i32x4.load16x4_u offset=3318008906
+        unreachable
+      end ;; $loop
+      unreachable
+    end ;; $block
+    local.set $3
+    local.set $2
+    drop
+    local.set $1
+    local.set $4
+    local.get $0
+    ref.is_null
+    drop
+    i64.const 7988772036054899498
+    ref.null func
+    drop
+    drop
+    local.get $0
+    ref.is_null
+    drop
+    atomic.fence
+    i64.const 7573668707645353419
+    unreachable
+    ))

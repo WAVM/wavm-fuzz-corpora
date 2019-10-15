@@ -1,0 +1,31 @@
+(module
+  (type $0 (func (param i64 funcref funcref)))
+  (import "env" "memory" (memory $1 35 14135 shared))
+  (import "env" "global0" (global $4 v128))
+  (import "env" "global1" (global $5 i32))
+  (import "env" "global2" (global $6 v128))
+  (import "env" "global3" (global $7 f64))
+  (import "env" "global4" (global $8 (mut f32)))
+  (memory $2  32 4736 shared)
+  (memory $3  37 50001)
+  (global $9  (mut f32) (f32.const 0x1.a99a1ap+31))
+  
+  (func $10 (type $0)
+    (param $0 i64)
+    (param $1 funcref)
+    (param $2 funcref)
+    global.get $8
+    i32.trunc_sat_f32_u
+    i64x2.load32x2_s $1 offset=3877772465 align=1
+    i16x8.neg
+    i8x16.abs
+    f64x2.abs
+    f32x4.extract_lane 3
+    f32x4.splat
+    atomic.fence
+    i8x16.any_true
+    i16x8.load8x8_u $3 offset=1248638556
+    i32x4.widen_low_i16x8_u
+    i32x4.extract_lane 1
+    br 0
+    ))

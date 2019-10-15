@@ -1,0 +1,74 @@
+(module
+  (type $0 (func (param f32 i64 i32)))
+  (type $1 (func (param i32 funcref externref externref) (result i64 f64)))
+  (type $2 (func (param funcref f32 v128 i32) (result i32 i64)))
+  (type $3 (func (param i64) (result externref funcref funcref)))
+  (import "env" "memory" (memory $4 39 2810 shared))
+  (import "env" "global0" (global $6 (mut i64)))
+  (import "env" "global1" (global $7 (mut i32)))
+  (import "env" "global2" (global $8 externref))
+  (import "env" "global4" (global $9 i64))
+  (import "env" "global5" (global $10 v128))
+  (import "env" "global7" (global $11 externref))
+  (import "env" "global9" (global $12 (mut f64)))
+  (import "env" "func0" (func $16 (param f32 i64 i32)))
+  (memory $5  70 15391)
+  (global $13  funcref (ref.null func))
+  (global $14  (mut i64) (i64.const -2582966086095707126))
+  (global $15  f32 (f32.const 0x1.30b916p+31))
+  
+  (func $17 (type $1)
+    (param $0 i32)
+    (param $1 funcref)
+    (param $2 externref)
+    (param $3 externref)
+    (result i64 f64)
+    (local $4 funcref)
+    (local $5 f64)
+    (local $6 f64)
+    global.get $8
+    global.get $15
+    local.get $1
+    drop
+    global.get $6
+    v128.const i32x4 0x3273823e 0xb037fdbc 0x5727ebf6 0x344cd64f
+    f32x4.abs
+    i32x4.widen_high_i16x8_u
+    i64x2.extract_lane 0
+    i64.lt_s
+    i64.load $5 offset=3130283797 align=1
+    global.get $6
+    f64.const 0x1.8dfb4f4bfd21bp+513
+    f64.trunc
+    f64.abs
+    br 0
+    )
+  
+  (func $18 (type $2)
+    (param $0 funcref)
+    (param $1 f32)
+    (param $2 v128)
+    (param $3 i32)
+    (result i32 i64)
+    (local $4 f64)
+    (local $5 i32)
+    v128.const i32x4 0x6a802ba8 0xf6e9e9ad 0xa6e252b9 0xb6bd4b3c
+    i32x4.trunc_sat_f32x4_s
+    i16x8.extract_lane_u 7
+    i64.extend_i32_u
+    i64.extend8_s
+    global.get $6
+    i64.lt_u
+    global.get $11
+    i64.const 2277584244996952429
+    loop $loop (param i64) (result externref funcref funcref)
+      i64.eqz
+      atomic.fence
+      i32x4.splat
+      i8x16.neg
+      global.get $7
+      global.set $7
+      unreachable
+    end ;; $loop
+    unreachable
+    ))

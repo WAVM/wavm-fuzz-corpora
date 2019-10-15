@@ -1,0 +1,4 @@
+(module (import "en~" "func0" (func $8 (param funcref v128)
+ )) (memory $5  44 61311 shared)
+  
+  (func $10    (parx4 0x4f1e1 0x0d81f0rt "en~" 0"))

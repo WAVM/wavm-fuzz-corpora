@@ -1,0 +1,35 @@
+(module
+  (type $0 (func))
+  (memory $1  1)
+  (export "intrMinsic-in-block" (func $2))
+  (export "i8x16.r_u" (func $16))
+  (export "nesten-i16x8.shl" (func $17))
+  (export "nes_s" (func $18))
+  (export "nesBl6kCoted-i1hl" (func $23))
+  (export "nested-i@4x2name_s" (func $24
+))  (export "nes.shr_u" (func $25))
+  
+  (func $2 (type $0)
+     drop
+        )
+ 
+  (func $16 (type $0)
+   r
+   )
+  
+  (func $17 (type $0)
+ lane8.le_s)
+  
+  (func $18 (type $0)
+   )
+  
+  (func $23 (type $0)
+    i32.const 0  é32.const  )
+ 
+  (func $24 (type $0)
+ ? shr_s
+    drop
+    )
+  
+  (func $25 ÿÿÿ    drop
+  z ))

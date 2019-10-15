@@ -1,0 +1,1019 @@
+(func(iiw)(i32.atomic.rmw8.xchg_u)(i32.atomic.rmw8.xchg_u()()))(memory 1)(func()c.l)(type $0 (func))
+  (func 0 (func))
+  (func ved_4 )
+    (func 
+    v=x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftved_4 )
+    (func 
+    v6x16.store_interleaved_4
+ $1
+
+    v8x16.store_inteÿÿÿÿved_4
+aftv8x4 )
+    (func 
+    v6x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+aftzev8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+aftzet $gved_4 )
+    (func 
+   _interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 eaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftved_4 )
+    (func 
+    v6x16.store_interleaved_4
+ $1
+
+    v8x16.store_inteÿÿÿÿved_4
+aftv8x4 )
+    (func 
+    v6x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+aftzev8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+aftzet $gved_4 )
+    (func 
+   _interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_inte4
+aftved_4 )
+    (func 
+    v8x16.store_interleaved_4   v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+aftzev8x4 )
+    (func     v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_inter
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftved_4 )
+    (func 
+    v8x16.store_interleaved_4   v8x15.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func terleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+aftzev8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+ terleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 eaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftved_4 )
+    (func 
+    v6x16.store_interleaved_4
+ $1
+
+    v8x16.store_inteÿÿÿÿved_4
+aftv8x4 )
+    (func 
+    v6x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+aftzev8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+aftzet $gved_4 )
+    (func 
+   _interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_inte4
+aftved_4 )
+    (func 
+    v8x16.store_interleaved_4   v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_i
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+afttv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftved_4 )
+    (func 
+    v8x16.store_interleaved_4   v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+aftzev8x4 )
+    (func     v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_inter
+    v8x16.store_interleaved_4
+ $1
+)
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_inte4
+aftved_4 )
+    (func 
+    v8x16.store_interleaved_4   v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+  c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func terleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+aftzev8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+afttv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftved_4 )
+    (func 
+    v8x16.store_interleaved_4   v8x16.store_intestore_interleaved_4
+afttv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftved_4 )
+    (func 
+    v8x16.store_interleaved_4   v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+aftzev8x4 )
+    (func     v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_inter
+    v8x16.store_interleaved_4
+ $1
+)
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_inte4
+aftved_4 )
+    (func 
+    v8x16.store_interleaved_4   v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+aftzev8x4 )
+    (func     v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_inter
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x1v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftved_4 )
+    (func 
+    v8x16.store_interleaved_4   v8x15.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func terleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+aftzev8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+afttv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftved_4 )
+    (func 
+    v8x16.store_interleaved_4   v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v:x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+aftzev8x4 )
+    (func     v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_inter
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+aftzev8x4 )
+    (func     v8x16.stc ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+aftzev8x4 )
+    (func     v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_inter
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+aftzev8x4 )
+    (func     v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftved_4 )
+    (func 
+    v8x16.store_interleaved_4   v8x15.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func terleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+aftzev8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+afttv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftved_4 )
+    (func 
+    v8x16.store_interleaved_4   v8x16.store_intestore_interleaved_4
+afttv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftved_4 )
+    (func 
+    v8x16.store_interleaved_4   v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+aftzev8x4 )
+    (func     v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_inter
+    v8x16.store_interleaved_4
+ $1
+)
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_inte4
+aftved_4 )
+    (func 
+    v8x16.store_interleaved_4   v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+aftzev8x4 )
+    (func     v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_inter
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+aftzev8x4 )
+    (func     v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftved_4 )
+    (func 
+    v8x16.store_interleaved_4   v8x15.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func terleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+aftzev8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+afttv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftved_4 )
+    (func 
+    v8x16.store_interleaved_4   v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v:x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+aftzev8x4 )
+    (func     v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_inter
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+aftzev8x4 )
+    (func     v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+aftzet $ge))

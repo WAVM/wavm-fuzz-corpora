@@ -1,0 +1,5 @@
+(func br 0
+i32.trunc_sat_f64_u br 0
+i32.trunc_sat_f64_u
+br
+0)

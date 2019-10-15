@@ -1,0 +1,3 @@
+ (elem funcref (
+ref.func $f) (ref.func $f)(ref.func $f)) (elem funcref (
+ref.func $f) (ref.func $3)(ref.func $/))

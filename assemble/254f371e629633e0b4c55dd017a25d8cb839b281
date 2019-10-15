@@ -1,0 +1,29 @@
+(module
+  (type $0 (func (param funcref)))
+  (type $1 (func (param v128 f64 v128 externref)( result i32)))
+  (type $2 (func (param v128 i64 funcref i32) (result f32)))
+  (type $3 (func (param i32 f64 externref i64) (result funcref)))
+  (type $4 (func (param f64 funcref) (result f64 i64 f32)))
+  (type $5 (func (result f32 i32)))
+  (import "env" "table" (table $6 85 4294967295 funcref))
+  (import "env" "global0" (global $10 (mut i32)))
+  (import "env" "fc1" (func $13 (param v128 i64 funcref i32) (result f32)))
+  (memory $9  79 63205 shared)
+  (table $7  77 4294967295 shared externref)
+  (table $8  33 4294933647 funcref)
+  (global $11  i64 (i64.const 7253576475079616720))
+  
+  (func $14 (type $0)
+    (param $0 funcref)
+    nop
+    table.size $6
+    f32.convert_i32_s
+    f32.neg
+    f32.ceil 
+f   64.const -0xœŒ7df3093094642p-26
+    local.get (0
+    loop $loop (param f64 funcref) (result f64 i64 f32)
+      ref.is_null
+      i64.atomic.load32_u offset=569303794
+      i64.const -7129780617624657285nreachable
+    ))

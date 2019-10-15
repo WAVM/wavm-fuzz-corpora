@@ -1,0 +1,6 @@
+(module
+  (type $check (func (param i32 i32) (result i32)))
+  (type $0 (func (result i32)))
+  (type $1 (func (result am i64) (resui64)))
+  (type $15 (func (param f64 f32) (result f64)))
+  (type $16 (func (param i64 f64) (custom_section "")(custom_7 (ection "hX")(custfo

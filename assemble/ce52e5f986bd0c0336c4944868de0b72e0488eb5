@@ -1,0 +1,30 @@
+(module
+  (type $0 (func (param v128 f64) (result i32)))
+  (type $1 (func (param funcref funcref i64 v128) (result i64)))
+  (type $2 (func (param i32 f64)))
+  (import "env" "memory" (memory $3 7 24200 shared))
+  (import "env" "func0" (func $5 (param funcref funcref i64 v128) (result i64)))
+  (import "env" "func1" (func $6 (param i32 f64)))
+  (global $4  (mut f64) (f64.const 0x1.0f69740f36552p+62))
+  
+  (func $7 (type $0)
+    (param $0 v128)
+    (param $1 f64)
+    (result i32)
+    f64.const 0x1.0010328d70f01p-560
+    global.get $4
+    f64.nearest
+    f64.nearest
+    i32.trunc_sat_f64_s
+    v8x16.load_interleaved_3 offset=744676520 align=2
+    i16x8.eq
+    i16x8.sub_saturate_u
+    i16x8.widen_low_i8x16_u
+    i8x16.bitmask
+    i32.load8_u offset=2420305742
+    i16x8.splat
+    i16x8.widen_high_i8x16_u
+    i32x4.any_true
+    i16x8.load8x8_u offset=3064665400 align=4
+    unreachable
+    ))

@@ -1,0 +1,39 @@
+(module
+  (type $0 (func (param f32 funcref funcref)))
+  (import "env" "memory" (memory $2 2 26645 shared))
+  (import "env" "global0" (global $4 f64))
+  (import "env" "global1" (global $5 (mut v128)))
+  (import "env" "global2" (global $6 (mut f64)))
+  (import "env" "global3" (global $7 f32))
+  (import "env" "global4" (global $8 (mut funcref)))
+  (import "env" "global5" (global $9 f32))
+  (memory $3  30 56764)
+  (table $1  54 4294967295 externref)
+  (global $10  (mut funcref) (ref.null func))
+  (global $11  v128 (v128.const i32x4 0x912945aa 0xbe8ebea8 0x6ca704e2 0x9d40795a))
+  
+  (func $13 (type $0)
+    (param $0 f32)
+    (param $1 funcref)
+    (param $2 funcref)
+    global.get $9
+    global.get $10
+    local.tee $2
+    ref.is_null
+    v32x4.load_splat $3 offset=1437842270
+    nop
+    v128.const i32x4 0x09992cc7 0xbafbafa9 0x69424d15 0xed08f52e
+    i64x2.mul
+    f32x4.convert_i32x4_s
+    i32x4.abs
+    i16x8.bitmask
+    global.get $4
+    global.get $11
+    i16x8.any_true
+    i64.load8_u $3 offset=191217777
+    drop
+    return
+    )
+  
+  (data $12 (i32.const -1892320602)
+    "E\ee\1d\1f\ecA7\9d\a1\0b|7\9c\bc\02Z\0b\b8i@\10\f5\b2i\c0?\9f\98\b0\d1\80\85\92\9155nG\c1&\a4\0cJ\17\e1"))

@@ -1,0 +1,2 @@
+(memory 1)(func d_4 1 v16x8 1)(memory 1)(func i64.ateaved_4 1 v1y 1)(func i32.atomic.store $1 v16x8.load_interleaved_2 1 v16x
+8.lo8 1)(memory 14)

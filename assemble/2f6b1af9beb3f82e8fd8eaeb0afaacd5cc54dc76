@@ -1,0 +1,13 @@
+(memory 1)(func()i64.atomic.rmw.cmpxchg
+i64.atomic.rmw.cmpxchg i64.atomic.rmw.cmpxchg()i64.atomic.rmw.cmpxchg
+i64.atomic.rmw.cmpxchg()i64.atomic.rmw.cmpxchg
+i64.atomic.rmw.cmpxchg 11)(func()i64.atomic.rmw.cmpxchg
+i64.atomic.rmw.cmpxchg i64.atomic.rmw.cmpxchg()i64.atomic.rmw.cmpxchg
+i64.atomic.rmw.cmpxchg()i64.atomic.rmw.cmpxchg
+i64.atomic.rmw.cmpxchg i64.atomic.rmw.cmpxchg i1)(func()i64.atomic.rmw.cmpxchg
+i64.atomic.rmw.cmpxchg i64.atomic.rmw.cmpxchg)(func()i64.atomic.rmw.cmpxchg
+i64.atomic.rmw.cmpxchg i64.atomic.rmw.cmpxchg
+i64.atomic.rmw.cmpxchg i64.atomic.rmw.cmpxchg i64.atomic.rmw.cmpxchg i641)(func()i64.atomic.rmw.cmpxchg
+i64.atomic.rmw.cmpxchg i64.atomic.rmw.cmpxchg)(func()i64.atomic.rmw.cmpxchg
+i64.atomic.rmw.cmpxchg i64.atomic.rmw.cmpxchg
+i64.atomic.rmw.cmpxchg i64.atomic.rmw.cmpxchg œ)

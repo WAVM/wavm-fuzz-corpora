@@ -1,0 +1,45 @@
+(module
+  (type $0 (func (param i32 v128 f32)))
+  (import "env" "table" (table $1 46 4294967295 shared funcref))
+  (import "env" "table" (table $2 78 4294967295 shared funcref))
+  (import "env" "global1" (global $5 (mut f32)))
+  (import "env" "global2" (global $6 i32))
+  (import "env" "global3" (global $7 f64))
+  (memory $3  5 12439 shared)
+  (memory $4  29 32616)
+  (global $8  i32 (i32.const -1090443153))
+  (elem $9 declare global
+    $8 $5 $8 $7 $5 $5 $5 $6
+    $7 $8 $7 $7 $6 $7 $6 $8)
+  
+  (func $12 (type $0)
+    (param $0 i32)
+    (param $1 v128)
+    (param $2 f32)
+    (local $3 funcref)
+    (local $4 i32)
+    global.get $7
+    i64.trunc_f64_s
+    global.get $6
+    table.get $2
+    loop $loop (result f64)
+      f32.const -0x1.3e1ab0p+4
+      nop
+      memory.size
+      br_if 1
+      local.get $2
+      f32.neg
+      f64.promote_f32
+      local.get $4
+      i64.load offset=3405674311 align=4
+      global.get $8
+      br $loop
+    end ;; $loop
+    unreachable
+    )
+  
+  (data $10 
+    "\cf\96\8b&}t\b8#\d2\993\fe\d7GHN\acK\94f\96\e5V\d5k\13\a7\a87\89\c0\b6\a3\e7\1e\b7Y\c2\c7\e5\\$\9eK\08\n\1f\cf\09\f1c\0c9\d8O\e9\ad")
+  
+  (data $11 
+    "\08\aa\\\d9\a4Eh\c4:\e0.\86\d1\94\99o"))

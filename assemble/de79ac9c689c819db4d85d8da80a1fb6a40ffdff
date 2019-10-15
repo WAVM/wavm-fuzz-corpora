@@ -1,0 +1,29 @@
+(memory 1)(func() i32.atomic.load8_u
+u1)(func() i32.atomic.load8_u
+u)(func()i32.atomic.load8_u
+i32.atomic.load8_u
+i32.atomic.load8_u
+i32.atomic.load8_u
+i32.atomic.load8_u
+i32.atomic.load8_u i32.atomic.load8_u
+i32.atomic.load8_u
+i32.atomic.load8_u
+i32.atomic.load8_u
+i32.atomic.load8_u
+i32.atomic.load8_u
+i32.atomic.load8_u
+i32.atomic.load8_u
+i32.atomic.load8_u)(func()i32.atomic.load8_u
+i32.atomic.load8_u
+i32.atomic.load8_u
+i32.atomic.load8_u
+i32.atomic.load8_u
+i32.atomic.load8_u i32.atomic.load8_u
+i32.atomic.load8_u
+i32.atomic.load8_u
+i32.atomic.load8_u
+i32.atomic.load8_u
+i32.atomic.load8_u
+i32.atomic.load8_u
+i32.atomic.load8_u
+i32.atomic.load8_u )

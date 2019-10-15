@@ -1,0 +1,6 @@
+(module
+  (type $0 (func (param externref) (result f64 i64)))
+  (import "v" "le" (table $1 9 4294967295 shared funcref)) 
+ (import "env" "func0" (func $6 (param externref) (result f64 i64)))
+
+  (table $3  52 427295 shared funcref))

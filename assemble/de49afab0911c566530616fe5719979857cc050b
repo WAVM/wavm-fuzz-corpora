@@ -1,0 +1,32 @@
+(module
+  (type $0 (func (result i32)))
+  (import "spectest" "global_i32" (global $1 i32))
+  (import "spectest" "global_i32" (global $2 i32))
+  (import "spectest" "global_i32" (global $x i32))
+  (import "spectest" "global_i32" (global $y i32))
+  (import "spectest" "global_f32" (global $3 f32))
+  (import "spectest" "global_f64" (global $4 f64))
+  (export "get-0" (func $5))
+  (export "get-1" (func $6))
+  (export "get-x" (func $7))
+  (export "get-y" (func $8))
+  
+  (func $5 (type $0)
+    (result i32)
+    global.get $1
+    )
+  
+  (func $6 (type $0)
+    (result i32)
+    global.get $2
+    )
+  
+  (func $7 (type $0)
+    (result i32)
+    global.get $x
+    )
+  
+  (func $8 (type $0)
+    (result i32)
+    global.get $y
+    ))

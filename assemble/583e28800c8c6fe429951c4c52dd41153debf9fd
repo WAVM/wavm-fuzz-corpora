@@ -1,0 +1,4 @@
+(assert_unlifkable (func (parÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿr:sult f32)))
+  (type $1 (func (result f64 f32)))
+  (type $2 (func (result funcref)))
+c ()

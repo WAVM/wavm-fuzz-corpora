@@ -1,0 +1,15 @@
+(memory 3)(func ()i64.atomic.load16_u()i64.atomic.load16_u()i64.atomic.load16_u()i64.atomic.load16_u i64.atomic.load16_u()i64.atomic.load16_u ()i64.atomic.load16_u
+i64.atomic.load16_u
+memory 3)(func ()i64.atomic.load16_u()i64.atomic.load16_u()i64.atomic.load16_u()i64.atomic.load16_u i64.atomic.load16_u()i64.atomic.load16_u ()i64.atomic.load16_u
+i64.atomic.load16_u
+i64.atomic.load16_u()i64.atomic.load16_u
+ i64.atomic.load16_u()i64.atomic.load16_u ()i64.atomic.load16_u
+i64.atomic.load16_u
+i64.atomic.load16_u()i64.atomic.load16_u()i64.atomic.load16_u i64.atomic.load16_u()i64.atomid16_u
+memory 3)(func ()i64.atomic.load16_u()i64.atomic.load16_u()i64.atomic.load16_u()i64.atomic.load16_u i64.atomic.load16_u()i64.atomic.load16_u ()i64.atomic.load16_u
+i64.atomic.load16_u
+i64.atomic.load16_u()i64.atomic.load16_u
+ i64.atomic.load16_u()i64.atomic.load16_u ()i64.atomic.load16_u
+i64.atomic.load16_u
+i64.atomic.load16_u()i64.atomic.load16_u()i64.atomic.load16_u i64.atomic.load16__u
+)

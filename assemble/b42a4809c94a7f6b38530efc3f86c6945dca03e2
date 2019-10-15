@@ -1,0 +1,1 @@
+(import "" "f"(func $f))(func ref.func $f ref.func $f ref.func $f ref.func $f)

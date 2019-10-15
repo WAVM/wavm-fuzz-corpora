@@ -1,0 +1,1 @@
+(memory 3)(func(sub)(i32.atomic.rmw.sub)(i32.atomic.rmw.sub)(i32.atomic.rmw.sub)(i32.atomic.rmw.sub)(i32.atomic.rmw.sub)(i32.atomic.rmw.sub)( i32.atomic.rmw.sub )(i32.atomic.rmw.sub)(i3ÿÿÿÿ8x16.shr_u))

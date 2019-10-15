@@ -1,0 +1,100 @@
+(module
+  (type $0 (func (result v128)))
+  (export "func_i8x16_splat_0" (func $1))
+  (export "func_i8x16_splat_1" (func $2))
+  (export "func_i8x16_splat_2" (func $3))
+  (export "func_i16x8_splat_0" (func $4))
+  (export "func_i16x8_splat_1" (func $5))
+  (export "func_i16x8_splat_2" (func $6))
+  (export "func_i32x4_splat_0" (func $7))
+  (export "func_i32x4_splat_1" (func $8))
+  (export "func_i64x2_splat_0" (func $9))
+  (export "func_i64x2_splat_1" (func $10))
+  (export "func_f32x4_splat_0" (func $11))
+  (export "func_f32x4_splat_1" (func $12))
+  (export "func_f64x2_splat_0" (func $13))
+  (export "func_f64x2_splat_1" (func $14))
+  
+  (func $1 (type $0)
+    (result v128)
+    i32.const 127
+    i8x16.splat
+    )
+  
+  (func $2 (type $0)
+    (result v128)
+    i32.const 1
+    i8x16.splat
+    )
+  
+  (func $3 (type $0)
+    (result v128)
+    i32.const 13604
+    i8x16.splat
+    )
+  
+  (func $4 (type $0)
+    (result v128)
+    i32.const 4660
+    i16x8.splat
+    )
+  
+  (func $5 (type $0)
+    (result v128)
+    i32.const 23205
+    i16x8.splat
+    )
+  
+  (func $6 (type $0)
+    (result v128)
+    i32.const 19088743
+    i16x8.splat
+    )
+  
+  (func $7 (type $0)
+    (result v128)
+    i32.const 305419896
+    i32x4.splat
+    )
+  
+  (func $8 (type $0)
+    (result v128)
+    i32.const 1
+    i32x4.splat
+    )
+  
+  (func $9 (type $0)
+    (result v128)
+    i64.const 1311768464867721216
+    i64x2.splat
+    )
+  
+  (func $10 (type $0)
+    (result v128)
+    i64.const 4294967298
+    i64x2.splat
+    )
+  
+  (func $11 (type $0)
+    (result v128)
+    f32.const 0x1.000000p-0
+    f32x4.splat
+    )
+  
+  (func $12 (type $0)
+    (result v128)
+    f32.const 0x1.ba3d70p+2
+    f32x4.splat
+    )
+  
+  (func $13 (type $0)
+    (result v128)
+    f64.const 0x1.0000000000000p-0
+    f64x2.splat
+    )
+  
+  (func $14 (type $0)
+    (result v128)
+    f64.const 0x1.ba3d70a3d70a4p+2
+    f64x2.splat
+    ))

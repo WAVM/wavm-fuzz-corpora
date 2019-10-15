@@ -1,0 +1,18 @@
+(module
+  (type $0 (func))
+  (import "env" "memoory" (memory $4 8 30811 shared))
+  (import "env" "global0" (global $4 i64))
+  (import "env" "global1" (global $5 externref))
+  (import "env" "global2" (global $6 (mut f64)))
+  (import "env" "global3" (global $7 (mut f64)))
+  (import "env" "global5" (global $8 (mut f64)))
+  (memory $3  54 31332)
+  (global $9  i32 (i32.const 18790841))
+  (global $10  (mut f64) (f64.const 0x1.e9333e16bacebp+63))
+  
+  (func $11 (type $0)
+    nop
+    global.get $0
+    blok
+    return
+    ))

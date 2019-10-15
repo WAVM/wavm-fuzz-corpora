@@ -1,0 +1,80 @@
+(module
+  (type $0 (func (param f32 f64 funcref funcref) (result funcref externref)))
+  (type $1 (func (param f32)))
+  (type $2 (func (param i32 i32) (result f64 funcref)))
+  (import "env" "memory" (memory $5 44 14061 shared))
+  (import "env" "memory" (memory $6 88 60036))
+  (import "env" "table" (table $3 4 4294967295 shared funcref))
+  (import "env" "global4" (global $8 (mut f32)))
+  (import "env" "func0" (func $16 (param f32 f64 funcref funcref) (result funcref externref)))
+  (memory $7  67 8647)
+  (table $4  1 4294967295 shared externref)
+  (global $9  i32 (i32.const -775620045))
+  (global $10  v128 (v128.const i32x4 0xeff4a55e 0x6409b14a 0x1edd6c6e 0x0c6dafd2))
+  (global $11  i32 (i32.const 1866266033))
+  (global $12  i64 (i64.const -7414071946246269210))
+  (global $13  v128 (v128.const i32x4 0x96bd324e 0x32c86d5a 0x53fcab0c 0x21b1d2ee))
+  (global $14  f32 (f32.const 0x1.15695cp+31))
+  (global $15  i32 (i32.const -1901416561))
+  
+  (func $17 (type $1)
+    (param $0 f32)
+    (local $1 i32)
+    local.get $0
+    i64.trunc_f32_s
+    local.get $1
+    i32.clz
+    v32x4.load_interleaved_3 offset=903655471 align=1
+    f32x4.eq
+    i8x16.add
+    i32.const -697708122
+    i32.atomic.load16_u $6 offset=1193105462
+    v64x2.load_interleaved_4 offset=873044195 align=8
+    i64x2.add
+    i32x4.gt_u
+    f64x2.le
+    f64x2.sub
+    i16x8.all_true
+    table.get $3
+    ref.is_null
+    br 0
+    )
+  
+  (func $18 (type $2)
+    (param $0 i32)
+    (param $1 i32)
+    (result f64 funcref)
+    (local $2 f64)
+    (local $3 f64)
+    (local $4 i32)
+    local.get $4
+    table.size $3
+    i32.rem_s
+    i32.ctz
+    global.get $14
+    local.get $3
+    i32.trunc_f64_s
+    table.size $4
+    atomic.fence
+    local.get $1
+    atomic.fence
+    i32.atomic.rmw16.and_u offset=3276377072
+    global.get $11
+    i32.atomic.rmw.xchg $7 offset=1476299074
+    table.size $4
+    i32.atomic.rmw.or $7 offset=3657210710
+    i32.le_s
+    call_indirect $3 (type $1)
+    local.set $1
+    global.get $9
+    drop
+    local.get $3
+    i64.trunc_sat_f64_u
+    drop
+    table.size $4
+    drop
+    f32.const 0x1.557ad2p-54
+    drop
+    v128.const i32x4 0x56482ea8 0x12bafb0d 0x20d4ceae 0xb808644b
+    unreachable
+    ))

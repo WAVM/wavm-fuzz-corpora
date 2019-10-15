@@ -1,0 +1,7 @@
+(func (i32.atomic.rmw.add(zi)
+( i32.atomic.rmw.add)(i32.atomic.rmw.add))
+( i32.atomic.rmw.add(i32.atomic.rmw.add)(i3mwd)(i32.atomic.rmw.add))
+( i32.atomic.rmw.add
+(i32.atomic.rmw.add)(i32.atomic.rmw.add)(d)(i32.atomic.rmw.add)(i32.atomic.rmw.add)(i32.atomic.rmw.add))
+( i32.atomic.rmw.add
+(i32.atomic.rmw.add)(i32.atomic.rmw.add)(i32.atomic.rmw.add)))

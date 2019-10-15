@@ -1,0 +1,1 @@
+(func i32.gt_s loop i32.gt_s loop i32.gt_s)

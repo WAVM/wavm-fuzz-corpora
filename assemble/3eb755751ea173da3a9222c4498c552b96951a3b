@@ -1,0 +1,103 @@
+(module
+  (type $0 (func (param funcref funcref) (result externref i64)))
+  (type $1 (func (result funcref)))
+  (type $2 (func (param funcref funcref f32 f32) (result i32)))
+  (type $3 (func (result funcref v128)))
+  (type $4 (func (result v128 v128 v128 v128)))
+  (type $5 (func (param i64) (result i32)))
+  (type $6 (func (param v128) (result externref v128)))
+  (import "env" "memory" (memory $10 82 19559 shared))
+  (import "env" "table" (table $7 56 4294967295 shared funcref))
+  (import "env" "table" (table $8 84 4294967295 funcref))
+  (import "env" "func0" (func $14 (result funcref)))
+  (import "env" "func1" (func $15 (result funcref v128)))
+  (memory $11  89 18442 shared)
+  (table $9  47 4294967295 shared externref)
+  (elem $12 funcref
+    (ref.func $16) (ref.func $15) (ref.func $14) (ref.null func)
+    (ref.func $14) (ref.func $16) (ref.null func) (ref.func $16)
+    (ref.func $14) (ref.func $16) (ref.func $17) (ref.func $16)
+    (ref.func $17) (ref.func $16) (ref.null func) (ref.func $14)
+    (ref.func $16) (ref.func $16) (ref.func $16))
+  
+  (func $16 (type $0)
+    (param $0 funcref)
+    (param $1 funcref)
+    (result externref i64)
+    table.size $9
+    local.get $0
+    local.set $0
+    i32.atomic.load16_u offset=100486989
+    i32.atomic.load8_u $11 offset=794752933
+    data.drop $13
+    table.get $9
+    ref.is_null
+    i64.atomic.load offset=345691544
+    call $15
+    v128.const i32x4 0x5c0edd6b 0xaa4d50f6 0x02b5a166 0x1e7635fa
+    block $block (result v128 v128 v128 v128)
+      v128.const i32x4 0x66a52332 0xe8bcf3f8 0x961857a9 0xb61b0dd1
+      i16x8.all_true
+      call_indirect $7 (type $4)
+      i16x8.max_s
+      i16x8.widen_high_i8x16_s
+      table.size $8
+      i16x8.replace_lane 6
+      i16x8.min_u
+      i8x16.avgr_u
+      i8x16.extract_lane_s 12
+      table.get $9
+      ref.null extern
+      unreachable
+    end ;; $block
+    i16x8.add
+    i32x4.ge_u
+    i32x4.sub
+    i16x8.ge_s
+    i16x8.add_saturate_s
+    ref.null extern
+    drop
+    drop
+    local.set $0
+    unreachable
+    )
+  
+  (func $17 (type $2)
+    (param $0 funcref)
+    (param $1 funcref)
+    (param $2 f32)
+    (param $3 f32)
+    (result i32)
+    local.get $0
+    i64.const -5898133344319470332
+    block $block (param i64) (result i32)
+      f64.convert_i64_u
+      i64.const 6016076794030715505
+      ref.null func
+      table.size $8
+      i32.load16_u offset=600245109
+      call_indirect $8 (type $4)
+      i16x8.ge_s
+      v8x16.shuffle 30 23 3 20 27 29 10 1 2 11 15 13 20 6 31 17
+      i16x8.sub_saturate_s
+      block $block_0 (param v128) (result externref v128)
+        local.get $2
+        call $15
+        i32x4.bitmask
+        drop
+        local.set $1
+        f32x4.replace_lane 1
+        unreachable
+      end ;; $block_0
+      ref.null extern
+      unreachable
+    end ;; $block
+    drop
+    ref.null extern
+    ref.null extern
+    ref.null extern
+    unreachable
+    )
+  
+  (data $13 
+    "\e0X\9d\bd\fc~,"))

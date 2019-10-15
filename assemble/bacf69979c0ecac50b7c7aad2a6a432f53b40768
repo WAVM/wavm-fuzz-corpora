@@ -1,0 +1,45 @@
+(module
+ (func  
+ memory.copy
+ $y3contconst 5
+  memory.copy
+ $emy.t 5
+  memory.copy
+ $emor.copy
+4
+  memory.copy
+ $i3conn
+4
+  memory.copy
+ $emoopy
+5
+  memory.copy
+ $iosy
+4
+  memory.copy
+ $i3nstcn
+4 memory.copy
+ $emoopy
+5
+  memory.copy
+ $3y
+4
+  memory.copy
+ $emory.y
+6
+  memory.copy $3co 5
+  memory.copy
+ $emy.t 5
+  memory.copy
+ $emcopy
+4
+  memory.copy
+ $i3constcon
+4
+  memory.copy
+ $emoopy
+5
+  memory.copy
+ $i3co
+  
+4  )

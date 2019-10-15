@@ -1,0 +1,21 @@
+(
+func f32.const -inf
+f32.const -inf f32.const -inf
+f32.const -inf)(func f32.const -inf
+f32.const -inf)(func f32.const -inf
+f32.const -inf)(func f32.const -inf
+f32.const -inf
+f32.const -inf)(func f32.const -inf
+f3f)(func f32.const -inf
+f32.const -inf f32.const -inf
+f32.const -inf)(func f32.const -inf
+f32.const -inf)(func f32.const -inf
+f32.const -inf)(func f32.const -inf
+f32.const -inf
+f32.const -inf)(func f32.const -inf
+3f)(func f32.const -inf
+f32.const -inf)(func f32.const -inf
+f32.const -inf f32.const -inf
+f32.const -inf)(func f32.const -inf
+f32.const -inf
+f)

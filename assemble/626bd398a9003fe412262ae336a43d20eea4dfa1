@@ -1,0 +1,85 @@
+(module
+  (type $0 (func (param i64 v128 v128) (result i64)))
+  (type $1 (func (param f64) (result i32 i64)))
+  (type $2 (func (param funcref) (result v128 funcref)))
+  (type $3 (func (param v128) (result funcref funcref f64 funcref)))
+  (import "env" "table" (table $4 8 4294967295 shared funcref))
+  (import "env" "global3" (global $7 (mut i32)))
+  (import "env" "global4" (global $8 (mut externref)))
+  (import "env" "global5" (global $9 (mut externref)))
+  (import "env" "global6" (global $10 (mut i32)))
+  (import "env" "global8" (global $11 (mut externref)))
+  (import "env" "func0" (func $17 (param funcref) (result v128 funcref)))
+  (table $5  72 4294967295 shared funcref)
+  (table $6  86 4294967295 shared funcref)
+  (global $12  (mut externref) (ref.null extern))
+  (global $13  funcref (ref.null func))
+  (global $14  (mut v128) (v128.const i32x4 0x192adbc9 0xf069b7e1 0x80f7844d 0x20a1b262))
+  (global $15  v128 (v128.const i32x4 0x2e6969f9 0x9c5ac0e1 0xb5376e58 0x7ce2f639))
+  
+  (func $18 (type $0)
+    (param $0 i64)
+    (param $1 v128)
+    (param $2 v128)
+    (result i64)
+    (local $3 f64)
+    global.get $11
+    global.get $15
+    f64x2.abs
+    block $block (param v128) (result funcref funcref f64 funcref)
+      global.set $14
+      global.get $14
+      atomic.fence
+      i16x8.widen_high_i8x16_s
+      ref.null extern
+      global.get $15
+      i32x4.bitmask
+      i8x16.splat
+      i32.const 1052528829
+      local.get $3
+      call $19
+      br 1
+    end ;; $block
+    ref.is_null
+    global.set $7
+    ref.null func
+    drop
+    drop
+    ref.is_null
+    table.get $4
+    ref.is_null
+    global.set $7
+    ref.is_null
+    unreachable
+    )
+  
+  (func $19 (type $1)
+    (param $0 f64)
+    (result i32 i64)
+    (local $1 f64)
+    (local $2 f32)
+    (local $3 f32)
+    global.get $8
+    global.get $14
+    v128.not
+    i32x4.extract_lane 1
+    atomic.fence
+    global.set $7
+    drop
+    data.drop $16
+    table.size $4
+    f32.reinterpret_i32
+    f32.ceil
+    local.get $3
+    f32.neg
+    local.set $3
+    local.tee $2
+    drop
+    global.get $10
+    global.get $15
+    unreachable
+    )
+  
+  (data $16 
+    "\f1\8c\7f$\d3\b9\dc8\97q\da\11f\a0H\d6pS*\7f1\12{\d2\9a\1a\daI\b2\02\0b%\d2\d9\e4\83\fdXM\03\9f)\ed\94q\a5\n6\1a\ad;;h\ab\95A\fc\cb\ae\d1'\c1\04i"
+    "\a6\9e\d79\e1\91B\84"))

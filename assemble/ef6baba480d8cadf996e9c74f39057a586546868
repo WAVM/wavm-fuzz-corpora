@@ -1,0 +1,55 @@
+(module
+  (type $0 (func))
+  (type $1 (func (result v128 externref)))
+  (type $2 (func (param f64 funcref) (result f64 v128)))
+  (type $3 (func (param f32 funcref i64) (result funcref i32 i64)))
+  (import "env" "global0" (global $7 funcref))
+  (import "env" "global2" (global $8 v128))
+  (import "env" "func0" (func $13 (result v128 externref)))
+  (import "env" "func1" (func $14 (param f64 funcref) (result f64 v128)))
+  (memory $4  19 63011 shared)
+  (memory $5  1 30333)
+  (memory $6  55 40050 shared)
+  (global $9  (mut f32) (f32.const 0x1.f96b48p+29))
+  (elem $10 declare
+    $13 $13 $15 $14 $15 $15 $14 $14
+    $14 $13 $15 $14 $14 $13 $14 $15
+    $13 $13 $13 $15 $15 $15 $13 $14
+    $14 $13 $15 $13 $15 $14 $14 $14
+    $13 $15 $14 $15 $13 $15 $13 $13
+    $13 $14 $15 $15 $15 $13 $14 $14
+    $15 $15 $15 $13 $13 $13 $13 $14
+    $15 $13 $15 $13 $15 $15 $15 $15
+    $13)
+  (elem $11 declare global
+    $9 $8 $8 $7 $8 $8 $8)
+  
+  (func $15 (type $0)
+    (local $0 funcref)
+    (local $1 f32)
+    (local $2 externref)
+    i64.const 6162990937208036974
+    f64.convert_i64_u
+    f64x2.splat
+    i16x8.abs
+    nop
+    local.get $1
+    global.get $7
+    global.get $9
+    i64.trunc_sat_f32_u
+    loop $loop (param f32 funcref i64) (result funcref i32 i64)
+      i64.extend16_s
+      br $loop
+    end ;; $loop
+    i64.atomic.rmw16.sub_u $6 offset=2378045952
+    f32.convert_i64_u
+    i32.trunc_f32_s
+    ref.null extern
+    drop
+    drop
+    br 0
+    )
+  
+  (data $12 
+    "\19O\f8\f8:\95\97l\ba\8a@\cc\d1p~\12\fd*\1e\acy>c/1Lu\0bI\d2\bfUC\db\11\fb[:\f6\8b\ad%\05\ab\fc\b2\b6\\\fb\a1]\e8|\17:\00\88R\84\e9\f6\8a\14\""
+    "\f1\92\aa\ca\f6"))

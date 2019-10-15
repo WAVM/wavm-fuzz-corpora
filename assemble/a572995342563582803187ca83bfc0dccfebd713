@@ -1,0 +1,50 @@
+(module
+  (type $0 (func (result f32)))
+  (type $1 (func (param externref i64) (result v128 f64)))
+  (import "env" "table" (table $2 10 4294967295 funcref))
+  (import "env" "table" (table $3 93 4294967295 funcref))
+  (import "env" "global2" (global $6 f64))
+  (import "env" "global3" (global $7 (mut v128)))
+  (memory $5  56 22914 shared)
+  (table $4  32 4294967295 shared funcref)
+  (global $8  i32 (i32.const -1120336231))
+  (global $9  (mut externref) (ref.null extern))
+  (global $10  (mut i64) (i64.const 7683853387890961931))
+  (elem $11 declare global
+    $7 $10 $7 $7 $7 $8 $7 $6)
+  (elem $12 exception_type)
+  
+  (func $15 (type $0)
+    (result f32)
+    (local $0 f32)
+    (local $1 i64)
+    (local $2 i64)
+    global.get $6
+    f64x2.splat
+    f32x4.neg
+    i16x8.extract_lane_s 2
+    f64.load offset=947818300
+    f64.const 0x1.7622a783c8b14p+933
+    ref.null extern
+    f64.const 0x1.daef8f722a860p+441
+    i64.trunc_sat_f64_s
+    block $block (param externref i64) (result v128 f64)
+      local.set $1
+      table.size $4
+      i64.load16_s offset=1267691620
+      i64.clz
+      i64x2.splat
+      unreachable
+    end ;; $block
+    drop
+    drop
+    drop
+    unreachable
+    )
+  
+  (data $13 
+    "G\13Q}\cf\94\f0^\c4W\8e\d9\de\7f\e7G\07\a3\00\e9\036\f2$'Q^\e9Mf\e2\d1N'+\bb\c2sj\93\ba\cd\9d>\d1\f9\14a#-]\0dC+\9c\07\949I5;(\1a1"
+    "N\bck1\ebm\ea6\01\c0\e2\e7\ca\05\00\91\e4\ff\02\0b;\ccM\1c\e8\ed\83[\84\e24\0bf")
+  
+  (data $14 (i32.const -780649548)
+    "~\af\a1; \8c\13\9a}\ffI/\d4\b5*f\c1*\f6.\943\e7\a3\b2R\1ayf\1b\00\fc<\0bY\b5\0f\e02\19\cf\c3\d9\ba\99\94\c0\e4\8d\b8\bb\a5\eb\b2\94P"))

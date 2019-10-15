@@ -1,0 +1,5 @@
+(module
+ 
+ (type $6 (func (param i32 funcref i32 i64) (result f64)nc ()))
+  (type $2 (func (param i32 funcref i32 i64) (result f64)
+ (

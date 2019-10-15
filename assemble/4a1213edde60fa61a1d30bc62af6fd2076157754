@@ -1,0 +1,1 @@
+(func(tii16x)(i16x8.splat)(i16x8.splat)(i16x8.splat)(i16x8.splat)(i16x8.splat) (i16x8.splat)()f32.neg(i16x8.splat)(i16x8.splat)(i16x8.splat)(i)(i16x8.splat)(i16x8.splat)(i16x8.splat)(i16x8.splat)(i16x8.splat)(i16x8.splat))

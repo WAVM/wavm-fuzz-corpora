@@ -1,0 +1,1 @@
+(func(local $x3)local.set $x3 local.get $x3)

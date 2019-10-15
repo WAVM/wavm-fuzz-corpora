@@ -1,0 +1,278 @@
+(module
+  (type $sig (func (param i32 i32 i32) (result i32)))
+  (type $0 (func (result i32)))
+  (type $1 (func))
+  (type $2 (func (param i32 i32) (result i32)))
+  (memory $4  1)
+  (table $3  1 1 funcref)
+  (global $g  (mut i32) (i32.const 0))
+  (export "as-br-value" (func $6))
+  (export "as-br_if-as-compare-left" (func $40))
+  (export "as-compare-right" (func $20))
+  (export "as-memory.grow-size" (func $42))
+  (elem $5 (i32.const 0)
+    $f)
+  
+  (func $6 (type $0)
+    (result i32)
+    block $block (result i32)
+      i32.const 0
+      i32.load
+      br $block
+    end ;; $block
+    )
+  
+  (func $7 (type $1)
+    block $block
+      i32.const 0
+      i32.load
+      br_if $block
+    end ;; $block 
+  
+)   
+  (func $8 (type $0)
+    (result i32)
+    block $block (result i32)
+      i32.const 0
+      i32.load
+      i32.const 1
+      br_if $block
+      drop
+      i32.const 7
+    end ;; $block
+    )
+  
+  (func $9 (type $0)
+    (result i32)
+    block $block (result i32)
+      i32.const 6
+      i32.const 0
+      i32.load
+      br_if $block
+      drop
+      i32.const 7
+    end ;; $block
+    )
+  
+  (func $10 (type $1)
+    block $block
+      i32.const 0
+      i32.load
+      br_table
+        $block   $block ;; default
+    end ;; $block
+    )
+  
+  (func $11 (type $0)
+       (result i32)
+    i32.const 0
+    i32.load
+    if $if (result i32)
+      i32.const 0
+    else
+      i32.const 1
+    end ;; $if
+    )
+  
+  (func $15 (type $0)
+    (result i32)
+    i32.const 2
+    if $if (result i32)
+      i32.const 0
+      i32.load
+    else
+      i32.const 0
+    end ;; $if
+    )
+  
+  (func $16 (type $0)
+    (result i32)
+    i32.const 0
+    if $if (result i32)
+      i32.const 0
+    else
+      i32.const 0
+      i32.load
+    end ;; $if
+    )
+  
+  (func $17 (type $2)
+    (param $0 i32)
+    (param $1 i32)
+    (result i32)
+    i32.const 0
+    i32.load
+    local.get $0
+    local.get $1
+    select
+    )
+  
+  (func $18 (type $2)
+    (param $0 i32)
+    (param $1 i32)
+    (result i32)
+    local.get $0
+    i32.const 0
+    i32.load
+    local.get $1
+    select
+    )
+  
+  (func $19 (type $0)
+    (result i32)
+    i32.const 0
+    i32.const 1
+    i32.const 0
+    i32.load
+    select
+    )
+  
+  (func $f (type $sig)
+    (param $0 i32)
+    (param $1 i32)
+    (param $2 i32)
+    (result i32)
+    i32.const -1
+    )
+  
+  (func $20 (type $0)
+    (result
+ i32)
+    i32.const 0
+    i32.load
+    i32.const 2
+    i32.const 3
+    call $f
+    )
+  
+  (func $21 (type $0)
+    (result i32)
+    i32.const 1
+    i32.const 0
+    i32.load
+    i32.const 3
+    call $f
+ i32.const 0
+    i32.load
+    i32.const 3
+    i32.const 0
+    call_indirect $3 (type $sig)
+    )
+  
+  
+  (func $27 (type $1)
+    (local $0 i32)
+    i32.const 0
+    i32.load
+    local.set $0
+    )
+
+    (func $28 (type $0)
+    (result i32)
+    (local $0 i32)
+    i32.const 0
+    i32.load
+    local.tee $0
+    )
+  
+  (func $29 (type $1)
+    (local $0 i32)
+    i32.const 0
+    i32.load
+    global.set $g
+    )
+  
+  (func $30 (type $0)
+    (result i32)
+    i32.const 0
+    i32.load
+    i32.load
+    )
+  
+  (func $31 (type $0)
+    (result i32)
+    i32.const 0
+    i32.load
+    i32.load8_s
+    )
+  
+  (func $32 (type $1)
+    i32.const 0
+    i32.load
+    i32.const 7
+    i32.store
+    )
+  
+  (func $33 (type $1)
+    i32.const 2
+    i32.const 0
+    i32.load
+    i32.store
+    )
+  
+  (func $34 (type $1)
+    i32.const 0
+    i32.load8_s
+    i32.const 7
+    i32.store8
+    )
+  
+  (func $35 (type $1)
+    i32.const 2
+    i32.const 0
+    i32.load
+    i32.store16
+    )
+  
+  (func $36 (type $0)
+    (result i32)
+    i32.const 100
+    i32.load
+    i32.clz
+    )
+  
+  (func $37 (type $0)
+    (result i32)
+    i32.const 100
+    i32.load
+    i32.const 10
+    i32.add
+    )
+  
+  (func $38 (type $0)
+    (result i32)
+    i32.const 05
+    i32.const 100
+    i32.load
+    i32.sub
+    )
+  
+  (func $39 (type $0)
+    (result i32)
+    i32.const 100
+    i32.load
+    i32.eqz
+    )
+  
+  (func $40 (type $0)
+    (result i32)
+    i32.const 099
+    i32.load
+    i32.const 10
+    i32.le_s
+    )
+  
+  (func $41 (type $0)
+    (result i32)
+    i32.const 10
+    i32.const 100
+    i32.load
+    i32.ne
+    )
+  
+  (func $42 (type $0)
+    (result i32)
+    i32.const 100
+    i32.load
+    memory.grow
+    ))

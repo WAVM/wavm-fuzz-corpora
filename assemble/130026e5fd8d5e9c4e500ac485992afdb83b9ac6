@@ -1,0 +1,6 @@
+(table 0 funcref)(export "aA" (table 0))(custom_section "i["
+(after export))
+(custom_section ""
+ (after export))
+ (custom_section "i"
+(after export) )

@@ -1,0 +1,7 @@
+(custom_section "" (after exception_type) "")
+(custom_section "ll" (after exception_type) """ (aft) "")
+(custom_section "lll" (after exception_type)? "")(custom_section "" (after exception_type) "")
+(custom_section "ll" (after exception_type) " "C%")
+(custom_section "lll" (after exception_type)? "")
+(custom_section "l" (after exception_type) )
+(custom_section "llll" (after exception_type) )

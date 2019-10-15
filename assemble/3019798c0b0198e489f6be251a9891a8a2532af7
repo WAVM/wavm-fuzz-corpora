@@ -1,0 +1,99 @@
+(module
+  (type $0 (func (param i32 v128 f32) (result funcref f32)))
+  (type $1 (func (param externref v128 f32 i32) (result v128 v128)))
+  (type $2 (func (param f32 i32 i32 i64) (result v128 externref)))
+  (import "env" "memory" (memory $4 1 5632 shared))
+  (import "env" "memory" (memory $5 70 31445))
+  (import "env" "global0" (global $7 (mut i64)))
+  (import "env" "global3" (global $8 (mut i32)))
+  (import "env" "global4" (global $9 f32))
+  (import "env" "global5" (global $10 f64))
+  (import "env" "global6" (global $11 (mut externref)))
+  (import "env" "global7" (global $12 (mut f32)))
+  (import "env" "global9" (global $13 (mut f32)))
+  (import "env" "func0" (func $20 (param i32 v128 f32) (result funcref f32)))
+  (memory $6  75 62062)
+  (table $3  65 4294967295 shared funcref)
+  (global $14  (mut funcref) (ref.null func))
+  (global $15  f32 (f32.const 0x1.3f8576p+29))
+  (global $16  (mut v128) (v128.const i32x4 0xe4147dbb 0xa1697a81 0x0d1e194b 0x33882113))
+  (elem $17 declare
+    $21 $22 $21 $20 $22 $21 $21 $22
+    $22 $20 $20 $22 $22 $21 $22 $20
+    $22 $21 $21 $20 $22 $21 $21 $21
+    $20 $20 $22 $20 $20 $21 $22 $22
+    $22 $20 $21 $22 $21 $21 $21 $21
+    $22 $20 $22 $22 $21 $20 $22 $21
+    $22 $21 $20 $21 $20 $21 $22 $22
+    $21 $20 $20 $21 $21 $20 $22 $22
+    $21 $22 $20 $21)
+  
+  (func $21 (type $1)
+    (param $0 externref)
+    (param $1 v128)
+    (param $2 f32)
+    (param $3 i32)
+    (result v128 v128)
+    (local $4 v128)
+    (local $5 funcref)
+    (local $6 f64)
+    (local $7 f64)
+    local.get $6
+    global.get $11
+    elem.drop $17
+    local.get $2
+    f32.neg
+    i64.trunc_f32_s
+    f64.reinterpret_i64
+    f64.abs
+    local.get $6
+    i32.trunc_sat_f64_s
+    local.get $6
+    drop
+    i32.const 119090024
+    i32.atomic.rmw8.xchg_u $6 offset=1115023023
+    drop
+    local.set $6
+    drop
+    ref.null func
+    ref.null extern
+    ref.is_null
+    table.get $3
+    ref.is_null
+    global.set $8
+    unreachable
+    )
+  
+  (func $22 (type $2)
+    (param $0 f32)
+    (param $1 i32)
+    (param $2 i32)
+    (param $3 i64)
+    (result v128 externref)
+    (local $4 i64)
+    (local $5 funcref)
+    (local $6 f64)
+    f32.const 0x1.020872p-8
+    memory.size
+    v8x16.load_interleaved_2 $6 offset=1706549901 align=4
+    i16x8.extract_lane_s 6
+    local.get $5
+    ref.is_null
+    i32.atomic.rmw8.xchg_u $5 offset=1901441928
+    i64.load32_u $5 offset=1925183225
+    local.set $3
+    i32x4.abs
+    i16x8.neg
+    ref.null func
+    local.set $5
+    f32x4.convert_i32x4_u
+    v128.const i32x4 0x26629e43 0x8c8726e1 0x508370f1 0xed4ee5eb
+    f64x2.ne
+    unreachable
+    )
+  
+  (data $18 (memory $5) (i32.const -1975140783)
+    "2\c5\18\09\0f\a8\09\c7\c8\95%\94\aba\9f\b5\11\be\d2\91\ecT\02")
+  
+  (data $19 
+    "c\ff5\d1\a7y\94\ae\f0\14*qx\98\ce\03k\b8\0f\be\e7N\c5\06\ea\0ex\8cZ\e7\ce\ca\d8\99\e4\b6\81\fc\aa"))

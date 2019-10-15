@@ -1,0 +1,7 @@
+(module
+ (custom_section ""
+   (after table))(table 4 funcref)
+ (custom_section "e" (after table)) (custom_section "."
+   (after table))
+   (table 8 funcref))
+ (cust"e )

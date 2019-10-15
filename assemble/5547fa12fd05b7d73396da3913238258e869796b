@@ -1,0 +1,48 @@
+(module
+  (type $0 (func (param f64 f32 i32 f64) (result v128)))
+  (type $1 (func (param i32 f64)))
+  (import "env" "memory" (memory $2 77 2747 shared))
+  (import "env" "memory" (memory $3 23 56752 shared))
+  (memory $4  14 51374)
+  (global $5  (mut v128) (v128.const i32x4 0x5b50a9e8 0x7eb5c55d 0xc0b9483c 0x0374cabe))
+  (global $6  i32 (i32.const -1156879256))
+  
+  (func $7 (type $0)
+    (param $0 f64)
+    (param $1 f32)
+    (param $2 i32)
+    (param $3 f64)
+    (result v128)
+    (local $4 externref)
+    local.get $0
+    loop $loop (result i32)
+      global.get $6
+      f32.convert_i32_s
+      nop
+      global.get $5
+      nop
+      i32x4.any_true
+      local.get $0
+      block $block (param i32 f64)
+        i64.trunc_sat_f64_s
+        atomic.fence
+        global.get $6
+        local.set $2
+        i64.extend8_s
+        i64.atomic.rmw16.xchg_u offset=3731362754
+        br $block
+      end ;; $block
+      local.set $1
+      local.get $3
+      drop
+      local.get $3
+      local.set $0
+      br $loop
+    end ;; $loop
+    ref.null func
+    ref.is_null
+    ref.null func
+    ref.null extern
+    ref.is_null
+    unreachable
+    ))

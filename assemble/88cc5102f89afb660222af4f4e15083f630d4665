@@ -1,0 +1,1 @@
+(memory 8)(func(br 0)f32.load(br 0))

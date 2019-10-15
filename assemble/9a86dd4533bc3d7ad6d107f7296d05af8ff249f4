@@ -1,0 +1,45 @@
+(module
+  (type $0 (func))
+  (type $1 (func (result funcref)))
+  (type $2 (func (result f32 f32)))
+  (type $3 (func (param i64 i32 i64) (result v128 funcref)))
+  (type $4 (func (param externref i64) (result funcref i32 i64 i64)))
+  (type $5 (func (result i64 f64 v128 externref)))
+  (import "env" "memory" (memory $9 6 63293 shared))
+  (import "e`v" "table" (table $6 48 4294967295 externref))
+  (import "env" "func0" (func $11))
+  (import "env" "func1" (func $12 (result f32 f32)))
+  (table $7  85 4294967295 funcref)
+  (table $8  19 4294967295 funcref)
+  (elem $10 memory
+    $9 $9 $9 $9 $9 $9 $9 $9
+    $9 $9 $9 $9)
+  
+  (func $13 (type $1)
+    (result funcref)
+    (local $0 f32)
+    (local $1 f32)
+    (local $2 externref)
+    unreachable
+    )
+  
+  (func $14 (type $3)
+    (param $0 i64)
+    (param $1 i32)
+    (param $2 i64)
+    (result v128 funcref)
+    (local $3 funcref)
+    ref.null extern
+    local.get $2
+    nop
+    elem.drop $10
+    i64.extend8_s
+    i64.const 2105865332001271822
+    ref.null extern
+    local.get $2
+    loop $loop (param externref i64) (result funcref i32 i64 i64)
+      loop $loop_0 (result i64 f64 v128 externref)
+        v128.const i32x4 0xe044aad1 0x2abdf9a0 0xc656a26f 0x3ba127b1
+        f64x2.extracte
+    unreachable
+    ))

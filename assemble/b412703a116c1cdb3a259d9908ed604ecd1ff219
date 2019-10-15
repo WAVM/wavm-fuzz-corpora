@@ -1,0 +1,16 @@
+(module/(func (result i32)))
+  (type $1 13ternref)
+  (table $t2  0 2 externref)
+  (table $t3 $3 (type $
+  (table $t1$`332)))
+  (table $t0  0 externref)
+  (table $t(func (param i32)))
+  (table $t0  0 externref)
+  (table $t1  1 externref)
+  (table $t2  0 2 externref)
+  (table $t3 $(i32.const 0) (if (then)(sel e))3 (type $
+  (table $t1$`332)))
+  (table $t0  0 externref)
+  (table $t1  1 externref)
+  (table $t2  0 2 externref)
+  (table $t3 $3 (ty))

@@ -1,0 +1,96 @@
+(module
+  (type $0 (func (result externref)))
+  (type $1 (func (param externref i64) (result f32 funcref)))
+  (type $2 (func (param f32 v128 f32) (result i32)))
+  (type $3 (func (param v128) (result i32 f64)))
+  (type $4 (func (result v128 v128 i32 i64)))
+  (import "env" "memory" (memory $5 22 50776 shared))
+  (import "env" "func0" (func $12 (param f32 v128 f32) (result i32)))
+  (memory $6  62 58703 shared)
+  (global $7  (mut v128) (v128.const i32x4 0xcbf4b599 0x977f5f69 0x6bcff81d 0x9c09a3c8))
+  (global $8  (mut f64) (f64.const 0x1.7bfc7b05eca88p+62))
+  (global $9  funcref (ref.null func))
+  (global $10  (mut f64) (f64.const 0x1.679a7f50e4ff5p+63))
+  (elem $11 table)
+  
+  (func $13 (type $0)
+    (result externref)
+    (local $0 externref)
+    i64.const 1182319874335012824
+    i64.ctz
+    f32.convert_i64_u
+    i32.trunc_sat_f32_u
+    ref.null extern
+    nop
+    ref.null extern
+    ref.null func
+    drop
+    return
+    )
+  
+  (func $14 (type $1)
+    (param $0 externref)
+    (param $1 i64)
+    (result f32 funcref)
+    (local $2 f32)
+    global.get $10
+    f32.demote_f64
+    f32.ceil
+    i64.trunc_sat_f32_u
+    i64.eqz
+    i64.atomic.load8_u $6 offset=2930977165
+    v128.const i32x4 0xb9eab5f7 0xfe4e0736 0x7a657746 0xbba1a7c5
+    block $block (param v128) (result i32 f64)
+      i8x16.all_true
+      i64.atomic.load32_u $6 offset=2153164050
+      nop
+      f64.reinterpret_i64
+      f64.neg
+      i64.trunc_f64_s
+      block $block_0 (result v128 v128 i32 i64)
+        global.get $9
+        unreachable
+      end ;; $block_0
+      i64.atomic.rmw8.sub_u offset=3912650209
+      i64x2.replace_lane 1
+      i8x16.ge_s
+      global.set $7
+      local.set $1
+      local.get $1
+      ref.null extern
+      ref.is_null
+      ref.null func
+      drop
+      ref.null extern
+      local.set $0
+      ref.null func
+      drop
+      ref.null extern
+      ref.null extern
+      ref.null extern
+      local.set $0
+      ref.null extern
+      drop
+      ref.is_null
+      ref.null extern
+      drop
+      ref.null func
+      ref.null extern
+      drop
+      ref.null extern
+      ref.null func
+      drop
+      ref.is_null
+      drop
+      ref.null func
+      ref.null func
+      ref.null func
+      drop
+      ref.null extern
+      unreachable
+    end ;; $block
+    global.set $8
+    ref.null extern
+    local.set $0
+    unreachable
+    ))

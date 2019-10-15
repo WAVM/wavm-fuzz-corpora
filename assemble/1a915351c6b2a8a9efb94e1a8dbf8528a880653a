@@ -1,0 +1,22 @@
+(memory 0 3 shared)(func(.x)(c.rmw8.xchg_u)(i32.atomic.rmw8.xchg_u))(func()i64.atomic.rmw.sub i64.atomic.rmw.sub
+)(func()i64.atomic.rmw.sub )(func()i64.atomic.rmw.sub  0)(func()i64.atomic.rmw.sub i64.atomic.rmw.sub ()i64.atomic.rmw.sub i64.atomic.rmw.sub i64.atomic.rmw.sub i64.atomic.rmw.sub
+i6.a)(func()i64.atomic.rmw.sub iw.)(func()i64.atomic.rmw.subhX i64y 0)(func()i64.atomic.rmw.sub i64.rmw.sub  0)(func()i64.atomic.rmw.sub i64.atomic.rmw.sub ()i64.atomic.rmw.sub i64.atomic.rmw.sub )(func()i64.atomic.rmw.sub i64.atsub i64.atomic.rmw.sub
+)(func()i64.atomic.rmw.sub )(func()i64.atomic.rmw.sub  0)(func()i64.atomic.rmw.sub i64.atomic.rmw.sub ()i64.atomic.rmw.sub i64.atomic.rmw.sub i64.atomic.rmw.sub i64.atomic.rmw.sub
+i6.a)(func()i64.atomic.rmw.sub iw.)(func()i64.atomic.rmw.sub i64y 0)(func()i64.atomic.rmw.sub i64.rmw.sub  0)(func()i64.atomic.rmw.sub i64.atomic.rmw.sub ()i64.atomic.rmw.sub i64.atomic.rmw.sub )(func()i64.atomic.rmw.sub i64.atomic.rmw.sub
+i6.a)(func()i64.atomic.rmw.sub i64.atomic.rmw.sub 0)(func()i64.asub i64.rmw.sub  0)(func()i64.atomic.rmw.sub i64.atomic.rmw.sub ()i64.atomic.rmw.sub i64.atomic.rmw.sub )(func()i64.atomic.rmw.sub i64.atomic.rmw.sub
+i6.a)(func()i64.atomic.rmw.sub i64.atomic.rmw.sub 0)(func()i64.atomic.rmw.sub i64.atomic.rmw.sub ()i6b )(func()i64.atomic.rmw.sub i64.atomic.rmw.sub
+i6.a)(func()i64.atomic.rmw.sub iw.)(func()i64.atotomic.rmw.sub i64.atomic.rmw.sub ()i6b )(func()i64.atomic.rmw.sub i64.atomic.rmw.sub
+i6.a)(func()i64.atomic.rmw.sub iw.)(func()i64.atomic.rmw.sub i28y 0)(func()i64.atomic.rmw.sub i64.atomic.rmw.sub ()i64.atomic.rmw.sub iw.)(func()iomic.rmw.sub
+i6.a)(func()i64.atomic.rmw.sub i64.atomic.rmw.sub 0)(func()i64.asub i64.rmw.sub  0)(func()i64.atomic.rmw.sub i64.atomic.rmw.sub ()i64.atomic.rmw.sub i64.atomic.rmw.sub )(func()i64.atomic.rmw.sub i64.atomic.rmw.sub
+i6.a)(func()i64.atomic.rmw.sub i64.atomic.rmw.sub 0)(func()i64.atomic.rmw.sub i64.atomic.rmw.sub ()i6b )(func()i64.atomic.rmw.sub i64.atomic.rmw.sub
+i6.a)(func()i64.atomic.rmw.sub iw.)(func()i64.atrmw.sub
+i6.a)(func()i64.atomic.rmw.sub iw.)(func()i64.atomic.rmw.sub i64y 0)(func()i64.atomic.rmw.sub i64.rmw.sub  0)(func()i64.atomic.rmw.sub i64.atomic.rmw.sub ()i64.atomic.rmw.sub i64.atomic.rmw.sub )(func()i64.atomic.rmw.sub i64.atomic.rmw.sub
+i6.a)(func()i64.atomic.rmw.sub i64.atomic.rmw.sub 0)(func()i64.asub i64.rmw.sub  0)(func()i64.atomic.rmw.sub i64.atomic.rmw.sub ()i64.atomic.rmw.sub i64.atomic.rmw.sub )(func()i64.atomic.rmw.sub i64.atomic.rmw.sub
+i6.a)(func()i64.atomic.rmw.sub i64.atomic.rmw.sub 0)(func()i64.atomic.rmw.sub i64.atomic.rmw.sub ()i6b )(func()i64.atomic.rmw.sub i64.atomic.rmw.sub
+i6.a)(func()i64.atomic.rmw.sub iw.)(func()i64.atotomic.rmw.sub i64.atomic.rmw.sub ()i6b )(func()i64.atomic.rmw.sub i64.atomic.rmw.sub
+i6.a)(func()i64.atomic.rmw.sub iw.)(func()i64.atomic.rmw.sub i28y 0)(func()i64.atomic.rmw.sub i64.atomic.rmw.sub ()i64.atomic.rmw.sub iw.)(func()iomic.rmw.sub
+i6.a)(func()i64.atomic.rmw.sub i64.atomic.rmw.sub 0)(func()i64.amw.sub  0)(func()i64.atomic.rmw.sub i64.atomic.rmw.sub ()i64.atomic.rmw.sub i64.atomic.rmw.sub )(func()i64.atomic.rmw.sub i64.atomic.rmw.sub
+i6.a)(func()i64.atomic.rmw.sub i64.atomic.rmw.sub 0)(func()i64.atomic.rmw.sub i64.atomic.rmw.sub ()i6b )(func()i64.atomic.rmw.sub i64.atomic.rmw.sub
+i6.a)(func()i64.atomic.rmw.sub iw.)(func()i64.atotomic.rmw.sub i64.atomic.rmw.sub ()i6b )(func()i64.atomic.rmw.sub i64.atomic.rmw.sub
+i6.a)(func()i64.atomic.rmw.sub iw.)(func()i64.atomic.vmw.suotomic.rmw.sub i64.atomic.rmw.sub ()i6b )(func()i64.atomic.rmw.sub i64.atomic.rmw.sub
+i6.a)(func()i64.atomic.rmw.sub iw.)(func()i64.atomic.vmw.sub i28y 0)(func()i64.atomic.rmw.sub i64.atomic.rmw.sub ()i64.atomic.rmw.sub iw.)(func()i64.atomic.rmw.sub i64y 0)(func()i64.atomic.rmw.sub )

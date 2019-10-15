@@ -1,0 +1,77 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param i32 v128 i64 f64) (result i32 externref)))
+  (type $2 (func (result i32)))
+  (type $3 (func (param v128) (result v128)))
+  (import "env" "memory" (memory $4 98 10570))
+  (import "env" "memory" (memory $5 61 27739 shared))
+  (import "env" "global1" (global $7 f64))
+  (memory $6  30 34863 shared)
+  (global $8  f64 (f64.const 0x1.d6f4cee8cc230p+63))
+  
+  (func $10 (type $0)
+    (local $0 i64)
+    i64.const -3546034199261439413
+    f32.convert_i64_s
+    unreachable
+    )
+  
+  (func $11 (type $1)
+    (param $0 i32)
+    (param $1 v128)
+    (param $2 i64)
+    (param $3 f64)
+    (result i32 externref)
+    (local $4 v128)
+    (local $5 externref)
+    memory.size
+    i64.atomic.load offset=4048457061
+    local.get $4
+    f32x4.extract_lane 0
+    i32.const -978581953
+    v16x8.load_interleaved_3 offset=1795330502 align=4
+    f64x2.neg
+    block $block (param v128) (result v128)
+      i8x16.all_true
+      v64x2.load_splat offset=4167400877 align=4
+      i16x8.widen_low_i8x16_s
+      f64x2.abs
+      i8x16.bitmask
+      v16x8.load_splat offset=1815738300 align=1
+      i32x4.all_true
+      local.set $0
+      atomic.fence
+      local.get $4
+      ref.null func
+      unreachable
+    end ;; $block
+    v128.andnot
+    i8x16.eq
+    local.set $4
+    unreachable
+    )
+  
+  (func $12 (type $2)
+    (result i32)
+    nop
+    i32.const 1141849975
+    loop $loop
+      call $12
+      i64.atomic.load16_u $6 offset=748044754
+      f64.convert_i64_u
+      i64.trunc_sat_f64_u
+      v128.const i32x4 0xeb46bcd0 0x2846264e 0xcd78a794 0xb67f1284
+      i8x16.extract_lane_u 11
+      f64.const -0x1.b3899e403f63bp+921
+      unreachable
+    end ;; $loop
+    i64.load $6 offset=2956045987 align=1
+    call $12
+    i32.eqz
+    i64.atomic.load $5 offset=3158781923
+    i64.ge_u
+    unreachable
+    )
+  
+  (data $9 
+    "u\13\1cw91Y\91<\b6MM\89\81\bc"))

@@ -1,0 +1,104 @@
+(module
+  (type $0 (func (result i64)))
+  (type $1 (func (param funcref v128) (result i64 i32)))
+  (type $2 (func (param v128 funcref f32) (result funcref funcref)))
+  (type $3 (func (param funcref) (result f64 i32 externref i64)))
+  (type $4 (func (param f32 f32 i32) (result i64)))
+  (import "env" "global1" (global $7 (mut funcref)))
+  (import "env" "global4" (global $8 (mut f32)))
+  (import "env" "global5" (global $9 (mut f64)))
+  (memory $6  49 1416 shared)
+  (table $5  29 4294967295 funcref)
+  (global $10  funcref (ref.null func))
+  (global $11  f64 (f64.const 0x1.a46487c90c8e7p+61))
+  (global $12  f64 (f64.const 0x1.6aec832c4f2c4p+63))
+  (global $13  (mut f32) (f32.const 0x1.072734p+30))
+  (elem $14
+    $15 $15 $17 $16 $16)
+  
+  (func $15 (type $0)
+    (result i64)
+    (local $0 v128)
+    (local $1 f32)
+    (local $2 i64)
+    global.get $7
+    atomic.fence
+    ref.null extern
+    v128.const i32x4 0x40263da3 0xdef95a60 0xf5153ede 0x5509f632
+    i16x8.any_true
+    i16x8.load8x8_u offset=1799038213 align=1
+    i16x8.abs
+    local.get $0
+    i16x8.widen_low_i8x16_s
+    f32x4.min
+    i32x4.neg
+    nop
+    i16x8.extract_lane_u 1
+    i64.extend_i32_s
+    i32.const -1086055214
+    br_if 0
+    unreachable
+    )
+  
+  (func $16 (type $1)
+    (param $0 funcref)
+    (param $1 v128)
+    (result i64 i32)
+    i32.const -687400569
+    i64x2.load32x2_s offset=3233278216 align=4
+    i32x4.bitmask
+    memory.size
+    memory.atomic.notify offset=73882913
+    i32.popcnt
+    i32.extend8_s
+    f64.convert_i32_s
+    global.get $12
+    nop
+    global.get $10
+    block $block (param funcref) (result f64 i32 externref i64)
+      local.get $1
+      global.get $13
+      local.get $1
+      unreachable
+    end ;; $block
+    ref.null extern
+    unreachable
+    )
+  
+  (func $17 (type $2)
+    (param $0 v128)
+    (param $1 funcref)
+    (param $2 f32)
+    (result funcref funcref)
+    (local $3 externref)
+    (local $4 externref)
+    (local $5 f64)
+    (local $6 i32)
+    f64.const 0x1.7764a72b5f14cp+831
+    f32.const -0x1.433478p+17
+    local.get $3
+    global.get $13
+    local.get $2
+    local.get $6
+    i32.ctz
+    f64.convert_i32_u
+    i32.trunc_sat_f64_s
+    block $block (param f32 f32 i32) (result i64)
+      f64.convert_i32_u
+      i32.trunc_f64_u
+      i16x8.splat
+      i16x8.all_true
+      f64.convert_i32_u
+      drop
+      f32.ne
+      unreachable
+    end ;; $block
+    ref.null extern
+    local.set $4
+    drop
+    local.set $3
+    ref.null func
+    global.set $7
+    drop
+    unreachable
+    ))

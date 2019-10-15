@@ -1,0 +1,103 @@
+(module
+  (type $0 (func (result f32 externref)))
+  (type $1 (func (result i32 i32)))
+  (type $2 (func (param i64 funcref f32) (result v128 v128)))
+  (type $3 (func (param i64 v128) (result f32)))
+  (type $4 (func (param externref f32) (result externref)))
+  (type $5 (func (param i64 i32 i64 i32) (result externref externref)))
+  (import "env" "table" (table $6 25 4294967295 shared funcref))
+  (import "env" "func0" (func $12 (result f32 externref)))
+  (import "env" "func1" (func $13 (result i32 i32)))
+  (import "env" "func2" (func $14 (param i64 funcref f32) (result v128 v128)))
+  (table $7  88 4294967295 funcref)
+  (table $8  47 4294967295 shared funcref)
+  (elem $9 declare exception_type)
+  
+  (func $15 (type $3)
+    (param $0 i64)
+    (param $1 v128)
+    (result f32)
+    (local $2 f64)
+    (local $3 f32)
+    (local $4 f64)
+    local.get $1
+    i16x8.widen_low_i8x16_s
+    v128.not
+    i16x8.any_true
+    i32.const -1083826727
+    i32.rotl
+    local.get $0
+    call $13
+    nop
+    i64.extend_i32_u
+    local.get $2
+    local.tee $4
+    i32.trunc_sat_f64_u
+    i32.extend8_s
+    block $block (param i64 i32 i64 i32) (result externref externref)
+      ref.null func
+      table.set $8
+      local.set $0
+      table.get $8
+      ref.is_null
+      table.get $6
+      ref.is_null
+      table.get $7
+      ref.is_null
+      table.get $6
+      ref.null func
+      unreachable
+    end ;; $block
+    ref.null extern
+    ref.null extern
+    unreachable
+    )
+  
+  (func $16 (type $4)
+    (param $0 externref)
+    (param $1 f32)
+    (result externref)
+    (local $2 f32)
+    (local $3 externref)
+    (local $4 i32)
+    (local $5 i32)
+    v128.const i32x4 0xcf5211c8 0x5dc9d560 0xce160417 0x9a9a1e0d
+    i8x16.extract_lane_u 9
+    v128.const i32x4 0xfb9e9656 0xa5289ae8 0x2cd2efe0 0xb1b4aa0a
+    f32x4.convert_i32x4_s
+    f32x4.convert_i32x4_s
+    drop
+    v128.const i32x4 0x57f8fabf 0x08cc279f 0x2dcaab4d 0x579d9846
+    i32.const 1759948712
+    i8x16.splat
+    f64x2.min
+    f64.const 0x1.0a9044a0a3efdp+811
+    v128.const i32x4 0x0e704020 0x6b4bced6 0x1200e947 0x189f985d
+    i16x8.bitmask
+    elem.drop $9
+    drop
+    drop
+    drop
+    local.set $5
+    local.get $3
+    local.set $0
+    table.size $8
+    table.get $8
+    ref.null func
+    ref.null extern
+    ref.is_null
+    table.get $6
+    ref.is_null
+    drop
+    ref.is_null
+    table.get $8
+    ref.is_null
+    table.get $6
+    unreachable
+    )
+  
+  (data $10 
+    "_\beRD]\8f\d2\db\ae?\94\c0\e8\cf\c8\f8\9b\0bv\ce\e2\fc\1e\b4J\be\a7%\8b")
+  
+  (data $11 
+    "\83\19\d8\e9\e9\07"))

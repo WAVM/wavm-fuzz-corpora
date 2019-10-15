@@ -1,0 +1,75 @@
+(module
+  (type $0 (func (param f64 i32 i32 externref) (result v128 f64)))
+  (type $1 (func (param v128 externref v128)))
+  (type $2 (func (param funcref)))
+  (type $3 (func (param funcref i32 f32 f32) (result v128 i64)))
+  (type $4 (func (param f32) (result f32 funcref)))
+  (import "env" "table" (table $5 17 4294967295 shared externref))
+  (import "env" "table" (table $6 39 4294967295 shared externref))
+  (import "env" "global0" (global $9 i32))
+  (import "env" "global1" (global $10 i32))
+  (import "env" "global4" (global $11 v128))
+  (import "env" "func0" (func $15 (param f64 i32 i32 externref) (result v128 f64)))
+  (import "env" "func1" (func $16 (param funcref)))
+  (import "env" "func2" (func $17 (param f32) (result f32 funcref)))
+  (memory $8  1 55446 shared)
+  (table $7  0 4294967295 funcref)
+  (global $12  (mut i64) (i64.const -65465222262088313))
+  (global $13  funcref (ref.null func))
+  (global $14  (mut i64) (i64.const -8932860087991641254))
+  
+  (func $18 (type $1)
+    (param $0 v128)
+    (param $1 externref)
+    (param $2 v128)
+    global.get $9
+    v8x16.load_interleaved_4 offset=2801959261 align=4
+    i8x16.ge_s
+    i16x8.ge_s
+    i64x2.mul
+    global.get $10
+    i32.extend16_s
+    i64x2.shr_s
+    i32x4.trunc_sat_f32x4_s
+    i8x16.all_true
+    br_if 0
+    global.get $10
+    i64.atomic.load8_u offset=2870122300
+    global.get $12
+    i64.div_u
+    global.set $14
+    return
+    )
+  
+  (func $19 (type $3)
+    (param $0 funcref)
+    (param $1 i32)
+    (param $2 f32)
+    (param $3 f32)
+    (result v128 i64)
+    (local $4 externref)
+    (local $5 f32)
+    memory.size
+    v16x8.load_interleaved_3 offset=1827646985
+    i8x16.eq
+    f64x2.sqrt
+    i16x8.max_u
+    f32x4.abs
+    i32x4.extract_lane 3
+    f32.reinterpret_i32
+    local.tee $2
+    i64.trunc_f32_u
+    block $block (result f32)
+      local.get $0
+      unreachable
+    end ;; $block
+    f32.trunc
+    memory.size
+    ref.null extern
+    ref.is_null
+    i32.atomic.rmw8.sub_u offset=300643619
+    local.set $1
+    local.set $2
+    ref.null extern
+    unreachable
+    ))

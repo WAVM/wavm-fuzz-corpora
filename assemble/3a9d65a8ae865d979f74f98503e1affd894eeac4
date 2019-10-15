@@ -1,0 +1,84 @@
+(module
+  (type $0 (func (param i32 i32 externref f32) (result f32 funcref)))
+  (type $1 (func (param externref externref i32) (result i64 i32 f32 f32)))
+  (import "env" "table" (table $2 45 4294967295 funcref))
+  (import "env" "global1" (global $5 f64))
+  (import "env" "global2" (global $6 (mut funcref)))
+  (import "env" "global3" (global $7 funcref))
+  (import "env" "global5" (global $8 funcref))
+  (table $3  55 4294967295 shared funcref)
+  (table $4  35 4294967295 shared externref)
+  (global $9  externref (ref.null extern))
+  (global $10  v128 (v128.const i32x4 0x4d0f4121 0x8e3e1c05 0x2d277933 0xb30432e8))
+  (global $11  (mut i64) (i64.const -9008765115659462873))
+  
+  (func $14 (type $0)
+    (param $0 i32)
+    (param $1 i32)
+    (param $2 externref)
+    (param $3 f32)
+    (result f32 funcref)
+    nop
+    nop
+    global.get $11
+    f64.convert_i64_u
+    f64.trunc
+    global.get $7
+    local.get $1
+    table.get $4
+    local.tee $2
+    local.get $2
+    local.get $0
+    loop $loop (param externref externref i32) (result i64 i32 f32 f32)
+      local.get $0
+      global.get $10
+      f32x4.extract_lane 1
+      drop
+      i32.rotr
+      table.get $4
+      drop
+      ref.null extern
+      ref.null extern
+      ref.null func
+      ref.null func
+      ref.is_null
+      table.get $2
+      drop
+      ref.null extern
+      local.set $2
+      ref.is_null
+      local.set $1
+      ref.is_null
+      select (result externref)
+      ref.is_null
+      table.get $3
+      global.set $6
+      local.set $2
+      atomic.fence
+      local.get $3
+      local.set $3
+      i64.const -5092049320538131855
+      local.get $0
+      global.get $8
+      ref.is_null
+      i32.rem_u
+      i32.extend8_s
+      f32.const 0x1.32b46ap-54
+      nop
+      global.get $7
+      ref.null extern
+      ref.is_null
+      drop
+      return
+    end ;; $loop
+    f32.add
+    local.set $3
+    local.set $1
+    unreachable
+    )
+  
+  (data $12 
+    "v\ab\01\1befY\03l\c3A\b0>\1a9\ba\95Bu\1b+\98\d3\e70\ec\bb\10\a3BCcX\d6f\aa\af\d4\e5\0e\acq\ee")
+  
+  (data $13 
+    "\\V\85\c2f\8f\d4\c0\f1Y\f1\d9\8d\fd\ba\cc\e3#\fd\16\ea\f2P\ea\fe[\0fDzK\7f=\8ao\df\96Q"))

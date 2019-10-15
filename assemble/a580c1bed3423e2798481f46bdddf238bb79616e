@@ -1,0 +1,63 @@
+(module
+  (type $0 (func (param i64 f32) (result funcref f64)))
+  (type $1 (func (param i64 i64) (result i32 f32)))
+  (import "env" "memory" (memory $4 28 30156 shared))
+  (import "env" "memory" (memory $5 60 15312 shared))
+  (import "env" "memory" (memory $6 8 47830 shared))
+  (import "env" "global1" (global $7 (mut i64)))
+  (import "env" "global2" (global $8 f32))
+  (import "env" "func0" (func $13 (param i64 f32) (result funcref f64)))
+  (table $2  2 4294967295 funcref)
+  (table $3  86 4294967295 shared externref)
+  (global $9  f64 (f64.const 0x1.512143e405cffp+61))
+  (elem $10 (i32.const 1462254178) funcref
+    (ref.func $13) (ref.null func) (ref.func $13) (ref.func $14)
+    (ref.func $13) (ref.func $13) (ref.func $13) (ref.func $14)
+    (ref.func $14) (ref.null func) (ref.func $14) (ref.null func)
+    (ref.func $14) (ref.func $14) (ref.null func) (ref.func $13)
+    (ref.func $13) (ref.func $13) (ref.func $14) (ref.func $13)
+    (ref.null func) (ref.func $14) (ref.null func) (ref.func $13)
+    (ref.func $14) (ref.func $13) (ref.null func) (ref.func $13)
+    (ref.func $14) (ref.func $13) (ref.func $13) (ref.null func)
+    (ref.func $14) (ref.func $13) (ref.func $14) (ref.null func))
+  (elem $11 declare externref
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern))
+  
+  (func $14 (type $1)
+    (param $0 i64)
+    (param $1 i64)
+    (result i32 f32)
+    (local $2 v128)
+    nop
+    local.get $2
+    table.size $2
+    i64.const 5209593245573199204
+    i64.atomic.store $6 offset=2661506846
+    drop
+    i32.const -2055273299
+    v16x8.load_interleaved_2 offset=976547840 align=1
+    i8x16.lt_u
+    i16x8.all_true
+    i32.atomic.load16_u $5 offset=3767121127
+    global.get $7
+    i64.atomic.store offset=3958452966
+    i32.const 1943245373
+    memory.size
+    i32.shl
+    f64.convert_i32_s
+    ref.null extern
+    ref.null extern
+    ref.null extern
+    ref.null extern
+    ref.is_null
+    ref.null func
+    unreachable
+    )
+  
+  (data $12 (memory $6) (i32.const 399879312)
+    "\0b_\b7J\e6\e0[\c7\c8\e0\c3\cbah\e8\a3\ee:n\14\c3p4t\cc\15\c7\a8\ean}\c7Q\c7\a7\b4\1bNr1\b5\7f\07p\e3t\b6\b6\bc\06\da\f5V5\04\c3\ad\e5\n=P\8d\e9\b6"
+    "\9bi\870\13%Q0__ln\b5\9fX"))

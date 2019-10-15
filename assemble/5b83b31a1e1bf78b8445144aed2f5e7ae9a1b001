@@ -1,0 +1,16 @@
+(module
+  (type $0 (func))
+  (type $1 (func(result i32)))
+  (import "env" "table" (table $4 68 4294967295 externref))
+  (import "env" "func0" (func $8))
+  (import "env" "func1" (func $9 (param i64 funcref) (result f32 funcref)))
+  (import "env" "func2" (func $10 (param f32 v128 f64) (result externref)))
+  (memory $5  12 37322 shared)
+  (global $6  (mut i32) (i32.const 1972159185))
+  (elem $7 (i32.const -1659109866) table
+    $4 $4 $4 $4 $4 $4 $4 $4
+    $4 $4 $4 $4 $4 $4 $4 $4
+    $4 $4 $4 $4 $4
+    $4 $4 $4 $4 $4 $4 $4 $4
+  
+    ))

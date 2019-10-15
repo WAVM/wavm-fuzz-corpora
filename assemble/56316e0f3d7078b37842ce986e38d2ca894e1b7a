@@ -1,0 +1,1 @@
+(memory 8)(func(br )(v8x16.store_interleaved_2	)(vr )(v8x16.store_interleaved_2	)(v8x16.store_interleaved_2)(v8)(v8x16.store_interleaved_2))

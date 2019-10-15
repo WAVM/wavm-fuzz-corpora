@@ -1,0 +1,136 @@
+(module
+  (type $0 (func (param i32 funcref)))
+  (type $1 (func (param f64 f32 i32 i32)))
+  (type $2 (func (param i32 externref f32 f32) (result f64)))
+  (type $3 (func (param f64 v128 i64 i64)))
+  (type $4 (func (result funcref externref)))
+  (type $5 (func (result f32 i32)))
+  (type $6 (func (param v128 funcref i64) (result f64 funcref)))
+  (type $7 (func (result i64 v128 i32)))
+  (import "env" "memory" (memory $9 7 46314 shared))
+  (import "env" "table" (table $8 79 4294967295 externref))
+  (memory $10  100 12059 shared)
+  
+  (func $13 (type $0)
+    (param $0 i32)
+    (param $1 funcref)
+    (local $2 funcref)
+    (local $3 i32)
+    f32.const 0x1.2f2bcep-55
+    f32.nearest
+    i32.trunc_sat_f32_u
+    i32.load8_u offset=410928967
+    i32.load8_u offset=3800706857
+    i32.atomic.load8_u $10 offset=1748087531
+    v32x4.load_interleaved_3 offset=2243634056 align=4
+    i32x4.ge_u
+    f32x4.lt
+    memory.size $10
+    i64x2.load32x2_s $10 offset=476028 align=2
+    block $block (result funcref externref)
+      i32.const 1761950490
+      v32x4.load_splat $10 offset=3130636355
+      ref.null extern
+      drop
+      drop
+      local.get $1
+      drop
+      table.size $8
+      table.get $8
+      drop
+      local.get $2
+      local.set $1
+      local.get $1
+      f32.const 0x1.a9a714p+34
+      drop
+      loop $loop
+        ref.null extern
+        return
+      end ;; $loop
+      local.tee $2
+      unreachable
+    end ;; $block
+    br 0
+    )
+  
+  (func $14 (type $1)
+    (param $0 f64)
+    (param $1 f32)
+    (param $2 i32)
+    (param $3 i32)
+    (local $4 f64)
+    (local $5 f64)
+    f32.const -0x1.d6933cp+38
+    atomic.fence
+    f32.nearest
+    unreachable
+    )
+  
+  (func $15 (type $2)
+    (param $0 i32)
+    (param $1 externref)
+    (param $2 f32)
+    (param $3 f32)
+    (result f64)
+    (local $4 v128)
+    local.get $3
+    i32.trunc_f32_u
+    block $block (result f32 i32)
+      f32.const 0x1.a0b430p+16
+      data.drop $11
+      loop $loop
+        local.get $1
+        br $loop
+      end ;; $loop
+      i32.trunc_f32_u
+      f32.convert_i32_u
+      nop
+      memory.size
+      i32.load8_u offset=629744389
+      memory.size
+      i32.le_s
+      unreachable
+    end ;; $block
+    local.set $0
+    local.set $2
+    unreachable
+    )
+  
+  (func $16 (type $3)
+    (param $0 f64)
+    (param $1 v128)
+    (param $2 i64)
+    (param $3 i64)
+    (local $4 i64)
+    (local $5 v128)
+    (local $6 externref)
+    table.size $8
+    v8x16.load_interleaved_3 $10 offset=2664827213 align=1
+    i64x2.neg
+    ref.null func
+    table.size $8
+    local.get $0
+    data.drop $11
+    i64.trunc_sat_f64_u
+    i64.atomic.rmw.or $10 offset=505502539
+    block $block (param v128 funcref i64) (result f64 funcref)
+      loop $loop (result i64 v128 i32)
+        f32.const 0x1.a47f88p+75
+        i32.trunc_f32_s
+        f64.convert_i32_s
+        local.get $1
+        return
+      end ;; $loop
+      return
+    end ;; $block
+    ref.is_null
+    table.get $8
+    br 0
+    )
+  
+  (data $11 (memory $10) (i32.const -793179523)
+    "J\bd\0e\fc \dcj\nE\00m\ef\bc\acl\08L\f8\a6\f7~R\e9M\c4Y4\b0\8a]r\e2\9aPX\a74\e3\c1,\de\f8i/#\e54\ff!%w\cf\f9gPT\a2\16\e6\16\1c@\c8k"
+    "}\a7_\86\b6")
+  
+  (data $12 (i32.const 1553713470)
+    "R\a2\f9\e2&\09\a8&\b1\df\c1\ce"))

@@ -1,0 +1,5 @@
+(func br 00
+i8x16.add_saturate_s 
+i8x16.add_saturate_s 
+i8x16.add_saturate_s br
+0)

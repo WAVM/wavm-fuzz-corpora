@@ -1,0 +1,29 @@
+(exception_type)
+   (func i32.const 0
+    i32x4.load16x4_s
+   0
+    i32x4.load16x4_s
+    i32x4.load16x4_s  1)
+   (func i32.const 0
+    i32x4.load16x4_s
+   0
+    i32x4.load16x4_s
+    i32x4.load16x4_s     i32x4.load16x4_s
+    i32x4.load16x4_s i32.const 0   i32x4.load16x4_s   i32x4.load16x4_s
+    i32x4.load16x4_s    i32x4.load16x4_s
+    i32x4.load16x4_s i32.const 0   i32x4.load16x4_s   i32x4.load16x4_s
+    i32x4.load16x4_s ix2.xception_type)
+   (func i32.const 0
+    i32x4.load16x4_s
+   0
+    i32x4.load16x4_s
+    i32x4.load16x4_s  1)
+   (func i32.const 0
+    i32x4.load16x4_s
+   0
+    i32x4.load16x4_s
+    i32x4.load16x4_s     i32x4.load16x4_s
+    i32x4.load16x4_s i32.const 0   i32x4.load16x4_s   i32x4.load16x4_s
+    i32x4.load16x4_s    i32x4.load16x4_s
+    i32x4.load16x4_s i32.const 0   i32x4.load16x4_s   i32x4.load16x4_s
+    i32x4.load16x4_s ix2.))

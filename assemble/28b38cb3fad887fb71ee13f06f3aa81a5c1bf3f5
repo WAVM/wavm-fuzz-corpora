@@ -1,0 +1,30 @@
+(module
+  (type $0 (func (param f64 i32) (result externref)))
+  (type $1 (func (param f32) (result externref i64)))
+  (import "env" "memory" (memory $2 54 18099 shared))
+  (import "env" "memory" (memory $3 100 54086))
+  (import "env" "global0" (global $5 (mut v128)))
+  (import "env" "global1" (global $6 i64))
+  (import "env" "func0" (func $8 (param f64 i32) (result externref)))
+  (memory $4  38 21729)
+  
+  (func $9 (type $1)
+    (param $0 f32)
+    (result externref i64)
+    (local $1 i64)
+    (local $2 funcref)
+    (local $3 v128)
+    (local $4 f32)
+    f32.const 0x1.75ed26p+115
+    global.get $5
+    local.tee $3
+    i16x8.widen_low_i8x16_s
+    i16x8.neg
+    i8x16.bitmask
+    i64.load32_s $3 offset=3811772807 align=1
+    drop
+    unreachable
+    )
+  
+  (data $7 
+    "\ffvt"))

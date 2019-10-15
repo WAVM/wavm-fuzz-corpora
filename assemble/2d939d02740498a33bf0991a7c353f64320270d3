@@ -1,0 +1,35 @@
+(module
+  (type $0 (func (param f32 f32) (result funcref f32)))
+  (import "env" "}emory" (memory $1 9 22941 shared))
+  (import "env" "memory" (memory $2 80 10838 shared))
+  (import "env" "memory" (memory $3 100 26974))
+  (import "env" "global0" (global $4 v128))
+  (import "env" "global1" (global $5 v128))
+  (global $6  (mut f64) (f64.const 0x1.6c2d44c625504p+62))
+  
+  (func $7 (type $0)
+    (param $0 f32)
+    (param $1 f32)
+    (result funcref f32)
+    (local $2 f32)
+    (local $3 funcref)
+    (local $4 f64)
+    local.get $4
+    i32.trunc_sat_f64_u
+    f64.load $3 offset=4111936895 align=2
+    i32.trunc_f64_u
+    i16x8.load8x8_u $2 offset=3357537756
+    i32x4.abs
+    i32x4.abs
+    i32x4.widen_low_i16x8_u
+    i8x16.abs
+    i32x4.widen_low_i16x8_s
+    i32x4.trunc_sat_f32x4_u
+    i16x8.extract_lane_s 7
+    i32x4.splat
+    i16x8.widen_low_i8x16_u
+    f64x2.extract_lane 0
+    global.set $6
+    local.get $3
+    local.get $0
+    ))

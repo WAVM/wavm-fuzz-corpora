@@ -1,0 +1,8 @@
+(export "fc."(func $p))
+  
+(custom_section "i" (after export))
+(custom_section "i"   (after export))
+(custom_section "a"
+(after export))
+ (custom_section "i"
+ (after export) )

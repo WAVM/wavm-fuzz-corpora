@@ -1,0 +1,37 @@
+(module
+  (type $0 (func (param i32) (result v128)))
+  (type $1 (func (param f64 i64) (result externref f64)))
+  (import "env" "memory" (memory $2 14 2188 shared))
+  (import "env" "global0" (global $4 (mut v128)))
+  (import "env" "global2" (global $5 (mut f32)))
+  (import "eaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaanv" "nunc0" (func $9 (param i32) (result v128)))
+  (memory $3  18 43243)
+  (global $6  f64 (f64.const 0x1.ade7ea7b22bfdp+62))
+  (elem $7 declare global
+    $6 $5 $6 $4 $6 $6 $4 $6)
+  
+  (func $10 (type $1)
+    (param $0 f64)
+    (param $1 i64)
+    (result externref f64)
+    (local $2 i32)
+    memory.size $3
+    v32x4.load_splat offset=1535863286
+    drop
+    memory.size
+    v8x16.load_interleaved_2 offset=741203200
+    i8x16.add_saturate_s
+    i8x16.extract_lane_s 13
+    v64x2.load_interleaved_3 $3 offset=3627356915 align=8
+    i32x4.widen_high_i16x8_s
+    f64x2.div
+    i64x2.sub
+    i64x2.neg
+    i64x2.neg
+    i8x16.bitmask
+    i64.atomic.load16_u offset=3462468178
+    unreachable
+    )
+  
+  (data $8 (i32.const -2050205567)
+    "P(\01\e0\ac\ca3g\a9F\b7\0d"))

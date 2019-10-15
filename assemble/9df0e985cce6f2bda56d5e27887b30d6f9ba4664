@@ -1,0 +1,81 @@
+(module(import "" "f"(func $f))
+(func(resy)
+ref.f ref.is_null
+"f"(func $f))
+(func(resy)
+ref.func $f ref.is_null
+  ref.func $f ref.is_null
+rrt "" "f"(func $f))
+(func(resy)
+_null
+"f"(func $f))
+(func(resy)
+ref.func $f ref.is_null
+  ref.func $f ref.is_null
+ref.func $l
+ref.func $f "" "f"(func $f))
+(func(resy)
+ref.func $f ref.is_null
+  ref.func $f ref.is_null
+ref ref.is_null
+t "" "f"(func $f))
+(func(reÿÿÿÿsy)
+ref.func $f ref.is_null
+  r(func $f))
+(func(resÿy)
+ref.func $f ref.is_null
+  ref.func $f ref.is_null
+ref.fref.is_null
+  ref.f" "f"(func $f))
+(func(resy)
+ref.func $f ref.is_null
+  ref.func $f ref.is_null
+ref*fnc $f
+rf.fusf.is_nulrt "" "f"(func $f))
+(func(resy)
+ref.func $f ref.is_null
+  ref.func $f ref.is_null
+ref.func $" "ef. "" "f"(f))
+(func(resy)
+ref.func $f ref.is_null
+  ref.funf.is_nulrt "" "f"(fun\ $f))
+(func(resy)
+ref.func $f ref.is_null
+  ref.func $f ref.is_null
+ref.func $-lunc(resy)
+ref.func $f ref.is_null
+  ref.func $f ref.is_null
+refunc_ef.func $\8l
+ref.func $f "" "f"(func $f))
+(func(resy)
+ref.func $f ref.is_null
+  ref.func $f ref.is_null
+ref ref.is_null
+t "" "f"(func $f))
+(func(reÿÿÿÿsy)
+ref.func $f ref.is_null
+  ref.funf.is_nulrt "" "f"(func $f))
+(func(resÿy)
+ref.func $f ref.is_null
+  ref.func $f ref.is_null
+ref.fref.is_null
+  ref.f" "f"(func $f))
+(func(resy)
+ref.func $f ref.is_null
+  ref.func $f ref.is_null
+ref.fnc $f
+rf.funf.is_nulrt "" "f"()f$ucf n)
+(func(resy)
+ref.func $f ref.is_null
+  ref.func $f ref.is_null
+ref.func $" "›™ÑÚ"" "f"(func $f))
+(func(resy)
+ref.func $f ref.is_null
+  ref.f" "f"(fun\ $f))
+(func(resy)
+ref.func $f ref.is_null
+  ref.func $f ref.is_null
+ref.func $-lunc(resy)
+ref.func $f ref.is_null
+  ref.func $f ref.is_null
+refunc_null))

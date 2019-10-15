@@ -1,0 +1,13 @@
+(module
+  (type $0 (func (param f64) (result funcref i32)))
+  (import "env" "global1" (global $6 i64))
+  (import "env" "global2" (global $7 (mut f64)))
+  (import "env" "global3" (global $8 (mut i32)))
+  (import "env" "global7" (global $9 (mut i64)))
+  (import "env" "global8" (global $10 (mut f32)))
+  (import "env" "global9" (global $11 f32))
+  (import "env" "func0" (func $15 (param f64) (result funcref i32)))
+  (memory $4  4 5818 shared)
+  (global $12  funcref (ref.null func))
+  (global $13  externref (ref.null extern))
+  (global $14  funcref (ref.null func)))

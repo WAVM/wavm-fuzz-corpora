@@ -1,0 +1,91 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param f32 externref f32 f64) (result v128 f32)))
+  (type $2 (func (result i64)))
+  (type $3 (func (param i32 i64)))
+  (type $4 (func (result i64 externref)))
+  (import "env" "memory" (memory $5 26 24285))
+  (import "env" "memory" (memory $6 24 32711 shared))
+  (import "env" "global0" (global $8 (mut f32)))
+  (import "env" "func0" (func $11))
+  (import "env" "func1" (func $12 (result i64)))
+  (memory $7  65 29296 shared)
+  (elem $9 externref
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern))
+  
+  (func $13 (type $1)
+    (param $0 f32)
+    (param $1 externref)
+    (param $2 f32)
+    (param $3 f64)
+    (result v128 f32)
+    elem.drop $9
+    local.get $2
+    call $11
+    f32.sqrt
+    global.get $8
+    f32.ge
+    block $block (result i64)
+      ref.null func
+      global.get $8
+      drop
+      global.get $8
+      loop $loop (result i64 externref)
+        local.get $0
+        i64.trunc_f32_u
+        i64.const 7360582621145651682
+        i64.rem_s
+        i64.clz
+        f32.convert_i64_u
+        global.set $8
+        data.drop $10
+        ref.null extern
+        ref.is_null
+        ref.null func
+        drop
+        drop
+        i32.const 1514774468
+        br $loop
+      end ;; $loop
+      ref.null func
+      ref.is_null
+      drop
+      local.set $1
+      ref.null extern
+      ref.null func
+      drop
+      unreachable
+    end ;; $block
+    i64.atomic.rmw8.sub_u offset=1444024556
+    unreachable
+    )
+  
+  (func $14 (type $3)
+    (param $0 i32)
+    (param $1 i64)
+    (local $2 i64)
+    (local $3 f32)
+    (local $4 funcref)
+    i64.const -3048636166416075611
+    f32.convert_i64_s
+    i32.trunc_f32_u
+    v16x8.load_interleaved_3 $6 offset=2608969198 align=1
+    f64x2.sub
+    v8x16.shuffle 6 4 12 26 30 1 13 0 13 14 3 23 2 3 5 20
+    return
+    )
+  
+  (data $10 
+    "4\d5\87gM\8a\15r\f3\a8\b8\d2&\1e\e5\c1\\\e6Q\04\e3\19R'/eC\c1"))

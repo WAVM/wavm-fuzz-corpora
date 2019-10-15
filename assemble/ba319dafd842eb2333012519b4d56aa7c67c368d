@@ -1,0 +1,51 @@
+(module
+  (type $0 (func (param externref funcref f32 f32)))
+  (import "env" "memory" (memory $4 37 3292 shared))
+  (import "env" "memory" (memory $5 58 43803 shared))
+  (import "env" "memory" (memory $6 88 36827 shared))
+  (import "env" "global0" (global $7 (mut funcref)))
+  (table $1  73 4294967295 shared externref)
+  (table $2  66 4294967295 funcref)
+  (table $3  0 4294967295 shared funcref)
+  (elem $8 table
+    $2 $1 $3 $2 $3 $1 $2 $3
+    $3 $3 $1 $1 $3 $1 $1 $3
+    $2 $1 $3 $1 $3 $2 $1 $1
+    $3 $1 $2 $1 $3 $1 $2 $3
+    $3 $3 $1 $2 $3 $1 $3 $3
+    $1 $2 $2 $3 $2 $3 $1 $1
+    $1 $2 $1 $3 $3 $1 $1 $1
+    $3 $1 $3 $1)
+  
+  (func $11 (type $0)
+    (param $0 externref)
+    (param $1 funcref)
+    (param $2 f32)
+    (param $3 f32)
+    (local $4 funcref)
+    (local $5 externref)
+    table.size $1
+    i32.load8_u $5 offset=3201223367
+    nop
+    i8x16.splat
+    i16x8.abs
+    i16x8.abs
+    i16x8.abs
+    f64x2.extract_lane 0
+    f32.demote_f64
+    f32.nearest
+    f32.abs
+    i64.const -2654741731724456765
+    table.size $1
+    f64.convert_i32_u
+    drop
+    drop
+    local.set $2
+    br 0
+    )
+  
+  (data $9 (memory $6) (i32.const -1860211010)
+    "\"c*\a8\cf\caM:P\95A\1cR!\de\85+\98O<\86\a1\b3v*\80)")
+  
+  (data $10 (memory $6) (i32.const 1818021345)
+    "\8fo\11$\09\ac\a5^\a3-y\d4\9f\f54\ae[\bf\e9\d9\a5cL\9a\8e\0b\e8\ff\1b\16\06\bfS_\b4j\a3\16J\aaI\aa\cd\ee\99Rr\9a\"i\e7"))

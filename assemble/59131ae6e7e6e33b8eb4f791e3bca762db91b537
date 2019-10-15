@@ -1,0 +1,4 @@
+(module
+(memory 0)
+(func i32.const 5 v32x4.load_interleaved_3 return
+  v32x4.load_interleaved_3 return))

@@ -1,0 +1,37 @@
+(module
+  (type $0 (func (param f64 f64) (result f64 f32)))
+  (import "env" "global0" (global $4 f64))
+  (import "env" "global2" (global $5 (mut funcref)))
+  (import "env" "global3" (global $6 f64))
+  (import "env" "global4" (global $7 (mut i64)))
+  (memory $1  100 32741 shared)
+  (memory $2  53 7014 shared)
+  (memory $3  35 9383 shared)
+  (global $8  (mut i64) (i64.const 412920823766173684))
+  
+  (func $9 (type $0)
+    (param $0 f64)
+    (param $1 f64)
+    (result f64 f32)
+    (local $2 externref)
+    (local $3 f64)
+    (local $4 externref)
+    (local $5 i32)
+    i64.const 8080410766726497820
+    i64.extend16_s
+    drop
+    global.get $8
+    i64.const 1621044154931297753
+    i64.add
+    global.set $7
+    atomic.fence
+    nop
+    local.get $4
+    local.set $4
+    global.get $6
+    global.get $4
+    f32.demote_f64
+    global.get $5
+    global.set $5
+    return
+    ))

@@ -1,0 +1,1 @@
+(exception_type $7 f64)(func try catch $7 try catch $7)

@@ -1,0 +1,8 @@
+(module  (type $0 (func (result v128))) 
+(func $1 (type $0)
+v128.const i32x4 0x1 02 0x0 0  i32.const 6  i16x8.shl
+  i32.const 1
+ i16x8.shl 
+ i32.const 6   i16x8.shl
+  i32.const 1  i16x8.shl
+  ))

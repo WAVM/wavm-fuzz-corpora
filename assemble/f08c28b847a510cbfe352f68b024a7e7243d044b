@@ -1,0 +1,8 @@
+(stn(a) "")(custom_section "a" (after data) "")
+    (custom_section "b" (after code))
+     (custom_section "b " (aftre data) "")(custom_section "a" (after data) "")
+    (custom_section "b" (after code) "")
+    (custom_section "b" (t)(a) "":)(custom_section "a" (after data) "")  (custom_section "b" (after code) "")
+ 
+    (custom_section "b" (a) "")(custom_section "a" (after data) "")
+    (custom_section "b" (after code) "")(custom_section "b"

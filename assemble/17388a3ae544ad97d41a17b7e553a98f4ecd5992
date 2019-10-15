@@ -1,0 +1,64 @@
+(module
+  (type $0 (func (param funcref i64)))
+  (type $1 (func (param v128 v128) (result f64)))
+  (type $2 (func (param funcref v128 i32 f32)))
+  (type $3 (func (param externref v128 funcref)))
+  (type $4 (func (param f64) (result funcref i64)))
+  (type $5 (func (param i64)))
+  (type $6 (func (param i64) (result i32 i64 v128)))
+  (import "env" "memory" (memory $9 33 19811 shared))
+  (import "env" "memory" (memory $10 44 36720))
+  (import "env" "table" (table $7 53 4294967295 shared externref))
+  (import "env" "global0" (global $11 (mut i64)))
+  (import "env" "global3" (global $12 v128))
+  (import "env" "global4" (global $13 f32))
+  (import "env" "global5" (global $14 (mut f64)))
+  (import "env" "global6" (global $15 (mut f32)))
+  (import "env" "func0" (func $21 (param funcref v128 i32 f32)))
+  (table $8  62 4294967295 externref)
+  (global $16  (mut i64) (i64.const -6340732375383849992))
+  (global $17  (mut i64) (i64.const 1786645081479164013))
+  (global $18  (mut f32) (f32.const 0x1.a1553cp+28))
+  
+  (func $22 (type $0)
+    (param $0 funcref)
+    (param $1 i64)
+    memory.size
+    global.get $14
+    local.get $1
+    block $block (param i64)
+      i64.extend8_s
+      i64.extend8_s
+      memory.size
+      i64.extend_i32_s
+      i64.gt_s
+      i32.atomic.load $10 offset=2448551099
+      i32.extend8_s
+      nop
+      i32.eqz
+      global.get $16
+    s
+      ref.null extern
+      ref.null extern
+      drop
+      ref.null func
+      unreachable
+    end ;; $block
+    drop
+    i32.const -2034852965
+    table.get $7
+    drop
+    global.get $13
+    ref.null func
+    ref.is_null
+    drop
+    global.set $18
+    local.get $0
+    unreachable
+    )
+  
+  (data $19 (memory $10) (i32.const 1551565752)
+    "\13\de\a4n\7f=Zj\e7n\af\eak")
+  
+  (data $20 
+    "\e9\d2m\1d\8d\bc\1e\e7\06\88\ad\d4\f1\91\cc\ab\7fD\19\a1\c8_"))

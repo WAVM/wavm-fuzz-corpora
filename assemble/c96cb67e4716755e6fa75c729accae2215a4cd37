@@ -1,0 +1,110 @@
+(module
+  (type $0 (func (result v128 externref)))
+  (type $1 (func (result externref)))
+  (type $2 (func (param f32 externref v128) (result v128)))
+  (type $3 (func (param i32 externref f32 f64) (result externref)))
+  (type $4 (func (param i32) (result i32)))
+  (import "env" "global1" (global $6 f64))
+  (import "env" "func0" (func $8 (param i32 externref f32 f64) (result externref)))
+  (memory $5  72 54738 shared)
+  (global $7  i32 (i32.const -18377864))
+  
+  (func $9 (type $0)
+    (result v128 externref)
+    (local $0 f32)
+    (local $1 externref)
+    (local $2 f32)
+    f64.const 0x1.eac6e611ab10bp-52
+    i32.trunc_sat_f64_s
+    i32.load offset=3032210240 align=2
+    v64x2.load_splat offset=1250077337
+    i32x4.widen_low_i16x8_s
+    i32x4.extract_lane 2
+    i64.atomic.load16_u offset=933238816
+    i64.ctz
+    i64.popcnt
+    i64.extend16_s
+    drop
+    memory.size
+    i64x2.load32x2_s offset=1300412879 align=2
+    i32x4.extract_lane 2
+    i32.atomic.load8_u offset=3340652291
+    unreachable
+    )
+  
+  (func $10 (type $1)
+    (result externref)
+    global.get $7
+    i32.atomic.load8_u offset=1239446079
+    i32.atomic.load offset=3270767946
+    v8x16.load_splat offset=2567995925
+    i8x16.extract_lane_s 10
+    f32.load offset=3605735783 align=1
+    i32.trunc_sat_f32_s
+    f64.load offset=3547711795 align=2
+    drop
+    global.get $7
+    i32x4.splat
+    v128.not
+    global.get $7
+    i32.atomic.load16_u offset=2294796212
+    i32.extend16_s
+    i16x8.shl
+    ref.null extern
+    return
+    )
+  
+  (func $11 (type $1)
+    (result externref)
+    (local $0 v128)
+    (local $1 f64)
+    nop
+    local.get $0
+    call $9
+    call $9
+    global.get $7
+    block $block (param i32) (result i32)
+      i32.load8_u offset=39297282
+      i32.atomic.load8_u offset=1986390750
+      v8x16.load_interleaved_4 offset=3346894483 align=1
+      i16x8.add_saturate_s
+      i16x8.le_u
+      f32x4.convert_i32x4_s
+      i8x16.le_s
+      i32x4.widen_low_i16x8_u
+      i32x4.widen_high_i16x8_s
+      ref.null extern
+      return
+    end ;; $block
+    br_if 0
+    br 0
+    )
+  
+  (func $12 (type $2)
+    (param $0 f32)
+    (param $1 externref)
+    (param $2 v128)
+    (result v128)
+    nop
+    i32.const 1103581094
+    i64.load32_u offset=1106671009
+    atomic.fence
+    i64.extend16_s
+    global.get $7
+    f32.reinterpret_i32
+    i32.trunc_sat_f32_s
+    i64.atomic.load offset=3799767886
+    f64.reinterpret_i64
+    f32.const -0x1.a83c30p-105
+    v128.const i32x4 0xb5706d80 0x82b26335 0xaaa70a9d 0x4354d3eb
+    i64x2.neg
+    local.tee $2
+    i16x8.any_true
+    ref.null func
+    ref.is_null
+    i32.atomic.rmw8.xor_u offset=2596150053
+    drop
+    drop
+    drop
+    unreachable
+    ))

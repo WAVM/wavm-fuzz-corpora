@@ -1,0 +1,85 @@
+(module
+  (type $0 (func (result i32)))
+  (type $1 (func (result i32 externref)))
+  (type $2 (func))
+  (import "env" "global0" (global $7 i32))
+  (import "env" "global1" (global $8 i32))
+  (import "env" "global2" (global $9 (mut v128)))
+  (import "env" "global3" (global $10 i64))
+  (import "env" "func0" (func $14))
+  (memory $5  47 31950 shared)
+  (memory $6  23 34434 shared)
+  (table $3  61 4294967295 externref)
+  (table $4  77 4294967295 externref)
+  (global $11  i32 (i32.const -1024177585))
+  (elem $12 (i32.const 2077082384) global
+    $11 $7 $10 $9 $10 $11 $11 $8
+    $11 $9 $10 $9 $7 $8 $10 $8
+    $9 $10 $9 $7 $7 $8 $11 $8
+    $11 $7)
+  
+  (func $15 (type $0)
+    (result i32)
+    global.get $7
+    i64.atomic.load8_u $6 offset=3801292336
+    global.get $7
+    i32.load16_u $6 offset=3759528252
+    call $14
+    global.get $7
+    v16x8.load_interleaved_4 $6 offset=3572796165
+    i32x4.max_u
+    i32x4.sub
+    f64x2.neg
+    i32x4.max_u
+    ref.null func
+    global.get $7
+    atomic.fence
+    v64x2.load_interleaved_4 $6 offset=904425883 align=4
+    i16x8.gt_u
+    i32x4.max_u
+    i64x2.add
+    ref.null func
+    ref.null extern
+    ref.null func
+    unreachable
+    )
+  
+  (func $16 (type $1)
+    (result i32 externref)
+    (local $0 v128)
+    (local $1 f32)
+    (local $2 i64)
+    (local $3 i64)
+    i32.const 1643578367
+    local.get $3
+    local.tee $3
+    i64.atomic.rmw.or $6 offset=1698546756
+    call $14
+    local.get $0
+    atomic.fence
+    i16x8.bitmask
+    i32x4.load16x4_s offset=1224655785 align=2
+    global.get $9
+    i8x16.narrow_i16x8_s
+    i16x8.extract_lane_u 4
+    i32.extend8_s
+    i64x2.load32x2_u offset=3555562764 align=1
+    f32x4.convert_i32x4_s
+    global.set $9
+    ref.null extern
+    ref.null func
+    ref.null extern
+    ref.is_null
+    table.get $4
+    ref.is_null
+    drop
+    ref.null func
+    ref.is_null
+    ref.null func
+    ref.is_null
+    i32.rem_u
+    unreachable
+    )
+  
+  (data $13 (memory $6) (i32.const 1506990221)
+    "\904ov;\e9\adg\10?\a8l\d5\ebjI"))

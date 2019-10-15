@@ -1,0 +1,47 @@
+(module
+  (type $0 (func (result i64)))
+  (type $1 (func (param funcref v128) (result i64 v128)))
+  (type $2 (func (param f64 i64) (result i32 i64)))
+  (type $3 (func (param v128 i32 v128 v128)))
+  (type $4 (func (param i32 v128 f64) (result v128 funcref)))
+  (import "env" "global1" (global $6 (mut v128)))
+  (import "env" "func0" (func $10 (param funcref v128) (result i64 v128)))
+  (import "env" "func1" (func $11 (param f64 i64) (result i32 i64)))
+  (import "env" "func2" (func $12 (param i32 v128 f64) (result v128 funcref)))
+  (memory $5  45 39237 shared)
+  (global $7  (mut i32) (i32.const -1211251618))
+  
+  (func $13 (type $0)
+    (result i64)
+    unreachable
+    )
+  
+  (func $14 (type $3)
+    (param $0 v128)
+    (param $1 i32)
+    (param $2 v128)
+    (param $3 v128)
+    (local $4 i32)
+    local.get $2
+    i32x4.all_true
+    i32.extend8_s
+    i32.load16_s offset=2511042973 align=1
+    i64x2.load32x2_u offset=3003380433 align=4
+    i32x4.trunc_sat_f32x4_s
+    local.tee $2
+    i32x4.widen_high_i16x8_u
+    f64x2.abs
+    f32x4.abs
+    i32x4.extract_lane 1
+    i32.extend8_s
+    v16x8.load_interleaved_2 offset=1389486363 align=8
+    global.get $7
+    return
+    )
+  
+  (data $8 
+    "Nk\eb\d0\0f+\d8\1f\1e\ac\bc[\85\bc\da\e0\0f\01\c2C\ee\a1\fd@bV\d3\17\dc\06\86dmo\95\a3\103\bdc%\\\81\fe>\a3;\e8\11j\aec\aeB\18\fa\17e\e7\f4\bb\09q\d8"
+    "V\90@\d4\8f\00(\e1\d5\dc\b0\91\b7\d1>\1c1\c6\f7\ea\08\ab")
+  
+  (data $9 
+    "\a1\e4sI\8dD\19\c2\d6O\bf\dd\08\ee\fd\e2\c1\14%\e6\fd^\9bq\03\a6m\c3H\9c\"?4\0bb\cf\f0\a9U\ed\f0\9a"))

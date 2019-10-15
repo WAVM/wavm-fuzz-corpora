@@ -1,0 +1,4 @@
+(func local.get 0  local.get $5 local.get 0  local.get $nc local.get 0  local.get $5 local.get 0  local.get $5 local.get 0 local.get 0 local.get 0  local.get $5 local.get 0 local.get 0
+local.get 0 local.get 0 local.get 0  local.get $5 local.get 0 local.get 5 local.get 0 local.get 0 local.get 0  local.get $5 local.get 0 local.get 0
+local.get 0 local.get 0 local.get 0  local.get $5 local.get 0 local.get 0
+)

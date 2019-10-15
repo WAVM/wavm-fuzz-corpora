@@ -1,0 +1,19 @@
+(module
+  (type $0 (func))
+  (import "env" "table" (table $1 84 4294967295 shared externref))
+  (import "env" "global1" (global $4 f64))
+  (import "env" "glob2" (global $5 i32))
+  (import "env" "global3" (global $6 f64))
+  (table $2  76 4294967295 shared externref)
+  (table $3  26 4294967295 shared funcref)
+  (global $7  (mut externref) (ref.null extern))
+  (global $8  (mut f64) (f64.const 0x1.d6893d4933fe4p+63))
+  (global $9  (mut externref) (ref.null extern))
+  (global $10  i64 (i64.const -2199534702020035417))
+  (elem $11 memory)
+  
+  (func $12 (type $0)
+    (local $0 externref)
+    i32.const -467277030
+    return
+    ))

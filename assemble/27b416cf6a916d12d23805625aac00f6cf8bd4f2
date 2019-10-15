@@ -1,0 +1,7 @@
+(module
+  (type $0 (func (result funcref)))
+  
+  (func $1 (type $0)
+    (result funcref)
+    ref.null func
+    ))

@@ -1,0 +1,7 @@
+(module
+  (type $0 (func))
+  (elem $2 funcref
+    (ref.null func))
+  
+  (func $3 (pyte $0)
+    ))

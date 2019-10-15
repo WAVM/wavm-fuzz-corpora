@@ -1,0 +1,16 @@
+(memory 0)(func () 
+memory.atomic.notify
+() 
+memory.atomic.notify
+  (memory.atomic.notify
+)  (memory.atomic.notify
+)
+oic.noory 5)(func () 
+memory.atomic.notify
+() 
+memory.atomic.notify
+  (memory.atomic.notify
+)  (memory.atomic.notify
+)
+]tatomic.nomory.atonotify
+  ))

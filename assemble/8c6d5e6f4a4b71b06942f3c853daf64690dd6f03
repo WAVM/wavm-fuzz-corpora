@@ -1,0 +1,571 @@
+(module
+  (type $0 (func))
+  (memory $1  1 1)
+  
+  (func $2 (type $0)
+    i32.const 0
+    i32.const 0
+    memory.atomic.notify
+    drop
+    )
+  
+  (func $3 (type $0)
+    i32.const 0
+    i32.const 0
+    i64.const 0
+    memory.atomic.wait32
+    drop
+    )
+  
+  (func $4 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.const 0
+    memory.atomic.wait64
+    drop
+    )
+  
+  (func $5 (type $0)
+    i32.const 0
+    i32.atomic.load
+    drop
+    )
+  
+  (func $6 (type $0)
+    i32.const 0
+    i64.atomic.load
+    drop
+    )
+  
+  (func $7 (type $0)
+    i32.const 0
+    i32.atomic.load16_u
+    drop
+    )
+  
+  (func $8 (type $0)
+    i32.const 0
+    i64.atomic.load16_u
+    drop
+    )
+  
+  (func $9 (type $0)
+    i32.const 0
+    i64.atomic.load32_u
+    drop
+    )
+  
+  (func $10 (type $0)
+    i32.const 0
+    i32.const 0
+    i32.atomic.store
+    )
+  
+  (func $11 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.atomic.store
+    )
+  
+  (func $12 (type $0)
+    i32.const 0
+    i32.const 0
+    i32.atomic.store16
+    )
+  
+  (func $13 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.atomic.store16
+    )
+  
+  (func $14 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.atomic.store32
+    )
+  
+  (func $15 (type $0)
+    i32.const 0
+    i32.const 0
+    i32.atomic.rmw.add
+    drop
+    )
+  
+  (func $16 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.atomic.rmw.add
+    drop
+    )
+  
+  (func $17 (type $0)
+    i32.const 0
+    i32.const 0
+    i32.atomic.rmw16.add_u
+    drop
+    )
+  
+  (func $18 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.atomic.rmw16.add_u
+    drop
+    )
+    
+  (func $26 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.atomic.rmw.and
+    drop
+    )
+  
+  (func $27 (type $0)
+    i32.const 0
+    i32.const 0
+    i32.atomic.rmw16.and_u
+    drop
+    )
+  
+  (func $28 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.atomic.rmw16.and_u
+    drop
+    )
+  
+  (func $29 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.atomic.rmw32.and_u
+    drop
+    )
+  
+  (func $30 (type $0)
+    i32.const 0
+    i32.const 0
+    i32.atomic.rmw.or
+    drop
+    )
+  
+  (func $31 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.atomic.rmw.or
+    drop
+    )
+  
+  (func $32 (type $0)
+    i32.const 0
+    i32.const 0
+    i32.atomic.rmw16.or_u
+    drop
+    )
+  
+  (func $33 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.atomic.rmw16.or_u
+    drop
+    )
+  
+  (func $34 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.atomic.rmw32.or_u
+    drop
+    )
+  
+  (func $35 (type $0)
+    i32.const 0
+    i32.const   0 
+ i32.atomic.rmw.xor
+    drop
+    )
+  
+  (func $36 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.atomic.rmw.xor
+    drop
+    )
+  
+  (func $37 (type $0)
+    i32.const 0
+    i32.const 0
+    i32.atomic.rmw16.xor_u
+    drop
+    )
+  
+  (func $38 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.atomic.rmw16.xor_u
+    drop
+    )
+    (func $43 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.atomic.rmw16.xchg_u
+    drop
+    )
+  
+  (func $23 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.atomic.rmw32.xchg_u
+    drop
+    )
+  
+  (func $45 (type $0)
+    i32.const 0
+    i32.const 0
+    i32.const 0
+    i32.atomic.rmw.cmpxchg
+    drop
+    )
+  
+  (func $46 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.const 0
+    i64.atomic.rmw.cmpxchg
+    drop
+    )
+  
+  (func $47 (type $0)
+    i32.const 0
+    i32.const 0
+ (func(i8x16.ge_u(i8x16.ge_u)(i8x16.ge_u)(i   i32.const 0
+    i32.atomic.rmw16.cmpxchg_u
+    drop
+    )
+  
+  (func $48 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.const 0
+    i64.atomic.rmw16.cmpxchg_u
+    drop
+    )
+  
+  (func $49blo$c1 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.const 0
+8x16.ge_u))    i64.atomic.rmw32.cmpxchg_u
+    drop
+    )))_i32_u  f32.convert_i32_u   i8x16.lt_s f32.convert_i32_u  
+ i8x16.lt_s f32.2ype $p (func))
+  (func f32.convert_i32_u  f32.convert_i32_u   i8x16.lt_s f32.convert_i32_u  
+ i8x16.lt_s f32onvert_ii8x16.lt_s fc (func))
+  (func f32.conve2yep  ($fpunc))
+  (func f32.convert_i32_u  f32.convert_i32_u   i8x16.lt_s f32.convert_i32_u  
+ i8x16.lt_s f32.2ype $p (func))
+  (func f32.c(module
+  (type $0 (func (param v128 f32 v128 v128) (result funcref externref)))
+  (type $1 (func (result v128 externref)))
+  (type $2 (func (param f64 i64) (result funcref i64 funcref f64)))
+  (import "env" "table" (table $3 6 4294967295 funcref))
+  (import "env" "global3" (global $8 externref))
+  (import "env" "global5" (global $9 (mut i32)))
+  (import "env" "global7" (global $10 (mut f32)))
+  (memory $6  6 780 shared)
+  (memory $7  88 13022)
+  (table $4  34 4294967295 funcref)
+  (table $5  87 4294967295 funcref)
+  (global $11  v128 (v128.const i32x4 0xd509859d 0x25e19b04 0xa9a37565 0x24d026d7))
+  (global $12  (mut f32) (f32.const 0x1.aa254ap+31))
+  (global $13  f64 (f64.const 0x1.e9071f9279e9cp+63))
+  (global $14  i64 (i64.const 7635048046735749806))
+  (global $15  (mut v128) (v128.const i32x4 0x2c6e0b09 0xd17bf78e 0xd8f6b2c0 0x8128349b))
+  (elem $16 exception_type)
+  
+  (func $17 (type $0)
+    (param $0 v128)
+    (param $1 f32)
+    (param $2 v128)
+    (param $3 v128)
+    (result funcref externref)
+    (local $4 funcref)
+    (local $5 i32)
+    (local $6 v128)
+    (local $7 v128)
+    global.get $15
+    global.get $15
+    ref.null extern
+    local.get $6
+    memory.size $7
+    loop $loop (result v128 externref)
+      local.get $2
+      i16x8.widen_high_i8x16_s
+      f64.const 0x1.2682add2dd521p-862
+      global.get $14
+      nop
+      drop
+      global.get $9
+      i64.load8_s offset=2778879890
+      loop $loop_0 (param f64 i64) (result funcref i64 funcref f64)
+        ref.null func
+   onvert_i32_u  f32.convert_i32_u   i8x16.lt_s f32.convert_i32_u  
+ i8x16.lt_s fc f32.conve2yep  ($fpunc))
+  (func f32.convert_i32_u  f32.convert_i32_u   i8x16.lt_s f32.convert_i32_u  
+ i8x16.lt_s f32.2ype $p (func))
+  (func f32.convert_i32_u  f32.convert_i32_u   i8x16.lt_s f32.convert_i32_u  
+ i8x16.lt_s f32onvert_i32ype"$p (func))
+  (func f32.convert_i32_u  f32.convert_i32_u   i8x16.lt_s f32.convert_i32_u  
+ i8x16.lt_s f64.convert_$p (func)rt_i32_u   i8x16.lt_s f32.conve     local.set $4
+        br $loop_0
+      end ;; $lort_i32_u  
+ i8x16.lt_s fc f32.conve2yep  ($fpunc))
+  (func f32.convert_i3op_0
+      ref.null func
+      drop
+      br $loop
+    end ;; $loop
+    ref.is_null
+    i8x16.shl
+    local.set $0
+    i8x16.shr_s
+    local.set $2
+    drop
+    f32x4.ne
+    drop
+    global.get $8
+    drop
+    v128.const i32x4 0x56ab6717 0xf904557c 0x61bdce7d 0x8dbb2_u  f32.convert_i32_u   i8x16.lt_s f32.convert_i32_u  
+ i8x16.lt_s f32.2ype $p (func))
+  (func f32.convert_i32_u  f32.convert_i32_u   i8x16.lt_s f32.convert_i32_u  
+ i8x16.lt_s f32onvert_i32ype"$p (func))
+  (func f32.convert_i32_u  f32.convert_i32_u   i8x16.lt_s f32.convert_i32_u  
+ i8x16.lt_s f64.convert_$p (func))
+  (func f32.convert_i32_u  f32.convert_i32_u   i8x16.lt_s f32.convert_i32_u  
+ i8x16.lt_s f32.co32onvert_i32ype"$p (func))
+  (func f32.convert_i32_u  f32.convert_i32_u   i8x16.lt_s f32.convert_i32_u  
+ i8x16.lt_s f64.convert_$p (func))
+  (func f32.convert_i32_u  f32.convert_i32_u   i8x16.lt_s f32.convert_i32_u  
+ i8x16.lt_s f32.convert_i3u
+f32.conve2yep  ($fpunc))
+  (func f32.convert_i32_u  f32.convert_i32_u   i8x16.lt_s f32.convert_i32_u  
+ i8x16.lt_s f32.2ype $p (func))
+  (func f32.convert_i32_u  f32.convert_i32_u   i8x16.lt_s f32.convert_i32_u  
+ i8x16.lt_s f32onvert_ii8x16.lt_s fc (func))
+  (func f32.conve2yep  ($fpunc))
+  (func f32.convert_i32_u  f32.convert_i32_u   i8x16.lt_s f32.convert_i32_u  
+ i8x16.lt_s f32.2ype $p (func))
+  (func f32.convert_i32_u  f32.convert_i32_u   i8x16.lt_s f32.convert_i32_u  
+ i8x16.lt_s fc f32.conve2yep  ($fpunc))
+  (func f32.convert_i32_u  f32.convert_i32_u   i8x16.lt_s f32.convert_i32_u  
+ i8x16.lt_s f32.2ype $p (func))
+  (func f32.convert_i32_u  f32.convert_i32_u   i8x16.lt_s f32.convert_i32_u  
+ i8x16.lt_s f32onvert_i32ype"$p (func))
+  (func f32.convert_i32_u  f32.convert_i32_u   i8x16.lt_s f32.convert_i32_u  
+ i8x16.lt_s f64.convert_$p (func))
+  (func f32.convert_i32_u  f32.convert_i32_u   i8x16.lt_s f32.convert_i32_u  
+ i8x16.lt_s f32.co32onveconvert_i32_u  
+ i8x16.lt_s f32onvert_i32ype"$p (func))
+  (func f32.convert_i32_u  f32.convert_i32_u   i8x16.lt_s f32.convert_i32_u  
+ i8x16.lt_s f64.convert_$p (func))
+  (func f32.convert_i32_u  f32.convert_i32_u   i8x16.lt_s f32.convert_i32_u  
+ i8x16.lt_s f32.co32onvert_i32ype"$p (func))
+  (func f32.convert_i32_u  f32.convert_i32_u   i8x16.lt_s f32.convert_i32_u  
+ i8x16.lt_s f64.convert_$p (func))
+  (func f32.convert_i32_u  f32.convert_i32_u   i8x16.lt_s f32.convert_i32_u  
+ i8x16.lt_s f32.convert_i3u
+f32.conve2yep  ($fpunc))
+  (func f32.convert_i32_u  f32.convert_i32_u   i8x16.lt_s f32.convert_i32_u  
+ i8x16.lt_s f.2ype $p (func))
+  (func f32.convert_i32_u  f32.convert_i32_u   i8x16.lt_s f32.convert_i32_u  
+ i8x16.lt_s f32onvert_ii8x16.lt_s fc (func))
+  (func f32.conve2yep  ($fpunc))
+  (func f32.convert_i32_u  f32.convert_i32_u   i8x16.lt_s f32.convert_i32_u  
+ i8x16.lt_s f32.2ype $p (func))
+  (func f32.convert_i32_u  f32.convert_i32_u   i8x16.lt_s f32.convert_i32_u  
+ i8x16.lt_s fc f32.conve2yep  ($fpunc))
+  (func f32.convert_i32_u  f32.convert_i32_u   i8x16.lt_s f32.convert_i32_u  
+ i8x16.lt_s f32.2ype $p (func))
+  (func f32.convert_i32_u  f32.convert_i32_u   i8x16.lt_s f32.convert_i32_u  
+ i8x16.lt_s f32onvert_i32ype"$p (func))
+  (fun(func(v128.const f64x2 1)v128.const f64x2 0)16.lt_s f32.convert_i32_u  
+ i8x16.lt_s f64lt_s fc f32.conve2yep  ($fpunc))
+  (func f32.convert_i32_u  f32.convert_i32_u   i8x16.lt_s f32.convert_i32_u  
+ i8x16.lt_s *32.2ype $p (func))
+  (func f32.convert_i32_u  f32.convert_i32_u   i8x16.lt_s f32.convert_i32_u  
+ i8x16.lt_s f32onvert_i32ype"$p (func))
+  (func f32.convert_i32_u  f32.convert_i32_u   i8x16.lt_s f32.convert_i32_u  
+ i8x16.lt_s f64es f32.2ype $p (func)d498
+    local.set $0
+    glob)
+  (func f32.convert_i32_u  f32.convert_i32_u   i8x16.lt_s f32.convert_i32_u  
+ i8x16.lt_s f32onveal.get $15
+    unreachable
+  rt_i32ype"$p (func))
+  (func   f32.convert_i3)2_u  f32.convert_i3)2_u _i3u
+    ))f()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if())if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if[)if()if()if()if()if()if()if()if()if(loop (loop()if()if()if()if()if(o)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if(3)if()if()if()if()if()if()if()if()if()if()if(o)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if(()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if(4)if()if()if()if()if()if()if()if()if()if()if(o)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()()if()if()if()if()if()if(4)if()if()if()if()if()if()if()if()if()if()if(o)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()br_iff()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if[)if()if()if()if()if()if()if()if()if(loop (loop()if()if()if()if()if(o)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if(4)if()if()if()if()if()if()if()if()if()if()if(o)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()i3nc 1 3)(func v8x16.shuffle 31  1 -0x1;;000 2  4v8x   2 -0x1;;000 2  4v8x   unùﬂœ‡3)(func v8x16.shuffle 31  2 -0x10  3nc 1 3)(func v8x16.shuffle 31  1 -0x1;;000  4v8x   unùﬂœ‡3)(func v8nst 2))1 3)(func v8x16.shuffle 31  2 -0x1;;000 2  4v8x   unùﬂœ‡3)(func v8x16.shuffle 0  3nc 1 3)(func v8x16.shuffle 31  1 -0x1;;000 2  4v8x   2 -0x1;;000 2  4v8x   unùﬂœ‡3)(func v8x16.shuffle 31  2 -0x10  3nc 1 3)(func v8x16.shuffle 31  1 -0x0 2  4v8x   unùﬂœ‡3)(func v8x16.shuffle 3 2 -0x10   unùﬂœ‡3)(func v8x16.shuffle 31  2 -0x10  3nc 1 3)(func v8x16.shuffle 31  1 -0x1;;000 2  4v8x   2 -0x1;;000 2  4v8x   unùﬂœ‡3)(func v8x16.shuffle 31  2 -0x10  3nc 1 3)(func v8x16.shuffle 31  1 -0x1;;000  4v8x   unùﬂœ‡3f()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if())if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if())if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if())if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if[)if()if()if()if()if()if()if()if()if(loop (loop()if()if()if()if()if(o)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if(3)if()if()if()if()if()if()if()if()if()if()if(o)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()i‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚f()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()()if()if()if()if()if()if(4)if()if()if()if()if()if()if()if()if()if()if(o)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if[)if()if()if()if()if(func f32x4.mul)(func f32x4.mul)(func f32x4.mul)(func f32x4.mul)()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if(4)if()if()if()if()if()if()if()if()if()if()if(o)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if())if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if[)if()if()if()if()if()if()if()if()if(loop (loop()if()if()if()if()if(o)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if(o)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()()if()if()if()if()if()if(4)if()if()if()if()if()if()if()if()if()if()if(o)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if[)if()if()if()if()if()if()if()if()if(loop (loop()if()if()if()if()if(o)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if(4)if()if()if()if()if()if()if()if()if()if()if(o)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()(module
+  (type $0 (func))
+  (memory $1  1)
+  
+  (func $2 (type $0)
+    i32.const 01
+    v32x4.load_splat
+    drop
+    ))f()if()if()if()if())if()if()()if()if()if()if()if()if()if()if()if()if()iff()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()f()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if[)if()if()if()if()if()if()if()if()if(loop (loop()if()if()if()if()if(o)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if(4)if()if()if()if()if()if()if()if()if()if()if(o)if()if()if()if()if()if()if()if()if()f()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if(unc v8x16.shuffle 31 le 31  2 -ùﬂœ‡3)(func v8x16.shuffle 31  2 -0x10 c 1 3)(func v8x16.shuffle 31  2 -0x1;;000 2  4v8x   unùﬂœ‡3)(func v8x16.shuff0x1;;08x   unùﬂœ‡6)(func v8x16.shuffle 31  2 -0x10 c 1 3)(func v8x16.shuffle 31  2 -0x1;;000 2  4v8x   unùﬂœ‡3)(func v8x16.shuffle 3 2 -0x10   unùﬂœ‡3)(func v8x16.shuffle 31  2 -0x10  3nc
+  (export "f32_div" (fnc $73))
+  (export "f32_copysign" (func $74))
+  (export "f32_e" (func $75))
+  (export "f32_ne" (func $67))
+  (export "f32_lt" (77))
+  (export "f32_le" (func $78))
+  (export "f32_gt" (func $65))
+  (export "f32_.e" (func $80))
+  (export "f32_min" (func $81))
+  (export "f32_max" (fun£ $82))
+  (export "f" (func $83))
+  (export "f3ll" (fdc $43))
+  (export "i64_div_u" (func $44))
+  (export "i64_rem_s" (func $45))
+  (export "rem_u" (func46))
+  (export "i65_and" (func $47))
+  (export "i64_or" (func $48))
+  (export "ir" (nc $49))
+  (export "i64_shl" (func $50))
+  (export "" (func $51))
+  (export "i64_lt_s" (func $55))
+  (export "i64_le_s" (fblock56))
+  (export "i64_lt_u" (func $57))
+  (export "i64_le_u" (func $58))
+  (export "i64_gt_s" (func $59))
+  (export "i64_ge_s" (f))
+  (export "i6t[4g_u" (f8))
+  (export "i64_xor" (func$49))
+  (export "_u" (func $51))
+  (export "i64_shr_s" (func $52))
+  (export "iZ" (func $53))
+  (export "i63_ne" (func $54))
+  (export "is" (func $55))
+  (export "i4l6" (fblock56))
+  (export "i64_lt_u" (func $57))
+ ( export "i64_le_u" (func $58))
+  (export "i64_gt_s" (func $59))
+  (export "i63_ub" (func $72))
+  (export "v31_mul" (func 2$7))
+  (export "f32_div" (func $73))
+  (export "f32_opign" (func $74))
+  (export "f32_e"(fcu  n$75))
+  (export "f32_ne" (func $76))
+  (export "f32_lt" (func $77))
+  (export "f32_le" (func $78))
+  (exportf32_e" (func $75))
+  (export "f32_ne" (func $76))
+  (export "f32_lt" (77))
+  (export "f32_le" (f78))
+  (export "f32_gt" (func $65))
+  (export "f32_ge" (func $80))
+  (export "f32_min" (func $81))
+  (export "f32_max" (fun£ $82))
+  (export "f" (func $83))
+  (export "f3ll" (fdc $43))
+  (export "i64_div_u" (func $44))
+  (export "i64_rem_s" (func $45))
+  (export "rem_u" (func46))
+  (export "i65_and" (func $47))
+  (export "i64_or" (func $48))
+  (export "ir" (nc $49))
+  (export "i64_shl" (func $50))
+  (export "" (func $51))
+  (export "i64_lt_s" (func $55))
+  (export "i64_le_s" (fblock56))
+  (export "i64_lt_u" (func $57))
+  (export "i64_le_u" (func $58))
+  (export "i64_gt_s" (func $59))
+  (export "i64_ge_s" (f))
+  (export "i6t[4g_u" (f8))
+  (export "i64_xor" (func$49))
+  (export "_u" (func $51))
+  (export "i64_shr_s" (func $52))
+  (export "iZ" (func $53))
+  (export "i63_ne" (func $54))
+  (export "is" (func $55))
+  (export "i4l6" (fblock56))
+  (export "i64_lt_u" (func $57))
+ ( export "i64_le_u" (func $58))
+  (export "i64_#t_s" (func $59))
+  (export "i62_ub" (func $72))
+  (export "v31_mul" (func 2$7))
+  (export "f32_div" (func $73))
+  (export "f32_opign" (func $74))
+  (export "f12_e"(fc75))
+  (export "f32_ne" (func $76))
+  (export "f32_lt" (func $77))
+  (export "f32_le" (func $78))
+  (export "f32_gt" (func $65))
+  (export "f32_ge" (func$80))
+  (export "f32_min" (func $81))
+  (export "f3" (f$62))
+  (export "f32_store" (func $83))
+  (export "f32_call" (fdc $43))
+  (export "i64v_u" (func $44))
+  (export "i64_res" (func $45))
+  (export "i64_rem_u" (func $46))
+  (export "i64_and" (func $47))
+  (export "i64ro_" (func $48))
+  (export "iˇ_xor" (func $49))
+  (export "i64_shl" (func $50))
+  (export "i64_shr_u" (func $51)) (export "i64_shb_s" (func $52))
+  (export "i64_eq" (func $53))
+  (export "i64_ne" (func $54))  (export "i64_rem_s" (f$45)
+ )( export "i64_rem_u" (func $46))
+  (export "i64_and" func(func $13)()if()if(o)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()f()if()if()if()if()if()if()if[)if()if()if()if()if(func f32x4.mul)(func f32x4.mul)(func f32x4.mul)(func f32x4.mul)()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if(4)if()if()if()if()if()if()if()if()if()if()if(o)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if())if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if[)if()if()if()if()if()if()if()if()if(loop (loop()if()if()if()if()if(o)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if(o)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()()if()if()if()if()if()if(4)if()if()if()if()if()if()if()if()if()if()if(o)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if[)if()if()if()if()if()if()if()if()if(loop (loop()if()if()if()if()if(o)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if(4)if()if()if()if()if()if()if()if()if()if()if(o)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()(module
+  (type $0 (func))
+  (memory $1  1)
+  
+  (func $2 (type $0)
+    i32.const 01
+    v32x4.load_splat
+    drop
+    ))f()if()if()if()if())if()if()()if()if()if()if()if()if()if()if()if()if()iff()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if[)if()if()if()if()if()if()if()if()if(loop (loop()if()if()if()if()if(o)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if(3)if()if()if()if()if()if()if()if()if()if()if(o)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()i.splat())(f64x2.splat(f64x2.splat))(f64x2.splat(f64x2.splat())(f64x2.splat)(f64x2.splat())(4)(f64x2.splat())(f64x2.splat())(fthen4x2.splat)t)(f64x2.splat())(f64x2.splat())(f64x2.splat)(5)(f64x2.splat())(f64x2.splat(f64x2.splat))(f64x2.splat(f64x2.splat())(f64x2.splat)(f64xx2.splat)t)(f64x2.splat())(f64x2.splat())(f64x2.splat)(5)(f64x2.splat())(f64x2.splat(f64x2.splat))"")(custom_section "")(custom_section "hX")(custom_section "")(custom_section "")(;;)(custom")(custom_section "")(custom_64.tion "")(custom_section "")(custom_section "hX")(custom_section "")(custom_section "")(;;)(custom_sectiäëﬂ›ß›÷◊custom_section "")(custom_section "")(custom_section "")(custom_section "")(custom_section "")(custo "hX")(custom_section "")(custom_section "")(custom_section "")(cu")(custom_section "")(;;)(custom_section "")(custom_sat())(4plat())(f64x2.splat())(f64x2.splat)(f64x2.splat)(f64x2.splat())(f64x2.splat())(f64x2.splat())(f32x)(f64x2.splat)t)(f64x2.splat())(f64x2.splat())(f64x2.splat)(5)(f64x2.splat())(f64x2.splat(f64x2.splat))(f64x2.splat(f64x2.splat())(f64x2.splat)(f64x2.splat())(4)(s
+    drop
+    call (elem)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)
+    (result i32)
+    call $reset
+    call $i32_left
+    call $i32_right
+    i32.ge_u
+    drop
+    call $get 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0
+0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 (func i16x8.shl)0 0 0 0 0 0 0 0 0 0 0c.rmw8.cmpxchg_u(t))(i32.atomic.rmw8.cmpxchg_u(i32.atomic.rmw8.cmpxchg_u))2.atomic.rmw8.and_u i32.atomic.rmw8.and_u2.atomic.rmw8.cmpxchg_u)(i32.atomic.rmw8.cmpxchg_u(()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if())if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if[)if()if()if()if()if()if()if()if()if(loop (loop()if()if()if()if()if(o)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if(o)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()()if()if()if()if()if()if(4)if()if()if()if()if()if()if()if()if()if()if(o)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if[)if()if()if()if()if()if()if()if()if(loop (loop()if()if()if()if()if(o)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if(4)if()if()if()if()if()if()if()if()if()if()if(o)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()(module
+  (type $0 (func))
+  (memory $1  1)
+  
+  (func $2 (type $0)
+    i32.const 01
+    v32x4.load_splat
+    drop
+    ))f()if()if()if()if())if()if()()if()if()if()if()if()if()if()if()if()if()iff()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if[)if()if()if()if()if()if()if()if()if(loop (loop()if()if()if()if()if(o)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if(3)if()if()if()if()if()if()if()if()if()if()if(o)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()i.splat())(f64x2.splat(f64x2.splat))(f64x2.splat(f64x2.splat())(f64x2.splat)(f64x2.splat())(4)(f64x2.splat())(f64x2.splat())(fthen4x2.splat)t)(f64x2.splat())(f64x2.splat())(f64x2.splat)(5)(f64x2.splat())(f64x2.splat(f64x2.splat))(f64x2.splat(f64x2.splat())(f64x2.splat)(f64xx2.splat)t)(f64x2.splat())(f64x2.splat())(f64x2.splat)(5)(f64x2.splat())(f64x2.splat(f64x2.splat))"")(custom_section "")(custom_section "hX")(custom_section "    v32x4.load_splat
+    drop
+    ))f()if()if()if()if())if()if()()if()if()if()if()if()if()if()if()if()if()iff()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if[)if()if()if()if()if()if()if()if()if(loop (loop()if()if()if()if()if(o)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()()if()if()if()if()if()if()if()if()if()if()if()if()if()if(3)if()if()if()if()if()if()if()if()if()if()if(o)if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()if()i.splat())(f64x2.splat(f64x2.splat))(f64x2.splat(f64x2.splat())(f64x2.splat)(f64x2.splat())(4)(f64x2.splat())(f64x2.splat())(fthen4x2.splat)t)(f64x2.splat())(f64x2.splat())(f64x2.splat)(5)(f64x2.splat())(f64x2.splat(f64x2.splat))(f64x2.splat(f64x2.splat())(f64x2.splat)(f64xx2.splat)t)(f64x2.splat())(f64x2.splat())(f64x2.splat)(5)(f64x2.splat())(f64x2.splat(f64x2.splat))"")(custom_section "")(custom_section "hX")(custom_section "")(custom_section "")(;;)(custom")(custom_section "")(custom_64.tion "")(custom_section "")(custom_section "hX")(custom_section "")(custom_section "")(;;)(custom_sectiäëﬂ›ß›÷◊custom_section "")(custom_section "")(custom_section "")(custom_section "")(custom_section "")(custo "hX")(custom_section "")(custom_section "")(custom_section "")(cu")(custom_section "")(;;)(custom_section "")(custom_sat())(4plat())(f64x2.splat())(f64x2.splat)(f64x2.splat)(f64x2.splat())(f64x2.splat())(f64x2.splat())(f32x)(f64x2.splat)t)(f64x2.splat())(f64x2.splat())(f64x2.splat)(5)(f64x2.splat())(f64x2.splat(f64x2.splat))(f64x2.splat(f64x2.splat())(f64x2.splat)(f64x2.splat())(4)(s
+    drop
+    call (elem)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)(func)
+    (result i32)
+    call $reset
+    call $i32_left
+    call $i32_right
+    i32.ge_u
+    drop
+    call $get 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0
+0 0 0
+0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 (func i16x8.shl)0 0 0 0 0 0 0 0 0 0 0c.rmw8.cmpxchg_u(t))(i32.atomic.rmw8.cmpxchg_u(i32.atomic.rmw8.cmpxchg_u))2.atomic.rmw8.and_u i32.atomic.rmw8.and_u2.atomic.rmw8.cmpxchg_u)(i32.atomic.rmw8.cmpxchg_u(i $443 (type $0)
+  (br 0))y         

@@ -1,0 +1,123 @@
+(module
+  (type $0 (func (param f64)))
+  (type $1 (func (param externref) (result funcref)))
+  (type $2 (func (param i64 externref i32 externref) (result externref funcref)))
+  (type $3 (func (param funcref i32 funcref v128) (result funcref)))
+  (type $4 (func (param externref externref i32) (result funcref funcref funcref externref)))
+  (type $5 (func (param i32 i32) (result funcref f32 funcref f32)))
+  (import "env" "global0" (global $9 externref))
+  (import "env" "global1" (global $10 (mut f64)))
+  (import "env" "func0" (func $13 (param funcref i32 funcref v128) (result funcref)))
+  (table $6  42 4294967295 externref)
+  (table $7  20 4294967295 shared externref)
+  (table $8  25 4294967295 shared externref)
+  (elem $11 (table $8) (i32.const 11949210) table
+    $8 $6 $6 $8 $6 $6 $8 $7
+    $7 $6 $7 $7 $8 $8 $7 $6
+    $8 $6 $6 $7 $6 $8 $7 $6
+    $8 $8 $7 $7 $6 $7 $6 $8
+    $6 $7 $6 $7 $8 $6 $6 $6)
+  (elem $12
+    $13 $14 $14 $16 $16 $16 $16 $16
+    $16 $16 $16 $15 $13 $13 $16 $16
+    $13 $14 $13 $14 $13 $16 $14 $16
+    $15 $16 $13 $13 $15 $16 $15 $15
+    $13 $13 $13 $13 $16 $15 $16 $15
+    $15 $15 $16 $16 $14 $14 $14 $13
+    $16 $15 $16 $14 $16 $13 $14 $14
+    $14 $16 $16 $14 $15 $14 $13)
+  
+  (func $14 (type $0)
+    (param $0 f64)
+    (local $1 i32)
+    (local $2 f64)
+    (local $3 funcref)
+    local.get $3
+    global.get $10
+    global.get $10
+    local.get $1
+    elem.drop $11
+    table.get $7
+    ref.null extern
+    ref.null func
+    local.get $3
+    drop
+    br 0
+    )
+  
+  (func $15 (type $1)
+    (param $0 externref)
+    (result funcref)
+    (local $1 i64)
+    (local $2 f64)
+    (local $3 funcref)
+    (local $4 i64)
+    elem.drop $12
+    local.get $0
+    local.get $3
+    i64.const -4804893646334895904
+    f64.convert_i64_u
+    v128.const i32x4 0x74411583 0x3d0b2d81 0x6034f340 0x2605459a
+    i16x8.widen_low_i8x16_s
+    i32x4.widen_low_i16x8_u
+    i16x8.bitmask
+    i8x16.splat
+    i32x4.widen_low_i16x8_u
+    i32.const 925675647
+    i32x4.shr_u
+    i8x16.all_true
+    local.get $2
+    unreachable
+    )
+  
+  (func $16 (type $2)
+    (param $0 i64)
+    (param $1 externref)
+    (param $2 i32)
+    (param $3 externref)
+    (result externref funcref)
+    (local $4 i64)
+    global.get $10
+    i64.trunc_sat_f64_s
+    table.size $6
+    local.tee $2
+    elem.drop $11
+    f64.convert_i32_s
+    i32.trunc_sat_f64_s
+    table.get $6
+    local.tee $3
+    local.get $3
+    ref.null extern
+    table.size $8
+    loop $loop (param externref externref i32) (result funcref funcref funcref externref)
+      table.size $7
+      loop $loop_0 (param i32 i32) (result funcref f32 funcref f32)
+        ref.null extern
+        ref.is_null
+        i32.or
+        i32.or
+        table.get $8
+        drop
+        global.get $9
+        local.set $3
+        f32.const 0x1.033034p-30
+        ref.null extern
+        local.set $1
+        ref.null func
+        drop
+        ref.null func
+        drop
+        drop
+        unreachable
+      end ;; $loop_0
+      ref.null func
+      ref.is_null
+      table.get $6
+      unreachable
+    end ;; $loop
+    ref.null extern
+    ref.is_null
+    drop
+    ref.null func
+    unreachable
+    ))

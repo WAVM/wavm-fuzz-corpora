@@ -1,0 +1,1 @@
+(func(br 0)f64.load(br 0))(memory 8)(func(br 0)f64.load(br 0))

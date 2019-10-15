@@ -1,0 +1,46 @@
+(module
+  (type $0 (func (param f32 i64) (result f32)))
+  (import "env" "table" (table $1 7 4294967295 externref))
+  (import "env" "global1" (global $4 (mut v128)))
+  (table $2  12 4294967295 externref)
+  (table $3  60 4294967295 externref)
+  (global $5  (mut i32) (i32.const 963017194))
+  (elem $6 global
+    $5 $5 $4 $4 $4 $5 $4 $4
+    $5 $4 $5 $4 $5 $5 $5 $4
+    $4 $4 $4 $5 $4 $5 $5 $4
+    $4 $5 $5 $5 $4 $4 $4 $4
+    $4 $5 $4 $4 $5 $5 $4 $5
+    $5 $4 $4 $4 $4 $4 $5 $4
+    $5 $5 $5 $5 $4 $5 $4 $4
+    $5 $5 $5 $5 $4 $5 $4 $4
+    $4 $4 $4 $5 $4 $4 $5 $4
+    $4 $5 $4 $4 $5 $5 $5 $5
+    $5 $4 $4 $5 $4 $4 $4 $4
+    $4)
+  
+  (func $7 (type $0)
+    (param $0 f32)
+    (param $1 i64)
+    (result f32)
+    (local $2 f64)
+    i32.const 856361585
+    i32x4.splat
+    i8x16.abs
+    global.get $4
+    i8x16.extract_lane_s 7
+    i16x8.splat
+    i16x8.avgr_u
+    i32x4.widen_high_i16x8_s
+    f32x4.convert_i32x4_u
+    i32x4.trunc_sat_f32x4_s
+    i32x4.abs
+    i8x16.extract_lane_s 14
+    atomic.fence
+    global.get $5
+    i32.extend16_s
+    i32.ne
+    ref.null extern
+    table.set $1
+    local.get $0
+    ))

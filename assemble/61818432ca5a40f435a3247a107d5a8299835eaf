@@ -1,0 +1,66 @@
+(module
+  (type $0 (func (param funcref funcref) (result v128)))
+  (type $1 (func))
+  (type $2 (func (param f64)))
+  (type $3 (func (param externref f32) (result f32 f32)))
+  (import "env" "table" (table $4 51 4294967295 funcref))
+  (import "env" "func0" (func $9))
+  (import "env" "func1" (func $10 (param f64)))
+  (memory $6  69 9800 shared)
+  (memory $7  32 17429)
+  (table $5  72 4294967295 shared externref)
+  (elem $8 declare global)
+  
+  (func $11 (type $0)
+    (param $0 funcref)
+    (param $1 funcref)
+    (result v128)
+    (local $2 i32)
+    (local $3 f64)
+    (local $4 f64)
+    (local $5 f64)
+    local.get $2
+    i64x2.load32x2_u $7 offset=849843380 align=2
+    v128.not
+    f32x4.neg
+    i16x8.widen_high_i8x16_u
+    memory.size
+    i64.load16_u offset=2542208143 align=1
+    local.get $2
+    i32.ctz
+    i64.atomic.load16_u $7 offset=1664775100
+    i64.sub
+    block $block
+      table.size $5
+      drop
+      local.get $4
+      call $10
+    end ;; $block
+    i64x2.replace_lane 0
+    )
+  
+  (func $12 (type $3)
+    (param $0 externref)
+    (param $1 f32)
+    (result f32 f32)
+    (local $2 i32)
+    (local $3 externref)
+    v128.const i32x4 0x25fbb318 0x333b6280 0x5dfcffb3 0x65d37301
+    local.get $0
+    elem.drop $8
+    ref.is_null
+    i8x16.shr_s
+    f64x2.sqrt
+    f32x4.sqrt
+    i16x8.widen_high_i8x16_u
+    i16x8.widen_low_i8x16_s
+    i64x2.neg
+    call $9
+    i32x4.widen_low_i16x8_s
+    drop
+    call $9
+    local.get $2
+    call_indirect $4 (type $1)
+    ref.null extern
+    unreachable
+    ))

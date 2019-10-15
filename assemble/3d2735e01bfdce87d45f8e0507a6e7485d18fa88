@@ -1,0 +1,51 @@
+(module
+  (type $0 (func (param i32 i64) (result funcref)))
+  (type $1 (func (result f32)))
+  (type $2 (func (param i32 externref i64)))
+  (type $3 (func (param externref) (result f32 i32)))
+  (type $4 (func (param i64) (result externref externref i64 v128)))
+  (import "env" "global1" (global $6 v128))
+  (import "env" "func0" (func $10 (param i32 i64) (result funcref)))
+  (import "env" "func1" (func $11 (result f32)))
+  (import "env" "func2" (func $12 (param i32 externref i64)))
+  (table $5  74 4294967295 externref)
+  (global $7  (mut i64) (i64.const 4111537232124731714))
+  (elem $8 (i32.const 1622059579) memory)
+  
+  (func $13 (type $3)
+    (param $0 externref)
+    (result f32 i32)
+    global.get $6
+    f32.const 0x1.9a9e66p-69
+    i64.const -6052537314000314519
+    table.size $5
+    if $if (param i64) (result externref externref i64 v128)
+      i64.const -6415955338407307700
+      i64.shr_s
+      data.drop $9
+      global.get $7
+      elem.drop $8
+      nop
+      i64.shr_s
+      global.get $6
+      i16x8.any_true
+      i64.extend_i32_u
+      ref.null extern
+      local.set $0
+      i64.xor
+      global.set $7
+      atomic.fence
+      v128.const i32x4 0x0f888ca3 0xab60f180 0x50e470ec 0xb74fce7a
+      ref.null extern
+      ref.null extern
+      unreachable
+    else
+      global.set $7
+      i32.const -595675702
+      unreachable
+    end ;; $if
+    unreachable
+    )
+  
+  (data $9 
+    "e\06O?%\80\ff\edn\e4\\\82\fe\1a\cd\19\d6\97\00\d3=\da\b7?o\13\16u+\ca\e2\a1<O\a5>\e8\d0V\d2\8b\ef\nr\1d\96\18\94\f8\b9R\ac\b3\0e\82V"))

@@ -1,0 +1,15 @@
+(module(memory 1 1)(func(param $i i32)local.ge i64.lnc(param $i i32)local.get
+ i64.load32_u dro1)(func(param $i i32)local.get $i i64.load32_u local.get $i
+ i64.load32_u drop  i64.load32_u @ dr)(func(param $i i64)local.get $i i64.load32_u local.get $i
+ i64.load32_u drop  i64.load32_u drop  i64.lo2_m  i64.load3y 1 1)(func( $i i32)local.get $i i64.load32_u local.get $i
+ i64.load32_u drop  i64.load32_u @r)(func(param $i i64)local.get $i i64.load32_u local.get $ii32.sublonamea 1 1)(func(pdram $i i32)local.get $i i64.load32_u local.get $ii
+ i64.load32_u drop  i64.load3y 1 1)(func(param $i i32)local.get $i i64.load32_u local.geload9y 1 1)(func(param $i i32)local.get4.load32_u local.get $i
+ i6 i64.load32_u drop  i64.load3y 1 1)(func(param $i i32)local.get $i i64.load32_u local.get $i
+ i64.load32_u drop  i64.load32_u @ dr)(func(param $i i64)local.get $i i64.load32_u local.get $i
+ i64.load32_u dro32_u drop  i64.lo2_m  i64.load3y 1 1)(func( $i i32)local.get $i i64.load32_u local.get $i
+ i64.load32_u drop  i64.load32_u @ dr)(func(param $i i64)local.get $i i64.load32_u local.get $i
+ iÍ32.load32_u drop  i64.lo2_p  i64.loal3y 1 1)(func(param $i i32)local.get $i i64.load32_u local.get $ii
+ i64.load32_u drop  i64.load3y 1 1)(func(param $i i32)local.get $i i64.load32_u local.geload3y 1 1)(func(param $i i32)local.get $i i64.load32_u local.get $i
+ i64.load32_u drop  i64.load32_u @ dr)(func(param $i i64)local.get $i i64.load32_u local.get $i
+ i64.load32_u drop $i4.load32_u drop  i64.load32_u @ dr)(func(param $i i64)local.get $i i64.load32_u local.get $i
+ i64.load32_u drop  i64.lo2_p  i64.load3y 1 1)(func(pai64.64)local.gelu @ drop))

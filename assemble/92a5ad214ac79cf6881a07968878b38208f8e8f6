@@ -1,0 +1,1 @@
+(memory 0)(func(br ï)i64.load32_s(br 0))

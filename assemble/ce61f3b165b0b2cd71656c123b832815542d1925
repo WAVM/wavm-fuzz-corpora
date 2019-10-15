@@ -1,0 +1,106 @@
+(module
+  (type $0 (func (param v128 externref) (result externref)))
+  (type $1 (func (param v128 v128 i32) (result i64)))
+  (type $2 (func (param f64 i32 f64 externref) (result f32 f32)))
+  (type $3 (func))
+  (type $4 (func (param funcref i64 i64 v128) (result funcref f64)))
+  (type $5 (func (param i32) (result funcref funcref f64 i32)))
+  (import "env" "memory" (memory $8 47 10884 shared))
+  (import "env" "global3" (global $10 v128))
+  (import "env" "func0" (func $16 (param v128 externref) (result externref)))
+  (import "env" "func1" (func $17 (param v128 v128 i32) (result i64)))
+  (memory $9  30 49738)
+  (table $6  3 4294967295 shared externref)
+  (table $7  48 4294967295 shared funcref)
+  (global $11  v128 (v128.const i32x4 0x6f0b1284 0xdaa6558b 0xc4729060 0x6ed2a131))
+  (global $12  funcref (ref.null func))
+  (global $13  v128 (v128.const i32x4 0x99192390 0x745360c0 0x7423ec5e 0xb9f14c91))
+  
+  (func $18 (type $2)
+    (param $0 f64)
+    (param $1 i32)
+    (param $2 f64)
+    (param $3 externref)
+    (result f32 f32)
+    (local $4 externref)
+    (local $5 f32)
+    (local $6 i32)
+    (local $7 v128)
+    global.get $10
+    f64.const 0x1.73de7c8b1af17p-51
+    f64x2.replace_lane 1
+    i8x16.bitmask
+    ref.null func
+    unreachable
+    )
+  
+  (func $19 (type $3)
+    (local $0 f64)
+    (local $1 externref)
+    (local $2 funcref)
+    (local $3 v128)
+    local.get $2
+    global.get $13
+    i16x8.any_true
+    v16x8.load_interleaved_2 $9 offset=1539560217
+    i16x8.mul
+    i16x8.extract_lane_u 7
+    i64.atomic.load32_u $9 offset=72813592
+    v128.const i32x4 0xcd586b5e 0xd388653d 0xe6f359ec 0x5ed9f7c9
+    f64x2.sqrt
+    i32x4.bitmask
+    i64.const -7997535121049358591
+    i64.atomic.rmw32.or_u $9 offset=1012751007
+    nop
+    data.drop $15
+    i64.sub
+    return
+    )
+  
+  (func $20 (type $4)
+    (param $0 funcref)
+    (param $1 i64)
+    (param $2 i64)
+    (param $3 v128)
+    (result funcref f64)
+    (local $4 f64)
+    (local $5 i32)
+    (local $6 funcref)
+    (local $7 i32)
+    local.get $4
+    v128.const i32x4 0x5b6ced57 0x78e74cb9 0xb7f584fb 0xce3aa85e
+    i8x16.any_true
+    loop $loop (param i32) (result funcref funcref f64 i32)
+      v64x2.load_splat offset=542507514 align=2
+      i32x4.bitmask
+      data.drop $14
+      local.get $7
+      i32.ge_u
+      global.get $12
+      local.get $5
+      i32.extend16_s
+      local.get $1
+      ref.null extern
+      local.get $2
+      drop
+      drop
+      local.set $1
+      local.set $5
+      table.set $7
+      local.get $5
+      local.set $5
+      local.get $7
+      ref.null func
+      local.set $0
+      br $loop
+    end ;; $loop
+    br_if 0
+    unreachable
+    )
+  
+  (data $14 
+    "\c9_K\c9]`/\85\a2\1f\98{J\9b1\c7\b0\84\n\0c\abD\b9\fb\84\88\fe\a9\98\f4k\f4&\1e\c30\14\93$\8f\\&\bf&B\ac\cd\c4\90:F<d8\13\b6yY\f1\b7\97i\d8F"
+    "\f0\05\97H.R\f9 oV")
+  
+  (data $15 (i32.const -59848755)
+    "\c1n\ea\13\10@\ff@\84\f44\8f\eb3\91"))

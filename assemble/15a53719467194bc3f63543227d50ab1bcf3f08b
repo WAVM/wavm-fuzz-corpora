@@ -1,0 +1,2 @@
+(func (export "(")
+			(loop ()if(i16x8.widen_low_i8x16_s)()i)if(i16x8.widen_low_i8x16_s)(loop)if(i16x8.widen_low_i8x16_s)()if()if(i16x8.widen_low_i8x16_s)i)))))))

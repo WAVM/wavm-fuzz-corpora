@@ -1,0 +1,4 @@
+(module(memory  1 ) (func i32.const 7
+    i64.const 0
+ i64.const 0
+  i64.atomic.rmw32.cmpxchg_u drop  ))

@@ -1,0 +1,6 @@
+  (table funcref(elem))
+(table funcref (elem))
+(table funcref(elem)) (table funcref(elem))
+(table funcref (elem))(table funcref (elem))
+(table funcref(elEm))
+(table funcref (elem)

@@ -1,0 +1,4 @@
+(module(import "" "f"(func $f))
+(func(resy)
+ref.func $f ref.is_null
+)

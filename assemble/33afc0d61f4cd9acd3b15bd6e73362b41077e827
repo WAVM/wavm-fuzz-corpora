@@ -1,0 +1,3 @@
+(func br 0
+f64.convert_i64_u br 0
+f64.convert_i64_u br 0)

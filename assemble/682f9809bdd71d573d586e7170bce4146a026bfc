@@ -1,0 +1,4 @@
+(memory 1)(func()(i32.atomi16.andu
+)(i32.atomic.rmw16.and16.and_u
+))(data(i32.const 8))(data(i32.const 2))(data(i32.const 8))(data(i32.const 82))(data(i32.const 0))(data(i32.const 2))(data(i32.const 22))(data(i32.const 8))(data(i32.const 2))(data(i32.const 82))(data(i32.const 02))(data(i32.const 1))(data(i32.const 1))(data(i32.const 82))(data(i32.const 2))(data)(data(i32.const 8))(data(i32.const 2))(data(i32.const 8))(data(i32.const 32))(data(i32.const 0))(data(i32.const 2))(data(i32.const 22))(data(i32.const 8))(data(i32.const 2))(data(i32.const 82))(data(i32.const 02))(data(i32.const 2))(data(i32.const 1))(data(i32.const 64))(data(i32.const 0))(data(i32.const 2))(data(i32.const 2)))(data(iÑÑÑÑÑÑÑÑÑÑÑ751092707 aligN)=1
+    i16x8.nex1

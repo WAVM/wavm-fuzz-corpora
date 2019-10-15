@@ -1,0 +1,3 @@
+(func br 0 v128.xor v128.xor
+v128.xor v128.xor v128.xor v128.xor
+v128.xor v128.xor)

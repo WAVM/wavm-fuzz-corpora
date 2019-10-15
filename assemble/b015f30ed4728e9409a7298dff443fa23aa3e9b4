@@ -1,0 +1,13 @@
+(func()i32.atomic.rmw8.xchg_u
+i32.atomic.rmw8.xchg_u()i32.atomic.rmw8.xchg_u
+i32.atomic.rmw8.xchg_u)(func()i32.atomic.rmw8.xchg_u
+i32.atomic.rmw8.xchg_u()i32.atomic.rmw8.xchg_u
+i32xchg_u
+i32.at)(func()i32.atomic.rmw8.xchg_u
+i32.atomic.rmw8.xchg_u()i32.atomic.rmw8.xchg_u
+i32xcw8.xchg_u
+i32.atomic.rmw8.xchg_u)(func()i32.atomic.rmw8.xchg_u
+i32.atomic.rmw8.xchg_u()i32.atomic.rmw8.xchg_u
+iu()iomic.rmw8.xchg_u)(func()i32.atomic.rmw8.xchg_u
+i32.atomic.rmw8.xchg_u()i32.atomic.rmw8.xchg_u
+i32.a.xchg_u)

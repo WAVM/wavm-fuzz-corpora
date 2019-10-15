@@ -1,0 +1,67 @@
+(module
+  (type $0 (func (param i64 v128 v128) (result f64)))
+  (type $1 (func (result v128)))
+  (import "env" "memory" (memory $2 14 18142 shared))
+  (import "env" "func0" (func $7 (param i64 v128 v128) (result f64)))
+  (memory $3  80 42815)
+  (elem $4 declare funcref
+    (ref.null func) (ref.null func) (ref.func $8) (ref.null func)
+    (ref.func $8) (ref.func $8) (ref.null func) (ref.null func)
+    (ref.func $7) (ref.func $7) (ref.null func) (ref.func $7)
+    (ref.func $8) (ref.null func) (ref.null func) (ref.null func)
+    (ref.null func) (ref.func $8) (ref.func $8) (ref.null func)
+    (ref.func $8) (ref.null func) (ref.func $7) (ref.null func)
+    (ref.func $7) (ref.null func) (ref.func $7) (ref.func $7)
+    (ref.func $8) (ref.func $7) (ref.null func) (ref.func $8)
+    (ref.func $7) (ref.func $8) (ref.func $8) (ref.func $8)
+    (ref.func $7) (ref.func $7) (ref.null func) (ref.null func)
+    (ref.func $8) (ref.func $8) (ref.null func) (ref.func $8)
+    (ref.func $8) (ref.func $7) (ref.null func) (ref.null func)
+    (ref.func $7) (ref.null func) (ref.null func) (ref.null func)
+    (ref.func $8) (ref.func $8) (ref.func $7) (ref.func $7)
+    (ref.func $8) (ref.func $8) (ref.null func) (ref.func $8)
+    (ref.func $7) (ref.func $7) (ref.null func) (ref.func $7)
+    (ref.null func) (ref.func $7) (ref.null func) (ref.null func)
+    (ref.func $8) (ref.null func) (ref.func $8) (ref.func $7)
+    (ref.func $8) (ref.func $8) (ref.func $8))
+  (elem $5 declare funcref
+    (ref.func $8) (ref.null func) (ref.func $7) (ref.func $7)
+    (ref.func $7) (ref.func $7) (ref.func $7) (ref.func $8)
+    (ref.func $7) (ref.null func) (ref.func $8) (ref.func $7)
+    (ref.null func) (ref.func $8) (ref.func $7) (ref.func $8)
+    (ref.func $8) (ref.func $8) (ref.func $8) (ref.null func)
+    (ref.func $7) (ref.func $7) (ref.func $8) (ref.null func)
+    (ref.func $7) (ref.func $8) (ref.null func) (ref.func $7)
+    (ref.func $7) (ref.func $7) (ref.null func) (ref.null func)
+    (ref.null func) (ref.func $8) (ref.null func) (ref.func $7)
+    (ref.func $7) (ref.null func) (ref.func $8) (ref.func $8)
+    (ref.null func) (ref.func $8) (ref.func $7) (ref.func $7)
+    (ref.func $7) (ref.null func) (ref.null func) (ref.func $7)
+    (ref.null func) (ref.func $8) (ref.func $7) (ref.func $7)
+    (ref.null func) (ref.func $7) (ref.null func) (ref.func $7)
+    (ref.func $7) (ref.func $8))
+  
+  (func $8 (type $1)
+    (result v128)
+    (local $0 f64)
+    (local $1 f32)
+    (local $2 i32)
+    (local $3 funcref)
+    elem.drop $4
+    data.drop $6
+    elem.drop $4
+    v128.const i32x4 0x9210077c 0x6620ea75 0x3798ce1c 0xc1ed7e41
+    f64x2.abs
+    call $8
+    i8x16.add_saturate_s
+    i16x8.any_true
+    local.tee $2
+    v16x8.load_splat $3 offset=3339025299
+    i16x8.abs
+    v128.not
+    br 0
+    )
+  
+  (data $6 
+    "\1a\e4-M)\0cxSb[\90\b9\11:\98d\ba\e6\8fg\a2q\970\cc\04\1dO\90863\a6\1e9exq~mh|\8d;\86.\99Os\be\d3\107\02\ce\05\dc\93\d3\ee7\19\14\e3"
+    "Wa\d0\e7\f8\c3Z\90riGVq\18L\1e^\be?\b80\f5Ur\1c\7f\c8\05"))

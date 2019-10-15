@@ -1,0 +1,12 @@
+(func
+br 0
+f64x2.abs
+f64x2.abs
+
+f64x2.abs
+f64x2.abs br  0
+f64x2.abs
+f64x2.abs
+
+f64x2.abs
+f64x2.abs br 0)

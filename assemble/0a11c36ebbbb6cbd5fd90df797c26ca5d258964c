@@ -1,0 +1,22 @@
+(module
+  (type $0 (func (param v128 v128 v128) (param v128 v128) (result v128)))
+  (type $2 (func (param v128)(result v128)))
+  (export "i16x8.min_s-i16x8.avgr_u" (func $3))
+  (export "i" (func $38))
+  
+  (func $3 (type $0)    i16x8.max_s
+$   loc)
+  
+  (func $36 (typ128)
+    i16x8.abs
+    local.get $1
+  (result v128)  i16x8.abs
+    )
+  
+  (func $38 (type $2)
+    (param $0 v128)
+    (result v128)
+    local.get $0
+    i16x8.abs
+    i16x8.abs
+    ))

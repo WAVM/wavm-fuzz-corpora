@@ -1,0 +1,27 @@
+(module
+  (type $0 (func (param i32) (result i64)))
+  (type $2 (func (param i32)))
+  (memory $2  9)
+  (func $64.lo1$16 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+ i64.load16_s offset=11
+    )
+  
+  (func $21 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+    i64.load16_s offset=2
+    )
+  
+  (func $23 (type $0)
+    (param $i i32)
+    (result i64)
+    local.get $i
+    i64.load16_s offset=25
+    )
+  
+(data $3 (i32.const 0)
+    "ata/f641!z"))

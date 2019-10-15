@@ -1,0 +1,5 @@
+(module
+  (type $0 (func (result i32
+) ) )
+  (func $0 (type $0)    v128.const i32x4 00 080000 00 0x00000 i16x8.extract_lane_u 5
+    ))

@@ -1,0 +1,3 @@
+(func table.get $sz
+ table.get $s tabsz
+ table.get $s table.get f32x4.negget $s tableet' $$ table.get $o table table.get $$ table.get $o)

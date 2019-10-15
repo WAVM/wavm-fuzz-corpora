@@ -1,0 +1,100 @@
+(module
+  (type $0 (func (param f32 v128)))
+  (type $1 (func (param i32)))
+  (type $2 (func (param funcref v128) (result f32)))
+  (type $3 (func (param f32)))
+  (import "env" "global0" (global $6 i32))
+  (import "env" "global1" (global $7 (mut i64)))
+  (import "env" "global2" (global $8 (mut f64)))
+  (import "env" "global8" (global $9 i32))
+  (memory $4  15 23960 shared)
+  (memory $5  49 38234)
+  (global $10  funcref (ref.null func))
+  (global $11  (mut i32) (i32.const 412906279))
+  (global $12  v128 (v128.const i32x4 0x3d852f71 0x966a2bae 0xea8f70a7 0xe97351e3))
+  (global $13  i32 (i32.const -1298424211))
+  (global $14  v128 (v128.const i32x4 0x993e086c 0xa410e643 0x4404e7a1 0x4fbf9ff1))
+  (elem $15 declare memory
+    $5 $4 $5 $5 $5 $5 $5 $5
+    $4 $5 $5 $5 $4 $4 $5 $5)
+  
+  (func $17 (type $0)
+    (param $0 f32)
+    (param $1 v128)
+    (local $2 v128)
+    (local $3 externref)
+    (local $4 f64)
+    (local $5 f32)
+    global.get $13
+    i32.const -410747764
+    i32x4.load16x4_u offset=196754099 align=1
+    i32x4.neg
+    local.get $1
+    i8x16.narrow_i16x8_s
+    i16x8.extract_lane_u 1
+    i64.atomic.load16_u $5 offset=3402903702
+    atomic.fence
+    f32.convert_i64_u
+    f32.const 0x1.f5ce56p+109
+    f32.neg
+    i32.trunc_f32_s
+    local.get $5
+    block $block (param f32)
+      local.set $5
+      br 1
+    end ;; $block
+    br 0
+    )
+  
+  (func $18 (type $1)
+    (param $0 i32)
+    global.get $7
+    i64x2.splat
+    i32x4.widen_high_i16x8_s
+    loop $loop
+      global.get $11
+      i32.load16_u $5 offset=1755693568
+      i32.load16_u $5 offset=2985824616
+      f32.const -0x1.1d241cp+73
+      v128.const i32x4 0x1b2f9a66 0xb43be335 0x62ae046a 0x7c7696b5
+      i32x4.widen_low_i16x8_u
+      unreachable
+    end ;; $loop
+    global.get $9
+    if $if (result f32)
+      nop
+      elem.drop $15
+      return
+    else
+      global.get $6
+      return
+    end ;; $if
+    br 0
+    )
+  
+  (func $19 (type $2)
+    (param $0 funcref)
+    (param $1 v128)
+    (result f32)
+    elem.drop $15
+    f64.const 0x1.c79705870b85ap+1016
+    f64.neg
+    f32.demote_f64
+    f32.abs
+    global.get $6
+    i32.load8_u offset=1574618312
+    i64.atomic.load16_u $5 offset=2162455138
+    f64.convert_i64_s
+    i64.trunc_f64_s
+    v128.const i32x4 0xa271718d 0x51353c1e 0xdff1d6c2 0x82284519
+    memory.size $5
+    i64.extend_i32_s
+    i64.popcnt
+    f64.convert_i64_u
+    f64x2.replace_lane 1
+    drop
+    global.set $7
+    )
+  
+  (data $16 
+    "+\cf\95K?\fb\16"))

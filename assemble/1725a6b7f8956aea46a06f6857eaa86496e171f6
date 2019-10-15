@@ -1,0 +1,67 @@
+(module
+  (type $0 (func (param funcref i32 funcref f64) (result v128)))
+  (type $1 (func (param funcref f32 v128 funcref) (result f32)))
+  (import "env" "memory" (memory $5 63 61577 shared))
+  (import "env" "memory" (memory $6 46 55231 shared))
+  (import "env" "table" (table $2 57 4294967295 shared funcref))
+  (memory $7  43 38224 shared)
+  (table $3  35 4294967295 shared funcref)
+  (table $4  69 4294967295 funcref)
+  (elem $8 declare
+    $11 $12 $11 $12 $12 $12 $11 $11
+    $11 $11 $11 $11 $11 $12 $12 $11
+    $12 $11 $12 $11 $12 $12 $11 $11
+    $11 $12 $12 $12 $11 $11 $11 $12
+    $11 $12 $12 $12 $12)
+  (elem $9 declare global)
+  
+  (func $11 (type $0)
+    (param $0 funcref)
+    (param $1 i32)
+    (param $2 funcref)
+    (param $3 f64)
+    (result v128)
+    local.get $3
+    f32.demote_f64
+    f32.abs
+    ref.null extern
+    local.get $1
+    i32.ctz
+    v64x2.load_interleaved_3 $6 offset=2368691473 align=4
+    i32x4.add
+    i32x4.widen_low_i16x8_u
+    i8x16.sub_saturate_u
+    br 0
+    )
+  
+  (func $12 (type $1)
+    (param $0 funcref)
+    (param $1 f32)
+    (param $2 v128)
+    (param $3 funcref)
+    (result f32)
+    (local $4 v128)
+    (local $5 externref)
+    (local $6 v128)
+    local.get $0
+    f32.const 0x1.2bbabep-108
+    f32.const 0x1.e7bbf6p+31
+    data.drop $10
+    f32.ne
+    v8x16.load_interleaved_2 $6 offset=1716460207
+    i32x4.ne
+    f32x4.extract_lane 2
+    table.size $2
+    v8x16.load_interleaved_4 $7 offset=843512584 align=8
+    i8x16.ge_u
+    local.get $4
+    i16x8.widen_low_i8x16_u
+    i16x8.any_true
+    i8x16.shl
+    f32x4.gt
+    f64x2.mul
+    unreachable
+    )
+  
+  (data $10 
+    "Q\92\12X\fb\16\9f"))

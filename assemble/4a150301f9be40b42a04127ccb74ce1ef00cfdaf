@@ -1,0 +1,9 @@
+(modulele $2  54 4294967295)
+  (elem $5 externref
+    (ref.null extern) (ref.null func) (ref.) (ref.null extern) (ref.null func)
+2  54 4294967295)
+  (elem $5 externref
+    (ref.null extern) (ref.null func) (ref.) (ref.null extern) (ref.null func)
+    (ref.null extern)(ref.null extern
+       (ref.null extern)(ref.null exten
+    ))

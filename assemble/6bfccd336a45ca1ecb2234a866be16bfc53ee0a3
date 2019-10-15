@@ -1,0 +1,1 @@
+(memory 4)(func(b_u)(i64.atomic.rmw16.add_u)(iu)(i64.atomic.rmw16.add_u)(i64.atomic.rmw16.add_u)(i64.atomic.rmw16.add_u))

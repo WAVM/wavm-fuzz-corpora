@@ -1,0 +1,48 @@
+(module
+  (type $0 (func (param i64) (result v128)))
+  (type $1 (func (result externref)))
+  (import "env" "table" (table $2 45 4294967295 shared funcref))
+  (import "env" "global2" (global $3 (mut externref)))
+  (import "env" "func0" (func $9 (result externref)))
+  (global $4  i64 (i64.const 5122396241062212755))
+  (global $5  i32 (i32.const 694317678))
+  (global $6  i64 (i64.const -7593785143957307552))
+  (elem $7 declare funcref
+    (ref.func $10) (ref.func $10) (ref.func $10) (ref.func $9)
+    (ref.func $10) (ref.null func) (ref.func $10) (ref.func $9)
+    (ref.func $9) (ref.func $10) (ref.null func) (ref.null func)
+    (ref.func $9) (ref.func $9) (ref.func $10) (ref.func $9)
+    (ref.func $10) (ref.func $10) (ref.null func) (ref.func $9)
+    (ref.func $9) (ref.func $10) (ref.func $9) (ref.null func)
+    (ref.func $10) (ref.func $9) (ref.null func) (ref.func $9)
+    (ref.func $9) (ref.func $9) (ref.null func) (ref.func $10)
+    (ref.null func) (ref.func $10) (ref.null func) (ref.func $9)
+    (ref.null func) (ref.func $10) (ref.func $10) (ref.func $9)
+    (ref.func $10) (ref.null func) (ref.func $9) (ref.null func)
+    (ref.null func) (ref.func $9) (ref.null func) (ref.func $9)
+    (ref.func $9) (ref.func $9) (ref.func $10) (ref.func $10)
+    (ref.func $10) (ref.func $10) (ref.func $9) (ref.null func)
+    (ref.func $10) (ref.func $9) (ref.func $10) (ref.null func)
+    (ref.null func) (ref.null func) (ref.null func) (ref.func $10)
+    (ref.func $10) (ref.null func) (ref.null func) (ref.func $10)
+    (ref.func $9) (ref.func $10))
+  (elem $8 declare funcref
+    (ref.func $9) (ref.null func) (ref.func $9) (ref.func $9)
+    (ref.func $9) (ref.null func) (ref.null func) (ref.func $10)
+    (ref.func $9) (ref.func $10) (ref.func $9) (ref.null func)
+    (ref.func $10) (ref.null func) (ref.func $9) (ref.null func)
+    (ref.null func))
+  
+  (func $10 (type $0)
+    (param $0 i64)
+    (result v128)
+    (local $1 externref)
+    f32.const -0x1.8c3dbap+55
+    local.get $0
+    global.get $4
+    i64.extend8_s
+    i32.wrap_i64
+    v128.const i32x4 0xf485bae6 0x674dac80 0x65413fe1 0xcb44ea88
+    f64x2.abs
+    return
+    ))

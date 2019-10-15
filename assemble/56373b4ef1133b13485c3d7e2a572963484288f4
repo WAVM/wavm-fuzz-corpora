@@ -1,0 +1,62 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param f64 externref)))
+  (type $2 (func (param i32) (result f64 f64)))
+  (type $3 (func (param funcref v128)))
+  (type $4 (func (result externref funcref)))
+  (type $5 (func (param i32 i32) (result i64 externref f32 v128)))
+  (import "env" "memory" (memory $7 75 4097 shared))
+  (import "env" "global1" (global $10 v128))
+  (import "env" "func0" (func $14 (param f64 externref)))
+  (import "env" "func1" (func $15 (param i32) (result f64 f64)))
+  (import "env" "func2" (func $16 (result externref funcref)))
+  (memory $8  72 63073)
+  (memory $9  99 20972)
+  (table $6  55 4294967295 externref)
+  (global $11  (mut f64) (f64.const 0x1.babd51346617bp+62))
+  (elem $12
+    $15 $16 $15 $14 $16 $18 $18 $16
+    $17 $16 $17 $17 $14 $18 $18 $14
+    $15 $18 $18 $14 $18 $16 $18 $14
+    $18 $15)
+  
+  (func $17 (type $0)
+    (local $0 i32)
+    (local $1 i32)
+    (local $2 v128)
+    (local $3 f64)
+    local.get $3
+    table.size $6
+    nop
+    i16x8.splat
+    i32x4.widen_high_i16x8_s
+    i16x8.widen_low_i8x16_s
+    i32x4.widen_low_i16x8_u
+    data.drop $13
+    i32x4.widen_high_i16x8_u
+    i8x16.extract_lane_s 2
+    i32.load16_s $9 offset=3891464439 align=1
+    local.get $3
+    i32.trunc_sat_f64_u
+    block $block (param i32 i32) (result i64 externref f32 v128)
+      local.tee $0
+      i32.atomic.rmw.and $8 offset=3627941778
+      drop
+      v128.const i32x4 0x12c1fec2 0x79372ce6 0x49e2d5d6 0xefb9ef91
+      br 1
+    end ;; $block
+    return
+    )
+  
+  (func $18 (type $3)
+    (param $0 funcref)
+    (param $1 v128)
+    (local $2 funcref)
+    (local $3 f32)
+    (local $4 externref)
+    (local $6 v128)
+    br 0
+    )
+  
+  (data $13 (memory $8) (i32.const -340218073)
+    "H_\197\fbK\03"))

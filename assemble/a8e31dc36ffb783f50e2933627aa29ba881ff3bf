@@ -1,0 +1,8 @@
+(func(i64.d_u
+)(i32.atomic.rmw16.and_u)(6.and_u)(i32.atomic.rmw16.and_u
+)(i32.atomic.rmw16.and_u)(
+)(i32.atomic.rmw16.and_u)(itu)(i32.atomic.rmw16.and_u
+)(i32.atomic.rmw16.and_u)(i32.atomic.rmw16.and_u
+)(i32
+)(i32.atomic.rmw16.and_u
+))

@@ -1,0 +1,43 @@
+(module
+  (type $0 (func (result externref)))
+  (type $1 (func (param f64 f32) (result v128)))
+  (type $2 (func (param f32) (result i32)))
+  (type $3 (func (result funcref f32 v128)))
+  (import "env" "memory" (memory $7 72 61261))
+  (import "env" "table" (table $4 31 4294967295 externref))
+  (import "env" "func0" (func $10 (result externref)))
+  (memory $8  12 16094 shared)
+  (table $5  29 4294967295 funcref)
+  (table $6  23 4294967295 externref)
+  
+  (func $11 (type $1)
+    (param $0 f64)
+    (param $1 f32)
+    (result v128)
+    atomic.fence
+    memory.size $8
+    call_indirect $5 (type $0)
+    call $10
+    local.get $0
+    f64.abs
+    i64.trunc_f64_s
+    i64.ctz
+    f32.convert_i64_u
+    block $block (param f32) (result i32)
+      memory.size $8
+      if $if (result funcref f32 v128)
+        unreachable
+      else
+        v128.const i32x4 0xb67d87f8 0x3a4fbeff 0x5b848b69 0x7fc70c22
+        i8x16.neg
+        unreachable
+      end ;; $if
+      unreachable
+    end ;; $block
+    table.get $6
+    ref.is_null
+    unreachable
+    )
+  
+  (data $9 
+    "K\b0\17\14\f1.\f3\e8\f2\bc\b0\c3-\8d+\e7P\d8\bf|l\03\99\04\07\81\92\ad\a1\c0\a7AM\0e\99N"))

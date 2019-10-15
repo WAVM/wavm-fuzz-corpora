@@ -1,0 +1,9 @@
+(module
+(type(func ))
+  (export "no_dce.i32.tnr_2f3ec_s"(func $3))
+  (export "joO8ix9Sh.6nsu" (func $7))
+(export "no_d`1.0ietAunc_f64_s" (func $4)) (export "n68.trunc_f63_,c_fA1_u" (func $4)) 
+  (func $3)
+(func $4     )
+  
+  (func $7) (func   (param)))

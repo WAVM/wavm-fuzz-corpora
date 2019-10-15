@@ -1,0 +1,1 @@
+(memory 1 )(func i6func i6t 1$1)(func i64.atomic.load8_u align=14 4)(func i64.atomic.load8_u align=111)(func i64.atomic.load8_u align=14)(func i64.atomic.load8_u align=14)(func .atomic.load8_t 1$1)(func i64.atomic.load8_u align=14 4)(func i64.atomic.load8_u align=349)(func i64.atomic.load8_u align=14)(func i6=112)(func i64.a1)(func i64.atomic.load8_u align=14)

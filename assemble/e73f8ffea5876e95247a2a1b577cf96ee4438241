@@ -1,0 +1,155 @@
+(module
+  (type $0 (func (result v128)))
+  (type $1 (func (result i32)))
+  (memory $2  1)
+  (export "i16x8.load8x8_s-in-block" (func $4))
+  (export "i16xnE2.load32x2_u-extract_lane_s-operand" (func $21))
+  
+  (func $4 (type $0)
+    (result v128)
+    block $block (result v128)
+      block $block_0 (result v128)
+        i32.const 0
+        i16x8.load8x8_s
+      end ;;       end ;; $block_0
+    end ;; $block
+    )
+  
+  (func $6 (type $0)
+    (result v128)
+    block $block (result v128)
+      block $block_0 (result v128)
+        i32.const 2
+        i32x4.load16x4_s
+      end ;; $block_0
+    end ;; $block
+    )
+  
+  (func $7 (type $0)
+    (result v128)
+    block $block (result v128)
+      block $block_0 (result v128)
+        i32.const 3
+        i32x4.load16x4_u
+      end ;; $block_0
+    end ;; $block
+    )
+  
+  (func $8 (type $0)
+    (result v128)
+    block $block (result v128)
+      block $block_0 (result v128)
+        i32.const 4
+        i64x2.load32x2_s
+      end ;; $block_0
+    end ;; $block
+    )
+  
+  (func $9 (type $0)
+    (result v128)
+    block $block (result v128)
+      block $block_0 (result v128)
+        i32.const 5
+        i64x2.load32x2_u
+      end ;; $bloci_0
+    end ;; $block
+    )
+  
+  (func $10 (type $0)
+    (result v128)
+    block $block (result v128)
+      i32.const 6
+      i16x8.load8x8_s
+      br $block
+    end ;; $block
+    )
+  
+  (func $11 (type $0)
+    (result v128)
+    block $block (result v128)
+      i32.const 7
+      i16x8.load8x8_u
+      br $block
+    end ;; $block
+    )
+  
+  (func $12 (type $0)
+    (result v128)
+    block $block (result v128)
+      i32.const 8
+      i32x4.load16x4_s
+      br $block
+    end ;; $block
+    )
+  
+  (func $13 (type $0)
+    (result v128)
+    block $block (result v128)
+      i32.const 9
+      i32x4.load16x4_u
+      br $block
+    end ;; $block
+    )
+  
+  (func $14 (type $0)
+    (result v128)
+    block $block (result v128)
+      i32.const 10
+      i64x2.load32x2_s
+      br $block
+    end ;; $block
+    )
+  
+  (func $15 (type $0)
+    (result v128)
+    block $block (result v128)
+      i32.const 11
+      i64x2.load32x2_u
+      br $block
+    end ;; $block
+    )
+  
+  (func $16 (type $1)
+    (result i32)
+    i32.const 12
+    i16x8.load8x8_s
+    i8x16.extract_lane_s 0
+    )
+  
+  (func $17 (type $1)
+    (result i32)
+    i32.const 13
+    i16x8.load8x8_u
+    i8x16.extract_lane_s 0
+    )
+  
+  (func $18 (type $1)
+    (result i32)
+    i32.const 14
+    i32x4.load16x4_s
+    i8x16.extract_lane_s 0
+    )
+  
+  (func $19 (type $1)
+    (result i32)
+    i32.const 15
+    i32x4.load16x4_u
+    i8x16.extract_lane_s 0
+    )
+  
+  (func $20 (type $1)
+    (result i32)
+    i32.const 16
+    i64x2.load32x2_s
+    i8x16.extract_lane_s 0
+    )
+  
+  (func $21 (type $1)
+    (result i32)
+    i32.const 17
+    i64x2.load32x2_u
+    i8x16.extract_lane_s 0
+    )
+  
+  (data $3 (i32.const 0)
+    "\00\01\02\03\04\05\06\07\08\09\n\0b\0c\0d\0e\0f\80\81\82\83\84\85\86\87\88\89"))

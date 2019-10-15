@@ -1,0 +1,57 @@
+(module
+  (type $0 (func (param f32 i64)))
+  (type $1 (func (param i32 f64)))
+  (type $2 (func (param funcref)))
+  (import "env" "memory" (memory $4 24 2294 shared))
+  (import "env" "memory" (memory $5 38 8228))
+  (import "env" "global0" (global $6 (mut i32)))
+  (import "env" "func0" (func $9 (param funcref)))
+  (table $3  63 4294967295 funcref)
+  (elem $7 declare funcref
+    (ref.null func) (ref.func $9) (ref.func $11) (ref.func $11)
+    (ref.func $11) (ref.func $9) (ref.func $10) (ref.func $9)
+    (ref.func $9) (ref.func $10))
+  (elem $8 exception_type)
+  
+  (func $10 (type $0)
+    (param $0 f32)
+    (param $1 i64)
+    (local $2 i32)
+    (local $3 externref)
+    (local $4 funcref)
+    i64.const -3579932940343808208
+    table.size $3
+    v64x2.load_interleaved_3 offset=435723847 align=1
+    f32x4.mul
+    i16x8.all_true
+    v16x8.load_splat $5 offset=1903754900
+    i8x16.max_u
+    i8x16.neg
+    i16x8.widen_high_i8x16_u
+    local.get $1
+    return
+    )
+  
+  (func $11 (type $1)
+    (param $0 i32)
+    (param $1 f64)
+    (local $2 i64)
+    local.get $2
+    i64.eqz
+    v16x8.load_interleaved_4 offset=3296208800 align=4
+    i32x4.any_true
+    i64x2.shr_u
+    drop
+    i32x4.gt_s
+    loop $loop
+      i32.const 975819095
+      i64.atomic.load32_u offset=2440245280
+      i64.const 6880353471240404222
+      i64.rem_u
+      i64.const -5721268507013864030
+      table.size $3
+      elem.drop $7
+      return
+    end ;; $loop
+    return
+    ))

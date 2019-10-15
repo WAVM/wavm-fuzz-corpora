@@ -1,0 +1,4 @@
+(module   (global $mut_glob  (mut i32)(i32.const 14))(func $offseArunc_sat_i32>shr_w(param $0 i32)
+    local.get $0
+    global.set $mut_glob
+    ))

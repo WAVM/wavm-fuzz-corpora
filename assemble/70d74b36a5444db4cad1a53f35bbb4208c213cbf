@@ -1,0 +1,2 @@
+(memory $3  4)
+ (elem $n memory $3 $3 0)

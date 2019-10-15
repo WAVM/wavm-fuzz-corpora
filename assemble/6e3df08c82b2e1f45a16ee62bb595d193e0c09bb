@@ -1,0 +1,60 @@
+(module
+  (type $0 (func (param f32 externref f64 f32) (result i64)))
+  (type $1 (func (param externref) (result i64)))
+  (type $2 (func (param v128)))
+  (import "env" "table" (table $3 63 4294967295 shared externref))
+  (import "env" "func0" (func $13 (param f32 externref f64 f32) (result i64)))
+  (memory $6  13 46894 shared)
+  (memory $7  85 29024 shared)
+  (table $4  76 4294967295 shared externref)
+  (table $5  25 4294967295 shared funcref)
+  (global $8  i64 (i64.const 5844443797309997127))
+  (global $9  (mut i32) (i32.const -1419798936))
+  (elem $10 (i32.const -592327503) externref
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern))
+  
+  (func $14 (type $1)
+    (param $0 externref)
+    (result i64)
+    unreachable
+    )
+  
+  (func $15 (type $2)
+    (param $0 v128)
+    (local $1 i32)
+    (local $2 i32)
+    (local $3 f64)
+    local.get $0
+    i32x4.all_true
+    i32.popcnt
+    f64.convert_i32_u
+    local.tee $3
+    i32.trunc_sat_f64_u
+    i32.popcnt
+    global.set $9
+    f32.const -0x1.9ab3b2p+105
+    v128.const i32x4 0x02a86cd6 0x90081c4b 0x7802a37e 0xb6a89e02
+    atomic.fence
+    block $block
+      v128.const i32x4 0x0735ec83 0xd60d1f0a 0x23031e46 0xaa9337c2
+      i16x8.widen_low_i8x16_s
+      i8x16.extract_lane_s 15
+      unreachable
+    end ;; $block
+    br 0
+    )
+  
+  (data $11 (memory $7) (i32.const 590624568)
+    "\a8\90\06G+\8d\98\ae\ca\e5\92\\F\aa\d7\7f\cd\00\09")
+  
+  (data $12 (i32.const 1301237558)
+    "\e2\"\ba\00\a1\b6\d2\b6R\cci\9f\8d%\a1\8c\05F\80\00q\85-sy\1a|\bc\8f\8c\8c\a2\c9\15\03M,\ba5\9cPa\1a%\f5\b6\92y\04K\8f\c6P\88\e4T\15/\0cki\db\04\a6"
+    "\e1\a1\eb"))

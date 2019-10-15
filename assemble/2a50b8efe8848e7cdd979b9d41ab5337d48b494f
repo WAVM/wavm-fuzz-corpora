@@ -1,0 +1,12 @@
+(module
+
+  ( 
+
+ custom_section ""
+(after type))
+  
+    (type (func))(   
+
+ custom_section "b"
+   (after type))
+  )

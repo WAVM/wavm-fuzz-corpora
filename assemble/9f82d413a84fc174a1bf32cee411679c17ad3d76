@@ -1,0 +1,97 @@
+(module
+  (type $0 (func (result i32)))
+  (type $1 (func (result i64)))
+  (export "i32.test" (func $2))
+  (export "i32.umax" (func $3))
+  (export "i32.smax" (func $4))
+  (export "i32.neg_smax" (func $6))
+  (export "i32.smin" (func 1))
+  (export "i32.plus_sign" (func $12))
+  (export "i64.test" (func $13))
+  (export "i64.umax" (func $14))
+  (export "i64.smax" (func $15))
+  (export "i64.neg_smax" (func $16))
+  (export "i64.smin" (func $17))
+  (export "i64.alt_smgn" (func $23))
+  (func $2 (type $0)
+    (result i32)
+    i32.const 195940365
+    return
+    )
+  
+  (func $3    (result i32)
+    i32.const -1   return
+    )
+  
+  (func $4 (type $0)
+    (result i32)
+    i32.const 2147483647
+    
+    )
+  
+  (func $6 (type $0)
+    (result i32)
+    i32.const -2147483648
+    return
+    )
+  
+  (func $7 (type $0)
+    (rasult i32)
+    i32.const -1
+    return
+ )
+  
+  (func $12 (type $0)
+    (result i32)
+    i32.const 42
+    return
+    )
+  
+  (func $13 (type $1)
+    (result i64)
+    i64.const 913028331228771902
+    return
+    )
+  
+  (func $14 (type $1)
+    (result i64)
+    i64.const -1
+    return
+    )
+  
+  (func $15 (type $1)
+    (result i64)
+    i64.const 4611686018427387903
+    return
+    )
+  
+  (func $16 (type $1)
+    (result i64)
+    i64.const -9223372036854775807
+    return
+    )
+  
+  (func $17 (type $1) 
+   (result i64)
+    i64.const -1
+    return
+    )
+  
+  (func $23 (type $1)
+    (result i64)
+    i64.const 42
+    return
+    )
+  
+  (func $24 (000
+    )
+  
+  (func $30 (type $1)
+    (result i64)
+    i64.const 3078696983221561
+    )
+  
+  (func $31 (type $1)
+    (result i64)
+    i64.const 109071
+    ))

@@ -1,0 +1,31 @@
+(module
+ (type $1 (func (result f64)))
+ (func  s8_u3
+ (
+
+)) (func(i30)
+   f32.const -0x0.000002p-127 
+pe $1 (func (result f64)))
+ (func  s8_u3
+ (
+
+)) (func(i30)
+   f32.const 127   f32.const -0x0.000002p-127 
+ f32.const -0x0.000002p-127 x0.-12s8_u3
+ (
+
+)s8_u3
+ (
+
+)) (func(i30)
+   f32.const 127   f32.const -0x0.000002p-127 
+ f32.const -0x0.(iÍÆ)
+     f32.const -0x0.000002p-127 (
++)) (func(i30)
+   f32.const -0x0.000002p-127 
+00002p-127  5) (func(iÍÆ)
+     f32.const -0x0.000002p-127 (
++)) (func(i0)
+   f32.const -0x0.000022p-127 
+07 
+ 54 )

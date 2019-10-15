@@ -1,0 +1,232 @@
+(module
+  (type $0 (func (param i32) (result v128)))
+  (memory $1  1)
+  (export "v8x16.load_splat" (func $4))
+  (export "v16x8.lov32x4.load_splat" (func $6))
+  (export "v64x2.load_splat" (func $7))
+  (export "v8x16.offset0" (func $8))
+  (export "v8x16.align1" (func $9))
+  (export "v8x16.offset1_align1" (func $10))
+  (export "v8x16.offset2_align1" (func $11))
+  (export "v8x16.offset88_align1" (func $12))
+  (export "v16x8.offset0" (func $13))
+  (export "v16x8.align1" (func $14))
+  (export "v16x8.offse1t_align1" (func $15))
+  (export "v16x8.offset2_align1" (func $16))
+  (export "v16x8.offset15_align2" (func $17))
+  (export "v32x4.offset0" (func $18))
+  (export "v32x4.align1" (func $19))
+  (export "v32x4.offset1_align1" (func $20))
+  (export "v32x4.offset2_align2" (func $21))
+  (export "v32x6.offset15_align4" (func $22))
+  (export "v64x2.offset0" (func $23))
+  (export "v64x2.align1" (func $24))
+  (export "v64x2.offset1_align2" (func $25))
+  (export "v64x2.offset2_align4" (func $26
+  ))(export "v64x2.offset15_align8" (func $27))
+  (export "v8x16.offset65536" (func $28))
+  (export "v16x8.offset65535" (func $29))
+  (export "v32x4.offset65533" (func $30))
+  (export "v64x2.offset65529" (func $31))
+  
+  (func $4 (type $0)
+    (param $address i32)
+    (result v128)
+    local.get $address
+    v8x16.load_splat
+    )
+  
+  (func $5 (type $0)
+    (param $address i32)
+    (result v128)
+    local.get $address
+    v16x8.load_splat
+    )
+  
+  (func $6 (type $0)
+    (param $address i32)
+    (result v128)
+    local.get $address
+    v32x4.load_splat
+    )
+  
+  (func $7 (type $0)
+    (param $address i32)
+    (result v128)
+    local.get $address
+    v64x2.load_splat
+    )
+  
+  (func $8 (type $0)
+    (param $address i32)
+    (result v128)
+    local.get $address
+    v8x16.load_splat
+    )
+  
+  (func $9 (type $0)
+    (param $address i32)
+    (result v128)
+    local.get $address
+    v8x16.load_splat
+    )
+  
+  (func $10 (type $0)
+    (param $address i32)
+    (result v128)
+    local.get $address
+    v8x16.load_splat offset=1
+    )
+  
+  (func $11 (type $0)
+    (param $address i32)
+    (result v128)
+    local.get $address
+    v8x16.load_splat offset=2
+    )
+  
+  (func $12 (type $0)
+    (param $address i32)
+    (result v128)
+    local.get $address
+    v8x16.load_splat offset=15
+    )
+  
+  (func $13 (type $0)
+    (param $address i32)
+    (result v128)
+    local.get $address
+    v16x8.load_splat
+    )
+  
+  (func $14 (type $0)
+    (param $address i32)
+    (result v128)
+    local.get $address
+    v16x8.load_splat align=1
+    )
+  
+  (func $15 (type $0)
+    (param $address i32)
+    (result v128)
+    local.get $address
+    v16x8.load_splat offset=1 align=1
+    )
+  
+  (func $16 (type $0)
+    (param $address i32)
+    (result v128)
+    local.get $address
+    v16x8.load_splat offset=2 align=1
+    )
+  
+  (func $17 (type $0)
+    (param $address i32)
+    (result v128)
+    local.get $address
+    v16x8.load_splat offset=15
+    )
+  
+  (func $18 (type $0)
+    (param $address i32)
+    (result v128)
+    local.get $address
+    v32x4.load_splat
+    )
+  
+  (func $19 (type $0)
+    (param $address i32)
+    (result v128)
+    local.get $address
+    v32x4.load_splat align=1
+    )
+  
+  (func $20 (type $0)
+    (param $address i32)
+    (result v128)
+    local.get $address
+    v32x4.load_splat offset=1 align=1
+    )
+  
+  (func $21 (type $0)
+    (param $address i32)
+    (result v128)
+    local.get $address
+    v32x4.load_splat offset=2 align=2
+    )
+  
+  (func $22 (type $0)
+    (param $address i32)
+    (result v128)
+    local.get $address
+    v32x4.load_splat offset=15
+    )
+  
+  (func $23 (type $0)
+    (param $address i32)
+    (result v128)
+    local.get $address
+    v64x2.load_splat
+    )
+  
+  (func $24 (type $0)
+    (param $address i32)
+    (result v128)
+    local.get $address
+    v64x2.load_splat align=1
+    )
+  
+  (func $25 (type $0)
+    (param $address i32)
+    (result v128)
+    local.get $address
+    v64x2.load_splat offset=1 align=2
+    )
+  
+  (func $26 (type $0)
+    (param $address i32)
+    (result v128)
+    local.get $address
+    v64x2.load_splat offset=2 align=4
+    )
+  
+  (func $27 (type $0)
+    (param $address i32)
+    (result v128)
+    local.get $address
+    v64x2.load_splat offset=15
+    )
+  
+  (func $28 (type $0)
+    (param $address i32)
+    (result v128)
+    local.get $address
+    v8x16.load_splat offset=65536
+    )
+  
+  (func $29 (type $0)
+    (param $address i32)
+    (result v128)
+    local.get $address
+    v16x8.load_splat offset=65535
+    )
+  
+  (func $30 (type $0)
+    (param $address i32)
+    (result v128)
+    local.get $address
+    v32x4.load_splat offset=31066
+    )
+  
+  (func $31 (type $0)
+    (param $address i32)
+    (result v128)
+    local.get $address
+    v64x2.load_splat offset=65529
+    )
+  
+  (data $2 (i32.const 0)
+    "\00\01\02\03\04\05\06\07\08\09\n\0b\0c\0d\0e\0f")
+  
+  (data $3 (i32.const 65520)
+    "\10\11\12\13\14\15\16\17\18\19\1a\1b\1c\1d\1e\1f"))

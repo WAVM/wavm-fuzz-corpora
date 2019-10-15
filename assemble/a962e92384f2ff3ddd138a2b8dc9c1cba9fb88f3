@@ -1,0 +1,9 @@
+(func br 0
+f64.convert_i32_u br 00
+f64.convert_i32_u br 0
+f64.convert_i32_u br 0
+f64.convert_i32_u br 0
+f64.convert_i32_u 
+f64.convert_i32_u br 0
+f64.convert_i32_u br 0
+f64.convert_i32_u br 0)

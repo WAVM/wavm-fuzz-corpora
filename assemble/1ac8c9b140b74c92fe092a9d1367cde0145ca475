@@ -1,0 +1,1 @@
+(memory 1)(func (drop (drop (i64.load offset=4294934368 (i32.const 0)))(i32.load offset=94934368 (i32.const 5))))

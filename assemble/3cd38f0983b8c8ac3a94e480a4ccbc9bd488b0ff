@@ -1,0 +1,12 @@
+(func f64.const 0x1p+02
+f64.const 0x1p+0 f64.const 0x1p+2
+f64.const 0x1p+0
+f64.const 0x1p+2
+f64.const 0x1p+0
+f64.const 0X0p+3 f64.const 0x1p+0
+f64.const 0X0p+3 f64.const 0x9p+2
+f64.const 0x0p+6 f64.const 0x1p+0
+ f64.const 0x1p+2
+f64.const 0x1p+2
+f64.const 0x1p+0
+f64.const 0x1p+3)

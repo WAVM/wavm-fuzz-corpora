@@ -1,0 +1,33 @@
+(table  2 funcref)(func i8able.se  2 funcref)(func i8able.set)(func i32.const 1
+table.set)(func i32.const 1
+table.set)(func i32.const 1
+table.set)(func i32.const 1
+table.set)(func i32.const 1
+table.set)(func i32.const 1
+table.set)(func i32.const 1
+table.set)(func .c)(func i32.const 1
+table.set)(func i32.const 1
+table.set)(func i32.const 1
+table.set Yref)(func i32.const 1
+table.set)(func i32.const 1
+table.set)(func i32.const 1
+table.set)(func .seref)(func i32.const 1
+table.set)(func i32.const 1
+table.set)(func i32.const 1
+table.set)(func .et)(func i32.const 1
+table.set)(func i32.const 1
+table.set)(func i32.const 1
+table.set)(func i32.const 1
+table.set)(func i32.const 1
+table.set)(func i32.const 1
+table.set)(func i32.const 1
+table.set)(func .c)(func i32.const 1
+table.set)(func i32.const 1
+table.set)(func i32.const 1
+table.set Yref)(func i32.const 1
+table.set)(func i32.const 1
+table.set)(func i32.const 1
+table.set)(func .seref)(func i32.const 1
+table.set)(func i32.const 1
+table.set)(func i32.const 1
+table.set)(func .set)

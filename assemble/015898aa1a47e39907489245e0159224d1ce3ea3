@@ -1,0 +1,44 @@
+(module
+  (type $0 (func (param f64 externref)))
+  (type $1 (func (param funcref f32) (result funcref funcref)))
+  (import "env" "memory" (memory $3 96 4367 shared))
+  (import "env" "memory" (memory $4 82 17328))
+  (import "env" "global0" (global $6 f32))
+  (import "env" "func0" (func $9 (param f64 externref)))
+  (memory $5  27 50604 shared)
+  (table $2  44 4294967295 shared funcref)
+  
+  (func $10 (type $1)
+    (param $0 funcref)
+    (param $1 f32)
+    (result funcref funcref)
+    (local $2 f32)
+    f32.const 0x1.b76840p-125
+    i32.const 676064006
+    i32x4.load16x4_u offset=2397649346 align=2
+    f64x2.sqrt
+    v128.const i32x4 0x844b2227 0x44be6b1c 0x1fa4a072 0xdb28ee8c
+    f32x4.sqrt
+    i16x8.widen_high_i8x16_s
+    f64x2.sub
+    i32x4.trunc_sat_f32x4_u
+    loop $loop (result i32)
+      local.get $1
+      nop
+      i64.trunc_sat_f32_u
+      atomic.fence
+      loop $loop_0 (result funcref)
+        unreachable
+      end ;; $loop_0
+      unreachable
+    end ;; $loop
+    i8x16.shr_s
+    unreachable
+    )
+  
+  (data $7 
+    "\db\fb6@\c9\99\09p\e8\03kS\e4\a2R\f7\b9d\0d\80c\d0\d8\e5}U\f8\1aj\9d\b6\c7\9c\89\8d~%\a1QE\11")
+  
+  (data $8 
+    "\e8\91W\b1!\a2C\19\a6\19\c4Y\a7aU9\f9#\87\dd\f7\ae\12\b9\f9>\e62S\1d\f6\f2\02g_GT\af\c1\c3\bf,f\c6e\82\a6%\eec\12\e2\8a\9d\14\e2\a9\86\f0\c4\d0Cyk"
+    "\be\18\0b\ec\be"))

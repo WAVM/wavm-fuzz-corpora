@@ -1,0 +1,17 @@
+(module
+  (type $1 (func (param funcref f32)))
+  (import "env" "func0" (func $9 (param i64) (result i64)))
+  (memory $3  49 58981 shared)
+  (memory $4  55 49838 shared)
+  (memory $5  67 3611 shared)
+  (table $2  41448 1723647 funcref)
+  (global $6  i32 (i32.const 821887690))
+  (elem $7 declare
+  
+    $9 $10)
+  (elem $8 declare memory
+    $3 $3
+    $5 $4 $3 $3 $4 $3 $5 $5 $3 $4 $4 $4)
+  
+  (func $10     return
+    ))

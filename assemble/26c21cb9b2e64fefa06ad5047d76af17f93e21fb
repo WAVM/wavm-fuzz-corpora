@@ -1,0 +1,1 @@
+(func br 0 i16x8.eq i16x8.eq i16x8.eq i16x8.eq br 0)

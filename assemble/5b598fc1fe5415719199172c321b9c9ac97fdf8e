@@ -1,0 +1,2 @@
+(memory $3  4)
+ (elem $5 memory $3 $3 0))

@@ -1,0 +1,2 @@
+(module
+ (type $0 (func (param v128 i32 i32 i32))) (type32 i32))J

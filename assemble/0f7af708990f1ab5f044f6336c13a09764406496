@@ -1,0 +1,204 @@
+(module
+  (type $0 (func (param f32 v128 externref) (result funcref)))
+  (type $1 (func (param externref) (result f64)))
+  (type $2 (func (param f32) (result i64)))
+  (type $3 (func (result funcref)))
+  (type $4 (func (param funcref f64 f64) (result i64)))
+  (type $5 (func (param funcref v128 funcref i64) (result funcref f32 funcref externref)))
+  (type $6 (func (param f64 funcref) (result v128)))
+  (type $7 (func (param funcref) (result i64 f32)))
+  (type $8 (func (param externref i64)))
+  (type $9 (func (result i32 funcref f32)))
+  (import "env" "table" (table $10 78 4294967295 externref))
+  (import "env" "global1" (global $13 (mut i32)))
+  (import "env" "global2" (global $14 funcref))
+  (import "env" "global4" (global $15 f64))
+  (import "env" "global5" (global $16 f64))
+  (import "env" "global6" (global $17 (mut i64)))
+  (import "env" "global7" (global $18 externref))
+  (memory $12  11 3285 shared)
+  (table $11  54 4294967295 shared externref)
+  (global $19  (mut funcref) (ref.null func))
+  (global $20  (mut funcref) (ref.null func))
+  (elem $21 global
+    $16 $20 $20 $17 $14)
+  (elem $22 declare externref
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern))
+  
+  (func $25 (type $0)
+    (param $0 f32)
+    (param $1 v128)
+    (param $2 externref)
+    (result funcref)
+    (local $3 i32)
+    ref.null func
+    global.set $20
+    global.get $13
+    i64.load16_s offset=1031008023
+    i64.popcnt
+    global.get $18
+    local.tee $2
+    atomic.fence
+    ref.null func
+    elem.drop $22
+    local.get $2
+    ref.is_null
+    i64.load8_u offset=2672978515
+    local.get $0
+    call $28
+    ref.null extern
+    drop
+    ref.null func
+    unreachable
+    )
+  
+  (func $26 (type $1)
+    (param $0 externref)
+    (result f64)
+    (local $1 v128)
+    (local $2 i32)
+    (local $3 f64)
+    (local $4 v128)
+    global.get $15
+    call $28
+    table.size $10
+    i8x16.splat
+    global.get $19
+    i64.const 5055052237559607544
+    nop
+    loop $loop (param funcref v128 funcref i64) (result funcref f32 funcref externref)
+      i64.ctz
+      i64.extend32_s
+      local.get $3
+      global.get $20
+      block $block (param f64 funcref) (result v128)
+        global.get $14
+        table.size $10
+        table.get $11
+        ref.is_null
+        select (result funcref)
+        ref.null extern
+        local.set $0
+        unreachable
+      end ;; $block
+      drop
+      unreachable
+    end ;; $loop
+    local.set $0
+    ref.null extern
+    local.set $0
+    unreachable
+    )
+  
+  (func $27 (type $2)
+    (param $0 f32)
+    (result i64)
+    (local $1 i64)
+    (local $2 i64)
+    global.get $13
+    v32x4.load_interleaved_2 offset=1886166385
+    i8x16.add_saturate_u
+    global.get $19
+    elem.drop $22
+    loop $loop (param funcref) (result i64 f32)
+      nop
+      global.set $19
+      f32.const -0x1.2202a8p-67
+      loop $loop_0 (result i32)
+        local.get $1
+        ref.null extern
+        local.get $1
+        block $block (param externref i64)
+          local.set $2
+          ref.is_null
+          br $block
+        end ;; $block
+        global.set $17
+        local.get $1
+        unreachable
+      end ;; $loop_0
+      drop
+      ref.null extern
+      ref.null extern
+      unreachable
+    end ;; $loop
+    unreachable
+    )
+  
+  (func $28 (type $3)
+    (result funcref)
+    (local $0 v128)
+    (local $1 v128)
+    f32.const -0x1.f0a9eap+2
+    global.get $20
+    local.get $1
+    i32x4.all_true
+    i16x8.splat
+    f32x4.sqrt
+    global.get $15
+    ref.null extern
+    global.get $14
+    block $block (result funcref)
+      data.drop $23
+      i64.const 4202098932334996821
+      table.size $10
+      v128.load offset=328660379
+      i16x8.any_true
+      ref.null func
+      drop
+      unreachable
+    end ;; $block
+    return
+    )
+  
+  (func $29 (type $4)
+    (param $0 funcref)
+    (param $1 f64)
+    (param $2 f64)
+    (result i64)
+    global.get $15
+    global.get $20
+    v128.const i32x4 0x65dccfd1 0x198924ab 0x0ce58078 0x4bb2b230
+    global.get $17
+    loop $loop (result i32 funcref f32)
+      f32.const -0x1.cf9e10p-99
+      f32.abs
+      i32.trunc_sat_f32_u
+      i32.load8_s offset=3141959202
+      i64.const 6622390337796391512
+      i64.atomic.rmw8.sub_u offset=3348968940
+      i64.ctz
+      memory.size
+      i32.load8_u offset=1448852817
+      v64x2.load_splat offset=500986849 align=1
+      unreachable
+    end ;; $loop
+    unreachable
+    )
+  
+  (data $23 (i32.const -200295520)
+    "\00\09d\e5Z[\04\8f\92\d0\1e\16\"\b1\0dm\8e\18.@`cs\cc\f5.\d7)\17\14o\9d\0d\0d\f8\d7\08\03\800\9a\8d\15J\08\af\c1~")
+  
+  (data $24 (i32.const 1382860183)
+    "\0bs\1ck\cb\d5\c9\15,\d3\b0Tl\d0A\\\9c\a5\83;\d9w\b4\15\f2s\a3\c2\cf\16)\a5\c1\bd\1dE\11\a1\05\1b=\c2\e9\e2\18\0f\12\dd\87\bdVD\d3 \caj\aaB8z?\c1i\09"
+    "e\e6\ff\b3\c5\9eo\845\90J \f1\dc\\\a4\11\f0?\dc\c8"))

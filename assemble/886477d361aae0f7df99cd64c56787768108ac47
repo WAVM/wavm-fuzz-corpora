@@ -1,0 +1,49 @@
+(module
+  (type $0 (func (param i64)))
+  (type $1 (func (param i32 f32 v128)))
+  (type $2 (func (param i64 externref i32 externref) (result i64)))
+  (import "env" "memory" (memory $5 66 27329 shared))
+  (import "env" "global0" (global $6 f64))
+  (import "env" "global2" (global $7 (mut i32)))
+  (import "env" "global4" (global $8 f64))
+  (import "env" "func0" (func $14 (param i64 externref i32 externref) (result i64)))
+  (table $3  76 4294967295 shared externref)
+  (table $4  12 4294967295 shared funcref)
+  (global $9  (mut f64) (f64.const 0x1.2232a8c8ae211p+63))
+  (global $10  (mut f32) (f32.const 0x1.d21da6p+30))
+  (global $11  (mut f64) (f64.const 0x1.4142a594db96ep+59))
+  
+  (func $15 (type $0)
+    (param $0 i64)
+    (local $1 f32)
+    br 0
+    )
+  
+  (func $16 (type $1)
+    (param $0 i32)
+    (param $1 f32)
+    (param $2 v128)
+    (local $3 funcref)
+    global.get $11
+    local.get $2
+    f64x2.extract_lane 1
+    f64.copysign
+    i64.trunc_sat_f64_u
+    f64.convert_i64_u
+    f64.const 0x1.25f834af7a0c1p+488
+    f64.ne
+    v64x2.load_interleaved_3 offset=1329460485
+    i16x8.abs
+    i16x8.min_s
+    i16x8.max_u
+    i16x8.abs
+    i16x8.bitmask
+    v64x2.load_interleaved_2 offset=828453887 align=4
+    unreachable
+    )
+  
+  (data $12 (i32.const 1046235869)
+    "\93I\a4")
+  
+  (data $13 
+    "\0b\bf!\b5"))

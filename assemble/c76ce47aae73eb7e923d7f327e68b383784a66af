@@ -1,0 +1,114 @@
+(module
+  (type $0 (func (param i32 f32 f32 externref)))
+  (type $1 (func (param funcref externref funcref externref)))
+  (type $2 (func (param i32) (result f64 i32)))
+  (type $3 (func (param funcref funcref)))
+  (type $4 (func (param i32)))
+  (import "env" "memory" (memory $6 41 35465 shared))
+  (import "env" "global0" (global $7 (mut i32)))
+  (import "env" "func0" (func $12 (param funcref externref funcref externref)))
+  (import "env" "func1" (func $13 (param funcref funcref)))
+  (table $5  40 4294967295 shared externref)
+  (elem $8 declare funcref
+    (ref.func $13) (ref.func $12) (ref.null func) (ref.func $15)
+    (ref.func $14) (ref.func $14) (ref.func $15) (ref.null func)
+    (ref.func $14) (ref.func $15) (ref.func $14) (ref.null func)
+    (ref.func $12) (ref.func $15) (ref.func $13) (ref.func $12)
+    (ref.func $12) (ref.func $13) (ref.func $12) (ref.null func)
+    (ref.func $15) (ref.null func) (ref.func $12) (ref.func $12)
+    (ref.func $13) (ref.null func) (ref.func $13) (ref.func $15)
+    (ref.null func) (ref.func $14) (ref.func $12) (ref.func $12)
+    (ref.func $15) (ref.func $15) (ref.func $13) (ref.func $13)
+    (ref.func $15) (ref.func $14) (ref.func $13) (ref.func $15)
+    (ref.func $13) (ref.func $14) (ref.func $13) (ref.func $12)
+    (ref.func $14) (ref.func $14) (ref.func $12) (ref.func $12)
+    (ref.func $13) (ref.func $15) (ref.func $15) (ref.func $15)
+    (ref.func $12) (ref.func $13) (ref.func $14) (ref.null func)
+    (ref.null func) (ref.func $15) (ref.func $15) (ref.func $13)
+    (ref.func $15) (ref.null func) (ref.func $14) (ref.func $14)
+    (ref.func $14) (ref.null func) (ref.null func) (ref.func $12)
+    (ref.func $15) (ref.null func) (ref.null func))
+  (elem $9 funcref
+    (ref.func $15))
+  
+  (func $14 (type $0)
+    (param $0 i32)
+    (param $1 f32)
+    (param $2 f32)
+    (param $3 externref)
+    (local $4 f32)
+    (local $5 f64)
+    (local $6 externref)
+    f64.const 0x1.bd89a291b8509p-845
+    i64.reinterpret_f64
+    global.get $7
+    data.drop $10
+    memory.grow
+    i64.load16_s offset=923219560 align=1
+    i64.popcnt
+    i64.mul
+    i64.extend8_s
+    i64.extend16_s
+    local.get $1
+    f32.neg
+    local.tee $1
+    f32.sqrt
+    memory.size
+    unreachable
+    )
+  
+  (func $15 (type $2)
+    (param $0 i32)
+    (result f64 i32)
+    (local $1 i32)
+    (local $2 v128)
+    (local $3 funcref)
+    f32.const -0x1.ecf40cp+30
+    f32.nearest
+    f32.const -0x1.291158p+3
+    f32.floor
+    table.size $5
+    block $block (param i32)
+      v8x16.load_splat offset=1640168227
+      i32x4.any_true
+      i64.const 5324271161020973226
+      local.get $1
+      v16x8.load_interleaved_2 offset=2829833579
+      i8x16.extract_lane_u 13
+      i32.atomic.load8_u offset=3427830999
+      drop
+      i32x4.any_true
+      global.set $7
+      i64.atomic.rmw8.and_u offset=1210928943
+      drop
+      ref.null func
+      br $block
+    end ;; $block
+    f32.mul
+    drop
+    nop
+    atomic.fence
+    table.size $5
+    local.set $0
+    atomic.fence
+    f32.const -0x1.b62d56p+59
+    drop
+    i64.const 4650941528160153517
+    ref.null func
+    ref.null extern
+    drop
+    local.set $3
+    drop
+    v128.const i32x4 0xe5ef74ea 0x01e42c7a 0xa0a24a13 0xc2929d2a
+    local.set $2
+    f64.const -0x1.35aec8bbf1f81p-188
+    local.get $2
+    unreachable
+    )
+  
+  (data $10 (i32.const 581100215)
+    "\aeN'\a3x\f3r\beX\a5\fbs1w/k4\85\90\81\85\ee9\98Y!\b2\1f,\85\e4\ae\f0\03z\e9\16D\c6Z\d6\07\ffu\c4\1e\c4:*\97\129\d2\a4\9a\1a\bd\a2\ee\8b\9c\864\d5"
+    "\b0{")
+  
+  (data $11 (i32.const -1001755399)
+    "\c3\93L\11\16\0b\e0\b3\bce"))

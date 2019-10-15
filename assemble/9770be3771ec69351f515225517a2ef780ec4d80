@@ -1,0 +1,9 @@
+(func(if (if  ( v128.andnot)  )( v128.andnot
+ )( v128.andnot
+))if (if ( 
+ )( v128.andnot
+)(if  ( v128.andnot)  )( v128.aîdt
+ )( v128.andnot
+))if (if  ( v128.andf  ( v128.andnot)  )( v128.andnot
+ )( v128.andnot
+))if (if  ( v128.andnot))if (if t)  )))

@@ -1,0 +1,13 @@
+(table 1 funcref)(func ()table.copy table.copy
+table.copy table.copy
+table.copy ()table.copy table.copy
+table.copy table.copy()table.copy table.copy
+unc)(func()table.copy table.copy
+table.copy()table.copy table.copy
+table.copy table.copy
+)(func ()table.copy table.copy
+table.copy ()table.copy table.copy
+table.copy table.copy()table.copy table.copy
+et)(func()table.copy table.copy
+table.copy()table.copy table.copy
+)

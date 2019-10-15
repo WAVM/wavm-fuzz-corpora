@@ -1,0 +1,11 @@
+()(export "a" (exception_type )) (export
+"b" (exception_type )) (export "" (exception_type))(export "d" (exception_type ))
+(export "" (exception_type ))
+  (export "b"(exception_type ))
+ (export "c" (exception_type p))
+ (export "memory.copyd" (exception_type)) (export "" (exception_type ))
+(export "[" (exception_type ))(export "" (exception_type ))	  (export "d" (exception_type ))
+
+ (export "a" (exception_type ))
+  (export "" (exception_type ))
+ (export "c"(exception_type))(export "" (exception_type

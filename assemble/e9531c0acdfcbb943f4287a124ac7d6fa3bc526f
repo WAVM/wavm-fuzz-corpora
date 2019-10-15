@@ -1,0 +1,41 @@
+(module
+  (type $0 (func))
+  (memory $1  1 1)
+  
+  (func $2 (type $0)
+    i32.const 0
+    i32.const 0
+    memory.atomic.notify
+    drop
+    )
+  
+  (func $3 (type $0)
+    i32.const 0
+      i64.const 0
+    i64.atomic.rmw16.or_u
+    drop
+    )
+  
+  (func $34 (type $0)
+    i32.const 0
+  i32.const 0
+    i32.const 0
+    i32.atomic.rmw16.cmpxchg_u
+    drop
+    )
+  
+  (func $48 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.const 0
+    i64.atomic.rmw16.cmpxchg_u
+    drop
+    )
+  
+  (func $98 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.const 5
+    i64.atomic.rmw32.cmpxchg_u
+    drop
+    ))

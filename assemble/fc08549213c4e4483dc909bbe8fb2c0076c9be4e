@@ -1,0 +1,55 @@
+(module
+  (type $0 (func (result i32 v128)))
+  (type $1 (func (param i64)))
+  (import "env" "global0" (global $6 funcref))
+  (memory $4  27 56229 shared)
+  (memory $5  20 29564 shared)
+  (table $2  13 4294967295 funcref)
+  (table $3  20 4294967295 externref)
+  (global $7  (mut f32) (f32.const 0x1.4d53e6p+27))
+  (elem $8 declare exception_type)
+  
+  (func $9 (type $0)
+    (result i32 v128)
+    (local $0 i32)
+    nop
+    nop
+    v128.const i32x4 0x14253a22 0xe04b7663 0x3210e86e 0xea7ffdb8
+    i8x16.any_true
+    i32.atomic.load8_u offset=452428513
+    i16x8.load8x8_u $5 offset=1737278014
+    i16x8.extract_lane_s 7
+    i32.extend16_s
+    i64.load32_u offset=871160355 align=1
+    global.get $7
+    ref.null func
+    loop $loop
+      i64.const -565487631535386474
+      i64.extend8_s
+      f32.const 0x1.71c1ecp-48
+      unreachable
+    end ;; $loop
+    drop
+    global.set $7
+    unreachable
+    )
+  
+  (func $10 (type $1)
+    (param $0 i64)
+    (local $1 i64)
+    (local $2 funcref)
+    (local $3 v128)
+    (local $4 externref)
+    global.get $6
+    drop
+    i64.const -8119512334988753540
+    f64.const -0x1.c4aa74f72ab06p-245
+    i32.const -1567407186
+    call_indirect $2 (type $0)
+    f64.const -0x1.b306603b9d557p+94
+    i32.trunc_f64_u
+    i32.const -1208933766
+    i64.load32_u offset=3080656468 align=1
+    table.size $3
+    unreachable
+    ))

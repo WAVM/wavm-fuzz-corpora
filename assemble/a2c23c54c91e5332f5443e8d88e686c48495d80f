@@ -1,0 +1,5 @@
+(table  3 funcref)(func
+table.set i32.const 1
+table.set i32.const 0
+table.set i32.const 1
+table.set table.set)

@@ -1,0 +1,786 @@
+(module
+  (type $check (func (param i32 i32) (result i32)))
+  (type $0 (func (result i32)))
+  (type $1 (func (result i64)))
+  (type $2 (func (result f32)))
+  (type $3 (func (result f64)))
+  (type $4 (func (result i32 i64)))
+  (type $5 (func (param i32) (result i32)))
+  (type $6 (func (param i64) (result i64)))
+  (type $7 (func (param f32) (result f32)))
+  (type $8 (func (param f64) (result f64)))
+  (type $9 (func (param i32 f64) (result i32 f64)))
+  (type $10 (func (param i32 i32) (result i32 i32)))
+  (type $11 (func (param f32 f64) (result f64 f32)))
+  (type $12 (func (param f64 i32) (result i32 f64)))
+  (type $13 (func (param f32 i32) (result i32)))
+  (type $14 (func (param i32 i64) (result i64)))
+  (type $15 (func (param f64 f32) (result f32)))
+  (type $16 (func (param i64 f64) (result f64)))
+  (type $17 (func (result i32 f64)))
+  (type $18 (func (result i32 i32)))
+  (type $19 (func (result f64 f32)))
+  (type $20 (func (param i64 i64) (result i64)))
+  (type $21 (func (param i64) (result i32)))
+  (type $22 (func))
+  (type $23 (func (param f32 i32 i32 f64 f32 f32 f32 f64 f32 i32 i32 f32 f64 i64 i64 i32 i64 i64 f32 i64 i64 i64 i32 f32 f32 f32 f64 f32 i32 i64 f32 f64 f64 f32 i32 f32 f32 f64 i64 f64 i32 i64 f32 f64 i32 i32 i32 i64 f64 i32 i64 i64 f64 f64 f64 f64 f64 f64 i32 f32 f64 f64 i32 i64 f32 f32 f32 i32 f64 f64 f64 f64 f64 f32 i64 i64 i32 i32 i32 f32 f64 i32 i64 f32 f32 f32 i32 i32 f32 f64 i64 f32 f64 f32 f32 f32 i32 f32 i64 i32) (result i32)))
+  (memory $25  1)
+  (table $24  1 1 funcref)
+  (global $a  (mut i32) (i32.const 10))
+  (export "type-i32" (func $27))
+  (export "type-i64" (func $28))
+  (export "type-f32" (func $29))
+  (export "type-f64" (func $30))
+  (export "type-i32-i64" (func $31))
+  (export "type-first-i32" (func $32))
+  (export "type-first-i64" (func $33))
+  (export "type-first-f32" (func $34))
+  (export "type-first-f64" (func $35))
+  (export "type-second-i32" (func $36))
+  (export "type-second-i64" (func $37))
+  (export "type-second-f32" (func $38))
+  (export "type-second-f64" (func $39))
+  (export "type-all-i32-f64" (func $40))
+  (export "type-all-i32-i32" (func $41))
+  (export "type-all-f32-f64" (func $42))
+  (export "type-all-f64-i32" (func $43))
+  (export "as-binary-all-operands" (func $44))
+  (export "as-mixed-operands" (func $45))
+  (export "as-call-all-operands" (func $46))
+  (export "fac" (func $fac))
+  (export "fac-acc" (func $fac-acc))
+  (export "fib" (func $fib))
+  (export "even" (func $even))
+  (export "odd" (func $odd)) 
+  (func $const-i32 (type $0)
+    (result i32)
+    i32.const 306
+    )
+  
+  (func $const-i64 (type $1)
+    (result i64)
+    i64.const 356
+    )
+  
+  (func $const-f32 (type $2)
+    (result f32)
+    f32.const 0x1.e64000p+11
+    )
+  
+  (func $const-f64 (type $3)
+    (result f64)
+    f64.const 0x1.ec80000000000p+11
+    )
+  
+  (func $const-i32-i64 (type $4)
+    (result i32 i64)
+    i32.const 306
+    i64.const 356
+    )
+  
+  (func $id-i32 (type $5)
+    (param $0 i32)
+    (result i32)
+    local.get $0
+    )
+  
+  (func $id-i64 (type $6)
+    (param $0 i64)
+    (result i64)
+    local.get $0
+    )
+  
+  (func $id-f32 (type $7)
+    (param $0 f32)
+    (result f32)
+    local.get $0
+    )
+  
+  (func $id-f64 (type $8)
+    (param $0 f64)
+    (result f64)
+    local.get $0
+    )
+  
+  (func $id-i32-f64 (type $9)
+    (param $0 i32)
+    (param $1 f64)
+    (result i32 f64)
+    local.get $0
+    local.get $1
+    )
+  
+  (func $swap-i32-i32 (type $10)
+    (param $0 i32)
+    (param $1 i32)
+    (result i32 i32)
+    local.get $1
+    local.get $0
+    )
+  
+  (func $swap-f32-f64 (type $11)
+    (param $0 f32)
+    (param $1 f64)
+    (result f64 f32)
+    local.get $1
+    local.get $0
+    )
+  
+  (func $swap-f64-i32 (type $12)
+    (param $0 f64)
+    (param $1 i32)
+    (result i32 f64)
+    local.get $1
+    local.get $0
+    )
+  
+  (func $f32-i32 (type $13)
+    (param $0 f32)
+    (param $1 i32)
+    (result i32)
+    local.get $1
+    )
+  
+  (func $i32-i64 (type $14)
+    (param $0 i32)
+    (param $1 i64)
+    (result i64)
+    local.get $1
+    )
+  
+  (func $f64-f32 (type $15)
+    (param $0 f64)
+    (param $1 f32)
+    (result f32)
+    local.get $1
+    )
+  
+  (func $i64-f64 (type $16)
+    (param $0 i64)
+    (param $1 f64)
+    (result f64)
+    local.get $1
+    )
+  
+  (func $27 (type $0)
+    (result i32)
+    call $const-i32
+    )
+  
+  (func $28 (type $1)
+    (result i64)
+    call $const-i64
+    )
+  
+  (func $29 (type $2)
+    (result f32)
+    call $const-f32
+    )
+  
+  (func $30 (type $3)
+    (result f64)
+    call $const-f64
+    )
+  
+  (func $31 (type $4)
+    (result i32 i64)
+    call $const-i32-i64
+    )
+  
+  (func $32 (type $0)
+    (result i32)
+    i32.const 32
+    call $id-i32
+    )
+  
+  (func $33 (type $1)
+    (result i64)
+    i64.const 64
+    call $id-i64
+    )
+  
+  (func $34 (type $2)
+    (result f32)
+    f32.const 0x1.51eb86p-0
+    call $id-f32
+    )
+  
+  (func $35 (type $3)
+    (result f64)
+    f64.const 0x1.a3d70a3d70a3dp-0
+    call $id-f64
+    )
+  
+  (func $36 (type $0)
+    (result i32)
+    f32.const 0x1.00ccccp+5
+    i32.const 32
+    call $f32-i32
+    )
+  
+  (func $37 (type $1)
+    (result i64)
+    i32.const 32
+    i64.const 64
+    call $i32-i64
+    )
+  
+  (func $38 (type $2)
+    (result f32)
+    f64.const 0x1.0000000000000p+6
+    f32.const 0x1.000000p+5
+    call $f64-f32
+    )
+  
+  (func $39 (type $3)
+    (result f64)
+    i64.const 64
+    f64.const 0x1.0066666666666p+6
+    call $i64-f64
+    )
+  
+  (func $40 (type $17)
+    (result i32 f64)
+    i32.const 32
+    f64.const 0x1.a3d70a3d70a3dp-0
+    call $id-i32-f64
+    )
+  
+  (func $41 (type $18)
+    (result i32 i32)
+    i32.const 1
+    i32.const 2
+    call $swap-i32-i32
+    )
+  
+  (func $42 (type $19)
+    (result f64 f32)
+    f32.const 0x1.000000p-0
+    f64.const 0x1.0000000000000p+1
+    call $swap-f32-f64
+    )
+  
+  (func $43 (type $17)
+    (result i32 f64)
+    f64.const 0x1.0000000000000p-0
+    i32.const 2
+    call $swap-f64-i32
+    )
+  
+  (func $44 (type $0)
+    (result i32)
+    i32.const 3
+    i32.const 4
+    call $swap-i32-i32
+    i32.add
+    )
+  
+  (func $45 (type $0)
+    (result i32)
+    i32.const 3
+    i32.const 4
+    call $swap-i32-i32
+    i32.const 5
+    i32.add
+    i32.mul
+    )
+  
+  (func $46 (type $18)
+    (result i32 i32)
+    i32.const 3
+    i32.const 4
+    call $swap-i32-i32
+    call $swap-i32-i32
+    )
+  
+  (func $fac (type $6)
+    (param $0 i64)
+    (result i64)
+    local.get $0
+    i64.eqz
+    if $if (result i64)
+      i64.const 1
+    else
+      local.get $0
+      local.get $0
+      i64.const 1
+      i64.sub
+      call $fac
+      i64.mul
+    end ;; $if
+    )
+  
+  (func $fac-acc (type $20)
+    (param $0 i64)
+    (param $1 i64)
+    (result i64)
+    local.get $0
+    i64.eqz
+    if $if (result i64)
+      local.get $1
+    else
+      local.get $0
+      i64.const 1
+      i64.sub
+      local.get $0
+      local.get $1
+      i64.mul
+      call $fac-acc
+    end ;; $if
+    )
+  
+  (func $fib (type $6)
+    (param $0 i64)
+    (result i64)
+    local.get $0
+    i64.const 1
+    i64.le_u
+    if $if (result i64)
+      i64.const 1
+    else
+      local.get $0
+      i64.const 2
+      i64.sub
+      call $fib
+      local.get $0
+      i64.const 1
+      i64.sub
+      call $fib
+      i64.add
+    end ;; $if
+    )
+  
+  (func $even (type $21)
+    (param $0 i64)
+    (result i32)
+    local.get $0
+    i64.eqz
+    if $if (result i32)
+      i32.const 44
+    else
+      local.get $0
+      i64.const 1
+      i64.sub
+      call $odd
+    end ;; $if
+    )
+  
+  (func $odd (type $21)
+    (param $0 i64)
+    (result i32)
+    local.get $0
+    i64.eqz
+    if $if (result i32)
+      i32.const 99
+    else
+      local.get $0
+      i64.const 1
+      i64.sub
+      call $even
+    end ;; $if
+    )
+  
+  (func $runaway (type $22)
+    call $runaway
+    )
+  
+  (func $mutual-runaway1 (type $22)
+    call $mutual-runaway2
+    )
+  
+  (func $mutual-runaway2 (type $22)
+    call $mutual-runaway1
+    )
+  
+  (func $47 (type $0)
+    (result i32)
+    call $const-i32
+    i32.const 2
+    i32.const 3
+    select
+    )
+  
+  (func $48 (type $0)
+    (result i32)
+    i32.const 2
+    call $const-i32
+    i32.const 3
+    select
+    )
+  
+  (func $49 (type $0)
+    (result i32)
+    i32.const 2
+    i32.const 3
+    call $const-i32
+    select
+    )
+  
+  (func $50 (type $0)
+    (result i32)
+    call $const-i32
+    if $if (result i32)
+      i32.const 1
+    else
+      i32.const 2
+    end ;; $if
+    )
+  
+  (func $51 (type $0)
+    (result i32)
+    block $block (result i32)
+      call $const-i32
+      i32.const 2
+      br_if $block
+    end ;; $block
+    )
+  
+  (func $52 (type $0)
+    (result i32)
+    block $block (result i32)
+      i32.const 2
+      call $const-i32
+      br_if $block
+    end ;; $block
+    )
+  
+  (func $53 (type $0)
+    (result i32)
+    block $block (result i32)
+      call $const-i32
+      i32.const 2
+      br_table
+        $block
+        $block ;; default
+    end ;; $block
+    )
+  
+  (func $54 (type $0)
+    (result i32)
+    block $block (result i32)
+      i32.const 2
+      call $const-i32
+      br_table
+        $block
+        $block ;; default
+    end ;; $block
+    )
+  
+  (func $func (type $check)
+    (param $0 i32)
+    (param $1 i32)
+    (result i32)
+    local.get $0
+    )
+  
+  (func $55 (type $0)
+    (result i32)
+    block $block (result i32)
+      call $const-i32
+      i32.const 2
+      i32.const 0
+      call_indirect $24 (type $check)
+    end ;; $block
+    )
+   (func $66 (type $0)
+    (result i32)
+    call $const-i32
+    global.set $a
+    global.get $a
+    )
+  
+  (func $99 (type $0)
+    (result i32)
+    call $const-i32
+    i32.load
+    )
+  
+  (func $dummy (type $5)
+    (param $0 i32)
+    (result i32)
+    local.get $0
+    )
+  
+  (func $du (type $7)
+    (param $0 f32)
+    (result f32)
+    local.get $0
+    )
+  
+  (func $68 (type $2)
+    (result f32)
+    block $block (result f32)
+      f32.const 0x0.000000p-127
+      call $du
+      f32.sqrt
+    end ;; $block
+    )
+  
+  (func $69 (type $0)
+    (result i32)
+    block $block (result i32)
+      i32.const 1
+      call $dummy
+      i32.const 10
+      i32.add
+    end ;; $block
+    )
+  
+  (func $70 (type $0)
+    (result i32)
+    block $block (result i32)
+      i32.const 10
+      i32.const 1
+      call $dummy
+      i32.sub
+    end ;; $block
+    )
+  
+  (func $71 (type $0)
+    (result i32)
+    block $block (result i32)
+      i32.const 1
+      call $dummy
+      i32.eqz
+    end ;; $block
+    )
+  
+  (func $72 (type $0)
+    (result i32)
+    block $block (result i32)
+      i32.const 1
+      call $dummy
+      i32.const 10
+      i32.le_u
+    end ;; $block
+    )
+  
+  (func $73 (type $0)
+    (result i32)
+    block $block (result i32)
+      i32.const 10
+      i32.const 1
+      call $dummy
+      i32.ne
+    end ;; $block
+    )
+  
+  (func $74 (type $1)
+    (result i64)
+    block $block (result i64)
+      i32.const 1
+      call $dummy
+      i64.extend_i32_s
+    end ;; $block
+    )
+  
+  (func $return-from-long-argument-list-helper (type $23)
+    (param $0 f32)
+    (param $1 i32)
+    (param $2 i32)
+    (param $3 f64)
+    (param $4 f32)
+    (param $5 f32)
+    (param $6 f32)
+    (param $7 f64)
+    (param $8 f32)
+    (param $9 i32)
+    (param $10 i32)
+    (param $11 f32)
+    (param $12 f64)
+    (param $13 i64)
+    (param $14 i64)
+    (param $15 i32)
+    (param $16 i64)
+    (param $17 i64)
+    (param $18 f32)
+    (param $19 i64)
+    (param $20 i64)
+    (param $21 i64)
+    (param $22 i32)
+    (param $23 f32)
+    (param $24 f32)
+    (param $25 f32)
+    (param $26 f64)
+    (param $27 f32)
+    (param $28 i32)
+    (param $29 i64)
+    (param $30 f32)
+    (param $31 f64)
+    (param $32 f64)
+    (param $33 f32)
+    (param $34 i32)
+    (param $35 f32)
+    (param $36 f32)
+    (param $37 f64)
+    (param $38 i64)
+    (param $39 f64)
+    (param $40 i32)
+    (param $41 i64)
+    (param $42 f32)
+    (param $43 f64)
+    (param $44 i32)
+    (param $45 i32)
+    (param $46 i32)
+    (param $47 i64)
+    (param $48 f64)
+    (param $49 i32)
+    (param $50 i64)
+    (param $51 i64)
+    (param $52 f64)
+    (param $53 f64)
+    (param $54 f64)
+    (param $55 f64)
+    (param $56 f64)
+    (param $57 f64)
+    (param $58 i32)
+    (param $59 f32)
+    (param $60 f64)
+    (param $61 f64)
+    (param $62 i32)
+    (param $63 i64)
+    (param $64 f32)
+    (param $65 f32)
+    (param $66 f32)
+    (param $67 i32)
+    (param $68 f64)
+    (param $69 f64)
+    (param $70 f64)
+    (param $71 f64)
+    (param $72 f64)
+    (param $73 f32)
+    (param $74 i64)
+    (param $75 i64)
+    (param $76 i32)
+    (param $77 i32)
+    (param $78 i32)
+    (param $79 f32)
+    (param $80 f64)
+    (param $81 i32)
+    (param $82 i64)
+    (param $83 f32)
+    (param $84 f32)
+    (param $85 f32)
+    (param $86 i32)
+    (param $87 i32)
+    (param $88 f32)
+    (param $89 f64)
+    (param $90 i64)
+    (param $91 f32)
+    (param $92 f64)
+    (param $93 f32)
+    (param $94 f32)
+    (param $95 f32)
+    (param $96 i32)
+    (param $97 f32)
+    (param $98 i64)
+    (param $99 i32)
+    (result i32)
+    local.get $99
+    )
+  
+  (func $75 (type $5)
+    (param $0 i32)
+    (result i32)
+    f32.const 0x0.000000p-127
+    i32.const 0
+    i32.const 0
+    f64.const 0x0.0000000000000p-1023
+    f32.const 0x0.000000p-127
+    f32.const 0x0.000000p-127
+    f32.const 0x0.000000p-127
+    f64.const 0x0.0000000000000p-1023
+    f32.const 0x0.000000p-127
+    i32.const 0
+    i32.const 0
+    f32.const 0x0.000000p-127
+    f64.const 0x0.0000000000000p-1023
+    i64.const 0
+    i64.const 0
+    i32.const 0
+    i64.const 0
+    i64.const 0
+    f32.const 0x0.000000p-127
+    i64.const 0
+    i64.const 0
+    i64.const 0
+    i32.const 0
+    f32.const 0x0.000000p-127
+    f32.const 0x0.000000p-127
+    f32.const 0x0.000000p-127
+    f64.const 0x0.0000000000000p-1023
+    f32.const 0x0.000000p-127
+    i32.const 0
+    i64.const 0
+    f32.const 0x0.000000p-127
+    f64.const 0x0.0000000000000p-1023
+    f64.const 0x0.0000000000000p-1023
+    f32.const 0x0.000000p-127
+    i32.const 0
+    f32.const 0x0.000000p-127
+    f32.const 0x0.000000p-127
+    f64.const 0x0.0000000000000p-1023
+    i64.const 0
+    f64.const 0x0.0000000000000p-1023
+    i32.const 0
+    i64.const 0
+    f32.const 0x0.000000p-127
+    f64.const 0x0.0000000000000p-1023
+    i32.const 0
+    i32.const 0
+    i32.const 0
+    i64.const 0
+    f64.const 0x0.0000000000000p-1023
+    i32.const 0
+    i64.const 0
+    i64.const 0
+    f64.const 0x0.0000000000000p-1023
+    f64.const 0x0.0000000000000p-1023
+    f64.const 0x0.0000000000000p-1023
+    f64.const 0x0.0000000000000p-1023
+    f64.const 0x0.0000000000000p-1023
+    f64.const 0x0.0000000000000p-1023
+    i32.const 0
+    f32.const 0x0.000000p-127
+    f64.const 0x0.0000000000000p-1023
+    f64.const 0x0.0000000000000p-1023
+    i32.const 0
+    i64.const 0
+    f32.const 0x0.000000p-127
+    f32.const 0x0.000000p-127
+    f32.const 0x0.000000p-127
+    i32.const 0
+    f64.const 0x0.0000000000000p-1023
+    f64.const 0x0.0000000000000p-1023
+    f64.const 0x0.0000000000000p-1023
+    f64.const 0x0.0000000000000p-1023
+    f64.const 0x0.0000000000000p-1023
+    f32.const 0x0.000000p-127
+    i64.const 0
+    i64.const 0
+    i32.const 0
+    i32.const 0
+    i32.const 0
+    f32.const 0x0.000000p-127
+    f64.const 0x0.0000000000000p-1023
+    i32.const 0
+    i64.const 0
+    f32.const 0x0.000000p-127
+    f32.const 0x0.000000p-127
+    f32.const 0x0.000000p-127
+    i32.const 0
+    i32.const 0
+    f32.const 0x0.000000p-127
+    f64.const 0x0.0000000000000p-1023
+    i64.const 0
+    f32.const 0x0.000000p-127
+    f64.const 0x0.0000000000000p-1023
+    f32.const 0x0.000000p-127
+    f32.const 0x0.000000p-127
+    f32.const 0x0.000000p-127
+    i32.const 0
+    f32.const 0x0.000000p-127
+    i64.const 0
+    local.get $0
+    call $return-from-long-argument-list-helper
+    ))

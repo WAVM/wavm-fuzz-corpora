@@ -1,0 +1,10 @@
+(module
+  (type $0 (func (param funcref f64 funcref) (result f64)))
+  (type $1 (func (param i32 funcref v128)))
+  (type $2 (func (param externref i64 i64 funcref) (result v128 externref)))
+  (type $3 (func (result funcref funcref)))
+  (import "env" "table" (table $4 100 4294967295 funcref))
+  (import "env" "func0" (func $9 (param funcref f64 funcref) (result f64)))
+  (import globa ieg
+    unreachable
+    ))

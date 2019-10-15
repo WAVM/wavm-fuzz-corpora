@@ -1,0 +1,2 @@
+(func memory.atomic.wait64 memory.atomic.wait64
+)

@@ -1,0 +1,66 @@
+(module
+  (type $0 (func (param f64 f64) (result externref f32)))
+  (type $1 (func (result f64)))
+  (type $2 (func (param f64) (result i32 f64)))
+  (type $3 (func (result f64 i32 i32)))
+  (import "env" "global1" (global $7 (mut i32)))
+  (import "env" "global2" (global $8 f64))
+  (import "env" "global6" (global $9 (mut externref)))
+  (import "env" "func0" (func $18 (result f64)))
+  (table $4  67 4294967295 shared externref)
+  (table $5  15 4294967295 shared funcref)
+  (table $6  12 4294967295 externref)
+  (global $10  funcref (ref.null func))
+  (global $11  v128 (v128.const i32x4 0x28a678f7 0xbca3d7bd 0x71bd62c9 0x4ea7750d))
+  (global $12  (mut f64) (f64.const 0x1.a4ea4304ddba2p+62))
+  (global $13  i64 (i64.const -151853694555963183))
+  (elem $14 declare
+    $19 $18 $19 $19 $19 $18 $19 $19
+    $18 $18 $18 $18 $18 $18 $19 $18
+    $18 $19 $18 $19 $19 $19 $19 $19
+    $19 $19 $19 $19 $19 $18 $18 $18
+    $19 $19 $18 $19 $19 $18 $19 $18
+    $19 $19 $18 $18 $18 $18 $18 $19
+    $18 $18 $19 $19 $19 $18 $19 $18
+    $18 $19 $18 $18 $18 $18 $19)
+  (elem $15 (table $6) (i32.const 542122510) memory)
+  
+  (func $19 (type $0)
+    (param $0 f64)
+    (param $1 f64)
+    (result externref f32)
+    (local $2 externref)
+    (local $3 i64)
+    local.get $1
+    global.set $12
+    call $18
+    f32.demote_f64
+    ref.null func
+    call $18
+    loop $loop (param f64) (result i32 f64)
+      data.drop $16
+      loop $loop_0 (result f64 i32 i32)
+        global.get $13
+        global.get $8
+        v128.const i32x4 0x70d1eacc 0xc4b512f8 0x2142b888 0xe7a3d9b1
+        i32x4.all_true
+        global.get $11
+        i16x8.widen_low_i8x16_s
+        drop
+        table.get $6
+        ref.null extern
+        unreachable
+      end ;; $loop_0
+      i32.rem_u
+      unreachable
+    end ;; $loop
+    global.set $12
+    unreachable
+    )
+  
+  (data $16 
+    "\e8\de\c1\8ej\16\ee\02\eaZ\13\c9\1e\9c\e7\0d\c6\c5\caY")
+  
+  (data $17 
+    "\d8r\0c\ad0\8f\0d\ae\b4\bbw/\b6\8a\b2\"5\9fk\\c\b7\87\c8Cy\ab\f1\f8\d6{\89\00\fb\81\0c\05\aa\e7`\97sz\07kH\a12\1ahF\9b\d8~\fa\05\9e\16O\d3\06\94\1dW"
+    "\1cL\db\94\7f\c5\9a\bb-\077*\a2N\d7\0c"))

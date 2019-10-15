@@ -1,0 +1,4 @@
+(global
+f64	f64.const 6)(global
+f64	f64.const 5)(global
+f64	f64.const 0)

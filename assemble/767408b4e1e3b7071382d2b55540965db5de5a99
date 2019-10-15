@@ -1,0 +1,1 @@
+(func (res) (i16x8.max_u (r) (i16x8.max_u () (i16x8.max_u (r) (i16x8.max_u ) (i16x8.max_u)))(i16x8.max_u (r) (i16x8.max_u)) (i16x8.max_u)) ))y)

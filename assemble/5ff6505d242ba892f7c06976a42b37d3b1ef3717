@@ -1,0 +1,104 @@
+(module
+  (type $0 (func (result i32)))
+  (type $1 (func (param v128 externref funcref f64) (result f32)))
+  (type $2 (func))
+  (type $3 (func (param f64 v128 i64) (result v128 f32)))
+  (type $4 (func (param v128 i32 externref)))
+  (type $5 (func (result f32 v128)))
+  (type $6 (func (param funcref externref)))
+  (type $7 (func (param f64)))
+  (import "env" "memory" (memory $9 64 21959))
+  (import "env" "table" (table $8 21 4294967295 shared externref))
+  (import "env" "global1" (global $11 (mut i32)))
+  (import "env" "global2" (global $12 (mut i32)))
+  (import "env" "func0" (func $18 (param v128 externref funcref f64) (result f32)))
+  (import "env" "func1" (func $19))
+  (memory $10  49 61268 shared)
+  (global $13  (mut f64) (f64.const 0x1.ccedbc5d6d2a2p+63))
+  (elem $14 exception_type)
+  (elem $15 global
+    $12 $13 $13 $11 $11 $13 $12 $11
+    $11 $13 $11 $11 $11 $11 $13 $13
+    $13 $13 $13 $11 $11 $11 $12 $13
+    $13 $13 $12 $13 $11)
+  
+  (func $20 (type $0)
+    (result i32)
+    global.get $11
+    v64x2.load_splat $10 offset=4271918472 align=2
+    f32x4.abs
+    i64.const 8429571103943170204
+    i64x2.replace_lane 0
+    unreachable
+    )
+  
+  (func $21 (type $3)
+    (param $0 f64)
+    (param $1 v128)
+    (param $2 i64)
+    (result v128 f32)
+    (local $3 f32)
+    (local $4 f64)
+    nop
+    ref.null func
+    ref.is_null
+    v16x8.load_interleaved_4 offset=2773072066 align=8
+    loop $loop (result f32 v128)
+      v128.const i32x4 0xd6168459 0x8fb74e33 0x52f1e65b 0x3e5ee2e7
+      table.size $8
+      i8x16.shl
+      call $19
+      i16x8.bitmask
+      i64x2.load32x2_u $10 offset=1097326344
+      i32x4.widen_high_i16x8_s
+      i16x8.widen_low_i8x16_u
+      call $19
+      i32x4.abs
+      br $loop
+    end ;; $loop
+    local.set $1
+    f32x4.replace_lane 0
+    i16x8.add_saturate_u
+    i8x16.lt_u
+    f64x2.min
+    f64x2.neg
+    nop
+    i32x4.extract_lane 2
+    unreachable
+    )
+  
+  (func $22 (type $4)
+    (param $0 v128)
+    (param $1 i32)
+    (param $2 externref)
+    (local $3 f64)
+    (local $4 funcref)
+    local.get $0
+    f32x4.extract_lane 3
+    data.drop $17
+    ref.null func
+    local.tee $4
+    local.get $2
+    data.drop $16
+    loop $loop (param funcref externref)
+      data.drop $17
+      global.get $13
+      f64.floor
+      block $block (param f64)
+        drop
+        local.get $4
+        local.get $2
+        drop
+        local.set $4
+        return
+      end ;; $block
+      return
+    end ;; $loop
+    br 0
+    )
+  
+  (data $16 
+    "\f3\da\17\d1_\f9o\a6-\n\a1 Z{\d2[,\98\a9?\8c\8fz n\ac\df\e7")
+  
+  (data $17 
+    "\df\81\d2\a1\c7x\02V\02Y@\9e\07\83\93\a0\8cH\84\ce\b2,/\99\00\17%4\9c\1a\1e\d9\16sf)\ba\85\fc\c5\b2\ab\18j7\ec"))

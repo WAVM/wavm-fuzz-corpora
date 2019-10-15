@@ -1,0 +1,27 @@
+(module
+  (type $0 (func (result i64)))
+  (import "env" "table" (table $1 59 4294967295 externref))
+  (import "env" "global0" (global $4 f32))
+  (memory $2  65 4411 shared)
+  (memory $3  14 45297)
+  
+  (func $5 (type $0)
+    (result i64)
+    (local $0 i32)
+    v128.const i32x4 0xa7d763b4 0x77b835f8 0x8e7a341c 0xa2d09d4d
+    i16x8.neg
+    f32x4.extract_lane 1    i32.const 1055843513
+    v32x4.load_interleaved_3 offset=1026872720 align=1
+    local.get $0
+    i32x4.load16x4_s $3 offset=1510569155 align=2
+    i8x16.narrow_i16x8_u
+    f32x4.abs
+    f64x2.sqrt
+    i16x8.eq
+    f32x4.abs
+    i16x8.any_true
+    i32.load16_s $3 offset=4239620500
+    i8x16.shr_u
+    drop
+    unreachable
+    ))

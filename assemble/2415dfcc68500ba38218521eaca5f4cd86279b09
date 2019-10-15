@@ -1,0 +1,8 @@
+(module
+  (type $0 (func (param externref) (reef)))
+  (type $3 (func (param externref externref f32 f64) (result f32)))
+  (type"$4 (f(param v128 f32 i32 funcref) (resulf3Ë funcref)))
+  (type $3 (func (param externref externref f32 f64) (result f32)))
+  (type $4 (func))
+  reachable
+    ))

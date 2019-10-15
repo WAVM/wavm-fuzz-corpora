@@ -1,0 +1,52 @@
+(module
+  (type $0 (func (param f32 i64 v128 v128)))
+  (type $1 (func (param i64)))
+  (type $2 (func (result i64 i32 v128 v128)))
+  (import "env" "table" (table $3 39 4294967295 funcref))
+  (import "env" "global0" (global $6 (mut externref)))
+  (import "env" "global3" (global $7 i64))
+  (import "env" "global7" (global $8 f32))
+  (import "env" "global8" (global $9 (mut funcref)))
+  (import "env" "func0" (func $18 (param f32 i64 v128 v128)))
+  (memory $5  41 18408 shared)
+  (table $4  26 4294967295 shared funcref)
+  (global $10  i32 (i32.const -315015954))
+  (global $11  (mut i32) (i32.const 1211653754))
+  (global $12  (mut f32) (f32.const 0x1.a94e46p+26))
+  (global $13  i32 (i32.const -13296942))
+  (global $14  (mut i64) (i64.const 2774509073535506748))
+  (global $15  (mut i64) (i64.const 1537720510315902846))
+  
+  (func $19 (type $1)
+    (param $0 i64)
+    i64.const -7282029812397832491
+    global.get $6
+    global.get $12
+    global.get $15
+    f64.convert_i64_s
+    drop
+    ref.null extern
+    block $block (result i64 i32 v128 v128)
+      global.get $9
+      f64.const 0x1.99ec2c1053a29p+477
+      global.get $7
+      global.set $15
+      f64.ceil
+      i64.trunc_sat_f64_s
+      global.get $14
+      i64.mul
+      global.set $14
+      drop
+      memory.size
+      br 1
+    end ;; $block
+    i8x16.le_u
+    br 0
+    )
+  
+  (data $16 (i32.const -150531957)
+    "\d0/\e7\a1\01\f4\c4\d3K`\b6\a6\f1\98\13\8a\f7_\bdn\16\b0\a1\0c\dc\ec\e33\00o\b5C\8ek\c7\8e?y?G\ffn\845\a8[\0e\f0`\f6\d0Y\9e\ff\bb\ab\cd\e7\na]\eb\10\e7"
+    "E\b026C\bd\bc1Fk")
+  
+  (data $17 (i32.const -1302313875)
+    "\a8_r\df+\f3\fe\a7\fc\f8\d8ZP8\998\ea0\9b\07\07\89\00}'\ff/\beB\04\94`\07c,E\c5a\00\d6\c38\d5/\b5\b8U"))

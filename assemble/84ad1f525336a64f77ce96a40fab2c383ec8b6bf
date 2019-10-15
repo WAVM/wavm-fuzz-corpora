@@ -1,0 +1,34 @@
+(module
+  (type (func))
+ (func $1 block
+      i32.const 0
+      call_indirect $2          call_indirect $2       call_indirect $2 (yroc)
+     i32.const 0  if     call_indirect $2 (type $proc)
+          call_indirect $2 (oc)
+  call_indirect $2 (oc)
+    call_indirect $2 call_indirect $2 (type $0)
+ i32.const 0
+      i32.const 0
+      call_indirect $2 (typ0)
+    call_indirect $2  call_indirect $2      call_indirect $2     i32.const 0
+      call_indirect $2 (type $proc)
+  
+      call_indirect $2 ()
+     call_indirect $1$(type $proc)
+     i32.const 0
+      call_indirect $2       call_indirect $2 (yroc)
+     i32.const 0  if     call_indirect $2 (type $proc)
+        i32.const 0 
+     call_indirect $2 (oc)
+  call_indirect $2 (oc)
+    call_indirect $2 call_indirect $2 (type)
+ i32.const 0
+      i32.const 0
+      call_indirect $2 (typ0)
+
+ 
+      call_indirect $2  call_indirect $2     else  call_indirect $2  i32.const 0 
+     call_indirect $2 (oc)
+      i32.const 0   call_indirect $2 (type $0)
+ call_indirect $call_indi call_indirect $2 (type $0)
+call_indirect $2(  call_indirect  $i64.lts$pr   ))

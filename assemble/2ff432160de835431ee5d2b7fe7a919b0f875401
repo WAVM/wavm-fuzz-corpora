@@ -1,0 +1,1 @@
+(func i32.load 2 i32.load 2 i32.load 22 i32.load 2 i32.load 4 i32.load 22 i32.load 2 i32.load 2 .l ))

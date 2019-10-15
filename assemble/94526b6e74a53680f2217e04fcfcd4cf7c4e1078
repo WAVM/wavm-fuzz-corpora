@@ -1,0 +1,1 @@
+(func i32x4.widen_high_i16x8_u  loop   i32x4.widen_high_i16x8_u  i32.eq  i32x4.widen_high_i16x8_u   loop i32x4.widen_high_i16x8_u i32x4.widen_high_i16x8_u  loop   i32x4.widen_high_i16x8_u  i32.eq  i32x4.widen_high_i16x8_u   loop i32x4.widen_high_i16x8_u)

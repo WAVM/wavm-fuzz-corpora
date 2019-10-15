@@ -1,0 +1,14 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param funcref)))
+  (import "env" "global4" (global $3 (mut funcref)))
+  (import "env" "func0" (func $11))
+  (memory $2  46 46)
+  (global $4  (mut f64) (f64.const 0x1.c96cf4eb1fd1bp+61))
+  (global $5  (mut i32) (i32.const 1133212206))
+  (global $6  i32 (i32.const -112485241))
+  (elem $7 declare exception_type)
+  (elem $8 global
+    $3 $5 $5)
+  
+  (func $1 i32x4 0xb\d9\be\ba"))

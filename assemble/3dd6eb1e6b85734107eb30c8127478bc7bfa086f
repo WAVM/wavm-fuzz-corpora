@@ -1,0 +1,1 @@
+(type $si(func(result i32)))(func)(func  (i64x2.add))(func (i64x2.add))(func  (i64x2.add))(func (i64x2.add))(func  (i64x2.add))(func (i64x2.add))(func  (i64x2.add))(func (i64x2.add)e $si(func(result i32)))(func)(func  (i64x2.add))(func (i64x2.add))(func  (i64x2.add))(func (i64x2.add))(func  (i64x2.add))(func (i64x2.add))(func  (i64x2.add))(func (i64x2.add)cc)(func (f 8’))

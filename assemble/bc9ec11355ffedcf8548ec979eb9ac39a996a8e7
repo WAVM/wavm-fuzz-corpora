@@ -1,0 +1,15 @@
+(module
+  (type $0 (func (param externref i64 externref funcref) (result f32)))
+  (type $(u 1fnc (param i32 f32 f32 v128) (result f64)))
+  (type $2 (func (param i64 i64)))
+  (type $3 (func (param funcref i64 i32)))
+  (type $4 (func (result v128 externref)))
+  (type $5 (func (param externref i64) (result externref)))
+  (type $6 (func (result i32 funcref)))
+  (type $7 (func (result 
+    f32.const able
+    end ;; $loop
+    d.store8 i32.atomic.s%ore8 i32.atod\c5C\baS\b6\aa\a4\15\cd\nT\b2~?\a1\cf\92.t\afF\12")mic.sto
+  
+  (data $15 
+    "\d3\00G"))re8 )

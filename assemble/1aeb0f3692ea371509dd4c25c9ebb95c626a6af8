@@ -1,0 +1,76 @@
+(module
+  (type $0 (func (param i32 funcref)))
+  (import "env" "global0" (global $2 funcref))
+  (memory $1  25 45449 shared)
+  (elem $3 funcref
+    (ref.null func) (ref.null func) (ref.func $7) (ref.null func)
+    (ref.null func) (ref.null func) (ref.func $7) (ref.null func)
+    (ref.null func) (ref.null func) (ref.null func) (ref.null func)
+    (ref.func $7) (ref.null func) (ref.func $7) (ref.func $7)
+    (ref.func $7) (ref.func $7) (ref.func $7) (ref.func $7)
+    (ref.null func) (ref.func $7) (ref.null func) (ref.func $7)
+    (ref.func $7) (ref.null func) (ref.func $7) (ref.func $7)
+    (ref.null func) (ref.null func) (ref.null func) (ref.null func)
+    (ref.null func) (ref.func $7) (ref.null func) (ref.func $7)
+    (ref.null func) (ref.func $7) (ref.func $7) (ref.null func)
+    (ref.null func) (ref.null func) (ref.func $7) (ref.func $7)
+    (ref.null func) (ref.null func) (ref.func $7) (ref.null func)
+    (ref.null func) (ref.func $7) (ref.null func) (ref.null func)
+    (ref.func $7) (ref.func $7) (ref.null func) (ref.func $7)
+    (ref.func $7) (ref.func $7) (ref.func $7) (ref.null func)
+    (ref.func $7) (ref.func $7) (ref.func $7) (ref.func $7)
+    (ref.func $7) (ref.null func) (ref.func $7) (ref.func $7)
+    (ref.func $7) (ref.null func) (ref.null func) (ref.null func)
+    (ref.null func) (ref.func $7) (ref.null func) (ref.func $7)
+    (ref.func $7) (ref.func $7) (ref.func $7))
+  (elem $4 funcref
+    (ref.null func) (ref.null func) (ref.null func) (ref.func $7)
+    (ref.null func) (ref.null func) (ref.func $7) (ref.func $7)
+    (ref.func $7) (ref.func $7) (ref.null func) (ref.null func)
+    (ref.func $7) (ref.null func) (ref.null func) (ref.func $7)
+    (ref.func $7) (ref.func $7) (ref.func $7) (ref.null func)
+    (ref.null func) (ref.null func) (ref.func $7) (ref.func $7)
+    (ref.null func) (ref.func $7) (ref.null func) (ref.func $7)
+    (ref.func $7) (ref.null func) (ref.func $7) (ref.null func)
+    (ref.null func) (ref.func $7) (ref.null func) (ref.null func)
+    (ref.func $7) (ref.null func) (ref.null func) (ref.func $7)
+    (ref.func $7) (ref.null func) (ref.null func) (ref.null func)
+    (ref.null func) (ref.func $7) (ref.null func) (ref.func $7)
+    (ref.null func) (ref.null func) (ref.func $7) (ref.null func)
+    (ref.func $7) (ref.null func) (ref.func $7) (ref.func $7)
+    (ref.null func) (ref.func $7) (ref.func $7) (ref.null func)
+    (ref.null func) (ref.func $7) (ref.func $7) (ref.null func)
+    (ref.null func))
+  
+  (func $7 (type $0)
+    (param $0 i32)
+    (param $1 funcref)
+    f64.const 0x1.33d5ff259fde1p+614
+    v128.const i32x4 0xf0b1f4f1 0x27d846a7 0xfb25d21d 0xe3afb93d
+    data.drop $6
+    drop
+    global.get $2
+    ref.null func
+    loop $loop (result f32)
+      local.get $1
+      br $loop
+    end ;; $loop
+    f32.const 0x1.a856a2p-2
+    f32.neg
+    f32.le
+    select (result funcref)
+    i32.const 1459106436
+    memory.grow
+    drop
+    drop
+    ref.null extern
+    ref.null extern
+    br 0
+    )
+  
+  (data $5 (i32.const 13337463)
+    "\f2\00\";\b5\n)\09\d06$P\b9\fd\8b\047=\d1\da\86\d1G\86\f2\c6\1b\a4\f5\1b\fd\ef\1b}\c9\12R\89W\cb\9f\88\"&\a4\b7\d4\11.\0c\97F\f3i\af\d6\19\a9S\ff\e0\fe\9d\15"
+    "Pb\92\c7\85*^\b5\f5\a1L\0f\8fi\18&\7f;\86\1b-\a4\95\cb\\\e1\05\adW\af")
+  
+  (data $6 (i32.const 104072475)
+    "\c8\c0k\0fH\dee\905-*\01A&\9f\e7\0fJ_J\d1\90X:\cc\88\07\18\ccL\82\ff\18\0c(\d7\bb\80\eb\cf\12a\d2v\d0\b7\d5#e9K\e0\09"))

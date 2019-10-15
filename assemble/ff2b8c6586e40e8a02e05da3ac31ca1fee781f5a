@@ -1,0 +1,54 @@
+(module
+  (type $0 (func (param f32 funcref f64) (result externref i32)))
+  (type $1 (func (param i64 i32 funcref) (result i64 i64)))
+  (type $2 (func (param funcref) (result v128)))
+  (import "env" "global2" (global $6 (mut v128)))
+  (memory $3  41 52200 shared)
+  (memory $4  15 4671 shared)
+  (memory $5  28 10365)
+  (global $7  (mut i32) (i32.const 2108379234))
+  (global $8  i64 (i64.const -6003865343141913687))
+  
+  (func $10 (type $0)
+    (param $0 f32)
+    (param $1 funcref)
+    (param $2 f64)
+    (result externref i32)
+    (local $3 funcref)
+    (local $4 funcref)
+    (local $5 f64)
+    local.get $4
+    i64.const 4556280157583476814
+    i32.const 592649381
+    local.get $4
+    loop $loop (param i64 i32 funcref) (result i64 i64)
+      ref.is_null
+      f64.convert_i32_u
+      ref.null extern
+      global.get $7
+      i64.const 86068036714300963
+      local.get $4
+      local.set $1
+      i64.atomic.rmw.and $4 offset=2298482230
+      nop
+      local.get $1
+      loop $loop_0 (param funcref) (result v128)
+        br $loop_0
+      end ;; $loop_0
+      ref.null func
+      ref.is_null
+      i64x2.shr_s
+      global.set $6
+      drop
+      ref.null func
+      local.set $3
+      unreachable
+    end ;; $loop
+    i64.gt_u
+    ref.null func
+    local.set $4
+    unreachable
+    )
+  
+  (data $9 (memory $5) (i32.const -1232425941)
+    ")&>\06\85t\f8\e9\03\bb\85\12\ed\"\87\1dH\bbS\bd8\8a7\93\e5\08\82\17R\1f\01\e68\1a\94\00\15|\f6\93\f5\e1\a1\06\ae\ad\ea\ed5eF\9aw\cbX3\c7\b2\cbNt"))

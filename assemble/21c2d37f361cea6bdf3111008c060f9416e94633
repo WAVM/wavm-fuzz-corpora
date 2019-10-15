@@ -1,0 +1,41 @@
+(module
+  (type $0 (func (param v128) (result f32)))
+  (type $1 (func (result i32)))
+  (import "env" "memory" (memory $2 17 58474 shared))
+  (memory $3  2 183)
+  (global $4  (mut f64) (f64.const 0x1.cf996aaf1a2a9p+59))
+  
+  (func $5 (type $0)
+    (param $0 v128)
+    (result f32)
+    (local $1 externref)
+    ref.null extern
+    drop
+    v128.const i32x4 0x2453e58a 0xc1e73b73 0x53366100 0x95fa4331
+    i8x16.extract_lane_u 9
+    v16x8.load_splat $3 offset=649650684
+    i16x8.extract_lane_s 1
+    i64.atomic.load offset=2188824899
+    call $6
+    v8x16.load_interleaved_2 offset=1434753174 align=1
+    v128.xor
+    i8x16.all_true
+    i32.eqz
+    f32.reinterpret_i32
+    atomic.fence
+    i64.trunc_sat_f32_u
+    i64.add
+    drop
+    i64.const 990065339793491648
+    ref.null func
+    ref.null extern
+    ref.null func
+    ref.null extern
+    unreachable
+    )
+  
+  (func $6 (type $1)
+    (result i32)
+    (local $0 f32)
+    unreachable
+    ))

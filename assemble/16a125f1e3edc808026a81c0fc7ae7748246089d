@@ -1,0 +1,100 @@
+(module
+  (type $0 (func (result v128 f32)))
+  (type $1 (func (param externref v128) (result v128 v128)))
+  (type $2 (func (param i32) (result f32 v128)))
+  (type $3 (func (param funcref v128 f64 f32) (result externref)))
+  (type $4 (func (param f64 externref i32 funcref) (result externref)))
+  (type $5 (func (param v128) (result i32 f32)))
+  (import "env" "memory" (memory $7 69 9021 shared))
+  (import "env" "table" (table $6 10 4294967295 funcref))
+  (import "env" "global1" (global $8 v128))
+  (import "env" "func0" (func $13 (result v128 f32)))
+  (import "env" "func1" (func $14 (param externref v128) (result v128 v128)))
+  (import "env" "func2" (func $15 (param f64 externref i32 funcref) (result externref)))
+  (global $9  (mut v128) (v128.const i32x4 0xc87489ff 0xd4cce48d 0xfc83480d 0x476388a6))
+  (global $10  i32 (i32.const -563830438))
+  
+  (func $16 (type $2)
+    (param $0 i32)
+    (result f32 v128)
+    f32.const -0x1.4ad650p-62
+    i64.trunc_sat_f32_s
+    local.get $0
+    i32.popcnt
+    i64.load16_u offset=3030111957 align=1
+    i64.shr_u
+    ref.null func
+    i32.const 1749323553
+    i64.load16_u offset=3156152724
+    global.get $10
+    i64.load offset=2162957263 align=1
+    memory.size
+    local.set $0
+    i64.shr_s
+    i64.extend8_s
+    drop
+    ref.is_null
+    table.get $6
+    drop
+    drop
+    table.size $6
+    unreachable
+    )
+  
+  (func $17 (type $3)
+    (param $0 funcref)
+    (param $1 v128)
+    (param $2 f64)
+    (param $3 f32)
+    (result externref)
+    (local $4 externref)
+    (local $5 v128)
+    (local $6 v128)
+    (local $7 v128)
+    local.get $0
+    local.get $5
+    i16x8.neg
+    local.get $4
+    i64.const 6211017889884568398
+    i64.clz
+    local.get $5
+    i32x4.abs
+    loop $loop (param v128) (result i32 f32)
+      i16x8.neg
+      i32x4.any_true
+      i64.atomic.load offset=1566429926
+      global.get $9
+      i16x8.all_true
+      i32.extend16_s
+      table.get $6
+      ref.null func
+      drop
+      drop
+      drop
+      i32.const 659091802
+      f64.const 0x1.c623bea1559e3p+417
+      drop
+      global.get $10
+      i32.rem_s
+      i64.load16_u offset=1037129836
+      ref.null extern
+      drop
+      drop
+      global.get $10
+      i64.load16_u offset=2566167155 align=1
+      unreachable
+    end ;; $loop
+    local.set $3
+    table.get $6
+    ref.is_null
+    table.get $6
+    drop
+    ref.null extern
+    br 0
+    )
+  
+  (data $11 (i32.const -42823870)
+    "\8c\ff\0eWc\01fL\8c\e3\aa\a8\e1\df\bc=?\9e\aa\f9\de`d\ff>5\c62c")
+  
+  (data $12 (i32.const 1855543032)
+    "Lb\fd\d8\9e\b9\ef\e7\9b\9f\96A/]-\af\a7\80\c2\f7\02\ab1\07\e1\a9\88\1c\c4r\01\e5$\11\85\0c\c8\c7\f1^]G\f9"))

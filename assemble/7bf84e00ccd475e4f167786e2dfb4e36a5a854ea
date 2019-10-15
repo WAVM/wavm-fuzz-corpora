@@ -1,0 +1,1 @@
+(module  (func i8x16.abs(i32.const 0) i8x16.abs)

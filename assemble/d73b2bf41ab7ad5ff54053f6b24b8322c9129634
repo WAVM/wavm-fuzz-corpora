@@ -1,0 +1,10 @@
+(memory 1)(func()(nd_u)(i32.atomic.rmw16.and_u)(i32.atomic.rmw16.and_u
+)(i32.atomic.rmw16.and_u)(
+)(i32.atomic.rmw16.and_u)(i32.atu)(i32.atomic.rmw16.and_u
+)(i32.atomic.rmw16.and_u)(i32.atomic.rmw16.and_u
+)(i32.atomic.rmw16.and_u)(6.and_u)(i32.atomic.rmw16.and_u
+)(i32.atomic.rmw16.and_u)(
+)(i32.atomic.rmw16.and_u)(itu)(i32.atomic.rmw16.and_u
+)(i32.atomic.rmw16.and_u)(i32.atomic.rmw16.and_u
+)(i32.atomic.rmw16.and_u)(i32.atomic.rmw16.and_u
+))

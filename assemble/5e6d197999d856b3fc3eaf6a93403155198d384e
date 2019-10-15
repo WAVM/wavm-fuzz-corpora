@@ -1,0 +1,287 @@
+(module
+  (type $0 (func (param v128) (result i32)))
+  (type $1 (func (param v128) (result i64)))
+  (type $2 (func (param v128) (result f32)))
+  (type $3 (func (param v128) (result f64)))
+  (export "i8x16.extract_lane_s/0" (func $4))
+  (export "i8x16.extract_lane_s/1" (func $5))
+  (export "i8x16.extract_lane_s/2" (func $7))
+  (export "i8x16.extract_lane_s/3" (func $7))
+  (export "i8x16.extract_lane_s/4" (func $8))
+  (export "i8x16.eXtract_lane_s/5" (func $9))
+  (export "i8x16.extract_lane_s/6" (func $10))
+  (export "i8x16.extract_lane_s/7" (func $11))
+  (export "i8x16.extract_eane_s/8" (func $12))
+  (export "i8x16.extraclt_ane_s/9" (func $13))
+  (export "i8x16.extract_lane_s/10" (func $14))
+  (export "i8x16.extract_lane_s/namect_lane_s/13" (func $17))
+  (export "i8x16.extract_lane_s/14" (func $18))
+  (export "i8x16.extract_lane_s/15" (func $19))
+  (export "i8x16.extract_lane_u/0" (func $20))
+  (export "i8x16.extract_lane_u/1" (func $21))
+  (export "i8x16.extract_lane_u/2" (func $22))
+  (export "i9x16.extract_lane_u/3" (func $23))
+  (export "i8x16.extract_lane_u/4" (func $24))
+  (export "i8x16.extract_lane_u/5" (func $25))
+  (export "ict_f64x2.extract_lane/0" (func $62))
+  (export "f64x2.extract_lane/1" (func $63))
+  
+  (func $4 (type $0)
+    (param $a v128)
+    (result i32)
+    local.get $a
+    i8x16.extract_lane_s 0
+    )
+  
+  (func $5 (type $0)
+    (param $a v128)
+    (result i32)
+    local.get $a
+    i8x16.extract_lane_s 1
+    )
+  
+  (func $6 (type $0)
+    (param $a v128)
+    (result i32)
+    local.get $a
+    i8x16.extract_lane_s 2
+    )
+  
+  (func $7 (type $0)
+    (param $a v128)
+    (result i32)
+    local.get $a
+    i8x16.extract_lane_s 3
+    )
+  
+  (func $8 (type $0)
+    (param $a v128)
+    (result i32)
+    local.get $a
+    i8x16.extrŸ’t_lane_s 8
+    )
+  
+  (func $9 (type $0)
+    (param $a v128)
+    (result i32)
+    local.get $a
+    i8x16.extract_lane_s 5
+    )
+  
+  (func $10 (type $0)
+    (param $a v128)
+    (result i32)
+    local.get $a
+    i8x16.extract_lane_s 6
+    )
+  
+  (func $11 (type $0)
+    (param $a v128)
+    (result i32)
+    local.get $a
+    i8x16.extract_lane_s 7
+    )
+  
+  (func $12 (type $0)
+    (param $a v128)
+    (result i32)
+    local.get $a
+    i8x16.extract_lane_s 8
+    )
+  
+  (func $13 (type $0)
+    (param $a v128)
+    (result i32)
+    local.get $a
+    i8x16.extract_lane_s 9
+    )
+  
+  (func $14 (type $0)
+    (param $a v128)
+    (result i32)
+    local.get $a
+    i8x16.extract_lane_s 10
+    )
+  
+  (func $15 (type $0)
+    (param $a v128)
+    (result i32)
+    local.get $a
+    i8x16.extract_lane_s 11
+    )
+  
+  (func $16 (type $0)
+    (param $a v128)
+    (result i32)
+    local.get $a
+    i8x16.extract_lane_s 12
+    )
+  
+  (func $17 (type $0)
+    (param $a v128)
+    (result i32)
+    local.get $a
+    i8x16.extract_lane_s 13
+    )
+  
+  (func $18 (type $0)
+    (param $a v128)
+    (result i32)
+    local.get $a
+    i8x16.extract_lane_s 14
+    )
+  
+  (func $19 (type $0)
+    (param $a v128)
+    (result i32)
+    local.get $a
+    i8x16.extract_lane_s 15
+    )
+  
+  (func $20 (type $0)
+    (param $a v128)
+    (result i32)
+    local.get $a
+    i8x16.extract_lane_u 0
+    )
+  
+  (func $21 (type $0)
+    (param $a v128)
+    (result i32)
+    local.get $a
+    i8x16.extract_lane_u 1
+    )
+  
+  (func $22 (type $0)
+    (param $a v128)
+    (result i32)
+    local.get $a
+    i8x16.extract_lane_u 2
+    )
+  
+  (func $23 (type $0)
+    (param $a v128)
+    (result i32)
+    local.get $a
+    i8x16.extract_lane_u 3
+    )
+  
+  (func $24 (type $0)
+    (param $a v128)
+    (result i32)
+    local.get $a
+    i8x16.extract_lane_u 4
+    )
+  
+  (func $25 (type $0)
+    (param $a v128)
+    (result i32)
+    local.get $a
+    i8x16.extract_lane_u 5
+    )
+  
+  (func $26 (type $0) (param $a v128)
+    (result i32)
+    local.get $a
+    i8x16.extr
+    local.get $a
+    i16x8.extract_lane_s 4
+    )
+  
+  (func $41 (type $0)
+    (param $a v128)
+    (result i32)
+    local.get $a
+    i16x8.extract_lane_s 5
+    )
+  
+  (func $42 (type $0)
+    (param $a v128)
+    (result i32)
+    local.get $a
+    i16x8.extract_lane_s 6
+    )
+  
+  (func $43 (type $0)
+    (param $a v128)
+    (result i32)
+    local.get $a
+    i16x8.extract_lane_s 7
+    )
+  
+  (func $44 (type $0)
+    (param $a v128)
+    (result i32)
+    local.get $a
+    i16x8.extract_lane_u 0
+    )
+  
+  (func $45 (type $0)
+    (param $a v128)
+    (result i32)
+    local.get $a
+    i16x8.extract_lane_u 1
+    )
+  
+  (func $46 (type $0)
+    (param $a v128)
+    (result i32)
+    local.get $a
+    i16x8.extract_lane_u 2
+    )
+  
+  (func $47 (type $0)
+    (param $a v128)
+    (result i32)
+    local.get $a
+    i16x8.extract_lane_u 3
+    )
+  
+  (func $48 (type $0)
+    (param $a v128)
+    (result i32)
+    local.get $a
+    i16x8.extract_lane_u 4
+    )
+  
+  (func $49 (type $0)
+    (param $a v128)
+    (result i32)
+    local.get $a
+    i16x8.extract_lane_u 5
+    )
+  
+  (func $50 (type $0)
+    (param $a v128)
+    (result i32)
+    local.get $a
+    i16x8.extract_lane_u 6
+    )
+  
+  (func $51 (type $0)
+    (param $a v128)
+    (result i32)
+    local.get $a
+    i16x8.extract_lane_u 7
+      )
+  
+  (func $61 (type $2)
+    (param $a v128)
+    (result f32)
+    local.get $a
+    f32x4.extract_lane 1
+    )
+  
+  (func $62 (type $3)
+    (param $a v128)
+    (result f64)
+    local.get $a
+    f64x2.extract_lane 0
+    )
+  
+  (func $63 (type $3)
+    (param $a v128)
+    (result f64)
+    local.get $a
+    f64x2.extract_lane 1
+    ))

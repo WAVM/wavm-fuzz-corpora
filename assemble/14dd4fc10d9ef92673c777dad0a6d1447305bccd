@@ -1,0 +1,1 @@
+(func()!(param i32 f64 f32))(func()if(param i32 i64 i32 3)if(f64 f32))(func()if(param i32 i64 i32 4))

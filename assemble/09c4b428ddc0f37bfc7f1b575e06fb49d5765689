@@ -1,0 +1,72 @@
+(module
+  (type $0 (func (param i32 funcref f64) (result i64 f64)))
+  (type $1 (func (param funcref i32) (result i32 externref)))
+  (type $2 (func (param f64 funcref) (result i32 f64 v128)))
+  (import "env" "memory" (memory $3 64 13526 shared))
+  (import "env" "global2" (global $6 v128))
+  (memory $4  72 1215 shared)
+  (memory $5  63 19019)
+  (global $7  funcref (ref.null func))
+  (global $8  i64 (i64.const -451494273887169846))
+  
+  (func $10 (type $0)
+    (param $0 i32)
+    (param $1 funcref)
+    (param $2 f64)
+    (result i64 f64)
+    i32.const 1055450217
+    v32x4.load_interleaved_2 $5 offset=3600456045 align=2
+    i16x8.min_s
+    i64x2.extract_lane 0
+    i32.wrap_i64
+    i64.load16_u offset=1267337699 align=1
+    f64.reinterpret_i64
+    i64.trunc_f64_s
+    local.get $0
+    local.tee $0
+    v32x4.load_interleaved_2 $5 offset=289844717 align=2
+    i32x4.min_s
+    i32x4.bitmask
+    i16x8.load8x8_s $5 offset=1514497494
+    i32x4.trunc_sat_f32x4_u
+    drop
+    i64.extend16_s
+    ref.null extern
+    unreachable
+    )
+  
+  (func $11 (type $1)
+    (param $0 funcref)
+    (param $1 i32)
+    (result i32 externref)
+    (local $2 i32)
+    (local $3 f64)
+    (local $4 i32)
+    (local $5 funcref)
+    i64.const 5003245208072285955
+    local.get $2
+    f64.const 0x1.cee7f648925c2p-886
+    f64.floor
+    f64.abs
+    global.get $7
+    local.get $4
+    if $if (param f64 funcref) (result i32 f64 v128)
+      global.get $6
+      unreachable
+    else
+      memory.size $5
+      i64.const 4487528618880365692
+      global.get $7
+      local.get $2
+      i64.load8_u $4 offset=4143355765
+      unreachable
+    end ;; $if
+    ref.null extern
+    ref.is_null
+    ref.null extern
+    unreachable
+    )
+  
+  (data $9 (memory $5) (i32.const -1011009765)
+    "\ae\da?E\d8\89\06S\a7O{\e7R2\ce\f5\14i\07\ef\bb\df{\e3\"\da\ea\db\92\8ev\06\da(\8eq\c7v\df&\b5\f3F\a3j\1c\dd\e1mlA\n\df\f5l\a2\ac\de\d89G\ef\98\e8"
+    "\9b"))

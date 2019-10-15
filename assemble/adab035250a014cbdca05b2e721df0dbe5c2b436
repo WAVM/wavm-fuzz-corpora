@@ -1,0 +1,32 @@
+(module
+(func  f32.const +nan:0x4($0)03 f32.const Dnan:0x023 ) (func f32.const +nan:0x4(0)($0)  f32.const +nan:0x2 f32.const -nan:0xF
+ f32.const +nan:0x03F
+ f32.const +nan:0x03 f32.const +nan:0x023 ) (func f32.const +nan:0x4(0)($0)  f32.const +nan:0x4($0)f32.const +nan:0x2 f32.const -nan:0xF
+ f32.const +nan:0x0F
+ f32.const +nan:0x03 f32.const +nan:0x023 ) (func f32.const +nan:0x4(0)($0)  f32.const +nan:0x4($0)f32.const +nan:0x2 f32.const -nan:0xF
+ f32.const +nan:0x03 f32.const +nan:0x023 ) (func f32.const +nan:0x4(0)f32.const +nan:0x2 f32.const -nan:0x7F
+ f32.const +nan:0x02t +nan:0x023 ) (func f32.const +nan:0x4(0)f32.const +nan:0x2 f32.const -nan:0x7F
+ f32.const +nan:0x0 f32.const +nan:0x023 f32.const +nan:0x4()f32.const +nan:0x2 f32.const -nan:0x7F
+ f32.const 0x4(0)f32.const +nan:0x2 f32.const -nan:0x7F
+ f32.const +nan:0x023 f32.const +nan:0x4()f32.const +nan:0x2 f32.const -nan:0x7F
+ f32.cons023 ) (func f32.const +nan:0x4(0)($0)  f32.const +nan:0x4($0)f32.const +nan:0x2 f32.const -nan:0xF
+ f32.const +nan:0x03 f32.const +nan:0x023 ) (func f32.ct +nan:0x023 ) (func f32.const +nan:0x4(0)f32.const +nan:0x2 f32.cons-nan:0x7F
+ f320x023 ) (func f32.const +nan:0x4(0)($0)  f32.const +nan:0x4($0)f32.const +nan:0x2 f32.const -nan:0xF
+ f32.const +nan:0x0F
+ f32.const +nan:0x03 f32.const +nan:0x023 ) (func f32.const +nan:0x4(0)($0)  f32.const +nan:0x4($0)f32.const +nan:0x2 f32.const -nan:0xF
+ f32.const +nan:0x03 f32.const +nan:0x023 ) (func f32.const +nan:0x4(0)f32.const +nan:0x2 f32.const -nan:0x7F
+ f32.const +nan:0x023 f32.const +nan:0x4()f32.const +nan:0x2 f32.const -nan:0x7F
+ f32.const +nan:0x023 f32.const nan:0x3 f32.cof32.const  f32.const +nan:0x023 ) (func f32.const +nan:0x4(0)f32.const +nan:0x2 f32.const -nan:0x7F
+ f32.const onst +nan:0x023 ) (func f32.const +nan:0x4(0)f32.const +nan:0x2 f32.const -nan:0x7F
+ f32.const +nan:0x0 f32.const -nan:0x7F
+ f32.const +nan:0x0 f32.const +nan:0x023 f32.const +nan:0x4()f32.const +nan:0x2 f32.const -nan:0x7F023 f32.const +nan:0x4()f32.const +nan:0x2 f32.const -nan:0x7F
+ f32.const +nan:0x023 f32.const nan:0x3 f32.cof32.const  f32.const +nan:0x023 ) (func f32.const +nan:0x4(0)f32.const +nan:0x2 f32.const -nan:0x7F
+ f32.const +nan:0x0 f32.const +nan:0x023 f32.const +nan:0x4()f32.c.const +nan:0x023 ) (func f32.const +nan:0x4(0)f32.const +nan:0x2 f32.const -nan:0x7F
+ f32.const +nan:0x0 f32.const +nan:0x023 f32.const +nan:0x4()f32.const -nan:0x7F
+ f32.const +nan:0x023 f32.const +nan:0x4()f32.const +nan:0x2  f32.const +nan:0x4(0)($0)  f32.const +nan:0x4($0)f32.const +nan:0x2 f32.const -nan:0xF
+ f32.const +nan:0x03 f32.const +nan:0x023 ) (func f2.ct +nan:0x023 ) (func f32.const +nan:0x4(0)f32.const +nan:0x2 f32.cons-nan:0x7F
+ f320x023 ) (func f32.const +nan:0x4(0)($0)  f32.const +nan:0x4($0)f32.const +nan:0x2 f32.const -nan:0xF
+ f32.const +nan:0x0F
+ f32.const +nan:0x03 f32.const +nan:0x023 ) (func f32.const +nan:0x4(0)($0)  f32.const +nan:0x4($0)f32.const +nan:0x2 f32.const -nan:0xF
+ f32.const +nan:0x03 f32.const +nan:0x023 ) (func f32.const +nan:0x4(0)f32.const +nan:0x2 f32.const -nan:0x7F
+ f32.const +nan:0x023 f32.const +nan:0x4()f32.const +na0x4)

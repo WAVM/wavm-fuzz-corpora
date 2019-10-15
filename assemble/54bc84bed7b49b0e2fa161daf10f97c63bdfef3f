@@ -1,0 +1,63 @@
+(module
+  (type $0 (func (param f64 i32 i32 f64) (result externref f64)))
+  (type $1 (func (param f32 funcref funcref f32)))
+  (type $2 (func (result f32)))
+  (type $3 (func (param i32) (result f64 i32)))
+  (import "env" "memory" (memory $7 85 21259))
+  (import "env" "table" (table $4 89 4294967295 shared funcref))
+  (import "env" "table" (table $5 10 4294967295 shared funcref))
+  (import "env" "func0" (func $11 (result f32)))
+  (memory $8  82 54955 shared)
+  (memory $9  89 38873)
+  (table $6  34 4294967295 shared funcref)
+  (elem $10 table
+    $6 $6 $4 $5 $5 $4 $6 $4
+    $6 $6 $4 $6 $5 $6 $6 $5
+    $4 $4 $5 $4 $6 $4 $5 $4
+    $5 $5 $4 $4 $5 $5 $4 $6
+    $5 $4 $4 $6 $4 $5 $5 $5
+    $4 $5)
+  
+  (func $12 (type $0)
+    (param $0 f64)
+    (param $1 i32)
+    (param $2 i32)
+    (param $3 f64)
+    (result externref f64)
+    (local $4 f32)
+    (local $5 f32)
+    (local $6 funcref)
+    local.get $1
+    drop
+    atomic.fence
+    v128.const i32x4 0x100ba2f4 0x4610e99d 0x09f3ca36 0xa661c6ee
+    atomic.fence
+    call $11
+    unreachable
+    )
+  
+  (func $13 (type $1)
+    (param $0 f32)
+    (param $1 funcref)
+    (param $2 funcref)
+    (param $3 f32)
+    (local $4 f64)
+    local.get $3
+    local.get $1
+    i32.const 1092105861
+    table.size $4
+    v32x4.load_splat offset=1479707674 align=2
+    local.get $0
+    f32x4.replace_lane 0
+    i32x4.neg
+    i8x16.all_true
+    loop $loop (param i32) (result f64 i32)
+      i16x8.load8x8_u $9 offset=221719971 align=4
+      atomic.fence
+      i16x8.extract_lane_s 6
+      i32.load $9 offset=1436653894
+      i32x4.load16x4_u offset=2538121775 align=1
+      return
+    end ;; $loop
+    unreachable
+    ))

@@ -1,0 +1,1 @@
+(memory 5)(func x())(func(i32.atomic.rmw8.cmpxchg_u(i32))(i32.atomic.rmw8.cmpxchg_u)))

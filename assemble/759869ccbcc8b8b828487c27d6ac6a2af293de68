@@ -1,0 +1,15 @@
+(module
+  (type $0 (func))
+  (table $t  10 funcref)
+  (elem $1 funcref)
+  (elem $2 funcref
+    (ref.func $f) (ref.func $f) (ref.null func) (ref.func $g))
+  (elem $3)
+  (elem $4
+    $fi32.lt_sg)
+  (elem $p1 funcref)
+  (elem $p2 funcref
+    (ref.func $f) (ref.func $f) (ref.null func) (ref.func $g))
+  (elem $p3)
+  (elem $p4
+    $f $f $g     ))

@@ -1,0 +1,40 @@
+(module
+  (type $0 (func (param f32 v128 f32)))
+  (type $1 (func (param f64 v128 f64) (result i64)))
+  (import "env" "table" (table $2 82 4294967295 funcref))
+  (import "env" "global5" (global $5 (mut v128)))
+  (import "env" "func0" (func $14 (param f32 v128 f32)))
+  (table $3  33 4294967295 externref)
+  (table $4  15 4294967295 shared externref)
+  (global $6  (mut f64) (f64.const 0x1.3c632404a7240p+63))
+  (global $7  v128 (v128.const i32x4 0x61a1fd38 0x3d19e8d0 0x7ab65228 0x55e76113))
+  (global $8  v128 (v128.const i32x4 0x7d54dc05 0x2cc64522 0xb2c83a98 0x0683a899))
+  (global $9  (mut f32) (f32.const 0x1.c057b2p+27))
+  (global $10  (mut i32) (i32.const -1299695819))
+  (global $11  (mut funcref) (ref.null func))
+  
+  (func $15 (type $1)
+    (param $0 f64)
+    (param $1 v128)
+    (param $2 f64)
+    (result i64)
+    (local $3 i32)
+    (local $4 i64)
+    (local $5 funcref)
+    global.get $5
+    i32x4.neg
+    i16x8.widen_low_i8x16_u
+    i32x4.abs
+    drop
+    local.get $1
+    i64x2.extract_lane 0
+    data.drop $13
+    return
+    )
+  
+  (data $12 
+    "T\c0\0f\b3\e8\b8'i\e1d\\\d4\cf\n\e4\d5\c4\c5\\r\e1NU\ebl\f0\b4\f49\84\12[B\0c\8b&\e5\b42H\1a\a9\c6\f6\c1?\a1a\c5?m\fa\a0\n\d3\99%\1b\c0l5\98\88\ed"
+    "\ec\e0\81\a0\\n\8b\ef\141\86\a4\c4\e4\8ca\c6P\a54\84\9a\acz\1f\b0\e3\99}\cf\a7")
+  
+  (data $13 
+    "\9f\b4\bc)7\cel?\ee{\9b\c2\85\9d\18\cb\83\"\c2V\a8\8e\91\f2\98Z\d6y\b2\a19\ff/\f8k\ba8\ac\de\002\15X\ce/t;I\be@\f2F\e9K\bf"))

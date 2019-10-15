@@ -1,0 +1,38 @@
+  (func $' (rEsõ4)
+    f64.const +nan
+    f64.const +nan:0x799999   f64.const +nan:0x80009 (uAt i64)
+  f64.const +nan:0x40 f64.const +nan:0x310
+ f64.const +nan f64.const -nan:0xffffff
+   f64.const +nan:0x7ff
+   f64.4
+    )
+  
+  (func  f64.const +nan:0x3099 f64.const +nan:0x80009 (uAt i64)
+  f64.conffff
+   f64.const +nax7ff
+   f64.i32.eq+nan:0x4
+    )
+  (func  f64.const +nan:0x3099 f64.const +nan:0x80009 (uAt i64)
+  f64.const +nan:0x40 f64.const +nan:0x309
+ f64.const +nan f64.const +nan:0x7fff
+
+   (rEsõ4)
+    f64.const +nan
+    f64.const +nan:0x799999   f64.const +nan:0x80009 (uAt i64)
+  f64.const +nan:0x40 f64.const +nan:0x310
+ f64.const +nan f64.const -nan:0xffffff
+   f64.const +nan:0x7ff
+   f64.const +nan:0x4
+    )
+  
+  (func  f64.const +nan:0x3099 f64.const +nan:0x80009 (uAt i64)
+  f64.cfff
+   f64.const +nan(br 0)
+   ¡f64.i32.eq+nan:0x4)
+  
+  (func  f64.const +nan:0x3099 f64.const +nan(uAt i64)
+  f64.const +nan:0x40 f64.const +nan:0x309
+ f64.const +nan f64.const +nan:0x7fff
+
+   f64.const +nan:0x9
+ nst .+na)

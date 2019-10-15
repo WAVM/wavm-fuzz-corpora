@@ -1,0 +1,42 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param externref i32) (result f64))  )
+(type $2 (func (param f64) (result v128 i32)))
+  (import "env" "memory" (memory $3 33 52112 shared))
+  (import "env" "memory" (memory $4 49 24345 shared))
+  (import "env" "memory" (memory $5 31 1122 shared))
+  (import "env" "func0" (func $7 (param externref i32) (result f64)))
+  (import "env" "func1" (func $8 (param f64) (result v128 i32)))
+  (elem $6 declare funcref
+    (ref.func $9) (ref.null func) (ref.func $7) (ref.func $8)
+    (ref.func $7) (ref.func $9) (ref.func $8) (ref.null func)
+    (ref.func $9) (ref.func $7) (ref.func $9) (ref.func $8)
+    (ref.func $8) (ref.func $7) (ref.null func) (ref.func $7)
+    (ref.func $9) (ref.func $7) (ref.func $8) (ref.null func)
+    (ref.func $9) (ref.func $7))
+  
+  (func $9 (type $0)
+    (local $0 externref)
+    (local $1 f32)
+    (local $2 i64)
+    ref.null extern
+    loop $loop (result funcref)
+      memory.size
+      f64.const 0x1.40ef29f84758ep+602
+      f64x2.splat
+      drop
+      local.get $2
+      f64.convert_i64_u
+      f64x2.splat
+      i16x8.any_true
+      i64.load $5 offset=3927761909 align=2
+      f64.convert_i32_sub_u $5 offset=900260775
+      i64.extend16_s
+      f64.reinterpret_i64
+      i64.const 2428316772133658627
+      local.set $2
+      br $loop
+    end ;; $loop
+    drop
+    unreachable
+    ))

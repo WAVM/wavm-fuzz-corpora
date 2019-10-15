@@ -1,0 +1,29 @@
+(module
+  (type $0 (func (param f32 v128) (result externref f32)))
+  (import "env" "memory" (memory $1 40 24555 shared))
+  (import "env" "memory" (memory $2 29 23654 shared))
+  (import "env" "global0" (global $4 v128))
+  (import "env" "global2" (global $5 f32))
+  (import "env" "global3" (global $6 v128))
+  (import "env" "global5" (global $7 funcref))
+  (import "env" "global8" (global $8 (mut f32)))
+  (import "env" "func0" (func $15 (param f32 v128) (result externref f32)))
+  (memory $3  43 36119 shared)
+  (global $9  i64 (i64.const 4582279732607379190))
+  (global $10  (mut i32) (i32.const -715128315))
+  (global $11  externref (ref.null extern))
+  (global $12  f64 (f64.const 0x1.f0a2bbc25d500p+63))
+  (elem $13 declare memory
+    $1 $3 $2 $1 $1 $2 $3 $3
+    $1 $1 $3 $3 $3 $3 $1 $2
+    $2 $3 $1 $3 $1 $3 $2 $1
+ $3 $2
+    $2 $2 $3 $2 $1 $3 $3 $1
+    $2 $3 $2 $2 $2 $2 $3 $2
+    $1 $3 $2 $1 $3 $2 $3 $2
+    $2 $2 $1 $1 $1 $3 $2 $1
+    $2 $1 $3 $2 $3 $1 $3 $1
+    $1 $2 $2)
+  (elem $14 global
+  0 $8 $5 $12 $7 $9 $6 $4 $9
+    $8 $12))

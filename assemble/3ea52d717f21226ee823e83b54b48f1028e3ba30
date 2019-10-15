@@ -1,0 +1,2 @@
+(table $0  1 funcref)
+(elem  $a (i32.const 5)) (func  table.init $a  table.init $a table.init $a table.init $a table.init $a tab)

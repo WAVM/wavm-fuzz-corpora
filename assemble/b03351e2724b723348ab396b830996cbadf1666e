@@ -1,0 +1,15 @@
+(func 
+ f64.const +nan f64.const -nan   f64.const -nan:0x80    f64.const -nan:0xf f64.const -nan:0x81 f64.const -nan   f64.ÿÿÿÿÿÿÿÿan:0:0xf f64.const -nan:0x81e (func $86))  
+  (func  f64.const +nan f64.const -nan   f64.const -nan:0x80    
+ f64.const +nan f64.const -nan   f64.const -nan:0x80    f64.const -nan:0xf f64.const -nan:0x81 f64.const -nan   f64.co4.const -nan:0x81an:0xf f64.const -nan:0x81e (func $86))  
+  (func  f64.const +nan f64.const -nan   f64ÿÿÿÿÿÿÿÿÿÿÿ -nan:0x81e (func $86))  
+  (func  f64.const +nan f64.const -nan   f64.const -nan:0x80    
+ f64.const +nan f64.const -nan   f64.const -nan:0x80    f64.const -nan:0xf f64.const -nan:0x81 f64.const -nan   f64.const -f32.trf cnu  64.const -nan:0xf f64.const -nan:0x81e (func $86))  
+  (func  f64.const +nan f64.const -nan   f64.const -nan:0x80    f64.c0x81e (func $86))  
+  (func  f64.const +nan f64.const -nan   f64.const -nan:0x80    f64.cf f64.const -nan:0x81e (func $86))  
+  (func  f64.const +nan f64.const -nan   f64.const -nan:0x80    
+ f64.const +nan f64.const -nan   f64.const -nan:0x80    f64.const -nan:0xf f64.const -nan:0x81 f64.const -nan   f64.const -0xf f64.const -nan:0x81e (func $86))  
+  (func  f64.const +nan f64.const -nan   f64.const -nan:0x80    f64.const -nan:0xf f64.const -nan:0xe (func $86))  
+  (func  f64.const +nan f64.const -nan   f64.64.co f64.c:0xf f64.const -nan:0xe (func $86))  
+  (func  f64.const +nan f64.const -nan   f64.64.co f64.const -nan:0xf f64.const -nan:0xe (funb $86))  
+  (func  f64.const +nan f64.const -nan   f64.64.const -n:0xf+na:n0x8064)

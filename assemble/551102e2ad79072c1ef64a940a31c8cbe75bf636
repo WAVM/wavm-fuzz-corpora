@@ -1,0 +1,1 @@
+(func(import "x" ""))(func(import "" ""))(func(import "" ""))(func(import "" "G")))fu"""

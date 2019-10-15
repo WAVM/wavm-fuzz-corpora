@@ -1,0 +1,33 @@
+(func br 0
+i32.shl
+i32.shl
+i32.shl
+i32.shl
+i32.shl
+i32.shl
+i32.shl
+i32.shl
+i32.shl
+i32.shl
+i32.shl
+i32.shl
+i32.shl
+i32.shl
+i32.shl
+i32.shl(drop))(func br 0
+i32.shl
+i32.shl
+i32.shl
+i32.shl
+i32.shl
+i32.shl
+i32.shl
+i32.shl
+i32.shl
+i32.shl
+i32.shl
+i32.shl
+i32.shl
+i32.shl
+i32.shl
+i32.shl(drop))

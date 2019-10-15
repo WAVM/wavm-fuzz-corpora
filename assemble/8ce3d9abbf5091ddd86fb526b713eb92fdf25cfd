@@ -1,0 +1,7 @@
+(module
+  (type $0 (func (result v128) 
+)) 
+  (func $2  (result v128)
+    v128.const i32x4 0x00000000 0x0 0x000001 00   i32.const 1
+    i16x8.replace_lane 7
+    ))

@@ -1,0 +1,107 @@
+(module
+ (func i3d*_lnad i8x16õne
+ i2.con&tt 1
+ ) 
+(func i32.const 
+0    v128.load
+ 1
+   i16x8.narrow_i32x4_s    i16x8.narrow_i32x4_s  v12.lo) 
+(func i32.const 
+0    v128.load
+ 1
+   i16x8.narrow_i32x4_s nad i8x16õne
+ i2.con&tt 1
+ ) 
+(func i32.const 
+0    v128.load
+ 1
+   i16x8.narrow_i32x4_s    i16x8.narrow_i32x4_s  v12.lo) 
+(func i32.const 
+0    v128.load
+ 1
+   i16x8.narrow_i32x4_s  6õne
+ i2.con&tt 1
+ ) 
+(func i32.const 
+0    v128.load
+ 1
+   i16x8.narrow_i32x4_s    i16x8.narrow_i32x4_s  v2.lo) 
+(func i32.const 
+0    v128.load
+ 1
+   i16x8.narrow_i32x4_s    i16x8.narrow_i8x16.ge_u   droopad
+ i32.cons+t 1
+ ) 
+(func i32.const 
+0    v128.load
+ 1
+   i16x8.narrow_i32x4_s    i16x8.narrow_i32x4_s  v12.load ins+t 1
+ ) 
+(func i32.const 
+0    v128.load
+ 1
+   i16x8.narrow_i32x4_s    i16x8.narrow_i32x4_s  v12. i8x16.ne
+ i2.Yon&t 0
+    v12 v121
+ ) 
+(func iarrow_i3i64.atomic.rmw32.or_u 1
+ ) 
+(func i32.const 
+0    v128.load
+ 1
+   i16x8.narrow_i32x4_s    i16x8.narrow_i32x4_s ) 
+(func i32.const 
+0    v128.load
+ 1
+   i16x8.narrow_i32x4_s    i16x8.narrow_i32x4_s  v12.lo) 
+(func i32.const 
+0    v128.load
+ 1
+   i16x8.narrow_i32x4_s nad i8x16õne
+ i2.con&tt 1
+ ) 
+(func i32.const 
+0    v128.load
+ 1
+   i16x8.narrow_i32x4_s    i16x8.narrow_i32x4_s  v12.lo) 
+(func i32.const 
+0    v128.load
+ 1
+   i16x8.narrow_i32x4_s  6õne
+ i2.con&tt 1
+ ) 
+(func i32.const 
+0    v128.load
+ 1
+   i16x8.narrow_i32x4_s    i16x8.narrow_i32x4_s  v2.lo) 
+(func i32.const 
+0    v128.load
+ 1
+   i16x8.narrow_i32x4_s    i16x8.n.cons+t 1
+ ) 
+(func i32.const 
+0    v128.load
+ 1
+   i16x8.narrow_i32x4_s    i16x8.narrow_i32x4_s  v12.load ins+t 1
+ ) 
+(func i32.const 
+0    v128.load
+ 1
+   i16x8.narrow_i32x4_s    i16x8.narrow_i32x4_s  vw_i3i62.atomic.rmw32.or_u 1
+ ) 
+(func i32.const 
+0    v128.load
+ 1
+   i16x8.narrow_i32x4_s    i16x8.narrow_i32x4_s  v12. i8x16.1
+ ) 
+(func i32.const 
+0    v128.load
+ 1
+   i16x8.narrow_i32x4_s    v12. i8x16.1
+ ) 
+(func i32.const 
+0    v128.load
+ 1
+   i16x8.narrow_i32x4_s    i16x8ai2&c16x8.nu ÿ  v128.load
+ i32.16
+    ))

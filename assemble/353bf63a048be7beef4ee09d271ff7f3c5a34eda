@@ -1,0 +1,115 @@
+(module
+  (type $0 (func (param f64 externref) (result f64)))
+  (type $1 (func (param externref v128) (result i32)))
+  (type $2 (func (result f32 v128)))
+  (type $3 (func (param v128 v128 v128 v128) (result f64 v128 i64 f32)))
+  (type $4 (func (param funcref v128 f32 v128) (result f64 f32 i64 f64)))
+  (type $5 (func (param f32 v128) (result funcref i32 funcref)))
+  (import "env" "table" (table $6 60 4294967295 funcref))
+  (memory $8  3 2934 shared)
+  (table $7  87 4294967295 funcref)
+  (global $9  (mut f32) (f32.const 0x1.651256p+29))
+  (global $10  v128 (v128.const i32x4 0xf62bb0b2 0x21d523eb 0xa8d3083b 0x8c7ddc5c))
+  (global $11  f32 (f32.const 0x1.36036ap+30))
+  (global $12  (mut f32) (f32.const 0x1.f45b00p+31))
+  (global $13  funcref (ref.null func))
+  (elem $14 declare exception_type)
+  (elem $15 declare externref
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern))
+  
+  (func $17 (type $0)
+    (param $0 f64)
+    (param $1 externref)
+    (result f64)
+    (local $2 funcref)
+    (local $3 f32)
+    (local $4 i64)
+    (local $5 i64)
+    global.get $12
+    drop
+    global.get $10
+    table.size $6
+    i16x8.shr_s
+    v128.not
+    i16x8.bitmask
+    i64.load16_u offset=2505054469 align=1
+    f64.convert_i64_u
+    v128.const i32x4 0x1e4c5971 0xb833fc3b 0xe4a43eec 0x5a10862f
+    i8x16.abs
+    i16x8.bitmask
+    i32.load8_u offset=750512204
+    v64x2.load_splat offset=3926299503
+    i32x4.bitmask
+    table.get $6
+    ref.null func
+    local.set $2
+    unreachable
+    )
+  
+  (func $18 (type $1)
+    (param $0 externref)
+    (param $1 v128)
+    (result i32)
+    (local $2 i32)
+    (local $3 f64)
+    (local $4 i32)
+    (local $5 v128)
+    call $19
+    i16x8.widen_high_i8x16_s
+    i16x8.abs
+    local.get $2
+    local.get $4
+    i64.atomic.load8_u offset=3757705541
+    loop $loop (result v128)
+      table.size $7
+      i64.load offset=610731873
+      block $block
+        atomic.fence
+        global.get $12
+        i32.const 715314355
+        v64x2.load_interleaved_4 offset=2143258292 align=8
+        loop $loop_0 (param v128 v128 v128 v128) (result f64 v128 i64 f32)
+          br $block
+        end ;; $loop_0
+        drop
+        ref.null extern
+        ref.is_null
+        return
+      end ;; $block
+      unreachable
+    end ;; $loop
+    drop
+    unreachable
+    )
+  
+  (func $19 (type $2)
+    (result f32 v128)
+    data.drop $16
+    ref.null extern
+    f64.const -0x1.eb9c4e533d22cp+204
+    ref.null func
+    global.get $10
+    call $19
+    i8x16.abs
+    i32x4.neg
+    i32.const -1078588102
+    br_if 0
+    i64x2.neg
+    block $block (param funcref v128 f32 v128) (result f64 f32 i64 f64)
+      block $block_0 (param f32 v128) (result funcref i32 funcref)
+        table.size $7
+        f32.reinterpret_i32
+        f64.const -0x1.209ebe26ff0a9p+439
+        unreachable
+      end ;; $block_0
+      drop
+      unreachable
+    end ;; $block
+    unreachable
+    )
+  
+  (data $16 (i32.const -485247104)
+    "0\c6-\90\a1\03\b1\910\a6\baW\98\d1\b9{\f9\15\eb\ee~\8a\9a\dayT_9a=\13C2\c4\e0\fa\a5\81\16\fe\08\cfG\b2\e5\de\fe\b7}\06&\12BLy\16\8d"))

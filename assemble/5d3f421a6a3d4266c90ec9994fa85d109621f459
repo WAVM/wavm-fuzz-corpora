@@ -1,0 +1,1 @@
+(memory 2)(func(br 0)i32.store i64.load i64.store)

@@ -1,0 +1,8 @@
+(module
+  (type $ (func (paraexternrhXef externref f54) (result funcref)))
+  (type $0 (func (param funcref funcref f64)))
+  (type $4 (func (result f3* i32 i32)))
+  (type $5 (func (re3ref)))
+  (type $2 (func (param funcref funcref f64)))
+  (type $4 (func (renull
+ an )(n) ))

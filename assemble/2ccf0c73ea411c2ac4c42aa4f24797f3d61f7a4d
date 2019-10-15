@@ -1,0 +1,4 @@
+(module  (memory 0)
+ (func i32.const 14 i64.const 2  i64.atomic.rmw16.xor_u
+ drop
+   ))

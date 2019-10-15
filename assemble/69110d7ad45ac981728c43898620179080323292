@@ -1,0 +1,7 @@
+(func()i32.atomic.store16
+i32.atomic.store16
+i32.atomic.store16
+i32.atomic.store16)(func()i32.atomic.store16
+i32.atomic.store16
+i32.atomic.store16
+i32.atomic.store16)

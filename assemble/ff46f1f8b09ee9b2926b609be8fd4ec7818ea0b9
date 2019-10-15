@@ -1,0 +1,1 @@
+(func if $i32.atomic.rmw16.cmpxchg_uSSSSSSSggggggggggggggggoadgggggggggSSSSSSSSSSSSSSSSS'''''''i04.rem_s'''''''''SSSSSSSSexportggggggggggggggggoadgggggggggSSSSSSSSSSSSSSSSSSS'''''i64.rem_s'''''''''''n2!)

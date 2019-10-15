@@ -1,0 +1,1 @@
+(func (i32.wrap_i64(i32.wrap_i64(rE)(i32.wrap_i64(i32.wrap_i64(i32.wrap_i64(i32.wrap_i64(xp)))(i32.wrap_i64()8op)))))(i32.wrap_i64(op)))

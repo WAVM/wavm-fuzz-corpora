@@ -1,0 +1,4 @@
+(module
+  (type $0 (fu (result i64)))
+  (type $2 (func (param v128) (result f32)))
+  (type $3 (func (param v1286v128)    ))

@@ -1,0 +1,4 @@
+(func
+f32.const 0x1p-254 f32.const 0xffp-3
+f32.const 0x1p-254 f32.const 0xffp-378 f32.const 0xfp-254 f32.const 0x1fp-4178 f32.const 0xfp-253
+f32.const 0x1p-254 f32.const 4 f32.const 0x1fp-419)

@@ -1,0 +1,120 @@
+(module
+  (type $0 (func (param i64 externref)))
+  (type $1 (func (param funcref f64 i64) (result externref)))
+  (type $2 (func (param i64) (result f64)))
+  (type $3 (func (param v128) (result i32 funcref)))
+  (type $4 (func (param i32 i32 externref) (result i64)))
+  (type $5 (func (param i64) (result i64 v128 externref)))
+  (import "env" "table" (table $6 33 4294967295 funcref))
+  (import "env" "func0" (func $13 (param i64 externref)))
+  (import "env" "func1" (func $14 (param i32 i32 externref) (result i64)))
+  (memory $9  74 15215 shared)
+  (memory $10  97 27165 shared)
+  (table $7  94 4294967295 funcref)
+  (table $8  89 4294967295 funcref)
+  (elem $11 declare table
+    $7 $6 $7 $6 $6 $6 $7 $8
+    $8 $8 $6)
+  (elem $12 declare externref
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern))
+  
+  (func $15 (type $1)
+    (param $0 funcref)
+    (param $1 f64)
+    (param $2 i64)
+    (result externref)
+    (local $3 i32)
+    (local $4 funcref)
+    (local $5 f32)
+    v128.const i32x4 0x5e954267 0x52c94792 0x6a769d7a 0x17441b55
+    i16x8.widen_high_i8x16_u
+    i32x4.widen_high_i16x8_u
+    v128.const i32x4 0x82f21847 0x5a2de024 0x57c53ea5 0xf37e70c6
+    i32x4.widen_low_i16x8_u
+    f64x2.sqrt
+    f32x4.le
+    f64x2.abs
+    i32x4.widen_high_i16x8_u
+    i16x8.widen_high_i8x16_u
+    i32.const 854206455
+    local.get $4
+    nop
+    local.set $0
+    call_indirect $6 (type $3)
+    table.set $6
+    ref.null func
+    local.set $0
+    local.get $5
+    unreachable
+    )
+  
+  (func $16 (type $2)
+    (param $0 i64)
+    (result f64)
+    (local $1 i32)
+    nop
+    memory.size
+    f64.convert_i32_u
+    i32.const 1136803635
+    i64.load8_u $10 offset=1578600978
+    block $block (param i64) (result i64 v128 externref)
+      v128.const i32x4 0x1e5b86e3 0xb5cf53cc 0xdef3cf5c 0xae05aa0e
+      f64.const -0x1.1b1e8952c2a93p-448
+      i32.trunc_f64_s
+      i32.atomic.load8_u offset=4123496048
+      i16x8.shl
+      i8x16.extract_lane_s 9
+      f32.convert_i32_s
+      f32.abs
+      i64.const 3816489328613312934
+      local.set $0
+      ref.null extern
+      ref.is_null
+      ref.null extern
+      ref.null extern
+      unreachable
+    end ;; $block
+    drop
+    drop
+    local.set $0
+    )
+  
+  (func $17 (type $3)
+    (param $0 v128)
+    (result i32 funcref)
+    i32.const -640321253
+    f64.convert_i32_u
+    i32.trunc_sat_f64_u
+    i8x16.splat
+    f32x4.convert_i32x4_u
+    i8x16.neg
+    i32x4.widen_high_i16x8_u
+    i32x4.widen_high_i16x8_u
+    i16x8.extract_lane_u 0
+    i64.load8_s $10 offset=3288718998
+    drop
+    f64.const -0x1.621af957c2bc4p+464
+    f32.demote_f64
+    i32.const 1012066195
+    v32x4.load_splat offset=3755855068 align=1
+    unreachable
+    ))

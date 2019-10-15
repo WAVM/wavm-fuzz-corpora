@@ -1,0 +1,2 @@
+(memory 0)
+(func (t)i64.atomic.rmw.or i64.atomic.rmw.or()  (t)i64.atomic.rmw.or i64.atomic.rmw.or)

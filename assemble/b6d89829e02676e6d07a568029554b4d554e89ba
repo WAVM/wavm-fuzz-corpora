@@ -1,0 +1,15 @@
+(func br 0
+i32.sub
+i32.sub
+i32.sub
+i32.sub i32.sub
+i32.sub
+i32.sub
+i32.sub
+i32.sub
+i32.sub
+i32.sub
+i32.sub i32.sub
+i32.sub
+i32.sub
+i32.sub )

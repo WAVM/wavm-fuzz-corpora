@@ -1,0 +1,47 @@
+(type $0 (func))
+  (func ve$1
+
+ c 4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    e $0 (func))
+  (func ve$1
+
+ c 4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+aftzet $)
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+aftzet $)
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+aftzet $ge))

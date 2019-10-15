@@ -1,0 +1,60 @@
+(module
+  (type $0 (func (param i32 f64 f64 f32) (result i32 i64)))
+  (type $1 (func (param i64 f32) (result f64 i64)))
+  (type $2 (func (param f32 f64)))
+  (type $3 (func (param v128 f32) (result externref funcref f32)))
+  (import "env" "memory" (memory $6 70 52064 shared))
+  (import "env" "memory" (memory $7 8 45276))
+  (import "env" "table" (table $4 44 4294967295 externref))
+  (import "env" "global1" (global $8 (mut i64)))
+  (import "env" "func0" (func $15 (param i32 f64 f64 f32) (result i32 i64)))
+  (table $5  77 4294967295 externref)
+  (global $9  v128 (v128.const i32x4 0x0f8fa5b1 0xb457ba58 0x7eb3f4f5 0xd7740ac8))
+  (global $10  funcref (ref.null func))
+  (elem $11 declare externref
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern))
+  (elem $12 exception_type)
+  
+  (func $16 (type $1)
+    (param $0 i64)
+    (param $1 f32)
+    (result f64 i64)
+    global.get $10
+    ref.is_null
+    global.get $8
+    i64.clz
+    i64.atomic.store8 $7 offset=1016851771
+    local.get $0
+    global.get $8
+    f32.convert_i64_u
+    f64.const -0x1.e9622aaef0b1bp-579
+    f64.abs
+    block $block (param f32 f64)
+      f64.ceil
+      global.get $9
+      f32.const 0x1.b99a24p+75
+      block $block_0 (param v128 f32) (result externref funcref f32)
+        local.set $1
+        br $block
+      end ;; $block_0
+      drop
+      ref.is_null
+      table.get $4
+      ref.null extern
+      unreachable
+    end ;; $block
+    unreachable
+    )
+  
+  (data $13 (i32.const 108566815)
+    "x\df\f0\c0\e2\f4I\db\e0\08\bc\1dM\ed>\cc\eem\181\04\ce\88p\e8\9enq?>\f4\aeI")
+  
+  (data $14 (i32.const 1270110041)
+    "\d8G\ceQS\08"))

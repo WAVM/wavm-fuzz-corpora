@@ -1,0 +1,91 @@
+(module
+  (type $0 (func (param funcref)))
+  (type $1 (func (param i64 v128 f64) (result f64 funcref)))
+  (type $2 (func (result funcref v128)))
+  (type $3 (func (param f64 f64) (result externref)))
+  (import "env" "table" (table $4 70 4294967295 shared externref))
+  (import "env" "func0" (func $10 (param f64 f64) (result externref)))
+  (memory $6  50 29032 shared)
+  (memory $7  56 18018)
+  (memory $8  34 40993)
+  (table $5  20 4294967295 shared funcref)
+  
+  (func $11 (type $0)
+    (param $0 funcref)
+    (local $1 funcref)
+    (local $2 f64)
+    (local $3 externref)
+    local.get $2
+    i32.trunc_sat_f64_s
+    br_if 0
+    v128.const i32x4 0x52f5c459 0xd881ce87 0xba6bc205 0xecd0a837
+    i64.const 5048685036363328913
+    i64.extend32_s
+    memory.size $7
+    f32.convert_i32_s
+    i64.trunc_f32_u
+    loop $loop
+      local.get $2
+      i64.trunc_f64_u
+      f64.reinterpret_i64
+      f64.ceil
+      f64.sqrt
+      unreachable
+    end ;; $loop
+    i64.lt_s
+    i64x2.shr_u
+    drop
+    )
+  
+  (func $12 (type $1)
+    (param $0 i64)
+    (param $1 v128)
+    (param $2 f64)
+    (result f64 funcref)
+    (local $3 v128)
+    (local $4 v128)
+    (local $5 i64)
+    i64.const 1973147364909924444
+    local.tee $0
+    i32.const 1105620072
+    i16x8.load8x8_s offset=1021348837
+    local.tee $1
+    f32x4.convert_i32x4_s
+    i32x4.neg
+    local.get $1
+    f64x2.ne
+    f64.const -0x1.6f01cb6e1d416p-213
+    i32.const 1762852255
+    i32.const 197828582
+    f32.reinterpret_i32
+    memory.size
+    v128.load $7 offset=1398373586 align=1
+    local.set $4
+    unreachable
+    )
+  
+  (func $13 (type $2)
+    (result funcref v128)
+    (local $0 i64)
+    (local $1 funcref)
+    local.get $1
+    i32.const 118042170
+    i64.load32_u offset=3510143454 align=1
+    i64.clz
+    local.tee $0
+    local.tee $0
+    ref.null func
+    f32.const -0x1.2753d8p-16
+    i32.trunc_f32_s
+    v8x16.load_interleaved_3 $8 offset=392034057 align=8
+    i8x16.bitmask
+    i32.atomic.load16_u offset=1768690771
+    i8x16.replace_lane 15
+    f32x4.abs
+    i8x16.all_true
+    i8x16.replace_lane 3
+    br 0
+    )
+  
+  (data $9 (memory $8) (i32.const -594908682)
+    "\8a\c9\aeH\0eBYX7h\b7\f2\92n\bfK\d7@\c0\ef4\11\d0\df!P\8c@\9e\0dZq\c5\f5\f5\d6\95\8ez\\\a8\e89\9b\e4\b9 \09\0bV\9a\b103'\84\c3=W\c7\11\b2"))

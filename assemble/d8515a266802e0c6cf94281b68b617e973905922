@@ -1,0 +1,1 @@
+(table 2 funcref)(func  table.copy $blepy 0 table.copy $u 0 )(func  table.copy $by 0  table.copy $u 0 )(func table.copy $ble 0  table.copy $u 0 f)(func  table.copy $blepy 0  table.copy $ut 0 $e)

@@ -1,0 +1,8 @@
+(func br 0
+f32x4.max f32x4.max 
+f32x4.max
+f32x4.max br 0
+f32x4.max f32x4.max 
+f32x4.max
+f32x4.max br
+0)

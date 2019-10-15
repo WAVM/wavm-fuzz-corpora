@@ -1,0 +1,21 @@
+(module
+   (func  lo 11lt_lane_u 2  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1  2  )
+  (func
+   i8x16.extract_lane_u 12 i8x.tract_lane)
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1 !e_u _  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13  i8x16.extract_lane_u 1  
+ ract_lane _  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1  
+  i8x_  )
+  (func
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1
+   i8x16.extract_lane_u  2 i8x16.extract_lane_u  12 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1  
+i8x_  )
+  (func
+   i8x16.extract_lane_u  11 i8x16.extract_lane_u 13 i8x16.extract_lane_u 1
+   i8x16.extract_lane_u  12 i8x16.extract_lane_u 13  1ct_lane_u 14)

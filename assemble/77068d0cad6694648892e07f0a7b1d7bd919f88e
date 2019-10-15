@@ -1,0 +1,135 @@
+(module
+  (type $0 (func (param f32) (result i32)))
+  (type $1 (func (param i32 f32) (result i64 funcref)))
+  (type $2 (func (param i32 i32 v128 externref) (result i64)))
+  (type $3 (func (result externref i32)))
+  (type $4 (func (param f32 f32 v128) (result i64 funcref)))
+  (type $5 (func (param f64 i64) (result i64)))
+  (type $6 (func (result v128 i64 externref i64)))
+  (import "env" "memory" (memory $8 7 22398 shared))
+  (import "env" "memory" (memory $9 84 16643))
+  (import "env" "global0" (global $11 (mut i64)))
+  (import "env" "global1" (global $12 f32))
+  (import "env" "global6" (global $13 funcref))
+  (import "env" "func0" (func $24 (param i32 f32) (result i64 funcref)))
+  (import "env" "func1" (func $25 (param i32 i32 v128 externref) (result i64)))
+  (memory $10  52 28093 shared)
+  (table $7  92 4294967295 shared funcref)
+  (global $14  i64 (i64.const 9152557329705049365))
+  (global $15  f32 (f32.const 0x1.ac330ep+30))
+  (global $16  v128 (v128.const i32x4 0x7d1da321 0xe28a6a94 0x202bbc97 0xe1909e99))
+  (global $17  funcref (ref.null func))
+  (global $18  f32 (f32.const 0x1.4c8f5ep+31))
+  (global $19  funcref (ref.null func))
+  (global $20  (mut i64) (i64.const -3612488766223729516))
+  (elem $21 externref
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern))
+  (elem $22 memory
+    $9 $9 $10 $10 $8 $8 $10 $9)
+  
+  (func $26 (type $0)
+    (param $0 f32)
+    (result i32)
+    (local $1 externref)
+    ref.null func
+    unreachable
+    )
+  
+  (func $27 (type $3)
+    (result externref i32)
+    (local $0 f32)
+    (local $1 i64)
+    (local $2 externref)
+    (local $3 f64)
+    ref.null extern
+    local.get $1
+    local.get $0
+    nop
+    atomic.fence
+    f64.promote_f32
+    memory.size $10
+    i32.load $10 offset=3796324713 align=2
+    global.get $11
+    local.set $1
+    i32.load8_s $10 offset=1675043114
+    i64.atomic.load $9 offset=2212337654
+    i64.extend8_s
+    atomic.fence
+    loop $loop (param f64 i64) (result i64)
+      global.set $20
+      local.set $3
+      local.get $1
+      drop
+      ref.null extern
+      drop
+      data.drop $23
+      elem.drop $21
+      global.get $11
+      global.set $20
+      unreachable
+    end ;; $loop
+    global.set $11
+    global.set $20
+    global.get $14
+    drop
+    loop $loop_0 (result v128)
+      global.get $16
+      drop
+      unreachable
+    end ;; $loop_0
+    ref.null func
+    ref.null extern
+    local.set $2
+    ref.null extern
+    ref.is_null
+    table.get $7
+    ref.null func
+    ref.is_null
+    drop
+    drop
+    ref.null extern
+    unreachable
+    )
+  
+  (func $28 (type $4)
+    (param $0 f32)
+    (param $1 f32)
+    (param $2 v128)
+    (result i64 funcref)
+    (local $3 i64)
+    global.get $18
+    table.size $7
+    global.get $11
+    i64.atomic.store8 $10 offset=3606128482
+    f64.promote_f32
+    i32.trunc_f64_s
+    i64.load16_s offset=2107613039
+    f32.convert_i64_u
+    local.tee $0
+    block $block (result v128 i64 externref i64)
+      atomic.fence
+      memory.size $9
+      i64.atomic.load16_u $9 offset=23131895
+      i32.wrap_i64
+      global.get $20
+      i64.atomic.rmw16.and_u $10 offset=3472701045
+      unreachable
+    end ;; $block
+    global.set $20
+    ref.null extern
+    ref.is_null
+    unreachable
+    )
+  
+  (data $23 (memory $10) (i32.const -920119169)
+    "\8c\fa\eb\85\cd\dcdZ$\02\bc\a6~\98\e3k\17d\01K\c6>\9e\00*\b9\e6\b5\9f\bfD\n\b5{"))

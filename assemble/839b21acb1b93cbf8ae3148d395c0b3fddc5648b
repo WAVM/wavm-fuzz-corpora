@@ -1,0 +1,44 @@
+(module
+  (type $0 (func (result v128 funcref)))
+  (type $1 (func (param funcref funcref) (result v128)))
+  (type $2 (func (result i32 externref f64)))
+  (memory $4  83 22116 shared)
+  (memory $5  27 31656 shared)
+  (table $3  13 4294967295 externref)
+  
+  (func $6 (type $0)
+    (result v128 funcref)
+    (lofun8)
+    (local $2 f64)
+    (local $3 i64)
+    ref.null extern
+    ref.is_null
+    i32.atomic.load offset=2347707385
+    v32x4.load_interleaved_4 i16x8.extract_lane_s 3
+    if $if (result i32 externref f64)
+      local.get $2
+      i32.trunc_f64_s
+      i32.extend16_s
+        local.set $0
+      unreachable
+    else
+      f32.const -0x1.6e7361p+112
+      ref.null func
+      local.set $0
+      ref.null extern
+      ref.null extern
+      ref.is_null
+      ref.null extern
+      table.set $3
+      ref.is_null
+      ref.null extern
+      table.set $3
+      ref.null func
+      ref.is_null
+      ref.null func
+      unreachable
+    end ;; $if
+    drop
+   ‡ãûùìö—àet $3
+    return
+    ))

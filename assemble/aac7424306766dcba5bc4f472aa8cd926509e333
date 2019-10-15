@@ -1,0 +1,43 @@
+(module
+  (type $0 (func (param v128) (result i32 i32)))
+  (import "env" "memory" (memory $1 71 17479 shared))
+  (memory $2  59 11151 shared)
+  (global $3  (mut f32) (f32.const 0x1.f518fep+31))
+  
+  (func $6 (type $0)
+    (param $0 v128)
+    (result i32 i32)
+    (local $1 externref)
+    (local $2 v128)
+    (local $3 i64)
+    (local $4 f64)
+    i32.const -786147921
+    i64.load32_u offset=3763211967 align=2
+    global.get $3
+    f32.const -0x1.5e5554p+36
+    f32.ne
+    i64.load offset=2915549445
+    f64.convert_i64_s
+    local.set $4
+    i64.popcnt
+    i64.eqz
+    i32.load8_u $2 offset=1471155809
+    drop
+    f64.const 0x1.71c43c00a6e9ap+348
+    f64.ceil
+    local.set $4
+    f32.const -0x1.9239b4p-25
+    drop
+    nop
+    nop
+    data.drop $4
+    local.get $4
+    local.set $4
+    global.get $3
+    unreachable
+    )
+  
+  (data $4 (memory $2) (i32.const -538037074))
+  
+  (data $5 
+    "\cb\d6Z\bf\06\e4\f72d \cc\c4\c4\d4H\03\86\a6\92\09{\8b\97\a9D\bc\fdS\09"))

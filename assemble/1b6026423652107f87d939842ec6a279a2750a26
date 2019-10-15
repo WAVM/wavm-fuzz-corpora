@@ -1,0 +1,1 @@
+(func (result i64) (i64.ge_u (i32.const 0) (f32.const 0)))

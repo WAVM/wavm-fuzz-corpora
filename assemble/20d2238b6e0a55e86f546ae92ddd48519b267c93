@@ -1,0 +1,7 @@
+ (elem funcref(ref.func $f)(ref.func $f)) (elem funcref (
+ref.func $f) (ref.func $f) (
+ref.func $f) (ref.func $f)(ref.func $f)) (elem funcref (
+reffunc $f)(ref.func $f)) (elem funcref (
+ref.func $f) (ref.func $f) (
+ref.func $f) (ref.func $f)(ref.func $f)) (elem funcref (
+ref.func $f) (ref.func $f)(ref.func $f)) (.func $f) f$f))â(ff)

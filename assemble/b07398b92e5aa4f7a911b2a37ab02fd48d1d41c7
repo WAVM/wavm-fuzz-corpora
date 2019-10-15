@@ -1,0 +1,6 @@
+(module(memory  1)
+  (func  (loop)i32.const 0
+ i32.const 0
+i32.const 3 i32.const 2 memory.copy
+i32.const 1 i32.const 2 memory.copy
+))

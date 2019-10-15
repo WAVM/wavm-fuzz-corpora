@@ -1,0 +1,1 @@
+(func(f64.store align=3)(f64.store align=7 ²)(f64.store align=5 ) (f64.store align=7 )(f64.store align=3)(f64.store align=6)(f64.store align=3)(f64.store align=7 ²)(f64.store align=6)(f64.store align=3)(f64.store align=7)(f64.)(f64.store align=6)(f64.store align=5)(f64.store align=3)(f64.store align=7)(f64.store align=3))

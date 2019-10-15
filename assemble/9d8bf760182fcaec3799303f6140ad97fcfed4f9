@@ -1,0 +1,1 @@
+(memory 6)(func(i32.load(v128.store(v.store)(v128.store(v128.store)))(ve)(v128.store(v128.store)(v128.store())))(v128.store(v128.store(v1tore)(v)))))))

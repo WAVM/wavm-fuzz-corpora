@@ -1,0 +1,15 @@
+(module
+  (type $0 (func (param f64 v128 i32)))
+  (import "env" "memory" (memory $2 63 13047 shared))
+  (import "env" "table" (table $1 81 4294967295 shared externref))
+  (import "env" "global2" (global $3 (mut f32)))
+  (import "env" "func0" (func $11 (param f64 v128 i32)))
+  (global $4  (mut i64) (i64.const 1970335191418453027))
+  (global $5  f32 (f32.const 0x1.9e2538p+30))
+  (global $6  i64 (i64.const 8675289791399975133))
+  (elem $7 (i32.const -1229028666) global)
+  (elem $8 (i32.const 1144150165) memory)
+  
+  (data $9 
+    "\ef:\e9~\87K\99l\b7P:\bd\0b&\94s\dd\04\16\aa\cc\d5\1f\c7\bc\"%\f7\e1\d7\e7\e6Y-\d8\08G5\13\aa\96\a4?\04\8d:\a9\0e}\ae*Zn\e6\bfr\dcQd\d2\bb\09\00\ee',\0f\e7\dfY\f8\b1j9\06\87\n_\88\eeD\13\99\cb"
+    "u<\d2\b9\fe5W\bd\16\d8$Z`}\fb\d8\86"))

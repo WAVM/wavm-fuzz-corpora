@@ -1,0 +1,7 @@
+(func br 0
+i32x4.gt_u
+i32x4.gt_u
+i32x4.gt_u
+i32x4.gt_u
+br
+0)

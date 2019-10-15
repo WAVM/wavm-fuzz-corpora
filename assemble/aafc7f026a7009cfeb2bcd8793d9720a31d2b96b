@@ -1,0 +1,52 @@
+(module
+  (type $0 (func (param f32 externref) (result externref)))
+  (import "env" "memory" (memory $2 60 28021 shared))
+  (import "env" "memory" (memory $3 3 21833 shared))
+  (import "env" "memory" (memory $4 54 47915))
+  (import "env" "table" (table $1 84 4294967295 shared externref))
+  (elem $5 funcref
+    (ref.func $8) (ref.null func) (ref.null func) (ref.null func)
+    (ref.null func) (ref.func $8) (ref.null func) (ref.null func)
+    (ref.func $8) (ref.null func) (ref.func $8) (ref.func $8)
+    (ref.null func) (ref.func $8) (ref.func $8) (ref.func $8)
+    (ref.func $8) (ref.null func) (ref.null func) (ref.func $8)
+    (ref.null func) (ref.func $8) (ref.func $8) (ref.null func)
+    (ref.func $8) (ref.func $8) (ref.null func) (ref.func $8)
+    (ref.func $8) (ref.null func) (ref.null func) (ref.null func)
+    (ref.func $8) (ref.null func) (ref.func $8) (ref.null func)
+    (ref.func $8) (ref.func $8) (ref.func $8) (ref.null func)
+    (ref.null func) (ref.func $8) (ref.null func) (ref.null func)
+    (ref.func $8) (ref.func $8) (ref.func $8) (ref.func $8)
+    (ref.func $8) (ref.null func) (ref.func $8) (ref.func $8)
+    (ref.func $8) (ref.func $8) (ref.func $8))
+  
+  (func $8 (type $0)
+    (param $0 f32)
+    (param $1 externref)
+    (result externref)
+    i64.const -1411175736455871625
+    table.size $1
+    i32.const -381337702
+    v16x8.load_interleaved_3 offset=32097785
+    i16x8.mul
+    i16x8.min_s
+    i32x4.widen_low_i16x8_u
+    data.drop $6
+    i8x16.extract_lane_u 8
+    v32x4.load_interleaved_3 offset=2295268794 align=4
+    i32x4.mul
+    memory.size
+    i32x4.shr_s
+    i32x4.neg
+    f32x4.min
+    drop
+    drop
+    ref.null extern
+    return
+    )
+  
+  (data $6 (memory $3) (i32.const 1774688541)
+    "H\cc2\93\f0\b2Y5\99\06\0b@yf\8a\e9\13\f2\c1q\f9q\8b\ec\d0\0e}f^\05?\8b\fb\f9\8d9>(\1dUW\dc4\12Uem=\0b")
+  
+  (data $7 (memory $3) (i32.const -1654630951)
+    "ru+\f6\b2\b7\97\14<\e7\c3\9b\04\17\f0i\n\acsw\a3]\ca\c6\88Z6H\a4\e7\b4\"\d9\f6D\9b\94\c3\fd\f0\00\aa\97/\a8N\10"))

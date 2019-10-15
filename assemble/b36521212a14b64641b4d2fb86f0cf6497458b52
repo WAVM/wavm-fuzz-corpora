@@ -1,0 +1,45 @@
+(module
+  (type $0 (func (param funcref funcref funcref) (result i32 v128)))
+  (type $1 (func (result i32 i32)))
+  (type $2 (func (result externref f32)))
+  (type $3 (func (param externref i32 externref)))
+  (type $4 (func (param externref v128 v128) (result f64)))
+  (import "env" "memory" (memory $6 15 5305 shared))
+  (import "env" "global3" (global $7 (mut funcref)))
+  (import "env" "global9" (global $8 externref))
+  (import "env" "func0" (func $20 (result i32 i32)))
+  (import "env" "func1" (func $21 (result externref f32)))
+  (table $5  26 4294967295 shared funcref)
+  (global $9  externref (ref.null extern))
+  (global $10  (mut externref) (ref.null extern))
+  (global $11  (mut externref) (ref.null extern))
+  (global $12  (mut funcref) (ref.null func))
+  (global $13  (mut funcref) (ref.null func))
+  (global $14  (mut funcref) (ref.null func))
+  (global $15  (mut funcref) (ref.null func))
+  (global $16  externref (ref.null extern))
+  (elem $17 memory $6 $6 $6 $6 $6 $6 $6 $6
+    $6 $6 $6 $6 $6 $6 $6 $6
+    $6 $6 $6 $6 $6 $6 $6 $6)
+  
+  (func $22 (type $0)
+    (param $0 funcref)
+    (param $1 funcref)
+    (param $2 funcref)
+    (result i32 v128)
+    global.get $11
+    nop call $21
+    ref.null extern
+    drop
+    drop
+    ref.is_null
+    i64.load8_u offset=4083033600
+    unreachable
+    )
+  
+  (data $18 
+    "\82\06)\1f\0c\c4_\ed4c!\a9\ac{\07\e4\85\16t\c8\94]Li\96 \b3\fe!\fc\c8\a0\ab\a2Y\b2\14\8b\1a\c3\ff")
+  
+  (data $19 
+    "\0e\81\c8Y\ff\fc\c30s\fcj\1an*\f2\93\f2P\fam\daW\a9\baJ\96\f0\faV\bd\cdm\ef\ea\f2\19\fc\f8\d5R\9e\cf\fb=\80\c5\7foe\aa\14g\8c1yw\99\c4\f9\aer_\d5w"
+    "\8c\f4\8a\fa`\95\ae~\ba\01\af?w\da\bfE"))

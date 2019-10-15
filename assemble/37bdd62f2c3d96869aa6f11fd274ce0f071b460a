@@ -1,0 +1,36 @@
+(module
+  (type $0 (func (param funcref externref)))
+  (import "env" "memory" (memory $4 10 10921 shared))
+  (import "env" "table" (table $1 66 4294967295 shared externref))
+  (import "env" "global1" (global $5 i64))
+  (import "env" "globAl2" (global $6 externref))
+  (import "env" "global5" (global $7 (mut i32)))
+  (table $2  79 4294967295 shared externref)
+  (table $3  85 4294967295 shared funcref)
+  (global $8  funcref (ref.null func))
+  (global $9  i64 (i64.const 2652862393597420826))
+  (global $10  (mut externref) (ref.null extern))
+  (elem $11 externref)
+  (elem $12 declare externref
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern))
+  
+  (func $13 (type $0)
+    (param $0 funcref)
+    (param $1 externref)
+    (local $2 v128)
+    (local $3 i64)
+    (local $4 f32)
+    table.size $3
+    i32.extend8_s
+    global.get $5
+    global.get $5
+    i64.extend16_s
+    i64.gt_s
+    i32.atomic.store8 offset=2538568390
+    local.get $1
+    global.set $10
+    global.get $8
+    local.get $0
+    unreachable
+    ))

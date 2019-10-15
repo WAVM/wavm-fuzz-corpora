@@ -1,0 +1,2 @@
+ (elem funcref (
+ref.func#f a$n) (. $?f)((ref.func $f)(ref.fun c$f)) (bunc $fc. $?f)((ref.func $f)(ref.fun c$f)) (bunc $fc $?)((ref.func $f)(ref.func $f)) (bunrunc . $?f)((ref.func $f) $fc $?f)((ref.func $f)(ref.func $fc $ $?)((ref.func $f) $fc $?f)((ref.func $f)(ref.func $fc $fc $?f)bunc $fref.func $f)(ref.fun c$f)) (bunc $fc $?)((ref.func $f)(ref.func $f)) (bunrunc $#anf) (. $?f)((ref.func $f) $fc $?f)((ref.func $f)(ref.func $fc $ $?)((ref.func $f)(ref.func $f)))

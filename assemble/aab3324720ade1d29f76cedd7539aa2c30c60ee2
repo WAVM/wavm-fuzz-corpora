@@ -1,0 +1,2 @@
+ (memory  7)(func(u)
+i64.atomic.rmw.sub  i64.atomic.rmw.sub)

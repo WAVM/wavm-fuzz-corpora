@@ -1,0 +1,2 @@
+(func
+i64.const -5 i64.const -1)

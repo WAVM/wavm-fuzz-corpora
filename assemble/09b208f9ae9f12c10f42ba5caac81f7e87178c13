@@ -1,0 +1,42 @@
+(module
+  (type $0 (func (result funcref f64)))
+  (type $1 (func (param f64 funcref f64) (result v128)))
+  (import "env" "table" (table $2 65 4294967295 externref))
+  (import "env" "table" (table $3 83 4294967295 funcref))
+  (import "env" "global1" (global $5 (mut funcref)))
+  (import "env" "global2" (global $6 f64))
+  (import "env" "global3" (global $7 f64))
+  (import "env" "func0" (func $15 (param f64 funcref f64) (result v128)))
+  (table $4  99 4294967295 shared funcref)
+  (global $8  (mut f32) (f32.const 0x1.9aab4cp+27))
+  (global $9  funcref (ref.null func))
+  (global $10  (mut funcref) (ref.null func))
+  (global $11  (mut funcref) (ref.null func))
+  (elem $12 global
+    $11 $11 $6 $11 $10 $9 $9 $7
+    $7 $9 $9 $5 $11 $7 $7 $10
+    $10 $6 $8 $11 $10 $10 $7 $5
+    $8 $7 $8 $9 $5 $7 $7 $5
+    $5 $8 $10 $11 $5 $6 $5 $5
+    $7 $9 $10 $7 $5 $8 $11 $7
+    $10 $9 $10 $5 $8 $5 $6 $8
+    $9 $10$10 $10)
+  (elem $13 global
+    $10 $11 $6 $11 $11 $9 $7 $5
+    $5 $8 $5 $6 $8 $9 $7 $8
+    $7 $11 $9 $5 $9 $11 $6 $11
+    $10 $6 $9 $5 $11 $6 $11 $10
+    $10 $5 $5 $10 $9 $6 $6 $11
+    $9 $11 $10 $8 $7 $11 $8 $5
+    $7 $5 $5 $11 $5 $8 $6 $9
+    $10 $10 $9 $8 $11 $6 $11 $8
+    $9 $11 $6 $8 $9 $6 $11 $6
+    $9 $6 $10 $9 $9)
+  
+  (func $16 (type $0)
+    (result funcref f64)
+    globalurn
+    )
+  
+  (data $14 
+    "\b4\84\ee\n\b5C\a8\d7\82\db\82X\dfW'\9d\d7| 2\9d\nd\1d\169\d6\81\82\dd j\1ay\d2\c2\ed@\04\ba\bcwmP\ec\fa\c5\e9\8d\cb7"))

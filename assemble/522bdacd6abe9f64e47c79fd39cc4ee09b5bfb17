@@ -1,0 +1,48 @@
+(module
+  (type $0 (func (param externref f64 f64 f32) (result funcref f64)))
+  (type $1 (func (param i32 i32 i64 externref) (result f64)))
+  (type $2 (func (param i64) (result externref f32 funcref)))
+  (import "env" "memory" (memory $4 52 7949))
+  (import "env" "global0" (global $6 (mut v128)))
+  (import "env" "global3" (global $7 (mut i64)))
+  (import "env" "global4" (global $8 (mut externref)))
+  (import "env" "global5" (global $9 f64))
+  (import "env" "func0" (func $12 (param externref f64 f64 f32) (result funcref f64)))
+  (memory $5  22 46139 shared)
+  (table $3  94 4294967295 shared funcref)
+  (global $10  (mut f64) (f64.const 0x1.37bfc62b0ee9cp+63))
+  (global $11  f32 (f32.const 0x1.a86c70p+31))
+  
+  (func $13 (type $1)
+    (param $0 i32)
+    (param $1 i32)
+    (param $2 i64)
+    (param $3 externref)
+    (result f64)
+    (local $4 f32)
+    local.get $3
+    global.get $11
+    local.set $4
+    local.get $1
+    block $block
+      global.get $8
+      local.get $0
+      local.get $4
+      global.get $7
+      loop $loop (param i64) (result externref f32 funcref)
+        i64.clz
+        atomic.fence
+        local.get $1
+        i64.const -8356299798230116100
+        f32.const 0x1.90db38p-25
+        drop
+        i64.atomic.rmw8.and_u $5 offset=1606608826
+        i64.sub
+        br $loop
+      end ;; $loop
+      unreachable
+    end ;; $block
+    local.set $0
+    ref.is_null
+    unreachable
+    ))

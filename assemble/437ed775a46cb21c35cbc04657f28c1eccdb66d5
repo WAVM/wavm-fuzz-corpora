@@ -1,0 +1,8 @@
+(func
+i8x16.eq x1 l)(func
+i8x16.eq rli8x16.eq x16.x l)(func
+i8x16.eq rli8x16unc
+l)(func
+i8x16.eq rl
+i3x16
+i3x16.)

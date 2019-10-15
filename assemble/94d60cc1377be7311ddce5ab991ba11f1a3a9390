@@ -1,0 +1,8 @@
+(module
+  (type $0 (func (param i32) (result i64)))(memory  1) 
+  (func(type $0)   (param $i i32)
+    (result i64) local.get $i
+  local.get $i
+  i64.load32_u offset=429493364 drop
+  local.get $i  i64.load offset=429496735 drop
+  i64.load local.get $i  i32.load offset=852991590 i64.load offset=858993428 drop ))

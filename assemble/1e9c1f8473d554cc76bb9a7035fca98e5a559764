@@ -1,0 +1,81 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param externref v128 i32 i32)))
+  (type $2 (func (param f32 i32 v128) (result f32)))
+  (type $3 (func (param f64 v128 i32) (result f64 externref)))
+  (type $4 (func (param v128 i64) (result funcref i64 externref)))
+  (import "env" "memory" (memory $6 61 28337))
+  (import "env" "global0" (global $9 (mut f64)))
+  (import "env" "global4" (global $10 i64))
+  (import "env" "global5" (global $11 funcref))
+  (import "env" "func0" (func $16))
+  (memory $7  45 64316 shared)
+  (memory $8  33 62211 shared)
+  (table $5  20 4294967295 externref)
+  (global $12  (mut i64) (i64.const 7617549316697795841))
+  (global $13  (mut i32) (i32.const -1794649909))
+  (global $14  (mut v128) (v128.const i32x4 0x66e2737b 0xd18daea2 0xe7396e69 0xd76ddeba))
+  
+  (func $17 (type $1)
+    (param $0 externref)
+    (param $1 v128)
+    (param $2 i32)
+    (param $3 i32)
+    (local $4 f32)
+    (local $5 f32)
+    (local $6 f32)
+    local.get $0
+    global.get $11
+    global.get $12
+    global.get $12
+    call $19
+    i64.rem_s
+    f32.const -0x1.061004p-1
+    i64.trunc_f32_u
+    table.size $5
+    i32.eqz
+    unreachable
+    )
+  
+  (func $18 (type $2)
+    (param $0 f32)
+    (param $1 i32)
+    (param $2 v128)
+    (result f32)
+    (local $3 v128)
+    (local $4 funcref)
+    i64.const -2880706730379529864
+    f32.convert_i64_s
+    global.get $9
+    table.size $5
+    v8x16.load_interleaved_2 $7 offset=1029079324
+    i16x8.max_u
+    table.size $5
+    block $block (param f64 v128 i32) (result f64 externref)
+      i64.atomic.load32_u offset=3558990679
+      block $block_0 (param v128 i64) (result funcref i64 externref)
+        f64.convert_i64_u
+        i64.reinterpret_f64
+        i64x2.splat
+        f32.const 0x1.04ee40p+23
+        global.get $9
+        unreachable
+      end ;; $block_0
+      unreachable
+    end ;; $block
+    ref.is_null
+    local.set $1
+    ref.null extern
+    unreachable
+    )
+  
+  (func $19 (type $0)
+    (local $0 i32)
+    (local $1 funcref)
+    (local $2 externref)
+    (local $3 i64)
+    br 0
+    )
+  
+  (data $15 (i32.const -1706692700)
+    "`\f7h\85O\fb\90\18\96\f4\a7Zv\fb\cc\f4#"))

@@ -1,0 +1,16 @@
+(func  i32x4.shl
+i32x4.shl i32x4.shl i32x4.shl br
+0
+i32x4.shl loop
+i32x4.shl i32x4.shl i32x4.shl br
+0 
+i32x4.shl br 0
+i32x4.shl i32x4.shl i32x4.shl
+i32x4.shl 
+i32x4.shl br 0
+i32x4.shl i32x4.shl i32x4.shl i32x4.shl i32x4.shl
+i32x4.shl i32x4.shl br 0
+i32x4.shl
+i32x4.shl i32x4.shl br 0
+i32x4.shl
+i32x4.shl i32x4.shl i3)

@@ -1,0 +1,2 @@
+(memory 1)(func()i64.atomic.store i64.atomic.store
+i64.atomic.store i64.atomic.store)

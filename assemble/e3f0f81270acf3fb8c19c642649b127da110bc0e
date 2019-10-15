@@ -1,0 +1,6 @@
+(export "16x8.abs" (func $1))
+   (func $1    local.get $0
+ i16x8.abs
+ (t)
+     i16x8.abs
+   )

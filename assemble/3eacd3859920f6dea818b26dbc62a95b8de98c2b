@@ -1,0 +1,4 @@
+(func br 0
+i64x2.shl br 0
+i64x2.shl br
+0)

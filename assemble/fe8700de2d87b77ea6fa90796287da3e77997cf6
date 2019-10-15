@@ -1,0 +1,4 @@
+(func br 0
+i64.le_u br 0
+i64.le_u br 0
+i64.le_u br 0)

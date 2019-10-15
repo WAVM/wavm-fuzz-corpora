@@ -1,0 +1,44 @@
+(module
+  (type $0 (func))
+  (type $1 (func (result funcref funcref f64 i32)))
+  (type $2 (func (param externref) (result f64 v128 i32)))
+  (import "env" "memory" (memory $3 44 3331 shared))
+  (import "env" "global0" (global $6 v128))
+  (memory $4  82 43627 shared)
+  (memory $5  27 38275 shared)
+  
+  (func $9 (type $0)
+    (local $0 i32)
+    (local $1 f64)
+    (local $2 i32)
+    nop
+    global.get $6
+    i8x16.any_true
+    block $block (result funcref funcref f64 i32)
+      memory.size
+      i32.atomic.load16_u $5 offset=2807685222
+      i32.atomic.load8_u offset=2514804389
+      i32.atomic.load8_u offset=19861289
+      unreachable
+    end ;; $block
+    if $if
+      return
+    else
+      return
+    end ;; $if
+    ref.null extern
+    block $block_0 (param externref) (result f64 v128 i32)
+      block $block_1
+        ref.null extern
+        return
+      end ;; $block_1
+      return
+    end ;; $block_0
+    br 0
+    )
+  
+  (data $7 
+    "\bdw\8e\efe\f2\ce_\02\16\bd'\bc\d9\8b\8f0'\17\93O=[C\af#E\e3\b2\f6\f1\81\de\0d4\e14\15@\02\b7\f3vy\986")
+  
+  (data $8 (i32.const -84783300)
+    "\fd\9e\9b\853\f4\a2\fd\06\f8\caH\c2\f9\ee*zQ\f4\9e\d5\fbz\ba\c0\15\16\85o\f7?\f1\bd^\be\13En\82\81\d5\cbd\f82MK\0bH.\a2\a7W"))

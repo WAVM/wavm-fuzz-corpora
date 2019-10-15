@@ -1,0 +1,74 @@
+(module
+  (type $0 (func (result v128)))
+  (type $1 (func (param i32 f32) (result v128)))
+  (type $2 (func (param funcref funcref funcref) (result i64)))
+  (type $3 (func (param i64 f32) (result v128 i64 i64 f64)))
+  (import "env" "table" (table $4 95 4294967295 externref))
+  (import "env" "global0" (global $7 i64))
+  (import "env" "global1" (global $8 (mut f64)))
+  (import "env" "func0" (func $10 (param i32 f32) (result v128)))
+  (import "env" "func1" (func $11 (param funcref funcref funcref) (result i64)))
+  (memory $6  9 13081 shared)
+  (table $5  91 4294967295 funcref)
+  (elem $9 declare global
+    $8 $8 $8 $8 $8 $8 $8 $7
+    $8 $7 $8 $7 $7 $7 $7 $7
+    $7 $7 $8 $8 $7 $7 $7 $7
+    $8 $8 $8 $7 $7 $8 $7 $7
+    $8 $8 $7 $8 $7 $7 $7 $8
+    $7 $8 $7 $7 $8 $7 $7 $8
+    $7 $8 $7 $7 $7 $8 $8 $7
+    $8 $7)
+  
+  (func $12 (type $0)
+    (result v128)
+    (local $0 v128)
+    (local $1 externref)
+    global.get $7
+    i64x2.splat
+    global.get $7
+    i64.extend32_s
+    f32.const 0x1.30a8c6p+15
+    loop $loop (param i64 f32) (result v128 i64 i64 f64)
+      nop
+      ref.null extern
+      local.set $1
+      i32.trunc_f32_s
+      i64.load16_s offset=339183195
+      i64.rotl
+      f64.convert_i64_s
+      elem.drop $9
+      i32.trunc_sat_f64_u
+      unreachable
+    end ;; $loop
+    ref.null extern
+    drop
+    ref.null extern
+    ref.null func
+    unreachable
+    )
+  
+  (func $13 (type $0)
+    (result v128)
+    (local $0 externref)
+    atomic.fence
+    elem.drop $9
+    elem.drop $9
+    i64.const 1478323031428146505
+    i32.const 2099771854
+    i64.load8_u offset=2083596769
+    i64.and
+    i64.extend8_s
+    f32.convert_i64_u
+    i32.reinterpret_f32
+    v8x16.load_splat offset=784173646
+    i8x16.extract_lane_u 6
+    i32.atomic.load8_u offset=973350285
+    i64.load8_s offset=4122337115
+    global.get $8
+    drop
+    drop
+    table.size $4
+    table.get $4
+    unreachable
+    ))

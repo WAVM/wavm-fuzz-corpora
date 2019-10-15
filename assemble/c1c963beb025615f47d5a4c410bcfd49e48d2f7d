@@ -1,0 +1,51 @@
+(module
+  (type $0 (func (param externref i64 v128) (result funcref)))
+  (type $1 (func (result v128)))
+  (type $2 (func (param f64) (result f32)))
+  (import "env" "memory" (memory $3 71 30931 shared))
+  (import "env" "global0" (global $5 (mut f32)))
+  (import "env" "global1" (global $6 (mut funcref)))
+  (import "env" "func0" (func $9 (param externref i64 v128) (result funcref)))
+  (memory $4  7 25474 shared)
+  (elem $7 externref
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern))
+  
+  (func $10 (type $1)
+    (result v128)
+    (local $0 v128)
+    ref.null extern
+    nop
+    call $10
+    i8x16.all_true
+    v8x16.load_splat offset=3811360715
+    global.get $5
+    memory.size
+    nop
+    i8x16.splat
+    global.get $6
+    f64.const 0x1.a7cd25cf4a5e2p+30
+    f64.trunc
+    global.get $5
+    global.set $5
+    loop $loop (param f64) (result f32)
+      i64.trunc_f64_s
+      unreachable
+    end ;; $loop
+    unreachable
+    )
+  
+  (data $8 
+    "\16!\9f\af\f5\9e\1a\a1m\d9\88H\03\1f\cf2\fc%T\c5\dehgR\85\efJr\e59s-\a1\e1\13\baz>\af\f1\8d\e9\be\d5 U"))

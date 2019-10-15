@@ -1,0 +1,53 @@
+(module
+  (type $0 (func (param i64 funcref)))
+  (type $1 (func (param i64 i32 funcref f32)))
+  (type $2 (func (param f64 f32 f64)))
+  (type $3 (func (result f32)))
+  (type $4 (func (result i64 i32 i32)))
+  (type $5 (func (result i64 funcref)))
+  (import "env" "global0" (global $9 (mut v128)))
+  (import "env" "func0" (func $14 (param i64 i32 funcref f32)))
+  (import "env" "func1" (func $15 (param f64 f32 f64)))
+  (import "env" "func2" (func $16 (result f32)))
+  (memory $6  23 15572 shared)
+  (memory $7  46 15031)
+  (memory $8  53 18877 shared)
+  (global $10  (mut funcref) (ref.null func))
+  (global $11  (mut f64) (f64.const 0x1.086d6b88ad1ffp+61))
+  
+  (func $17 (type $0)
+    (param $0 i64)
+    (param $1 funcref)
+    global.get $11
+    f64.neg
+    i32.trunc_f64_u
+    i32.load8_s $8 offset=1241768848
+    i32.atomic.load8_u $8 offset=3726113636
+    memory.size
+    i32.atomic.rmw16.or_u offset=808449287
+    local.get $0
+    i64.atomic.rmw32.and_u $8 offset=2143409256
+    global.get $11
+    i32.trunc_f64_s
+    global.get $10
+    loop $loop (result i64 i32 i32)
+      global.get $10
+      block $block (result i64 funcref)
+        global.get $11
+        global.set $11
+        unreachable
+      end ;; $block
+      call $17
+      br $loop
+    end ;; $loop
+    i32.and
+    drop
+    unreachable
+    )
+  
+  (data $12 (memory $8) (i32.const -2082338813)
+    "\cd`\e4\d6\ae\05\ae\19\b0\07\0e\83\8f\90?\d0\19\c7\81\04\b8\93\d9\ec\13\7f{t1\ff\afZ\d2\97-Y\8a\b1\cc\a7\b7P\"\96ro?\14|t\af\1d8\85 \00\d8\e0\bc/\a0?\cf\ce"
+    "\91Q\ef\9c`(q\e4<\f3\81%\93\ac\1a\07\7fuSY\f7\f3v\b14")
+  
+  (data $13 
+    ".\15N\c8y\df\c5\8c\aa\c8m\88`"))

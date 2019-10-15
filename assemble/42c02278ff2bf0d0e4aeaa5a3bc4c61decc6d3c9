@@ -1,0 +1,2 @@
+(func()i32.atomic.rmw.xor ior3x i32.atomic
+.rmw.xor)

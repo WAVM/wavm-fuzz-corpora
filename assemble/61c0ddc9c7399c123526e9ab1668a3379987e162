@@ -1,0 +1,64 @@
+(module
+  (type $0 (func (param v128 i64 f64 i64) (result f32)))
+  (type $1 (func (result f64 externref)))
+  (type $2 (func (param v128 f32) (result v128)))
+  (type $3 (func (param f64) (result v128 f64)))
+  (import "env" "memory" (memory $4 36 17660 shared))
+  (import "env" "memory" (memory $5 81 7739 shared))
+  (import "env" "global1" (global $6 i32))
+  (import "env" "global4" (global $7 (mut i64)))
+  (import "env" "func0" (func $14 (result f64 externref)))
+  (import "env" "func1" (func $15 (param v128 f32) (result v128)))
+  (global $8  (mut f32) (f32.const 0x1.0ec4d2p+28))
+  (global $9  (mut funcref) (ref.null func))
+  (global $10  v128 (v128.const i32x4 0x3190b8de 0x61b3628f 0x20a3a1f7 0x96fdfe02))
+  (global $11  f32 (f32.const 0x1.7862f6p+30))
+  (elem $12 externref
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern))
+  
+  (func $16 (type $0)
+    (param $0 v128)
+    (param $1 i64)
+    (param $2 f64)
+    (param $3 i64)
+    (result f32)
+    (local $4 f32)
+    (local $5 v128)
+    (local $6 i32)
+    call $14
+    memory.size $5
+    unreachable
+    )
+  
+  (func $17 (type $3)
+    (param $0 f64)
+    (result v128 f64)
+    (local $1 externref)
+    local.get $0
+    f64.abs
+    f64.abs
+    f64x2.splat
+    v128.not
+    i16x8.extract_lane_u 5
+    i32.extend16_s
+    i32.ctz
+    v16x8.load_interleaved_3 $5 offset=4255404737 align=1
+    i8x16.max_s
+    i32x4.gt_s
+    f32x4.extract_lane 0
+    global.get $6
+    i64.load offset=667290627
+    elem.drop $12
+    ref.null extern
+    ref.is_null
+    ref.null func
+    global.set $9
+    drop
+    global.set $7
+    unreachable
+    )
+  
+  (data $13 (i32.const -1052992351)
+    "z\b25\00\fb\fe\e4\fa1\9bw\aex\b0+\a8\beX\fc\90\1b\92\f1\n\ae\86\b6)HP\fd\c2\ab\06;\bem10"))

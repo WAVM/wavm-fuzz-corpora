@@ -1,0 +1,6 @@
+(module
+ (type $1 (func (result f64)))
+ (func  s8_nst -0x0.00
+ 5) (func(iÍÆ)
+     f32.const -0x0.000002p-127 (i32x4.splati30)
+   f32.const -0x0.000023p-127 )

@@ -1,0 +1,78 @@
+(module
+  (type $0 (func (param v128 f32) (result f64 funcref)))
+  (type $1 (func (param externref) (result v128)))
+  (type $2 (func (param funcref) (result v128 v128)))
+  (import "env" "memory" (memory $5 10 23268 shared))
+  (import "env" "memory" (memory $6 4 51975 shared))
+  (import "env" "table" (table $3 8 4294967295 shared externref))
+  (import "env" "table" (table $4 99 4294967295 externref))
+  (import "env" "global1" (global $8 externref))
+  (import "env" "global2" (global $9 (mut i32)))
+  (import "env" "global4" (global $10 f32))
+  (import "env" "func0" (func $20 (param externref) (result v128)))
+  (memory $7  71 35821 shared)
+  (global $11  (mut v128) (v128.const i32x4 0x17b0d968 0xd92f402c 0x207ab060 0x85d63b7e))
+  (global $12  (mut f64) (f64.const 0x1.b3ac53ae20513p+63))
+  (global $13  (mut externref) (ref.null extern))
+  (global $14  externref (ref.null extern))
+  (global $15  i64 (i64.const 5248508445695003498))
+  (global $16  (mut f32) (f32.const 0x1.b8cca8p+30))
+  (elem $17 (i32.const -149496358) global
+    $8 $8 $15 $13 $8 $15 $13 $9
+    $14 $8 $15 $12 $9 $11 $16 $10
+    $8 $10 $12 $9 $12)
+  
+  (func $21 (type $0)
+    (param $0 v128)
+    (param $1 f32)
+    (result f64 funcref)
+    (local $2 externref)
+    (local $3 f32)
+    (local $4 i64)
+    (local $5 f64)
+    nop
+    i32.const -1339721087
+    global.get $9
+    i64.const -746116269996562819
+    i64.atomic.rmw.and offset=557864406
+    i64.atomic.rmw16.add_u $7 offset=3370085347
+    f64.reinterpret_i64
+    elem.drop $17
+    table.size $4
+    v64x2.load_interleaved_4 offset=3895130384 align=1
+    i8x16.abs
+    ref.null func
+    block $block (param funcref) (result v128 v128)
+      memory.size $7
+      i32.eqz
+      table.get $4
+      ref.is_null
+      ref.null extern
+      local.set $2
+      table.get $4
+      drop
+      ref.is_null
+      table.get $4
+      drop
+      global.get $9
+      ref.null func
+      ref.null extern
+      ref.is_null
+      unreachable
+    end ;; $block
+    i16x8.add_saturate_s
+    i16x8.lt_u
+    i16x8.lt_u
+    i16x8.narrow_i32x4_s
+    i16x8.eq
+    global.set $11
+    f64x2.splat
+    unreachable
+    )
+  
+  (data $18 
+    "\ce\b9\e5B}\bb\dc8\80\d1\acv\a6\cfm\f8\f4\1c0f\c9W\10yg\8b\a5-\95f")
+  
+  (data $19 
+    "\b7\ad\a6\d2n\c6\f9\98{VD\16\f55\f8A\91\f8\b0\06_>\fb\ea\9b\8b\0b\17y\9c\b6\8a\9e\c1\e1\b64:>M\e6\9b\n\b52\f0P\d7A(l\fa\bd\86\822\ef\fa\c8\13_@\e1\e9"
+    "A\da\96\b5\da"))

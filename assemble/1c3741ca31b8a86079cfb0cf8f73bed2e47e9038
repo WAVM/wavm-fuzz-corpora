@@ -1,0 +1,99 @@
+(module
+  (type $0 (func (param v128 v128 v128) (result v128)))
+  (type $1 (func (param v128 v128) (result v128)))
+  (export "sat-add_s-sub_s" (func $2))
+  (export "sat-add_s-sub_u" (func $3))
+  (export "sat-add_u-sub_s" (func $4))
+  (export "sat-add_u-sub_u" (func $5))
+  (export "sat-add_s-neg" (func $6))
+  (export "sat-add_u-neg" (func $7))
+  (export "sat-sub_s-neg" (func $8))
+  (export "sat-sub_u-neg" (func $9))
+  
+  (func $2 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (param $2 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    i16x8.sub_saturate_s
+    local.get $2
+    i16x8.add_saturate_s
+    )
+  
+  (func $3 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (param $2 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    i16x8.sub_saturate_u
+    local.get $2
+    i16x8.add_saturate_s
+    )
+  
+  (func $4 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (param $2 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    i16x8.sub_saturate_s
+    local.get $2
+    i16x8.add_saturate_u
+    )
+  
+  (func $5 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (param $2 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    i16x8.sub_saturate_u
+    local.get $2
+    i16x8.add_saturate_u
+    )
+  
+  (func $6 (type $1)
+    (param $0 v128)
+    (param $1 v128)
+    (result v128)
+    local.get $0
+    i16x8.neg
+    local.get $1
+    i16x8.add_saturate_s
+    )
+  
+  (func $7 (type $1)
+    (param $0 v128)
+    (param $1 v128)
+    (result v128)
+    local.get $0
+    i16x8.neg
+    local.get $1
+    i16x8.add_saturate_u
+    )
+  
+  (func $8 (type $1)
+    (param $0 v128)
+    (param $1 v128)
+    (result v128)
+    local.get $0
+    i16x8.neg
+    local.get $1
+    i16x8.sub_saturate_s
+    )
+  
+  (func $9 (type $1)
+    (param $0 v128)
+    (param $1 v128)
+    (result v128)
+    local.get $0
+    i16x8.neg
+    local.get $1
+    i16x8.sub_saturate_u
+    ))

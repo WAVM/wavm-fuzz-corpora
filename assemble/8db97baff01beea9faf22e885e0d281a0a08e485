@@ -1,0 +1,11 @@
+(module
+  (type $0 (func   (param $0re Ç)))
+  (import "env" "bal0" (global $7 i64))
+  (memory $3 5 r)
+(table $1 74647 funcref) (elem $r7 $7)
+  
+(func $7 (type $0)
+   (param $0sef)
+ )
+
+  (data $6\)

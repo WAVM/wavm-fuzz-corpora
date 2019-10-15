@@ -1,0 +1,4 @@
+(func br 0
+f32.div f32.div f32.div
+f32.div f32.div f32.div f32.div f32.div br
+0)

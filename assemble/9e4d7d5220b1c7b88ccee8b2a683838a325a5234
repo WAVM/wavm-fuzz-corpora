@@ -1,0 +1,41 @@
+(module
+  (type $0 (func (param i64 v128 funcref) (result externref i32)))
+  (memory $1  98 2645 shared)
+  (memory $2  88 53654)
+  (elem $3 declare funcref
+    (ref.func $4) (ref.null func) (ref.null func) (ref.null func)
+    (ref.func $4) (ref.null func) (ref.null func) (ref.null func)
+    (ref.null func) (ref.null func) (ref.null func) (ref.null func)
+    (ref.func $4) (ref.null func) (ref.func $4))
+  
+  (func $4 (type $0)
+    (param $0 i64)
+    (param $1 v128)
+    (param $2 funcref)
+    (result externref i32)
+    (local $3 funcref)
+    (local $4 f32)
+    local.get $4
+    f32.neg
+    memory.size
+    v64x2.load_interleaved_4 offset=37479392 align=1
+    v128.bitselect
+    i16x8.extract_lane_s 3
+    f64.const 0x1.9ea1b0911a1f8p+279
+    i32.trunc_sat_f64_s
+    i32.mul
+    i32x4.load16x4_u offset=1634902987
+    i32x4.le_s
+    block $block (result funcref)
+      local.get $1
+      f64x2.neg
+      f64x2.abs
+      ref.null extern
+      unreachable
+    end ;; $block
+    ref.null func
+    local.set $2
+    drop
+    ref.null extern
+    unreachable
+    ))

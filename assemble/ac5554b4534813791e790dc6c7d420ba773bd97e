@@ -1,0 +1,63 @@
+(module
+  (type $0 (func (result f64 f32)))
+  (type $1 (func (param f64 f64) (result i64 i32)))
+  (type $2 (func (param i32)))
+  (type $3 (func (param f64 v128 f32 i32) (result externref)))
+  (type $4 (func (param f64 f32 f32)))
+  (type $5 (func (param v128 externref i64)))
+  (import "env" "memory" (memory $7 86 54321 shared))
+  (import "env" "table" (table $6 73 4294967295 shared externref))
+  (import "env" "global2" (global $9 v128))
+  (import "env" "global3" (global $10 externref))
+  (import "env" "global4" (global $11 funcref))
+  (import "env" "global6" (global $12 v128))
+  (import "env" "global7" (global $13 v128))
+  (import "env" "func0" (func $20 (result f64 f32)))
+  (import "env" "func1" (func $21 (param i32)))
+  (import "env" "func2" (func $22 (param f64 v128 f32 i32) (result externref)))
+  (import "env" "func3" (func $23 (param f64 f32 f32)))
+  (memory $8  50 32881)
+  (global $14  externref (ref.null extern))
+  (global $15  (mut funcref) (ref.null func))
+  (global $16  i32 (i32.const 150903049))
+  (elem $17 (i32.const 1372378337) exception_type)
+  (elem $18 (i32.const 1637743619) exception_type)
+  
+  (func $24 (type $1)
+    (param $0 f64)
+    (param $1 f64)
+    (result i64 i32)
+    (local $2 i32)
+    (local $3 f64)
+    (local $4 i64)
+    (local $5 f64)
+    f32.const -0x1.f28b8cp+58
+    i64.trunc_sat_f32_s
+    i64.eqz
+    table.size $6
+    v128.const i32x4 0x8819d762 0xe7ced9ab 0xc794f141 0x9d8cafd7
+    global.get $10
+    i64.const -5143740484797668866
+    block $block (param v128 externref i64)
+      i64.eqz
+      f32.load offset=2865959184 align=2
+      local.get $4
+      f32.const -0x1.57da98p+107
+      i64.const 8552043017761482823
+      global.get $9
+      br $block
+    end ;; $block
+    i64.const -2944081740977476133
+    i64.atomic.rmw8.add_u $8 offset=3474825606
+    i64.atomic.rmw8.add_u offset=2950232974
+    f32.convert_i64_s
+    drop
+    local.get $3
+    local.set $1
+    memory.size
+    unreachable
+    )
+  
+  (data $19 
+    "{%e\bf\98\b5\d3i\c6\06A\b5YD\e7\05\88\9f\03\f8\17#\f5!=Md\df\e7\19\aa\c4t\1f\00*0\dcW\b3\b2\e7\82d\94x<1\8c5\ec\ee\e8\7f\b2\19g\ec\0d\08\b2\b8\e0\03"
+    "\\Ry\92*\d8\c7\c9\bf3g\134p\8b\fb\b36L\16z\0bEE\b4\cc\96\""))

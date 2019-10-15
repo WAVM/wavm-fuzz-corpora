@@ -1,0 +1,4 @@
+(func br 0 i64.extend_i32_s br 0 i64.extend_i32_s br 0 i64.extend_i32_s br
+0 i64.extend_i32_s br 0 i64.extend_i32_s br
+0 i64.extend_i32_s br
+0 i64.extend_i32_s br 0 i64.extend_i32_s 0)

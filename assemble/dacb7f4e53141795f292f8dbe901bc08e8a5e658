@@ -1,0 +1,1 @@
+(memory  0)(func(].2)(i32.atomic.load)(i32.atomic.load)(i32.atomic.load)(i32.atomic.load))

@@ -1,0 +1,26 @@
+(module
+  (type $0 (func (param v128) (result i32)))
+  (export "i8x16.any_true" (func $1))
+  (export "i16x8.any_true" (func $2))
+  (export "i32x4.any_true" (func $3))
+  
+  (func $1 (type $0)
+    (param $a v128)
+    (result i32)
+    local.get $a
+    i8x16.any_true
+    )
+  
+  (func $2 (type $0)
+    (param $a v128)
+    (result i32)
+    local.get $a
+    i16x8.any_true
+    )
+  
+  (func $3 (type $0)
+    (param $a v128)
+    (result i32)
+    local.get $a
+    i32x4.any_true
+    ))

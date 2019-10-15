@@ -1,0 +1,61 @@
+(module
+  (type $0 (func (param i64 v128) (result funcref v128)))
+  (import "env" "memory" (memory $1 51 65202 shared))
+  (import "env" "global0" (global $2 f32))
+  (import "env" "global1" (global $3 externref))
+  (import "env" "global2" (global $4 (mut f64)))
+  (elem $5 declare funcref
+    (ref.null func) (ref.func $8) (ref.null func) (ref.func $8)
+    (ref.null func) (ref.func $8) (ref.func $8) (ref.null func)
+    (ref.null func) (ref.func $8) (ref.func $8) (ref.null func)
+    (ref.func $8) (ref.null func) (ref.func $8) (ref.func $8)
+    (ref.func $8) (ref.func $8) (ref.func $8) (ref.func $8)
+    (ref.null func) (ref.null func) (ref.func $8) (ref.null func)
+    (ref.func $8) (ref.null func) (ref.null func) (ref.null func)
+    (ref.func $8) (ref.func $8) (ref.func $8) (ref.func $8)
+    (ref.null func) (ref.func $8) (ref.func $8) (ref.null func)
+    (ref.func $8) (ref.null func) (ref.func $8) (ref.null func)
+    (ref.null func) (ref.func $8) (ref.null func) (ref.func $8)
+    (ref.null func) (ref.null func) (ref.func $8) (ref.null func)
+    (ref.null func) (ref.func $8) (ref.null func) (ref.func $8)
+    (ref.func $8) (ref.null func) (ref.null func) (ref.null func)
+    (ref.func $8) (ref.null func) (ref.func $8) (ref.null func)
+    (ref.func $8) (ref.null func) (ref.null func) (ref.null func)
+    (ref.func $8) (ref.func $8) (ref.func $8) (ref.func $8)
+    (ref.null func) (ref.func $8) (ref.func $8) (ref.null func)
+    (ref.func $8) (ref.null func) (ref.null func) (ref.func $8)
+    (ref.func $8) (ref.func $8))
+  
+  (func $8 (type $0)
+    (param $0 i64)
+    (param $1 v128)
+    (result funcref v128)
+    f32.const 0x1.611312p+79
+    f32.sqrt
+    block $block
+      local.get $1
+      i8x16.extract_lane_s 10
+      i64.atomic.load32_u offset=1553177403
+      elem.drop $5
+      i32.const 1658606438
+      i64.load32_s offset=2218963539
+      i64.mul
+      i64.const -8339593415724576610
+      i64.add
+      nop
+      i64.extend8_s
+      i32.wrap_i64
+      unreachable
+    end ;; $block
+    ref.null func
+    ref.null extern
+    drop
+    ref.is_null
+    unreachable
+    )
+  
+  (data $6 
+    "\f7H\0c\c5\1b\e4e2\b8\81\11@yi\97XRy\93Mb")
+  
+  (data $7 (i32.const -270256850)
+    ">A\c5\n\f7\cf\1f\b9\d9\93Nf\10\cfR\8bK@,\83\d8\b0\b6\a0\d1\08\09\0d\d0T+\a7\d3\ffa\f3\c6@\998\a2\b4"))

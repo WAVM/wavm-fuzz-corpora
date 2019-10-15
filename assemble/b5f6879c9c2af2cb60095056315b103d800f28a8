@@ -1,0 +1,42 @@
+(module
+  (type $0 (func (param v128 v128) (result v128)))
+  (export "i8x16.sub" (func $1))
+  (export "i16x8.sub" (func $2))
+  (export "i32x4.sub" (func $3))
+  (export "i64x2.sub" (func $4))
+  
+  (func $1 (type $0)
+    (param $a v128)
+    (param $b v128)
+    (result v128)
+    local.get $a
+    local.get $b
+    i8x16.sub
+    )
+  
+  (func $2 (type $0)
+    (param $a v128)
+    (param $b v128)
+    (result v128)
+    local.get $a
+    local.get $b
+    i16x8.sub
+    )
+  
+  (func $3 (type $0)
+    (param $a v128)
+    (param $b v128)
+    (result v128)
+    local.get $a
+    local.get $b
+    i32x4.sub
+    )
+  
+  (func $4 (type $0)
+    (param $a v128)
+    (param $b v128)
+    (result v128)
+    local.get $a
+    local.get $b
+    i64x2.sub
+    ))

@@ -1,0 +1,29 @@
+(memory 1)(func()i32.atomic.rmw16.add_u
+i32.atomic.rmw16.add_u
+i32.atomic.rmw16.add_u .ay 1)(func()i32.atomic.rmw16.add_u
+i32.atomic.rmw16.add_u
+i32.add_u)(func()i32.atomic.rmw16.add_u
+iatomic.tomicry 1)(func()i32.atomic.rmw16.add_u
+i32.atomic.rmw16.add_u
+i32.add_u)(func()i32.atomic.rmw16.add_u
+i32.atomic.rmw16.add_u
+i32.atomicry 1)(func()i32.atomic.rmw16.add_u
+i32.atomic.rmw16.add_u
+i32.atomic.rmw16.add_u i32.atomic.rmw16.add_u
+i32.atomic.rmw16.add_u)(func()i32.atomic.rmw16.add_u
+ia23.tomicadd_u)(func()i32.atomic.rmw16.add_u
+i32.atomic.rmw16.add_u
+32..rmw16.add_u)(func()i32.atomic.rmw16.add_u
+ia23.tomic.rmw.rmw16.add_u)(func()i32.atomic.rmw16.add_u
+i32.atomic.rmw16.add_u
+32.atomic.rmw16.add_u
+i32y 1)(func()i32.atomic.rmw16.add_u
+i32.atomic.rmw16.add_u
+i32.atomic.rmw16.add_u i32.atomic.rmw16.add_u
+i32.atomic.rmw16_u
+i32.atomicry 1)(func()i32.atomic.rmw16.add_u
+i32.atomic.rmw16.add_u
+i32.atomic.rmw16.add_u i32.atomic.rmw16.add_u
+i32.atomiw16.add_u)(func()i32.atommw.rmw16.add_u)(func()i32.atomic.rmw16.add_u
+i32.atomic.rmw16.add_u
+i32.atomic.rmw16.add_u)

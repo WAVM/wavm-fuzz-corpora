@@ -1,0 +1,4 @@
+(func br 0 i32.ne i32.ne i32.ne
+i32.ne i32.ne i32.ne
+i32.ne i32.ne br
+0)

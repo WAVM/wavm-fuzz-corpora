@@ -1,0 +1,1 @@
+(memory 0)(func(br 00)i64.load (br 0)i64.load i64.store)(func)(func(br 0)i64.load (br 0)i64.load i64.store)

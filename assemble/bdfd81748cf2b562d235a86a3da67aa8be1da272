@@ -1,0 +1,82 @@
+(module
+  (type $0 (func (param funcref) (result f64 f64)))
+  (type $1 (func (param f32 funcref) (result v128 i64)))
+  (type $2 (func (result i64 externref)))
+  (type $3 (func (result i32 f32)))
+  (type $4 (func (param funcref i32 funcref) (result externref)))
+  (type $5 (func (param externref i64)))
+  (type $6 (func (param f64 f64) (result i64)))
+  (import "env" "func0" (func $12 (result i64 externref)))
+  (memory $9  5 56174 shared)
+  (memory $10  85 28330)
+  (table $7  60 4294967295 shared funcref)
+  (table $8  76 4294967295 shared funcref)
+  (global $11  funcref (ref.null func))
+  
+  (func $13 (type $0)
+    (param $0 funcref)
+    (result f64 f64)
+    (local $1 i64)
+    (local $2 v128)
+    nop
+    f64.const 0x1.37b438b200bebp-921
+    i32.trunc_sat_f64_u
+    i64.atomic.load8_u offset=4073303793
+    table.size $8
+    i64.extend_i32_s
+    i64.shl
+    f32.convert_i64_s
+    loop $loop (result i32 f32)
+      memory.size $10
+      i32.eqz
+      call_indirect $8 (type $3)
+      i64.const 5800464510691714016
+      f32.convert_i64_u
+      f32.ne
+      i32.store16 offset=1763789570
+      ref.null func
+      drop
+      table.size $8
+      call $12
+      unreachable
+    end ;; $loop
+    drop
+    ref.null extern
+    ref.is_null
+    i32.atomic.rmw16.sub_u $10 offset=3817720513
+    unreachable
+    )
+  
+  (func $14 (type $1)
+    (param $0 f32)
+    (param $1 funcref)
+    (result v128 i64)
+    (local $2 v128)
+    (local $3 externref)
+    (local $4 i64)
+    local.get $0
+    f64.const -0x1.352335f437db2p-688
+    i64.reinterpret_f64
+    i64.clz
+    global.get $11
+    v128.const i32x4 0x2540daec 0x7988326d 0x00790d62 0xc56eae75
+    i16x8.extract_lane_u 7
+    global.get $11
+    loop $loop (param funcref i32 funcref) (result externref)
+      br $loop
+    end ;; $loop
+    local.get $4
+    block $block (param externref i64)
+      f64.convert_i64_u
+      f64.const 0x1.c1bbea06e0f61p+430
+      loop $loop_0 (param f64 f64) (result i64)
+        f64.copysign
+        unreachable
+      end ;; $loop_0
+      unreachable
+    end ;; $block
+    ref.null extern
+    ref.null extern
+    drop
+    unreachable
+    ))

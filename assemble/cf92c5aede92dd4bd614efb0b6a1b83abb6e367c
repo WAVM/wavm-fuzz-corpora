@@ -1,0 +1,403 @@
+(module
+  (type $check (func (param i32 i32) (result i32)))
+  (type $0 (func (result i32)))
+  (type $1 (func (result i64)))
+  (type $2 (func (result externref)))
+  (type $3 (func (param i32)))
+  (type $4 (func (param i64)))
+  (type $5 (func (result f32)))
+  (type $6 (func (result f64)))
+  (type $7 (func (param f32)))
+  (type $8 (func (param f64)))
+  (type $9 (func))
+  (type $10 (func (param i32) (result i32)))
+  (memory $12  1)
+  (table $11  1 1 funcref)
+  (global $a  i32 (i32.const -2))
+  (global $13  f32 (f32.const -0x1.800000p+1))
+  (global $14  f64 (f64.const -0x1.0000000000000p+2))
+  (global $b  i64 (i64.const -5))
+  (global $x  (mut i32) (i32.const -12))
+  (global $15  (mut f32) (f32.const -0x1.a00000p+3))
+  (global $16  (mut f64) (f64.const -0x1.c000000000000p+3))
+  (global $y  (mut i64) (i64.const -15))
+  (global $r  externref (ref.null extern))
+  (global $17  funcref (ref.null func))
+  (export "get-a" (func $19))
+  (export "get-b" (func $20))
+  (export "get-r" (func $21))
+  (export "get-x" (func $22))
+  (export "get-y" (func $23))
+  (export "set-x" (func $24))
+  (export "set-y" (func $25))
+  (export "get-1" (func $26))
+  (export "get-2" (func $27))
+  (export "get-5" (func $28))
+  (export "get-6" (func $29))
+  (export "set-5" (func $30))
+  (export "set-6" (func $31))
+  (export "as-select-first" (func $32))
+  (export "as-select-mid" (func $33))
+  (export "as-select-last" (func $34))
+  (export "as-loop-first" (func $35))
+  (export "as-loop-mid" (func $36))
+  (export "as-loop-last" (func $37))
+  (export "as-if-condition" (func $38))
+  (export "as-if-then" (func $39))
+  (export "as-if-else" (func $40))
+  (export "as-br_if-first" (func $41))
+  (export "as-br_if-last" (func $42))
+  (export "as-br_table-first" (func $43))
+  (export "as-br_table-last" (func $44))
+  (export "as-call_indirect-first" (func $45))
+  (export "as-call_indirect-mid" (func $46))
+  (export "as-call_indirect-last" (func $47))
+  (export "as-store-first" (func $48))
+  (export "as-store-last" (func $49))
+  (export "as-load-operand" (func $50))
+  (export "as-memory.grow-value" (func $51))
+  (export "as-call-value" (func $52))
+  (export "as-return-value" (func $53))
+  (export "as-drop-operand" (func $54))
+  (export "as-br-value" (func $55))
+  (export "as-local.set-value" (func $56))
+  (export "as-local.tee-value" (func $57))
+  (export "as-global.set-value" (func $58))
+  (export "as-unary-operand" (func $59))
+  (export "as-binary-operand" (func $60))
+  (export "as-compare-operand" (func $61))
+  (elem $18 (i32.const 0)
+    $func)
+  
+  (func $19 (type $0)
+    (result i32)
+    global.get $a
+    )
+  
+  (func $20 (type $1)
+    (result i64)
+    global.get $b
+    )
+  
+  (func $21 (type $2)
+    (result externref)
+    global.get $r
+    )
+  
+  (func $22 (type $0)
+    (result i32)
+    global.get $x
+    )
+  
+  (func $23 (type $1)
+    (result i64)
+    global.get $y
+    )
+  
+  (func $24 (type $3)
+    (param $0 i32)
+    local.get $0
+    global.set $x
+    )
+  
+  (func $25 (type $4)
+    (param $0 i64)
+    local.get $0
+    global.set $y
+    )
+  
+  (func $26 (type $5)
+    (result f32)
+    global.get $13
+    )
+  
+  (func $27 (type $6)
+    (result f64)
+    global.get $14
+    )
+  
+  (func $28 (type $5)
+    (result f32)
+    global.get $15
+    )
+  
+  (func $29 (type $6)
+    (result f64)
+    global.get $16
+    )
+  
+  (func $30 (type $7)
+    (param $0 f32)
+    local.get $0
+    global.set $15
+    )
+  
+  (func $31 (type $8)
+    (param $0 f64)
+    local.get $0
+    global.set $16
+    )
+  
+  (func $dummy (type $9)
+    )
+  
+  (func $32 (type $0)
+    (result i32)
+    global.get $x
+    i32.const 2
+    i32.const 3
+    select
+    )
+  
+  (func $33 (type $0)
+    (result i32)
+    i32.const 2
+    global.get $x
+    i32.const 3
+    select
+    )
+  
+  (func $34 (type $0)
+    (result i32)
+    i32.const 2
+    i32.const 3
+    global.get $x
+    select
+    )
+  
+  (func $35 (type $0)
+    (result i32)
+    loop $loop (result i32)
+      global.get $x
+      call $dummy
+      call $dummy
+    end ;; $loop
+    )
+  
+  (func $36 (type $0)
+    (result i32)
+    loop $loop (result i32)
+      call $dummy
+      global.get $x
+      call $dummy
+    end ;; $loop
+    )
+  
+  (func $37 (type $0)
+    (result i32)
+    loop $loop (result i32)
+      call $dummy
+      call $dummy
+      global.get $x
+    end ;; $loop
+    )
+  
+  (func $38 (type $0)
+    (result i32)
+    global.get $x
+    if $if (result i32)
+      call $dummy
+      i32.const 2
+    else
+      call $dummy
+      i32.const 3
+    end ;; $if
+    )
+  
+  (func $39 (type $0)
+    (result i32)
+    i32.const 1
+    if $if (result i32)
+      global.get $x
+    else
+      i32.const 2
+    end ;; $if
+    )
+  
+  (func $40 (type $0)
+    (result i32)
+    i32.const 0
+    if $if (result i32)
+      i32.const 2
+    else
+      global.get $x
+    end ;; $if
+    )
+  
+  (func $41 (type $0)
+    (result i32)
+    block $block (result i32)
+      global.get $x
+      i32.const 2
+      br_if $block
+      i32.const 3
+      return
+    end ;; $block
+    )
+  
+  (func $42 (type $0)
+    (result i32)
+    block $block (result i32)
+      i32.const 2
+      global.get $x
+      br_if $block
+      i32.const 3
+      return
+    end ;; $block
+    )
+  
+  (func $43 (type $0)
+    (result i32)
+    block $block (result i32)
+      global.get $x
+      i32.const 2
+      br_table
+        $block
+        $block ;; default
+    end ;; $block
+    )
+  
+  (func $44 (type $0)
+    (result i32)
+    block $block (result i32)
+      i32.const 2
+      global.get $x
+      br_table
+        $block
+        $block ;; default
+    end ;; $block
+    )
+  
+  (func $func (type $check)
+    (param $0 i32)
+    (param $1 i32)
+    (result i32)
+    local.get $0
+    )
+  
+  (func $45 (type $0)
+    (result i32)
+    block $block (result i32)
+      global.get $x
+      i32.const 2
+      i32.const 0
+      call_indirect $11 (type $check)
+    end ;; $block
+    )
+  
+  (func $46 (type $0)
+    (result i32)
+    block $block (result i32)
+      i32.const 2
+      global.get $x
+      i32.const 0
+      call_indirect $11 (type $check)
+    end ;; $block
+    )
+  
+  (func $47 (type $0)
+    (result i32)
+    block $block (result i32)
+      i32.const 2
+      i32.const 0
+      global.get $x
+      call_indirect $11 (type $check)
+    end ;; $block
+    )
+  
+  (func $48 (type $9)
+    global.get $x
+    i32.const 1
+    i32.store
+    )
+  
+  (func $49 (type $9)
+    i32.const 0
+    global.get $x
+    i32.store
+    )
+  
+  (func $50 (type $0)
+    (result i32)
+    global.get $x
+    i32.load
+    )
+  
+  (func $51 (type $0)
+    (result i32)
+    global.get $x
+    memory.grow
+    )
+  
+  (func $f (type $10)
+    (param $0 i32)
+    (result i32)
+    local.get $0
+    )
+  
+  (func $52 (type $0)
+    (result i32)
+    global.get $x
+    call $f
+    )
+  
+  (func $53 (type $0)
+    (result i32)
+    global.get $x
+    return
+    )
+  
+  (func $54 (type $9)
+    global.get $x
+    drop
+    )
+  
+  (func $55 (type $0)
+    (result i32)
+    block $block (result i32)
+      global.get $x
+      br $block
+    end ;; $block
+    )
+  
+  (func $56 (type $10)
+    (param $0 i32)
+    (result i32)
+    global.get $x
+    local.set $0
+    local.get $0
+    )
+  
+  (func $57 (type $10)
+    (param $0 i32)
+    (result i32)
+    global.get $x
+    local.tee $0
+    )
+  
+  (func $58 (type $0)
+    (result i32)
+    global.get $x
+    global.set $x
+    global.get $x
+    )
+  
+  (func $59 (type $0)
+    (result i32)
+    global.get $x
+    i32.eqz
+    )
+  
+  (func $60 (type $0)
+    (result i32)
+    global.get $x
+    global.get $x
+    i32.mul
+    )
+  
+  (func $61 (type $0)
+    (result i32)
+    global.get $a
+    i32.const 1
+    i32.gt_u
+    ))

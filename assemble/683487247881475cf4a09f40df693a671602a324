@@ -1,0 +1,35 @@
+(type(func (result )))
+ (func  
+ i16x8.sub_saturate_s loop        i16x8.sub_saturate_s lotype(func (result )))
+ (func  
+ i16x8.sub_saturate_s loop       i16x8.sub_saturate_s(func (result )))
+ (func  
+ i16x8.sub_saturate_s loop        i16x8.sub_saturate_s l)
+ (func  
+ i16x8.sub_saturate_s
+ i16x8.sub_saturate_s lo(func (result )))
+ (func  
+ i16x8.sub_saturate_s loop        i16x8.sub_saturate_s lotype(func (result )))
+ (func  
+ i16x8.sub_saturate_s loop       i16x8.sub_saturate_s(func (result )))
+ (func  
+ i16x8.sub_saturate_s loop        i16x8.sub_saturate_s l)
+ (func  
+ i16x8.sub_saturate_s loop       i16x8.sub i16x8.sub_saturate_s loop           e(func (result )))
+ (func  
+ i16x8.sub_saturate_s loop        i16x8.sub_saturate_s lotype(func (result )))
+ (func  
+ i16x8.sub_saturate_s loop       i16x8.sub_saturate_s(func (result )))
+ (func  
+ i16x8.sub_saturate_s loop     i16x8.sub_saturate_s l)
+ (func  
+ i16x8.sub_saturate_s
+ i16x8.sub_saturate_s lo(func (result )))
+ (func  
+ i16x8.sub_saturate_s loop        i16x8.sub_saturate_s lotype(c (result )))
+ (func  
+ i16x8.sub_saturate_s loop       i16x8.sub_saturate_s(func (result )))
+ (func  
+ i16x8.sub_saturate_s loop        i16x8.sub_saturate_s l)
+ (func  
+ i16x8.sub_saturate_s loop       i16x8.sub i16x8.sub_saturate_s loi1))

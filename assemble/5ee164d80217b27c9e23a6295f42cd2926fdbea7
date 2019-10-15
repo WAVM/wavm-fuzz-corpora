@@ -1,0 +1,64 @@
+(module
+  (type $0 (func (param f32 funcref v128) (result i64)))
+  (type $1 (func (param f32 funcref f32 i32) (result i64 v128)))
+  (type $2 (func (param i64) (result externref v128 i32 f64)))
+  (type $3 (func (param f32 f32) (result externref)))
+  (import "env" "memory" (memory $6 5 56323 shared))
+  (import "env" "memory" (memory $7 39 24548 shared))
+  (import "env" "table" (table $4 11 4294967295 shared funcref))
+  (import "env" "global0" (global $9 v128))
+  (import "env" "global1" (global $10 v128))
+  (import "env" "global2" (global $11 funcref))
+  (import "env" "global4" (global $12 funcref))
+  (import "env" "global5" (global $13 (mut funcref)))
+  (import "env" "global6" (global $14 funcref))
+  (import "env" "func0" (func $18 (param f32 funcref v128) (result i64)))
+  (memory $8  9 35263 shared)
+  (table $5  77 4294967295 externref)
+  (global $15  (mut funcref) (ref.null func))
+  (global $16  externref (ref.null extern))
+  (elem $17 (table $5) (i32.const 1236663999) externref)
+  
+  (func $19 (type $1)
+    (param $0 f32)
+    (param $1 funcref)
+    (param $2 f32)
+    (param $3 i32)
+    (result i64 v128)
+    (local $4 f32)
+    (local $5 v128)
+    (local $6 f32)
+    global.get $13
+    memory.size $8
+    f64.convert_i32_u
+    v128.const i32x4 0x0d41acd6 0x4849bad0 0x7edf7941 0x1b7f774a
+    memory.size $7
+    elem.drop $17
+    i8x16.replace_lane 3
+    local.get $6
+    i32.trunc_f32_s
+    i64.const 229691284239017795
+    loop $loop (param i64) (result externref v128 i32 f64)
+      local.get $0
+      local.get $6
+      loop $loop_0 (param f32 f32) (result externref)
+        f32.min
+        local.set $4
+        memory.size $8
+        unreachable
+      end ;; $loop_0
+      drop
+      drop
+      f64.const 0x1.13e190f0e5c30p-926
+      unreachable
+    end ;; $loop
+    f64.store $8 offset=2727531159
+    local.set $5
+    ref.is_null
+    i32.atomic.rmw8.and_u $7 offset=1474850796
+    i64x2.shr_s
+    local.set $5
+    ref.null extern
+    ref.null extern
+    unreachable
+    ))

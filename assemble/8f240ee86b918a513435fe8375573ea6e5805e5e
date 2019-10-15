@@ -1,0 +1,4 @@
+(module(func $25(param $0 i64)
+ (param $1 f32)
+  (result i64) f32.const -0    local.tee $1
+drop i64.const 6  local.tee  $0))

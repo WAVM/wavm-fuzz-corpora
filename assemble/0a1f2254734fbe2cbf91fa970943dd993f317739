@@ -1,0 +1,1 @@
+(memory 5)(data)(func  mini())(func(i32.atomic.rmw8.cmpxchg_u(i32))(i32.atomic.rmw8.cmpxchg_u)mini())(func(i32.atomic.rmw8.cmpxchg_u(i32))(i32.atomic.rmw8.cmpxchg_u)))

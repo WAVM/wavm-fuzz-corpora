@@ -1,0 +1,7 @@
+(module
+  (exception_type $0)
+  
+  (custom_section "h"
+    (after exception_type))
+  
+  )

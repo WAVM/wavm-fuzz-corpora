@@ -1,0 +1,71 @@
+(module
+(memory 1 1)  
+  
+  (func  i3211)  
+  (func  i32.const 1211)  
+  (func  i32.const 1
+  i64x2.load32x2_u  i64x2.load32x2_u
+i64x2.load32x2_u
+conlt 10)  
+(func  i32.const 1
+  i64x2.load32x2_u
+inst 11)  
+  (func
+  i64x2.load32x2_u
+i64x2.load32x2_u
+const 11)  
+  (func  i32.const 1
+  i64x2.load32x2_u
+i64x2const 11)  
+  (func  i32.const 1
+  i64x2.load32x2_u
+i64x2.load32x2_u
+const 11)  
+  (func  i32.const 1
+  i64x2.load32x2_u
+i64x2.load32x2_u
+ 
+  i64x2.load32x2_u
+y 1 
+y unc  i32.c1)  
+  (func  i32.const 1
+  i64x2.load32x2_u
+i64x2.load32x2_u
+const 11)  
+  (func  i32.const 1
+  i64x2.load32x2_u
+i64x2.load32x2_u
+  i64x2.load32x2_u
+i64x2.load32x2_u
+conlt 10)  
+(func  i32.const 1
+  i64x2.load32x2_u
+i64x u
+y 132.const 11)  
+  (func
+  i64x2.load32x2_u
+i64x2.load32x2_u
+const 11)  
+  (func  i32.const 1
+  i64x2.load32x2_u
+i64x2const 11)  
+  (func  i32.const 1
+  i64x2.load32x2_u
+i64x2.load32x2_u
+const 11)  
+  (func  i32.const 1
+  i64x2.load32x2_u
+i64x2.load32x2_u
+ 
+  i64x2.load32x2_u
+y unc  i32.c1)  
+  (func  i32.const 1
+  i64x2.load32x2_u
+i64x2.load32x2_u
+const 11)  
+  (func  i32.const 1
+  i64x2.load32x2_u
+i64x2.load32x2_u
+ 
+  i64x2.load32x2_u
+yloaa  )

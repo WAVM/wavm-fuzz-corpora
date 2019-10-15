@@ -1,0 +1,1 @@
+(func(f32.ceil)(f32.ceil(f32.ceil(f)(i32.shr_s))(i32.shr_s(iss)))())

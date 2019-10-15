@@ -1,0 +1,6 @@
+  (type(func))
+  (memory  1)
+ (func i32.const 0
+   v128.load  v128.not
+    v128.not
+v128.not  (drop  ))

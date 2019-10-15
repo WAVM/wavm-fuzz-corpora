@@ -1,0 +1,7 @@
+(module
+  (type $0 (func (param i32 i64)))
+  (type $1 (func (param f64) (result funcref f64)))
+  (type $2 (func (param externref v127 i64) (result i32 v128)))
+  (type $3 (func (param i32 v128 externref)))
+  (import "env" "memory" (memor.get $12
+    i64.reinte

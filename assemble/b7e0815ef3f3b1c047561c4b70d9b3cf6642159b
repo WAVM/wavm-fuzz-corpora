@@ -1,0 +1,1 @@
+(func (call_indirect(param $%)t1)call_indirect (param $%#)call_indirect (param $x%#))

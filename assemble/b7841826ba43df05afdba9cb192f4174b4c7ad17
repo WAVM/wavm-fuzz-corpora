@@ -1,0 +1,18 @@
+  (func (_u)( i32x4.max_u)( i31.2_s
+noau)(i64x2.load32x2_s
+ (i))()(i64x2.load32x2_s)(i64x2.load32x2_s
+(i))(i64x2.load32x2_s
+(i))(i64x2.load32x2_s
+(i))(i64x2.load32x2_s
+(i64x2.load32x2_s
+ (i))()(i6_s)(i64x2.load32x2_s
+(i))(i64x2.load32x2_s
+(i))(i64x2.load32x2_s
+ (i))()(i64x2.lx2_s
+(i))(i64x1.2_s
+noau)(i64x2.load32x2_s
+ (i))()(i64x2.load32x2_s)(i64x2.load32x2_s
+(i))(i64x2.load32x2_s
+(i))(i64x2.load32x2_s
+(i))(i64x2.load32x2_s
+(i)))) )

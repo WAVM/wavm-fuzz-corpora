@@ -1,0 +1,121 @@
+(module
+  (type $0 (func (param f32 v128) (result i32 funcref)))
+  (type $1 (func (param f64 v128) (result f64)))
+  (type $2 (func (param externref f32) (result v128 funcref)))
+  (type $3 (func (param i64 v128)))
+  (type $4 (func (param v128 f32 i64 f32) (result i64 i64)))
+  (type $5 (func (param f32 v128 externref) (result f32)))
+  (type $6 (func (param v128 externref)))
+  (import "env" "memory" (memory $10 81 8990 shared))
+  (import "env" "memory" (memory $11 51 7471 shared))
+  (import "env" "table" (table $7 59 4294967295 shared externref))
+  (import "env" "global1" (global $12 (mut i64)))
+  (import "env" "func0" (func $17 (param f32 v128) (result i32 funcref)))
+  (import "env" "func1" (func $18 (param f64 v128) (result f64)))
+  (table $8  83 4294967295 funcref)
+  (table $9  91 4294967295 funcref)
+  (global $13  (mut v128) (v128.const i32x4 0x64969b47 0xb84dafe7 0xdd10be60 0x2ee38b24))
+  (elem $14 declare funcref
+    (ref.func $19) (ref.func $18) (ref.null func) (ref.func $18)
+    (ref.func $20) (ref.func $18) (ref.func $21) (ref.func $18)
+    (ref.func $18) (ref.func $21) (ref.null func) (ref.func $19)
+    (ref.func $21) (ref.func $19) (ref.func $18) (ref.func $17)
+    (ref.null func) (ref.func $17) (ref.func $18) (ref.func $20)
+    (ref.func $20) (ref.func $19) (ref.func $18) (ref.func $17)
+    (ref.func $17) (ref.func $19) (ref.func $17) (ref.func $21)
+    (ref.func $21) (ref.null func) (ref.func $19) (ref.func $20)
+    (ref.func $18) (ref.func $18) (ref.func $18) (ref.func $21)
+    (ref.null func) (ref.func $19) (ref.null func) (ref.func $17)
+    (ref.func $21) (ref.null func) (ref.func $18) (ref.func $17)
+    (ref.func $19) (ref.func $17) (ref.func $17) (ref.func $21)
+    (ref.func $21) (ref.func $18) (ref.func $18) (ref.func $20)
+    (ref.null func) (ref.null func) (ref.func $17) (ref.func $18)
+    (ref.func $19) (ref.func $21) (ref.null func) (ref.func $20)
+    (ref.func $19) (ref.func $20) (ref.func $20) (ref.func $19)
+    (ref.null func) (ref.func $17) (ref.null func) (ref.null func)
+    (ref.func $19) (ref.func $20) (ref.func $20) (ref.null func)
+    (ref.null func))
+  
+  (func $19 (type $2)
+    (param $0 externref)
+    (param $1 f32)
+    (result v128 funcref)
+    memory.size
+    i64.load $11 offset=355280512 align=4
+    drop
+    f32.const 0x1.bc5c6cp-37
+    memory.size $11
+    v128.const i32x4 0x1f0ba7a7 0x1fd4a0fb 0x149b1dba 0xd1dce053
+    drop
+    v32x4.load_splat $11 offset=1292972679 align=2
+    i32x4.abs
+    loop $loop (result externref)
+      table.size $8
+      global.get $12
+      i32.const -1225193659
+      v64x2.load_interleaved_2 $11 offset=3571176139 align=1
+      f32x4.convert_i32x4_s
+      i16x8.ne
+      drop
+      i64.atomic.rmw.and $11 offset=3099111128
+      global.set $12
+      memory.size
+      ref.null func
+      table.set $8
+      memory.size
+      br $loop
+    end ;; $loop
+    unreachable
+    )
+  
+  (func $20 (type $3)
+    (param $0 i64)
+    (param $1 v128)
+    (local $2 f64)
+    (local $3 f64)
+    (local $4 f64)
+    (local $5 f64)
+    br 0
+    )
+  
+  (func $21 (type $4)
+    (param $0 v128)
+    (param $1 f32)
+    (param $2 i64)
+    (param $3 f32)
+    (result i64 i64)
+    v128.const i32x4 0xbc22aaab 0xac56e806 0xba06d2b6 0xf0069ac9
+    i8x16.neg
+    f32.const -0x1.183642p+97
+    f32.trunc
+    memory.size
+    i64.atomic.load16_u $11 offset=3914632468
+    f32.convert_i64_s
+    v128.const i32x4 0x58f666a8 0x962e218a 0x0ca7954e 0xae5b6d76
+    i32x4.widen_low_i16x8_u
+    local.get $3
+    local.set $1
+    ref.null extern
+    loop $loop (param f32 v128 externref) (result f32)
+      block $block (param v128 externref)
+        i64.const -4228734484988403299
+        br $block
+      end ;; $block
+      local.set $3
+      v128.const i32x4 0x9055ad67 0x2465e28e 0xf71b03e6 0x5615e695
+      global.set $13
+      f64.const 0x1.e2f4e22941838p+963
+      unreachable
+    end ;; $loop
+    ref.null func
+    ref.is_null
+    table.get $7
+    unreachable
+    )
+  
+  (data $15 
+    "\ec\a7\d1\af\bb\f5\8d\121\f2\0e{\cd\8a\bd3\1f&6B\b3e<\cc")
+  
+  (data $16 (memory $11) (i32.const -1216709941)
+    "\c6\07\b6|4n8v\a7\00\95\f2\11\cc\bd\feD\ca\d9A\d4b\bb\c5\e9#\e2\8az\f2\f4\c3\d3\b1i'DKC\f3C\cc\0f\1eV\b6\eeq\0e\d9\8e=\deW\n\ed\d8\d6W\e4\1f\b0\bb1"
+    "\f4\ac\90\f3j\80D\fb\n\ed\ffg\91\0d\cd\94\8b:(\f9\9e"))

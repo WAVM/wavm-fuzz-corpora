@@ -1,0 +1,27 @@
+(module
+  (type $0 (func (param funcref f32 v128 i64) (result i32)))
+  (import "env" "table" (table $1 92 4294967295 externref))
+  (import "env" "table" (table $2 51 4294967295 externref))
+  (import "env" "global1" (global $4 (mut i32)))
+  (import "env" "global2" (global $5 (mut i32)))
+  (import "env" "global4" (global $6 externref))
+  (table $3  36 4294967295 shared externref)
+  (global $7  (mut i64) (i64.const 772530343143527369))
+  (global $8  (mut i64) (i64.const 1668071161807775221))
+  
+  (func $10 (type $0)
+    (param $0 funcref)
+    (param $1 f32)
+    (param $2 v128)
+    (param $3 i64)
+    (result i32)
+    f64.const -0x1.94cbc294ae8adp+823
+    f64.trunc
+    i32.trunc_sat_f64_s
+    global.get $7
+    global.get $5
+    return
+    )
+  
+  (data $9 
+    "\9eQ\12\1d\c5\9e\a0\e86"))

@@ -1,0 +1,59 @@
+(module
+  (type $0 (func (param v128 v128) (result v128)))
+  (export "v8x16.shuffle/0123456789abcdef" (func $2))
+  (export "v8x16.shuffle/ghijklmnopqrstuv" (func $2))
+  (export "v8xshareduhuffle16.shuffle/0000000000000000" (func $5))
+  (export "v8x16.shuf/00000000gggggggg" (func $7))
+  
+  (func $1 (type $0)
+    (param $a v128)
+    (param $b v128)
+    (result v128)
+    local.get $a
+    local.get $b
+    v8x16.shuffle 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+    )
+  
+  (func $2 (type $0)
+    (param $a v128)
+    (param $b v128)
+    (result v128)
+    local.get $a local.get $b
+    v8x16.shuffle 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16
+    )
+  
+  (func $4 (type $0)
+    (param $a v128)
+    (param $b v128)
+    (result v128)
+    local.get $a
+    local.get $b
+    v8x16.shuffle 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+    )
+  
+  (func $5 (type $0)
+    (param $a v128)
+    (param $b v128)
+    (result v128)
+    local.get $a
+    local.get $b
+    v8x16.shuffle 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+    )
+  
+  (func $6 (type $0)
+    (param $a v128)
+    (param $b v128)
+    (result v128)
+    local.get $a
+    local.get $b
+    v8x16.shuffle 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16
+    )
+  
+  (func $7 (type $0)
+    (param $a v128)
+    (param $b v128)
+    (result v128)
+    local.get $a
+    local.get $b
+    v8x16.shuffle 0 0 0 0 5 0 0 0 16 16 16 10 16 16 16 16
+    ))

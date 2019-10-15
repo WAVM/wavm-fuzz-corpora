@@ -1,0 +1,2 @@
+(
+func(i64x2.replace_lane 00)(i64x2.replace_lane 0)(i64x2.replace_lane 0)()(i64x2.replace_lane 0)(i64x2.replace_lane 0)(i64x2.replace_lane 0)(P)(i64x2.replace_lane 0)()(i64x2.replace_lane 0))

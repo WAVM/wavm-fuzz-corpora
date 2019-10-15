@@ -1,0 +1,36 @@
+(module
+  (type $0 (func (param funcref i64 v128 externref) (result f64)))
+  (type $1 (func (param f64)))
+  (type $2 (func (param i64) (result i64)))
+  (type $3 (func (param v128 funcref externref i32)))
+  (type $4 (func))
+  (type $5 (func (param externref v128) (result i64 externref)))
+  (import "env" "memory" (memory $7 96 51422))
+  (import "env" "memory" (memory $8 31 7821 shared))
+  (import "env" "table" (table $6 73 4294967295 shared funcref))
+  (import "env" "global1" (global $10 (mut v128)))
+  (import "env" "global2" (global $11 f32))
+  (import "env" "func0" (func $16 (param f64)))
+  (import "env" "func1" (func $17 (param i64) (result i64)))
+  (memory $9  76 36240 shared)
+  (global $12  v128 (v128.const i32x4 0x97c5583a 0xde1ca3bc 0xe2707b02 0xe2a0bffe))
+  (elem $13 memory
+    $9 $7 $9 $8 $7 $9 $7 $7
+    $9 $9 $7 $7 $9 $8 $7 $7
+    $7 $8 $8 $8 $8 $9 $8 $9
+    $8 $7 $7 $9 $9 $7 $7 $7 $8 $8 $8 $8 $9
+    $8 $8 $7 $7 $9 $7 $7 $9
+    $8 $8 $9 $9 $9 $7 $9)
+  
+  (func $18 (type $0)
+    (param $0 funcref)
+    (param $1 i64)
+    (param $2 v128)
+    (para.ne
+    data.drop $14
+    local.get $2
+    data.drop $14
+    global.get $12
+    block $block (param externref v129) (result i64 externref)
+      local.get $1
+f8d\89\14\dd\f8\910\9b\e2\c9\00"))

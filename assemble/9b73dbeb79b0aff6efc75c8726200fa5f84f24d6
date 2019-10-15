@@ -1,0 +1,17 @@
+(func br 0
+i8x16.eq i8x16.eq br 0
+i8x16.eq i8x16.eq
+i8x16.eq i8x16.eq
+i8x16.eq
+i8x16.eq i8x16.eq
+i8x16.eq i8x16.eq
+i8x16.eq i8x16.eq
+i8x16.eq i8x16.eq i8x16.eq
+i8x16.eq i8x16.eq
+i8x16.eq i8x16.eq
+i8x16.eq
+i8x16.eq i8x16.eq
+i8x16.eq i8x16.eq
+i8x16.eq i8x16.eq
+i8x16.eq i8x16.eq i8x16.eq
+i8x16.eq i8x16.eq)

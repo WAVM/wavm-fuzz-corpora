@@ -1,0 +1,46 @@
+(func br 0
+i64.trunc_sat_f32_u br
+0
+i64.trunc_sat_f32_u i64.trunc_sat_f32_u
+i64.trunc_sat_f32_u br
+0
+i64.trunc_sat_f32_u br
+0
+i64.trunc_sat_f32_u br
+0
+i64.trunc_sat_f32_u
+i64.trunc_sat_f32_u br
+0
+i64.trunc_sat_f32_u br
+5
+i64.trunc_sat_f32_u br
+0
+i64.trunc_sat_f32_u br
+0
+i64.trunc_sat_f32_u i64.trunc_sat_f32_u br
+0
+i64.trunc_sat_f32_u i64.trunc_sat_f32_u
+i64.trunc_sat_f32_u br
+0
+i64.trunc_sat_f32_u br
+0
+i64.trunc_sat_f32_u br
+0
+i64.trunc_sat_f32_u br
+0
+i64.trunc_sat_f32_u i64.trunc_sat_f32_u
+i64.trunc_sat_f32_u br
+0
+i64.trunc_sat_f32_u i64.trunc_sat_f32_u br
+0
+i64.trunc_sat_f32_u
+i64.trunc_sat_f32_u br
+0
+i64.trunc_sat_f32_u br
+0
+i64.trunc_sat_f32_u i64.trunc_sat_f32_u br
+0
+i64.trunc_sat_f32_u i64.trunc_sat_f32_u
+i64.trunc_sat_f32_u brunc_
+0
+i2_u )

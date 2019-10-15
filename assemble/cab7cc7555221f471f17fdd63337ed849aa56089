@@ -1,0 +1,66 @@
+(memory $4  1)
+(func (loca)i32.const 1
+   f32.store i64.load32_s align=2 f32.load al i64.load32_s agn=2   1)
+(func (loca)i32.const 1
+   f32.store align=2
+  f32.load align=2
+ i64.store32 align=2   i64.load32_s align=2
+    i64.load32_s align=2 i64.store32 align=2
+    
+i64.store32 align=2   i64.load32_s align=2 i64.store32 align=2    i64.load32_s align=2 i64.store32 align=2  
+i64.store32 align=2   i64.load32_s align=2 i64.store3)
+(func (loca)i32.const 1
+   f32.store align=2
+  f32.load align=2
+ i64.store32 align=2   i64.load32_s align=2
+    i64.load32_s align=2 i64.store32 align=2
+    
+i64.store32 align=2   i64.load32_s align=2 i64.store32 align=2    i64.load32_s align=2 i64.store32 align=2  
+i64.store32 align=2   i64.load32_s align=2 i64.store32 align=2   i64.load32_u align=2
+ i64.load32_u align=2
+  i64.load32_s align=2 i64.store32 align=2    i64.load32_s i64.store32 align=2   i64.load32_s align=2 i64.store32 align=2   i64.load32_u align=2
+    i64.load32_s align=2 i64.store32 align=2
+    
+i64.store32 align=2   i64.load32_s align=2 i64.store32 align=2    i64.load32_s align=2 i64.store32 align=2  
+i64.store32 align=2   i64.load32_s align=2 i64.store32 align=2 n=2    i4.6load32_s align=2 i64.store32 align=2  
+i64.store32 align=2   i64.load32_s align=2 i64.store3)
+(func (loca)i32.const 1
+   f32.store align=2
+  f32.load align=2
+ i64.store32 align=2   i64.load32_s align=2
+    i64.load32_s align=2 i64.store32 align=2
+    
+i64.store32 align=2   i64.load32_s align=2 i64.store32 align=2    i64.load32_s align=2 i64.store32 align=2  
+i64.store32 align=2   i64.load32_s align=2 i64.store32 align=2   i64.load32_u align=2
+ i64.load32_u align=2
+  i64.load32_s align=2 i64.store32 align=2    i64.load32_s align=2 i64.store32 align=2  
+i64.store32 align=2   i64.load32_s align=2 i64.store32 align=2   i64.load32_u align=2
+    i64.load32_s align=2 i64.store32 align=2
+    
+i64.store32 align=2   i64.load32_s align=2 i64.store32 align=2    i64.load32_s align=2 i64.store32 align=2  
+i64.store32 align=2   i64.load32_s align=2 i64.store32 align=2   i64.load32_u alig32 align=2   1)
+(func ()i32.const 1
+   f32.store align=2
+  f32.load align=2
+ i64.store32 align=2   i64.load32_s align=2
+    i64.load32_s align=2 i64.store32 align=2
+    
+i64.store32 align=2   i64.load32_s align=2 i64.store32 align=2    i64.load32_s align=2 i64.store32 align=2  
+i64.store32 align=2   i64.load32_s align=2 i64.store3)
+(func (loca)i32.const 1
+   f32.store align=2
+  f32.load align=2
+ i64.store32 align=2   i64.load32_s align=2
+    i64.load32_s align=2 i64.store32 align=2
+    
+i64.store32 align=2   i64.load32_s align=2 i64.store32 align=2    i64.load32_s align=2 i64.store32 align=2  
+i64.store32 align=2   i64.load32_s align=2 i64.store32 align=2   i64.load32_u align=2
+ i64.load32_u align=2
+  i64.load32_s align=2 i64.store32 align=2    i64.load32_s align=2 i64.store32 align=2  
+i64.store32 align=2   i64.load32_s align=2 i64.store32 align=2   i64.load32_u align=2
+    i64.load32_s align=2 i64.store32 align=2
+    
+i64.store32 align=2   i64.load32_s align=2 i64.store32  i64.load32_s align=2 i64.store32 align=2  
+i64.store32 align=2   i64.lo2 4.load32_u al=2
+ i64.load32_u align=2
+  )

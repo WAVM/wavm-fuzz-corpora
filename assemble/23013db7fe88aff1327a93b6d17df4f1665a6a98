@@ -1,0 +1,23 @@
+(module
+  (type $0 (func (param v128) (result i32)))
+  (type $1 (func (param v128 v128) (result i32)))
+ 
+ (func $24 (type $1)
+    (param $0 v128)
+    (param $1 v128)    (result i32)
+    local.get $0
+    i32x4.any_true
+    local.get $1
+    i32x4.any_true
+     i32.or
+    )
+  
+  (func $26 (type $1)
+    (param $0 v128)
+    (param $1 v128)    (result i32)
+    local.get $0
+    i32x4.any_true
+    local.get $1
+    i32x4.any_true
+     i32.or
+    ))

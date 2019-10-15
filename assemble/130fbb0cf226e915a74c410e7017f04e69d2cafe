@@ -1,0 +1,7 @@
+(module
+  (import "v" "func" (func $9 (param funcref v128)
+)) (memory $2  24 61113 shared)
+
+  (func $/   v128.conne_u 1
+   unreachable
+  ) )

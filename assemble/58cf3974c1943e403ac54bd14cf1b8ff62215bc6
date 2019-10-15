@@ -1,0 +1,60 @@
+(module
+  (type $0 (func (param f32 externref) (result externref)))
+  (type $1 (func (param i32 f32 v128)))
+  (type $2 (func (param externref i32 externref i64) (result f32 f32)))
+  (import "env" "memory" (memory $5 84 40043 shared))
+  (import "env" "memory" (memory $6 22 64169 shared))
+  (import "env" "table" (table $3 53 4294967295 externref))
+  (import "env" "global0" (global $7 v128))
+  (import "env" "global1" (global $8 funcref))
+  (import "env" "global2" (global $9 (mut funcref)))
+  (import "env" "global5" (global $10 v128))
+  (import "env" "global7" (global $11 f64))
+  (import "env" "global8" (global $12 funcref))
+  (import "env" "global9" (global $13 (mut externref)))
+  (import "env" "func0" (func $20 (param f32 externref) (result externref)))
+  (import "env" "func1" (func $21 (param i32 f32 v128)))
+  (table $4  56 4294967295 externref)
+  (global $14  v128 (v128.const i32x4 0x762503e0 0x7305b0a6 0xb2d7be59 0x5cd127c1))
+  (global $15  (mut i32) (i32.const 679173091))
+  (global $16  (mut v128) (v128.const i32x4 0xa8559776 0x74984eb2 0xfb9434e9 0xa47435db))
+  (elem $17 funcref
+    (ref.func $21) (ref.func $21) (ref.func $21) (ref.func $21)
+    (ref.func $22) (ref.func $20) (ref.func $20) (ref.func $22)
+    (ref.func $22) (ref.func $22) (ref.func $21) (ref.func $21)
+    (ref.func $21))
+  (elem $18 global
+    $11 $7 $14 $16 $16 $16 $10 $11 $10 $10 $7 $11
+    $15 $13 $7 $12 $7 $14)
+  
+  (func $22 (type $2)
+    (param $0 externref)
+    (param $1 i32)
+    (param $2 externref)
+    (param $3 i64)
+    (result f32 f32)
+    (local $4 i32)
+    (local $5 i32)
+    local.get $2
+    table.size $4
+    elem.drop $17
+    v32x4.load_interleaved_3 $6 offset=2631439043 align=2
+    i8x16.le_u
+    i8x16.sub
+    f32x4.convert_i32x4_u
+    local.get $1
+    v128.load offset=221205296 align=2
+    i16x8.lt_s
+    i32x4.extract_lane 0
+    i64.atomic.load16_u $6 offset=734284227
+    global.get $9
+    local.get $1
+    v8x16.load_interleaved_2 offset=1398428700 align=4
+    f32x4.max
+    ref.null func
+    drop
+    unreachable
+    )
+  
+  (data $19 
+    "\a2sB\d8\d2<\86\e4g\b3\8b\15\a1\ed\bf\08O\8b\ce\c4\9a\c3\b6\ae\84^\89\b2\17\1c\88)\c5\7f\acpM\c1\0f\98\8d\feC\"\b4L\af\abSP\08\0cR\a6\94h\ff\d0"))

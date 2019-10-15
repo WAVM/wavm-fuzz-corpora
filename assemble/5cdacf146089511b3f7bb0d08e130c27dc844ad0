@@ -1,0 +1,72 @@
+(module
+  (type $0 (func (param v128 i32 externref funcref)))
+  (type $1 (func))
+  (type $2 (func (param v128 i64)))
+  (import "env" "memory" (memory $4 1 33487))
+  (import "env" "global0" (global $7 v128))
+  (import "env" "global3" (global $8 i32))
+  (import "env" "global5" (global $9 f32))
+  (import "env" "global7" (global $10 i64))
+  (import "env" "global8" (global $11 i64))
+  (import "env" "func0" (func $19))
+  (memory $5  72 41442 shared)
+  (memory $6  16 56912)
+  (table $3  43 4294967295 shared funcref)
+  (global $12  (mut v128) (v128.const i32x4 0xe5c41323 0x33479fd1 0x4dfe2573 0xeba6a227))
+  (global $13  f32 (f32.const 0x1.790882p+29))
+  (global $14  (mut f32) (f32.const 0x1.3b97e8p+31))
+  (global $15  (mut f32) (f32.const 0x1.da324ep+31))
+  (elem $16 memory
+    $6 $6 $6 $6 $6 $4 $5 $6)
+  
+  (func $20 (type $0)
+    (param $0 v128)
+    (param $1 i32)
+    (param $2 externref)
+    (param $3 funcref)
+    (local $4 i64)
+    (local $5 v128)
+    (local $6 v128)
+    (local $7 i32)
+    local.get $4
+    local.get $1
+    i32.load16_u $6 offset=4086542596
+    i32.ctz
+    i64.load32_s $6 offset=3549656570 align=2
+    i64x2.splat
+    nop
+    global.get $9
+    i64.trunc_f32_u
+    block $block (param v128 i64)
+      i64.extend32_s
+      drop
+      loop $loop (result f32)
+        table.size $3
+        i32.atomic.load8_u $6 offset=1968409704
+        br_if $block
+        nop
+        local.get $1
+        ref.null func
+        local.set $3
+        br_if $block
+        call $19
+        i32.const 437974453
+        local.set $1
+        table.size $3
+        table.get $3
+        br $block
+      end ;; $loop
+      ref.null func
+      drop
+      global.set $14
+      local.set $0
+      br 1
+    end ;; $block
+    drop
+    )
+  
+  (data $17 (i32.const 1861645973)
+    "ty\8e\c0xM\1b!7\f5KVj\b6_Jc\87")
+  
+  (data $18 
+    "^-Q\e1\c4/K#\e0\db`\86DF\c6\8d\18\c9\b7\8d-e\bd#jj"))

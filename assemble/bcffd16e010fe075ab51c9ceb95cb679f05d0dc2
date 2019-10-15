@@ -1,0 +1,3 @@
+(func br 0 i64.eq br
+0 i64.eq br
+0)

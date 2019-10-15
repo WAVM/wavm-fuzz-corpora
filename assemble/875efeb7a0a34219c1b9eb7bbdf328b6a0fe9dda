@@ -1,0 +1,90 @@
+(module
+  (type $0 (func (param funcref f32 i32 v128) (result funcref)))
+  (type $1 (func (param i32) (result v128 v128)))
+  (type $2 (func (result funcref i64 i64 funcref)))
+  (type $3 (func (result f64 f64 f32 f32)))
+  (import "env" "memory" (memory $5 13 56348 shared))
+  (import "env" "memory" (memory $6 56 26371 shared))
+  (table $4  57 4294967295 shared funcref)
+  (elem $7 declare table
+    $4 $4 $4 $4 $4 $4 $4 $4
+    $4 $4 $4 $4 $4 $4 $4 $4
+    $4)
+  
+  (func $9 (type $0)
+    (param $0 funcref)
+    (param $1 f32)
+    (param $2 i32)
+    (param $3 v128)
+    (result funcref)
+    (local $4 v128)
+    local.get $3
+    atomic.fence
+    i32x4.all_true
+    i32.ctz
+    i32.atomic.load $6 offset=462207987
+    local.set $2
+    i32.const 1938676940
+    memory.size $6
+    i32.load16_u offset=3417982505 align=1
+    i64.load8_u $6 offset=1041308550
+    f64.convert_i64_s
+    i64.trunc_sat_f64_u
+    i64.atomic.rmw32.xor_u offset=1911448144
+    local.get $3
+    table.size $4
+    i32x4.replace_lane 2
+    drop
+    drop
+    local.get $2
+    local.set $2
+    f32.const 0x1.26dd9ep+105
+    local.set $1
+    local.get $3
+    drop
+    nop
+    local.get $4
+    local.set $3
+    local.get $2
+    table.get $4
+    ref.null func
+    drop
+    local.set $0
+    nop
+    f32.const 0x1.d3e15ap-80
+    unreachable
+    )
+  
+  (func $10 (type $1)
+    (param $0 i32)
+    (result v128 v128)
+    f32.const 0x1.44ebf8p+24
+    ref.null extern
+    i64.const -7112305467122681157
+    i64.popcnt
+    f32.convert_i64_s
+    i64.trunc_sat_f32_s
+    i64.extend16_s
+    i64.const 2842062834083140667
+    table.size $4
+    i32.const 1921507383
+    v32x4.load_splat offset=4023629847 align=1
+    block $block (result funcref i64 i64 funcref)
+      i32.const 1980367920
+      block $block_0 (result f64 f64 f32 f32)
+        unreachable
+      end ;; $block_0
+      f32.eq
+      drop
+      f64.lt
+      i32.atomic.rmw16.xor_u $6 offset=4068151900
+      ref.null func
+      ref.null func
+      unreachable
+    end ;; $block
+    ref.null func
+    unreachable
+    )
+  
+  (data $8 (i32.const 222955894)
+    "\ae\96\f3I\beHh}s"))

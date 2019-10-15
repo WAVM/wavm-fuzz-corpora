@@ -1,0 +1,4 @@
+(module   (global $mut_glob  (mut i32)(i32.const 07))(func $offseAr(param $0 i32)
+    local.get $  0 g
+ lobal.set $mut_glob
+    ))

@@ -1,0 +1,5 @@
+(table $t1 1 externref)
+    (table $t4 1 funcref)
+     (table 1 funcref)
+     (table $t2 1 funcref)ef)
+  

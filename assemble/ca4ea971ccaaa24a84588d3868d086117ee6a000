@@ -1,0 +1,26 @@
+(module
+  (type $0 (func (param i32) (result v128)))
+  (type $1 (func (result v128)))
+  (memory $4  1)
+  
+    
+  (func    (param $0 i32)
+    (result v128)
+    local.get $0
+    i64x2.load32x2_u align=1
+    
+)  
+  (func $45  (param $0 i32)
+    (result v128)
+    local.get $0
+    i64x2.load32x2_u offset=18 align=4
+    )
+  
+  (func(param $0 i32)
+    (result v128)
+    local.get $0
+  i64x2.load32x2_u offset=62
+    )
+  
+  (data $3 (i32.const 0)
+    "06memory.fill\88\44"))

@@ -1,0 +1,22 @@
+(module
+  (type $0 (func (param funcref externref) (result i32 i32)))
+  (type $1 (func (param v128)))
+  (import "env" "memory" (memory $3 60 7959 shared))
+  (import "env" "table" (table $2 41 4294967295 funcref))
+  (import "env" "func0" (func $5 (param funcref externref) (result i32 i32)))
+  (global $4  (mut f32) (f32.const 0x1.3ad798p+30))
+  
+  (func $6 (type $1)
+    (param $0 v128)
+    (local $1 f64)
+    (local $2 v128)
+    atomic.fence
+    i64.const 8122537001525359008
+    i32.const 327415483
+    v64x2.load_interleaved_2 offset=3163926015 align=8
+    i64x2.add
+    i32x4.extract_lane 2
+    v128.load offset=2817347056
+    i32x4.trunc_sat_f32x4_u
+    unreachable
+    ))

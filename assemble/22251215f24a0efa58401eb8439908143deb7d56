@@ -1,0 +1,83 @@
+(module
+  (type $0 (func (result v128 externref)))
+  (type $1 (func (result funcref)))
+  (type $2 (func (result i64 externref)))
+  (type $3 (func (param i64 i64 v128 i64) (result i64)))
+  (type $4 (func (param v128 funcref funcref) (result i64 funcref)))
+  (type $5 (func (result i64 externref funcref funcref)))
+  (type $6 (func (result f32 f32 i64)))
+  (import "env" "global0" (global $8 i32))
+  (import "env" "func0" (func $13 (result i64 externref)))
+  (import "env" "func1" (func $14 (param i64 i64 v128 i64) (result i64)))
+  (import "env" "func2" (func $15 (param v128 funcref funcref) (result i64 funcref)))
+  (memory $7  25 37283 shared)
+  (global $9  funcref (ref.null func))
+  (global $10  f64 (f64.const 0x1.0e805a280add0p+63))
+  (global $11  externref (ref.null extern))
+  
+  (func $16 (type $0)
+    (result v128 externref)
+    (local $0 f32)
+    (local $1 f64)
+    (local $2 i32)
+    ref.null extern
+    drop
+    call $13
+    loop $loop (result i64 externref funcref funcref)
+      br $loop
+    end ;; $loop
+    drop
+    f32.const -0x1.770816p+78
+    loop $loop_0 (result f32 f32 i64)
+      global.get $10
+      global.get $8
+      v16x8.load_interleaved_4 offset=285827837 align=2
+      i32x4.widen_high_i16x8_u
+      f64x2.div
+      f32x4.eq
+      atomic.fence
+      i8x16.gt_s
+      ref.null extern
+      br $loop_0
+    end ;; $loop_0
+    ref.null func
+    ref.is_null
+    drop
+    drop
+    f32.gt
+    local.set $2
+    ref.null func
+    ref.is_null
+    drop
+    unreachable
+    )
+  
+  (func $17 (type $1)
+    (result funcref)
+    (local $0 i32)
+    (local $1 externref)
+    (local $2 funcref)
+    (local $3 externref)
+    call $17
+    call $16
+    data.drop $12
+    local.tee $1
+    ref.is_null
+    i32.const 1384788415
+    i32.xor
+    v8x16.load_splat offset=3959455861
+    i8x16.eq
+    i32.const 1440452495
+    i8x16.splat
+    i16x8.ne
+    data.drop $12
+    i32x4.widen_high_i16x8_s
+    i32x4.widen_high_i16x8_s
+    ref.null extern
+    ref.null extern
+    unreachable
+    )
+  
+  (data $12 (i32.const 909788756)
+    "\9d\e7\92g\d7\8e\9b\\H\db4lL\9a\e8\f2\bb\b0\dc\cfmD\a0\ac\00s\efe\b7\d2\c7\\$\8d\fc\e1\ce\9e3\b7\ccyo\e9\84\8f\c4\f8!\90\\\ea\d9\07\d8\10\ff\15\81\f5|\8c[\\"
+    "\0dP\b5Il\b1\a7\c8\82\f5"))

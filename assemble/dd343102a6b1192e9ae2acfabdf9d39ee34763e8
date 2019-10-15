@@ -1,0 +1,9 @@
+(module (elem $2 declare $4)
+  
+ (func $3 (ar  3 
+)   ref.func $3
+ t )
+ 
+  (func $4 
+    ref.func $3
+ t6 ))

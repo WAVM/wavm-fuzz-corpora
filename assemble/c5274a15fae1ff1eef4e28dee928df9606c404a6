@@ -1,0 +1,88 @@
+(module
+  (type $0 (func))
+  (type $1 (func (result funcref f64)))
+  (type $2 (func (result f64 externref)))
+  (type $3 (func (param v128 v128 v128 v128) (result externref)))
+  (import "env" "memory" (memory $7 56 14865))
+  (import "env" "table" (table $4 30 4294967295 shared funcref))
+  (import "env" "global0" (global $9 externref))
+  (import "env" "global1" (global $10 externref))
+  (import "env" "global2" (global $11 i32))
+  (import "env" "global4" (global $12 (mut f32)))
+  (import "env" "global5" (global $13 (mut i32)))
+  (import "env" "global6" (global $14 (mut i64)))
+  (import "env" "global8" (global $15 f32))
+  (import "env" "global9" (global $16 (mut i32)))
+  (import "env" "func0" (func $22))
+  (memory $8  6 58423 shared)
+  (table $5  4 4294967295 shared funcref)
+  (table $6  34 4294967295 funcref)
+  (global $17  (mut v128) (v128.const i32x4 0x434170ea 0x7b4c82f0 0x465cfa22 0x1092677a))
+  (global $18  externref (ref.null extern))
+  (elem $19 declare externref
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern))
+  
+  (func $23 (type $1)
+    (result funcref f64)
+    (local $0 f32)
+    (local $1 i32)
+    (local $2 externref)
+    global.get $13
+    global.get $11
+    i64.load32_u $8 offset=610494378 align=2
+    i64.atomic.rmw16.and_u offset=3510989502
+    local.get $1
+    v64x2.load_interleaved_4 $8 offset=1122340692 align=8
+    loop $loop (param v128 v128 v128 v128) (result externref)
+      global.get $16
+      i16x8.load8x8_s $8 offset=1691046692 align=2
+      i64x2.add
+      i8x16.narrow_i16x8_s
+      i8x16.abs
+      i16x8.min_s
+      i32x4.widen_low_i16x8_s
+      global.get $12
+      global.set $12
+      i16x8.lt_s
+      global.set $17
+      global.get $11
+      call_indirect $4 (type $0)
+      global.get $13
+      call_indirect $4 (type $0)
+      call $24
+      local.set $2
+      drop
+      atomic.fence
+      global.get $9
+      unreachable
+    end ;; $loop
+    unreachable
+    )
+  
+  (func $24 (type $2)
+    (result f64 externref)
+    (local $0 f32)
+    (local $1 f64)
+    (local $2 f32)
+    i32.const 288497025
+    global.get $16
+    call_indirect $4 (type $1)
+    f64.const 0x1.20fd1b3f2da6cp-990
+    elem.drop $19
+    call $24
+    i64.const -2548276059034125370
+    unreachable
+    )
+  
+  (data $20 (i32.const -1055845896)
+    "s\0fh\a7\17^<\dd\a1 \a7D\80\f8TY(eT\92s*\ad\c3\16\eb\99v~\de")
+  
+  (data $21 (i32.const 736016682)
+    "\8f\18\c5\97\9e\01\a0\c8\90\ea\95\a4\c4\91\f0\f1\a2\f7\06\15\02\b6\\\e9\8e\a3+(Q\d3\a8o\c0\fb\e8(P\8b\9f\fdB\c7\ec\d2\9a1\b4u\17W\94\c7}\f8\fb!r\89L \fb-h\c2"
+    "\a4\fb"))

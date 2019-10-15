@@ -1,0 +1,83 @@
+(module
+  (type $0 (func (param i32 funcref) (result i32)))
+  (type $1 (func (param i64) (result v128)))
+  (type $2 (func (param funcref) (result externref)))
+  (type $3 (func (param i32) (result f32 f32)))
+  (type $4 (func (param f32) (result v128 funcref)))
+  (import "env" "func0" (func $6 (param i64) (result v128)))
+  (table $5  85 4294967295 shared funcref)
+  
+  (func $7 (type $0)
+    (param $0 i32)
+    (param $1 funcref)
+    (result i32)
+    i32.const -770824097
+    local.set $0
+    ref.null extern
+    local.get $1
+    ref.is_null
+    i32.extend8_s
+    i32.eqz
+    ref.null extern
+    atomic.fence
+    drop
+    block $block (param i32) (result f32 f32)
+      f32.convert_i32_u
+      i32.trunc_sat_f32_s
+      atomic.fence
+      i32.ctz
+      ref.null func
+      drop
+      ref.null func
+      drop
+      table.get $5
+      ref.null func
+      ref.is_null
+      local.set $0
+      ref.null extern
+      drop
+      local.set $1
+      local.get $1
+      ref.null extern
+      ref.null extern
+      ref.null extern
+      unreachable
+    end ;; $block
+    f32.min
+    drop
+    drop
+    f64.const 0x1.c9669b1a0cd1fp-68
+    drop
+    ref.null extern
+    ref.is_null
+    )
+  
+  (func $8 (type $2)
+    (param $0 funcref)
+    (result externref)
+    (local $1 v128)
+    (local $2 i32)
+    (local $3 i64)
+    table.size $5
+    f64.convert_i32_s
+    local.get $3
+    f32.convert_i64_s
+    loop $loop (param f32) (result v128 funcref)
+      v128.const i32x4 0xeaef669c 0xc2987d62 0xe357c0b4 0x801dc159
+      f32x4.sqrt
+      v128.const i32x4 0x7aadb00e 0x8d8b916f 0x8404f854 0x2f14a19e
+      i32x4.add
+      nop
+      i8x16.all_true
+      f64.const -0x1.bca5b40ac3e1fp-270
+      ref.null func
+      local.get $3
+      i64x2.splat
+      ref.null extern
+      unreachable
+    end ;; $loop
+    drop
+    ref.null extern
+    ref.null func
+    unreachable
+    ))

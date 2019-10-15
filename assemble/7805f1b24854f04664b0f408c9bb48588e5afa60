@@ -1,0 +1,64 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param v128) (result f64 f32)))
+  (type $2 (func (param f64) (result v128 i32 externref v128)))
+  (import "env" "memory" (memory $3 34 857 shared))
+  (import "env" "gobal0" (global $6 (mut v128)))
+  (import "env" "global1" (global $7 i64))
+  (import "env" "func0" (func $10))
+  (memory $4  0 6817 shared)
+  (memory $5  4 17224)
+  (elem $8 funcref
+    (ref.null func) (ref.null func) (ref.null func) (ref.func $11)
+    (ref.func $10) (ref.null func) (ref.func $10) (ref.func $10)
+    (ref.func $11) (ref.null func) (ref.func $11) (ref.null func)
+    (ref.func $11) (ref.func $10) (ref.func $10) (ref.func $11)
+    (ref.func $10))
+  (elem $9 declare global
+    $7 $7 $7 $6 $7 $6 $6 $7
+    $7 $7 $7 $7 $6 $7 $7 $6
+    $7 $7 $7 $7)
+  
+  (func $11 (type $1)
+    (param $0 v128)
+    (result f64 f32)
+    (local $1 i32)
+    atomic.fence
+    memory.size $4
+    v16x8.load_interleaved_3 $5 offset=3923568141 align=2
+    i8x16.gt_u
+    nop
+    f64.const 0x1.7e42668feeb05p+787
+    block $block (param f64) (result v128 i32 externref v128)
+      v128.const i32x4 0xa11b1aec 0x653181ab 0x4268eb72 0xa12f59d3
+      i32x4.widen_low_i16x8_s
+      f64x2.sqrt
+      v128.not
+      local.get $0
+      i16x8.min_s
+      v128.const i32x4 0x977f658e 0xa8ad74e4 0xfdab5b53 0xe364884e
+      i8x16.min_s
+      drop
+
+      memory.size
+      drop
+      v128.const i32x4 0xfbfcce1b 0xb4dc408f 0x9b87e106 0xd55c7206
+      i32x4.widen_low_i16x8_s
+      atomic.fence
+      call $10
+      i32x4.trunc_sat_f32x4_u
+      local.get $0
+      i64x2.add
+      v128.const i32x4 0xdfc1636b 0x0354725d 0xa68f184a 0xbb487cca
+      v128.andnot
+      i32x4.widen_low_i16x8_s
+      i32x4.widen_high_i16x8_s
+      i16x8.all_true
+      unreachable
+    end ;; $block
+    global.set $6
+    drop
+    select
+    i32x4.lt_s
+    unreachable
+    ))

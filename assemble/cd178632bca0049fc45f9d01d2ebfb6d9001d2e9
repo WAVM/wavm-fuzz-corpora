@@ -1,0 +1,74 @@
+(module
+  (type $0 (func (param funcref) (result f64)))
+  (type $1 (func (result v128 i64)))
+  (type $2 (func (param i64) (result v128)))
+  (type $3 (func (result i64 v128)))
+  (type $4 (func (param v128 i32 i64) (result i32)))
+  (import "env" "table" (table $5 43 4294967295 funcref))
+  (import "env" "global1" (global $9 (mut i64)))
+  (import "env" "global2" (global $10 (mut v128)))
+  (import "env" "global3" (global $11 (mut i32)))
+  (import "env" "global4" (global $12 (mut v128)))
+  (import "env" "func0" (func $15 (param funcref) (result f64)))
+  (import "env" "func1" (func $16 (param i64) (result v128)))
+  (import "env" "func2" (func $17 (param v128 i32 i64) (result i32)))
+  (memory $8  20 12721 shared)
+  (table $6  36 4294967295 funcref)
+  (table $7  57 4294967295 externref)
+  (global $13  (mut f64) (f64.const 0x1.2132174f2fbe6p+63))
+  
+  (func $18 (type $1)
+    (result v128 i64)
+    (local $0 f64)
+    (local $1 i64)
+    f32.const -0x1.04c1dap+35
+    data.drop $14
+    table.size $7
+    f32.load offset=2272600178 align=2
+    local.get $1
+    i32.wrap_i64
+    data.drop $14
+    v8x16.load_interleaved_2 offset=4242373739
+    i32x4.widen_high_i16x8_u
+    f64x2.neg
+    v8x16.shuffle 23 4 17 20 19 2 2 2 9 15 3 7 25 3 4 31
+    i32x4.abs
+    global.set $10
+    f32.abs
+    f32.eq
+    table.get $5
+    ref.is_null
+    drop
+    i64.const 2498224092860386529
+    unreachable
+    )
+  
+  (func $19 (type $3)
+    (result i64 v128)
+    v128.const i32x4 0x94745ef4 0x475f8416 0xef01934b 0x116d8d0d
+    drop
+    call $18
+    i64.popcnt
+    i64.clz
+    i32.wrap_i64
+    i64.atomic.load32_u offset=862017978
+    f64.reinterpret_i64
+    ref.null extern
+    global.get $9
+    f64.convert_i64_u
+    global.set $13
+    v128.const i32x4 0x55c4fa80 0x298b93fb 0x1c7898d7 0x3ad391cb
+    i16x8.widen_low_i8x16_u
+    call $18
+    ref.null func
+    ref.is_null
+    table.get $5
+    ref.is_null
+    call_indirect $6 (type $2)
+    i16x8.sub
+    f64x2.le
+    unreachable
+    )
+  
+  (data $14 (i32.const -1777691994)
+    "Ej\d7\86\92\0f*\12\d4\03r\88\a4\14\10\b7\d0/\bd\98_g(\d7\e5\ef\ab\fdu\a6\bd\1a_Y_\8f[DU q\be"))

@@ -1,0 +1,3 @@
+(func $s i8x16.avgr_u
+i8x16.avgr_u
+ i8x16.avgr_u)

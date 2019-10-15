@@ -1,0 +1,64 @@
+(module
+  (type $0 (func (param f64 funcref)))
+  (type $1 (func (param funcref f32 i32 i32) (result f64)))
+  (type $2 (func (result v128 f64)))
+  (type $3 (func (param funcref i64)))
+  (type $4 (func (param i32 i32 v128) (result i64)))
+  (import "env" "table" (table $5 36 4294967295 funcref))
+  (import "env" "global0" (global $8 (mut f64)))
+  (import "env" "global3" (global $9 i64))
+  (import "env" "global4" (global $10 (mut f64)))
+  (import "env" "global6" (global $11 i64))
+  (import "env" "func0" (func $15 (param f64 funcref)))
+  (import "env" "func1" (func $16 (result v128 f64)))
+  (import "env" "func2" (func $17 (param i32 i32 v128) (result i64)))
+  (memory $7  43 16263 shared)
+  (table $6  85 4294967295 shared funcref)
+  (global $12  funcref (ref.null func))
+  (global $13  (mut v128) (v128.const i32x4 0xf7611ad5 0x4881c13e 0x452bfc61 0xa132a2de))
+  (global $14  f64 (f64.const 0x1.75666fa601583p+61))
+  
+  (func $18 (type $1)
+    (param $0 funcref)
+    (param $1 f32)
+    (param $2 i32)
+    (param $3 i32)
+    (result f64)
+    (local $4 funcref)
+    (local $5 i64)
+    table.size $5
+    v16x8.load_interleaved_3 offset=2403889460 align=8
+    i32x4.lt_u
+    i32x4.lt_u
+    i32x4.extract_lane 1
+    v32x4.load_interleaved_2 offset=3932672632
+    f32x4.abs
+    i16x8.ge_u
+    i64x2.neg
+    f32x4.neg
+    memory.size
+    i32x4.replace_lane 0
+    memory.size
+    i32x4.splat
+    v128.not
+    i8x16.max_s
+    global.set $13
+    nop
+    atomic.fence
+    atomic.fence
+    global.get $11
+    local.set $5
+    global.get $12
+    ref.is_null
+    table.get $5
+    unreachable
+    )
+  
+  (func $19 (type $3)
+    (param $0 funcref)
+    (param $1 i64)
+    (local $2 externref)
+    (local $3 i32)
+    (local $4 f32)
+    br 0
+    ))

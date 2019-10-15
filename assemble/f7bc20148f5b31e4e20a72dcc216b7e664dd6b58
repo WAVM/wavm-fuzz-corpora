@@ -1,0 +1,51 @@
+(module
+  (type $0 (func (param externref externref) (result i32 f32)))
+  (type $1 (func (param f64 i32 i64 f64)))
+  (type $2 (func (param f32) (result f32 funcref)))
+  (type $3 (func (param v128) (result i32)))
+  (import "env" "memory" (memory $4 33 28997 shared))
+  (import "env" "global2" (global $7 (mut i64)))
+  (import "env" "func0" (func $12 (param externref externref) (result i32 f32)))
+  (import "env" "func1" (func $13 (param f64 i32 i64 f64)))
+  (memory $5  94 33081 shared)
+  (memory $6  96 47435)
+  (global $8  v128 (v128.const i32x4 0x0b9e7aad 0x8274ba93 0xb526421a 0x7e5a6f7b))
+  (global $9  (mut f32) (f32.const 0x1.625ae8p+31))
+  
+  (func $14 (type $2)
+    (param $0 f32)
+    (result f32 funcref)
+    (local $1 i32)
+    (local $2 i64)
+    f64.const 0x1.b9673fda1e230p-125
+    i32.const -2026167684
+    v16x8.load_splat $5 offset=862755360 align=1
+    i8x16.extract_lane_u 5
+    v64x2.load_interleaved_3 $6 offset=3847339670 align=8
+    f64x2.neg
+    i8x16.sub_saturate_s
+    i16x8.add
+    v128.not
+    i32x4.widen_low_i16x8_s
+    block $block (param v128) (result i32)
+      ref.null func
+      i32.const 773067888
+      i32.clz
+      local.set $1
+      drop
+      ref.null func
+      drop
+      ref.null func
+      ref.null extern
+      drop
+      unreachable
+    end ;; $block
+    local.set $1
+    unreachable
+    )
+  
+  (data $10 (memory $5) (i32.const -325078933)
+    "\1e\ba'\c3\04\8b\18Y\f8{\a6\9e6\ef\09\d5\da\dd\9a\fb\d2\ac=X;\7f[(|\dbW\\\a6\19\ef\0d\84\a6\8d~\91\08\d6Ww\bd\ae\d8\e1\8a\1e\b6\00\02tZ\d8\93*W\9d4\b8/")
+  
+  (data $11 (memory $6) (i32.const -1516549638)
+    "\d3\af\86\b8g\dd\12\ba(\af\ffN\8f\fd\86\17\a1\08^\83\e2}|FX\b1"))

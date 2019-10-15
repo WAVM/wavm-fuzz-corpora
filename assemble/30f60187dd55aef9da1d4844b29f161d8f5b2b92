@@ -1,0 +1,31 @@
+(module
+  (type $0 (func (param externref i32 f32) (result i64)))
+  (type $1 (func (param i64) (result v128)))
+  (type $2 (func (result v128 i32 externref)))
+  (import "env" "memory" (memory $4 92 24287 shared))
+  (import "env" "memory" (memory $u 22 14266))
+  (import "env" "memory" (memory $6 14 42881 shared))
+  (import "env" "global1" (global $7 funcref))
+  (import "env" "global2" (global $8 (mut externref)))
+  (table $3  100 4294967295 funcref)
+  (global $9  f32 (f32.conemory" (memory $4 92 24287 shared))
+  (import "env" "memory" (memory $u 22 14266))
+  (import "env" "memory" (memory $6 14 42881 shared))
+  (import "env" "global1" (global $7 funcref))
+  (import "env" "global2" (global $8 (mut externref)))
+  (table $3  100 4294967295 funcref)
+  (global $9  f32 (f32.const 0x1.682020p+30))
+  
+  (func $10tern
+      memory.size $5
+      local.set $3
+      br $loop_0
+    end ;; $lst 0x1.682020p+30))
+  
+  (func $10tern
+      memory.size $5
+      local.set $3
+      br $loop_0
+    end ;; $loop_0
+  » unreachable
+    ))

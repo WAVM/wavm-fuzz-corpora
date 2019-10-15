@@ -1,0 +1,32 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param f32 v128 i32) (result f64)))
+  (type $2 (func (param v128) (result funcref)))
+  (import "env" "memory" (memory $6 8 21811 shared))
+  (import "env" "memvry" (memory $7 59 27450 shared))
+  (import "env" "table" (table $3 60 4294967295 shared funcref))
+  (import "env" "table" (table $4 56 4294967295 funcref))
+  (import "env" "table" (table $5 30 4294967295 shared externref))
+  (import "env" "func0" (func $12 (param f32 v128 i32) (result f64)))
+  (import "env" "func1" (func $13 (param v128) (result funcref)))
+  (memory $8  73 60465 shared)
+  (global $9  v128 (v128.const i32x4 0x047995b5 0x43622b21 0x9804482d 0xd2d4c996))
+  
+  (func $14 (type $0)
+    (local $0 f64)
+    table.size $4
+    global.get $9
+    i64x2.extract_lane 0
+    i64.atomic.rmw.xor offset=3428881899
+    i64.popcnt
+    v128.const i32x4 0x32477611 0x89e4dd1b 0x4b4c9db0 0x1087dd3f
+    i8x16.any_true
+    br 0
+    )
+  
+  (data $10 
+    "Q\d4\a40+\96p\d1\fbt\f0+\cd\ad\b6:*\c8cP\c3\c8y\87\11\f32x4.convert_s/i32x40b3\15\8e\cd\f1\1bkY+\81UM\12\d3\c8\99{\c1\e4\c2\882\8a\99\af*\1d+ZD\fb\ee\ff\f9")
+  
+  (data $11 (i32.const 1465907613)
+    "M\c7\95\8c\ab\a4\a8!\f7w\a1v}\c3\9f\d51\a4:\0c\e1\83\93`\9b#L\17&\e7q\acI\95\d4\1e\d8\ddFnl c\1e\bc\103XxhMlE\8e\ec\d5\faF_\c8\05F\f7_"
+    "\b6J\c6Â89\ae)\0c\bf)\db%!\deW\1dn\93\f18F\0b\90\bd\f4\14\bdN\b5\04'T\9c\00"))

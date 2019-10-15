@@ -1,0 +1,10 @@
+(module
+  (import "v" "func" (func
+$9 (param funcref v128)
+)) (memory $2  24 61113 shared)
+
+  (func $5   v128.const i32x4 0x4f2e1 0x3871fd1B 0x24bbd 0x0c1
+   i16x8.extract_lane_u 3  
+  v16x8.load_interleaved_2 offset=15    i16x8.extract_lane_u 1
+   unreachable
+  ) )

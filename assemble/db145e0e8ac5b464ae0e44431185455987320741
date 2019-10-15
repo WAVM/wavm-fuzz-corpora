@@ -1,0 +1,6 @@
+(func(p)(i64x2.load32x2_u(i64x2.load32x2_u)(i64x2.load32x2_u
+   )_u)(i64x2.load32x2_u)(i_u)(i64x2.load32x2_u)(i64x2.load32x2_u(_u)(i64x2.load32x2_u(i64x2.load32x2_u)(i64x2.load32x2_u
+  )_u)(i64x2.load32x2_u)(i_u)(i64x2.load32x2_u))(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)(i64x2.load32x2_u
+   )
+(i64x2.load32x2_u
+)e))

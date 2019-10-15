@@ -1,0 +1,76 @@
+(module
+  (type $0 (func (result i32)))
+  (type $1 (func))
+  (table $t0  30 30 funcref)
+  (table $t1  28 28 funcref)
+  (export "test" (func $16))
+  (elem $2 (i32.const 2)
+    $9 $7 $10 $7)
+  (elem $3 funcref
+    (ref.func $8) (ref.func $13) (ref.func $7) (ref.func $14))
+  (elem $4 (i32.const 12)
+    $13 $11 $8 $9 $12)
+  (elem $5 funcref
+    (ref.func $11) (ref.func $15) (ref.func $8) (ref.func $13)
+    (ref.func $12))
+  
+  (func $6 (type $0)
+    (result i32)
+    i32.const 0
+    )
+  
+  (func $7 (type $0)
+    (result i32)
+    i32.const 1
+    )
+  
+  (func $8 (type $0)
+    (result i32)
+    i32.const 2
+    )
+  
+  (func $9 (type $0)
+    (result i32)
+    i32.const 3
+    )
+  
+  (func $10 (type $0)
+    (result i32)
+    i32.const 4
+    )
+  
+  (func $11 (type $0)
+    (result i32)
+    i32.const 5
+    )
+  
+  (func $12 (type $0)
+    (result i32)
+    i32.const 6
+    )
+  
+  (func $13 (type $0)
+    (result i32)
+    i32.const 7
+    )
+  
+  (func $14 (type $0)
+    (result i32)
+    i32.const 8
+    )
+  
+  (func $15 (type $0)
+    (result i32)
+    i32.const 9
+    )
+  
+  (func $16 (type $1)
+    i32.const 12
+    i32.const 1
+    i32.const 1
+    table.init $3
+    i32.const 21
+    i32.const 1
+    i32.const 1
+    table.init $3
+    ))

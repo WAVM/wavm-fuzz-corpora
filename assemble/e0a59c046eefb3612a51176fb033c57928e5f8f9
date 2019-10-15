@@ -1,0 +1,1 @@
+(memory 1)(func(i)(v16x8.load_interleaved_2)(3)(v16x8.load_interleaved_2)()(v16x8.load_interleaved_2))

@@ -1,0 +1,1 @@
+(memory 1)(func()i32.store16 align=9i32.store16 align=10 i32.store16 align=10 i32.store16 align=10 i32.store16 align=9i32.store16 align=10 i32.store16 align=6 i32.store16 align=10)

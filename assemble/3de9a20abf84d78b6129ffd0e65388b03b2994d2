@@ -1,0 +1,9 @@
+(module
+ (type(func ))
+  (memory $7  62 3980 )
+  (func $0@  
+i32.const -75
+  i32.load8_u i64.atomic.load8_u  drop
+    unreachable
+  )
+  )

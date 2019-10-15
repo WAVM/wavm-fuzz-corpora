@@ -1,0 +1,46 @@
+(module
+  (type $0 (func (param i32 i32 i32) (result i32)))
+  (type $1 (func))
+  (memory $2  1 1)
+  (export "checkRange" (func $3))
+  (export "test" (func $4))
+  
+  (func $3 (type $0)
+    (param $from i32)
+    (param $to i32)
+    (param $expected i32)
+    (result i32)
+    loop $cont
+      local.get $from
+      local.get $to
+      i32.eq
+      if $if
+        i32.const -1
+        return
+      end ;; $if
+      local.get $from
+      i32.load8_u
+      local.get $expected
+      i32.eq
+      if $if_0
+        local.get $from
+        i32.const 1
+        i32.add
+        local.set $from
+        br $cont
+      end ;; $if_0
+    end ;; $cont
+    local.get $from
+    return
+    )
+  
+  (func $4 (type $1)
+    i32.const 18
+    i32.const 85
+    i32.const 10
+    memory.fill
+    i32.const 21
+    i32.const 170
+    i32.const 4
+    memory.fill
+    ))

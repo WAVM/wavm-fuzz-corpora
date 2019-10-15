@@ -1,0 +1,56 @@
+(module
+  (type $0 (func (result f64 f64)))
+  (type $1 (func))
+  (type $2 (func (param i32)))
+  (import "env" "table" (table $3 89 4294967295 shared funcref))
+  (import "env" "table" (table $4 73 4294967295 shared funcref))
+  (import "env" "global5" (global $6 (mut i64)))
+  (import "env" "global6" (global $7 f64))
+  (import "env" "global9" (global $8 externref))
+  (import "env" "func0" (func $19))
+  (import "env" "func1" (func $20 (param i32)))
+  (table $5  90 4294967295 externref)
+  (global $9  (mut funcref) (ref.null func))
+  (global $10  funcref (ref.null func))
+  (global $11  f32 (f32.const 0x1.9fddc2p+30))
+  (global $12  (mut funcref) (ref.null func))
+  (global $13  f32 (f32.const 0x1.69f374p+31))
+  (global $14  f32 (f32.const 0x1.805ca0p+30))
+  (global $15  (mut f32) (f32.const 0x1.01ab86p+30))
+  (elem $16 declare exception_type)
+  (elem $17 declare externref
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern))
+  
+  (func $21 (type $0)
+    (result f64 f64)
+    (local $0 funcref)
+    (local $1 f64)
+    (local $2 externref)
+    (local $3 i32)
+    local.get $2
+    global.get $15
+    data.drop $18
+    global.set $15
+    global.get $8
+    data.drop $18
+    local.get $3
+    i32.extend16_s
+    global.get $15
+    f32.trunc
+    global.get $13
+    f32.ne
+    i32.div_s
+    global.get $10
+    table.set $4
+    local.set $2
+    ref.is_null
+    drop
+    global.get $15
+    unreachable
+    )
+  
+  (data $18 
+    "h(\0dN\fb\c9\96\f4[\10\19\f2\9d_\b3]\15\ba\cd{\19\eb0\c2>Nt\aa\c7\bd\d126\1e\f1u\bc\f0Tb\1b\d6PB9\bf"))

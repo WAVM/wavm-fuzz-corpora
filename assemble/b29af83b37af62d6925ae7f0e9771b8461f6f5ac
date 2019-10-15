@@ -1,0 +1,12 @@
+(module
+  (type $0 (func (param v128) (result i32)))
+(func (type $0)
+  (param $a v128)
+ (result i32)
+local.get $a
+i16x8.extract_lane_s 5
+    )
+  
+  (func $42    (param $a v128) (result i32)
+  local.get $a i16x8.extract_lane_s 6
+    ) (func  ))

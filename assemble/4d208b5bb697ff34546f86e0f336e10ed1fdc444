@@ -1,0 +1,1 @@
+(func (r8) (i8x16.max_u (i32) (i8x16.max_u (9) (i8x16.max_u (co0) (f32.const 0.0)) (i‰3con6v28) (i8x16.max_u (i‰32.conult27) (i8x16.max_u (9) (i8x16.max_u (0.ci32.) (f32.const 0.0))32.co0) (f32.const 0.0))Ñ0) (f32.const 0)))

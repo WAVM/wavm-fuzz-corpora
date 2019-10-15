@@ -1,0 +1,4 @@
+(module
+  (type $0 (func))
+  (type $2 (func (param f32 i64) (result externref)))
+  (type $2 (func (param i32 exž\d9X08P" "O"))

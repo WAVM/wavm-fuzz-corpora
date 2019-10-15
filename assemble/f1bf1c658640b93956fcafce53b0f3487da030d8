@@ -1,0 +1,98 @@
+(module
+  (type $0 (func (result i64 f64)))
+  (type $1 (func (result i32)))
+  (type $2 (func (param funcref) (result i32)))
+  (type $3 (func))
+  (type $4 (func (param v128) (result i64)))
+  (type $5 (func (result v128 i64 i32 f32)))
+  (import "env" "memory" (memory $9 19 65171 shared))
+  (import "env" "table" (table $6 20 4294967295 funcref))
+  (import "env" "global0" (global $11 funcref))
+  (import "env" "global2" (global $12 (mut externref)))
+  (import "env" "global3" (global $13 (mut f32)))
+  (import "env" "global5" (global $14 externref))
+  (import "env" "global6" (global $15 (mut v128)))
+  (import "env" "func0" (func $22 (result i64 f64)))
+  (import "env" "func1" (func $23 (result i32)))
+  (memory $10  85 18690 shared)
+  (table $7  42 4294967295 shared funcref)
+  (table $8  85 4294967295 shared externref)
+  (global $16  f64 (f64.const 0x1.6d99efc8389c2p+62))
+  (global $17  (mut v128) (v128.const i32x4 0x9ccfae9a 0xc9559db9 0xedc6d386 0x5f1513d0))
+  (global $18  i64 (i64.const 8882958093649678449))
+  (global $19  (mut f64) (f64.const 0x1.4c0ea220115b8p+63))
+  
+  (func $24 (type $2)
+    (param $0 funcref)
+    (result i32)
+    (local $1 v128)
+    (local $2 externref)
+    (local $3 f64)
+    i64.const 2947066993704307644
+    i64.popcnt
+    local.get $0
+    local.get $3
+    local.get $1
+    i8x16.bitmask
+    return
+    )
+  
+  (func $25 (type $3)
+    (local $0 v128)
+    (local $1 f64)
+    global.get $14
+    global.set $12
+    i64.const -7602007647153960735
+    i32.wrap_i64
+    f64.convert_i32_s
+    v128.const i32x4 0x830a9802 0x9c2eb98f 0x71e4e838 0x875f0452
+    i32x4.widen_low_i16x8_s
+    i32x4.widen_low_i16x8_u
+    i32x4.extract_lane 1
+    nop
+    i32.load8_s offset=146321407
+    i64x2.load32x2_u $10 offset=1498793480
+    table.size $7
+    table.size $8
+    v16x8.load_interleaved_3 offset=2160267029 align=4
+    i8x16.narrow_i16x8_s
+    f64x2.mul
+    ref.null func
+    br 0
+    )
+  
+  (func $26 (type $4)
+    (param $0 v128)
+    (result i64)
+    (local $1 f32)
+    (local $2 externref)
+    (local $3 externref)
+    (local $4 f32)
+    local.get $0
+    i16x8.all_true
+    table.get $8
+    global.get $17
+    i32x4.widen_low_i16x8_s
+    global.set $17
+    loop $loop (result v128 i64 i32 f32)
+      data.drop $20
+      nop
+      local.get $4
+      call $23
+      i32.popcnt
+      call_indirect $7 (type $3)
+      nop
+      br $loop
+    end ;; $loop
+    drop
+    table.get $8
+    local.set $2
+    i64x2.replace_lane 1
+    unreachable
+    )
+  
+  (data $20 
+    "\1a\9f\f1\08\ed\a1\a1\ba\8a\dcN\\\d0\01m\84\9ec\c5\99D\08b\80\ff\91\"w\c2\1e\dd\05l\af")
+  
+  (data $21 (i32.const -1949818184)
+    "\ea\a9\9e\10\eb\a02B\0b\1b\0e\d4?\b6\7f$\cbx\ae\01'\aa"))

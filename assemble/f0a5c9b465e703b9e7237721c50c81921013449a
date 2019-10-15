@@ -1,0 +1,45 @@
+(module
+  (type $0 (func (param f64 funcref f64) (result externref i32)))
+  (memory $1  77 34521 shared)
+  (memory $2  29 21257 shared)
+  (global $3  (mut f32) (f32.const 0x1.efd028p+31))
+  
+  (func $5 (type $0)
+    (param $0 f64)
+    (param $1 funcref)
+    (param $2 f64)
+    (result externref i32)
+    (local $3 i64)
+    (local $4 funcref)
+    memory.size
+    v128.load $2 offset=1707056365 align=1
+    v128.not
+    i16x8.bitmask
+    i32.popcnt
+    v16x8.load_interleaved_3 offset=3732137044 align=2
+    data.drop $4
+    i32x4.add
+    i16x8.ge_s
+    i32x4.neg
+    f32x4.convert_i32x4_u
+    i32.const 1481484678
+    v32x4.load_interleaved_2 $2 offset=200189735 align=2
+    v128.or
+    f64x2.sqrt
+    i8x16.min_s
+    ref.null extern
+    ref.is_null
+    i8x16.replace_lane 7
+    drop
+    i32.const -703769724
+    ref.null extern
+    ref.is_null
+    i32.div_s
+    drop
+    i64.const -6874327687011561169
+    unreachable
+    )
+  
+  (data $4 
+    "\8awsn\90\a5G.\c66iQ\1e\f2\844\15@\8be\f1\096X<\1d\93\d5\95\d0\e61X\cf\1f\de\\\b8\e4PG\8d\0d\dcs\a4\b1@6[*\84N\f3\cdD>\8etD\e8\1a\d6\b6"
+    "2IVn\e6w\85C@o\7f\7f\81\dd\1a)\cb\11v"))

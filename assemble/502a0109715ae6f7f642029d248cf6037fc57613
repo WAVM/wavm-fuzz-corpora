@@ -1,0 +1,2 @@
+(memory 1)(func()memory.grow
+memory.grow)

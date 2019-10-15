@@ -1,0 +1,33 @@
+(func br 0
+i64.sub i64.sub
+i64.sub i64.sub
+i64.sub i64.sub
+i64.sub i64.sub br 0
+i64.sub i64.sub
+i64.sub i64.sub
+ br 0
+i64.sub i64.sub
+i64.sub i64.sub
+i64.sub i64.sub
+i64.sub i64.sub br 0
+br 0
+i64.sub i64.sub
+i64.sub i64.sub
+i64.sub i64.sub
+i64.sub i64.sub br 0
+i64.sub i64.sub
+i64.sub i64.sub
+ br 0
+i64.sub i64.sub
+i64.sub i64.sub
+i64.sub i64.sub
+i64.sub i64.sub br 0
+i64.sub i64.sub
+i64.sub i64.sub
+i64.sub i64.sub
+i64.sub i64.sub i64.sub i64.sub
+i64.sub i64.sub br 0 i64.sub i64.sub
+i64.sub i64.sub
+i64.sub i64.sub
+i64.sub i64.sub i64.sub i64.sub
+i64.sub i64.sub br 0 br 0)

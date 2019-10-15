@@ -1,0 +1,35 @@
+(module
+  (type $0 (func (param externref funcref f64 externref)))
+  (import "env" "memory" (memory $3 62 20880 shared))
+  (import "env" "memory" (memory $4 32 42119 shared))
+  (import "env" "table" (table $1 34 4294967295 shared funcref))
+  (import "env" "table" (table $2 85 4294967295 funcref))
+  (memory $5  32 56658)
+  (elem $6 declare funcref
+    (ref.null func) (ref.null func) (ref.func $8) (ref.null func)
+    (ref.null func) (ref.func $8) (ref.null func) (ref.null func)
+    (ref.func $8) (ref.null func) (ref.func $8) (ref.func $8)
+    (ref.null func) (ref.null func) (ref.func $8) (ref.null func)
+    (ref.null func) (ref.null func) (ref.func $8) (ref.func $8))
+  (elem $7 declare exception_type)
+  
+  (func $8 (type $0)
+    (param $0 externref)
+    (param $1 funcref)
+    (param $2 f64)
+    (param $3 externref)
+    (local $4 i64)
+    (local $5 funcref)
+    local.get $3
+    i32.const -1489231405
+    table.get $1
+    local.tee $1
+    elem.drop $7
+    local.get $0
+    v128.const i32x4 0x47a0b8de 0xc1d18620 0x04342741 0xf60650fd
+    i32x4.widen_low_i16x8_u
+    i16x8.abs
+    local.get $5
+    local.set $5
+    br 0
+    ))

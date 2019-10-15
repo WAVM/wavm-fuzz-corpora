@@ -1,0 +1,58 @@
+(module
+  (type $0 (func (param externref v128) (result externref externref)))
+  (type $1 (func (param i32 f32 f64 i64)))
+  (import "env" "table" (table $2 92 4294967295 externref))
+  (import "env" "global5" (global $4 (mut externref)))
+  (import "env" "func0" (func $12 (param i32 f32 f64 i64)))
+  (memory $3  85 54446 shared)
+  (global $5  (mut f64) (f64.const 0x1.03668daa0f4acp+63))
+  (global $6  v128 (v128.const i32x4 0x1ba4dc9d 0xbf24cd02 0x306d792a 0x83fbec30))
+  (global $7  (mut v128) (v128.const i32x4 0xb6d3de85 0x2efc2cc6 0xb7555c97 0x4a446240))
+  (global $8  i64 (i64.const 5687269678722905435))
+  (global $9  funcref (ref.null func))
+  (global $10  (mut f32) (f32.const 0x1.1e3ec2p+30))
+  
+  (func $13 (type $0)
+    (param $0 externref)
+    (param $1 v128)
+    (result externref externref)
+    (local $2 externref)
+    (local $3 funcref)
+    (local $4 i32)
+    (local $5 i64)
+    memory.size
+    v16x8.load_interleaved_4 offset=2538481698
+    i8x16.ge_u
+    f32x4.sqrt
+    i32x4.lt_s
+    i16x8.le_u
+    i8x16.extract_lane_s 2
+    local.get $4
+    i32.atomic.rmw.add offset=4141285553
+    v128.load offset=3039586114
+    i8x16.bitmask
+    v8x16.load_interleaved_4 offset=638534567 align=2
+    i64x2.mul
+    i64x2.mul
+    i64x2.mul
+    drop
+    i32.const 1652290560
+    table.get $2
+    ref.is_null
+    table.get $2
+    atomic.fence
+    global.set $4
+    local.get $5
+    local.set $5
+    global.get $8
+    ref.null extern
+    ref.is_null
+    drop
+    drop
+    local.get $1
+    unreachable
+    )
+  
+  (data $11 
+    "4\e8iNd\d6\1a\f57\855v(\b2\cc\f9\f8N\ee\d8V[\f1\ed#o\1d\bf2\dc\86Oc\a4SA*\da(\c7\bf\dc2$v\c3\a0\d4<Vfw\b6\90\1c\b65\b2\e8\"\cdg!)"
+    "Ni2\be\9e\f7\ab\1a\f7:\01x>\cc\ac\ec<\b5w\15\dbXh\e0\ef\9a/Y\fe\ebtx\ecU|V"))

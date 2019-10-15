@@ -1,0 +1,5 @@
+(func
+i16x8.extract_lane_u 0
+i16x8.extract_lane_u 0
+i16x8.extract_lane_u 0
+i16x8.extract_lane_u 0)

@@ -1,0 +1,35 @@
+(module
+  (type $0 (func (result v128 v128)))
+  (type $1 (func (param f32 i64 i32 funcref)))
+  (type $2 (func (param i64 f64)))
+  (import "env" "memory" (memory $3 74 45707 shared))
+  (import "env" "memory" (memory $4 96 2012))
+  (import "env" "global0" (global $6 i64))
+  (import "env" "func0" (func $9 (param f32 i64 i32 funcref)))
+  (memory $5  97 47532 shared)
+  (global $7  (mut i32) (i32.const -1082554538))
+  
+  (func $10 (type $0)
+    (result v128 v128)
+    i64.const 9150898897591474245
+    i64.eqz
+    f64.load offset=3414707378 align=1
+    global.get $6
+    global.get $7
+    v32x4.load_splat $5 offset=1999782926 align=1
+    i32x4.widen_high_i16x8_s
+    i32x4.widen_high_i16x8_s
+    i8x16.neg
+    i8x16.extract_lane_u 3
+    i32.atomic.load16_u $5 offset=1924409506
+    f64.load offset=4069534131 align=1
+    block $block (param i64 f64)
+      i32.const 613692144
+      drop
+      br $block
+    end ;; $block
+    unreachable
+    )
+  
+  (data $8 (i32.const -389925380)
+    "!\01'p\ed\11\1b\c0\00#\b4\00\a4\a1\a1\d3/\f7J"))

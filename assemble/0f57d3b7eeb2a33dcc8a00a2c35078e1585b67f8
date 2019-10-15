@@ -1,0 +1,84 @@
+(module
+  (type $0 (func (param f64 i32) (result i32 i64)))
+  (type $1 (func (param f64 f64 funcref v128) (result externref)))
+  (type $2 (func (param f64 i64 i32 f64) (result externref)))
+  (type $3 (func (result f64 f32 i32)))
+  (import "env" "memory" (memory $5 6 25840))
+  (import "env" "table" (table $4 36 4294967295 shared externref))
+  (import "env" "global4" (global $7 (mut i32)))
+  (import "env" "func0" (func $15 (param f64 i64 i32 f64) (result externref)))
+  (memory $6  71 43517 shared)
+  (global $8  externref (ref.null extern))
+  (global $9  funcref (ref.null func))
+  (global $10  (mut funcref) (ref.null func))
+  (global $11  i64 (i64.const 6782961604729444452))
+  (elem $12 table
+    $4 $4 $4 $4 $4 $4 $4 $4
+    $4 $4 $4 $4 $4 $4 $4 $4
+    $4 $4 $4 $4 $4 $4 $4 $4
+    $4 $4 $4 $4 $4 $4 $4 $4
+    $4 $4 $4 $4 $4 $4 $4 $4
+    $4 $4 $4 $4 $4 $4 $4 $4
+    $4 $4 $4 $4 $4 $4 $4 $4
+    $4 $4 $4 $4 $4 $4)
+  (elem $13 (i32.const -1949681423) global
+    $8 $9 $8 $7 $11 $11 $9 $7
+    $10 $7 $9 $11 $9 $11 $7 $10
+    $7 $7 $7 $7 $11 $7 $9 $9
+    $11 $8 $9 $10 $7 $7 $11 $11
+    $9 $10 $8 $9 $9 $10 $7 $9
+    $11 $11 $9 $10 $8 $10 $7 $7
+    $11 $8 $8 $8 $8 $9 $8 $10
+    $11 $8 $9 $8 $11 $11 $9 $11
+    $8 $10 $9 $11 $9 $7 $11 $7
+    $11 $9 $10 $9 $9)
+  
+  (func $16 (type $0)
+    (param $0 f64)
+    (param $1 i32)
+    (result i32 i64)
+    (local $2 f32)
+    (local $3 funcref)
+    (local $4 externref)
+    (local $5 f64)
+    f32.const -0x1.d12542p+46
+    i64.trunc_f32_s
+    elem.drop $12
+    v128.const i32x4 0xb60265f2 0xa5c0a445 0xe4808a4b 0xb0745b9d
+    atomic.fence
+    block $block (result f64 f32 i32)
+      global.get $7
+      local.get $0
+      i32.trunc_sat_f64_s
+      i32.clz
+      f32.reinterpret_i32
+      elem.drop $13
+      local.get $4
+      local.get $0
+      table.size $4
+      drop
+      local.set $5
+      unreachable
+    end ;; $block
+    drop
+    drop
+    local.set $0
+    ref.null extern
+    unreachable
+    )
+  
+  (func $17 (type $1)
+    (param $0 f64)
+    (param $1 f64)
+    (param $2 funcref)
+    (param $3 v128)
+    (result externref)
+    global.get $9
+    global.get $9
+    i32.const -551014780
+    f64.const 0x1.b3095798b6ecap-374
+    unreachable
+    )
+  
+  (data $14 (memory $6) (i32.const -817111027)
+    "SN\f6x-\f5\0d\81\90\f5\a4;\02\b0\a4H\f2I\f7\97\92k\ddQ"))

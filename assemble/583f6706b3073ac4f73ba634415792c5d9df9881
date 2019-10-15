@@ -1,0 +1,1 @@
+(func(i16x8.replace_lane 5))(func(i16x8.replace_lane 4))(func(i16x8.replace_lane 4))

@@ -1,0 +1,41 @@
+(module
+  (type $0 (func))
+  (table $t  10 funcref)
+(elem $1 funcref)
+  (elem $2 funcref
+    (ref.func $f) (ref.func $f) (ref.null func) (ref.func $g))
+  (elem $3)
+  (elem $4
+    $f $f $g $g)
+  (elem $p1 funcref)
+  (elem $p2 funcref
+    (ref.func $f) (ref.func $f) (ref.null func) (ref.func $g))
+  (elem $a21 (i32.const 0)
+    $f $f)
+  (elem $a22 (i32.const 0)
+    $f $f)
+  (elem $a23 (i32.const 0))
+  (elem $a24 (i32.const 0) funcref
+    (ref.func $f) (ref.null func))
+  (elem $a25 (i32.const 0)
+    $f $f)
+  (elem $a26 (i32.const 0)
+    $f $f)
+  (elem $27 declare funcref)
+  (elem $28 declare funcref
+    (ref.func $f) (ref.func $f) (ref.null func) (ref.func $g))
+  (elem $29 declare)
+  (elem $30 declare
+    $f $f $g $g)
+  (elem $d1 declare funcref)
+  (elem $d2 declare funcref
+    (ref.func $f) (ref.func $f) (ref.null func) (ref.func $g))
+  (elem $d3 declare)
+  (elem $d4 declare
+    $f $f $g $g)
+  
+  (func $f (type $0)
+    )
+  
+  (func $g (type $0)
+    ))

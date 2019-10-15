@@ -1,0 +1,5 @@
+(module
+ (type $0(func (result i32)))(memory 3)
+(  memory $b 2 )
+(func $6 (type $0)
+ i32.const 3 i32.load $b  ))

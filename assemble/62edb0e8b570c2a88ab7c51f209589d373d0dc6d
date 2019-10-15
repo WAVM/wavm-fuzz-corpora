@@ -1,0 +1,1 @@
+(memory 5)(func(i32.u)(i32.atomic.load16_u))

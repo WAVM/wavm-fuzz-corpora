@@ -1,0 +1,33 @@
+(module
+  (type $0 (func (param externref)))
+  (import "env" "memory" (memory $2 9 55522 shared))
+  (import "env" "memory" (memory $3 36 24470))
+  (import "env" "global0" (global $4 (mut v128)))
+  (import "env" "global1" (global $5 (mut funcref)))
+  (import "env" "global3" (global $6 i32))
+  (import "env" "global5" (global $7 f32))
+  (table $1  60 4294967295 shared externref)
+  (global $8  funcref (ref.null func))
+  (global $9  f32 (f32.const 0x1.baabacp+26))
+  
+  (func $10 (type $0)
+    (param $0 externref)
+    atomic.fence
+    memory.size $3
+    f32.load $3 offset=2221906140 align=2
+    i64.trunc_sat_f32_s
+    global.get $9
+    i32.const -239909169
+    v16x8.load_interleaved_4 $3 offset=3346903870 align=4
+    i8x16.add
+    i16x8.max_u
+    global.get $6
+    v8x16.load_interleaved_2 $3 offset=438133328 align=4
+    i16x8.widen_high_i8x16_u
+    i16x8.mul
+    i16x8.any_true
+    drop
+    i8x16.sub
+    ref.null extern
+    unreachable
+    ))

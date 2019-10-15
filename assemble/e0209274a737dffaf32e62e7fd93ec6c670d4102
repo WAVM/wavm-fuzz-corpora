@@ -1,0 +1,173 @@
+(module
+  (type $0 (func (result i32)))
+  (type $1 (func (result externref f64)))
+  (type $2 (func (param f64 i32 i64 funcref) (result f32)))
+  (type $3 (func (param f32)))
+  (type $4 (func (param funcref i32) (result i64)))
+  (type $5 (func (param f64 i32) (result f32 f32)))
+  (type $6 (func (param i32) (result i32 f32 v128)))
+  (type $7 (func (param f32 externref) (result funcref externref i64)))
+  (type $8 (func (param f32) (result i64 funcref f32)))
+  (type $9 (func (param externref i32 f32) (result funcref externref i32 i32)))
+  (import "env" "table" (table $10 84 4294967295 externref))
+  (import "env" "global0" (global $13 f64))
+  (import "env" "global2" (global $14 f64))
+  (import "env" "global3" (global $15 i32))
+  (import "env" "global4" (global $16 (mut funcref)))
+  (import "env" "func0" (func $19 (param funcref i32) (result i64)))
+  (table $11  51 4294967295 externref)
+  (table $12  2 4294967295 funcref)
+  (global $17  (mut i32) (i32.const 994302015))
+  
+  (func $20 (type $0)
+    (result i32)
+    (local $0 i64)
+    global.get $17
+    local.get $0
+    f64.const -0x1.e0a0d014b6636p+767
+    global.get $15
+    block $block (param f64 i32) (result f32 f32)
+      atomic.fence
+      global.set $17
+      call $21
+      table.size $11
+      loop $loop (param i32) (result i32 f32 v128)
+        i16x8.splat
+        i32x4.widen_low_i16x8_u
+        i16x8.widen_high_i8x16_u
+        f32x4.extract_lane 0
+        call $23
+        i32.const -1705867753
+        v128.const i32x4 0x03c9ca07 0x2351fc6d 0x00ae8464 0x5eb56e18
+        ref.null extern
+        drop
+        unreachable
+      end ;; $loop
+      unreachable
+    end ;; $block
+    unreachable
+    )
+  
+  (func $21 (type $1)
+    (result externref f64)
+    (local $0 f32)
+    (local $1 i64)
+    (local $2 f32)
+    f64.const 0x1.d8191c9a3542ap+697
+    local.get $2
+    call $21
+    i64.trunc_sat_f64_u
+    local.set $1
+    block $block (param f32 externref) (result funcref externref i64)
+      call $20
+      v128.const i32x4 0x2186817d 0x81a41c88 0xc789f558 0x503fbe13
+      f32x4.extract_lane 1
+      global.get $15
+      i32.clz
+      if $if (param f32) (result i64 funcref f32)
+        call $20
+        global.get $15
+        i32.extend16_s
+        i32.add
+        table.get $12
+        ref.null extern
+        ref.is_null
+        table.get $11
+        ref.null func
+        ref.is_null
+        drop
+        ref.is_null
+        table.get $10
+        ref.is_null
+        table.get $10
+        ref.is_null
+        call $19
+        drop
+        local.set $2
+        f64.const 0x1.810405f520c65p+562
+        drop
+        call $20
+        table.get $12
+        global.set $16
+        global.get $14
+        unreachable
+      else
+        call $23
+        i32.const -1424880188
+        drop
+        f64.const -0x1.d33c31ba1229fp+85
+        drop
+        local.get $1
+        f64.reinterpret_i64
+        drop
+        global.get $17
+        ref.null func
+        drop
+        ref.null func
+        ref.null extern
+        ref.is_null
+        call $19
+        unreachable
+      end ;; $if
+      ref.null func
+      drop
+      local.set $2
+      unreachable
+    end ;; $block
+    drop
+    ref.null extern
+    ref.null extern
+    ref.null func
+    global.set $16
+    ref.is_null
+    table.get $10
+    ref.is_null
+    select (result externref)
+    ref.is_null
+    unreachable
+    )
+  
+  (func $22 (type $2)
+    (param $0 f64)
+    (param $1 i32)
+    (param $2 i64)
+    (param $3 funcref)
+    (result f32)
+    (local $4 funcref)
+    (local $5 f64)
+    f32.const -0x1.c95748p+53
+    return
+    )
+  
+  (func $23 (type $3)
+    (param $0 f32)
+    (local $1 i64)
+    (local $2 externref)
+    global.get $16
+    atomic.fence
+    table.size $12
+    local.get $1
+    ref.null extern
+    global.get $13
+    i32.trunc_sat_f64_u
+    f32.const 0x1.bea212p-51
+    block $block (param externref i32 f32) (result funcref externref i32 i32)
+      i32.trunc_f32_s
+      f32.reinterpret_i32
+      i32.trunc_sat_f32_s
+      i32.gt_u
+      drop
+      global.get $16
+      ref.null func
+      ref.is_null
+      br_if 1
+      br 1
+    end ;; $block
+    i32.le_u
+    drop
+    drop
+    br 0
+    )
+  
+  (data $18 
+    "\b7\c9\97_\ed\dc\0cglt\8c\08\c7\bfX\9d#\8b\a7\0bM\98"))

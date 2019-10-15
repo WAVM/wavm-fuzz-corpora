@@ -1,0 +1,60 @@
+(module
+  (type $0 (func (param i64 i32) (result i32 f64)))
+  (type $1 (func (param funcref i64 funcref i64) (result externref)))
+  (type $2 (func (param funcref f64)))
+  (type $3 (func (result i32 externref)))
+  (type $4 (func (param externref i64) (result f32 f64)))
+  (import "env" "global0" (global $8 v128))
+  (import "env" "func0" (func $9 (param i64 i32) (result i32 f64)))
+  (import "env" "func1" (func $10 (param funcref i64 funcref i64) (result externref)))
+  (memory $6  43 33056 shared)
+  (memory $7  55 28578 shared)
+  (table $5  90 4294967295 shared externref)
+  
+  (func $11 (type $2)
+    (param $0 funcref)
+    (param $1 f64)
+    (local $2 externref)
+    nop
+    )
+  
+  (func $12 (type $3)
+    (result i32 externref)
+    (local $0 f64)
+    (local $1 i64)
+    (local $2 i64)
+    local.get $1
+    i64.extend16_s
+    local.set $2
+    nop
+    nop
+    global.get $8
+    f64.const 0x1.b6d8fd57811ecp-295
+    i64.trunc_f64_u
+    unreachable
+    )
+  
+  (func $13 (type $4)
+    (param $0 externref)
+    (param $1 i64)
+    (result f32 f64)
+    (local $2 f32)
+    (local $3 f64)
+    local.get $1
+    i64x2.splat
+    i16x8.bitmask
+    i16x8.load8x8_s $7 offset=3633389850
+    i16x8.widen_high_i8x16_u
+    i32x4.trunc_sat_f32x4_u
+    global.get $8
+    i16x8.max_u
+    i16x8.extract_lane_u 6
+    i32.clz
+    i32.clz
+    v32x4.load_interleaved_2 offset=4146704151
+    v128.andnot
+    i32.const -1549020889
+    atomic.fence
+    i8x16.replace_lane 8
+    unreachable
+    ))

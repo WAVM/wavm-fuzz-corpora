@@ -1,0 +1,42 @@
+(module
+  (type $0 (func (result i32)))
+  (type $1 (func (param f64) (result i64 i64)))
+  (type $2 (func (param externref v128 i64 funcref) (result i64)))
+  (type $3 (func))
+  (type $4 (func (param v128 v128 i32) (result f32)))
+  (import "env" "memory" (memory $6 80 3330))
+  (import "env" "table" (table $5 56 4294967295 shared funcref))
+  (import "env" "func0" (func $9 (result i32)))
+  (import "env" "func1" (func $10 (param f64) (result i64 i64)))
+  (import "env" "func2" (func $11 (param externref v128 i64 funcref) (result i64)))
+  (memory $7  72 17755 shared)
+  (elem $8 externref
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern))
+  
+  (func $12 (type $3)
+    (local $0 i32)
+    (local $1 f32)
+    (local $2 i32)
+    (local $3 f32)
+    elem.drop $8
+    memory.size
+    v16x8.load_interleaved_4 $7 offset=1573179043 align=4
+    i8x16.extract_lane_u 7
+    block $block (param v128 v128 i32) (result f32)
+      v16x8.load_interleaved_4 $7 offset=1657503634 align=1
+      f64x2.min
+      i8x16.add
+      nop
+      i32x4.max_s
+      i32x4.bitmask
+      v16x8.load_interleaved_4 $7 offset=460219547 align=4
+      i16x8.avgr_u
+      i16x8.ge_u
+      i8x16.ge_u
+      i16x8.add
+      f32x4.min
+      unreachable
+    end ;; $block
+    return
+    ))

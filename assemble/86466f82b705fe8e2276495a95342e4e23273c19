@@ -1,0 +1,5 @@
+(module
+  (type (func (param externref externref i32 i64)))
+  (type $4 (func))
+  (type $5 (func (result f32 i64)))
+  (typeternref6"))

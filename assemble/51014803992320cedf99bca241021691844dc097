@@ -1,0 +1,47 @@
+(module
+  (type $0 (func (result f64 funcref)))
+  (type $1 (func (param i64) (result f32 i64)))
+  (import "env" "memory" (memory $2 85 56128 shared))
+  (global $3  (mut i64) (i64.const -3664731578807398464))
+  (global $4  (mut i32) (i32.const 554598461))
+  (global $5  externref (ref.null extern))
+  (elem $6 externref
+    (ref.null extern) (ref.null extern))
+  (elem $7 declare externref
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern))
+  
+  (func $10 (type $0)
+    (result f64 funcref)
+    (local $0 f64)
+    global.get $3
+    drop
+    i32.const -2145732234
+    elem.drop $7
+    i32x4.splat
+    f64x2.sqrt
+    i16x8.widen_high_i8x16_u
+    i64.const 7266882246807910663
+    block $block (param i64) (result f32 i64)
+      global.get $5
+      memory.size
+      v32x4.load_splat offset=733851719 align=1
+      loop $loop (result funcref)
+        call $10
+        br $loop
+      end ;; $loop
+      ref.is_null
+      i8x16.shr_u
+      unreachable
+    end ;; $block
+    ref.null func
+    ref.null extern
+    unreachable
+    )
+  
+  (data $8 (i32.const 35973976)
+    "i\98\c4\9c\e7\d6\f1\00'\96\c3\e9\16X\ec\08\19?\fd\f0ozW\b9\f2r\d1V?z\d6\9d\fd'+4\b3\d9\a4\09\abQtI\f9_9\05D\11\fc\a71&M\dc\0b;\ac]\9a1 \d6"
+    "'\91a\n\fa\b7\c2\03\c5\cb\09F@D?$\cb\fb\7f\f3s")
+  
+  (data $9 
+    "\b0\1e_\fa\03[8\bb2"))

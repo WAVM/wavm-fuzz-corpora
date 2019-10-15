@@ -1,0 +1,7 @@
+(func br 0
+i64.trunc_f64_u br
+0
+i64.trunc_f64_u br
+0
+i64.trunc_f64_u br
+0)

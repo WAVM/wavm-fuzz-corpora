@@ -1,0 +1,11 @@
+(memory 2)(func()i4+tf()i3+;2.ê8. )
+  
+  (func   local.get $0
+   v8x16.store_interleaved_2
+    v8x16.store_interleaved_2
+    v8x16.store_interleaved_2
+         v8x16.store_interleaved_2
+    v8x16.store_interleaved_2
+    v8x16.store_interleaved_2 v8x16.store_interleaved_2
+   v8x16.store_interleaved_2
+))2r v8x1

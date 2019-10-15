@@ -1,0 +1,42 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param funcref funcref)))
+  (type $2 (func (param i32) (result f32)))
+  (import "env" "memory" (memory $5 66 42552 shared))
+  (import "env" "memory" (memory $6 43 38616))
+  (import "env" "table" (table $3 92 4294967295 externref))
+  (import "env" "global1" (global $7 (mut externref)))
+  (import "env" "global2" (global $8 (mut v128)))
+  (import "env" "global4" (global $9 (mut f64)))
+  (import "env" "global5" (global $10 f64))
+  (import "env" "global6" (global $11 (mut externref)))
+  (import "env" "func0" (func $14 (param funcref funcref)))
+  (table $4  15 4294967295 shared funcref)
+  (global $12  (mut funcref) (ref.null func))
+  (global $13  f32 (f32.const 0x1.ef37c6p+31))
+  
+  (func $15 (type $0)
+    (local $0 funcref)
+    (local $1 externref)
+    i32.const 1593842278
+    i64.load32_s $6 offset=32508233
+    f64.convert_i64_s
+    table.size $3
+    drop
+    f32.const 0x1.6898fap-82
+    f32.ceil
+    f32x4.splat
+    memory.size
+    table.size $4
+    i32.lt_u
+    block $block (param i32) (result f32)
+      i64.const -7347198807835961636
+      i64.store32 offset=3203829542 align=2
+      f32.const -0x0.93ff10p-127
+      br $block
+    end ;; $block
+    f32x4.replace_lane 3
+    drop
+    global.set $9
+    unreachable
+    ))

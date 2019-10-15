@@ -1,0 +1,77 @@
+(module
+  (type $0 (func (param funcref v128 externref funcref)))
+  (type $1 (func (result i64 f64)))
+  (type $2 (func (param v128 f64 f64)))
+  (type $3 (func (param v128) (result funcref v128 v128 externref)))
+  (type $4 (func (param i32)))
+  (import "env" "memory" (memory $5 55 2405 shared))
+  (import "env" "global0" (global $6 externref))
+  (import "env" "global7" (global $7 (mut f64)))
+  (import "env" "func0" (func $16 (result i64 f64)))
+  (global $8  v128 (v128.const i32x4 0x9293580d 0xac9b27e5 0x9141821a 0xfdfefec4))
+  (global $9  (mut funcref) (ref.null func))
+  (global $10  i64 (i64.const 1400492145790572647))
+  (global $11  v128 (v128.const i32x4 0xe03365fc 0xe4a82394 0x94c5cc47 0x115ac578))
+  (global $12  (mut externref) (ref.null extern))
+  (global $13  (mut f64) (f64.const 0x1.bc014fcb9f272p+63))
+  (elem $14 global
+    $6 $10 $12 $9 $7 $10 $11 $6
+    $9 $7 $12 $8 $13 $13 $9 $7
+    $6 $11 $10 $8 $6)
+  
+  (func $17 (type $0)
+    (param $0 funcref)
+    (param $1 v128)
+    (param $2 externref)
+    (param $3 funcref)
+    (local $4 v128)
+    (local $5 i32)
+    i64.const 2896917255884203951
+    f64.convert_i64_s
+    loop $loop (result v128)
+      br 1
+    end ;; $loop
+    i64.const 2688002908197374741
+    i64x2.splat
+    v8x16.swizzle
+    block $block (param v128) (result funcref v128 v128 externref)
+      global.get $6
+      memory.size
+      global.get $9
+      return
+    end ;; $block
+    br 0
+    )
+  
+  (func $18 (type $2)
+    (param $0 v128)
+    (param $1 f64)
+    (param $2 f64)
+    (local $3 f32)
+    (local $4 f64)
+    (local $5 i64)
+    (local $6 f64)
+    v128.const i32x4 0xcc00727a 0x87c410d1 0xd8caf119 0x0c8fe567
+    local.get $1
+    v128.const i32x4 0x4b3de48c 0xaf4cf4a4 0x68c93351 0x15d1c854
+    atomic.fence
+    i32x4.widen_low_i16x8_s
+    f64x2.neg
+    f32.const -0x1.de5d9cp-120
+    f32.floor
+    global.get $6
+    f32.const 0x1.0df348p+97
+    i64.trunc_sat_f32_s
+    call $16
+    local.set $2
+    i64.le_u
+    loop $loop (param i32)
+      global.get $7
+      ref.null func
+      return
+    end ;; $loop
+    return
+    )
+  
+  (data $15 (i32.const -88214465)
+    "\92\878\b0a\9e\82p\83\cf<\e0\a8\e6\ea2<\81\a4\d2\e0I\12v\c8\cc\fe\fd4\nm\94\a6^\d4Y\02,D\e94\11v\16\b4$"))

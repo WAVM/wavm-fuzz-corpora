@@ -1,0 +1,4 @@
+(module
+  (type (func))( 
+ custom_section "b"
+(after type)) )

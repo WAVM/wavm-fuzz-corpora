@@ -1,0 +1,87 @@
+(module
+  (type $0 (func (param i64 funcref f32 i32) (result i64)))
+  (type $1 (func (param i32 i32 i64) (result i64)))
+  (type $2 (func (result v128)))
+  (type $3 (func (param funcref i64 funcref i32)))
+  (import "env" "memory" (memory $7 31 19676 shared))
+  (import "env" "table" (table $4 6 4294967295 shared externref))
+  (import "env" "table" (table $5 55 4294967295 externref))
+  (import "env" "func0" (func $14 (result v128)))
+  (import "env" "func1" (func $15 (param funcref i64 funcref i32)))
+  (memory $8  19 58509 shared)
+  (memory $9  20 43892 shared)
+  (table $6  87 4294967295 shared externref)
+  (global $10  funcref (ref.null func))
+  (global $11  (mut v128) (v128.const i32x4 0x6e108c32 0xa74a0cb9 0x3c579eab 0x2f440c9e))
+  (global $12  (mut i32) (i32.const -812557782))
+  (elem $13 table
+    $4 $5 $5 $5 $4 $6 $6 $6
+    $6 $5 $4 $6 $5 $5 $5 $6
+    $5 $4 $5 $5 $6 $5 $6 $6
+    $4 $4 $4 $4)
+  
+  (func $16 (type $0)
+    (param $0 i64)
+    (param $1 funcref)
+    (param $2 f32)
+    (param $3 i32)
+    (result i64)
+    (local $4 i32)
+    (local $5 f64)
+    (local $6 i32)
+    i64.const -7140850091086093131
+    ref.null func
+    table.size $4
+    i32.load16_s offset=2148199896
+    f32.reinterpret_i32
+    i32.trunc_f32_s
+    local.tee $3
+    i16x8.load8x8_u $8 offset=1569135554
+    i8x16.extract_lane_s 0
+    local.get $5
+    i32.trunc_f64_u
+    i32.atomic.rmw16.xchg_u $8 offset=3889796143
+    i32.atomic.load $8 offset=3572182209
+    v8x16.load_interleaved_2 offset=3006680356 align=4
+    i32x4.ge_s
+    global.set $11
+    ref.null extern
+    unreachable
+    )
+  
+  (func $17 (type $1)
+    (param $0 i32)
+    (param $1 i32)
+    (param $2 i64)
+    (result i64)
+    (local $3 f32)
+    (local $4 v128)
+    (local $5 funcref)
+    call $14
+    i8x16.extract_lane_s 3
+    v64x2.load_interleaved_4 offset=54921141 align=8
+    f64x2.mul
+    i8x16.extract_lane_s 14
+    v64x2.load_interleaved_3 $8 offset=218075160 align=2
+    f64x2.neg
+    f32x4.max
+    i16x8.all_true
+    v8x16.load_interleaved_2 $9 offset=2028388169 align=8
+    i16x8.sub
+    i16x8.gt_s
+    v8x16.shuffle 11 27 21 13 29 4 30 29 23 8 30 0 8 21 6 23
+    i32x4.widen_high_i16x8_u
+    f64x2.sqrt
+    f64x2.div
+    global.set $11
+    local.get $1
+    local.set $0
+    local.get $1
+    table.get $6
+    ref.null extern
+    drop
+    ref.is_null
+    table.get $4
+    ref.null func
+    unreachable
+    ))

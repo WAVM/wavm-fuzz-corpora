@@ -1,0 +1,13 @@
+(module
+  (type $0 (func (param f64 funcref)))
+   (import "env" "func1" (func $19 (result v128)))
+  (memory $4  55 57184)
+  (global  (mut i32) (i32.const -1742518123))
+  (global $13  (mut i32) (i32.const 287525986))
+  (elem $8 $19   )
+  
+  (data $16 (i32.const 2072991928)
+    "\91þÿÿÿM\b0*\bb\3e\8bf")
+  
+  (data $17 (i32.const 536634048)
+    "\a22?\12"))

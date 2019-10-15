@@ -1,0 +1,4 @@
+(memory 2)(func()i)(func()i64.atomic.rmw.xchg
+()i64.atomic.rmw.xchg
+i64.atomic.rmw.xchg
+i64.atomic.rmw.xchg)

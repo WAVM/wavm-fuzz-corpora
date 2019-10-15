@@ -1,0 +1,22 @@
+(module
+  (type $0 (func))
+  (table $t  10 funcref)
+  (elem(i32.const 0) funcref)
+
+  (elem $11 (i32.const 0))
+  (elem $12 (i32.const 0)
+    $f $f)
+  (elem $13 (i32.const 4))
+  (elem $14 (i32.const 0)
+    $f $f)
+  (elem $15 (i32.const 0))
+  (elem $16 (i32.const 0)
+    $f $f)
+ (elem $a26 (i32.const 0)
+ $f)
+  
+  (func $f (type $0)
+    )
+  
+  (func $g (type $0)
+    ))

@@ -1,0 +1,16 @@
+(module
+  (type $0 (func (result f32)))
+  (type $1 (func (param v128)))
+  (import "env" "memory" (memory $4 77 24160 shared))
+  (import "env" "table" (table $2 47 4294967295 funcref))
+  (memory $5  9 48720)
+  (memory $6  48 62046)
+  (table $3  14 4294967295 funcref)
+  (elem $7 memory
+    $6 $4 $4 $4 $5 $5 $5)
+  (elem $8 externref(ref.null extern) (ref.null func) (ref.null extern) (ref.null func))
+  
+  (func $11 (type $0)
+    (result f32)
+    lane :0
+     unre#\e5J\88\aey=\e2\e6XRwy\85/\84"))

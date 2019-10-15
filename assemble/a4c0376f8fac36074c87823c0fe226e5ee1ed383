@@ -1,0 +1,3 @@
+(func table.get $sz
+ table.get $s table.get $c table.get $s table.get $sz
+ table.get $s table.get $c table.get $s table.get $s table.get $$ table.get $$ table.get $o table.get $s table.get $$ table.get $$ table.get $o)

@@ -1,0 +1,33 @@
+(module
+  (type $0 (func (param i64 v128)))
+  (type $1 (func (param funcref v128)))
+  (type $2 (func (param i32)))
+  (type $3 (func))
+  (import "env" "global1" (global $6 f32))
+  (import "env" "func0" (func $9 (param i32)))
+  (import "env" "func0" (func $10))
+  (memory $4  4 34437 shared)
+  (memory $5  75 13423)
+  (global $7  f32 (f32.const 0x1.eb6666p+30))
+  (global $8  (mut f32) (f32.const 0x1.62e60ep+31))
+  
+  (func $11 (type $0)
+    (param $0 i64)
+    (param $1 v128)
+    (local $2 externref)
+    (local $3 funcref)
+    (local $4 f64)
+    (local $5 v128)
+    memory.size
+    v32x4.load_interleaved_4 offset=141460470 align=4
+    local.get $4
+    local.get $0
+    i64.extend16_s
+    atomic.fence
+    local.get $0
+    i64.eq
+    local.get $0
+    i64.atomic.rmw8.sub_u offset=1023053584
+    local.ref.null func
+    unreachable
+    ))

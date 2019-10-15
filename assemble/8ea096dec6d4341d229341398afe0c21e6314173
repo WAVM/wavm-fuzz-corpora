@@ -1,0 +1,29 @@
+(module
+  (type $0 (func (param i32 funcref v128 funcref) (result i32 funcref)))
+  (memory $1  24 53489 shared)
+  (memory $2  27 5941)
+  
+  (func $3 (type $0)
+    (param $0 i32)
+    (param $1 funcref)
+    (param $2 v128)
+    (param $3 funcref)
+    (result i32 funcref)
+    (local $4 f64)
+    local.get $2
+    local.get $0
+    v8x16.load_interleaved_3 offset=1316178125 align=8
+    i64x2.mul
+    v128.andnot
+    f64x2.lt
+    i32x4.any_true
+    v8x16.load_interleaved_4 offset=1166256670 align=2
+    i16x8.sub_saturate_s
+    i64x2.mul
+    f32x4.le
+    i8x16.extract_lane_s 11
+    i16x8.load8x8_s $2 offset=2049020987 align=1
+    f64x2.extract_lane 0
+    f64.floor
+    unreachable
+    ))

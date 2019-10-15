@@ -1,0 +1,46 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param i32 f32 externref)))
+  (type $2 (func (param externref f32 f32) (result funcref f64)))
+  (type $3 (func (param funcref)))
+  (import "env" "memory" (memory $5 84 24622))
+  (import "env" "memory" (memory $6 30 38342 shared))
+  (import "env" "global3" (global $8 i64))
+  (import "env" "global5" (global $9 i32))
+  (import "env" "global6" (global $10 f64))
+  (import "env" "func0" (func $16))
+  (import "env" "func1" (func $17))
+  (import "env" "func2" (func $18 (param externref f32 f32) (result funcref f64)))
+  (import "env" "func3" (func $19 (param funcref)))
+  (memory $7  23 40537 shared)
+  (table $4  10 4294967295 shared funcref)
+  (global $11  (mut f32) (f32.const 0x1.c7348ep+30))
+  (global $12  (mut f32) (f32.const 0x1.a63b80p+31))
+  (global $13  (mut i64) (i64.const 8980237423951461301))
+  (global $14  f64 (f64.const 0x1.3663d73a0069ap+59))
+  (global $15  v128 (v128.const i32x4 0x4e459e06 0xdbe1e1fc 0x3d4ad4a8 0xa5c06fa6))
+  
+  (func $20 (type $1)
+    (param $0 i32)
+    (param $1 f32)
+    (param $2 externref)
+    (local $3 externref)
+    table.size $4
+    local.get $1
+    memory.size $6
+    i32.load8_s $6 offset=1333327291
+    local.get $0
+    i32.gt_u
+    i16x8.load8x8_s $6 offset=271283271 align=2
+    i32x4.widen_high_i16x8_s
+    f32x4.neg
+    f64x2.neg
+    i32x4.bitmask
+    global.get $11
+    f64.promote_f32
+    call $17
+    f64.neg
+    f64.store offset=3940584783 align=1
+    f32.store offset=3991845586 align=2
+    return
+    ))

@@ -1,0 +1,96 @@
+(func(iiw))
+  (func 0 (func))
+  (func ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+aftzev8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+aftzet $gved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftved_4 )
+    (func 
+    v8x16.store_interleaved_4   v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+ c ved_4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+aftv8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+aftzev8x4 )
+    (func 
+    v8x16.store_interleaved_4
+ $1
+
+    v8x16.store_interleaved_4
+   v8x16.store_interleaved_4
+aftzet $ge))

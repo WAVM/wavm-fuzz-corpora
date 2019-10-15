@@ -1,0 +1,2 @@
+(module (type $0 (func (param  v128)))
+(func $1 try(type $0))

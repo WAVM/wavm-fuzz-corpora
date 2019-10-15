@@ -1,0 +1,76 @@
+(module
+  (type $0 (func (param i64) (result f64 i32)))
+  (type $1 (func (result externref)))
+  (type $2 (func (param externref f64 f32 i64)))
+  (type $3 (func (param i32) (result funcref externref i64)))
+  (type $4 (func (result v128 f64)))
+  (import "env" "memory" (memory $5 22 24076 shared))
+  (import "env" "memory" (memory $6 55 59093))
+  (import "env" "global0" (global $8 (mut i32)))
+  (import "env" "global1" (global $9 i32))
+  (memory $7  40 18534)
+  (elem $10 funcref
+    (ref.func $14) (ref.null func) (ref.null func) (ref.null func)
+    (ref.func $14) (ref.func $13))
+  
+  (func $13 (type $0)
+    (param $0 i64)
+    (result f64 i32)
+    (local $1 f32)
+    (local $2 i32)
+    (local $3 f64)
+    local.get $0
+    memory.size $6
+    memory.grow $6
+    i32.extend8_s
+    v64x2.load_interleaved_2 offset=1895502429 align=8
+    i8x16.narrow_i16x8_u
+    i16x8.all_true
+    loop $loop (param i32) (result funcref externref i64)
+      i64.atomic.load offset=1185595674
+      loop $loop_0 (result v128 f64)
+        global.get $9
+        global.get $9
+        i32.atomic.rmw16.xchg_u offset=1337831453
+        v8x16.load_interleaved_2 offset=108826216
+        i16x8.gt_s
+        f32x4.convert_i32x4_s
+        local.get $2
+        local.set $2
+        i8x16.any_true
+        ref.null extern
+        ref.null func
+        br $loop_0
+      end ;; $loop_0
+      f64x2.replace_lane 1
+      ref.null extern
+      drop
+      unreachable
+    end ;; $loop
+    unreachable
+    )
+  
+  (func $14 (type $1)
+    (result externref)
+    (local $0 i32)
+    memory.size $6
+    i64.load16_u offset=3030495603
+    i64.ctz
+    unreachable
+    )
+  
+  (func $15 (type $2)
+    (param $0 externref)
+    (param $1 f64)
+    (param $2 f32)
+    (param $3 i64)
+    (local $4 funcref)
+    return
+    )
+  
+  (data $11 (memory $6) (i32.const -1957764415)
+    "\dd\c1r\bc5\02C\d6%,)),\8a-\f3#G\ff\1dX\1c|\04b\94\d2\04(G\"VU\ddw\ffL\f1;\a3\d4\13 \dc5\bc\8d\a4\c4\f2\01\f2\ee\af:<uF\01\af`j\faB"
+    "%\d4\c5g\ec\ba\02\1b@\fd\a0q\bb\b2!")
+  
+  (data $12 (i32.const 482624239)
+    "\0c\19\n\f8b\e5\de\04\b4l\09\af\db\da\cbb\1d\e8\07\e6\d0\96\ad\d2U\00T\02Wt\1c9;\05X"))

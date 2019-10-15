@@ -1,0 +1,27 @@
+(module
+  (type $0 (func (param i32)))
+  (import "env" "memory" (memory $2 98 38204 shared))
+  (memory $3  75 28416 shared)
+  (table $1  97 4294967295 funcref)
+  (elem $4 declare global)
+  (elem $5 table
+    $1 $1 $1 $1 $1 $1 $1 $1
+    $1 $1 $1 $1 $1 $1 $1 $1
+    $1 $1 $1 $1 $1 $1 $1 $1
+    $1 $1 $1 $1 $1 $1 $1 $1
+    $1 $1 $1 $1 $1 $1 $1)
+  
+  (func $6 (type $0)
+    (param $0 i32)
+    (local $1 i32)
+    table.size $1
+    f64.convert_i32_s
+    i64.trunc_sat_f64_u
+    i64.extend8_s
+    f64.reinterpret_i64
+    f64.neg
+    f64.sqrt
+    i64.trunc_sat_f64_u
+    nop
+    return
+    ))

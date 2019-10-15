@@ -1,0 +1,1 @@
+(memory 5)(data)(func memory)(func(i32.atomic.rmw8.cmpxchg_u(i32omic.ru))(i32.atomic.rmw8.cmpxchg_u(g_u))(i32.atomic.rmw8.cmpxchg_u))

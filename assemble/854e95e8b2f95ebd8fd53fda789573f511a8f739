@@ -1,0 +1,115 @@
+(module
+  (type $0 (func (param i64)))
+  (type $1 (func (param i64) (result funcref)))
+  (type $2 (func (result externref)))
+  (type $3 (func (param externref i32) (result f64)))
+  (type $4 (func (param i64 i64 i32 i32) (result f64)))
+  (type $5 (func (param f64) (result v128)))
+  (type $6 (func (result f64 f32 funcref)))
+  (type $7 (func (result v128 v128 i32 v128)))
+  (import "env" "memory" (memory $8 42 4397))
+  (import "env" "func0" (func $14 (param i64)))
+  (import "env" "func1" (func $15 (param externref i32) (result f64)))
+  (memory $9  78 5762 shared)
+  (memory $10  74 20965 shared)
+  (global $11  f32 (f32.const 0x1.2dbd1ap+29))
+  (elem $12 declare table)
+  (elem $13 declare memory
+    $10 $9 $10 $8 $9 $10 $8 $10
+    $9 $9 $8 $9 $8 $9 $10 $10
+    $10 $10 $9 $8 $8 $10 $9 $9
+0 $8 $10 $10 $9 $9 $8
+    $10 $8 $8 $9 $10 $10 $8 $9
+    $9 $10)
+  
+  (func $16 (type $1)
+    (param $0 i64)
+    (result funcref)
+    elem.drop $12
+    atomic.fence
+    elem.drop $13
+    i64.const -6618535495756108902
+    i64.ctz
+    elem.drop $13
+    local.tee $0
+    f64.const -0x1.2370611df8d5fp+864
+    block $block (param f64) (result v128)
+      f64.trunc
+      global.get $11
+      f32.abs
+      drop
+      i64.trunc_sat_f64_s
+      i64.popcnt
+      local.set $0
+      nop
+      global.get $11
+      unreachable
+    end ;; $block
+    drop
+    local.set $0
+    local.get $0
+    call $14
+    f32.const 0x1.3c968ep+101
+    ref.null extern
+    unreachable
+    )
+  
+  (func $17 (type $2)
+    (result externref)
+    f64.const 0x1.a6d5dc1badb2bp-138
+    global.get $11
+    i64.trunc_sat_f32_u
+    i64.ctz
+    i64.extend16_s
+    i64x2.splat
+    block $block (result f64 f32 funcref)
+      atomic.fence
+      f64.const 0x1.c39a9721fd616p+978
+      elem.drop $13
+      f32.const -0x1.2f555ap+84
+      f32.floor
+      elem.drop $12
+      f32.floor
+      i64.trunc_f32_u
+      drop
+      f64.floor
+      ref.null func
+      ref.is_null
+      ref.null extern
+      br 1
+    end ;; $block
+    ref.is_null
+    drop
+    ref.null extern
+    drop
+    unreachable
+    )
+  
+  (func $18 (type $4)
+    (param $0 i64)
+    (param $1 i64)
+    (param $2 i32)
+    (param $3 i32)
+    (result f64)
+    (local $4 f32)
+    (local $5 i64)
+    (local $6 f64)
+    elem.drop $13
+    f64.const 0x1.2d7c2babe91b8p-30
+    atomic.fence
+    loop $loop (result v128 v128 i32 v128)
+      elem.drop $13
+      f64.const 0x1.f841b05ace3f4p-363
+      elem.drop $12
+      f64.nearest
+      return
+    end ;; $loop
+    i32x4.widen_high_i16x8_s
+    i8x16.all_true
+    v16x8.load_interleaved_3 offset=3161142354 align=8
+    f32x4.add
+    v8x16.swizzle
+    i8x16.extract_lane_s 3
+    f64.const -0x1.387053a155042p+895
+    return
+    ))

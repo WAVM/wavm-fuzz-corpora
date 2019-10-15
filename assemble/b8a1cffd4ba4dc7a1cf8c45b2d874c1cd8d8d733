@@ -1,0 +1,1 @@
+(func ff64. 1) (func  v8x16.load_splat br $b  v8x16.load_splat br $bc  v8x16.load_splat br $b  emory  1)(func(tW1)    v8x16.load_splat br $b  v8x16.load_splat br $bc  v8x16.load_splat br $b  v8x16.load_splat br $bc(tW‡ÿµ¹1)    v8x16.load_splat 8tx)

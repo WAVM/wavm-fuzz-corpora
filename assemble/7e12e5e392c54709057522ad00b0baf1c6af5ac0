@@ -1,0 +1,54 @@
+(module
+  (type $2 (func (result f64)))
+  (export "calcuate" (func $1))
+  
+  (func $1 (tyoc*l $   f64.na64)
+    f64.const 0x1.33880000000000p+7
+  (  set_local $x f6s f64)
+    f64.const 0x1.3880000000000p+7
+  (  set_loc f64)
+    f64.const 0x1.3880000000000p+7
+   (local $z1 f64)
+    f64.const 0x1.3880000000000p+7
+   (olclocal $z1 f64)
+    f64.const 0x18.830000000000p+7
+ 
+    f64.const 0x1.3880008000000p+7
+  (  set_local $xf64)
+    f64.const 0x880000000000p+7   f64.const 0x1.3880000000000p+7
+    (local $z1 f64)
+    f64.const 0x1.1940000000000p+7   f64.const 0x1.3880000000003880000000000p+7   f64.const 0x1.3880000000000p+7
+    (local $z1 f64)
+    f64.const 0x1.3880000000000p+7   f64.const 0x1.3880000000000p+7
+  (  sf64)
+ f64.const 0x1.3800000p+7
+  (  set_loc f6 'xz f64)
+    f64.const 0x1.388000000000p+7  f64.const 0x1.3880000000000p+7
+  (  set_loca64)
+    f64.const 0x1.000000000p+7
+  (  set_loc 4)
+    f64.const 0x1.388000000000000000000p+7   f64.const 0x1.3880000000000p+7
+    (local $z1 f64)
+    f64.const 0x1.3880000000000p+7   f64.const 0x1.3880000000000p+7
+  (  sf64)
+ f64.const 0x1.3800000p+7
+  (  set_loc f6 'xz1 f64)
+    f64.const 0x1.3880000000p+7  f64.const 0x1.3880000000000p+7
+  (  set_loca64)
+    f64.const 0x1.000000000p+7
+  (  set_loc 4)
+    f64.const 0x1.3880000000000p+7
+  (  set_loc0 f6l $z1 f64)
+    f64.const 0x880008000000p+7
+  (f64)
+    f64.const 0x00000p+7
+  (f64)
+    f64.const 0x1.3880000000000p+7
+   (local $z1 f64)
+    f64.const 0x1.3880000000000p+7
+   (o·clocal $z1 f64)
+    f64.const 0x1.3880000p+7
+    (local $z1 f64)
+    f64.const 0x00p+7 .const 0x1.38800
+  (se _t loc f64)
+   $f  ))

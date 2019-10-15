@@ -1,0 +1,147 @@
+(module
+  (type $0 (func (param f64 v128) (result i32)))
+  (type $1 (func (result f64)))
+  (type $2 (func))
+  (type $3 (func (param funcref i64)))
+  (type $4 (func (result v128 i64)))
+  (type $5 (func (param v128 i64 f32) (result funcref f64)))
+  (import "env" "table" (table $6 13 4294967295 externref))
+  (import "env" "global0" (global $9 (mut v128)))
+  (import "env" "func0" (func $14))
+  (memory $8  66 4855 shared)
+  (table $7  40 4294967295 funcref)
+  (elem $10 (i32.const 1464116817) table
+    $6 $6 $7 $7 $6 $7 $7 $6
+    $6 $6 $7 $6 $7 $6 $7 $7
+    $7 $7 $7 $6 $7 $6 $6 $7
+    $7 $6 $6 $7 $7 $7 $6 $6
+    $6 $6 $7 $6 $6 $6)
+  (elem $11 funcref
+    (ref.func $14) (ref.func $14) (ref.func $14) (ref.func $15)
+    (ref.func $14) (ref.null func) (ref.func $14) (ref.func $17)
+    (ref.func $15) (ref.func $14) (ref.func $18) (ref.null func)
+    (ref.func $18) (ref.func $14) (ref.func $18) (ref.func $14)
+    (ref.null func) (ref.func $16) (ref.null func) (ref.func $14)
+    (ref.func $18) (ref.func $16) (ref.null func) (ref.func $16)
+    (ref.func $16) (ref.func $18) (ref.func $14) (ref.null func)
+    (ref.func $18) (ref.func $14) (ref.func $14) (ref.func $16)
+    (ref.func $17) (ref.func $17) (ref.func $17) (ref.null func)
+    (ref.func $14) (ref.func $15) (ref.func $17) (ref.func $17)
+    (ref.null func) (ref.null func) (ref.func $15) (ref.func $14)
+    (ref.null func) (ref.null func) (ref.func $15) (ref.func $15)
+    (ref.func $14) (ref.func $14) (ref.func $17) (ref.func $16)
+    (ref.func $15) (ref.func $18) (ref.func $16) (ref.func $15)
+    (ref.func $14) (ref.func $15) (ref.func $14) (ref.func $16)
+    (ref.func $16) (ref.func $14))
+  
+  (func $15 (type $0)
+    (param $0 f64)
+    (param $1 v128)
+    (result i32)
+    (local $2 i64)
+    (local $3 externref)
+    (local $4 funcref)
+    (local $5 funcref)
+    local.get $2
+    i64.clz
+    local.get $4
+    local.tee $4
+    local.tee $4
+    i64.const 3491712558464444702
+    call $18
+    i32.const 1182541069
+    f32.convert_i32_u
+    block $block (param v128 i64 f32) (result funcref f64)
+      f32.const -0x1.094ef6p+48
+      f32.max
+      i32.trunc_f32_s
+      call $14
+      v64x2.load_interleaved_2 offset=3398258358 align=2
+      i8x16.min_u
+      drop
+      local.set $2
+      local.set $1
+      local.get $1
+      local.set $1
+      f32.const -0x1.02543cp+60
+      ref.null extern
+      drop
+      drop
+      call $14
+      local.get $4
+      local.get $1
+      drop
+      data.drop $13
+      local.set $4
+      local.get $4
+      local.tee $5
+      local.set $4
+      i64.const 7209399447148501034
+      ref.null func
+      ref.null func
+      unreachable
+    end ;; $block
+    drop
+    local.set $4
+    call $17
+    drop
+    f64.const -0x1.904ee06346066p+518
+    unreachable
+    )
+  
+  (func $16 (type $1)
+    (result f64)
+    (local $0 externref)
+    (local $1 funcref)
+    (local $2 v128)
+    local.get $0
+    unreachable
+    )
+  
+  (func $17 (type $3)
+    (param $0 funcref)
+    (param $1 i64)
+    (local $2 f32)
+    (local $3 externref)
+    local.get $2
+    i64.trunc_f32_s
+    table.size $7
+    v128.load offset=2219878991 align=2
+    unreachable
+    )
+  
+  (func $18 (type $4)
+    (result v128 i64)
+    (local $0 f64)
+    (local $1 externref)
+    memory.size
+    local.get $1
+    ref.is_null
+    table.size $6
+    i32.shl
+    i32.eq
+    i32x4.splat
+    ref.null func
+    atomic.fence
+    ref.is_null
+    i64.atomic.load32_u offset=2899061837
+    i64.extend8_s
+    i32.const 1215248290
+    i64.atomic.load offset=2640274299
+    call $14
+    i64.gt_u
+    i8x16.shl
+    i32x4.widen_low_i16x8_u
+    f32.const -0x1.282310p-96
+    drop
+    i32x4.any_true
+    table.get $7
+    unreachable
+    )
+  
+  (data $12 (i32.const 396529219)
+    ";.")
+  
+  (data $13 (i32.const 24002218)
+    "%z\f8q]]T\83\11\ebY8\c4[c\b3\b8\a8YZ\8a\eeW\08(\1bO#T\fa\d1\81\c6~\0b\7f\d1F\c6\b3I\a6V\ab'\ad\f3\bbz\0b\1fo\88\a0\d2\03\94\d0\03_\acm\dc/"
+    "\df\15\e3M\91\0c\bb\ecK+\c67\d1\8c}\c4\d8\f9\cfZ\f7oG\7f\e9\ef\8dD\bbu"))

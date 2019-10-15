@@ -1,0 +1,1 @@
+(memory 0)(func()(i64.load32_u)(i64.load32_u())()(i64.load32_u)(i64.load32_u())0)(func()(i64.load32_u)(i64.load32_u())eor)(func()(i64.load32_u)(i64.load32_u())(i64.load32_u())()(i64.load32_u)(i64.load32_u())y 0)(func()(i64.load32_u)(i64.load32_u())()(i64.load32_u)(i64.load32_u())0)(func()(i64.load32_u)())))

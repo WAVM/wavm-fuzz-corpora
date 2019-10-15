@@ -1,0 +1,35 @@
+(module
+  (type $0 (func (param v128 i32 funcref v128) (result externref i64)))
+  (type $1 (func))
+  (import "env" "table" (table $2 57 4294967295 shared funcref))
+  (import "env" "global0" (global $5 i32))
+  (import "env" "func0" (func $13 (param v128 i32 funcref v128) (result externref i64)))
+  (memory $3  75 25682 shared)
+  (memory $4  49 46596 shared)
+  (global $6  f64 (f64.const 0x1.ea9072b97e5b8p+63))
+  (global $7  v128 (v128.const i32x4 0xe9858309 0x2d805dad 0xe10f5c1f 0xe01e4754))
+  (global $8  (mut f32) (f32.const 0x1.36abe0p+31))
+  (global $9  (mut i64) (i64.const 4971737178958277003))
+  (global $10  externref (ref.null extern))
+  (global $11  (mut f32) (f32.const 0x1.f61ce4p+31))
+  (global $12  (mut f32) (f32.const 0x1.eaa744p+31))
+  
+  (func $14 (type $1)
+    (local $0 f32)
+    global.get $9
+    local.get $0
+    f32.floor
+    i32.trunc_sat_f32_s
+    i32.extend16_s
+    v8x16.load_interleaved_4 offset=1732637022
+    f32x4.ne
+    i8x16.le_u
+    v128.xor
+    global.get $5
+    v16x8.load_interleaved_2 offset=1764255743 align=8
+    i8x16.add
+    i32x4.extract_lane 2
+    i16x8.load8x8_s offset=233833152 align=1
+    i32x4.min_s
+    return
+    ))

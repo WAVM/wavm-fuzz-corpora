@@ -1,0 +1,5 @@
+(global
+i64	i64.const 8)(global
+i64	i64.const 8)(global
+i64	i64.const 4)(global
+i64	i64.const 7)

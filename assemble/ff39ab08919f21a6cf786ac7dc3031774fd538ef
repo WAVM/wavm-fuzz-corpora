@@ -1,0 +1,4 @@
+(module (import "en~" "fu" (func $6 (param funcref v128)
+ )) (memory $5  44 61391 shared)
+  
+  (func ))

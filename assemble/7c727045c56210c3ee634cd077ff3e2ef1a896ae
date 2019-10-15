@@ -1,0 +1,5 @@
+(table $t1 1 funcref)
+        (func $Aulti% (result funcref)
+      (table.get $t1 (i32.const 0))
+    )
+  

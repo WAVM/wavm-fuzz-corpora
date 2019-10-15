@@ -1,0 +1,1 @@
+(func(3)(v8x16.load_interleaved_3)(v8x16.load_interleaved_3 02)(v8x16.load_interleaved_3)))

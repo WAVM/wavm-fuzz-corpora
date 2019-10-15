@@ -1,0 +1,1 @@
+(import "e" ""(func $print))(start $print)

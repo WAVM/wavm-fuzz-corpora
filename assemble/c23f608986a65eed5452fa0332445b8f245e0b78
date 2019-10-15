@@ -1,0 +1,2 @@
+(func br 0 i32.eqz br
+0)

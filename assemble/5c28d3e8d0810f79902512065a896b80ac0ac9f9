@@ -1,0 +1,82 @@
+(module
+  (type $0 (func (param f64 f32 f32) (result i64)))
+  (type $1 (func (param externref) (result externref i64)))
+  (type $2 (func (param v128 f32) (result externref f32)))
+  (type $3 (func (param i64) (result v128 externref)))
+  (type $4 (func (param i32 v128 externref f32) (result funcref f32)))
+  (type $5 (func (param i64 i32) (result i64)))
+  (import "env" "table" (table $6 53 4294967295 externref))
+  (import "env" "global2" (global $9 (mut f32)))
+  (import "env" "global4" (global $10 i64))
+  (import "env" "global6" (global $11 (mut f64)))
+  (import "env" "global7" (global $12 f32))
+  (import "env" "func0" (func $19 (param externref) (result externref i64)))
+  (import "env" "func1" (func $20 (param v128 f32) (result externref f32)))
+  (import "env" "func2" (func $21 (param i32 v128 externref f32) (result funcref f32)))
+  (table $7  99 4294967295 shared funcref)
+  (table $8  94 4294967295 shared externref)
+  (global $13  (mut f32) (f32.const 0x1.043d52p+29))
+  (global $14  v128 (v128.const i32x4 0x66bbf5ee 0x48f815d1 0xc83d3db4 0x3b8ad282))
+  (global $15  f32 (f32.const 0x1.9d5a42p+31))
+  (global $16  (mut f32) (f32.const 0x1.6976b8p+31))
+  
+  (func $22 (type $0)
+    (param $0 f64)
+    (param $1 f32)
+    (param $2 f32)
+    (result i64)
+    (local $3 i32)
+    global.get $15
+    data.drop $18
+    i32.trunc_sat_f32_s
+    global.get $10
+    call $23
+    global.get $10
+    table.size $6
+    f64.convert_i32_s
+    f64.const -0x1.62828d8bd9eeep+148
+    f64.max
+    data.drop $17
+    i32.trunc_sat_f64_u
+    i32.extend16_s
+    loop $loop (param i64 i32) (result i64)
+      i32.ctz
+      ref.null func
+      table.set $7
+      ref.null func
+      unreachable
+    end ;; $loop
+    drop
+    ref.null func
+    ref.is_null
+    drop
+    ref.null func
+    drop
+    ref.is_null
+    unreachable
+    )
+  
+  (func $23 (type $3)
+    (param $0 i64)
+    (result v128 externref)
+    (local $1 funcref)
+    (local $2 f32)
+    (local $3 f64)
+    (local $4 funcref)
+    i32.const 790676227
+    atomic.fence
+    f32.reinterpret_i32
+    f64.promote_f32
+    global.get $16
+    f32.const -0x1.13a9aep+25
+    i64.const -6768022876574434590
+    data.drop $17
+    unreachable
+    )
+  
+  (data $17 
+    "l2=*\d6T\b8\f0P\c2\adjW!\ee\c4\88.\11\"-_\cc\a6\f1R\0f\"\1a\bba\cfvYm\01\n\80\e5e\8aL\bc\f47\a4\feZ\c6\1dsY\de\c1\b3D\ecut\02+?P\7f"
+    "\b2\f14\d3p\c7T$\ea#|\0f\8e\8e\03\bbR\01\88:\87\a1\cep\8f;\d7/\b6\a1\07\d1")
+  
+  (data $18 
+    "\bbe5\ea\12\c2[\b6#\ec\10\e3A\a7\f4\0d\\\9c[n\ee\ce\c4;\ca\n\f5\b1\b5}\ab\8e,\ecGc\cd\83"))

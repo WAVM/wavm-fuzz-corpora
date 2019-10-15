@@ -1,0 +1,9 @@
+(func(f32x4.max((x) ))i32.const 0
+select i32.const 0
+select i32.const 0
+select i32.const 0
+select i32.const 0
+select i32.const 0
+select i32.const 5
+select i32.const 0
+select )

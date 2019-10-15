@@ -1,0 +1,10 @@
+(module
+  (type $0 (func (result v128)))
+  
+  (func $1 (type $0)
+    (result v128)
+    v128.const i32x4 0x00000011 0x00000012 0x00000013 0x00000014
+    v128.const i32x4 0x00000015 0x00000016 0x00000017 0x00000018
+    f32x4.convert_i32x4_u
+    i16x8.sub_saturate_u
+    ))

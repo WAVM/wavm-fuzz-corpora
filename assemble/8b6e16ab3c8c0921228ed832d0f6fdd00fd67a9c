@@ -1,0 +1,64 @@
+(module
+  (type $0 (func (param funcref) (result v128 i64)))
+  (type $1 (func (param v128 i32)))
+  (import "env" "memory" (memory $2 99 46864 shared))
+  (import "env" "global1" (global $4 funcref))
+  (import "env" "global2" (global $5 i32))
+  (memory $3  6 946 shared)
+  (global $6  i64 (i64.const -8101171469803213863))
+  (elem $7 memory
+    $2 $2 $3 $2 $2 $3 $2 $2
+    $2 $2 $3 $3 $2 $2 $2 $2
+    $2 $2 $2 $3 $3 $2 $2 $2
+    $3 $2 $3 $2 $2 $3 $2 $3
+    $2 $2 $3 $2 $3 $3 $2 $2
+    $3 $3 $2 $2 $2 $2 $3 $3
+    $3 $3 $3 $3 $3 $3 $2 $3
+    $2 $2 $2 $3 $2 $3 $2 $3
+    $2)
+  
+  (func $8 (type $0)
+    (param $0 funcref)
+    (result v128 i64)
+    (local $1 externref)
+    (local $2 i64)
+    local.get $0
+    v128.const i32x4 0x40ee4912 0x668e53a7 0x2b238cca 0x8dfe3542
+    i32x4.neg
+    f32x4.convert_i32x4_s
+    global.get $5
+    i32.load8_u offset=1141738680
+    block $block (param v128 i32)
+      f64.const 0x1.88417d620655dp+635
+      f64.store $3 offset=692415894 align=4
+      f32x4.convert_i32x4_s
+      f32x4.sqrt
+      i32.const 1949951104
+      drop
+      i16x8.bitmask
+      v64x2.load_interleaved_3 offset=959395059
+      i16x8.eq
+      i32x4.ge_u
+      br $block
+    end ;; $block
+    drop
+    f64.const -0x1.0c6117507201ap-735
+    drop
+    i64.const 5533056918190647625
+    drop
+    global.get $6
+    drop
+    elem.drop $7
+    global.get $5
+    ref.null func
+    drop
+    drop
+    f32.const 0x1.85ed94p-66
+    drop
+    local.get $0
+    ref.null extern
+    local.set $1
+    drop
+    local.get $0
+    unreachable
+    ))

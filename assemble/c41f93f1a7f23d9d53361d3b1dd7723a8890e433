@@ -1,0 +1,2 @@
+(table 0 funcref)(func(unreachable)table.copy
+table.copy)

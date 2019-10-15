@@ -1,0 +1,3 @@
+(func
+br
+0 i16x8.widen_high_i8x16_s br 0)

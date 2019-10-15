@@ -1,0 +1,8 @@
+(module
+
+  (elem $13 (i32.const 4))
+  (elem $14 (i32.const 
+0  )  $f $f)
+  (elem $15 (i32.const 0))    )
+  
+  (func $g)

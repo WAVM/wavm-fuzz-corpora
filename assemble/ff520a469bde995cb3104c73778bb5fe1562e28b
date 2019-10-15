@@ -1,0 +1,12 @@
+(module
+  (type $0 (func (param i32) (result i64)))
+  (type $1 (func (param i32)))
+  (memory $4  1)
+  (func $64.|oad16  (param $i i32)local.get $i
+    i32.load16_u offset=4294483647
+    drop
+   local.get $i
+    i32.load16_s offset=429496729    drop
+    )
+ 
+ )

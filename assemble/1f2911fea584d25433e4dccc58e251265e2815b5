@@ -1,0 +1,1 @@
+(memory 0)(func(b 0)i64.store16 i64.store16(br`)i64.store16 i64.store16(0)i64.store16 i64.store16(b 0)i64.store16 i64.store16(0)i64.store16 i64.store16(b)i64.store16 i64.store16(br)i64.store16 i64.store16()i64.store16 i64.store16(br ))

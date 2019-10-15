@@ -1,0 +1,3 @@
+(func loop $l loop $o end loop $o end loop $o end loop $o end
+loop $o end loop $o end loop $o end loop $o)(func loop $l loop $o end loop $o end loop $o end loop $o end
+loop $o end loop $o end loop $o end loop $lo)

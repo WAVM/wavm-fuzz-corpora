@@ -1,0 +1,5 @@
+(modulele295)
+  (elem $5 externref
+    (ref.null extern) (ref.null func) (rel func)
+    (ref.null extern)(ref.null extern
+    ))

@@ -1,0 +1,3 @@
+(module(func
+i64.const -87
+i64.const -92 i64.const -73 return))

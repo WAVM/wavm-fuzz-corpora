@@ -1,0 +1,5 @@
+(table $t 05 funcref)
+    (elem $el externref)
+   ( func $f
+      (table.init $t $el (i3.c2.cons 2)))
+ 

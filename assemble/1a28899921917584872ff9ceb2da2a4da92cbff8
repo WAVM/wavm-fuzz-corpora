@@ -1,0 +1,67 @@
+(module
+  (type $0 (func (param v128 f32 i64) (result f64)))
+  (type $1 (func (param i32 externref v128) (result f32)))
+  (type $2 (func (param externref)))
+  (type $3 (func (param i32) (result f64 f64)))
+  (type $4 (func))
+  (import "env" "table" (table $5 78 4294967295 externref))
+  (import "env" "table" (table $6 3 4294967295 externref))
+  (import "env" "func0" (func $10 (param i32 externref v128) (result f32)))
+  (import "env" "func1" (func $11))
+  (table $7  77 4294967295 externref)
+  (elem $8 declare exception_type)
+  (elem $9 (table $7) (i32.const -2013051470) memory)
+  
+  (func $12 (type $0)
+    (param $0 v128)
+    (param $1 f32)
+    (param $2 i64)
+    (result f64)
+    f64.const -0x1.2fb8e0ec607e5p-240
+    f64.trunc
+    f64.floor
+    i32.const -2000691216
+    i8x16.splat
+    i8x16.all_true
+    i8x16.splat
+    i16x8.extract_lane_u 5
+    table.size $5
+    i32.lt_s
+    drop
+    br 0
+    )
+  
+  (func $13 (type $2)
+    (param $0 externref)
+    (local $1 f64)
+    (local $2 f32)
+    (local $3 f64)
+    f64.const 0x1.e20eceb7f15d9p+67
+    f64.trunc
+    f64.trunc
+    f64.trunc
+    elem.drop $9
+    i64.reinterpret_f64
+    elem.drop $8
+    f32.const -0x1.3987eap+116
+    f32.floor
+    i64.trunc_sat_f32_u
+    f32.const -0x1.eb7e14p-52
+    i64.const 1681360749600026498
+    call $11
+    i64.eqz
+    table.get $6
+    drop
+    br 0
+    )
+  
+  (func $14 (type $3)
+    (param $0 i32)
+    (result f64 f64)
+    (local $1 i32)
+    ref.null func
+    call $11
+    i64.const 67491787387425220
+    i64.clz
+    unreachable
+    ))

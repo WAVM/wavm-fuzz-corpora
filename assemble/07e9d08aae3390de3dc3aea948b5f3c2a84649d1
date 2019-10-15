@@ -1,0 +1,1 @@
+(func(pxchghg_u)(i32.atomic.rmw16.cmpxchg_u)(i32.atomic.rmw16.cmpxchg_u)(u)(i32.atomic.rmw16.cmpxchg_u)(i32.atomic.rmw16.cmpxchg_u)(i))(memory  0)

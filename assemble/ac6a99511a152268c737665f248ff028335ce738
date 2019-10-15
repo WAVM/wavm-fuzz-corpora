@@ -1,0 +1,7 @@
+(module(func(param $x f32)
+(param $y f32)local.get $x local.get $y local.get $x
+local.get $y
+
+local.get $x local.get $x local.get $x
+local.get $y
+))

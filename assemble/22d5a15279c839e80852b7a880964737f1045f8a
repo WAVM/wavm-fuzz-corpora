@@ -1,0 +1,152 @@
+(module
+  (type $0 (func))
+  (memory $1  1 1)
+  
+  (func $2 (type $0)
+    i32.const 0
+    i32.const 0
+    memory.atomic.notify
+   0
+    i64.const 0
+    i64.atomic.rmw.add
+    drop
+    )
+  
+  (func $17 (type $0)
+    i32.const 0
+    i32.const 0
+    i32.atomic.rmw16.add_u
+    drop
+    )
+  
+  (func $18 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.atomic.rmw16.add_u
+    drop
+    )
+  
+  (func $19 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.atomic.rmw32.add_u
+    drop
+     i32.const 0
+    i64.const 0
+    i64.atomic.rmw32.sub_u
+    drop
+   
+)  
+   (func $73 (type $0)
+    i32.const 0
+    i32.const 1
+    i32.atomic.rmw.and
+    drop
+    )
+  
+  (func $26 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.atomic.rmw.and
+    drop
+    )
+  
+  (func $27 (type $0)
+    i32.const 0
+    i32.const 0
+    i32.atomic.rmw16.and_u
+    drop
+    )
+  
+  (func $28 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.atomic.rmw16.and_u
+    drop
+    )
+  
+  (func $29 (type $0)
+  
+    )
+  
+  (func $39 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.atomic.rmw32.xor_u
+    drop
+    )   
+
+ (func $40 (type $0)
+    i32.const 0
+    i32.const 0
+    i32.atomic.rmw.xchg
+    drop
+    )
+  
+  (func $20 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.atomic.rmw.xchg
+    drop
+    )
+  
+  (func $42 (type $0)
+    i32.const 0
+    i32.const 0
+    i32.atomic.rmw16.xchg_u
+    drop
+    )
+  
+  (func $43 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.atomic.rmw16.xchg_u
+    drop
+    )
+  
+  (func $44 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.atomic.rmw32.xchg_u
+    drop
+    )
+  
+  (func $45 (type $0)
+    i32.const 0
+    i32.const 0
+    i32.const 0
+    i32.atomic.rmw.cmpxchg
+    drop
+    )
+  
+  (func $46 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.const 0
+    i64.atomic.rmw.cmpxchg
+    drop
+    )
+  
+  (func $47 (type $0)
+    i32.const 0
+    i32.const 0
+    i32.const 0
+    i32.atomic.rmw16.cmpxchg_u
+    drop
+    )
+  
+  (func $48 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.const 0
+    i64.atomic.rmw16.cmpxchg_u
+    drop
+    )
+  
+  (func $49 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.const 0
+    i64.atomic.rmw32.cmpxchg_u
+    drop
+    ))

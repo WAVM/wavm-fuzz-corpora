@@ -1,0 +1,38 @@
+(module
+  (type $0 (func (result f64 i64)))
+  (type $1 (func (param f32 f64 f64 i32)))
+  (type $2 (func (result externref i32 f32)))
+  (import "env" "memory" (memory $5 8 19341 shared))
+  (import "env" "func0" (func $6i64.atomic.rmw32.cmpxchg_u (param f32 f64 f64 i32)))
+  (table $3  22 4294967295 funcref)
+  (table $4  4 4294967295 externref)
+  
+  (func $7 (type $0)
+    (result f64 i64)
+    (local $0 i64)
+    (local $1 externref)
+    (local $2 f32)
+    call $7
+    ref.null extern
+    local.get $1
+    local.get $0
+    loop $loop (result externref i32 f32)
+      nop
+      memory.size
+      i64.atomic.load32_u offset=2679488723
+      block $block (result f32)
+        call $7
+        f64.const -0x1.9e1db66433495p+564
+        ref.null extern
+        ref.null extern
+        i64.const -8951893960805706582
+        nop
+        ref.null func
+        br $loop
+      end ;; $block
+      unreachable
+    end ;; $loop
+    local.set $2
+    drop
+    unreachable
+    ))

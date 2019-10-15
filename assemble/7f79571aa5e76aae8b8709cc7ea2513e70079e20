@@ -1,0 +1,5 @@
+ (type  (func))
+ (func call_indirect $2   call_indirect $2     call_indirect $2 (typc)  call_indirect $$2  call_indirect $2      call_indirect $2 call_indirect $2 (c)call_indirect $0  call_indirect $2 i32.const 0     call_indirect $2 
+ call_indirect $1 (o:)call_indirect $2 
+ call_indirect $2   call_indirect $2 (q1$0)
+call_indirect $2 call_indirect  $0 e$ )

@@ -1,0 +1,3 @@
+(func br 0
+i64.trunc_u/f32 br
+0)

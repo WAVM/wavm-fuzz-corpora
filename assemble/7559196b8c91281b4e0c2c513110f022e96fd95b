@@ -1,0 +1,27 @@
+(func br 0
+br 0
+f32.sqrt f32.sqrt f32.sqrt f32.sqrt
+f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt
+f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt
+f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt
+f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt br
+0
+br 0
+f32.sqrt f32.sqrt f32.sqrt f32.sqrt
+f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt
+f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt
+f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt
+f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt
+f32.sqrt f32.sqrt f32.sqrt f32.sqrt
+f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt
+f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt
+f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt
+f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt br
+0
+br 0
+f32.sqrt f32.sqrt f32.sqrt f32.sqrt
+f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt
+f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt
+f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt
+f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt f32.sqrt br
+0)

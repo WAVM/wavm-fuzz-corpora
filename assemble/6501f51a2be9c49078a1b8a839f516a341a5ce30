@@ -1,0 +1,2 @@
+(func()(i16x8.extract_lane_s 1)(i16x)(i16x8.extract_lane_s 0)()(i16x8.extract_lane_s 6))(func( 1)(i16x8.extract_lane_s 2)(i16x8.etr)(i16x8.extract_lane_s 0)()(i16x8.extract_lane_s 1)(i086x )(i16x8.extract_lane_s 1)(i)(i16x8.extract_lane_s 1
+))

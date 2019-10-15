@@ -1,0 +1,8 @@
+(module(func( param $x f32)
+(param $y f32)local.get $x local.get $y local.get $x
+local.get $y
+ f32.lt select local.get $y  local.get $x local.get $y f32.gt
+select
+  ()local.get $x local.get $y local.get $x
+local.get $y
+ f32.lt select local.ge$rhab)))

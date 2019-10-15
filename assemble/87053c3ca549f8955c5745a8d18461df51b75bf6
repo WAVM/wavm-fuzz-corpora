@@ -1,0 +1,19 @@
+(memory 1) (func (])i32.atomic.rmw8.sub_u (])i32.atomic.rmw8.sub_u i32.atomic.rmw8.sub_u
+i32.atomic.rmw8.sub_u i32.atomic.rmw8.sub_u
+
+i32.atomic.rmw8.sub_u i32.atomic.rmw8.sub_u(])i32.atomic.rmw8.sub_u)(func ()i32.atomic.rmw8.sub_u i32.atomic.rmw8.sub_u
+i32.atomic.rmw8.sub_u
+i32.atomic.rmw8.sub_u i32.atomic.i32.atomic.rmw6.sub_u)(func ()i32.atomic.rmw8.sub_u i32.atomic.rmw8.sub_u
+i32.atomic.rmw8.sub_u
+i32.atomic.rmw8.sub_u i32.atomic.rmw8.sub_u
+
+i32.atomic.rmw8.sub_u i3toatomic.rmw4.sub_u)(func ()i32.atomic.rmw8.sub_u
+i32.atomic.rmw8.sub_u
+i32.atomic.rmw8.sub_u i32.ato8.s.atsub_u ic.rmw8.suu)(func ()i32.atomic.rmw8.sub_u i32.atomic.rmw8.sub_u
+i32.atomic.rmw8.sub_u
+i32.atomic.rmw8.sub_u i32.w8.sub_u(])i32.atomic.rmw8.subu)(func ()i32.atomic.rmw8.sub_u i32.atomic.rmw8.sub_u
+i32.atomic.rmw8.sub_u
+i32.atomic.rmw8.sub_u i32.atomic.rmw8.sub_u
+
+i32.atomic.rmw8.sub_u i32.atomic.rmw8.sub_u
+c)

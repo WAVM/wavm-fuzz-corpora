@@ -1,0 +1,85 @@
+(module
+  (type $0 (func (result funcref i64)))
+  (type $1 (func (param i32 i32) (result externref)))
+  (type $2 (func (param externref i64)))
+  (type $3 (func (result f32 f64 i32 funcref)))
+  (type $4 (func (result f32 i32)))
+  (import "env" "memory" (memory $8 50 9964 shared))
+  (import "env" "memory" (memory $9 21 21493))
+  (import "env" "table" (table $5 49 4294967295 shared funcref))
+  (import "env" "global0" (global $11 externref))
+  (import "env" "global1" (global $12 (mut externref)))
+  (import "env" "global2" (global $13 (mut funcref)))
+  (import "env" "global5" (global $14 f32))
+  (import "env" "global7" (global $15 (mut f32)))
+  (import "env" "func0" (func $21 (param i32 i32) (result externref)))
+  (import "env" "func1" (func $22 (param externref i64)))
+  (memory $10  15 26158)
+  (table $6  80 4294967295 funcref)
+  (table $7  6 4294967295 funcref)
+  (global $16  (mut v128) (v128.const i32x4 0xed32a7de 0x16029368 0xdcc66c31 0x0880b8cd))
+  (global $17  f32 (f32.const 0x1.84c63cp+31))
+  (global $18  (mut f64) (f64.const 0x1.c756e05565fa0p+62))
+  
+  (func $23 (type $0)
+    (result funcref i64)
+    (local $0 externref)
+    atomic.fence
+    global.get $14
+    f32.neg
+    i32.reinterpret_f32
+    i8x16.splat
+    i8x16.extract_lane_s 12
+    table.get $5
+    memory.size
+    v8x16.load_interleaved_3 $10 offset=1479028607
+    data.drop $19
+    f64x2.min
+    i16x8.widen_high_i8x16_s
+    i16x8.mul
+    i16x8.abs
+    global.set $16
+    f32.const 0x1.b8ab82p-49
+    global.set $15
+    global.get $17
+    global.set $15
+    nop
+    loop $loop (result f32 f64 i32 funcref)
+      atomic.fence
+      global.get $12
+      drop
+      f32.const 0x1.b138bep+107
+      block $block (result f32 i32)
+        unreachable
+      end ;; $block
+      br $loop
+    end ;; $loop
+    global.set $13
+    drop
+    global.set $18
+    ref.null func
+    ref.null extern
+    drop
+    ref.is_null
+    drop
+    global.set $15
+    global.get $17
+    ref.null extern
+    global.set $12
+    ref.null extern
+    global.set $12
+    drop
+    f64.const -0x1.71a016ab30c57p-477
+    drop
+    i32.const 1303030249
+    table.get $6
+    drop
+    unreachable
+    )
+  
+  (data $19 
+    "\e2\7f\80\af\e9\f6\f7\ba\cc\02\bf\1d>\dduVePL\"\81\da\a0\a1\d0\d6\d5&\c8zw}O\d3r\83#\b6<\18 \a3<6\03D")
+  
+  (data $20 
+    "\f8\84\ea\94\bb\f9\d0\81\d7\a6\b6\\\b6\ea(\86\e4N\8c]+,_\b8\08\9cO\f2\cc\0d@\02\de\aaDZ\c6\e2\c9\ae\\\d3\df\e3\ef3B\cc\9d\01\87i\c3\0fo\b0M\15\1cJg/\\\d8"
+    "_\caV\da\bd\aa\db\08\96K\ab\0b0w\ed\af\8aQ"))

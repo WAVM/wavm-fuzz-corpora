@@ -1,0 +1,9 @@
+(module
+  (type $2 (func))
+  (table $1  59 68 funcref)
+ 
+  (func 
+table.size table.size $1
+    table.size $1
+br 0
+    ))

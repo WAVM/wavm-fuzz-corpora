@@ -1,0 +1,16 @@
+(memory 264)(func()i64.store8 $e
+i64.store8 $ore
+i64.store8 $8
+i64.store8 $68
+i64.store8 $6
+i64.store8 $08
+i64.store8 $8
+i64.store8 $4.store8
+i64.store8 $e
+i64.store8 $ore
+i64.store8 $8
+i64.store8 $68
+i64.store8 $6
+i64.store8 $08
+i64.store8 $8
+i64.store8 $688)

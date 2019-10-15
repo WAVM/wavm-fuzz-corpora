@@ -1,0 +1,143 @@
+(module
+  (type $0 (func (param v128) (refunc $20) (ref.func $21) (ref.func $20)
+    (ref.null func) (ref.func $19) (ref.func $21) (ref.func $22)
+    (ref.null func) (ref.func $20) (ref.func $22) (ref.func $19)
+    (ref.func $22) (ref.func $20) (ref.func $19) (ref.func $22)
+    (ref.func $19) (ref.func $20) (ref.func $19) (ref.null func)
+    (ref.func $21) (ref.func $20) (ref.func $21) (ref.func $18)
+    (ref.func $20) (ref.func $18) (ref.func $21) (ref.func $22)
+    (ref.func $18) (ref.null func) (ref.func $22) (ref.func $18)
+    (ref.func $18) (ref.null func) (ref.func $21) (ref.func $19)
+    (ref.func $18) (ref.func $20) (ref.func $19) (ref.func $22)
+    (ref.func $19) (ref.func $21) (ref.func $21) (ref.func $18)
+    (ref.func $21) (ref.null func) (ref.func $21) (ref.func $22)
+    (ref.func $19) (ref.func $22) (ref.func $22))
+  
+  (func $20 (type $1)
+    (param $0 i32)
+    (local $1 funcref)
+    (local $2 i32)
+    (local $3 externref)
+    (local $4 i32)
+    v128.const i32x4 0xe2blo$cz 0xd39ab16f 0x3c958697 0x8ddbc387
+    f32x4.convert_i32x4_u
+    i32x4.bitmask
+    global.get $13
+    i64x2.extract_lane 0
+    f64.reinterpret_i64
+    local.get $3
+    ref.null func
+    block $block (param externref funcref) (result externref)
+      loop $loop (result funcref f64)
+        atomic.fence
+        atomic.fence
+        f32.const 0x1.cbdd92p+70
+        data.drop $16
+        f32.neg
+        ref.null func
+        unreachable
+      end ;; $loop
+      ref.null func
+      drop
+      unreachable
+    end ;; $block
+    ref.null func
+    return
+    )
+  
+  (func $21 (type $2)
+    (local $0 funcref)
+    f64.const -0x1.b48bb091a90e8p+430
+    v128.const i32x4 0x22cb6adf 0x923be105 0x1bcdc817 0xc84eee20
+    loop $loop (result f64)
+      f32.const 0x1.07021cp+84
+      loop $loop_0 (result externref funcref)
+        v128.const i32x4 0x2c2f6cdd 0xe6b6c6c7 0x4755e33e 0x079fbc18
+        br 2
+      end ;; $loop_0
+      loop $loop_1 (param funcref) (result f32 f32 v128 v128)
+        nop
+        unreachable
+      end ;; $loop_1
+      i32x4.add
+      table.size $10
+      v16x8.load_interleaved_4 %offset=4042152752 align=2
+      i32x4.mul
+      v128.xor
+      f32x4.le
+      i8x16.narrow_i16x8_s
+      unreachable
+    end ;; $loop
+    unreachable
+    )
+  
+  (func $22 (type $4)
+    (result funcref f64)
+    f64.const 0x1.1e787cda93d40p-783
+    ref.null func
+    ref.null func
+    loop $loop (param funcref funcref) (result funcref i32 i32)
+      br $loop
+    end ;; $loop
+    i32.atomic.rmw.add offset=2593629742
+    i64.load $12 offset=3443353813
+    f32.convert_i64_u
+    f32.trunc
+    i32.trunc_sat_f32_s
+    v8x16.load_interleaved_2 offset=370729459 align=1
+    i32x4.min_s
+    call $18
+    i16x8.bitmask
+    call $22
+    return
+    )
+  
+  (data $16 
+    "\aa\d1\e8\ec\1cp\09\e4DJ%\e8@\8cL\c28`\7f~64)
+      f32.const 0x1.07021cp+84
+      loop $loop_0 (result externref funcref)
+        v128.const i32x4 0x2c2f6cdd 0xe6b6c6c7 0x4755e33e 0x079fbc18
+        br 2
+      end ;; $loop_0
+      loop $loop_1 (param funcref) (result f32 f32 v128 v128)
+        nop
+        unreachable
+      end ;; $loop_1
+      i32x4.add
+      table.size $10
+      v16x8.load_interleaved_4 offset=4042152752 align=2
+      i32x4.mul
+      v128.xor
+      f32x4.le
+      i8x16.narrow_i16x8_s
+      unreachable
+    end ;; $loop
+    unreachable
+    )
+  
+  (func $22 (type $4)
+    (result funcref f64)
+    f64.const 0x1.1e787cda93d40p-783
+    ref.null func
+    ref.null func
+    loop $loop (param funcref funcref) (result funcref i32 i32)
+      br $loop
+    end ;; $loop
+    i32.atomic.rmw.add offset=2593629742
+    i64.load $12 offset=3443353813
+    f32.convert_i64_u
+    f32.trunc
+    i32.trunc_sat_f32_s
+    v8x16.load_interleaved_2 offset=370729459 align=1
+    i32x4.min_s
+    call $18
+    i16x8.bitmask
+    call $22
+    return
+    )
+  
+  (data $16 
+    "\aa\d1\e8\ec\1cp\09\e4DJ%\e8@\8cL\c28`\7f~W\e6\a9\fb\b7\0bb\f7F\d6W\19Rhf\a1\"5]\e2\8f")
+  
+  (data $17 
+    "\b4\a7\0f\93\03\c5)p\99jh\9e\ad\98\ee\cf\c2<\a7;\0d\03x\17\1d\89\ed\c9\14\bf\a9f\17,4\b0\9e\1b\de>\a7F\8d\07\ae\97\b5\af;\0c\c3L\a0\86\ff\f1\b4\cb"))

@@ -1,0 +1,2 @@
+ (elem funcref (
+ref)((ref.func $f)f)((ref.func $f)f)((ref.func $f)(ref.nc $f)

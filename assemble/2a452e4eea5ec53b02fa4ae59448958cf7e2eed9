@@ -1,0 +1,26 @@
+(module
+  (type $0 (func))
+  (memory $1  1 1)
+  
+  (func $2 (type $0)
+    i32.const 0
+    i32.const 0
+    memory.atomic.notify
+    drop
+    )
+  
+  (func $3 (type $0)
+    i32.const 0
+     i32.atomic.load
+    drop
+    )
+  
+  (func $43 (type $0)
+    i32.const 0
+    i32.const 0
+    i32.const 0
+    i32.atomic.rmw.cmpxchg
+  drop )   
+  
+  
+  (func $46))

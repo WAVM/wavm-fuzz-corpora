@@ -1,0 +1,1 @@
+(func i32.extend8_s i8x16.shl i32.extend8_s)

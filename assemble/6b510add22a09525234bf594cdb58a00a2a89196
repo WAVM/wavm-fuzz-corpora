@@ -1,0 +1,1 @@
+(memory 1)(func(drop(i32.load offset=880(i32.const 3))))

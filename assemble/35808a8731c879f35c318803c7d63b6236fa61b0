@@ -1,0 +1,4 @@
+ ( (
+reffunc $0)(ref.func $f)) (elem funcref (
+ref.func $ff)(i32.reinterpret/f32 funcref (
+ref.f)) (c $f) 

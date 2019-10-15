@@ -1,0 +1,48 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param i32) (result i64 v128)))
+  (type $2 (func (result i64 i32)))
+  (import "env" "memory" (memory $6 78 15335 shared))
+  (import "env" "memory" (memory $7 36 40533 shared))
+  (import "env" "table" (table $3 98 4294967295 externref))
+  (import "env" "table" (table $4 90 4294967295 externref))
+  (import "env" "table" (table $5 38 4294967295 funcref))
+  (import "env" "global0" (global $8 (mut i32)))
+  (import "env" "global1" (global $9 f64))
+  (import "env" "global3" (global $10 f32))
+  (import "env" "global4" (global $11 (mut funcref)))
+  (import "env" "func0" (func $15 (param i32) (result i64 v128)))
+  (global $12  funcref (ref.null func))
+  (global $13  (mut externref) (ref.null extern))
+  
+  (func $16 (type $0)
+    nop
+    unreachable
+    )
+  
+  (func $17 (type $2)
+    (result i64 i32)
+    global.get $10
+    i32.const -16448500
+    call $15
+    i32x4.widen_low_i16x8_u
+    i32x4.trunc_sat_f32x4_u
+    i32x4.widen_high_i16x8_s
+    i64x2.extract_lane 1
+    i64.ne
+    i32.load16_s $7 offset=798804782
+    table.get $3
+    i32.const -517251712
+    v16x8.load_interleaved_3 $7 offset=468496137 align=2
+    i16x8.mul
+    f32x4.abs
+    i16x8.ge_u
+    drop
+    drop
+    drop
+    i32.const -2012180090
+    unreachable
+    )
+  
+  (data $14 
+    "\1a\bb\80\02\ae\00\c8>\14\be\a2p"))

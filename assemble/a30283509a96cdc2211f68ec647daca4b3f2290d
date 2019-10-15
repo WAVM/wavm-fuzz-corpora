@@ -1,0 +1,1 @@
+(func v128.const i16x8 7 98 9 8 9 4 18)(func v128.const i16x8 7 98 9 8 9 4 98)(func v128.const i16x8 7 8 9 8 9 4 98)(func v128.const i16x8 7 98 9 8 98 8 8)

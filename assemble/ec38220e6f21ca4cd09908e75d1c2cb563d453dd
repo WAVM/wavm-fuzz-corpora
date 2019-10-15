@@ -1,0 +1,5 @@
+ (global (64))  (global(mut i32)) (global $5(mut f32) (Ì))(global(mut i64) (i6t i32) ) (global (mut i64))  (global(mut i32)) (global)(global(mut i64) (i6))  (global (mut i32)(
+))(global $x(mut i32))
+  (global(mut f32)(0))
+  (global (mut i64))
+ (global(mut i32)())  (global(mut f32))(global(mut i64))(global(mut i32))  (global (mut f32)l ) (global (mut i64))

@@ -1,0 +1,33 @@
+(module
+  (type $0 (func (result v128)))
+  (type $1 (func))
+  (import "env" "table" (table $2 88 4294967295 shared funcref))
+  (import "env" "global1" (global $6 (mut f64)))
+  (import "env" "func0" (func $8))
+  (memory $5  41 23689 shared)
+  (table $3  58 4294967295 shared funcref)
+  (table $4  5 4294967295 shared externref)
+  (global $7  funcref (ref.null func))
+  
+  (func $9 (type $0)
+    (result v128)
+    (l)
+    (local $2 i32)
+    (l‹cal $3 i32)
+    call $9
+    memory.size
+    i64x2.shr_u
+    i8x16.extract_lane_u 0
+    i32.clz
+    table.get $5
+    f64.conf5b00722eb01p-349
+    drop
+    i32.c align=4
+    f32.const 0x1.d035b0p+91
+    local.get $3
+    table.get $3
+    ref.is_null
+    local.set $3
+    f32x´.replace_lane 1
+    unreachable
+    ))

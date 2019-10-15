@@ -1,0 +1,5 @@
+(func()
+f32.convert_i64_s
+f32.convert_i64_s i32.gt_u   f32.convert_i64_s      f32x4.ge 
+f32.convert_i64_s i32.gt_u   f32.convert_i64_s (t0)f32.convert_i64_s    f32.convert_i64_s        f32x4.ge  f32.convert_i64_s  f64.convert_i64_s
+f32.convert_i64_s i32.gt_u   f32.convert_i64_s ert_4_.c_s64_s))

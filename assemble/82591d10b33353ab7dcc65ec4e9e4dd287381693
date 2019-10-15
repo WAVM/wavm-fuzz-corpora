@@ -1,0 +1,2 @@
+(func br 0 i32.lt_s i32.lt_s br
+0)

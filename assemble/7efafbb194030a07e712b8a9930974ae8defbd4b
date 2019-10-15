@@ -1,0 +1,16 @@
+(module (import "env" "func0" (func $8 (param funcref v128)
+ )) (memory $5  44 61513 shared)
+  
+  (func $10    (param $2 i64)
+    (result )
+    v128.const i32x4 0x4f1e1 0x2d81f0b7 0x24bbd 0x01154fc1
+   i16x8.extract_lane_u 3
+    v16x8.load_interleaved_3 offset=109    
+i16x8.extract_lane_u 2
+    v16x8.load_interleaved_3 offset=1  i16x8.extract_lane_u 4
+    v16x8.load_interleaved_3 offset=1
+     unreachable
+    )
+  
+  (data $3 
+    "í5xa0aa\a0"))

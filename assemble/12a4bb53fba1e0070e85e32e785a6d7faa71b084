@@ -1,0 +1,61 @@
+(module
+  (type $0 (func (param f64) (result i32)))
+  (type $1 (func (param funcref f64 i32 i64)))
+  (type $2 (func (param f64) (result f64)))
+  (type $3 (func (result funcref)))
+  (import "env" "memory" (memory $5 93 54564 shared))
+  (import "env" "global0" (global $7 i64))
+  (import "env" "global2" (global $8 v128))
+  (import "env" "global5" (global $9 f32))
+  (import "env" "global6" (global $10 f32))
+  (import "env" "global8" (global $11 (mut f64)))
+  (import "env" "global9" (global $12 (mut f32)))
+  (import "env" "func0" (func $18 (param f64) (result i32)))
+  (import "env" "func1" (func $19 (param funcref f64 i32 i64)))
+  (import "env" "func2" (func $20 (param f64) (result f64)))
+  (memory $6  83 3994 shared)
+  (table $4  0 4294967295 shared funcref)
+  (global $13  (mut f32) (f32.const 0x1.e95ce0p+31))
+  (global $14  v128 (v128.const i32x4 0xa11ba4cf 0xd667639b 0x99d90ca6 0x9ee37dbc))
+  (global $15  i32 (i32.const 135265418))
+  (global $16  i32 (i32.const 1860635865))
+  (elem $17 declare exception_type)
+  
+  (func $21 (type $3)
+    (result funcref)
+    table.size $4
+    block $block (result f32)
+      global.get $15
+      i32.popcnt
+      v128.const i32x4 0x136af43a 0x691e4e69 0x04c60575 0xc17188a4
+      i32x4.bitmask
+      v32x4.load_interleaved_4 $6 offset=2429223615
+      i8x16.le_s
+      f64x2.min
+      f32x4.add
+      i32x4.widen_low_i16x8_u
+      i16x8.widen_high_i8x16_s
+      i16x8.bitmask
+      f64.const -0x1.41f3704a68c90p-365
+      memory.size $6
+      call_indirect $4 (type $2)
+      ref.null func
+      ref.is_null
+      call_indirect $4 (type $0)
+      i32.div_u
+      i32.store8 $6 offset=475546612
+      global.get $7
+      drop
+      call $21
+      drop
+      global.get $10
+      global.set $12
+      global.get $14
+      ref.null func
+      return
+    end ;; $block
+    global.set $12
+    table.get $4
+    ref.null func
+    drop
+    ))

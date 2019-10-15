@@ -1,0 +1,1 @@
+(memory 2)(func(return)i32.atomic.rmw8.sub_u(return))

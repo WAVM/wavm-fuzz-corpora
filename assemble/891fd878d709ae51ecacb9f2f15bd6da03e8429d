@@ -1,0 +1,4 @@
+(table $t1 9 externref)
+    (table $t5 0 funcref)
+   (table $u2 1 funcref)
+  

@@ -1,0 +1,1 @@
+(memory 8)(func(br 0)i32.atomic.rmw16.and_u(br 0))

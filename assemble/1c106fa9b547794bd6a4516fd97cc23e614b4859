@@ -1,0 +1,209 @@
+(module
+  (type $0 (func (param v128 v128) (result v128)))
+  (export "f32x4_convert_i32x4_s_add" (func $1))
+  (export "f32x4_convert_i32x4_s_sub" (func $2))
+  (export "f32x4_convert_i32x4_u_mul" (func $3))
+  (export "i16x8_low_widen_narrow_ss" (func $4))
+  (export "i16x8_low_widen_narrow_su" (func $5))
+  (export "i16x8_high_widen_narrow_ss" (func $6))
+  (export "i16x8_high_widen_narrow_su" (func $7))
+  (export "i16x8_low_widen_narrow_uu" (func $8))
+  (export "i16x8_low_wid_us" (func $11))
+  (export "i32x4_low_widen_narrow_ss" (func $12))
+  (export "i32x4_low_widen_narrow_su" (func $13))
+  (export "i32x4_high_widen_narrow_ss" (func $14))
+  (export "i32x4_high_widen_narrow_su" (func $15))
+  (export "i32x4_low_widen_narrow_uu" (func $16))
+  (export "i32x4_low_widen_narrow_us" (func $17))
+  (export "i32x4_high_widen_narrow_uu" (func $18))
+  (export "i32x4_high_widen_narrow_us" (func $19))
+  
+  (func $1 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    i32x4.add
+    f32x4.convert_i32x4_s
+    )
+  
+  (func $2 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    i32x4.sub
+    f32x4.convert_i32x4_s
+    )
+  
+  (func $3 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    i32x4.mul
+    f32x4.convert_i32x4_u
+    )
+  
+  (func $4 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    i8x16.narrow_i16x8_s
+    i16x8.widen_low_i8x16_s
+    )
+  
+  (func $5 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    i8x16.narrow_i16x8_u
+    i16x8.widen_low_i8x16_s
+    )
+  
+  (func $6 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    i8x16.narrow_i16x8_s
+    i16x8.widen_low_i8x16_s
+    )
+  
+  (func $7 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    i8x16.narrow_i16x8_u
+    i16x8.widen_low_i8x16_s
+    )
+  
+  (func $8 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    i8x16.narrow_i16x8_u
+    i16x8.widen_low_i8x16_u
+    )
+  
+  (func $9 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    i8x16.narrow_i16x8_s
+    i16x8.widen_low_i8x16_u
+    )
+  
+  (func $10 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    i8x16.narrow_i16x8_u
+    i16x8.widen_low_i8x16_u
+    )
+  
+  (func $11 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    i8x16.narrow_i16x8_s
+    i16x8.widen_low_i8x16_u
+    )
+  
+  (func $12 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    i16x8.narrow_i32x4_s
+    i32x4.widen_low_i16x8_s
+    )
+  
+  (func $13 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    i16x8.narrow_i32x4_u
+    i32x4.widen_low_i16x8_s
+    )
+  
+  (func $14 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    i16x8.narrow_i32x4_s
+    i32x4.widen_low_i16x8_s
+    )
+  
+  (func $15 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    i16x8.narrow_i32x4_u
+    i32x4.widen_low_i16x8_s
+    )
+  
+  (func $16 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    i16x8.narrow_i32x4_u
+    i32x4.widen_low_i16x8_u
+    )
+  
+  (func $17 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    i16x8.narrow_i32x4_s
+    i32x4.widen_low_i16x8_u
+    )
+  
+  (func $18 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    i16x8.narrow_i32x4_u
+    i32x4.widen_low_i16x8_u
+    )
+  
+  (func $19 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    i16x8.narrow_i32x4_s
+    i32x4.widen_low_i16x8_u
+    ))

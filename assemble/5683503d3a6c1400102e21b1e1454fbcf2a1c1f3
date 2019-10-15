@@ -1,0 +1,2 @@
+(func
+br 0 f64x2.add f64x2.add br 0)

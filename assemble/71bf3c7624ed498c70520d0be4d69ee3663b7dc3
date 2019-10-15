@@ -1,0 +1,24 @@
+(module
+  (type $0 (func (param f32 i32 v128 externref)))
+  (import "env" "memory" (memory $3 99 3073))
+  (import "env" "table" (table $1 92 4294967295 funcref))
+  (import "env" "global0" (global $6 (mut f64)))
+  (import "env" "func0" (func $10 (param f32 i32 v128 externref)))
+  (memory $4  69 8500 shared)
+  (memory $5  68 7636 shared)
+  (table $2  39 4294967295 shared externref)
+  (elem $7 table
+    $1 $2 $2 $1 $2 $1 $2  $2 $1 $2 $1 $2 $2 $1 $2
+    $2 $1 $2 $2 $1 $2 $1 $1
+    $1 $1 $1 $2 $1 $2 $2 $1
+    $1 $1 $1 $2 $2 $2 $1 $1
+    $2 $2 $1 $2 $1 $2 $2 $2
+    $2 $1 $2 $2 $1 $1 $2 $1
+    $1 $1 $2 $1 $1 $2 $2 $1
+    $1 $1 $1 $2 $1 $2)
+  
+  (data $8 
+    "\99\1d\88\f5\eb\0cj\1e\187\ef\bbp\004\9b\87c\fa@0\c2\a7")
+  
+  (data $9 
+    "\f5\cf\f4L;Kl"))

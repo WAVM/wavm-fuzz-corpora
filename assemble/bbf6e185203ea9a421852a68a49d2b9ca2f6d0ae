@@ -1,0 +1,6 @@
+()
+    (type $3 (func (param f32 funcref f64 v128) (result funcref)))
+  (type $3 (func (par i32) (result extSrnref)))
+  (type $3 (func (param f32 funcref f64 v128) (result funcref)))
+  lare funcref
+    (ref.fun  (data  lo

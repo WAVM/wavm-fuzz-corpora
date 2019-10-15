@@ -1,0 +1,59 @@
+(module
+  (type $0 (func (param externref f64) (result i32)))
+  (type $1 (func (param i64) (result funcref)))
+  (type $2 (func (param f32) (result externref funcref)))
+  (import "env" "memory" (memory $3 61 54527 shared))
+  (import "env" "memory" (memory $4 14 3039 shared))
+  (import "env" "memory" (memory $5 61 13575 shared))
+  (import "env" "global1" (global $6 i32))
+  (import "env" "global2" (global $7 i32))
+  (import "env" "global4" (global $8 funcref))
+  (import "env" "global8" (global $9 f64))
+  (import "env" "func0" (func $19 (param i64) (result funcref)))
+  (global $10  (mut f32) (f32.const 0x1.e2d058p+28))
+  (global $11  (mut externref) (ref.null extern))
+  (global $12  (mut i64) (i64.const 1260089764774995633))
+  (global $13  (mut v128) (v128.const i32x4 0x9b0909ca 0xfb64b410 0x2dbe511d 0x0c750d6d))
+  (global $14  (mut f32) (f32.const 0x1.9c9e9ep+30))
+  (global $15  (mut funcref) (ref.null func))
+  (elem $16 funcref
+    (ref.func $20) (ref.null func) (ref.func $19) (ref.func $20)
+    (ref.null func) (ref.func $19) (ref.func $19) (ref.func $20)
+    (ref.null func) (ref.func $20) (ref.func $20) (ref.func $20)
+    (ref.null func) (ref.func $20))
+  
+  (func $20 (type $0)
+    (param $0 externref)
+    (param $1 f64)
+    (result i32)
+    (local $2 f64)
+    (local $3 f32)
+    (local $4 i32)
+    (local $5 i64)
+    f64.const -0x1.1a8aa35f06ae2p+726
+    data.drop $17
+    global.get $6
+    global.get $8
+    v128.const i32x4 0xf74d89a0 0x641f3e5a 0xe8f4e970 0x425a27fd
+    f64x2.neg
+    f32.const -0x1.199ff2p+12
+    ref.null extern
+    drop
+    block $block (param f32) (result externref funcref)
+      global.get $6
+      i32.extend16_s
+      i16x8.load8x8_u $5 offset=2105464837 align=1
+      i8x16.extract_lane_s 5
+      i32.const -221178638
+      i32.le_u
+      return
+    end ;; $block
+    unreachable
+    )
+  
+  (data $17 (memory $5) (i32.const -1856800064)
+    "\dd\cb\ed\db\cc\c8.vS")
+  
+  (data $18 (memory $5) (i32.const 905419139)
+    "%2\ef\fd'-\eb\b6\b9\c8\91\bdZJ\edJM\dcX\car\d8\9ei\17-\d8$\ce\f9\83\96\07\a5\n\c0U\17\a1\dc\06\02\9e\87\19E\11\af\a9\bf\9f\88j*\87\91R\d2\e0`i&\80`"
+    "\80\ce\bc\13\a9T|\91\b0"))

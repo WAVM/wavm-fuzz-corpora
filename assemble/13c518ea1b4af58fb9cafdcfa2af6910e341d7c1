@@ -1,0 +1,6 @@
+  (import "test" "gl" (global $0 i32))
+ (import "set" "l2" (global $x i32))
+  (import "c`eceSt" "3" (global $y i32))
+  (import "spt" "lf2" (global f64)) (func glob t $1)  (func ( $r4e) global.get $x
+ global.get $y
+рж)

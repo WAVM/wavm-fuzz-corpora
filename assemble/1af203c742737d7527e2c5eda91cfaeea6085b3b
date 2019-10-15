@@ -1,0 +1,3 @@
+(memory 1)(func()i32.atomic.load8_u
+i32.atomic.load8_u
+i32.atomic.load8_u)

@@ -1,0 +1,49 @@
+(module
+  (type $0 (func (param externref) (result v128 externref)))
+  (type $1 (func (result externref)))
+  (type $2 (func (param v128 f32 i32 funcref) (result f32 funcref)))
+  (type $3 (func (param externref externref f32 f64) (result f32)))
+  (type $4 (func))
+  (type $5 (func (param i32 f32) (result funcref funcref f32)))
+  (type $6 (func (param v128 v128 v128) (result i64)))
+  (import "env" "memory" (memory $8 36 3479 shared))
+  (import "env" "global1" (global $10 funcref))
+  (import "env" "func0" (func $15 (param externref) (result v128 externref)))
+  (import "env" "func1" (func $16 (result externref)))
+  (import "env" "func2" (func $17 (param v128 f32 i32 funcref) (result f32 funcref)))
+  (import "env" "func3" (func $18 (param externref externref f32 f64) (result f32)))
+  (memory $9  61 1684 shared)
+  (table $7  76 4294967295 shared externref)
+  (global $11  (mut externref) (ref.null extern))
+  (global $12  (mut i64) (i64.const -2248270724810866660))
+  (elem $13 funcref
+    (ref.null func) (ref.func $19))
+  (elem $14 global
+    $12 $11 $11 $11 $12 $10 $11 $11
+    $11 $12 $10 $12 $10 $10 $12 $12
+    $12 $10 $10 $11 $12 $10 $10 $12
+    $10 $10 $11 $12 $11 $11 $11 $12
+    $11 $12 $12 $12 $10 $11 $10 $11
+    $10 $10 $10 $11 $12 $10 $10 $12
+    $12 $12 $12 $13 $12 $11 $10 $10
+    $12 $11 $10 $11 $11 $10 $10 $10
+    $10 $10 $10 $11 $12 $12 $11 $10
+    $10 $12 $11 $10 $11 $10 $12 $12
+    $10 $11 $11)
+  
+  (func $19 (type $4)
+    (local $0 f64)
+    (local $1 i32)
+    f32.const 0x1.553cd0p-55
+    memory.size $9
+    f32.const -0x1.856ba2p-90
+    loop $loop (param i32 f32) (result funcref funcref f32)
+      f32.floor
+   76p+16
+        return
+      end ;; $block
+      drop
+      br 1
+    end ;; $loop
+    unreachable
+    ))

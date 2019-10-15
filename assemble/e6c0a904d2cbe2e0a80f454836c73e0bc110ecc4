@@ -1,0 +1,9 @@
+(module
+  (type $0 (func (param i32 f64 i64) (result f64)))
+  (import "env" "memory" (memory $1 5 26521 shared))
+  (import "env" "memory" (memory $2 56 4612))
+  (import "env" "memory" (memory $3 59 27938 shared )) 
+(elem $4 exception_type)
+  
+ ( func $6 (type $0)
+     v64x2.load_interleaved_2 $2'o5t -7354\06"))

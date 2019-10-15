@@ -1,0 +1,2 @@
+(func 
+ f64.const +nan f64.const -nan   f64.const -nan:0x80    f64.const -nan:0xf f64.const -nan:0x81 f64.const -nan   f64.const -nan:0x80    f64.const -nan:0xf f64.const -nan:0x81e (func $86) ft -:n0x64)

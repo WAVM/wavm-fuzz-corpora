@@ -1,0 +1,55 @@
+(module
+  (type $0 (func (result funcref)))
+  (type $1 (func (param i32 v128 f64 v128) (result f64)))
+  (type $2 (func (param f64 i64) (result f64 i32)))
+  (table $3  89 4294967295 externref)
+  (global $4  f64 (f64.const 0x1.09382ac72e6a9p+63))
+  (global $5  (mut i32) (i32.const 1210589477))
+  (global $6  (mut f64) (f64.const 0x1.cb01ca348c8eap+62))
+  (global $7  (mut v128) (v128.const i32x4 0xa0cf30d3 0x93382fe3 0x7371882d 0x61cd0c5f))
+  
+  (func $9 (type $0)
+    (result funcref)
+    (local $0 i64)
+    (local $1 i32)
+    (local $2 i32)
+    (local $3 i64)
+    unreachable
+    )
+  
+  (func $10 (type $1)
+    (param $0 i32)
+    (param $1 v128)
+    (param $2 f64)
+    (param $3 v128)
+    (result f64)
+    (local $4 i32)
+    (local $5 externref)
+    (local $6 v128)
+    (local $7 i32)
+    local.get $7
+    local.get $0
+    i8x16.splat
+    f32x4.extract_lane 1
+    i64.trunc_f32_u
+    f64.reinterpret_i64
+    i32.trunc_sat_f64_s
+    f64.convert_i32_u
+    data.drop $8
+    local.get $2
+    local.get $0
+    i64.extend_i32_u
+    block $block (param f64 i64) (result f64 i32)
+      i64.ctz
+      global.get $4
+      local.set $2
+      drop
+      global.get $5
+    end ;; $block
+    br_if 0
+    f64.add
+    br 0
+    )
+  
+  (data $8 
+    "\e8GLk\feC'\e9\ba\0e&\f9\bdM"))

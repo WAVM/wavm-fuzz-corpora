@@ -1,0 +1,1 @@
+(memory  0)(func(i2.atomic.load)(i32.atomic.load)(i32.atomic.load)(i32.atomic.load)(i32.atomic.load)(i32.atomic.load)(i32.atomic.load)(i32.atomic.load)(i32.atomic.load)(i32.atomic.load(i32.atomic.load)(i3.load)(i32.atomic.load)(i32.atomic.load)(i32.atomic.load)(i32.atomic.load)(i32.atomic.load)(i32.atomi2.atomic.load))(i32.atomic.load))

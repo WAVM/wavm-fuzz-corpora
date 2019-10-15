@@ -1,0 +1,4 @@
+(func br 0 f32.le br 0 f32.le  i8x16.shr_u br 0 f32.le br 0 f32.le i8x16.shr_u br 0 f32.le br 0  f32.le i8x16.shr_u br 0 f32.le br
+0 f32.le i8x16.shr_u br 0 f32.le i8x16.shr_u br 0 f32.le br 0 f32.le i8x16.shr_u br 0 f32.le br 0  f32.le i8x16.shr_u br 0 f32.le br
+0 f32.le i8x16.shr_u br 0 f32.le br
+0)

@@ -1,0 +1,42 @@
+(module
+  (type $0 (func (param v128 f32) (result f32)))
+  (type $1 (func (param v128 v128 v128 externref)))
+  (type $2 (func (param externref f64 funcref) (result i64)))
+  (type $3 (func (result i32 v128)))
+  (import "env" "memory" (memory $4 55 1137 shared))
+  (import "env" "func0" (func $9 (param v128 f32) (result f32)))
+  (import "env" "func1" (func $10 (param externref f64 funcref) (result i64)))
+  (memory $5  23 20403 shared)
+  (memory $6  90 3440 shared)
+  
+  (func $11 (type $1)
+    (param $0 v128)
+    (param $1 v128)
+    (param $2 v128)
+    (param $3 externref)
+    ref.null extern
+    local.tee $3
+    local.get $1
+    block $block (result i32 v128)
+      f64.const -0x1.3768e7a3d1671p-413
+      i64.reinterpret_f64
+      i32.const 583579933
+      v32x4.load_interleaved_4 $6 offset=3879082462
+      i64x2.sub
+      i64x2.sub
+      i32x4.gt_s
+      memory.size
+      local.get $3
+      f32.const 0x1.511320p+58
+      data.drop $8
+      return
+    end ;; $block
+    br 0
+    )
+  
+  (data $7 
+    "\07=k\f6\8ef]")
+  
+  (data $8 (memory $5) (i32.const 983332129)
+    "\890\08K\f2\d5Y\a6\1b\1d\cf^\88\14\ce\c1\99\0bT\15\02P`\02b\03^\de\8fp\c17"
+    "\aeEJ\c4p\1f\e8\14I\97\"1\09\e0\b0\b5I"))

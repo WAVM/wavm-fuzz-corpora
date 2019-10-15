@@ -1,0 +1,11 @@
+(module
+  (type $0 (func (param f32) (result v128)))
+  (export "i32x4.trunc_sat_f32x4_s" (func $1))
+  
+  (func $1 (type $0)
+    (param $a f32)
+    (result v128)
+    local.get $a
+    f32x4.splat
+    i32x4.trunc_sat_f32x4_s
+    ))

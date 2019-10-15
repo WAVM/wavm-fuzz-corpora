@@ -1,0 +1,92 @@
+(module
+  (type $0 (func (param f32 f64 v128 f32)))
+  (type $1 (func (param funcref funcref i64) (result v128)))
+  (type $2 (func (result f64 v128)))
+  (type $3 (func))
+  (type $4 (func (param funcref) (result v128 externref)))
+  (type $5 (func (result i64 externref)))
+  (import "env" "table" (table $6 79 4294967295 funcref))
+  (import "env" "func0" (func $10 (param f32 f64 v128 f32)))
+  (memory $7  77 31284 shared)
+  (memory $8  88 61319)
+  
+  (func $11 (type $1)
+    (param $0 funcref)
+    (param $1 funcref)
+    (param $2 i64)
+    (result v128)
+    (local $3 f64)
+    i32.const 59849310
+    f32.convert_i32_s
+    unreachable
+    )
+  
+  (func $12 (type $2)
+    (result f64 v128)
+    table.size $6
+    v64x2.load_splat $8 offset=1505327455
+    i8x16.any_true
+    i16x8.load8x8_u offset=2274886927
+    i16x8.extract_lane_s 3
+    i32.load16_s $8 offset=757888003
+    i32.ctz
+    v8x16.load_splat offset=2649422562
+    data.drop $9
+    f32x4.extract_lane 2
+    table.size $6
+    data.drop $9
+    v32x4.load_splat $8 offset=204885279
+    i16x8.all_true
+    v8x16.load_interleaved_2 $8 offset=3175050649 align=2
+    f64x2.div
+    drop
+    drop
+    table.size $6
+    table.get $6
+    drop
+    f64.const 0x1.f13b176f65cd4p-785
+    i32.trunc_sat_f64_u
+    table.get $6
+    drop
+    v128.const i32x4 0xdf9326f9 0xd384e820 0x327f9487 0x7abc8fac
+    ref.null extern
+    ref.is_null
+    i8x16.shr_u
+    unreachable
+    )
+  
+  (func $13 (type $3)
+    (local $0 funcref)
+    (local $1 f32)
+    (local $2 f64)
+    br 0
+    )
+  
+  (func $14 (type $4)
+    (param $0 funcref)
+    (result v128 externref)
+    (local $1 externref)
+    f64.const -0x1.70127d8d9db19p-275
+    block $block (result i64 externref)
+      call $13
+      call $13
+      local.get $1
+      table.size $6
+      memory.grow
+      v8x16.load_splat $8 offset=3422630936
+      i8x16.abs
+      i32x4.any_true
+      call_indirect $6 (type $3)
+      i64.const 6020799236456849968
+      atomic.fence
+      atomic.fence
+      local.get $1
+      local.set $1
+      unreachable
+    end ;; $block
+    ref.null extern
+    unreachable
+    )
+  
+  (data $9 (memory $8) (i32.const -1052878458)
+    "\81C\a7E\n#l\e2>\aa\f0\92m\9e\9d\0c\010\c8\800\f5FT\f4+\1e\1f"))

@@ -1,0 +1,1 @@
+(func global.get $x global.get)

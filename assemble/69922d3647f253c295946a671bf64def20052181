@@ -1,0 +1,93 @@
+(module
+  (type $0 (func (param i32) (result i32)))
+  (type $1 (func (param funcref) (result externref)))
+  (type $2 (func (param externref v128 v128 v128) (result f32)))
+  (type $3 (func (param i64) (result f64 i32)))
+  (type $4 (func (result externref f32 v128 i64)))
+  (import "env" "memory" (memory $7 83 58101 shared))
+  (import "env" "table" (table $5 3 4294967295 shared funcref))
+  (import "env" "func0" (func $11 (param externref v128 v128 v128) (result f32)))
+  (memory $8  76 3374 shared)
+  (table $6  82 4294967295 shared funcref)
+  (elem $9 declare memory
+    $7 $8 $8 $7 $7 $8 $8 $8
+    $8 $7 $7 $7 $8 $7 $7 $7
+    $8 $7 $8 $8 $7 $7 $8 $7
+    $8 $8 $7 $7 $7 $8 $8 $7
+    $7 $7 $7 $7 $7 $7 $7 $7
+    $7 $8 $7 $7 $8 $7 $7 $7
+    $7 $8 $8 $8 $8 $8 $7)
+  
+  (func $12 (type $0)
+    (param $0 i32)
+    (result i32)
+    f32.const 0x1.42e86ap-83
+    f32x4.splat
+    drop
+    memory.size
+    i64.load offset=2471216809 align=4
+    memory.size
+    table.get $6
+    data.drop $10
+    data.drop $10
+    ref.is_null
+    i64.load offset=341540289 align=2
+    i64.or
+    i64.clz
+    i64.popcnt
+    loop $loop (result externref f32 v128 i64)
+      table.size $5
+      br $loop
+    end ;; $loop
+    drop
+    unreachable
+    )
+  
+  (func $13 (type $1)
+    (param $0 funcref)
+    (result externref)
+    (local $1 i32)
+    (local $2 i32)
+    (local $3 v128)
+    (local $4 i64)
+    ref.null func
+    ref.null func
+    i32.const 2074168110
+    i64.load offset=3074231989 align=4
+    local.get $1
+    elem.drop $9
+    i16x8.splat
+    i16x8.extract_lane_u 3
+    local.get $1
+    i64.load offset=483246389 align=2
+    i64.atomic.rmw32.add_u offset=1247933878
+    i64.shl
+    f64.convert_i64_s
+    unreachable
+    )
+  
+  (func $14 (type $3)
+    (param $0 i64)
+    (result f64 i32)
+    (local $1 i64)
+    atomic.fence
+    elem.drop $9
+    memory.size $8
+    atomic.fence
+    v32x4.load_interleaved_3 offset=4262985924
+    i16x8.sub
+    i8x16.sub
+    i16x8.widen_low_i8x16_u
+    i32x4.all_true
+    i32.clz
+    i32.popcnt
+    call_indirect $5 (type $4)
+    i64x2.splat
+    i16x8.max_s
+    i32x4.neg
+    drop
+    unreachable
+    )
+  
+  (data $10 
+    "\ac,\1e\86\c6\f4\06#\88J\f4`\c6bR\80\08"))

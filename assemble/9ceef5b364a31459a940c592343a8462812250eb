@@ -1,0 +1,4 @@
+(func global.get $x
+global.get $u global.get $x global.get $x  global.get $x
+global.get $x
+global.get $x global.get $x)

@@ -1,0 +1,1 @@
+(table 1 funcref)(elem $a) (func table.init $a table.init $a Î)

@@ -1,0 +1,10 @@
+(module(memory   0)(func i32.const 20
+i32.const 1  i32.const 5
+  memory.copy
+  i32.const 13 i32.const 11
+ i32.const 4
+  memory.copy
+  i32.const 19
+i32.const 20
+ i32.const 5
+ memory.copy))

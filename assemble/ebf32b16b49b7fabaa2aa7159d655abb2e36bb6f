@@ -1,0 +1,1 @@
+(memory 0)(func()v128.load(v16x8.store_interleaved_3)v16x8.store_interleaved_3 ))

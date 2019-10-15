@@ -1,0 +1,4 @@
+(func br 0
+i32.ge_u
+i32.ge_u
+i32.ge_u br 0)

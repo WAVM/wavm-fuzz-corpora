@@ -1,0 +1,30 @@
+(module
+  (type $0 (func (param i32 v128 externref)))
+  (import "env" "table" (table $1 39 4294967295 shared externref))
+  (import "env" "global0" (global $5 funcref))
+  (memory $4  71 60773 shared)
+  (table $2  41 4294967295 shared funcref)
+  (table $3  90 4294967295 shared funcref)
+  
+  (func $8 (type $0)
+    (param $0 i32)
+    (param $1 v128)
+    (param $2 externref)
+    atomic.fence
+    ref.null extern
+    memory.size
+    i64.extend_i32_s
+    atomic.fence
+    i64.const 7644626602190191693
+    ref.null func
+    drop
+    i64.shl
+    i64.extend32_s
+    return
+    )
+  
+  (data $6 (i32.const 699598340)
+    "+T\9a\87\f2\1f@\06\99\b3:V\a3K\9c\d58a\b4m\d1\e8|\a5.1\c7\c7\ea\f3@|\0f\c9\f4\0e\c0\b0\d6\16\0e")
+  
+  (data $7 (i32.const 156062657)
+    "< \9aL\84\ec\f5\9c\c6\e2\e9\87y\85+\1a\e6\15)\e6\11l\d7\dcU\83\89\e3M\ad\c2"))

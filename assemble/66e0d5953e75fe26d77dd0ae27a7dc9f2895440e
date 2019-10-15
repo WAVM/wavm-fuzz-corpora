@@ -1,0 +1,4 @@
+(func br 0
+i32.shl
+i32.shl i32.shl br
+0)

@@ -1,0 +1,2 @@
+(memory 1)(func()i64.store16
+i64.store16)

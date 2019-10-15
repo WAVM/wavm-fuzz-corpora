@@ -1,0 +1,9 @@
+(func
+br 0 f32.reinterpret_i32
+br 0 f32.reinterpret_i32
+br 0 
+f32.reinterpret_i32
+br 0 
+f32.reinterpret_i32
+br 0
+)

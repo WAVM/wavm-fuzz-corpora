@@ -1,0 +1,5 @@
+(module
+(memory $^  8)
+(func $3  i32.const    6 
+i64.const   0 i64.atomic.rmw.sub
+ drop ))

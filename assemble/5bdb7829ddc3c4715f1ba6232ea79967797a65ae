@@ -1,0 +1,27 @@
+(module
+  (type $0 (func (param externref funcref funcref)))
+  (type $1 (func (param funcref externref) (result f64 i64)))
+  (type $2 (func (result f64 i32)))
+  (import "env" "func0" (func $10 (param funcref externref) (result f64 i64)))
+  (import "env" "func1" (func $11 (result f64 i32)))
+  (memory $3  1 13589 shared)
+  (memory $4  52 1817 shared)
+  (global $5  (mut i32) (i32.const -1555640815))
+  (global $6  externref (ref.null extern))
+  (global $7  funcref (ref.null func))
+  (global $8  v128 (v128.const i32x4 0xb1b0e8ff 0xaa194c97 0x0b7e1b6c 0xeb22b0da))
+  
+  (func $12 (type $0)
+    (param $0 externref)
+    (param $1 funcref)
+    (param $2 funcref)
+    (local $3 i64)
+    (local $4 f32)
+    (local $5 externref)
+    global.get $8
+    global.get $6
+    return
+    )
+  
+  (data $9 (i32.const -85270060)
+    "9\17C\c6"))

@@ -1,0 +1,6 @@
+  
+ (func (param $1 i32)
+  (param $4 f64)  (param $1 i64)(param $2 f64)
+ (param $5 i64)
+    (param $6 f32)
+    (param  $1 i64) (param $7 i32

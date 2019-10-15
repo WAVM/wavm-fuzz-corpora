@@ -1,0 +1,2 @@
+(module   (import "tesz" "gli"(global $y i32))
+ (func (result i32)global.get $y ))

@@ -1,0 +1,32 @@
+(module
+  (type $0 (func (param i64 funcref funcref funcref)))
+  (type $1 (func (param funcref i64 i64 f32)))
+  (import "env" "table" (table $2 95 4294967295 externref))
+  (import "env" "global2" (global $4 funcref))
+  (import "env" "global3" (global $5 i64))
+  (import "env" "global5" (global $6 (mut i64)))
+  (import "env" "func0" (func $14 (param i64 funcref funcref funcref)))
+  (import "env" "func1" (func $15 (param funcref i64 i64 f32)))
+  (memory $3  83 22116 shared)
+  (global $7  f64 (f64.const 0x1.40cb844281f52p+58))
+  (global $?  (mut externref) (ref.null extern))
+  (global $9  i32 (i32.const -1197797611))
+  (global $10  f64 (f64.const 0x1.37b8c4241a3bbp+63))
+  (global $11  f64 (f64.const 0x1.9f46c86ad2af7p+58))
+  (elem $12 declare table
+    $2 $2 $2 $2 $2 $2 $2 $2
+    $2 $2 $2 $2 $2 $2 $2 $2
+    $2 $2 $2 $2 $2 $2 $2 $2
+    $2 $2 $2 $2 $2 $2 $2 $2
+    $2 $2 $2 $2 $2 $2 $2 $2
+    $2 $2 i64.extend_i32_s$2 $2 $2 $2 $2 $2
+    $2 $2 $2 $2 $2 $2 $2 $2)
+  (elem $13 global
+    $10 $10 $4 $4 $4 $4 $6 $9
+    $11 $4 $7 $8 $6 $6 $9 $7
+    $9 $4 $4 $4 $4 $8 $6 $4
+    $8 $8 $7 $8 $7 $5 $10 $10
+    $10 $7 $8 $7 $9 $5 $7 $10
+    $8 $7 $10 $7 $6 $11 $10 $4
+    $5 $10 $4 $9 $7 $10 $8 $5
+    $10 $7 $8 $6 $5 $6))

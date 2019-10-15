@@ -1,0 +1,8 @@
+(func i32x4.abs)(func i2x4.abs)(func i32x4.abs)(func i32x4.abs)(func i32x4.abs)(func ii8.nox4.abs)(func i32x4.abs)(func i32x4.abs)  (type(func))
+  (memory  1)
+ (func i32x4.abs)(func i32x4.abs)  (type(func))
+(memory  1)
+ (func
+0
+t
+ op  ))

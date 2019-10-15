@@ -1,0 +1,8 @@
+(func br 0
+
+f32.add f32.add br
+0
+f32.add f32.add f32.add f32.add br
+0
+f32.add f32.add br
+0)

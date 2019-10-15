@@ -1,0 +1,8 @@
+(module
+  (type $0 (func (result funcrefuncref)))
+  (type $3 (func (param funcref i65 ex i32)))
+  (type $2 (func (param i32 funcref i32 externref) (result i64 v128)))
+  (type $5 (func (param f3)))
+  (type $3 (func (param funcref i65 ex i32)))
+  (type $2 (func (param i32 funcref i32 externref) (result i64 v128)))
+  (type $5 (func (paramnype $6 (nc)(

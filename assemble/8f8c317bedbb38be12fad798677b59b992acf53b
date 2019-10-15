@@ -1,0 +1,67 @@
+(module
+  (type $0 (func (result i32)))
+  (type $1 (func (param i32)))
+  (table $t0  0 externref)
+  (table $t1  1 externref)
+  (table $t2  0 2 externref)
+  (table $t3  3 8 externref)
+  (export "size-t0" (func $2))
+  (export "size-t1" (func $3))
+  (export "size-t2" (func $4))
+  (export "size-t3" (func $5))
+  (export "grow-t0" (func $6))
+  (export "grow-t1" (func $7))
+  (export "grow-t2" (func $8))
+  (export "grow-t3" (func $9))
+  
+  (func $2 (type $0)
+    (result i32)
+    table.size $t0
+    )
+  
+  (func $3 (type $0)
+    (result i32)
+    table.size $t1
+    )
+  
+  (func $4 (type $0)
+    (result i32)
+    table.size $t2
+    )
+  
+  (func $5 (type $0)
+    (result i32)
+    table.size $t3
+    )
+  
+  (func $6 (type $1)
+    (param $sz i32)
+    ref.null extern
+    local.get $sz
+    table.grow $t0
+    drop
+    )
+  
+  (func $7 (type $1)
+    (param $sz i32)
+    ref.null extern
+    local.get $sz
+    table.grow $t1
+    drop
+    )
+  
+  (func $8 (type $1)
+    (param $sz i32)
+    ref.null extern
+    local.get $sz
+    table.grow $t2
+    drop
+    )
+  
+  (func $9 (type $1)
+    (param $sz i32)
+    ref.null extern
+    local.get $sz
+    table.grow $t3
+    drop
+    ))

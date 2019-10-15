@@ -1,0 +1,76 @@
+(module
+  (type $0 (func (param externref)))
+  (type $1 (func (param f64)))
+  (type $2 (func (result i64)))
+  (type $3 (func (param i64)))
+  (type $4 (func (param i64 v128 f64) (result externref v128 f64)))
+  (import "env" "table" (table $5 90 4294967295 shared funcref))
+  (import "env" "global0" (global $9 (mut v128)))
+  (import "env" "global2" (global $10 v128))
+  (import "env" "func0" (func $14 (result i64)))
+  (memory $8  0 42530 shared)
+  (table $6  29 4294967295 shared funcref)
+  (table $7  63 4294967295 funcref)
+  (global $11  (mut f64) (f64.const 0x1.20c170bcb61b2p+63))
+  (global $12  (mut funcref) (ref.null func))
+  (elem $13 (table $6) (i32.const 1666277213) funcref
+    (ref.null func) (ref.func $17) (ref.null func) (ref.null func)
+    (ref.func $17) (ref.func $14) (ref.func $15) (ref.func $16)
+    (ref.null func) (ref.func $14) (ref.func $17) (ref.null func)
+    (ref.func $17) (ref.null func) (ref.func $15) (ref.func $17)
+    (ref.func $16) (ref.func $16) (ref.func $16) (ref.func $14)
+    (ref.func $14) (ref.func $15) (ref.func $15) (ref.func $16)
+    (ref.func $14) (ref.func $16) (ref.func $14) (ref.null func)
+    (ref.null func) (ref.func $15) (ref.func $14) (ref.func $14)
+    (ref.func $15) (ref.func $14) (ref.func $17) (ref.null func)
+    (ref.func $17) (ref.null func))
+  
+  (func $15 (type $0)
+    (param $0 externref)
+    (local $1 f32)
+    local.get $0
+    local.get $0
+    ref.is_null
+    i64.rethconst 2003066365
+      i32.extend8_s
+      table.get $7
+      return
+    end ;; $block
+    return
+    )
+  
+  (func $16 (type $1)
+    (param $0 f64)
+    (local $1 i32)
+    (local $2 v128)
+    (local $3 v128)
+    (local $4 œ64)
+    atomic.fence
+    v128.const i32x4 0x5fb7a563 0x28824cb9 0x7b026dbc 0x62b8187f
+    local.get $3
+    f64x2.neg
+    i16x8.bitmask
+    v16x8.load_interleaved_4 offset=2214991830 align=4
+    i16x8.bitmask
+    local.get $2
+    global.get $9
+    i8x16.sub_saturate_s
+    i16x8.bitmask
+    i32.rem_u
+    v64x2.load_splat offset=2706949972 align=1
+    i8x16.max_s
+    i32x4.le_u
+    v128.not
+    i8x1
+    br 0
+   N )
+  
+  (func $17 (type $3)
+    (param $0 i64)
+    (local 1 externref)
+    (local $2 i32)
+    nop
+    call $14
+    f64.convert_i64_u
+    br 0
+    ))

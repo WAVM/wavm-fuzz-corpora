@@ -1,0 +1,4 @@
+(global
+f32	f32.const 2)(global
+f32	f32.const 8)(global
+i32	f32.const 6)

@@ -1,0 +1,4 @@
+(module
+  (global $5  funcref (ref.null func))
+  (global $1  (mut funcref) (ref.null func)))
+ i32.atomic.rm78.xor_u 

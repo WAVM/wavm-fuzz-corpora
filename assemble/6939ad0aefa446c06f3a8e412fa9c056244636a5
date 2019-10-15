@@ -1,0 +1,9 @@
+(module
+  (type $0 (func))
+  
+  (func $2 (type $0)
+    data.drop $1
+    )
+  
+  (data $1 
+    "goodbye"))

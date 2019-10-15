@@ -1,0 +1,38 @@
+(module
+  (type $0 (func (param v128) (result i32 funcref)))
+  (type $1 (func (result v128)))
+  (type $2 (func (result externref f64)))
+  (import "env" "memory" (memory $4 60 38939))
+  (import "env" "table" (table $3 43 4294967295 shared funcref))
+  (import "env" "func0" (func $9 (result v128)))
+  (memory $5  14 21531 shared)
+  (memory $6  45 54320 shared)
+  (global $7  (mut externref) (ref.null extern))
+  (elem $8 exception_type)
+  
+  (func $10 (type $0)
+    (param $0 v128)
+    (result i32 funcref)
+    (local $1 i64)
+    (local $2 v128)
+    (local $3 v128)
+    call $9
+    atomic.fence
+    i32x4.bitmask
+    i32.atomic.load $6 offset=2819411190
+    v64x2.load_interleaved_2 $5 offset=3149051307
+    i8x16.lt_u
+    i8x16.abs
+    i8x16.neg
+    local.tee $0
+    i8x16.any_true
+    i64.extend_i32_s
+    table.size $3
+    if $if (result externref f64)
+      unreachable
+    else
+      i32.const 2046889781
+      unreachable
+    end ;; $if
+    unreachable
+    ))

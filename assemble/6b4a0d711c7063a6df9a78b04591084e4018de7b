@@ -1,0 +1,67 @@
+(module
+  (type $0 (func (param funcref f32 f32 f32) (result i32)))
+  (type $1 (func (param i64 v128 f32) (result f32)))
+  (type $2 (func (param funcref i32) (result funcref funcref)))
+  (type $3 (func (result i64)))
+  (type $4 (func (param externref v128)))
+  (type $5 (func (param i64)))
+  (type $6 (func (result funcref i32 f64 funcref)))
+  (import "env" "table" (table $7 80 4294967295 shared externref))
+  (import "env" "global0" (global $8 i32))
+  (import "env" "global5" (global $9 (mut f32)))
+  (import "env" "func0" (func $16 (param funcref f32 f32 f32) (result i32)))
+  (import "env" "func1" (func $17 (param funcref i32) (result funcref funcref)))
+  (import "env" "func2" (func $18 (param externref v128)))
+  (global $10  (mut f32) (f32.const 0x1.a6735cp+31))
+  (global $11  (mut f32) (f32.const 0x1.208b02p+31))
+  (global $12  funcref (ref.null func))
+  (global $13  (mut v128) (v128.const i32x4 0xc5f39115 0x1f9827d7 0x05be248c 0x59193af6))
+  (global $14  (mut externref) (ref.null extern))
+  
+  (func $19 (type $1)
+    (param $0 i64)
+    (param $1 v128)
+    (param $2 f32)
+    (result f32)
+    global.get $13
+    i16x8.widen_low_i8x16_u
+    i64.const 8707129492093911157
+    global.get $8
+    if $if (param i64)
+      i64.popcnt
+      nop
+      local.set $0
+      unreachable
+    else
+      loop $loop (result funcref i32 f64 funcref)
+        global.get $11
+        i64.trunc_f32_s
+        f64.convert_i64_u
+        f64.neg
+        br $loop
+      end ;; $loop
+      ref.null extern
+      drop
+      ref.is_null
+      br_if $if
+      drop
+      ref.null extern
+      global.set $14
+      table.get $7
+      ref.is_null
+      unreachable
+    end ;; $if
+    unreachable
+    )
+  
+  (func $20 (type $3)
+    (result i64)
+    atomic.fence
+    f32.const -0x1.30e18ap-109
+    data.drop $15
+    unreachable
+    )
+  
+  (data $15 
+    "\90g\a1\a1\ee\a9%\b4\8e A\01\c9\99-\9e\9a\b53\04\0b:=^\f5\00\1b\d1\1b:-T(\10w\fc\9e\85\8f\a4\ef\cf\0d\94\c3\a0\b8\9c\1c\b0\12\b0O\8fj\b6B\87\d9#\bf5^\e0"
+    "L[\e7\ad\98\c9\a9\86J\b8m\ee\cdb\a4\8f\ab\"J\94;\94I8\8c\82\f3\aa\95h\bd\dd"))

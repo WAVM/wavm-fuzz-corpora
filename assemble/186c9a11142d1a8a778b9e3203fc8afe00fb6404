@@ -1,0 +1,97 @@
+(module
+  (type $0 (func (param funcref externref i32)))
+  (type $1 (func (param funcref i64 f32) (result v128 f32)))
+  (type $2 (func (param i32 externref i32) (result externref)))
+  (type $3 (func (param externref) (result externref f64)))
+  (type $4 (func (param i64 funcref) (result funcref f32)))
+  (type $5 (func (param v128) (result i64)))
+  (import "env" "memory" (memory $9 48 31674 shared))
+  (import "env" "func0" (func $12 (param externref) (result externref f64)))
+  (import "env" "func1" (func $13 (param i64 funcref) (result funcref f32)))
+  (table $6  69 4294967295 externref)
+  (table $7  18 4294967295 funcref)
+  (table $8  86 4294967295 shared externref)
+  
+  (func $14 (type $0)
+    (param $0 funcref)
+    (param $1 externref)
+    (param $2 i32)
+    (local $3 i32)
+    data.drop $11
+    local.get $0
+    br 0
+    )
+  
+  (func $15 (type $1)
+    (param $0 funcref)
+    (param $1 i64)
+    (param $2 f32)
+    (result v128 f32)
+    v128.const i32x4 0xb82e2eaa 0xd0e454d5 0x35f31836 0x5161ea2b
+    atomic.fence
+    i8x16.bitmask
+    f32.convert_i32_u
+    f32.sqrt
+    f32.trunc
+    i32.trunc_f32_s
+    v64x2.load_interleaved_2 offset=2511244859 align=2
+    f64x2.div
+    i32x4.abs
+    i8x16.extract_lane_u 0
+    v64x2.load_interleaved_2 offset=3322654408 align=4
+    loop $loop (param v128) (result i64)
+      i32.const -430482347
+      i64x2.shr_u
+      unreachable
+    end ;; $loop
+    drop
+    i8x16.all_true
+    ref.null func
+    local.set $0
+    table.get $6
+    ref.is_null
+    table.get $7
+    local.set $0
+    local.get $2
+    ref.null func
+    ref.null func
+    ref.null func
+    ref.null func
+    ref.null extern
+    unreachable
+    )
+  
+  (func $16 (type $2)
+    (param $0 i32)
+    (param $1 externref)
+    (param $2 i32)
+    (result externref)
+    (local $3 v128)
+    (local $4 funcref)
+    (local $5 f64)
+    local.get $3
+    f64x2.abs
+    i16x8.abs
+    i32x4.widen_high_i16x8_u
+    memory.size
+    v64x2.load_interleaved_2 offset=2930090907 align=4
+    i32x4.add
+    i32x4.sub
+    i32x4.any_true
+    i32.load8_s offset=965992368
+    v64x2.load_interleaved_2 offset=2212651768
+    i16x8.mul
+    i32.const 443054770
+    i64.atomic.load32_u offset=1053552478
+    local.get $2
+    ref.null func
+    unreachable
+    )
+  
+  (data $10 
+    "\b0\1f\e5\bd5\db\9c\140m\c0\n\d2\a6\"\86\ea2_\ab\f0\0b\\\9e\1c\19I^E;\1f\b3t2\02\99P\92\a1\c0\c3\b4bJ\bb\c6\b3\b9Kdw\ad\92\b1~<R\baC\b39\86\a6\ba"
+    "\8e_\04\80\cf\bb\c4[\e7\cbf\84")
+  
+  (data $11 
+    "\bf\b9/\a1\08\f9\f9\bc\8e]\e2\edJ\ef\13\\`6f5ef\ff1v\e76B:\1fW\95\cbd\fa\8d\18\df*\a8:\bbt\c8\ee\a8\de\e2\8f\d7\85b\1c\90\d4\a65\11\c81\9dH?\n\\\ec;"
+    "A\96\e5\86t"))

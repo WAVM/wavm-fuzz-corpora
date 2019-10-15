@@ -1,0 +1,138 @@
+(module
+  (type $0 (func (param funcref f64 i64)))
+  (type $1 (func (param v128 f32 f32) (result f32)))
+  (type $2 (func (param i32 externref) (result externref i32)))
+  (type $3 (func (param v128 funcref) (result externref)))
+  (type $4 (func (param i64) (result f32 f32)))
+  (type $5 (func (param f64) (result i32)))
+  (import "env" "memory" (memory $7 29 49227 shared))
+  (import "env" "memory" (memory $8 20 65225))
+  (import "env" "table" (table $6 87 4294967295 funcref))
+  (import "env" "func0" (func $13 (param funcref f64 i64)))
+  (import "env" "func1" (func $14 (param i32 externref) (result externref i32)))
+  (memory $9  55 56079)
+  (global $10  f32 (f32.const 0x1.7eae3ep+29))
+  (elem $11 declare externref
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern))
+  
+  (func $15 (type $1)
+    (param $0 v128)
+    (param $1 f32)
+    (param $2 f32)
+    (result f32)
+    (local $3 i64)
+    memory.size $8
+    f32.const 0x1.eafe32p+95
+    f32.nearest
+    f32.floor
+    i64.trunc_f32_u
+    loop $loop (result v128)
+      local.get $1
+      f32.nearest
+      local.get $2
+      f32.abs
+      i64.trunc_f32_s
+      global.get $10
+      local.tee $1
+      local.tee $2
+      local.tee $1
+      ref.null func
+      br $loop
+    end ;; $loop
+    ref.null func
+    drop
+    local.set $0
+    i64.store8 $9 offset=682294639
+    local.get $2
+    local.set $2
+    local.get $3
+    local.set $3
+    elem.drop $11
+    atomic.fence
+    memory.size $8
+    table.get $6
+    drop
+    atomic.fence
+    atomic.fence
+    f32.const -0x1.6503d6p+89
+    ref.null extern
+    drop
+    br 0
+    )
+  
+  (func $16 (type $3)
+    (param $0 v128)
+    (param $1 funcref)
+    (result externref)
+    (local $2 f32)
+    (local $3 funcref)
+    (local $4 f32)
+    memory.size $8
+    f32.convert_i32_s
+    local.tee $4
+    f32.nearest
+    local.get $1
+    local.tee $3
+    local.get $1
+    local.set $3
+    local.tee $1
+    global.get $10
+    f32.trunc
+    local.tee $4
+    nop
+    local.tee $2
+    f32.sqrt
+    drop
+    unreachable
+    )
+  
+  (func $17 (type $4)
+    (param $0 i64)
+    (result f32 f32)
+    (local $1 f64)
+    (local $2 f64)
+    (local $3 v128)
+    (local $4 i64)
+    data.drop $12
+    local.get $2
+    i64.trunc_f64_u
+    atomic.fence
+    i64.extend8_s
+    f32.convert_i64_s
+    f64.const 0x1.1e442c42d0e26p+368
+    atomic.fence
+    loop $loop (param f64) (result i32)
+      atomic.fence
+      global.get $10
+      f32.trunc
+      f32.abs
+      i32.const -919615544
+      data.drop $12
+      drop
+      unreachable
+    end ;; $loop
+    unreachable
+    )
+  
+  (data $12 (memory $8) (i32.const -2062365374)
+    "rS\d2sDh\d4\f4\a4\ddIe"))

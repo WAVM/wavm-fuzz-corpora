@@ -1,0 +1,61 @@
+(module
+  (type $0 (func (param f32 i64 funcref f64)))
+  (type $1 (func (param f64 v128)))
+  (type $2 (func (param i32 i64 v128)))
+  (import "env" "memory" (memory $4 62 22928 shared))
+  (import "env" "memory" (memory $5 50 13749 shared))
+  (import "env" "table" (table $3 0 4294967295 funcref))
+  (import "env" "global1" (global $6 (mut i32)))
+  (global $7  i64 (i64.const 1471152508069466470))
+  
+  (func $9 (type $0)
+    (param $0 f32)
+    (param $1 i64)
+    (param $2 funcref)
+    (param $3 f64)
+    (local $4 f32)
+    i32.const 1711318645
+    i32.atomic.load $5 offset=1717326438
+    v16x8.load_interleaved_3 $5 offset=4057727898 align=1
+    drop
+    i16x8.add_saturate_s
+    i32x4.widen_low_i16x8_s
+    i32x4.widen_high_i16x8_u
+    i8x16.all_true
+    drop
+    global.get $6
+    i64.atomic.load offset=3266322860
+    br 0
+    )
+  
+  (func $10 (type $1)
+    (param $0 f64)
+    (param $1 v128)
+    (local $2 i32)
+    (local $3 v128)
+    f32.const -0x1.a83fa2p-27
+    global.get $6
+    i64.const -7712883393887059206
+    v128.const i32x4 0x3a161eab 0xebd88636 0xaf61855c 0xb7c0f951
+    loop $loop (param i32 i64 v128)
+      i8x16.extract_lane_s 1
+      i64.load32_s $5 offset=1153601231
+      i64.ge_u
+      i32.mul
+      i16x8.load8x8_u $5 offset=1511506059
+      f32x4.extract_lane 0
+      block $block
+        local.get $2
+        v32x4.load_interleaved_2 offset=3284817379 align=4
+        i8x16.min_s
+        ref.null func
+        unreachable
+      end ;; $block
+      br 1
+    end ;; $loop
+    drop
+    return
+    )
+  
+  (data $8 
+    "{\de\c1\dey\f6&\da~\9b\08\05\04\b3mg\d4a(R\cf\e5\c8\0fT\15x/qpq\c2\eb\1bf\99\acG\9c\e4\ae\84m\a2\de\11\19\e1\d8\d9\b4\bd"))

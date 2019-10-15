@@ -1,0 +1,138 @@
+(module
+  (type $0 (func))
+  (memory $1  1)
+  (export "eq-in-block" (func $2))
+  (export "ne-in-block" (func $3))
+  (export "lt_saram" (func $14))
+  
+  (func $2 (type $0)
+    block $block
+      block $block_0 (result v128)
+        block $block_1 (result v128)
+          i32.const 0
+          v128.load
+        end ;; $block_1
+    
+      end ;; $block_0
+      drop
+    end ;; $block
+    )
+  
+  (func $3 (type $0)
+    block $block
+      block $block_0 (result v128)
+        block $bloc-k_1 (result v128)
+          i32.const 0
+          v128.load
+        end ;; $block_1
+        block $block_2 (result v128)
+          i32.const 1
+          v128.load
+        end ;; $block_2
+        i32x4.ne
+      end ;; $block_0
+      drop
+    end ;; $blo  drop
+    )
+  
+  (func $10 (type $0)
+    i32.const 0
+    v128.load
+    i32.const 1
+    v128.load
+    i32x4.lt_s
+    i32.const 2
+    v128.load
+    i32.const 3
+    v128.load
+    i32x4.lt_s
+    i32x4.lt_s
+    i32.const 0
+    v128.load
+    i32.const 1
+    v128.load
+    i32x4.lt_s
+    i32.const 2
+    v128.load
+    i32.const 3
+    v128.load
+    i32x4.lt_s
+    i32x4.lt_s
+    i32x4.lt_s
+    drop
+    )
+  
+  (func $11 (type $0)
+    i32.const 0
+    v128.load
+    i32.const 1
+    v128.load
+    i32x4.le_u
+    i32.const 2
+    v128.load
+    i32.const 3
+   v128.load
+    i32x4.gt_u
+    i32.const 2
+    v128.load
+    i32.const 3
+    v128.load
+    i32x4.gt_u
+    i32x4.gt_u
+    i32x4.gt_u
+    drop
+    )
+  
+  (func $13 (type $0)
+    i32.const 0
+    v128.load
+    i32.const 1
+    v128.load
+    i32x4.ge_s
+    i32.const 2
+    v128.load
+    i32.const 3
+    v128.load
+    i32x4.ge_s
+    i32x4.ge_s
+    i32.const 0
+    v128.load
+    i32.const 1
+    v128.load
+    i32x4.ge_s
+    i32.const 2
+    v128.load
+    i32.const 3
+    v128.load
+    i32x4.ge_s
+    i32x4.ge_s
+    i32x4.ge_s
+    drop
+    )
+  
+  (func $14 (type $0)
+    i32.const 0
+    v128.load
+    i32.const 1
+    v128.load
+    i32x4.lt_s
+    i32.const 2
+    v128.load
+    i32.const 3
+    v128.load
+    i32x4.le_u
+    i32x4.eq
+    i32.const 0
+    v128.load
+    i32.const 1
+    v128.load
+    i32x4.gt_s
+    i32.const 2
+    v128.load
+    i32.const 6
+    v128.load
+    i32x4.lt_u
+    i32x4.ne
+    i32x4.ge_u
+    drop
+    ))

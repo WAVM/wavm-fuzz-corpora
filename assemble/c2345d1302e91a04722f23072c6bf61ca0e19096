@@ -1,0 +1,9 @@
+
+ (func i32.load16_u offset ) (func  i64.load16_u offset=)
+ (func 
+  i32.load16_u offset=
+0)(func  i32.load16_u offset=)(func
+ i32.load16_u offset )(func  i32.load16_s offset=_s offof)
+ (func 
+  i32.load16_u offset=
+0)(func  i32.load16_s offset=))

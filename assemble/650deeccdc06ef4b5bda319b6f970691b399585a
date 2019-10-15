@@ -1,0 +1,1 @@
+(func(v128.load align=5)v128.load align=6(v128.load align=5)v128.load align=5)

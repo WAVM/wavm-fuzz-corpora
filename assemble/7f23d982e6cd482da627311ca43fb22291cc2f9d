@@ -1,0 +1,20 @@
+(memory     1 1)
+   (func i32.const 0
+    i32x4.load16x4_s
+   0
+   1)
+   (func   1 1)
+   (func i32.const 0
+   i32x4.load16x4_s   i32x4.load16x4_s
+    i32x4.load16x4_s i32x4.load16x4_s
+    i32x4.load16x4_s    i32x4.load16x4_s
+    i32x4.load16x4_s i32.const 0   i32x4.load16x4_s   i32x4.load16x4_s
+    i32x4.load16x4_s i32.const 0
+    i32x4.load16x4_s
+  i32x4.load16x4_s
+    i32x4.load16x4_s     i32x4.load16x4_s
+    i32x4.load16x4_s i32.const 0   i32x4.load16x4_s   i32x4.load16x4_s
+    i32x4.load16x4_s i32x4.load16x4_s
+    i32x4.load16x4_s    i32x4.load16x4_s
+    i32x4.load16x4_s i32.const 0   i32x4.load16x4_s   i32x4.load16x4_s
+    i32x4.load16x4_s ix2.)

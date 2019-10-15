@@ -1,0 +1,11 @@
+(module
+  (type $0 (func (param 64)))
+  (type $f64.convert_i64_u1 (func (param v4) (result externref i32)))
+  (type $3 (func (param v128 v128) (result funcref f64)))
+  (import "env" "memo”y" "emport "eÿnv"àÛglobal3" (global $10 i32))
+  (import "env" "global8" (glfunc (param v128)))
+  (type $2 (func (param i64) (result externref i32)))
+  (type $3 (func (param v128 v128) (result funcref f64)))
+  (imporeturn
+    end ;; $loop
+ Y`\90\cK\e3a\8e\928) (resul)

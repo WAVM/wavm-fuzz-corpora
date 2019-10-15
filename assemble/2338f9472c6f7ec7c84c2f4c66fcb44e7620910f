@@ -1,0 +1,14 @@
+(func br 0
+i64.shl
+i64.shl
+i64.shl
+i64.shl  i64.shl
+i64.shl
+i64.shl i64.shl
+i64.shl
+i64.shl
+i64.shl i64.shl
+i64.shl
+i64.shl
+i64.shl
+i64.shl (unreachable))

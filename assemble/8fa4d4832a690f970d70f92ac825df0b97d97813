@@ -1,0 +1,48 @@
+(module
+  (type $0 (func (result f64 externref)))
+  (type $1 (func (param f64)))
+  (type $2 (func (param externref i32 i64) (result i32 i32)))
+  (import "env" "table" (table $3 27 4294967295 externref))
+  (import "env" "func0" (func $7 (result f64 externref)))
+  (import "env" "func1" (func $8 (param externref i32 i64) (result i32 i32)))
+  (elem $4 declare funcref
+    (ref.func $8) (ref.func $7) (ref.func $7) (ref.func $8)
+    (ref.null func) (ref.func $9) (ref.null func) (ref.func $9)
+    (ref.func $9) (ref.func $8) (ref.func $9) (ref.func $9)
+    (ref.func $8) (ref.func $9) (ref.func $8) (ref.null func)
+    (ref.null func) (ref.func $8) (ref.func $8) (ref.func $9)
+    (ref.func $8) (ref.null func) (ref.null func) (ref.null func)
+    (ref.null func) (ref.func $9) (ref.null func) (ref.func $7)
+    (ref.null func) (ref.func $8) (ref.func $9) (ref.null func)
+    (ref.null func) (ref.func $8) (ref.func $9) (ref.func $7)
+    (ref.func $8) (ref.func $9) (ref.func $9) (ref.null func)
+    (ref.func $7) (ref.func $7) (ref.null func) (ref.func $9)
+    (ref.func $8) (ref.null func) (ref.null func) (ref.null func)
+    (ref.null func) (ref.func $7) (ref.func $8) (ref.func $9)
+    (ref.func $9) (ref.func $9) (ref.func $9) (ref.func $9)
+    (ref.func $7) (ref.func $9) (ref.null func) (ref.func $8)
+    (ref.func $9) (ref.func $8) (ref.func $9) (ref.func $7)
+    (ref.func $8) (ref.func $8) (ref.func $9) (ref.func $9)
+    (ref.null func) (ref.func $7) (ref.func $9) (ref.func $8)
+    (ref.func $7) (ref.null func) (ref.func $9) (ref.func $9)
+    (ref.func $7) (ref.null func) (ref.func $8) (ref.func $8)
+    (ref.func $8) (ref.func $8) (ref.func $9) (ref.func $7)
+    (ref.func $9) (ref.func $7) (ref.null func))
+  
+  (func $9 (type $1)
+    (param $0 f64)
+    (local $1 funcref)
+    (local $2 i32)
+    v128.const i32x4 0x6d040511 0x68800800 0x99444b9d 0xc07d9da6
+    elem.drop $4
+    i32x4.widen_high_i16x8_u
+    i16x8.widen_high_i8x16_u
+    unreachable
+    )
+  
+  (data $5 
+    "\ac\c4\8a3\06Y_wbf\e2j\e4\fd\f7(\bc'\f2M\1a\ab\f5=\des\fel\9c\1fs6!\e1\ae\88\f7\be;\8b`\d5e\93\16}F\f9\c6\93\c7\f5(\deWs\f2\d1p\1a\ef.\c2\8b"
+    "\de\f7'\90=\9d\df%cO8[\f4{\a3\fb#\b0\9d\f8\be[!}\13\bd\7f\d5")
+  
+  (data $6 
+    "\08\c2*\ae\06\de\fa\9b\a75=\8c\01e\edj\cf\ad\c8\bb\08\a8\94L\b1\9f\10\b7\0c\ca\c8\ef"))

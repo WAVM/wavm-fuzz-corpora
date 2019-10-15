@@ -1,0 +1,97 @@
+(module
+  (type $0 (func (param v128 f32 f64) (result f64 externref)))
+  (type $1 (func (param f32 f32 v128) (result externref)))
+  (type $2 (func (param funcref)))
+  (type $3 (func (param externref)))
+  (type $4 (func (param v128 f32) (result i32)))
+  (import "env" "table" (table $5 89 4294967295 shared externref))
+  (import "env" "table" (table $6 64 4294967295 shared externref))
+  (import "env" "func0" (func $14 (param externref)))
+  (memory $8  74 51372 shared)
+  (table $7  30 4294967295 externref)
+  (global $9  (mut externref) (ref.null extern))
+  (global $10  (mut i32) (i32.const 81094720))
+  (elem $11 exception_type)
+  
+  (func $15 (type $0)
+    (param $0 v128)
+    (param $1 f32)
+    (param $2 f64)
+    (result f64 externref)
+    (local $3 i32)
+    i64.const -3136003337763126667
+    ref.null func
+    data.drop $12
+    call $17
+    global.get $10
+    i64.atomic.load32_u offset=3715446560
+    global.get $10
+    i32x4.load16x4_u offset=2712880245 align=2
+    f32.const -0x1.5429c2p+70
+    loop $loop (param v128 f32) (result i32)
+      local.get $3
+      i64.load32_u offset=2990656875
+      i64.popcnt
+      i64.clz
+      global.get $9
+      ref.null func
+      ref.null func
+      ref.null func
+      ref.is_null
+      table.get $7
+      call $14
+      ref.null extern
+      unreachable
+    end ;; $loop
+    global.set $10
+    i64.lt_s
+    global.set $10
+    local.get $0
+    drop
+    local.get $1
+    drop
+    unreachable
+    )
+  
+  (func $16 (type $1)
+    (param $0 f32)
+    (param $1 f32)
+    (param $2 v128)
+    (result externref)
+    (local $3 f32)
+    data.drop $13
+    local.get $1
+    local.set $1
+    elem.drop $11
+    local.get $1
+    f32.sqrt
+    f32.ceil
+    memory.size
+    local.get $0
+    f32.abs
+    i32.trunc_sat_f32_s
+    i32.atomic.rmw16.and_u offset=51471133
+    i64.atomic.load8_u offset=2627044273
+    i64.extend8_s
+    data.drop $13
+    drop
+    ref.null func
+    ref.null extern
+    ref.null extern
+    return
+    )
+  
+  (func $17 (type $2)
+    (param $0 funcref)
+    table.size $6
+    ref.null extern
+    call $14
+    table.get $7
+    return
+    )
+  
+  (data $12 (i32.const -887965624))
+  
+  (data $13 
+    "\80\d0\ed\d5\ec\a0\0e\fa5c_q\02r\03\91\12\05\b0^\b2\c1\c9[OT\d4c\cb\97\95(\bfPwq'I0`\bc\97\a7\d7}UuY\f6\8e\01\ad\bc\e4J\db\8b\82\n'\b9~\a5["
+    "\a3\04j\d7&\b2\d5\84V\be\d8\1f\cf\08\08\f3\b6}\d7*YiM\07\e9|\c50\93\aa%.\ca"))

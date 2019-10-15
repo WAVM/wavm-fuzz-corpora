@@ -1,0 +1,7 @@
+(func br 0 f32x4.ge
+f32x4.ge
+f32x4.ge
+f32x4.ge f32x4.ge
+f32x4.ge
+f32x4.ge
+f32x4.ge)

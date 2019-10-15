@@ -1,0 +1,1 @@
+(func(call_indirect $z(call_indirect $n(call_indirect $:(call_indirect $Z))Z)))

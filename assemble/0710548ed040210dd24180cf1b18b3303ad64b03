@@ -1,0 +1,74 @@
+(module
+  (type $0 (func (param externref)))
+  (type $1 (func (param f32 i32 externref v128)))
+  (type $2 (func (param i64)))
+  (type $3 (func (param externref) (result funcref)))
+  (type $4 (func (param f64) (result f64 f32 i32 v128)))
+  (type $5 (func (result f64 v128)))
+  (import "env" "table" (table $6 40 4294967295 funcref))
+  (import "env" "table" (table $7 42 4294967295 funcref))
+  (import "env" "global2" (global $9 funcref))
+  (import "env" "global4" (global $10 (mut f64)))
+  (import "env" "func0" (func $14 (param f32 i32 externref v128)))
+  (import "env" "func1" (func $15 (param externref) (result funcref)))
+  (table $8  4 4294967295 externref)
+  (global $11  funcref (ref.null func))
+  (global $12  f32 (f32.const 0x1.de4ab2p+31))
+  (global $13  (mut i64) (i64.const 8837332144150024545))
+  
+  (func $16 (type $0)
+    (param $0 externref)
+    (local $1 v128)
+    (local $2 f32)
+    (local $3 v128)
+    atomic.fence
+    global.get $13
+    i64.extend16_s
+    drop
+    i64.const 9030574885623222388
+    drop
+    nop
+    i64.const 2311839823791039603
+    global.set $13
+    local.get $1
+    unreachable
+    )
+  
+  (func $17 (type $2)
+    (param $0 i64)
+    (local $1 i64)
+    (local $2 i32)
+    (local $3 i32)
+    (local $4 f64)
+    table.size $7
+    local.get $0
+    i32.wrap_i64
+    f64.convert_i32_s
+    i32.trunc_sat_f64_s
+    f64.convert_i32_s
+    local.get $0
+    i64.eqz
+    if $if (param f64) (result f64 f32 i32 v128)
+      i64.trunc_sat_f64_s
+      i32.const 1414979201
+      i32.const -1163280036
+      i32.lt_u
+      global.get $9
+      loop $loop (result f64 v128)
+        local.get $3
+        local.set $2
+        ref.null extern
+        br 2
+      end ;; $loop
+      br 1
+    else
+      i64.const 6577190718892755081
+      call $17
+      f64.neg
+      i64.trunc_f64_s
+      drop
+      local.get $0
+      return
+    end ;; $if
+    return
+    ))

@@ -1,0 +1,112 @@
+(module
+  (type $0 (func (param externref i32 i32)))
+  (type $1 (func (param externref f64)))
+  (type $2 (func (param i64 funcref i64) (result i64)))
+  (type $3 (func (param i64) (result funcref)))
+  (type $4 (func (param funcref) (result v128 externref)))
+  (type $5 (func (param i32 f32 f64 f32) (result v128)))
+  (import "env" "global1" (global $7 i32))
+  (import "env" "global3" (global $8 i32))
+  (import "env" "global5" (global $9 f32))
+  (import "env" "global7" (global $10 externref))
+  (import "env" "func0" (func $18 (param i64) (result funcref)))
+  (table $6  72 4294967295 externref)
+  (global $11  (mut v128) (v128.const i32x4 0x1493f679 0x9fd40e5d 0xf8d94fff 0xaf75be5f))
+  (global $12  f64 (f64.const 0x1.0c0a498e2b14bp+62))
+  (global $13  (mut funcref) (ref.null func))
+  (global $14  i64 (i64.const 8891984319290729189))
+  (global $15  (mut f64) (f64.const 0x1.1fd9feb79f705p+63))
+  
+  (func $19 (type $0)
+    (param $0 externref)
+    (param $1 i32)
+    (param $2 i32)
+    (local $3 funcref)
+    (local $4 f64)
+    (local $5 v128)
+    (local $6 i64)
+    ref.null extern
+    local.get $1
+    global.get $12
+    i32.trunc_f64_s
+    global.get $13
+    loop $loop (param funcref) (result v128 externref)
+      global.get $7
+      local.set $1
+      global.get $15
+      f64.trunc
+      i32.trunc_f64_s
+      global.get $10
+      drop
+      i64.extend_i32_u
+      table.size $6
+      local.set $1
+      ref.null func
+      global.set $13
+      local.set $6
+      ref.null extern
+      ref.is_null
+      local.set $1
+      br 1
+    end ;; $loop
+    unreachable
+    )
+  
+  (func $20 (type $1)
+    (param $0 externref)
+    (param $1 f64)
+    (local $2 f32)
+    (local $3 f32)
+    global.get $12
+    f64.nearest
+    i32.const -245400939
+    i32.extend16_s
+    local.get $3
+    local.get $1
+    f64.const 0x1.e0be47dc72783p-795
+    f64.nearest
+    f32.demote_f64
+    block $block (param i32 f32 f64 f32) (result v128)
+      i64.trunc_f32_s
+      i64.popcnt
+      local.get $1
+      i32.trunc_f64_s
+      f32.const 0x1.1e1f74p+79
+      ref.null func
+      return
+    end ;; $block
+    drop
+    br 0
+    )
+  
+  (func $21 (type $2)
+    (param $0 i64)
+    (param $1 funcref)
+    (param $2 i64)
+    (result i64)
+    (local $3 i32)
+    (local $4 i32)
+    local.get $2
+    f32.const -0x1.af028ep-40
+    i32.trunc_f32_u
+    i32.extend16_s
+    i64.extend_i32_u
+    local.get $4
+    local.get $4
+    i32.ne
+    i32.extend8_s
+    br_if 0
+    f32.const -0x1.53d19ap-23
+    global.get $12
+    global.get $12
+    i64.reinterpret_f64
+    global.get $10
+    unreachable
+    )
+  
+  (data $16 
+    "\c3\0ce@\\\91tE\14\cfCA\e4\ec\deM\d9\16\fc\7f\d0\dc\ff\fa\1e\f0\e0\e1B\b4\033\b5\dc#\fbm\1a\e1o?\e9!j\a5h_p\a3\84\ca\9f\84g2\e9\12G\e1\af\ce\11H\9b"
+    "T\f2c\01\c1V!\da4e\ef(\03\"\1c\ce\05\18\c5sN,t\b0\d7\db*\0fp\b9A\15")
+  
+  (data $17 
+    "\9a"))

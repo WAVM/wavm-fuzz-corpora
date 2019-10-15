@@ -1,0 +1,3 @@
+(func br 0
+i32.trunc_sat_f32_s br 0
+i32.trunc_sat_f32_s br 0)

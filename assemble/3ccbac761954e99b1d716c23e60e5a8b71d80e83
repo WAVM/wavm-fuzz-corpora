@@ -1,0 +1,109 @@
+(module
+  (type $0 (func (param v128 v128 v128 externref) (result v128)))
+  (type $1 (func (param v128) (result v128 externref)))
+  (type $2 (func (param i64) (result externref)))
+  (type $3 (func (result funcref v128 funcref)))
+  (import "env" "memory" (memory $7 15 32439 shared))
+  (import "env" "memory" (memory $8 87 1424))
+  (import "env" "global1" (global $10 (mut i64)))
+  (import "env" "global3" (global $11 v128))
+  (import "env" "global7" (global $12 (mut f64)))
+  (memory $9  82 26892 shared)
+  (table $4  2 4294967295 shared funcref)
+  (table $5  22 4294967295 shared externref)
+  (table $6  72 4294967295 funcref)
+  (global $13  (mut f32) (f32.const 0x1.f5cc1ap+30))
+  (global $14  i64 (i64.const -3673767461384049092))
+  (global $15  (mut i64) (i64.const 5351083260192015845))
+  (global $16  (mut i32) (i32.const -2134108629))
+  (global $17  funcref (ref.null func))
+  
+  (func $18 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (param $2 v128)
+    (param $3 externref)
+    (result v128)
+    (local $4 i64)
+    (local $5 i32)
+    (local $6 f32)
+    (local $7 v128)
+    global.get $10
+    global.get $10
+    loop $loop (param i64) (result externref)
+      loop $loop_0
+        local.get $0
+        i32x4.any_true
+        i32.popcnt
+        local.get $2
+        i16x8.extract_lane_u 4
+        table.size $4
+        i64.atomic.load $9 offset=402587392
+        i64.const -2427094683979088471
+        i64.gt_s
+        i32.const -576939559
+        local.get $1
+        local.set $0
+        i32.atomic.rmw16.and_u $9 offset=1034407215
+        i32.atomic.rmw16.and_u $8 offset=736097272
+        i32.div_u
+        local.set $5
+        ref.null func
+        drop
+      end ;; $loop_0
+      drop
+      local.get $3
+      unreachable
+    end ;; $loop
+    ref.null func
+    ref.is_null
+    drop
+    ref.is_null
+    drop
+    global.set $15
+    local.get $5
+    local.set $5
+    global.get $17
+    ref.null func
+    ref.is_null
+    ref.null extern
+    ref.null extern
+    drop
+    table.set $5
+    drop
+    local.get $1
+    unreachable
+    )
+  
+  (func $19 (type $1)
+    (param $0 v128)
+    (result v128 externref)
+    (local $1 i32)
+    (local $2 funcref)
+    (local $3 i64)
+    (local $4 f32)
+    f32.const 0x1.575a22p-39
+    local.set $4
+    atomic.fence
+    atomic.fence
+    local.get $4
+    f32.ceil
+    f32.const -0x1.0e5edap-105
+    local.set $4
+    global.set $13
+    global.get $12
+    table.size $4
+    local.get $3
+    global.get $17
+    loop $loop (result funcref v128 funcref)
+      global.get $12
+      ref.null extern
+      ref.is_null
+      table.get $5
+      br $loop
+    end ;; $loop
+    ref.is_null
+    i16x8.shr_u
+    ref.null func
+    unreachable
+    ))

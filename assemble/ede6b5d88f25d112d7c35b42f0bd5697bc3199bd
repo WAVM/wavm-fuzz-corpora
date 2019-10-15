@@ -1,0 +1,47 @@
+(module
+  (type $0 (func (param externref) (result i32)))
+  (type $1 (func (param f64 funcref i32) (result i64 externref)))
+  (type $2 (func (param f32 f64 funcref funcref) (result i32 f32)))
+  (type $3 (func (param i64 i32) (result f32 externref)))
+  (type $4 (func (param i32 i32 f64) (result externref)))
+  (import "env" "memory" (memory $8 7 12243 shared))
+  (import "env" "table" (table $5 44 4294967295 shared externref))
+  (import "env" "global0" (global $10 i64))
+  (import "env" "global2" (global $11 f64))
+  (import "env" "global4" (global $12 (mut i64)))
+  (import "env" "global5" (global $13 (mut f32)))
+  (import "env" "global7" (global $14 (mut f64)))
+  (import "env" "func0" (func $20 (param externref) (result i32)))
+  (import "env" "func1" (func $21 (param f32 f64 funcref funcref) (result i32 f32)))
+  (import "env" "func2" (func $22 (param i64 i32) (result f32 externref)))
+  (import "env" "func3" (func $23 (param i32 i32 f64) (result externref)))
+  (memory $9  40 18176 shared)
+  (table $6  26 4294967295 shared funcref)
+  (table $7  97 4294967295 externref)
+  (global $15  (mut funcref) (ref.null func))
+  (global $16  (mut f32) (f32.const 0x1.3e6762p+30))
+  (global $17  externref (ref.null extern))
+  (global $18  v128 (v128.const i32x4 0x85a3a18d 0xffb5b506 0xbd5526c5 0x5b961747))
+  
+  (func $24 (type $1)
+    (param $0 f64)
+    (param $1 funcref)
+    (param $2 i32)
+    (result i64 externref)
+    (local $3 externref)
+    (local $4 i64)
+    (local $5 f32)
+    (local $6 i64)
+    global.get $12
+    local.get $6
+    i64.clz
+    i64.ge_u
+    v32x4.load_interleaved_4 offset=2711258780 align=8
+    i32x4.mul
+    i8x16.any_true
+    unreachable
+    )
+  
+  (data $19 (i32.const -154926906)
+    "'\c8\d5DR\c4\1eBhp\d0\01xI7\dfyML\07\81Y\e9\13\ed\a3\bcF\b7\81@\d88<\d0\b4\8f\\t\b2\00\ef\9b%[4\f0\01Z12\053\f9F\0f\bbe\c1\14oN\e4`"
+    "oUWJZ\01lc$\a3\153\c3l&c"))

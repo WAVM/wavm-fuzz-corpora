@@ -1,0 +1,1 @@
+(func(i32.const -90)drop(i32.const -9)drop(i32.const -1)drop)

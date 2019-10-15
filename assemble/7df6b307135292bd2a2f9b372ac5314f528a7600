@@ -1,0 +1,80 @@
+(module
+  (type $0 (func (param i64 f32 i32 i32) (result funcref funcref)))
+  (type $1 (func (param v128) (result f32 i64)))
+  (type $2 (func (param i32 f32 i32)))
+  (type $3 (func (param v128)))
+  (type $4 (func (result v128 funcref externref f64)))
+  (import "env" "table" (table $5 33 4294967295 externref))
+  (import "env" "func0" (func $13 (param v128) (result f32 i64)))
+  (table $6  60 4294967295 shared externref)
+  (table $7  17 4294967295 funcref)
+  (global $8  (mut i64) (i64.const -8667113827681297502))
+  (global $9  funcref (ref.null func))
+  (global $10  v128 (v128.const i32x4 0x9b3142a2 0xf4ed0ca9 0x0772c9a1 0xe5fa8dc2))
+  (global $11  i32 (i32.const -850847922))
+  (global $12  (mut funcref) (ref.null func))
+  
+  (func $14 (type $0)
+    (param $0 i64)
+    (param $1 f32)
+    (param $2 i32)
+    (param $3 i32)
+    (result funcref funcref)
+    (local $4 v128)
+    (local $5 v128)
+    (local $6 v128)
+    (local $7 v128)
+    v128.const i32x4 0x69845267 0x63200723 0x757cc7d6 0x9353e53d
+    i32x4.all_true
+    i32.eqz
+    local.tee $3
+    local.get $5
+    local.set $5
+    i32.extend16_s
+    i32.popcnt
+    i32.extend16_s
+    i32.extend16_s
+    f32.const 0x1.17d40cp-121
+    f32.trunc
+    drop
+    i32.extend16_s
+    table.get $6
+    unreachable
+    )
+  
+  (func $15 (type $2)
+    (param $0 i32)
+    (param $1 f32)
+    (param $2 i32)
+    (local $3 externref)
+    (local $4 i64)
+    (local $5 v128)
+    unreachable
+    )
+  
+  (func $16 (type $3)
+    (param $0 v128)
+    (local $1 f32)
+    (local $2 i32)
+    (local $3 v128)
+    atomic.fence
+    global.get $10
+    v128.not
+    local.tee $0
+    loop $loop (result v128 funcref externref f64)
+      local.get $1
+      f32.floor
+      local.get $0
+      call $16
+      f32.nearest
+      i32.reinterpret_f32
+      table.size $7
+      i32.shl
+      f32.reinterpret_i32
+      i32.reinterpret_f32
+      table.get $5
+      return
+    end ;; $loop
+    drop
+    return
+    ))

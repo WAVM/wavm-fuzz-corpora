@@ -1,0 +1,1 @@
+(memory 5)(func(drop(f32.load offset=452(i32.const 1(drop(f32.load(i32.const 1)))))))

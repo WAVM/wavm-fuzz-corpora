@@ -1,0 +1,5 @@
+( 
+module
+(memory 21)(func 
+ unreachable
+ i64.atomic.rmw16.xchg_u unreachable))

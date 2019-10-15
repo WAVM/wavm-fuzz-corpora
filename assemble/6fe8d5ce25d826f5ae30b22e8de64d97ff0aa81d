@@ -1,0 +1,64 @@
+(module
+  (type $0 (func (param i64 f64 f64 i32) (result v128)))
+  (type $1 (func (param i64 funcref) (result f64 externref)))
+  (type $2 (func (result v128 f32)))
+  (type $3 (func (param externref funcref v128 f32) (result f64)))
+  (import "env" "table" (table $4 25 4294967295 shared externref))
+  (import "env" "table" (table $5 35 4294967295 shared funcref))
+  (import "env" "global0" (global $7 (mut v128)))
+  (import "env" "global2" (global $8 i32))
+  (import "env" "func0" (func $12 (param i64 funcref) (result f64 externref)))
+  (import "env" "func1" (func $13 (result v128 f32)))
+  (import "env" "func2" (func $14 (param externref funcref v128 f32) (result f64)))
+  (memory $6  77 10482 shared)
+  (global $9  v128 (v128.const i32x4 0x5164412f 0x8fd514d9 0x6a40613f 0xf8e15570))
+  (elem $10 externref
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern))
+  
+  (func $15 (type $0)
+    (param $0 i64)
+    (param $1 f64)
+    (param $2 f64)
+    (param $3 i32)
+    (result v128)
+    (local $4 i32)
+    table.size $5
+    i32.const -856459953
+    i32.div_s
+    i32.extend16_s
+    i32.load offset=168102707 align=2
+    v16x8.load_interleaved_3 offset=642981057 align=4
+    i32.const 732295035
+    i32x4.shr_u
+    global.get $7
+    i32x4.add
+    i8x16.ge_u
+    i16x8.ge_u
+    i16x8.widen_high_i8x16_u
+    nop
+    i8x16.abs
+    )
+  
+  (data $11 
+    "t\09PU8k\18i\fbm\ee\0b\dd\d5\d8q\86\d4I5\c3k.x\8d1\e4\ca\deK\e9\8b\ca<\cc\eer\12\d0\9c\0c\a9\0f\baE\1b@\07:\bc\dcZ^\b5\e0'>f]H\c7"))

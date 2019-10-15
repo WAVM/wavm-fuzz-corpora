@@ -1,0 +1,24 @@
+(module
+ (func memory.copy
+4
+  memory.copy
+ $emry.cnc memory.copy
+4
+  memory.copy
+ $emc memory.copy
+4
+  memory.copy
+ $e  memory.copy
+ $icon memory.copy
+
+4
+  memory.copy
+ $i5 memory.copy
+2    memory.copy
+4
+  memory.copy
+ $e  memory.copy
+ $icon memory.copy 
+8  memory.copy
+ $i9 memory.copy
+4  )

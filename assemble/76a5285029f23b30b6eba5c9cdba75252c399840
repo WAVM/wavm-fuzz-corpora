@@ -1,0 +1,21 @@
+(module
+  (type $0 (func (param i64)))
+  (type $1 (func))
+  (import "env" "table" (table $2 48 4294967295 externref))
+  (import "env" "global1" (global $5 i64))
+  (import "env" "global3" (global $6 i32))
+  (import "env" "global5" (global $7 i64))
+  (table $3  46 4294967295 externref)
+  (table $4  38 4294967295 externref)
+  (global $8  (mut funcref) (ref.null func))
+  (global $9  (mut externref) (ref.null extern))
+  (global $10  (mut v128) (v128.const i32x4 0xf5473bfc 0xdfc38ccf 0x6acbede0 0xfd6cc7ea))
+  (elem $11 global
+    $10 $8 $7 $5 $8 $7 $7 $6
+ $8 $10 $6
+    $5 $7 $9 $10 $7 $7 $7 $5
+    $8 $8 $8 $5 $9 $8 $8)
+  
+  (func $14 (type $0)
+    (param $0 i64)
+    \b4Y2B\91\8c\10"))

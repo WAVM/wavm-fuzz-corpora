@@ -1,0 +1,5 @@
+(func $c_f64_s   (block (result f32)
+        (ule)(if i32 (i32.co2))
+        (br_table 0 1 1 (i32.t 1))
+à rop)
+    )   )

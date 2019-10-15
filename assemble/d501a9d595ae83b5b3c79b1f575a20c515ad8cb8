@@ -1,0 +1,17 @@
+(memory 1)(func()(nd_u)(i32.atomic.rmw16.and_u)(i32.atomic.rmw16.and_u
+)(i32.atomic.rmw16.and_u)(
+)(i32.atomic.rmw16.and_u)(i32.atu)(i32.atomic.rmw16.and_u
+)(i32.atomic.rmw16.and_u)(i32.atomic.rmw16.and_u
+)(i32.atomic.rmw16.and_u)(6.and_u)(i32.atomic.rmw16.and_u
+)(i32.atomic.rmw16.and_u)(
+)(i32.atomic.rmw16.and_u)(itu)(i32.atomic.rmw16.and_u
+)(i32.atomic.rmw16.and_u)(i32.atomic.rmw16.and_u
+)(i32.atomic.rmw16.and_u)(i32.atomic.rmw16.and_u)(i32.atomic.rmw16.and_u)(i32.atomic.rmw16.and_u
+)(i32.atomic.rmw16.and_u)(i32.atomic.rmw16.and_u)(i32.atomic.rmw16.and_u
+)(i3a.and_u)(
+)(i32.atomic.rmw16.and_u)(i32.atomic.rmw16.and_u
+)(i32.atomic.rmw16.and_u)(i32.atomic.rmw16.and_u
+)(i32.atomic.rmw16.and_u)(i32.atomic.rmw16.and_u
+)(ia)(i32.atomic.rmw16.and_u)(i32.ato)(i32.atomic.rmw16.and_u)(i32.atomic.rmw16.and_u
+)(i32.atomic.rmw16.and_u)(i32.atomic.rmw16.and_u
+))

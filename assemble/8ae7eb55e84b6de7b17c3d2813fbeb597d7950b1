@@ -1,0 +1,58 @@
+(module
+  (type $0 (func (param f64 i32) (result i32)))
+  (type $1 (func (param f64 f32 f64 externref) (result externref)))
+  (type $2 (func (result f64 externref)))
+  (type $3 (func (param f64 i32 funcref f64) (result f64 f32)))
+  (type $4 (func (param i64 v128) (result externref i64)))
+  (import "env" "table" (table $5 4 4294967295 funcref))
+  (import "env" "func0" (func $10 (result f64 externref)))
+  (import "env" "func1" (func $11 (param f64 i32 funcref f64) (result f64 f32)))
+  (import "env" "func2" (func $12 (param i64 v128) (result externref i64)))
+  (memory $7  61 31490 shared)
+  (memory $8  57 57425 shared)
+  (table $6  37 4294967295 shared externref)
+  
+  (func $13 (type $0)
+    (param $0 f64)
+    (param $1 i32)
+    (result i32)
+    (local $2 externref)
+    (local $3 i64)
+    local.get $3
+    block $block
+      ref.null extern
+      local.set $2
+      table.size $5
+      i32.atomic.load16_u $8 offset=2700186940
+      i64.load8_u $8 offset=2163905469
+      f64.reinterpret_i64
+      i32.trunc_sat_f64_u
+      i64x2.load32x2_u offset=4260368997 align=4
+      f64x2.sqrt
+      unreachable
+    end ;; $block
+    i64x2.splat
+    i16x8.any_true
+    i64.atomic.load16_u $8 offset=1913415001
+    drop
+    call $10
+    unreachable
+    )
+  
+  (func $14 (type $1)
+    (param $0 f64)
+    (param $1 f32)
+    (param $2 f64)
+    (param $3 externref)
+    (result externref)
+    (local $4 v128)
+    (local $5 f32)
+    (local $6 externref)
+    data.drop $9
+    local.get $3
+    local.get $3
+    br 0
+    )
+  
+  (data $9 
+    "\04\04Ti\85\13\180\a92=7\cc"))

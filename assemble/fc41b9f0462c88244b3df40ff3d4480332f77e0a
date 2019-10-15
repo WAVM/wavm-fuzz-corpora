@@ -1,0 +1,4 @@
+  (memory $3 5 rd)
+  (table $2 7147 funcref)  (elem $b
+) 
+ (func $5 (param $0ref)) (data $68;"))

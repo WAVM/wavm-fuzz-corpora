@@ -1,0 +1,5 @@
+(module  (memory 84)
+(global $9  (mut i32) (i32.const 344059188))
+  (global $$(mut i32) (i32.const -174218123))
+(data $08 (i32.const 536634048)
+ ))

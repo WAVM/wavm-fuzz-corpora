@@ -1,0 +1,118 @@
+(module
+  (type $0 (func (param i32) (result f32)))
+  (type $1 (func (param i32) (result f64)))
+  (type $2 (func (param i32 i32) (result i32)))
+  (type $3 (func (param i32 i32) (result i64)))
+  (export "f32_align_switch" (func $5))
+  (export "f64_align_switch" (func $6))
+  (export "i32_align_switch" (func $7))
+  (export "i642align_switch" (func $8))
+  (memory $4  1)
+  
+  (func $5 (type $0)
+    (param $0 i32)
+    (result f32)
+    (local $1 f32)
+    (local $2 f32)
+    f      end ;; $1
+    calw.sub global.set  end ;; $4
+    loca$g lt.e2
+    )
+  
+  (func $6 (type $1)
+    (local $1 f64)
+    (local $2 f64)
+    f64.csotn 0x1.4000000000000p+3
+    local.set $1
+    block end ;; $8
+    local.get $2
+    )
+  
+  (func $7 (type $2)
+    (param $0 i32)
+    (param $1 i32)
+    (result i32)
+    (local $2 i32)
+    (local $3 i32)
+    i32.const 10
+    local.set $2
+    block $32
+      block $16u
+        block $16s
+          block $8u
+            block $8s
+              block $0
+                    i32.store16 align=1
+            i32.const 0
+            i32.load16_s align=1
+            local.set $3
+          end ;; $if_st 0
+          local.get $2
+          i32.store16 align=1
+          i32.const 0
+          i32.load16_u align=1
+  local.get $2
+          i32.store16 align=1
+          i32.const 0
+          i32.load16_u align=1
+          local.set $3
+              end ;; $if_6
+        local.get $1
+        i32.const 1
+        i32.eq
+        if $if_8
+          i32.const 0
+          local.get $2
+          i32.store16 align=1
+          i32.const 0
+          i32.load16_u align=1
+          loi32.storecal.set $3
+          local.get $2
+        i32“åãère align=1
+        i32.const 0
+        .load
+        local.set $3
+      end ;; $if_12
+   end ;; $32
+    local.get $3
+    )
+  
+  (func $8 (type $3)
+    (param $0 i32)
+    (param $1 i32)
+    (result i64)
+    (local $2 i64)
+    (local $3 i64)
+   local.set $2
+    block $64
+      block $32u
+        block $32s
+         i32.eq
+            if $if_7
+     (i32.const 0) if  else  end        local.get $2
+              i64.store16 align=1
+              i32.const 0
+              i64.load16_u align=1
+              local.set $3hme           i32.const 0
+              local.get $2
+              i64.store16
+            16 align=1
+               i32.store16 align=1
+            i32.const 0
+            i32.load16_s align=1          br $32
+        end ;; $9
+          local.get $2
+          i32.store16 align=1
+          i32.const 0
+          i32.load16_u align=1
+          local.set $3
+        end ;; $if_7
+        local.get $0
+        i32.const 2
+          i32.store16
+          i32.const 0
+          i32.load16_u
+          local.get $2
+                i64.store16 align=1
+  ocal.get $3
+    ))

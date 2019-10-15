@@ -1,0 +1,68 @@
+(module
+  (type $0 (func (param i32 v128)))
+  (type $1 (func (param i32 externref funcref funcref) (result externref)))
+  (type $2 (func (param externref)))
+  (type $3 (func (param v128) (result f64)))
+  (type $4 (func (result f32 externref)))
+  (import "env" "global1" (global $6 v128))
+  (import "env" "global3" (global $7 externref))
+  (import "env" "func0" (func $11 (param i32 v128)))
+  (import "env" "func1" (func $12 (param externref)))
+  (table $5  25 4294967295 funcref)
+  (global $8  i64 (i64.const -8948796387559457265))
+  (global $9  (mut v128) (v128.const i32x4 0x8be7d25f 0xc2b932af 0x098173ea 0x0dfe6ed0))
+  
+  (func $13 (type $1)
+    (param $0 i32)
+    (param $1 externref)
+    (param $2 funcref)
+    (param $3 funcref)
+    (result externref)
+    (local $4 funcref)
+    (local $5 i64)
+    v128.const i32x4 0x78262a36 0x437877dd 0x808f9205 0x80e7b3b4
+    i32x4.extract_lane 3
+    data.drop $10
+    global.get $8
+    local.get $4
+    global.get $9
+    local.get $1
+    block $block (result f32 externref)
+      data.drop $10
+      nop
+      ref.null func
+      local.tee $3
+      global.get $6
+      i32x4.extract_lane 2
+      f32.convert_i32_u
+      ref.null extern
+      unreachable
+    end ;; $block
+    drop
+    unreachable
+    )
+  
+  (func $14 (type $3)
+    (param $0 v128)
+    (result f64)
+    (local $1 i64)
+    global.get $6
+    i32x4.extract_lane 3
+    local.get $0
+    i32x4.any_true
+    i32.rem_u
+    i16x8.splat
+    i8x16.extract_lane_u 11
+    data.drop $10
+    i32.popcnt
+    i16x8.splat
+    i32x4.trunc_sat_f32x4_s
+    f64x2.sqrt
+    i16x8.neg
+    i16x8.abs
+    local.get $1
+    unreachable
+    )
+  
+  (data $10 
+    "\9f\df\93nsS\fd\0es\d0<\c8f\bcXy\88\f1\f7\n\99Ul\8e\14\d9\15\c8s\90\cc"))

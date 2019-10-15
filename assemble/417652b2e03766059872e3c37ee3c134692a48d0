@@ -1,0 +1,47 @@
+(module
+  (type $0 (func (param externref f32 i64 f32)))
+  (type $1 (func (param externref) (result i32 f32)))
+  (type $2 (func (param v128) (result i64 externref)))
+  (import "env" "memory" (memory $4 42 63044 shared))
+  (import "env" "global0" (global $7 f64))
+  (import "env" "func0" (func $11 (param externref f32 i64 f32)))
+  (import "env" "func1" (func $12 (param v128) (result i64 externref)))
+  (memory $5  90 12390 shared)
+  (memory $6  0 15328)
+  (table $3  86 4294967295 shared externref)
+  (global $8  (mut externref) (ref.null extern))
+  
+  (func $13 (type $1)
+    (param $0 externref)
+    (result i32 f32)
+    (local $1 funcref)
+    (local $2 i64)
+    (local $3 externref)
+    (local $4 f64)
+    local.get $1
+    local.get $3
+    call $13
+    i32.trunc_f32_s
+    i32.atomic.load $5 offset=1141943823
+    i32.load8_u $6 offset=408034196
+    memory.size
+    i32.extend8_s
+    v64x2.load_interleaved_2 $6 offset=1476633314 align=8
+    i16x8.narrow_i32x4_u
+    i8x16.any_true
+    v128.load $5 offset=2879691427 align=4
+    i8x16.all_true
+    v32x4.load_interleaved_2 $6 offset=2666448294 align=2
+    i8x16.neg
+    i32x4.lt_u
+    v128.store $6 offset=421310135 align=8
+    drop
+    ref.null func
+    unreachable
+    )
+  
+  (data $9 
+    "\87\7fW\af\19=?T\f0}\fc7\97Z\01Z1\c9\f4#\08r\85<\1bs\e0d\80\a0S\f4Et\e1\e2C\de&")
+  
+  (data $10 
+    "\8c\81\8a\bfX\0b\ff\f1\f6\9c\8b\13"))

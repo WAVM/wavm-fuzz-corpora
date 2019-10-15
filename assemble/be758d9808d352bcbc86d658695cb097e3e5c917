@@ -1,0 +1,6 @@
+ (memory $9 1) (func    i32.const 0
+v128.load  i32.const 0
+i32x4.shr_s   
+ i32.const 0
+i32x4.shr_s
+ drop  )

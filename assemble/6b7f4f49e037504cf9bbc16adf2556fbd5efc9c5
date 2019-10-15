@@ -1,0 +1,6 @@
+(module(func (i64.const 4   (blocc_1721)  (i64.atomic.store32 (i64.atomic.store32  (i64.atomic.store32
+ (i64.const 4
+ 
+ (i64.atomic.store32 (i64.atomic.store32))(i64.atomic.store32 ()) (i64.atomic.store32  (i64.atomic.store32 )))  (i64.atomic.store32 ) (.omic.)) (i64.atomic.store32  (i64.atomic.store32 )))  (i64.atomic.store32 )  (i64.atomic.store32(i64.atomic.store32)
+   (.s )
+ (i64.atomic.store32 (i64.atomic.store32))))omic.stor) (i64.atomic.store32 )(i64.atomic.store32)a0)))

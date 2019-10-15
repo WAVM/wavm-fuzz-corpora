@@ -1,0 +1,17 @@
+(func br 0
+i32.lt_u i32.lt_u
+i32.lt_u i32.lt_u
+i32.lt_u i32.lt_u
+i32.lt_u i32.lt_u
+i32.lt_u
+i32.lt_u i32.lt_u
+i32.lt_u i32.lt_u
+i32.lt_u i32.lt_u
+i32.lt_u i32.lt_u
+i32.lt_u i32.lt_u
+i32.lt_u i32.lt_u
+i32.lt_u i32.lt_u
+i32.lt_u i32.lt_u  i32.lt_u
+i32.lt_u i32.lt_u
+i32.lt_u i32.lt_u
+i32.lt_u i32.lt_u)

@@ -1,0 +1,2 @@
+(memory 1)(func(d) (i32.atomic.rmw.add(i32dd)(i32.atomic.rmw.add)  )
+ i32.atomic.rmw.add(i32.atomic.rmw.add) (i32.atomic.rmw.add(i32.atomic.rmw.add)(i32.atomic.rmw.add)(i32.atomic.rmw.add) ))

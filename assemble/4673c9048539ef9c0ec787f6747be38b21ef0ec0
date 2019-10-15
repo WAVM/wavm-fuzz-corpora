@@ -1,0 +1,3 @@
+(module  (memory 08)
+ (func  unreachable
+i32.atomic.rmw8.xchg_u  unreachable))

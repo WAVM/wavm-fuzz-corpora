@@ -1,0 +1,6 @@
+(func br
+00 i16x8.mul
+ i16x8.mul i16x8.mul i16x8.mul
+i16x8.mul
+ i16x8.mul i16x8.mul i16x8.mul
+br 0)

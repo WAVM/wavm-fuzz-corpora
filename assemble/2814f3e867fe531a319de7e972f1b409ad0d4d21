@@ -1,0 +1,52 @@
+(module
+  (type $0 (func))
+  (type $1 (func (result f64)))
+  (type $2 (func (param funcref) (result funcref)))
+  (type $3 (func (result v128 funcref f64)))
+  (import "env" "memory" (memory $4 13 52752 shared))
+  (import "env" "memory" (memory $5 51 48371 shared))
+  (import "env" "global0" (global $7 i64))
+  (import "env" "global1" (global $8 i64))
+  (import "env" "func0" (func $10))
+  (memory $6  4 28629)
+  
+  (func $11 (type $1)
+    (result f64)
+    (local $0 externref)
+    (local $1 f64)
+    (local $2 i32)
+    (local $3 i64)
+    local.get $1
+    f64.sqrt
+    br 0
+    )
+  
+  (func $12 (type $2)
+    (param $0 funcref)
+    (result funcref)
+    (local $1 i64)
+    call $11
+    i32.trunc_sat_f64_u
+    memory.size
+    i32.const 54420796
+    memory.copy $6
+    local.get $0
+    loop $loop (result v128 funcref f64)
+      i32.const 1506289297
+      call $10
+      v32x4.load_interleaved_2 $6 offset=3390449619 align=2
+      i32x4.trunc_sat_f32x4_u
+      memory.size $6
+      i64x2.shr_u
+      i16x8.add_saturate_u
+      i16x8.bitmask
+      unreachable
+    end ;; $loop
+    drop
+    ref.null func
+    drop
+    return
+    )
+  
+  (data $9 (memory $5) (i32.const -1661533655)
+    "mb/[\e7c\8d\a7\d14\f7\c9\a5\c3r\8f\c6|\fd\a9Jn\8c\\\8en\dc\b4Tm\d2\da\d2A\d9"))

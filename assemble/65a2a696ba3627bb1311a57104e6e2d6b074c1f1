@@ -1,0 +1,17 @@
+(module
+  (type $0 (func (result i32)))
+  (export "" (func $1))
+  (export "0" (func $2))
+  (export "-0" (func $3))
+  (export "_" (func $4))
+  (export "$" (func $5))
+  (export "@" (func $6))
+  (export "~!@#f32.sub_+" (func $140))
+  (export "\f4\8f\bf\be" (func $14$))
+  (export "\e2\80\aecba" (func $146))
+  (export "\e2\80\adabc\e2\80\qe" (func $148))
+  (ex1\a8" (func $149))
+  (export "\f0\9d\90\b4" (func $150\9d\99\b0" (func
+   (result i32)
+    i32.const 475
+    ))

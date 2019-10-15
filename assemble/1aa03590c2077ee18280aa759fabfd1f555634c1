@@ -1,0 +1,2 @@
+(module(memory 0)(func $10 i32.const 6    v128.load
+ i32.const 0 v128.load i32x4.ge_u drop ))

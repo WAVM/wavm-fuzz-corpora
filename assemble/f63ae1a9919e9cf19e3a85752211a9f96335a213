@@ -1,0 +1,1 @@
+(func(if (i64.gt_s)(i64.gt_s  (i64.gt_s))0)(if (i64.gt_s)(i64.gt_s (i64.gt_s))) (if (i64.gt_s (i64.gt_s (e)(if (i64.gt_s)(i64.gt_s)v)  (i64.gt_s)))(i64.gt_s (if (i64.gt_s)(i64.gt_s)t) (i64.gt_s ))s)(i64.gt_s)t))

@@ -1,0 +1,31 @@
+(module
+  (type $0 (func (param f64 v128 v128) (result externref)))
+  (import "env" "memory" (memory $1 61 5555 shared))
+  (import "env" "global1" (global $2 i64))
+  (global $3  (mut v128) (v128.const i32x4 0xf2096bfc 0x6371648e 0x9e7f4f66 0xe99f5178))
+  
+  (func $4 (type $0)
+    (param $0 f64)
+    (param $1 v128)
+    (param $2 v128)
+    (result externref)
+    (local $3 i64)
+    (local $4 i32)
+    (local $5 funcref)
+    memory.size
+    i32.load8_s offset=3055525007
+    v64x2.load_interleaved_4 offset=3058587148 align=1
+    i64x2.mul
+    f64x2.add
+    i16x8.max_s
+    i8x16.extract_lane_u 5
+    nop
+    i32x4.load16x4_s offset=3741518827
+    i32x4.neg
+    i16x8.any_true
+    i32.load8_u offset=1934579523
+    v32x4.load_splat offset=3460249212
+    i16x8.any_true
+    v64x2.load_splat offset=509327191 align=2
+    unreachable
+    ))

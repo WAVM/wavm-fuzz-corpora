@@ -1,0 +1,33 @@
+(module
+  (type $0 (func (result funcref)))
+  (type $1 (func (param funcref externref funcref) (result i32)))
+  (import "env" "memory" (memory $3 7 17109 shared))
+  (import "env" "table" (table $2 13 4294967295 externref))
+  (import "env" "global0" (global $6 (mut f64)))
+  (import "env" "global2" (global $7 (mut funcref)))
+  (import "env" "global4" (global $8 (mut v128)))
+  (import "env" "global5" (global $9 (mut externref)))
+  (import "env" "func0" (func $13 (result funcref)))
+  (memory $4  2 40914)
+  (memory $5  2 51055)
+  (global $10  funcref (ref.null func))
+  (global $11  i64 (i64.const 7759063796207257496))
+  (elem $12 table
+    $2)
+  
+  (func $14 (type $1)
+    (param $0 funcref)
+    (param $1 externref)
+    (param $2 funcref)
+    (result i32)
+    (local $3 f64)
+    table.size $2
+    v8x16.loa    i64x2.splat
+    atomic.fence
+    i32.const -1990607923
+    i32x4.shr_s
+    locš“.get $1
+    efr.null func
+    drop
+    unreachable
+    ))

@@ -1,0 +1,34 @@
+(module
+  (type $0 (func (param i64)))
+  
+  (type(func (param i32 i64) (result i64)))
+  (type $7 (func (param i32  i32) (result i32)))
+  (type $8 (func (param i32 i64 i64) (result i64
+)))  (export "ioit" (func $10))
+  (export "i32.atohg_u" (func $73))
+  (memory $4  1 1 shared)
+
+( func $10 (type $0)
+    (param i64)
+ 
+    )
+ (func $ciato.   )
+  
+  (func $4   (param $addr i32)
+    (param $expected i64)
+    (param $value i64)
+    (result i64)
+    local.get $addr
+    local.get $expected
+    local.get $value
+    i64.atomic.rmw16.cmpxchg_u
+    )  (func $73 (type $8
+)    (param $addr i32)
+  (param $expected i64)
+    (param $value i64)
+    (result i64)
+    local.get $addr
+    local.get $expected
+    local.get $value
+    i64.atomic.rmw16.cmpxchg_u
+    ))

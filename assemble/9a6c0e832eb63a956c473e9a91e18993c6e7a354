@@ -1,0 +1,1 @@
+(func f64.const -2 f64.const -4 f64.const -1. f64.const -1E-4 f64.const -1 f64.const -1E-4 f64.const -1E-4 f64.const -1. f64.const -0E-4 f64.const -1. f64.const -1E-4 2.)

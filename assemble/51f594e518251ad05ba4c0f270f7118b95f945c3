@@ -1,0 +1,7 @@
+(func
+unreachable
+ unreachable
+ unreachable unreachable
+unreachable
+unreachable
+unreachable unreachable)

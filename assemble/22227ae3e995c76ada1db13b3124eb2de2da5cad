@@ -1,0 +1,43 @@
+(module
+  (type $0 (func (param v128 v128) (result funcref)))
+  (type $1 (func (param f32 i64)))
+  (type $2 (func))
+  (import "env" "table" (table $3 11 4294967295 externref))
+  (import "env" "table" (table $4 19 4294967195 shared funcref))
+  (import "env" "global0" (global $7 i32))
+  (import "env" "func0" (func $11 (param v128 v128) (result funcref)))
+  (memory $6  76 65110 shared)
+  (table $5  94 4294967295 externref)
+  (elem $8 exception_type)
+  (elem $9 exception_type)
+  
+  (func $12 (type $1)
+    (param $0 f32)
+    (param $1 i64)
+    (local $2 i32)
+    (local $3 i64)
+    (local $4 funcref)
+    (local $5 f64)
+    br 0
+    )
+  
+  (func $13 (type $2)
+    (local $5 i32)
+    (local $1 f64)
+    (local $2 v128)
+    table.size $5
+    v8x16.load_interleaved_3 offset=3276901634 align=2
+    i16x8.sub_saturate_s
+    i16x8.le_u
+    i32x4.widen_low_i16x8_u
+    i32x4.bitmask
+    i32x4.load16x4_u offset=1316250702
+    i32x4.bitmask
+    v128.const i32x4 0x25961c2d 0x80f60f47 0x302d462e 0xc402826b
+    i8x16.abs
+    unreachable
+    )
+  
+  (data $39 
+    "\f9\e3\aa\8b3\01z\94j*Y|c\1c\9e\11\9d\dc\91\0c\da\f1m;\d29@gv\cd\0f\85\db[\cd\fb+\e8$\d6\c8Gk\a9P \ad\c7\188\c2\d2:$H\bc\ff\1bW\92{\c5\1fs"
+    "\b1\fa\f2D\f6\ec\fd\02\b0\d1\c4!\0c\b8\a5\b3]\fcG\acY\d5TV\a4\ba\850M\e8 !\a4\d4\0c\17"))

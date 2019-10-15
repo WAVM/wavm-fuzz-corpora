@@ -1,0 +1,78 @@
+(module
+  (type $0 (func (param f32) (result i64 i32)))
+  (type $1 (func (result funcref)))
+  (type $2 (func (param externref i64 v128 i64 externref) (result i32 i64 f64 f64)))
+  (import "env" "memory" (memory $5 60 44776 shared))
+  (import "env" "table" (table $3 60 4294967295 funcref))
+  (import "env" "global2" (global $6 i32))
+  (import "env" "global3" (global $7 (mut externref)))
+  (table $4  83 4294967295 externref)
+  (global $8  (mut i32) (i32.const 1992198766))
+  (global $9  (mut i64) (i64.const -8446123534971797628))
+  (global $10  i64 (i64.const 4831217283267567593))
+  (global $11  (mut funcref) (ref.null func))
+  (global $12  (mut v128) (v128.const i32x4 0xf04fc56c 0xa11bc6c6 0x3ca927ac 0xf96cd6b6))
+  (global $13  (mut f32) (f32.const 0x1.e28e00p+29))
+  (global $14  (mut i32) (i32.const -1415294774))
+  
+  (func $16 (type $0)
+    (param $0 f32)
+    (result i64 i32)
+    (local $1 externref)
+    memory.size
+    i64x2.load32x2_s offset=4208356078 align=2
+    i8x16.any_true
+    global.set $14
+    ref.null func
+    global.get $7
+    global.get $8
+    i64.atomic.load16_u offset=874343487
+    global.get $12
+    global.get $9
+    local.get $1
+    global.get $7
+    drop
+    loop $loop (param externref i64 v128 i64 externref) (result i32 i64 f64 f64)
+      ref.is_null
+      i32.load8_u offset=1567933520
+      global.set $14
+      global.set $9
+      unreachable
+    end ;; $loop
+    ref.null func
+    ref.null func
+    global.set $11
+    ref.null func
+    global.set $11
+    global.set $11
+    f64.copysign
+    ref.null func
+    global.set $11
+    drop
+    i64.atomic.rmw16.xor_u offset=2867890689
+    global.set $9
+    global.set $11
+    data.drop $15
+    global.get $6
+    ref.null extern
+    unreachable
+    )
+  
+  (func $17 (type $1)
+    (result funcref)
+    atomic.fence
+    i32.const -78017892
+    i32.clz
+    global.get $11
+    global.get $14
+    f64.convert_i32_s
+    f64x2.splat
+    f32x4.extract_lane 1
+    i32.reinterpret_f32
+    global.set $14
+    unreachable
+    )
+  
+  (data $15 
+    "Y\b3\a0\fb\c8\87(Z'\d9\1aI\05\e3\08\d0s\f1_\c2\eb\82>\ffp!\8e\87\ce\a6\ec\f9kh\be\db\f0\"\f3\b3W\c8r\a4V\db(\d8\fc\91\19e_U\a7y@\b7\0cAp4\98\02"
+    "\\\c8\bd\8eR\fd\9b\d0c\7f\8a\e9\d0\b4\0d\1dEU\1d?\ni\b1\e8J\f3\f6\12*\98u\a9\1a\ed\ad"))

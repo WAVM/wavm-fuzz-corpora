@@ -1,0 +1,70 @@
+(module
+  (type $0 (func (param f32 i64 funcref) (result i32)))
+  (type $1 (func (param externref f32) (result externref f32 f32 f32)))
+  (import "env" "memory" (memory $4 42 54144 shared))
+  (import "env" "table" (table $2 87 4294967295 shared funcref))
+  (import "env" "table" (table $3 31 4294967295 externref))
+  (import "env" "global5" (global $5 (mut f64)))
+  (global $6  (mut v128) (v128.const i32x4 0xd8c65cbf 0xcaa1fbb6 0xf2882d21 0x47ae325c))
+  (global $7  f32 (f32.const 0x1.210beep+28))
+  (global $8  f64 (f64.const 0x1.83b05bc248162p+63))
+  (global $9  (mut externref) (ref.null extern))
+  (global $10  f32 (f32.const 0x1.20de64p+31))
+  (global $11  v128 (v128.const i32x4 0x9711a5f5 0x197b8bb8 0x1ff26ddb 0xfa039665))
+  (elem $12
+    $16 $16 $16 $16 $16 $16 $16 $16
+    $16 $16 $16 $16 $16 $16 $16 $16
+    $16 $16 $16 $16 $16 $16 $16 $16
+    $16 $16 $16 $16 $16 $16 $16 $16
+    $16 $16 $16 $16 $16 $16 $16 $16
+    $16 $16 $16 $16 $16 $16 $16 $16
+    $16 $16 $16 $16 $16 $16 $16 $16
+    $16 $16 $16 $16 $16 $16 $16 $16
+    $16 $16 $16 $16 $16 $16 $16 $16
+    $16 $16)
+  (elem $13 funcref
+    (ref.null func) (ref.null func) (ref.null func) (ref.func $16)
+    (ref.null func) (ref.func $16) (ref.func $16) (ref.null func)
+    (ref.func $16) (ref.null func) (ref.func $16) (ref.func $16)
+    (ref.null func) (ref.null func) (ref.null func) (ref.func $16)
+    (ref.func $16) (ref.null func) (ref.null func) (ref.null func))
+  
+  (func $16 (type $0)
+    (param $0 f32)
+    (param $1 i64)
+    (param $2 funcref)
+    (result i32)
+    (local $3 f32)
+    (local $4 f32)
+    data.drop $15
+    local.get $0
+    f32x4.splat
+    elem.drop $12
+    i16x8.bitmask
+    i32.load8_u offset=182342647
+    local.get $1
+    i64.atomic.rmw16.xor_u offset=3174192069
+    ref.null extern
+    f32.const -0x1.3aeb5ep-96
+    block $block (param externref f32) (result externref f32 f32 f32)
+      local.get $0
+      i32.trunc_f32_u
+      i64.atomic.load16_u offset=2762159696
+      local.get $0
+      local.set $4
+      local.set $1
+      i64.trunc_f32_s
+      unreachable
+    end ;; $block
+    f32.ge
+    ref.null func
+    unreachable
+    )
+  
+  (data $14 (i32.const -941833563)
+    "P\aaY\b0Tb\9a\eea\be8\05\19\b8\b7\b7\13\ab\87\00\cb\a6\06\b3l\98\bfr\82\14\a0\9c1\89\a8\07\"\1cm\94\d9\b0x\a6L\a6WzZ\c4\1d\a1\08\c8\aa1\82x\d9\a0\c7\b6\a5\8c"
+    "\b5\b2P\af}\c2J`\93An\ef\c7t\b5\f0\86\c0")
+  
+  (data $15 
+    "\14\1a\da\d4eWI\15UY\b3\f8\1e;\8d\e5(\d8wB;\12\e4\ce\c3e\c63\b2\a6e\b76\bc\d4\99r\e4\ef\12-z\d5\82.\e6\be\b1\17}\e0\9b\87d\d8\bc\1f\19\ae\88\1f\de\09\bb"
+    "\08\d3\89K\c0\0dY\f3s\fb\89\dc"))

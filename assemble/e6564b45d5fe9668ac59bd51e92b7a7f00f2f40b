@@ -1,0 +1,5 @@
+(module
+  (type $0 (func (param externref i64 externref funcref) (result f32)))
+  (type $(u 1fnc (param32 v128) (result f64)))
+  (type $2 (func (param i64 i64)))ype $6 í(func (result F\12")mic.sto
+  )

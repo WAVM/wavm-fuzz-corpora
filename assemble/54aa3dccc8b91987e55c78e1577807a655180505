@@ -1,0 +1,1 @@
+(func f64.const 4E308 f64.const 3E308 f64.const 2E308 f64.const 2E308)

@@ -1,0 +1,59 @@
+(module
+  (type $0 (func (result v128 f64)))
+  (type $1 (func (param f64 externref) (result f64)))
+  (type $2 (func (param v128 f64) (result i64 externref v128)))
+  (type $3 (func (result i64 i32)))
+  (import "env" "memory" (memory $4 21 58632 shared))
+  (import "env" "global1" (global $5 v128))
+  (import "env" "global2" (global $6 (mut f32)))
+  (import "env" "global3" (global $7 (mut f32)))
+  (import "env" "global5" (global $8 i64))
+  (import "env" "global6" (global $9 (mut f32)))
+  (global $10  (mut v128) (v128.const i32x4 0x6cd8d7e2 0x85f9a548 0x77240868 0x16ad9465))
+  (global $11  funcref (ref.null func))
+  (global $12  i32 (i32.const -2144837406))
+  
+  (func $15 (type $0)
+    (result v128 f64)
+    (local $0 i32)
+    (local $1 funcref)
+    global.get $5
+    local.get $1
+    call $15
+    ref.null extern
+    loop $loop (param f64 externref) (result f64)
+      atomic.fence
+      global.get $5
+      i32x4.widen_low_i16x8_u
+      f64.const 0x1.4b069e8f31b0cp-659
+      f64.sqrt
+      loop $loop_0 (param v128 f64) (result i64 externref v128)
+        global.get $11
+        loop $loop_1 (result i64 i32)
+          global.get $8
+          i64.const -2656247630311027197
+          i64.le_u
+          br_if $loop_1
+          atomic.fence
+          i64.const -192892341943031866
+          i64x2.splat
+          ref.null func
+          br $loop_1
+        end ;; $loop_1
+        local.set $0
+        drop
+        ref.null func
+        local.set $1
+        unreachable
+      end ;; $loop_0
+      ref.null func
+      unreachable
+    end ;; $loop
+    unreachable
+    )
+  
+  (data $13 
+    "\db\f5i\a4\14d\f2\f9\cfE\12H[b\17n\03\de\cd")
+  
+  (data $14 
+    "\d9+\eefpX\07B\8b\8bG\d4\8b\8f?\16\87\89H\7f\cb\fb"))

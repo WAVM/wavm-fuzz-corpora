@@ -1,0 +1,28 @@
+(module
+  (type $0 (func (result f32)))
+  (import "env" "global0" (global $3 v128))
+  (import "env" "global2" (global $4 (mut i64)))
+  (import "env" "global3" (global $5 f32))
+  (memory $2  88 8370 shared)
+  (table $1  100 4294967295 shared funcref)
+  (global $6  f64 (f64.const 0x1.3979353be5afdp+63))
+  
+  (func $7 (type $0)
+    (result f32)
+    table.size $1
+    v128.load offset=3494752286 align=8
+    v128.not
+    f64x2.abs
+    i16x8.widen_high_i8x16_s
+    global.get $4
+    global.set $4
+    f32x4.convert_i32x4_u
+    i32x4.neg
+    v128.not
+    i32x4.abs
+    i8x16.bitmask
+    v8x16.load_interleaved_3 offset=742867105 align=8
+    i32x4.trunc_sat_f32x4_u
+    global.get $4
+    unreachable
+    ))

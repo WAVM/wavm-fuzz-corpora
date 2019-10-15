@@ -1,0 +1,57 @@
+(module
+  (type $0 (func (param funcref funcref externref) (result f64 f32)))
+  (type $1 (func))
+  (type $2 (func (param i32 externref v128) (result f64)))
+  (type $3 (func (param v128 f32)))
+  (type $4 (func (param i32) (result externref v128 i32 v128)))
+  (import "env" "memory" (memory $7 19 37454 shared))
+  (import "env" "table" (table $5 64 4294967295 shared funcref))
+  (import "env" "global0" (global $10 (mut funcref)))
+  (import "env" "func0" (func $13))
+  (import "env" "func1" (func $14 (param v128 f32)))
+  (memory $8  85 44477)
+  (memory $9  54 11891 shared)
+  (table $6  98 4294967295 externref)
+  (global $11  f32 (f32.const 0x1.4cbdcap+31))
+  
+  (func $15 (type $0)
+    (param $0 funcref)
+    (param $1 funcref)
+    (param $2 externref)
+    (result f64 f32)
+    (local $3 f32)
+    atomic.fence
+    nop
+    call $13
+    data.drop $12
+    local.get $1
+    local.tee $0
+    memory.size $8
+    loop $loop (param i32) (result externref v128 i32 v128)
+      i64.load16_s $9 offset=1301974664
+      i64x2.splat
+      i8x16.all_true
+      i64.atomic.load8_u $8 offset=2296780177
+      i32.const -1355227278
+      i64.load32_u $9 offset=680134390 align=1
+      data.drop $12
+      i64.lt_u
+      br $loop
+    end ;; $loop
+    ref.null func
+    unreachable
+    )
+  
+  (func $16 (type $2)
+    (param $0 i32)
+    (param $1 externref)
+    (param $2 v128)
+    (result f64)
+    (local $3 i32)
+    (local $4 i64)
+    (local $5 f32)
+    unreachable
+    )
+  
+  (data $12 (i32.const -1261025027)
+    "\ff97\a9B\c5\a5LK1\baai\c3\b1;-\e0[\f0.!b\85\b7\146Kx\1a\99)\b4(\e8hb"))

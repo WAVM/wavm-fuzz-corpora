@@ -1,0 +1,55 @@
+(module
+  (type $0 (func (result f64 i64)))
+  (type $1 (func (param f64 funcref i32 i32) (result v128)))
+  (import "env" "memory" (memory $8 92 55077 shared))
+  (import "env" "global5" (global $5 i64))
+  (import "env" "func0" (func $12 (param f64 funcref i32 i32) (result v128)))
+  (table $2  58 4294967295 funcref)
+  (table $3  37 4294967295 funcref)
+  (global $6  (mut i64) (i64.const 1761102793437970009))
+  (global $7  (mut v128) (v128.const i32x4 0x797fbd13 0xa3a214bc 0x238f6255 0xeb022386))
+  (global $8  v128 (v128.const i32x4 0xb3941e49 0x9733b2a5 0x9a9c9370 0x0eff2da6))
+  (global $9  (mut externref) (ref.null extern))
+  (global $10  (mut v128) (v128.const i32x4 0xd1b51718 0x6bccb411 0x3672e43a 0x9dfd1b1a))
+  (global $11  i64 (i64.const -210105751149977311))
+  
+  (func $13 (type $0)
+    (result f64 i64)
+    (local $0 f32)
+    (local $1 externref)
+    i64.const 6111314693980570407
+    global.get $6
+    i64.mul
+    f64.convert_i64_u
+    i32.trunc_f64_s
+    v16x8.load_splat offset=3540792160
+    global.get $10
+    i8x16.gt_s
+    i32x4.extract_lane 0
+    i64.extend_i32_s
+    global.get $8
+    i64x2.extract_lane 0
+    i64.le_u
+    global.get $7
+    memory.size
+    i16x8.shl
+    global.set $7
+    table.get $2
+    drop
+    f64.const -0x1.077f58604f2f8p-905
+    i64.reinterpret_f64
+    drop
+    memory.size
+    table.get $3
+    drop
+    global.get $8
+    global.set $10
+    global.get $5
+    global.set $6
+    global.get $10
+    drop
+    local.get $1
+    drop
+    global.get $10
+    unreachable
+    ))

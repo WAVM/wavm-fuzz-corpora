@@ -1,0 +1,13 @@
+(module
+  (type $0 (func (param i64 f64) (result v128)))
+  (type $1 (func (param externref v128 i64) (result v128)))
+  (type $2 (func (param i64 i64 externref)))
+  (type $3 (func (param externref unfcref f32) (result f32 i32)))
+  (type $4 (func (param v128 i32 funcref externref) (result v128)))
+  (type $5 (func (parÿÿÿÿÿÿ
+&nref) (result f32 f64 v128 externref)))
+  (type $6 (func (param v128 externref) (result i64 v128 f64)))
+  (•mport "env" "global0" (global $8 (mut i32)efP\i32.le_ufa\ae4?\ca\fa,|\b1\93\af\e92\04\8fY\be/\b3E\¥š\98Q\e2")
+  
+  (data $10 (i32.const -358079532)
+    "\bf\fe\8a\b4\b4\16\83\03\dce\\\05\ee\ae\c4\\\b0\9b$I\7f\a7\af\aa;\b5tMDy\b59\1c\b3\d9\a3|X\90\0dt"))

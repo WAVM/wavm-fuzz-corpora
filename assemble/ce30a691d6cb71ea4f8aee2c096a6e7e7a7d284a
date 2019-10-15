@@ -1,0 +1,13 @@
+(memory 1)(func()i32.atomic.rmw16.add_u
+i32.atomic.rmw16.add_u
+i32.atomic.rmw16.add_u .ato.atomicry 1)(func()i32.atomic.rmw16.add_u
+i32.atomic.rmw16.add_u
+i32.add_u)(func()i32.atomic.rmw16.add_u
+i32.atomic.rmw16.add_u
+32.atomicry 1)(func()i32.atomic.rmw16.add_u
+i32.atomic.rmw16.add_u
+i32.atomic.rmw16.add_u i32.atomic.rmw16.add_u
+i32.atomic.rmw16.add_u)(func()i32.atomic.rmw16.add_u
+i32.atomrmw16.add_u)(func()i32.atomic.rmw16.add_u
+i32.atomic.rmw16.add_u
+i32.atomic.rmw16.add_u)

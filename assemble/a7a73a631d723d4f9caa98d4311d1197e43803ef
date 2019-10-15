@@ -1,0 +1,2 @@
+(table funcref(elem))
+(table funcref(elem))(table funcref(elem))

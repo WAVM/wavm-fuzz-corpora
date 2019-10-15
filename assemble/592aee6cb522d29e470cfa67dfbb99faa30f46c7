@@ -1,0 +1,1 @@
+(func(2x4)(i32x4.widen_low_i16x8_u)(i32x4.widen_low_i16x8_u)(i4.wixu)(i32x4.widen_low_i16x8_u)(i32x4.widen_low_i16x8_u)(i32x4.widen_low_i16x8_u)(i32x4.widen_low_i16x8_u)(i32x4.widen_low_i16x8_u)(i32x4.widen_low_i16x8_u))

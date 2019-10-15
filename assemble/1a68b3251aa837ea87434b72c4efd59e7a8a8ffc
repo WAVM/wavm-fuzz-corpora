@@ -1,0 +1,40 @@
+(module
+  (type $0 (func (param f64) (result f64 i32)))
+  (type $1 (func (param f64 funcref f32) (result i32 externref)))
+  (import "env" "memory" (memory $4 37 36145 shared))
+  (import "env" "table" (table $2 86 4294967295 shared externref))
+  (import "env" "global2" (global $5 i64))
+  (import "env" "func0" (func $14 (param f64) (result f64 i32)))
+  (table $3  16 4294967295 shared funcref)
+  (global $6  (mut i64) (i64.const 1677844482137909898))
+  (global $7  (mut externref) (ref.null extern))
+  (global $8  (mut i64) (i64.const 4240784614253943907))
+  (global $9  i32 (i32.const -903621470))
+  (global $10  v128 (v128.const i32x4 0x0cc3f663 0x3c74e1fe 0xcda89b87 0x45d31d21))
+  (global $11  (mut v128) (v128.const i32x4 0x0944c383 0x49518932 0x8fdd2389 0x9c827c6e))
+  (global $12  f64 (f64.const 0x1.d2ba8ade2c766p+57))
+  (global $13  i64 (i64.const -4994411305269177060))
+  
+  (func $15 (type $1)
+    (param $0 f64)
+    (param $1 funcref)
+    (param $2 f32)
+    (result i32 externref)
+    (local $3 funcref)
+    (local $4 externref)
+    (local $5 i32)
+    f64.const -0x1.bcf7b64ac2060p+439
+    f32.const -0x1.d80b50p+91
+    global.get $9
+    i32.load8_s offset=424696834
+    i32.load8_s offset=4203465736
+    global.get $13
+    i64.atomic.rmw16.xchg_u offset=3594564511
+    global.get $8
+    i64.rem_s
+    i64.popcnt
+    i64.popcnt
+    i64.popcnt
+    i64.ctz
+    unreachable
+    ))

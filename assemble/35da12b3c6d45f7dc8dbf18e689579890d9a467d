@@ -1,0 +1,37 @@
+(module
+  (type $0 (func (param f32 i32) (result i64)))
+  (import "env" "table" (table $1 17 4294967295 shared funcref))
+  (import "env" "global0" (global $2 f64))
+  (elem $3 declare memory)
+  
+  (func $5 (type $0)
+    (param $0 f32)
+    (param $1 i32)
+    (result i64)
+    (local $2 f64)
+    (local $3 v128)
+    v128.const i32x4 0x8ce5e345 0xfb776307 0x6cd79965 0x8524eeb0
+    global.get $2
+    f64x2.splat
+    i16x8.gt_s
+    v128.not
+    nop
+    i16x8.widen_low_i8x16_s
+    atomic.fence
+    i32x4.bitmask
+    i32.extend8_s
+    block $block
+    end ;; $block
+    table.size $1
+    i32.gt_s
+    local.get $2
+    ref.null extern
+    ref.is_null
+    drop
+    drop
+    table.get $1
+    unreachable
+    )
+  
+  (data $4 
+    "\92\e7\e8g\d3^\ae\1e\0e\d8;\9f\f1\e7\a65\86S\a6p\baBR\0f\1a )@\b2\95B|5>,\fd\f3s#K\ca\fd\c4\d1\a4\88\n\0c\bc\96R\04\n["))

@@ -1,0 +1,15 @@
+(module
+ (custom_section ""
+   (after table))
+   (table 4 )
+ (custom_section "e" (after table)) (custom_section "."
+   (after table))
+   (tble 9 funcref)
+ (custom_section "e" (after table))
+(custom_section "e"(after table))
+ (custom_section "e"
+  (after table)  )
+(custom_section "e"
+(after table))
+ (custom_section "e"
+  (after table)  )

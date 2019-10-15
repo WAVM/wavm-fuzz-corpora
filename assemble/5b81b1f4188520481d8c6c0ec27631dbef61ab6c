@@ -1,0 +1,18 @@
+(memory 1)(func()i32.atomic.rmw.xchg
+i32.atomic.rmw.xchg i32.atomic.rmw.xchg
+i32.atomic.rmw.xchg()i32.atomic.rmw.xchg(br 0)y 1)(func()i32.atomic.rmw.xchg
+i64.atomic.rmw.xchg i32.atomic.rmw.xchg
+i32.atomic.rmw.xchg()i32.atomic.rmw.xchg
+i32.atomic.rmw.xchg i32.atomic.rmw.xchg
+i32.atomic.rmw.xchg %ic.rmw£.1)(func()i32.atomic.rmw.xchg
+i32.atomic.rmw.xchg i32.atomic.rmw.xchg
+i32.atomic.rmw.xchg()i32.atomic.rmw.xchg(br 0)y 1)(func()i32.atomic.rmw.xchg
+i64.atomic.rmw.xchg i32.atomic.rmw.xchg
+i32.atomic.rmw.xchg()i32.atomic.rmw.xchg
+i32.atomic.rmw.xchg i32.atomic.rmw.xchg
+i32.atomic.rmw.xchg %ic.rmw£.32.aw.xch32.at1)(func()i32.atomic.rmw.xchg
+i32.atomic.rmw.xchg i32.atomic.rmw.xchg
+i32.atomic.rmw.xchg()i32w.xcw.xch32.atom1)(func()i32.atomic.rmw.xchg
+i32.atomic.rmw.xchg i32.atomic.rmw.xchg
+i32.atomic.rmw.xchg()i32xchg
+i32.atomic.rmw)

@@ -1,0 +1,112 @@
+(module
+  (type $0 (func (param i32) (result v128)))
+  (type $1 (func (result f32 f32)))
+  (type $2 (func (result f32 funcref)))
+  (type $3 (func (result externref f32 v128 i32)))
+  (type $4 (func (param v128 f32) (result externref funcref i64)))
+  (type $5 (func (result f64 funcref f32 externref)))
+  (type $6 (func (param v128) (result funcref)))
+  (type $7 (func (param v128) (result v128 f64 funcref f32)))
+  (import "env" "table" (table $8 38 4294967295 shared externref))
+  (import "env" "global0" (global $9 v128))
+  (import "env" "global3" (global $10 (mut i64)))
+  (import "env" "global4" (global $11 f32))
+  (import "env" "func0" (func $19 (param i32) (result v128)))
+  (global $12  i64 (i64.const 8252100694028463921))
+  (global $13  (mut v128) (v128.const i32x4 0x20fd97dc 0x188d2b82 0xa45fb575 0x775be9ab))
+  (global $14  (mut f32) (f32.const 0x1.a3b582p+31))
+  (global $15  (mut f64) (f64.const 0x1.69bcba32cf580p+62))
+  (elem $16 declare global
+    $14 $9 $15 $11 $15 $12 $11 $12
+    $11 $13 $11 $11 $15 $12 $9 $12
+    $15 $11 $15 $11 $12 $10 $9 $13
+    $14 $14 $15 $11 $9 $12 $11 $11
+    $14 $15 $15 $12 $14 $11 $11 $15
+    $11 $11 $14 $11 $15 $15 $15 $13
+    $9 $10 $11 $13 $12 $9 $9 $12
+    $14 $11 $15 $15 $12 $14 $13 $14
+    $14 $11 $14 $13 $15 $11 $10 $13
+    $13 $9 $12 $13 $9 $14)
+  
+  (func $20 (type $1)
+    (result f32 f32)
+    (local $0 funcref)
+    (local $1 f32)
+    (local $2 i64)
+    f64.const 0x1.87fd47c8126f3p-450
+    nop
+    f32.demote_f64
+    i32.trunc_f32_u
+    loop $loop (result externref f32 v128 i32)
+      atomic.fence
+      v128.const i32x4 0x8760035f 0xcf23f739 0x88487774 0x4740a384
+      i32x4.trunc_sat_f32x4_u
+      br $loop
+    end ;; $loop
+    f32.reinterpret_i32
+    table.size $8
+    if $if (param v128 f32) (result externref funcref i64)
+      global.get $12
+      data.drop $18
+      local.get $1
+      local.set $1
+      global.set $10
+      drop
+      global.set $13
+      unreachable
+    else
+      local.set $1
+      ref.null func
+      drop
+      unreachable
+    end ;; $if
+    drop
+    unreachable
+    )
+  
+  (func $21 (type $2)
+    (result f32 funcref)
+    global.get $11
+    i64.trunc_sat_f32_s
+    block $block (result f64 funcref f32 externref)
+      global.get $14
+      f32.ceil
+      global.get $13
+      nop
+      i16x8.any_true
+      global.get $11
+      global.get $9
+      loop $loop (param v128) (result funcref)
+        i32.const 1681700686
+        global.get $9
+        loop $loop_0 (param v128) (result v128 f64 funcref f32)
+          global.get $11
+          f32x4.replace_lane 3
+          v128.const i32x4 0x88dc33ca 0xeda6e3f1 0x97e18a91 0x47d5d911
+          i8x16.gt_s
+          i16x8.widen_low_i8x16_u
+          f32x4.convert_i32x4_s
+          br $loop_0
+        end ;; $loop_0
+        global.set $14
+        unreachable
+      end ;; $loop
+      return
+    end ;; $block
+    ref.is_null
+    ref.null extern
+    ref.null func
+    ref.is_null
+    drop
+    ref.is_null
+    i32.rotr
+    drop
+    unreachable
+    )
+  
+  (data $17 
+    "5\d1\f9F\abwp\8c\f7D\a1#\89M\96[i\99M'3+'\8d\df)g\d8\a8\d2\80\0dX\be\13\e0\a0d~Z\b2\8b\d0\1d/\c0\0f\f5B4\b0\139\c3\ce\aaw\f6\d6\a6\81[\9d")
+  
+  (data $18 
+    "\fe\8c\1a\c8p\ab\b7\01\e5\05\e6T\b9\bf\939\7ff\a7rd\a7\abT\09\15\81U~0g\8f\db2\da\d0\cf\e4\f28\1e\11\b1\b1Y\f8\f3\d3M\b0\d2\bf\d0\f8W\cf\eb\96\f3\d7\10p\95\04"
+    "\b7\a9O[\9cD"))

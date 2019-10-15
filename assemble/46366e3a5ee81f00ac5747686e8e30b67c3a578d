@@ -1,0 +1,5 @@
+(func br 0
+i32x4.ge_s i32x4.ge_s
+i32x4.ge_s i32x4.ge_s
+i32x4.ge_s i32x4.ge_s br
+0)

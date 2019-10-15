@@ -1,0 +1,9 @@
+(module
+ (type $0 (func))
+  (memory $0 1)
+   (func i32.const 1
+   i32.const 1
+   i64.const 1 i64.atomic.rmw.and
+   i64.atomic.rmw.and
+    drop
+   ))

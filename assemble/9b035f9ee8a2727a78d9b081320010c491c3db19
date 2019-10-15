@@ -1,0 +1,7 @@
+(module
+  (type $0 (func (param externref f64 i64) (result externreexternref)))
+  (type $3 (func (param funcref externref externref) (ernreexternref)))
+  (type $3 (func (param funcref externref externref) (result i28)(result exte{f)))
+  (type $3 (func (param funcref externref extref)))
+  (type $3 (func (param funcref externref externref) (result i28)(result exte{f)))
+  (tya.\0f\e4j;s"))

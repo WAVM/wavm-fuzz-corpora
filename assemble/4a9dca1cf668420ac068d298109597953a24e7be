@@ -1,0 +1,57 @@
+(module
+  (type $0 (func (param i64) (result v128)))
+  (type $1 (func (param funcref funcref i64) (result i64 i64)))
+  (type $2 (func (param i64 externref)))
+  (type $3 (func (result externref)))
+  (type $4 (func (param f64 f64)))
+  (type $5 (func (param funcref) (result i64 v128 i64)))
+  (import "env" "memory" (memory $8 75 4351 shared))
+  (import "env" "table" (table $6 56 4294967295 shared funcref))
+  (import "env" "global1" (global $11 (mut externref)))
+  (import "env" "global2" (global $12 (mut funcref)))
+  (import "env" "global3" (global $13 funcref))
+  (import "env" "global4" (global $14 (mut i64)))
+  (import "env" "global6" (global $15 funcref))
+  (import "env" "func0" (func $20 (param i64) (result v128)))
+  (import "env" "func1" (func $21 (param funcref funcref i64) (result i64 i64)))
+  (import "env" "func2" (func $22 (result externref)))
+  (import "env" "func3" (func $23 (param f64 f64)))
+  (memory $9  87 27094 shared)
+  (memory $10  58 11229 shared)
+  (table $7  31 4294967295 externref)
+  (global $16  (mut i32) (i32.const 874002907))
+  (global $17  (mut i32) (i32.const -1720099803))
+  (global $18  i64 (i64.const 6154744965655499644))
+  
+  (func $24 (type $2)
+    (param $0 i64)
+    (param $1 externref)
+    (local $2 i64)
+    (local $3 externref)
+    (local $4 f32)
+    table.size $7
+    i32.load8_s $9 offset=3452563774
+    i32.load8_s $10 offset=3683589183
+    i64x2.load32x2_s offset=1895022391 align=2
+    i32.const -1953997103
+    i64x2.shl
+    f32x4.abs
+    global.get $12
+    loop $loop (param funcref) (result i64 v128 i64)
+      global.get $14
+      f64.convert_i64_u
+      global.get $13
+      global.get $16
+      local.get $2
+      local.get $1
+      local.set $3
+      local.set $2
+      table.get $7
+      local.set $1
+      br $loop
+    end ;; $loop
+    unreachable
+    )
+  
+  (data $19 (i32.const -1967112443)
+    "T*c\eaEY\df;\d2\97"))

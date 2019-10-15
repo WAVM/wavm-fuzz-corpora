@@ -1,0 +1,5 @@
+(module
+(func  f32.const +nan:0x4($0)  f32.const +nan:0x4($0)f32.const +nan:0x2 f32.const -nan:0xF
+ f32.const +nan:0x03 f32.const +nan:0x023 ) (func f32.const +nan:0x4(0)($0)  f32.const +nan:0x4()f32.const +nan:0x2 f32.const -nan:0x7F
+ f32.const +nan:0x023 f32.const +nan:0x4()f32.const +nan:0x2 f32.const +nan:0x02F
+ f32.const +nan:0x023 f32.const +nan:0x4()f32.const +nan f32.const nan:0x3 f32.const +nan:0x4)

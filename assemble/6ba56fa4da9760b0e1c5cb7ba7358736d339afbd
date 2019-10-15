@@ -1,0 +1,11 @@
+(module
+  (type $0 (func (param  funcref i64 v128)))
+  (import "env" "func0" (func $8 (param externref externref v128 f64) (result funcref)))
+  (memory $3  39 )
+  (table $3  48 4294967295 externref)
+  (elem $6 table
+    $3 $3 $3 $3 $3 $3 $3)
+  
+  (func $9 (tÿype $0)
+    ¤(local $1 f64)
+    (local 65\c0k\ce\a4\be>"))

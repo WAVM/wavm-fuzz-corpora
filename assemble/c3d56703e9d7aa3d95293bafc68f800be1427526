@@ -1,0 +1,34 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param f64 i64 funcref) (result f64 funcref)))
+  (import "env" "memory" (memory $5 30 55795 shared))
+  (import "env" "table" (table $2 100 4294967295 funcref))
+  (import "env" "table" (table $3 88 4294967295 shared externref))
+  (import "env" "global1" (global $6 (mut i64)))
+  (import "env" "func0" (func $9 (param f64 i64 funcref) (result f64 funcref)))
+  (table $4  65 4294967295 shared externref)
+  (global $7  (mut f64) (f64.const 0x1.a47d15581fde8p+62))
+  
+  (func $10 (type $0)
+    (local $0 funcref)
+    (local $1 f32)
+    table.size $3
+    v16x8.load_splat offset=1187454379 align=1
+    atomic.fence
+    i16x8.widen_high_i8x16_s
+    i16x8.bitmask
+    v64x2.load_splat offset=405621179 align=2
+    i32x4.widen_low_i16x8_s
+    v128.const i32x4 0xdb54d538 0xfabebe0b 0xdd6601fe 0x0ab6c1d0
+    i32x4.ne
+    global.get $6
+    i64.const -6033159326893685526
+    i64.ge_u
+    v128.load offset=4126445166
+    drop
+    i32.const -383795040
+    unreachable
+    )
+  
+  (data $8 (i32.const 598708536)
+    "v\dc\ad\98\94\a3\1d\b3\d4H\f1O\d4\9b\0f\dc\81{\bd0\8cxu\f5SQ\d7\cf&6A\9f\f5\d3\ed\8ft.\05\c8\9d\fbg\a6\c3\c4\f2\b6\09\e2R\10\d4\b8\f4a*\1aX\c6\9c9\92"))

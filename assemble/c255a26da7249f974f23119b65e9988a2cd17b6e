@@ -1,0 +1,4 @@
+(func br 0
+i64.shr_u
+br
+0)

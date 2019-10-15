@@ -1,0 +1,2 @@
+(type(func (param f64 f64) (result f64 f32)))
+(func (param f64 f64) (result f64 f32) 4)

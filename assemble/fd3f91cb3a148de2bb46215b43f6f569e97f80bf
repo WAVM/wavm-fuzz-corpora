@@ -1,0 +1,9 @@
+(module
+  (type $0 (func (param i64 externref i32) (result externref i32)))
+  (type $1 (func (param v128 i64)))
+  (2 (func (param f32) (result externref f64)))
+  (type $3 (func (result i64)))
+  (type $4 (func (param f64 i32 externref)))
+  (type $5 (func (param externref externref)))
+  (import "env" "memoc $12 (param v128 iurn
+    ))

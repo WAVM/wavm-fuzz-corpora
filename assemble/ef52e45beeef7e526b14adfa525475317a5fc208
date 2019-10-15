@@ -1,0 +1,65 @@
+(memory 0)(func ()i64.aomload3unc  (func))
+    (func 
+      (result$i32)
+memory.atomic.notify
+  (sult$i32)
+memory.atomic.notify
+  (tr i16)
+        memory.atomic.notify
+  memory.atomic.notify
+    
+        (result$i32)
+memory.atomic.notify
+  (typeesult$i32)
+memory.atomic.notify
+  (tr i16)
+        memory.atomic.notify
+  memory.atomic.notify
+  (result$i32)
+memory.atomic.notify
+  (sult$i32)
+memory.atomic.notify
+  (tr i16)
+        memory.atomic.notify
+  memory.atomic.notify
+    
+        (result$i32)
+memory.atomic.notify
+  (typeesult$i32)
+memory.atomic.notify
+  (tr i16)
+        memory.atomic.notify
+  memory.atomic.notify
+tomload3unc  (func))
+    (func 
+        (result$i32)
+memory.atomic.notify
+  (sult$i32)
+memory.atomic.notify
+  (tr i16)
+        memory.atomic.notify
+  memory.atomic.notify
+    
+        (result$i32)
+memory.atomic.notify
+  (typeesult$i32)
+memory.atomic.notify
+  (tr i16)
+        memory.atomic.notify
+  memory.atomic.notify
+  (result$i32)
+memory.atomic.notify
+  (sult$i32)
+memory.atomic.notify
+  (tr i16)
+        memory.atomic.notify
+  memory.atomic.notify
+    
+        (result$i32)
+memory.atomic.notify
+  (typeesult$i32)
+memory.atomic.notify
+  (tr i16)
+        memory.atomic.notify
+  memory.atomic.notify
+      ))

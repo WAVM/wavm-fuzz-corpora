@@ -1,0 +1,87 @@
+(module
+  (type $0 (func (param f64 funcref funcref i32) (result i64 externref)))
+  (type $1 (func (param externref) (result i64)))
+  (type $2 (func (param externref funcref)))
+  (type $3 (func (result f32)))
+  (type $4 (func (result i32 funcref externref i32)))
+  (type $5 (func (result f64 f64 funcref v128)))
+  (import "env" "table" (table $6 97 4294967295 funcref))
+  (import "env" "global1" (global $8 (mut i64)))
+  (import "env" "func0" (func $10 (param externref funcref)))
+  (import "env" "func1" (func $11 (result f32)))
+  (memory $7  27 52430 shared)
+  (global $9  (mut v128) (v128.const i32x4 0x14ca7b6f 0xb78729ab 0xafc7ccb2 0xa53dbd30))
+  
+  (func $12 (type $0)
+    (param $0 f64)
+    (param $1 funcref)
+    (param $2 funcref)
+    (param $3 i32)
+    (result i64 externref)
+    (local $4 i64)
+    (local $5 i32)
+    (local $6 f32)
+    f32.const 0x1.1e393ep-108
+    i64.trunc_sat_f32_u
+    v128.const i32x4 0x54c4ef1e 0x6419cd35 0x9b129911 0x61443aac
+    nop
+    nop
+    i16x8.widen_high_i8x16_u
+    i16x8.extract_lane_u 7
+    local.get $3
+    i32.atomic.store8 offset=303316549
+    i64.extend32_s
+    i64.const 8197294543456833639
+    i64.extend32_s
+    i64.rem_u
+    block $block (result i32 funcref externref i32)
+      local.get $1
+      ref.is_null
+      v32x4.load_splat offset=2620038294 align=2
+      unreachable
+    end ;; $block
+    local.set $5
+    unreachable
+    )
+  
+  (func $13 (type $1)
+    (param $0 externref)
+    (result i64)
+    (local $1 i32)
+    (local $2 v128)
+    (local $3 i64)
+    (local $4 externref)
+    table.size $6
+    i64.atomic.load8_u offset=2459438281
+    f32.convert_i64_s
+    i32.trunc_f32_s
+    i32.extend8_s
+    call_indirect $6 (type $3)
+    local.get $0
+    block $block (result f64 f64 funcref v128)
+      v128.const i32x4 0xa502ba2f 0xea8c1e01 0xc54817ff 0xcf64ed1f
+      drop
+      local.get $3
+      global.get $9
+      i16x8.neg
+      i8x16.all_true
+      i64.load32_s offset=3438087664 align=2
+      i64.ne
+      ref.null extern
+      ref.is_null
+      i32.atomic.rmw.and offset=4236562543
+      local.set $1
+      i32.const -1651539732
+      ref.null func
+      ref.is_null
+      i32.shr_u
+      drop
+      atomic.fence
+      ref.null extern
+      unreachable
+    end ;; $block
+    drop
+    ref.null extern
+    ref.null extern
+    unreachable
+    ))

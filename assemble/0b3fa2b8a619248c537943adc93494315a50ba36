@@ -1,0 +1,1 @@
+(func(throw 5(throw 0(throw 4))))

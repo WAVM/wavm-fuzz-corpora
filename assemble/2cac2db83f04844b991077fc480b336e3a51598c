@@ -1,0 +1,78 @@
+(module
+  (type $0 (func (param i32 i64) (result f32)))
+  (type $1 (func (result f64)))
+  (type $2 (func (result i32)))
+  (type $3 (func (param externref) (result i32 v128)))
+  (import "env" "table" (table $4 31 4294967295 funcref))
+  (import "env" "table" (table $5 79 4294967295 funcref))
+  (import "env" "global1" (global $8 externref))
+  (import "env" "global2" (global $9 (mut i32)))
+  (import "env" "func0" (func $17 (param i32 i64) (result f32)))
+  (import "env" "func1" (func $18 (result i32)))
+  (memory $7  45 52112 shared)
+  (table $6  37 4294967295 funcref)
+  (global $10  (mut i64) (i64.const -2680299161860567656))
+  (global $11  (mut externref) (ref.null extern))
+  (global $12  externref (ref.null extern))
+  (elem $13 externref
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern))
+  (elem $14 declare global
+    $10 $12 $11 $9 $8 $11 $12 $12
+    $10 $8 $8 $8 $8 $10 $12 $9
+    $10 $10 $12 $11 $10 $11 $8 $11
+    $9 $9 $11 $9 $8 $9 $8 $9
+    $10 $9 $11 $12 $10 $10 $10 $8
+    $9 $8 $8 $10 $9 $9 $10 $9
+    $8 $11 $8 $9 $12 $10 $11 $8
+    $11 $9 $11 $8 $9 $11 $11 $11
+    $11 $10 $10 $10 $8 $12 $8 $9
+    $9 $11 $9 $11 $8 $11 $10 $11
+    $9 $11 $8 $12 $12 $8 $8 $12
+    $8 $9)
+  
+  (func $19 (type $1)
+    (result f64)
+    v128.const i32x4 0x7ab80f8e 0x6ce9a47a 0x04e20995 0x7f7f235f
+    drop
+    memory.size
+    global.get $8
+    block $block (param externref) (result i32 v128)
+      call $19
+      f64.sqrt
+      f64.const -0x1.ac2b5c0388a52p-740
+      nop
+      global.get $9
+      i64x2.load32x2_u offset=1107872951 align=1
+      f64x2.abs
+      f64x2.abs
+      i8x16.extract_lane_s 7
+      i32.clz
+      global.set $9
+      f64.ne
+      table.get $5
+      ref.is_null
+      table.get $4
+      drop
+      ref.null extern
+      ref.is_null
+      table.get $4
+      ref.null extern
+      ref.null func
+      unreachable
+    end ;; $block
+    unreachable
+    )
+  
+  (data $15 (i32.const 1249359443)
+    "\88!\85\02@W\9ba\c8Tk\ec\0e_\9f\a96\faN\0d\08y\fe\17C'F$\bah\c7n\9b\d3Q\a8\bc\e7\12&y\95{\b9\cd\f93\f9\e0\bb\eb\1bW\da\d6'")
+  
+  (data $16 (i32.const -2097168976)
+    "\e0\df\ebg\0fo\1ed\c1\1d\15~"))

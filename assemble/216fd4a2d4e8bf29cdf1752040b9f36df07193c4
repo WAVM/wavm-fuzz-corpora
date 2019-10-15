@@ -1,0 +1,3 @@
+(func br 0
+i32.le_s i32.le_s i32.le_s br
+0)

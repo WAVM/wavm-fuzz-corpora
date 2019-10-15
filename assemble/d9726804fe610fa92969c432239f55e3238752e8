@@ -1,0 +1,2 @@
+(func br 5
+f32.lt br 0)

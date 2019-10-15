@@ -1,0 +1,19 @@
+(custn(a) "")(custom_section "a" (after data) "")
+    (custom_section "b" (after code))
+     (custom_section "b" _section "b" section "b" (aftr data) "")(custom_section "a" (after data) "")
+    (custom_section "b" (after code) "")
+    (custom_section "b" (t)(aftr data) "")(custom_section "a" (after data) "")
+    (custom_section "b" (after code) "")
+    (custom_section "b" (t)(a) "":)(custom_section "a" (after data) "")  (custom_section "b" (after code) "")
+ 
+    (custom_section "b" (i8x16.ltz_maska) "")(custom_section "a" (after data) "")
+    (custom_section "b" (after code) "")
+    (custom_section(a) "")(custom_section "a" (after data) "")
+    (custom_section "b" (after code))
+(custom_sectiosection "b" (after))
+     (custom_section "b" (aftr data) "")(custom_section "a" (after data) "")
+    (custom_section "b" (after code) "")
+    (custom_section "b" (t)(aftr data) "")(custom_section "a" (after data) "")
+    (custom_section "b" (after code) "")
+    (custom_section "b" (t)(a) "":)(custom_section "a" (after data) "")  (custom_section "b" (afte(t
+  

@@ -1,0 +1,53 @@
+(module
+  (type $0 (func (param f32 v128 i64 f64) (result f32 f64)))
+  (type $1 (func (param v128)))
+  (type $2 (func (param i64) (result externref i32)))
+  (type $3 (func (param v128 v128) (result funcref f64)))
+  (import "env" "memory" (memory $6 60 8818 shared))
+  (import "env" "table" (table $4 57 4294967295 funcref))
+  (import "enf" "global0" (global $8 funcref))
+  (import "env" "global1" (global $9 v128))
+  (import "env" "global3" (global $10 i32))
+  (import "env" "global4" (global $11 i64))
+  (import "env" "global5" (global $12 i32))
+  (import "env" "global6" (global $13 v128))
+  (import "env" "global7" (global $14 (mut externref)))
+  (import "env" "global8" (global $15 (mut i32)))
+  (import "env" "func0" (func $22 (param f32 v128 i64 f64) (result f32 f64)))
+  (import "env" "func1" (func $23 (param i64) (result externref i32)))
+  (memory $7  94 55759 shared)
+  (table $5  63 4294967295 shared funcref)
+  (global $16  v128 (v128.const i32x4 0xa3065d3c 0x052eea59 0xb39d60b6 0xbb26546e))
+  (global $17  funcref (ref.null func))
+  (elem $18 declare global
+    $9 $10 $11 $16 $11 $12 $11 $15
+    $12 $14 $9 $8 $14 $12 $15 $12
+    $9 $9 $10 $14 $11 $11 $12 $15
+    $14 $17 $14 $14 $13 $14 $12 $12
+    $17 $9 $10 $12 $16 $15 $15)
+  (elem $19 funcref
+    (ref.null func))
+  
+  (func $24 (type $1)
+    (param $0 v128)
+    (local $1 f64)
+    (local $2 v128)
+    global.get $11
+    elem.drop $19
+    f64.const -0x1.e61d530aff4d2p-955
+    global.get $17
+    loop $loop (result i32)
+      global.get $15
+      i64.extend_i32_s
+      i64.extend16_s
+      memory.size
+      i32.atomic.load8_u $7 offset=276785756
+      v64x2.load_interleaved_4 offset=2100016038 align=4
+      i16x8.widen_low_i8x16_s
+      i32x4.lt_s
+      i16x8.neg
+      loop $loop_0 (param v128 v128) (result funcref f64)
+\b9\e3\f2\a6F")
+  
+  (data $21 (memory $7) (i32.const 391204076)
+    "\08%a\c8\de\85\cd\01m<\a1r\d3\fe\ac\"8AK\e3a\8e\9d\ba)\da"))

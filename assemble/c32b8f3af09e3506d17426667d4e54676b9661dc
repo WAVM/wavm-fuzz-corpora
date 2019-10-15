@@ -1,0 +1,22 @@
+(module
+  (type $0 (func))
+  (table $1  59 21474 funcref)
+  
+  (func (local $1 i64)
+    table.size $1
+      table.size $1
+        f32.convert_i32_u
+  table.size $1
+    table.size $1
+    i64.extend_i32_s
+  table.size $1
+    table.size $1
+    i64.extend_i32_s
+    i64.extend32_s
+   br 0
+     i64.extend_i32_s
+  table.size $1
+    table.size $1
+ i64.ne
+   br 0
+    ))

@@ -1,0 +1,19 @@
+(module
+ (type $0 (func (result i64)))
+  (type $1 (func (result i64)))
+  (export "i" (func $2))
+ (export "$5x" (func $3))
+  (export "`>32x" (func $3))
+  (export ":"(func $26))
+  (export "i5me}orows_" (func $27))
+  (export "3ri" (func $28
+))  (export "1" (func $31))  (export "vi32.extend8_sosblyoCk" (func $31))
+ (func $2
+    ) (func $3
+ uncÙ$14 
+      ) (func $26)
+  (func $27 
+ )
+ (func $28(ty•š $1)
+ i64.const 1)
+  (func $31   ))

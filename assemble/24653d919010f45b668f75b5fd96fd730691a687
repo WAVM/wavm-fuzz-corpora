@@ -1,0 +1,30 @@
+(module
+  (type $0 (func (param i32 f64 f64)))
+  (type $1 (func (param f32) (result funcref i32)))
+  (type $2 (func (result funcref)))
+  (import "env" "memory" (memory $3 22 28957 shared))
+  (import "env" "memory" (memory $4 66 51696))
+  (import "env" "global0" (global $5 (mut f32)))
+  (import "env" "global1" (global $6 (mut i64)))
+  (import "env" "global2" (global $7 (mut f64)))
+  (import "env" "global3" (global $8 f64))
+  (import "env" "func0" (func $10 (param i32 f64 f64)))
+  (import "env" "func1" (func $11 (param f32) (result funcref i32)))
+  
+  (func $12 (type $2)
+    (result funcref)
+    (local $0 funcref)
+    i64.const 1371462412053603450
+    data.drop $9
+    f32.convert_i64_s
+    f64.const -0x1.cffdf19da62d8p-292
+    global.set $7
+    f32.ceil
+    f32.sqrt
+    atomic.fence
+    global.set $5
+    unreachable
+    )
+  
+  (data $9 
+    "\95\ef\7f\15\f8"))

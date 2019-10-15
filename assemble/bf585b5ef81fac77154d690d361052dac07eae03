@@ -1,0 +1,11 @@
+(func
+data.drop 0
+data.drop 0
+data.drop 0
+data.drop 0 data.drop 0 data.drop 0
+data.drop 0 data.drop 0 data.drop 0 data.drop 0
+data.drop 0
+data.drop 0 data.drop 0
+data.drop 0
+data.drop 0
+data.drop 0)

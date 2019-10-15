@@ -1,0 +1,176 @@
+(module
+  (type $0 (func (param funcref)))
+  (type $1 (func (param i64 i64 v128) (result f64 funcref)))
+  (type $2 (func (param v128 f32 v128) (result funcref i64)))
+  (type $3 (func (param v128 externref v128 f32) (result v128 i32)))
+  (type $4 (func (param externref externref f32 v128)))
+  (type $5 (func (param f64 i64 f64) (result i64 i32 funcref f64)))
+  (type $6 (func (param v128 f64) (result externref)))
+  (import "env" "memory" (memory $7 15 5776 shared))
+  (import "env" "global0" (global $9 (mut f64)))
+  (memory $8  11 17059 shared)
+  (elem $10 funcref
+    (ref.func $17) (ref.func $15) (ref.func $17) (ref.null func)
+    (ref.func $17) (ref.func $13) (ref.func $16))
+  (elem $11 memory
+    $7 $8 $8 $7 $8 $8 $8 $8
+    $7 $8 $7 $8 $7 $8 $7 $7
+    $8 $7 $7 $8 $7 $7 $7 $8
+    $8 $8 $8 $8 $7 $7 $7 $7
+    $7 $7 $7)
+  
+  (func $13 (type $0)
+    (param $0 funcref)
+    (local $1 f64)
+    (local $2 externref)
+    f32.const 0x1.2116d4p-46
+    local.get $0
+    drop
+    f64.const -0x1.f598016104f7dp+37
+    data.drop $12
+    i32.const 1171549803
+    i64.atomic.load offset=2370825490
+    global.get $9
+    loop $loop (param f64 i64 f64) (result i64 i32 funcref f64)
+      atomic.fence
+      i64.trunc_f64_s
+      i64.gt_s
+      f32.convert_i32_s
+      v128.const i32x4 0xa3a5b369 0x82f756b0 0xc3008010 0xb8660731
+      i32x4.trunc_sat_f32x4_s
+      unreachable
+    end ;; $loop
+    local.set $1
+    ref.null func
+    return
+    )
+  
+  (func $14 (type $1)
+    (param $0 i64)
+    (param $1 i64)
+    (param $2 v128)
+    (result f64 funcref)
+    (local $3 externref)
+    (local $4 externref)
+    ref.null func
+    data.drop $12
+    f64.const 0x1.ef5982fcd1820p-866
+    i64.trunc_f64_s
+    local.tee $1
+    local.get $1
+    block $block (result f32)
+      local.get $4
+      f32.const -0x1.d1dd74p+8
+      i32.trunc_f32_u
+      v64x2.load_splat $8 offset=911358364 align=4
+      i16x8.extract_lane_u 2
+      i32.clz
+      global.get $9
+      f32.const -0x1.1381eep+111
+      drop
+      global.set $9
+      ref.null func
+      ref.is_null
+      i32.sub
+      ref.null func
+      drop
+      unreachable
+    end ;; $block
+    drop
+    local.set $0
+    local.set $1
+    ref.is_null
+    unreachable
+    )
+  
+  (func $15 (type $2)
+    (param $0 v128)
+    (param $1 f32)
+    (param $2 v128)
+    (result funcref i64)
+    (local $3 f32)
+    data.drop $12
+    atomic.fence
+    local.get $0
+    i8x16.any_true
+    v8x16.load_interleaved_4 offset=898564549 align=4
+    i8x16.avgr_u
+    i32x4.le_s
+    i64x2.sub
+    i16x8.bitmask
+    i32.atomic.load8_u $8 offset=3750118121
+    v32x4.load_interleaved_4 offset=1242260057 align=8
+    i32x4.sub
+    i8x16.add
+    i8x16.avgr_u
+    f32x4.abs
+    local.set $2
+    local.get $0
+    local.set $2
+    i32.const 1470049107
+    drop
+    ref.null func
+    global.get $9
+    drop
+    i32.const 1618961426
+    drop
+    nop
+    drop
+    local.get $3
+    drop
+    local.get $0
+    local.set $2
+    ref.null func
+    local.get $0
+    ref.null extern
+    ref.null extern
+    ref.null func
+    unreachable
+    )
+  
+  (func $16 (type $3)
+    (param $0 v128)
+    (param $1 externref)
+    (param $2 v128)
+    (param $3 f32)
+    (result v128 i32)
+    (local $4 funcref)
+    (local $5 i64)
+    (local $6 v128)
+    elem.drop $11
+    global.get $9
+    local.get $5
+    unreachable
+    )
+  
+  (func $17 (type $4)
+    (param $0 externref)
+    (param $1 externref)
+    (param $2 f32)
+    (param $3 v128)
+    (local $4 externref)
+    nop
+    i64.const -6293634643263421838
+    local.get $1
+    local.set $0
+    i32.const -978030481
+    f32.load offset=2542720774
+    i32.trunc_sat_f32_s
+    v32x4.load_interleaved_4 $8 offset=1297128361 align=1
+    i64x2.sub
+    i64x2.sub
+    i8x16.add_saturate_u
+    f64.const -0x1.37f56d37a630bp+14
+    block $block (param v128 f64) (result externref)
+      atomic.fence
+      i32.trunc_f64_s
+      i16x8.shr_s
+      br 1
+    end ;; $block
+    local.set $0
+    drop
+    unreachable
+    )
+  
+  (data $12 
+    "\87\e2\f6\n\afB\a1\b5e\05\b2\ee\ef9+`\ea\df\d4\06\b8\fb\ec\df"))

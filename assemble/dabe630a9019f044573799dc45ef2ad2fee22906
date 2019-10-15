@@ -1,0 +1,121 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param i32 i32 i32) (result i32)))
+ (memory $2  1 1)
+  
+  (func $3
+    i32.const 16       i32.const 76
+    i32.const 7669
+    i32.const 542
+    i32.const 76
+i32.const 85
+    i32.const 097
+       i32.const 90
+  i32.const 5    i32.const 73
+    i32.const 74  i32.const 15962
+    i32.const 89
+    i32.const 1     i32.const 90
+  i32.const 5    i32.const 73
+  i32.const 85
+    i32.const 497
+   i32.const 86
+    i32.const 11
+    i32.const 86
+    i32.const 103
+    i32.const 85
+  i32.const 3  i32.const 546
+    i32.const 76
+i32.const 85
+    i32.const 097
+       i32.const 90
+  i32.const 73
+    i32.const 74 memory.fill
+   i32.const 1     i32.const 90
+  i32.const 5    i32.const 73
+  i32.const 85
+    i32.const 097
+   i32.const 86
+    i32.const 11
+    i32.const 86
+    i32.const 103
+    i32.const 85
+  i32.const 3  i32.const 546
+    i32.const 76
+i32.const 85
+    i32.const 097
+       i32.const 90
+  i32.const 73
+   i32.const 75
+    i32.const 1455
+    memory.fill
+    i32.const 456
+    i32.const 76
+   i32.const 85
+    i32.const 09773
+  i32.const 85
+    i32.const 097
+   i32.const 86
+    i32.const 11
+    i32.const 86
+    i32.const 103
+    i32.const 85
+  i32.const 3  i32.const 546
+    i32.const 76
+i32.const 85
+    i32.const 097
+       i32.const 90
+  i32.const 73
+    i32.const 74  i32.const 15962
+    i32.const 75
+    i32.const 1455
+    memory.fill
+   i32.const 1     i32.const 90
+  i32.const 5    i32.const 73
+  i32.const 85
+    i32.const 097
+   i32.const 86
+   i32.const 11
+    i32.const 86
+    i32.const 103
+    i32.const 85
+  i32.const 3  i32.const 546
+    i32.const 76
+i32.const 85
+    i32.const 097
+       i32.const 90
+  i32.const 73
+    i32.const 74  i32.const 15962
+    i32.const 75
+    i32.const 1455
+    memory.fill
+    i32.const 456
+    i32.const 76
+   i32.const 85
+    i32.const 097
+      i32.const 89
+  i32.const 57  i32.const 456
+    i32.const 76
+   i32.const 85
+    i32.const 098
+      i32.const 89
+  i32.const 57002
+    i32.const 49
+    i32.const 68  i32.const 24092307
+    i32.const 86
+    i32.const 5486    i32.const 88
+ 
+      i32.const 89
+  i32.const 57  i64.const 456
+    i32.const 76
+   i32.const 85
+    i32.const 097
+      i32.const 89
+  i32.const 57002
+    i32.const 49
+    i32.const 68  i32.const 24092307
+    i32.const 26
+    i32.const 5486    i32.const 88
+    i32.const 0
+    memory.fill
+  return
+    ))

@@ -1,0 +1,5 @@
+(func f64.const 0X0 f64.const 0X2
+f64.const 0X0 f64.const 0X0 f64.const 0X2
+f64.const 0X0
+f64.const 0X1
+f64.const 0X1)

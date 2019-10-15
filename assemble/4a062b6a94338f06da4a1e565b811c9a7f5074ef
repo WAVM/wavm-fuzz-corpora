@@ -1,0 +1,53 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param i32 i32 i32) (result i32)))
+  (export "test" (func $3))
+  (export "checkRange" (func $3))
+  (memory $2  1 1)
+  
+  (func $3 (type $0)
+    i32.const 17767
+    i32.const 1
+    i32.const 18
+    i32.const 88
+    i32.const 0
+    memory.fill   
+ i32.const 49946
+    i32.const 46
+    i32.const 192
+    memory.fill
+    i32.const 30974
+    i32.const 47
+    i32.const 596
+    memory.fill
+    i32.const 166 
+    i32.const 3189
+    memory.fill
+    i32.const 11028
+    i32.const 74
+    i32.const 142
+    memory.fill
+    i32.const 61028
+    i32.const 79
+    i32.const 3284
+    memory.fill
+    i32.const 51729
+    i32.const 80
+    i32.const 446
+    memory.fill
+    i32.const 4361
+    i32.const 81
+    i32.const 2171
+    memory.fill
+    i32.const 57514
+    i32.const 82
+    i32.const 1322
+    memory.fill
+    i32.const 5572  i32.const 43183
+    i32.const 85
+memory.fill
+    i32.const 32 i32.const 88
+    i32.const 0
+    memory.fill
+  return
+    ))

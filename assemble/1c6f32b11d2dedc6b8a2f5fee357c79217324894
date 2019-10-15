@@ -1,0 +1,49 @@
+(module
+  (type $0 (func (param f64) (result funcref f64)))
+  (type $1 (func (param funcref f64) (result funcref externref)))
+  (type $2 (func (param i64 v128 f64) (result v128 i32)))
+  (type $3 (func (param v128 f64 i32) (result i32)))
+  (type $4 (func (param f64)))
+  (import "env" "func0" (func $12 (param funcref f64) (result funcref externref)))
+  (import "env" "func1" (func $13 (param i64 v128 f64) (result v128 i32)))
+  (import "env" "func2" (func $14 (param v128 f64 i32) (result i32)))
+  (memory $6  50 16290 shared)
+  (memory $7  34 1844 shared)
+  (table $5  77 4294967295 funcref)
+  (global $8  (mut f64) (f64.const 0x1.e6c65177fbb99p+56))
+  (global $9  (mut f64) (f64.const 0x1.3ce30395405ecp+61))
+  (elem $10 declare exception_type)
+  
+  (func $15 (type $0)
+    (param $0 f64)
+    (result funcref f64)
+    (local $1 f32)
+    (local $2 externref)
+    (local $3 f32)
+    local.get $3
+    i64.trunc_sat_f32_u
+    ref.null func
+    i32.const 1983831768
+    i64.extend_i32_u
+    drop
+    f64.const -0x1.cf293f94f5230p+431
+    atomic.fence
+    local.get $0
+    f64.neg
+    f64.neg
+    block $block (param f64)
+      i64.trunc_sat_f64_s
+      local.get $0
+      f64.neg
+      br $block
+    end ;; $block
+    local.set $0
+    ref.null func
+    ref.null extern
+    ref.is_null
+    select (result funcref)
+    unreachable
+    )
+  
+  (data $11 (i32.const 990866618)
+    "\14\fa\10"))

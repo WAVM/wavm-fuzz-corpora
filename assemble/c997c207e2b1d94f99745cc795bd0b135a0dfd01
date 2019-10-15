@@ -1,0 +1,77 @@
+(module
+  (type $0 (func (param f64 v128 externref i64) (result externref)))
+  (type $1 (func (result f32 funcref)))
+  (type $2 (func (param f64)))
+  (type $3 (func (result i32)))
+  (type $4 (func (param f32 f64 f32 f64) (result v128 externref)))
+  (import "env" "memor&" (memory $7 30 30747 shared))
+  (import "env" "memory" (memory $8 96 22765 shared))
+  (import "env" "global0" (global $10 (mut v128)))
+  (import "env" "global1" (global $11 (mut f32)))
+  (import "env" "global4" (global $12 (mut i64)))
+  (import "env" "func0" (func $17 (param f64)))
+  (import "env" "func1" (func $18 (param f32 f64 f32 f64) (result v128 externref)))
+  (memory $9  36 53687 shared)
+  (table $5  93 4294967295 shared funcref)
+  (table $6  37 4294967295 shared funcref)
+  (global $13  (mut i32) (i32.const 128857438))
+  (global $14  (mut f32) (f32.const 0x1.585f5cp+31))
+  (global $15  (mut funcref) (ref.null func))
+  (global $16  (mut i32) (i32.const 94329342))
+  
+  (func $19 (type $0)
+    (param $0 f64)
+    (param $1 v128)
+    (param $2 externref)
+    (param $3 i64)
+    (result externref)
+    global.get $11
+    call $20
+    call $21
+    i64.load8_s offset=234598185
+    f32.convert_i64_u
+    global.get $10
+    i64x2.extract_lane 1
+    unreachable
+    )
+  
+  (func $20 (type $1)
+    (result f32 funcref)
+    (local $0 f32)
+    (local $1 f64)
+    (local $2 funcref)
+    (local $3 v128)
+    v128.const i32x4 0x58551340 0x68532fa3 0xd365816f 0x209d3d33
+    atomic.fence
+    i8x16.extract_lane_s 6
+    i64.atomic.load32_u $9 offset=1348596517
+    call $21
+    i32.const -987648911
+    i32.atomic.store8 $9 offset=1317323806
+    f64.reinterpret_i64
+    unreachable
+    )
+  
+  (func $21 (type $3)
+    (result i32)
+    (local $0 i64)
+    (local $1 i32)
+    global.get $10
+    i32x4.trunc_sat_f32x4_u
+    i8x16.neg
+    i32x4.widen_high_i16x8_u
+    i32x4.trunc_sat_f32x4_u
+    i32x4.trunc_sat_f32x4_u
+    f32x4.convert_i32x4_u
+    f32x4.neg
+    i16x8.neg
+    i32x4.widen_low_i16x8_s
+    call $20
+    f64.const 0x1.81369cc0f0694p-90
+    drop
+    f64.const 0x1.7baee66d94f73p-566
+    i32.trunc_sat_f64_s
+    drop
+    ref.is_null
+    return
+    ))

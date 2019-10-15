@@ -1,0 +1,3 @@
+(func()i32.and
+i32.and i32.and
+i32.and)

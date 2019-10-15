@@ -1,0 +1,90 @@
+(module
+  (type $0 (func (param funcref i64 f64 v128) (result funcref i32)))
+  (type $1 (func (result v128)))
+  (type $2 (func (param i32 i32) (result externref i32)))
+  (memory $4  34 4411 shared)
+  (table $3  33 4294967295 externref)
+  (elem $5 declare funcref
+    (ref.null func) (ref.func $8) (ref.func $8) (ref.func $8)
+    (ref.func $9) (ref.null func) (ref.null func) (ref.func $9)
+    (ref.null func) (ref.func $9) (ref.func $8) (ref.null func)
+    (ref.func $9) (ref.func $8) (ref.func $9) (ref.null func)
+    (ref.func $9) (ref.func $9) (ref.func $9) (ref.func $8)
+    (ref.func $9) (ref.func $8) (ref.func $8) (ref.null func)
+    (ref.func $9) (ref.null func) (ref.func $9) (ref.func $9)
+    (ref.null func) (ref.null func) (ref.func $8) (ref.func $8)
+    (ref.func $8) (ref.func $8) (ref.func $8) (ref.func $9)
+    (ref.func $8) (ref.null func) (ref.null func) (ref.func $8)
+    (ref.func $9) (ref.func $8) (ref.func $9) (ref.func $9)
+    (ref.func $8) (ref.null func) (ref.func $9) (ref.null func)
+    (ref.func $8) (ref.func $9) (ref.func $9) (ref.func $8)
+    (ref.func $8) (ref.func $8) (ref.func $9) (ref.null func)
+    (ref.func $8) (ref.func $8) (ref.func $8) (ref.func $8)
+    (ref.func $9) (ref.func $8) (ref.func $8) (ref.null func)
+    (ref.func $8) (ref.func $9) (ref.null func) (ref.null func)
+    (ref.func $8) (ref.null func) (ref.null func) (ref.null func)
+    (ref.null func) (ref.func $8) (ref.func $8) (ref.func $8))
+  (elem $6 exception_type)
+  
+  (func $8 (type $0)
+    (param $0 funcref)
+    (param $1 i64)
+    (param $2 f64)
+    (param $3 v128)
+    (result funcref i32)
+    (local $4 i32)
+    local.get $3
+    i16x8.widen_low_i8x16_u
+    f64.const -0x1.9922c4349ff06p+427
+    call $9
+    i8x16.bitmask
+    i32.load8_s offset=604417780
+    f64.load offset=4160055783 align=4
+    i64.trunc_sat_f64_u
+    f32.convert_i64_u
+    i32.const -589077558
+    local.get $2
+    i32.trunc_sat_f64_s
+    block $block (param i32 i32) (result externref i32)
+      i32.lt_u
+      v128.load offset=3043822565 align=4
+      ref.null func
+      ref.is_null
+      i8x16.replace_lane 8
+      drop
+      i32.const 1302938020
+      table.get $3
+      v128.const i32x4 0xc980a635 0x0f6a875d 0x5bf0e934 0x6e52af80
+      drop
+      i64.const -619098571769571700
+      local.set $1
+      local.get $4
+      unreachable
+    end ;; $block
+    drop
+    unreachable
+    )
+  
+  (func $9 (type $1)
+    (result v128)
+    (local $0 i64)
+    memory.size
+    v16x8.load_interleaved_4 offset=3402279241 align=2
+    v128.or
+    table.size $3
+    drop
+    i16x8.widen_high_i8x16_u
+    f32x4.max
+    i16x8.all_true
+    i64x2.shl
+    i32x4.neg
+    data.drop $7
+    i32x4.trunc_sat_f32x4_u
+    i16x8.abs
+    elem.drop $5
+    return
+    )
+  
+  (data $7 (i32.const 945586426)
+    "`\fc\b8\93.\a6&\cc\cd\af\e3K)\9c\e5\80g`\98\1e\feU5\fd\d0E\fe\f7eP8\18)\d8F\84\b0\9f#\e2{k\ec&\12\b4\ef\d4\a8\1a\c1x\97\97\c2\0dz64\d4\1dY\a2\cb"
+    "t;\c1\f0H\f6l\c2\f3n\efK\d2.\f9f\93"))

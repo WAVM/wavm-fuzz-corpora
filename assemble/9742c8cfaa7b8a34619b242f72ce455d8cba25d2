@@ -1,0 +1,91 @@
+(module
+  (type $0 (func (param v128 f32 v128)))
+  (type $1 (func (result f64 f64)))
+  (import "env" "memory" (memory $5 98 35390))
+  (import "env" "table" (table $2 77 4294967295 shared funcref))
+  (import "env" "table" (table $3 90 4294967295 shared externref))
+  (import "env" "global0" (global $8 f64))
+  (import "env" "global1" (global $9 (mut funcref)))
+  (import "env" "global3" (global $10 v128))
+  (import "env" "global5" (global $11 funcref))
+  (import "env" "global9" (global $12 externref))
+  (memory $6  11 32700 shared)
+  (memory $7  89 53328 shared)
+  (table $4  67 4294967295 shared funcref)
+  (global $13  (mut externref) (ref.null extern))
+  (global $14  i32 (i32.const -234492835))
+  (global $15  (mut i64) (i64.const -7369422158954881605))
+  (global $16  v128 (v128.const i32x4 0x37b86387 0x87437b96 0xee45f604 0x406fbb86))
+  (global $17  i64 (i64.const 3807774014241625066))
+  (elem $18 (table $3) (i32.const -1832192546) externref
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern))
+  (elem $19 (table $3) (i32.const 1759132897) table
+    $4 $4 $4 $4 $3 $4 $2 $2
+    $2 $2 $2 $4 $4 $4 $3 $3
+    $2 $2 $4 $3 $3 $2 $3 $4
+    $2 $2 $2 $2 $3 $4 $4 $4
+    $4 $4 $4 $4 $3 $4 $3 $3
+    $2 $3 $4 $2 $3 $2 $4 $2
+    $3 $2 $2 $4 $4 $4 $2 $4
+    $3 $4 $3 $3 $2 $3 $2 $2
+    $2 $3 $2 $4 $4 $4 $4 $2
+    $4 $4 $4 $4 $2 $2)
+  
+  (func $21 (type $0)
+    (param $0 v128)
+    (param $1 f32)
+    (param $2 v128)
+    global.get $12
+    ref.is_null
+    i32.extend16_s
+    i64.const 7701893684851697266
+    i64.atomic.rmw16.xor_u offset=1798624832
+    local.get $0
+    memory.size $6
+    block $block (result f64 f64)
+      global.get $15
+      i64.extend16_s
+      f64.convert_i64_u
+      i32.trunc_sat_f64_u
+      data.drop $20
+      v32x4.load_interleaved_3 offset=1698134194 align=2
+      f32x4.div
+      i16x8.min_u
+      local.set $2
+      i64.const -689449864465591979
+      br 1
+    end ;; $block
+    f64.lt
+    br_if 0
+    i8x16.shr_s
+    drop
+    drop
+    )
+  
+  (data $20 (memory $6) (i32.const 1924612704)
+    "c\d1\e5|5\9eS|\94\b6\17\a3\89\a5 \93|o\d9\e7,\00\"\9f#\n/x9\d4Y\93\f2\f8\8f>.\0f\ce\ef\f5o\fbR\a7\11[\99\cf_\9d\9c\09\ac~\1d\84L\ff\fe\86z\c76"
+    "\\_\1d\08\f1\e8\c3\94\dd)\f1.p\04\99\8ea\d6\a1\c3\87\16Tu\f0\d8HG\a6\09"))

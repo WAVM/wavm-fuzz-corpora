@@ -1,0 +1,1 @@
+(global i32(global.get 2))(global i32(global.get 0))(global i64(global.get 0))

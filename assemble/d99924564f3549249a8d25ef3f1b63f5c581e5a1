@@ -1,0 +1,5 @@
+(func br 0
+f32x4.min
+f32x4.min
+f32x4.min br
+0)

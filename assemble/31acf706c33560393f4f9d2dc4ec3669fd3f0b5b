@@ -1,0 +1,1 @@
+(func i8x16.neg i32.shr_u i8x16.neg)(func i8x16.neg i32.shr_u i8x16.neg)

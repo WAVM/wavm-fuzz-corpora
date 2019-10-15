@@ -1,0 +1,4 @@
+ (func   try i64  catch_all )
+(func  try i64 catch_all )(func
+  try i32  catch_all )
+(func   try i64  catch_all 000)

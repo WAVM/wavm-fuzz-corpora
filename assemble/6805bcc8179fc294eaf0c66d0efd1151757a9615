@@ -1,0 +1,82 @@
+(module
+  (type $0 (func (param i64 f64) (result v128 externref)))
+  (type $1 (func (param v128 v128) (result v128 funcref)))
+  (type $2 (func (param f64) (result i32 i64)))
+  (import "env" "memory" (memory $4 33 7926 shared))
+  (import "env" "memory" (memory $5 70 14911))
+  (import "env" "global1" (global $7 funcref))
+  (memory $6  8 8105)
+  (table $3  99 4294967295 funcref)
+  (global $8  externref (ref.null extern))
+  (elem $9 table
+    $3 $3 $3 $3 $3 $3 $3 $3
+    $3 $3 $3 $3 $3 $3 $3 $3
+    $3 $3 $3 $3 $3 $3 $3 $3
+    $3 $3 $3 $3 $3 $3 $3 $3
+    $3 $3 $3 $3 $3 $3 $3 $3
+    $3 $3 $3 $3 $3 $3 $3 $3
+    $3 $3 $3 $3 $3 $3 $3 $3
+    $3 $3 $3 $3 $3 $3 $3 $3
+    $3 $3 $3 $3 $3 $3 $3 $3
+    $3 $3 $3 $3 $3 $3 $3 $3
+    $3 $3 $3 $3 $3 $3 $3 $3
+    $3 $3 $3 $3 $3 $3 $3 $3
+    $3 $3)
+  
+  (func $10 (type $0)
+    (param $0 i64)
+    (param $1 f64)
+    (result v128 externref)
+    (local $2 f64)
+    (local $3 f64)
+    local.get $1
+    local.get $0
+    f32.convert_i64_s
+    f32x4.splat
+    i32x4.widen_high_i16x8_s
+    i16x8.widen_low_i8x16_s
+    i32x4.all_true
+    i32.load $5 offset=3476183266 align=2
+    i64.atomic.load $6 offset=348106149
+    table.size $3
+    i64.atomic.load $5 offset=1063575077
+    i64.ge_u
+    i64.extend_i32_u
+    f32.convert_i64_s
+    f32x4.splat
+    drop
+    unreachable
+    )
+  
+  (func $11 (type $1)
+    (param $0 v128)
+    (param $1 v128)
+    (result v128 funcref)
+    (local $2 funcref)
+    (local $3 v128)
+    local.get $2
+    atomic.fence
+    local.get $2
+    memory.size
+    f64.const -0x1.72c48f979af32p+484
+    f64.const -0x1.ff980d7571b23p+76
+    f64.sqrt
+    atomic.fence
+    block $block (param f64) (result i32 i64)
+      atomic.fence
+      local.get $2
+      i32.const -486599155
+      drop
+      global.get $7
+      drop
+      ref.is_null
+      table.get $3
+      unreachable
+    end ;; $block
+    i64.atomic.rmw32.xchg_u offset=746555772
+    drop
+    ref.null func
+    drop
+    ref.null extern
+    unreachable
+    ))

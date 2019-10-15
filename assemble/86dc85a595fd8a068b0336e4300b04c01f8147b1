@@ -1,0 +1,1 @@
+(func(f64.const 1E5)f64.const 5E5(f64.const 1E7)f64.const 5E1)

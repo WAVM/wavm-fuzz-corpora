@@ -1,0 +1,2 @@
+(global
+i64.trunc_f64_u)

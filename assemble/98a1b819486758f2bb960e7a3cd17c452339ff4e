@@ -1,0 +1,21 @@
+(module
+  (type $0 (func (param v128 i64) (result f64 funcref)))
+  (import "env" "table" (table $1 80 4294967290 shared funcref))
+  (import "env" "global1" (global $3 v128))
+  (import "env" "global2" (global $4 funcref))
+  (import "env" "global3" (global $5 (mut funcref)))
+  (import "env" "global4" (global $6 (mut i64)))
+  (import "env" "global6" (global $7 (mut f32)))
+  (import "env" "global7" (global $8 i32))
+  (import "env" "global8" (global $9 (mut i32)))
+  (import "env" "global9" (global $10 v128))
+  (import "env" "func0" (func $15 (param v128 i64) (result f64 funcref)))
+  (memory $2  6 7431 shared)
+  (global $11  i32 (i32.const 15614413))
+  (global $12  (mut externref) (ref.null extern))
+  
+  (data $13 (i32.const 1592894850)
+    "\e7<ROa=\c4\9c}\01\7f\a1 <C\a6\ff\e7\bf\f5\cd)3\91\91N\ac\dd\de]\cf\b6\e8 Z\89\1a\9e\15\dd\b3yag")
+  
+  (data $14 (i32.const -387213646)
+    "\e2\0d\8f\0fg\dd\ad\b5"))

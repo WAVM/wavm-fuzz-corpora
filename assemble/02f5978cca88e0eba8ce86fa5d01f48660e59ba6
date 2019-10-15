@@ -1,0 +1,39 @@
+(module
+  (type $0 (func (param funcref i64 f32) (result i64 i32)))
+  (type $1 (func (param i64 f64 v128) (result f32 f64)))
+  (import "env" "memory" (memory $3 69 51020))
+  (import "env" "func0" (func $7 (param funcref i64 f32) (result i64 i32)))
+  (memory $4  46 35975 shared)
+  (memory $5  22 22382)
+  (table $2  70 4294967295 funcref)
+  
+  (func $8 (type $1)
+    (param $0 i64)
+    (param $1 f64)
+    (param $2 v128)
+    (result f32 f64)
+    (local $3 i32)
+    nop
+    local.get $3
+    v64x2.load_interleaved_3 $4 offset=2448946957
+    i8x16.add_saturate_s
+    i8x16.add_saturate_s
+    i64.const -9106345047242426992
+    i64.extend32_s
+    atomic.fence
+    i64.ctz
+    loop $loop
+      data.drop $6
+      local.get $1
+      f64.abs
+      i64.trunc_f64_u
+      i64.const 3720907189887390764
+      i64.gt_u
+      drop
+      br $loop
+    end ;; $loop
+    unreachable
+    )
+  
+  (data $6 
+    "\eb\96\aaE\e0\f4\8b\\\a6pTf\18&Nwt\f8\e3\9a\e8c\1eD\00\bf\aev\e4\f2n\e9\eb\9d3\f6\e6\fe\03\09\92\88\bc3\af\e0\edMS\b7\97\d7|;\b0g\f2oS\ed\12\";\09"))

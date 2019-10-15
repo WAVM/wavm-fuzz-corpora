@@ -1,0 +1,14 @@
+(module
+  (type $0 (func (param externref)))
+  (type $1 (func (param f64)))
+  (type $2 (func (param v128 v128 f32 f64) (result v128)))
+  (type $3 (func (param f32 i64 f32) (result i32)))
+  (type $4 (func (param f32) (result externref)))
+  (import "env" "memory" (memory $5 83 39906 shared))
+  (import "env" "func0" (func $9 (param externref)))
+  (import "env" "func1" (func $10 (param f64)))
+  (elem $6 declare global)
+  
+  (func $11 (type $2)   if $if (param f32 i64 f32) (result i32)
+      memory.size
+      if $if_0 (param f32) (\fb\\DW1A\0d\02\90\9b\c23\f8\c7\d1i64.div_u\e1yv\n"))

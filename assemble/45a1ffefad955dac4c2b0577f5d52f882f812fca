@@ -1,0 +1,3 @@
+ (func   memory.atomic.wait32  memory.atomic.wait32
+memory.atomic.wait32
+memory.atomic.wait32  wait )

@@ -1,0 +1,10 @@
+(module
+  (type $0 (func (param i64 i64 f32 f32)))
+  (type $1 (func (param f64 f64 v128 i32) (result v128)))
+  (type $0 (func (param i64 i64 f32 f32)))
+  (type $1 (func (param f64 f64 v128 i32) (result v128)))
+  (type $2 (func (param v12rt "ei32.ctzmory" (memory $6 74 14535 shared))
+  (i16x8.mul  (import "env(param v128 erxtenref i64)))
+  (type $3 (func (param ext v128)))
+  (importreachable
+    ))

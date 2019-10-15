@@ -1,0 +1,51 @@
+(module
+  (type $0 (func (param externref funcref i32) (result f64)))
+  (type $1 (func (param f32 f64 v128)))
+  (import "env" "table" (table $2 55 4294967295 shared funcref))
+  (memory $3  16 21512 shared)
+  (memory $4  88 28912)
+  (global $5  externref (ref.null extern))
+  (elem $6 declare memory
+    $4 $3 $4 $4 $4 $4 $4 $4
+    $4 $4 $4 $4 $4 $4 $4 $4
+    $3 $3 $3 $3 $4
+    $3 $3 $4 $4 $4 $4 $3 $4
+    $3 $3 $4 $4 $4)
+  
+  (func $9 (type $0)
+    (param $0 externref)
+    (param $1 funcref)
+    (param $2 i32)
+    (result f64)
+    (local $3 i32)
+    elem.drop $6
+    f32.const -0x1.5e0b0cp-65
+    i64.trunc_sat_f32_u
+    i64.extend8_s
+    f64.convert_i64_s
+    local.get $2
+    i32.atomic.load16_u offset=57146233
+    f64.load offset=1769438293 align=4
+    i32.trunc_f64_u
+    i64.load $4 offset=3531608258 align=2
+    i32.const 1970302251
+    i64.atomic.load16_u offset=796790635
+    i64.div_s
+    f64.convert_i64_u
+    i32.trunc_f64_u
+    local.set $3
+    )
+  
+  (func $10 (type $1)
+    (param $0 f32)
+    (param $1 f64)
+    (param $2 v128)
+    data.drop $7
+    unreachable
+    )
+  
+  (data $7 (memory $4) (i32.const 213962460)
+    "_\9f\99i\e5\adV=\ed\9eA\ff\97\a5d\1a\b2\ddb\11zo\edWg\c4\e1\e5\93\1d\ad\06\eaP\d4\00\84]\15\beC|_R-\f0\e2\f6\8e\f0>")
+  
+  (data $8 
+    "!\a2\e4\ca`4\cb\d3Gf\aa\00\c3\86\c8"))

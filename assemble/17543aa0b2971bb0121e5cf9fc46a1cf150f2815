@@ -1,0 +1,5 @@
+(memory 1)(func (local.get 1)memory.grow
+memory.grow memory.grow memory.grow memory.grow
+memory.grow memory.grow memory.grow memory.grow memory.grow memory.grow memory.grow
+memory.grow memory.grow
+memory.grow memory.grow)

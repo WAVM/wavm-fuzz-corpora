@@ -1,0 +1,41 @@
+(module
+  (type $0 (func (param funcref funcref f32) (result i32 i32)))
+  (type $1 (func (param i32 v128 v128 f64)))
+  (import "env" "memory" (memory $3 43 12743 shared))
+  (import "env" "global3" (global $6 f32))
+  (import "env" "func0" (func $11 (param funcref funcref f32) (result i32 i32)))
+  (memory $4  94 25592)
+  (memory $5  24 49778)
+  (table $2  30 4294967295 externref)
+  (global $7  (mut v128) (v128.const i32x4 0xa5175aaa 0x25b51714 0xc12bc62b 0xeb4efa30))
+  (global $8  i64 (i64.const -2465583791944207031))
+  (global $9  i64 (i64.const 1193724495424145487))
+  
+  (func $12 (type $1)
+    (param $0 i32)
+    (param $1 v128)
+    (param $2 v128)
+    (param $3 f64)
+    (local $4 i64)
+    (local $5 f64)
+    i32.const -689996542
+    i32.load8_s offset=1369158844
+    local.get $1
+    local.set $1
+    v64x2.load_interleaved_4 $5 offset=3004321419 align=4
+    i32x4.lt_u
+    f64x2.ne
+    f64x2.lt
+    i8x16.bitmask
+    v64x2.load_splat offset=2192354102
+    i32x4.neg
+    local.get $2
+    f64x2.ne
+    f32x4.sqrt
+    f32x4.abs
+    global.set $7
+    br 0
+    )
+  
+  (data $10 
+    "U\ce\14\0d\d6\fb\85Z\0f"))

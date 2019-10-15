@@ -1,0 +1,5 @@
+(func(param $x f64)(param $y f64) local.get $x
+ local.get $y local.get $x
+  local.get $y  f64.le select
+local.get $y local.get $x
+ local.get $y f64.gt select local.get get $x local.get $y  f64.le select)

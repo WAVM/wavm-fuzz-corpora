@@ -1,0 +1,4 @@
+(func br
+0 i8x16.extract_lane_s 2 br
+0 i8x16.extract_lane_s 0 br
+00)

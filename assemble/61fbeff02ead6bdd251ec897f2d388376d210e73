@@ -1,0 +1,11 @@
+(module
+  (type $0 (func))
+  (table $1  3 funcref)
+  (elem $2 funcref
+    (ref.func $3) (ref.null func) (ref.func $4))
+  
+  (func $3 (type $0)
+    )
+  
+  (func $4 (type $0)
+    ))

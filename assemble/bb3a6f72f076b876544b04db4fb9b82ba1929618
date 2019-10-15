@@ -1,0 +1,1 @@
+(func(drop(i64.atomic.rmw.sub)(i64.atomic.rmw.sub))(i64.atomic.rmw.sub)(i64.atomic.rmw.sub)(drop(i64.atomic.rmw.sub)(i64.atomic.rmw.sub))(i64.atomic.rmw.sub)( i64.atomic.rmw.sub))

@@ -1,0 +1,2 @@
+(func br 0 i32.or i32.xor i32.xor br
+0)

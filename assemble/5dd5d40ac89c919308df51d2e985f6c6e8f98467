@@ -1,0 +1,55 @@
+(module
+  (type $0 (func (param i64) (result v128)))
+  (type $1 (func (param f32 externref externref i64)))
+  (import "env" "memory" (memory $5 64 35384 shared))
+  (import "env" "global0" (global $6 funcref))
+  (import "env" "global5" (global $7 (mut i64)))
+  (import "env" "global6" (global $8 funcref))
+  (import "env" "func0" (func $14 (param f32 externref externref i64)))
+  (table $2  76 4294967295 funcref)
+  (table $3  91 4294967295 funcref)
+  (table $4  94 4294967295 externref)
+  (global $9  (mut i64) (i64.const 1839342763324506538))
+  (global $10  i64 (i64.const 4092575212236243614))
+  (global $11  funcref (ref.null func))
+  (global $12  (mut f64) (f64.const 0x1.46cdc74223556p+63))
+  (elem $13 (table $4) (i32.const -1532046783) global
+    $11 $11 $7 $6 $11 $11 $10 $10
+    $11 $8 $11 $12 $10 $8 $10 $9
+    $12 $8 $6 $9 $7 $9 $11 $7
+    $10 $11 $11 $8 $12 $12 $11 $9
+    $12 $9 $8 $6 $6 $7 $9 $8
+    $9 $9 $11 $12 $10 $9 $7 $8
+    $6 $6 $11 $7 $10 $6 $12)
+  
+  (func $15 (type $0)
+    (param $0 i64)
+    (result v128)
+    (local $1 externref)
+    (local $2 externref)
+    f32.const 0x1.828992p-43
+    global.get $9
+    f32.convert_i64_s
+    f32.neg
+    f32.min
+    elem.drop $13
+    i64.trunc_f32_s
+    elem.drop $13
+    f64.reinterpret_i64
+    global.get $8
+    ref.null extern
+    global.get $10
+    elem.drop $13
+    f64.const -0x1.35f8fcd24fc64p-198
+    atomic.fence
+    global.set $12
+    drop
+    ref.null extern
+    ref.is_null
+    ref.null extern
+    ref.is_null
+    i32.atomic.rmw8.add_u offset=3869591445
+    table.get $4
+    ref.is_null
+    unreachable
+    ))

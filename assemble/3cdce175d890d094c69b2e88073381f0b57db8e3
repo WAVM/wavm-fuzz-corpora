@@ -1,0 +1,2 @@
+(type(func
+(param v128 funcref v128 v128) (result v128)) )

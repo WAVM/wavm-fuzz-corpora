@@ -1,0 +1,86 @@
+(module
+  (type $0 (func (param i64 i64 i64 f32) (result externref)))
+  (type $1 (func (param funcref funcref funcref externref)))
+  (type $2 (func (result i64 v128)))
+  (import "env" "memory" (memory $4 28 15812 shared))
+  (import "env" "global1" (global $5 (mut funcref)))
+  (import "env" "global2" (global $6 (mut i32)))
+  (import "env" "global5" (global $7 i64))
+  (import "env" "global6" (global $8 i64))
+  (import "env" "global7" (global $9 (mut v128)))
+  (import "env" "func0" (func $15 (param funcref funcref funcref externref)))
+  (table $3  53 4294967295 shared funcref)
+  (global $10  (mut externref) (ref.null extern))
+  (global $11  i64 (i64.const 2684584647639803613))
+  (global $12  f64 (f64.const 0x1.66a14b5b7333cp+63))
+  (elem $13 declare global
+    $6 $8 $12 $12 $8 $11 $6 $10
+    $5 $10 $8 $5 $10 $9 $11 $9
+    $12 $9 $8 $8 $8 $12 $10 $11
+    $5 $9 $8 $8 $10 $6 $11 $8
+    $12 $10 $10 $5 $9 $10 $5 $11
+    $10 $12 $6 $7 $6 $7 $5 $6
+    $9 $5 $9 $11 $11 $7 $7 $5
+    $9 $7 $12 $9 $6 $11 $11 $9
+    $12 $12 $8 $6 $6 $12 $12 $12
+    $6 $5 $9 $10 $7 $9 $5 $10
+    $9)
+  
+  (func $16 (type $0)
+    (param $0 i64)
+    (param $1 i64)
+    (param $2 i64)
+    (param $3 f32)
+    (result externref)
+    (local $4 v128)
+    (local $5 f32)
+    (local $6 i32)
+    (local $7 funcref)
+    elem.drop $13
+    i64.const 8876451431983524755
+    local.get $7
+    local.get $7
+    local.get $0
+    i64.extend8_s
+    local.get $4
+    nop
+    i32x4.trunc_sat_f32x4_u
+    loop $loop (result i64 v128)
+      f32.const -0x1.ecb43ap+45
+      nop
+      f32x4.splat
+      nop
+      i64x2.neg
+      global.set $9
+      i64.const -7251504760502207238
+      local.get $5
+      ref.null func
+      drop
+      local.set $3
+      global.get $8
+      i64.add
+      local.get $2
+      i64.gt_s
+      ref.null func
+      table.set $3
+      global.get $6
+      table.get $3
+      ref.is_null
+      local.set $6
+      global.get $5
+      drop
+      local.get $2
+      table.size $3
+      ref.null func
+      global.set $5
+      global.set $6
+      local.set $2
+      local.get $2
+      f64.reinterpret_i64
+      br $loop
+    end ;; $loop
+    unreachable
+    )
+  
+  (data $14 (i32.const 1636495012)
+    "\89\11ra\dd\fc!N\8f\ad\e9\ab\f5\f4\a44\c4\03[\b9\0e\08/\"\0f%\d0Q\d2</\e8\0eQ\8f\fe\0b\01\e1SDJqD:CZ.\f7s\a5\bcE\07 \90\d7\eb\b0R\0f\8e\ee."))

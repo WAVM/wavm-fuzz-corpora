@@ -1,0 +1,8 @@
+(module
+  ( func  i32.const 1
+   i64.const 1 i64.atomic.rmw.or
+   drop
+  )(memory  1)( func  i32.const 1
+   i64.const 1 i64.atomic.rmw.or
+   drop
+  ))

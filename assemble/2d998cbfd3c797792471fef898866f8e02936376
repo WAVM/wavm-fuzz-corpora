@@ -1,0 +1,9 @@
+(module
+  (memory  1)
+(func $10 i32.const 6  v128.load i32.const 1 v128.load
+   i32.const  1
+  v128.load
+ i32x4.ne    i32.const 1
+    v128.load
+  i32x4.ne
+i32x4.ge_u drop ))

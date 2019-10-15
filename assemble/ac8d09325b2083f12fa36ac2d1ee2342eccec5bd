@@ -1,0 +1,43 @@
+(module
+  (type $0 (func (param funcref funcref)))
+  (type $1 (func (param i64 funcref f32)))
+  (import "env" "memory" (memory $3 42 43596 shared))
+  (import "env" "memory" (memory $4 67 47521 shared))
+  (memory $5  17 35836 shared)
+  (table $2  49 4294967295 funcref)
+  (global $6  (mut f64) (f64.const 0x1.a33d5b75e4a1bp+63))
+  
+  (func $9 (type $0)
+    (param $0 funcref)
+    (param $1 funcref)
+    (local $2 i32)
+    (local $3 externref)
+    (local $4 i32)
+    atomic.fence
+    memory.size
+    i32.extend8_s
+    br_if 0
+    br 0
+    )
+  
+  (func $10 (type $1)
+    (param $0 i64)
+    (param $1 funcref)
+    (param $2 f32)
+    (local $3 funcref)
+    i64.const -3626305183749287935
+    i64.extend32_s
+    table.size $2
+    atomic.fence
+    i64.atomic.load32_u $4 offset=125453337
+    i64.le_u
+    f32.convert_i32_s
+    f32.neg
+    br 0
+    )
+  
+  (data $7 
+    "~\c7\e9'")
+  
+  (data $8 
+    "\f1\"\cd\7fU\09\a6\e1\1e\04\de8\bf\ec\dcn\85\e5\11\b4\c4v\b8o\f4N\a3\a5\ef\fbe \0b\c9[J)\90\87\a8\bd\d8O!\d7\bcJ\bf76f@  s"))

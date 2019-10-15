@@ -1,0 +1,7 @@
+(module
+  (type $0 (func (param f64) (result funcref)))
+  (type $1 (func (param externref i64) (result i64 f64)))
+  (type $2 (func (param f32) (result externref v128)))
+  (type $3 (func (result v128 funcref f64 i64)))
+)
+  ((fu)

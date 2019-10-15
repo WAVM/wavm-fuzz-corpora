@@ -1,0 +1,11 @@
+(func br 0
+f32.gt br
+0
+f32.gt br 0
+f32.gt br 0
+f32.gt br
+0
+f32.gt br 0
+f32.gt br 0
+f32.gt br 0
+f32.gt br 0)

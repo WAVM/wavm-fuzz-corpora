@@ -1,0 +1,4 @@
+(module
+  (type $0 (func (param v128 v128 v128) (rv128)))
+  (type $1 (func (param v128 v128) (result v128))  8.neg
+    ))

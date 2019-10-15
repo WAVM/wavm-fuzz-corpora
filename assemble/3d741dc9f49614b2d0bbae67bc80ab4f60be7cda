@@ -1,0 +1,9 @@
+(func memory.size
+1  memory.grow 
+1  memory.grow $A memory.size
+1  memory.grow
+1  memory.grow $A
+memory.size
+1 
+memory.size
+1 )

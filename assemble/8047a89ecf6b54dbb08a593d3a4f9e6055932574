@@ -1,0 +1,59 @@
+(module
+  (type $0 (func (param i32 externref) (result f32)))
+  (type $1 (func (param i32 i32) (result i32 externref)))
+  (type $2 (func (param v128 funcref i32) (result i64 f64 v128 i32)))
+  (import "env" "global4" (global $5 (mut funcref)))
+  (import "env" "global5" (global $6 funcref))
+  (import "env" "global6" (global $7 funcref))
+  (import "env" "func0" (func $15 (param i32 externref) (result f32)))
+  (memory $4  70 45638 shared)
+  (table $3  44 4294967295 externref)
+  (global $8  (mut f64) (f64.const 0x1.2cb012803a0e1p+60))
+  (global $9  v128 (v128.const i32x4 0x5294b6dc 0x19cbd34e 0x28a7687d 0xd12e91ff))
+  (global $10  (mut i32) (i32.const 796183548))
+  (global $11  (mut f64) (f64.const 0x1.a7111421e46cbp+62))
+  (global $12  (mut i32) (i32.const 833105285))
+  
+  (func $16 (type $1)
+    (param $0 i32)
+    (param $1 i32)
+    (result i32 externref)
+    (local $2 v128)
+    (local $3 i64)
+    (local $4 externref)
+    (local $5 i64)
+    nop
+    global.get $6
+    i32.const 1002192906
+    global.get $9
+    global.get $6
+    local.get $0
+    loop $loop (param v128 funcref i32) (result i64 f64 v128 i32)
+      v128.const i32x4 0xf2654c10 0x15b87628 0x76c8885a 0xe84ac51a
+      i32x4.abs
+      f32x4.neg
+      global.get $10
+      i16x8.shr_s
+      i8x16.any_true
+      f64.convert_i32_s
+      f64.neg
+      global.set $11
+      global.set $12
+      drop
+      unreachable
+    end ;; $loop
+    i32x4.shr_u
+    ref.null extern
+    ref.is_null
+    local.set $0
+    ref.null func
+    global.set $5
+    drop
+    unreachable
+    )
+  
+  (data $13 (i32.const -612715218)
+    "U^\03\08ry\09!\cf\c1\eb\90\d9")
+  
+  (data $14 
+    "\f2iL4\e0;\a4_\e9\95\e4\d3\e0;) \1f\df%qb1\e3\1a\af\f6\f0\cc\a8\8f\c0\14\f2\14\93e\ad\fd"))

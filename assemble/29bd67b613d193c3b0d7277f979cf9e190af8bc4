@@ -1,0 +1,3 @@
+(module(type $8 (func (param i32 i64) (result f32 f64)))
+  (type $9 (func (param i32 i64) (result f32 f64)))
+    i32))))

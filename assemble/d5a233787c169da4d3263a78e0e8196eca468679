@@ -1,0 +1,141 @@
+(module
+  (type $0 (func (param i64 v128) (result f64)))
+  (type $1 (func (param i32 i32 i64 externref)))
+  (type $2 (func (param externref v128 v128 funcref)))
+  (type $3 (func (param funcref externref) (result i32)))
+  (type $4 (func (result f32 f32 i32 funcref)))
+  (type $5 (func (param funcref) (result externref)))
+  (import "env" "table" (table $6 61 4294967295 shared funcref))
+  (import "env" "table" (table $7 60 4294967295 shared externref))
+  (import "env" "global0" (global $9 (mut i32)))
+  (import "env" "global2" (global $10 (mut i32)))
+  (import "env" "global4" (global $11 i64))
+  (import "env" "global5" (global $12 (mut funcref)))
+  (import "env" "global7" (global $13 (mut i64)))
+  (import "env" "global8" (global $14 (mut f32)))
+  (import "env" "global9" (global $15 (mut i32)))
+  (import "env" "func0" (func $23 (param i64 v128) (result f64)))
+  (import "env" "func1" (func $24 (param i32 i32 i64 externref)))
+  (table $8  57 4294967295 funcref)
+  (global $16  funcref (ref.null func))
+  (global $17  (mut f64) (f64.const 0x1.61696df40e48dp+62))
+  (global $18  (mut v128) (v128.const i32x4 0x29acdda3 0x9c4023b6 0x17b1da91 0xde0b5562))
+  (elem $19 (i32.const 1869435113)
+    $23 $23 $25 $23 $25 $26 $26 $24
+    $25 $26 $24 $26 $25 $23 $26 $26
+    $26 $26 $25 $25 $23 $26 $23 $26
+    $26 $24 $26 $24 $25 $26 $24 $25
+    $25 $26 $23 $26 $24 $24 $25 $26
+    $25 $26 $23 $24 $26 $26 $26 $26
+    $26 $23 $23)
+  (elem $20 funcref
+    (ref.func $23) (ref.func $24) (ref.null func) (ref.func $25)
+    (ref.func $23) (ref.func $25) (ref.func $26) (ref.func $23)
+    (ref.func $25) (ref.func $26) (ref.null func) (ref.func $24)
+    (ref.func $23) (ref.func $25) (ref.func $24) (ref.func $23)
+    (ref.func $23) (ref.func $24) (ref.func $24) (ref.func $24)
+    (ref.func $25) (ref.func $24) (ref.func $23) (ref.func $23)
+    (ref.null func) (ref.null func) (ref.null func) (ref.func $25)
+    (ref.func $24) (ref.null func) (ref.func $26) (ref.func $26)
+    (ref.func $23) (ref.func $25) (ref.func $23) (ref.func $26)
+    (ref.null func) (ref.func $25) (ref.null func) (ref.func $25)
+    (ref.func $25) (ref.func $23) (ref.func $24) (ref.func $26)
+    (ref.func $23) (ref.func $26) (ref.func $25) (ref.func $26)
+    (ref.func $23) (ref.func $24) (ref.func $26) (ref.func $24))
+  
+  (func $25 (type $2)
+    (param $0 externref)
+    (param $1 v128)
+    (param $2 v128)
+    (param $3 funcref)
+    (local $4 f32)
+    (local $5 i32)
+    (local $6 i64)
+    (local $7 v128)
+    br 0
+    )
+  
+  (func $26 (type $3)
+    (param $0 funcref)
+    (param $1 externref)
+    (result i32)
+    (local $2 externref)
+    (local $3 v128)
+    f64.const -0x1.91934b709258bp+617
+    global.get $11
+    block $block (result f32 f32 i32 funcref)
+      global.get $12
+      nop
+      global.get $9
+      drop
+      global.get $17
+      local.get $0
+      global.set $12
+      f64.sqrt
+      global.get $9
+      local.get $0
+      loop $loop (param funcref) (result externref)
+        nop
+        ref.is_null
+        ref.null extern
+        table.set $7
+        elem.drop $20
+        local.get $2
+        ref.is_null
+        global.set $9
+        global.get $17
+        global.set $17
+        ref.null func
+        ref.null extern
+        unreachable
+      end ;; $loop
+      table.set $7
+      global.set $17
+      drop
+      local.get $3
+      ref.null func
+      drop
+      ref.null extern
+      local.set $2
+      drop
+      f32.const 0x1.37b402p+14
+      unreachable
+    end ;; $block
+    local.set $0
+    ref.null extern
+    table.set $7
+    drop
+    global.set $14
+    drop
+    drop
+    global.get $16
+    ref.is_null
+    table.get $7
+    ref.is_null
+    global.set $9
+    global.get $9
+    table.get $8
+    local.set $0
+    global.get $17
+    ref.null func
+    global.set $12
+    ref.null func
+    ref.is_null
+    drop
+    ref.null extern
+    ref.is_null
+    table.get $8
+    local.set $0
+    global.set $17
+    global.get $9
+    ref.null func
+    table.set $6
+    local.get $1
+    unreachable
+    )
+  
+  (data $21 
+    "\11\fcB\8f\cd\f5\8f\e5,}\c0\c0\ef\a6[=N\9e\8do")
+  
+  (data $22 
+    "\aa\a5e{\c7\82\a3\e4/~\eb+i%8\ab!.\1a\b9\17"))

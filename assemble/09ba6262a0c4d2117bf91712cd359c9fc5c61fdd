@@ -1,0 +1,46 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param i64 f64 f64 funcref) (result f32 v128)))
+  (type $2 (func (param funcref i32 f64) (result i32)))
+  (import "env" "memory" (memory $3 87 61321))
+  (import "env" "global2" (global $5 (mut v128)))
+  (import "env" "global5" (global $6 (mut v128)))
+  (import "env" "global6" (global $7 (mut i32)))
+  (import "env" "func0" (func $12 (param i64 f64 f64 funcref) (result f32 v128)))
+  (import "env" "func1" (func $13))
+  (memory $4  29 25731 shared)
+  (global $8  externref (ref.null extern))
+  (global $9  funcref (ref.null func))
+  (global $10  (mut funcref) (ref.null func))
+  (global $11  (mut v128) (v128.const i32x4 0xfa5f888a 0xf84e766a 0x0a7202c9 0x76b69e99))
+  
+  (func $14 (type $0)
+    return
+    )
+  
+  (func $15 (type $2)
+    (param $0 funcref)
+    (param $1 i32)
+    (param $2 f64)
+    (result i32)
+    (local $3 i32)
+    (local $4 i32)
+    (local $5 f64)
+    global.get $6
+    atomic.fence
+    i8x16.any_true
+    i32.eqz
+    i16x8.load8x8_u offset=3551251494 align=4
+    ref.null extern
+    global.get $7
+    v128.const i32x4 0xaddca5a0 0xd54fd352 0x63f3cd93 0x2b6272ee
+    i16x8.widen_low_i8x16_u
+    global.get $6
+    v32x4.store_interleaved_2 offset=2829917062 align=4
+    atomic.fence
+    local.get $2
+    global.get $5
+    local.get $4
+    i32x4.shr_u
+    unreachable
+    ))

@@ -1,0 +1,1 @@
+(func(if(param f64))if(param i32)(if(param f32))if(param i64)(if(param f64 f64 4)i6)if(param i64)#)

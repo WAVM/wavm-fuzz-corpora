@@ -1,0 +1,29 @@
+(module
+  (type $0 (func (result externref)))
+  (import "env" "memory" (memory $2 13 57905 shared))
+  (import "env" "global0" (global $3 v128))
+  (import "env" "global1" (global $4 i32))
+  (import "env" "global2" (global $5 (mut funcref)))
+  (table $1  75 4294967295 shared funcref)
+  
+  (func $6 (type $0)
+    (result externref)
+    (local $0 externref)
+    memory.size
+    i32.load16_s offset=72753743
+    i32.atomic.load offset=1142724075
+    v8x16.load_interleaved_3 offset=2308930550 align=8
+    v128.const i32x4 0x82a6dad3 0x0d724cc8 0xed3f4efc 0x97814aeb
+    i8x16.min_u
+    i8x16.min_s
+    i8x16.ne
+    i8x16.neg
+    i16x8.widen_low_i8x16_u
+    i32x4.neg
+    i8x16.all_true
+    v64x2.load_interleaved_4 offset=930673845 align=4
+    i64x2.mul
+    i16x8.narrow_i32x4_u
+    f32x4.le
+    unreachable
+    ))

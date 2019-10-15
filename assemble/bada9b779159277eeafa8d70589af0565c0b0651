@@ -1,0 +1,6 @@
+(module
+  (type $0 (func(result v128)))(export "func_i2x16_splat_0" (func $2))
+(export "func_lat_1" (func $14))
+(func $2 )
+ 
+   (func $14 )

@@ -1,0 +1,34 @@
+(module
+  (type $0 (func (param i64)))
+  (type $1 (func (param f32 funcref i64 i64)))
+  (type $2 (func (param f32 f32 v128 funcref) (result i32)))
+  (import "env" "memory" (memory $3 44 31075 shared))
+  (import "env" "memory" (memory $4 76 49582 shared))
+  (import "env" "func0" (func $7 (param f32 funcref i64 i64)))
+  (import "env" "func1" (func $8 (param f32 f32 v128 funcref) (result i32)))
+  (memory $5  63 19925)
+  (global $2  (mut f32) (f32.const 0x1.c9cfbap+30))
+  
+  (func $9 (type $0)
+    (param $0 i64)
+    (local $1 externref)
+    (local $2 funcref)
+    (local $3 i32)
+    local.get $2
+    f64.const -0x1.fb5036edefeaap-582
+    i32.trunc_sat_f64_s
+    i32.atomic.load8_u $5 offset=3249816206
+    local.tee $3
+    i64.atomic.load8_u $5 offset=3515124710
+    i64.const 2452018149106687361
+    i64.extend8_s
+    local.get $2
+    local.set $2
+    i64.div_s
+    i64x2.splat
+    i32x4.widen_low_i16x8_s
+    i16x8.extract_lane_s 6
+    i64.load8_u offset=624870274
+    drop
+    unreachable
+    ))

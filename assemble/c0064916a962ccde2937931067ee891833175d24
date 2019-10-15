@@ -1,0 +1,22 @@
+(module
+  (type $0 (func (result v128)))
+  (memory $1  1)
+  (export "as-add/sub-operand" (func $4))
+  
+  (func $4 (type $0)
+    (result v128)
+    i32.const 0
+    v128.load
+    i32.const 16
+    v128.load
+    i8x16.add
+    i32.const 16
+    v128.load
+    i8x16.sub
+    )
+  
+  (data $2 (i32.const 0)
+    "\02\00\00\00\02\00\00\00\02\00\00\00\02\00\00\00")
+  
+  (data $3 (i32.const 16)
+    "\03\00\00\00\03\00\00\00\03\00\00\00\03\00\00\00"))

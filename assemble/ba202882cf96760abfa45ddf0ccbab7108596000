@@ -1,0 +1,1 @@
+(func(i16or_e)(i32.atomic.rmw8.or_u)(i3i3_e)(i32.atomic.rmw8.or_u)(i3i38.xor_u)(i32.atomic.rmw8.or_u)(i32.atomic.rmw8.or_u)(micr)(i32.atomic.rmw8.or_u)(a.xor_u)(i32.atomic.rmw8.or_u)(ƒ3or_u)(i32.atomic.rmw8.or_u)(i3xu)(i32.atomic.rmw8.or_u)(a.xoui64.ad16_sry )5)(memory 1)

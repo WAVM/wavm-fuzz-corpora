@@ -1,0 +1,2 @@
+(func br 0 i64.extend_i32_u br
+0)

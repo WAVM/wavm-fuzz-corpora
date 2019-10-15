@@ -1,0 +1,65 @@
+(func(i16x8i32.atomic.rmw.cmpxchg)(i2.lad2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)(i64x2.load32x2_u
+   )
+(i64x2.load32x2_u
+   )
+   2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)d2_u)(i64x2.load32x2_u)(i64xoad32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)mic.rmw.cmpxchg)(i2.lad2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)(i64x2.load32x2_u
+   )
+(i64x2.load32x2_u
+   )
+   ad2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x.cmpxchg)(i2.lad2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)(i64x2.load32x2_u
+   )
+(i64x2.load32x2_u
+   )
+   ad2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)mic.rmw.cmÿÿÿpxchg)(i2.lad2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)d2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)(i64x2.load32x2_u
+   )
+x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)d2_u)(i64x2.load32x2_u)(i64x)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)(i64x2.load32x2_u
+   )
+(i64x2.load32x2_u
+   )
+   ad2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)mic.rmw.cmÿÿÿpxchg)(i4.lacmpxchg)(i2.lad2_u)(i64x2.load32x2_u)d2_u)(i64x2.load32x2_u)(i64xlad2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)d2_u)(i64x2.load32x2_u)(i62.lad2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)micmw.cmpxchg)(i2.lad2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)(i64x2.load32x2_u
+   )
+(i64x2.load32x2_u
+   )
+   ad2_u)(i64x2.load32x2_u)(i64x2.load2.load32x2_mic.rmw.cmpxchg)(i2.lad2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)(i64x2.load32x2_u
+   )
+(i64x2.load32ÿÿÿÿÿÿÿÿx2_u
+   )
+   ad2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)mic.rmw.cmÿÿÿpxchg)(i2.lacmpxchg)(i2.lad2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)mic.rmw.cmpxchg)(i2.lad2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)(i64x2.load32x2_u
+   )
+(i64x2.load32x2_u
+   )
+   ad2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x.cmpxchg)(i2.lad2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)(i64x2.load32x2_u
+   )
+(i64x2.load32x2_u
+   )
+   ad2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)mic.rmw.cmÿÿÿpxchg)(i2.lad2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)d2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)(i64x2.load32x2_u
+   )
+x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)d2_u)(i64x2.load32x2_u)(i64x)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)(i64x2.load32x2_u
+   )
+(i64x2.load32x2_u
+   )
+   ad2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)mic.rmw.cmÿÿÿpxchg)(i4.lacmpxchg)(i2.lad2_u)(i64x2.load32x2_u)d2_u)(i64x2.load32x2_u)(i64xlad2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64ad32x2_u)d2_u)(i64x2.load32x2_u)(i62.lad2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)micmw.cmpxchg)(i2.lad2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)(i64x2.load32x2_u
+   )
+(i64x2.load32x2_u
+   )
+   ad2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)mic.rmw.cmÿÿÿpxchg)(id2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)d2_u)(i64x2.load32x2_u)(i6onvert_u/i32_mic.rmw.cmpxchg)(i2.lad2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)(i64x2.load32x2_u
+   )
+(i64x2.load32x2_u
+   )
+   ad2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)mic.rmw.cmÿÿÿpxchg)(i2.lacmpxchg)(i2.lad2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)mic.rmw.cmpxchg)(i2.lad2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)(i64x2.load32x2_u
+   )
+(i64x2.load32x2_u
+   )
+   ad2_u)(i64x2.load32x2_u)(ixchg)(i2.lad2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)d2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)(i64x2.load32x2_u
+   )
+x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)d2_u)(i64x2.load32x2_u)(i64x)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)(i64x2.load32x2_u
+   )
+(i64x2.load32x2_u
+   )
+ d2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)mic.rmw.cmÿÿÿpxchg)(i4.lacmpxchg)(i2.lad2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)mic.rmw.cmpxchg)(i2.lad2_u)(i64x2.load3x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)(i64x2.load32x2_u
+   )
+(i64x2.load32x2_u
+   )
+   ad2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)mic.rmw.cmÿÿÿpxchg)(i2.lad2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)d2_u)(i64x2.load32x2_u)(i64x2.load32x2_u(i64x2.load32x2_u)(i64x2.load32x2_u
+   )
+(i64-)ue))

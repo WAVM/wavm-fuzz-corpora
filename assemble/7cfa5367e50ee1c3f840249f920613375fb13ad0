@@ -1,0 +1,3 @@
+(table 10 funcref)
+(elem funcref )
+  (func (table.init 0 (1)))

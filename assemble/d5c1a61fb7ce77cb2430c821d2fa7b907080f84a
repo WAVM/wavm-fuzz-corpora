@@ -1,0 +1,62 @@
+(module
+  (type $0 (func (param v128 v128 i32) (result funcref)))
+  (type $1 (func (param externref)))
+  (import "env" "memory" (memory $2 41 1226 shared))
+  (import "env" "global2" (global $5 (mut externref)))
+  (import "env" "global3" (global $6 (mut f32)))
+  (import "env" "global5" (global $7 (mut f64)))
+  (import "env" "global6" (global $8 i64))
+  (import "env" "global7" (global $9 (mut externref)))
+  (import "env" "global8" (global $10 (mut funcref)))
+  (memory $3  86 24595 shared)
+  (memory $4  42 45820)
+  (global $11  (mut i32) (i32.const -1508967132))
+  (global $12  (mut externref) (ref.null extern))
+  (global $13  f64 (f64.const 0x1.9fa7b6fd45d0cp+62))
+  
+  (func $15 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (param $2 i32)
+    (result funcref)
+    global.get $5
+    loop $loop
+      atomic.fence
+      local.get $0
+      block $block (result i32)
+        global.get $6
+        global.get $8
+        global.get $13
+        global.get $9
+        global.get $11
+        if $if (param externref)
+          global.get $11
+          local.get $2
+          br $loop
+        else
+          local.get $0
+          ref.null func
+          drop
+          local.set $1
+          global.set $9
+          br $if
+        end ;; $if
+        global.set $7
+        br $loop
+      end ;; $block
+      global.set $11
+      unreachable
+    end ;; $loop
+    ref.null extern
+    global.set $5
+    global.set $12
+    data.drop $14
+    nop
+    global.get $5
+    global.set $9
+    ref.null func
+    unreachable
+    )
+  
+  (data $14 
+    "\8bZ"))

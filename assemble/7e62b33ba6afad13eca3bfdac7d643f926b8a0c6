@@ -1,0 +1,7 @@
+(memory 4 66)(func(.noau)(i64x2.load32x2_s)(i64x2.load32x2_s
+(i))(i64x2.load32x2_s
+ (i))()(i64x2.load32x2_s)(i64x2.load32x2_s
+(i))(i64x2.load32x2_s
+(i))(i64x2.load32x2_s
+(i))(i64x2.load32x2_s
+(i)))) )

@@ -1,0 +1,21 @@
+(module
+  (type $0 (func))
+(type $1 (func (param i64 i32 i32) (result i32)))
+  (export "tge" (func $3))
+  (memory $1  1 1)
+  
+  (func $3 (type 0)
+   i32.const 767
+    i32.const 1
+  i32.const 13  memory.fill
+    i32.const 29 i32.const 2
+    i32.const 1055
+    memory.fill
+    i32.const 56
+  i32.const 33811
+    i32.const 83
+  memory.fill
+    i32.const 54856
+    i32.const 88
+    i32.const 0
+    memory.fill   ))

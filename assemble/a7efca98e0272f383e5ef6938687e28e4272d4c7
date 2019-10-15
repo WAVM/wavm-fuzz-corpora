@@ -1,0 +1,99 @@
+(module
+  (type $0 (func (param f32 f32 funcref v128) (result f64 funcref)))
+  (type $1 (func (param v128) (result f64 i32)))
+  (type $2 (func (param i32 f32 v128 f32) (result i64 i64)))
+  (type $3 (func (param funcref i64 f64 i64) (result f64)))
+  (type $4 (func (result v128 f64)))
+  (type $5 (func (result externref f32 funcref)))
+  (import "env" "global3" (global $9 (mut i64)))
+  (import "env" "global4" (global $10 funcref))
+  (import "env" "func0" (func $15 (param v128) (result f64 i32)))
+  (import "env" "func1" (func $16 (result v128 f64)))
+  (memory $8  64 2753 shared)
+  (table $6  57 4294967295 externref)
+  (table $7  8 4294967295 funcref)
+  (global $11  funcref (ref.null func))
+  (global $12  i32 (i32.const -441624233))
+  (global $13  i32 (i32.const 1349456917))
+  (elem $14 declare memory
+    $8 $8 $8 $8 $8 $8 $8 $8
+    $8 $8 $8 $8 $8 $8)
+  
+  (func $17 (type $0)
+    (param $0 f32)
+    (param $1 f32)
+    (param $2 funcref)
+    (param $3 v128)
+    (result f64 funcref)
+    (local $4 v128)
+    (local $5 externref)
+    global.get $11
+    global.get $13
+    v64x2.load_interleaved_2 offset=2516934152 align=2
+    f32x4.sub
+    i64x2.extract_lane 0
+    local.get $3
+    local.tee $3
+    v128.const i32x4 0xd05bbbf5 0x7b043821 0x69497929 0xd9feb1a8
+    v128.andnot
+    i8x16.extract_lane_s 8
+    i32.load offset=3934549987 align=1
+    i64.extend_i32_s
+    i64.lt_s
+    if $if (result externref f32 funcref)
+      local.get $1
+      local.set $0
+      table.size $7
+      table.get $7
+      ref.is_null
+      table.get $7
+      unreachable
+    else
+      nop
+      f32.const 0x1.b9454ap-108
+      ref.null func
+      ref.null func
+      local.set $2
+      local.set $2
+      local.set $0
+      atomic.fence
+      unreachable
+    end ;; $if
+    local.set $2
+    drop
+    drop
+    ref.null extern
+    ref.null extern
+    unreachable
+    )
+  
+  (func $18 (type $2)
+    (param $0 i32)
+    (param $1 f32)
+    (param $2 v128)
+    (param $3 f32)
+    (result i64 i64)
+    (local $4 f64)
+    (local $5 v128)
+    nop
+    memory.size
+    drop
+    local.get $1
+    global.get $11
+    atomic.fence
+    ref.is_null
+    local.get $2
+    unreachable
+    )
+  
+  (func $19 (type $3)
+    (param $0 funcref)
+    (param $1 i64)
+    (param $2 f64)
+    (param $3 i64)
+    (result f64)
+    (local $4 externref)
+    (local $5 f64)
+    local.get $2
+    return
+    ))

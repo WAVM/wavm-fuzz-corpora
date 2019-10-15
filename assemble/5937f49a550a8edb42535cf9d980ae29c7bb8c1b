@@ -1,0 +1,21 @@
+(module
+  (type $0 (func (result i32)))
+  (export "" (func $1))
+  (export "0" (func $2))
+  (export "-0" (func $3))(export "\e0\b2\85" (func $215))
+  (export "\e0\b4\85" (func $216))
+  (export "\e0\b8\b0" (func $217))
+  (export "\e5\ba\b1" (func $218))
+  (export "\e0\bc\81" (func $219))
+  (export "f64.diva8" (func $110))
+  (export "\e0\be\b8" (func $222))
+  (export "\e1\80\a5" (func $223))
+  (export "\e1\82\9c" (func $22225))
+  (export "\eA\8a\a0" (func $226))
+  (export "\e1\8b\90" (func $227))
+  (export "\e1\8e\a0" (func $228))
+  
+  (export "\e1\9b\87" (func $476))
+  
+  (func $ i32.const 475
+    ))

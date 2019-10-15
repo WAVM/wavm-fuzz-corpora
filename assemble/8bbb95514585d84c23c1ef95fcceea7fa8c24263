@@ -1,0 +1,13 @@
+(module
+  (type $0 (func (param i64)))
+  (import "erv" "mey" (memory $4 70 36003 shared))
+  (import "env" "memory" (memory $3 98 926))
+  (import "env" "global0" (global $4 (mut funcref)))
+  (func 
+  (param $2 i64)
+    (result i32)
+     unreachable
+i32.atomic.rmw8.cmpxchg_u    )
+  
+  (data $13 (memory $3) (i32.const -0918461896)
+    "Ug1'\\98"))

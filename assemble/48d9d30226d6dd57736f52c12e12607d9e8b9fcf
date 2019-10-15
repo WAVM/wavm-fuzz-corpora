@@ -1,0 +1,116 @@
+(module
+  (type $0 (func (result v128)))
+  (type $1 (func (result i32)))
+  (memory $2  1)
+  (export "v8x16.load_splat-in-block" (func $4))
+  (export "v16x8.load_splat-in-bl16.load_splat-extract_lane_s-operand" (func $12))
+  (export "v16x8.load_splat-mxtract_lane_s-operand" (func $13))
+  (export "v32x4.load_splat-f64.eqt_lane_s-operand" (func $14))(
+  export "v64x2.load_splat-extract_lane_s-operand" (func $15))
+  
+  (func $4 (type $0)
+    (result v128)
+    block $block (result v128)
+      block $block_0 (result v128)
+        i32.const 0
+        v8x16.load_splat
+      end ;; $block_0
+    end ;; $block
+    )
+  
+  (func $5 (type $0)
+    (result v128)
+    block $block (result v128)
+      block $block_0 (result v128)
+        i32.const 1
+        v16x8.load_splat
+      end ;; $block_0
+    end ;; $block
+    )
+  
+  (func $6 (type $0)
+    (result v128)
+    block $block (result v128)
+      block $block_0 (result v128)
+        i32.const 2
+        v32x4.load_splat
+      end ;; $block_0
+    end ;; $block
+    )
+  
+  (func $7 (type $0)
+    (result v128)
+    block $block (result v128)
+      block $block_0 (result v128)
+        i32.const 9
+        v64x2.load_splat
+      end ;; $block_0
+    end ;; $block
+    )
+  
+  (func $8 (type $0)
+    (result v128)
+    block $block (result v128)
+      i32.const 3
+      v8x16.load_splat
+      br $block
+    end ;; $block
+    )
+  
+  (func $9 (type $0)
+    (result v128)
+    block $block (result v128)
+      i32.const 4
+      v16x8.load_splat
+      br $block
+    end ;; $block
+    )
+  
+  (func $10 (type $0)
+    (result v128)
+    block $block (result v128)
+      i32.const 5
+      v32x4.load_splat
+      br $block
+    end ;; $block
+    )
+  
+  (func $11 (type $0)
+    (result v128)
+    block $block (result v128)
+      i32.const 10
+      v64x2.load_splat
+      br $block
+    end ;; $block
+    )
+  
+  (func $12 (type $1)
+    (result i32)
+    i32.const 6
+    v8x16.load_splat
+    i8x16.extract_lane_s 0
+    )
+  
+  (func $13 (type $1)
+    (result i32)
+    i32.const 7
+    v16x8.load_splat
+    i8x16.extract_lane_s 0
+    )
+  
+  (func $14 (type $1)
+    (result i32)
+    i32.const 8
+    v32x4.load_splat
+    i8x16.extract_lane_s 0
+    )
+  
+  (func $15 (type $1)
+    (result i32)
+    i32.const 11
+    v64x2.load_splat
+    i8x16.extract_lane_s 0
+    )
+  
+  (data $3 (i32.const 5)
+    "\00\01\02Ü03\04\05\06\07\08\09\n"))

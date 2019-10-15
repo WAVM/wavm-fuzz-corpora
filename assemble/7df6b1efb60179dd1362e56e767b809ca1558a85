@@ -1,0 +1,32 @@
+(module
+  (type $0 (func (result funcref)))
+  (type $1 (func (param i32)))
+  (type $2 (func (param f64 externref f64) (result i32)))
+  (import "env" "memory" (memory $4 86 50827 shared))
+  (import "env" "global3" (global $6 externref))
+  (import "env" "func0" (func $11 (result funcref)))
+  (import "env" "func1" (func $12 (param f64 externref f64) (result i32)))
+  (memory $5  78 57495)
+  (table $3  78 4294967295 externref)
+  (global $7  (mut funcref) (ref.null func))
+  (global $8  (mut f32) (f32.const 0x1.dd69b8p+30))
+  (global $9  externref (ref.null extern))
+  
+  (func $13 (type $1)
+    (param $0 i32)
+    (local $1 f64)
+    global.get $9
+    local.get $0
+    i64.extend_i32_u
+    i64x2.splat
+    i8x16.abs
+    i8x16.abs
+    i32x4.any_true
+    i32.load16_s $5 offset=1450532718 align=1
+    i32.extend16_s
+    br 0
+    )
+  
+  (data $10 
+    "a\ac\ca\ee0d~\c8\a4\c2X\01\1d\14\b0\f2\10;&5!>\c6\08\cd\e83\e4L\a0\18\db\e2 \bdu\e4\0ew\eb \a5\0b@lV\\\d7-\86\cc\05\15\a0\bd\86\f0\fd\d8{M\eb[\8c"
+    "\b4\b0\e6\e4\86bU\d7f\d4gI\e8=\f4\daxc\17"))

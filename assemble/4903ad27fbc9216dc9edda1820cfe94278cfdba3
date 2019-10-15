@@ -1,0 +1,29 @@
+(module
+  (type $0 (func (param externref funcref i64) (result i32)))
+  (type $1 (func (result i32)))
+  (import "env" "memory" (memory $3 12 35950 shared))
+  (import "env" "memory" (memory $4 62 48247))
+  (import "env" "table" (table $2 57 4294967295 shared funcref))
+  (import "env" "func0" (func $6 (result i32)))
+  (memory $5  100 63067 shared)
+  
+  (func $7 (type $0)
+    (param $0 externref)
+    (param $1 funcref)
+    (param $2 i64)
+    (result i32)
+    (local $3 f32)
+    call $6
+    v64x2.load_interleaved_4 $5 offset=1898611018 align=8
+    i16x8.le_s
+    i16x8.ge_s
+    f64x2.min
+    i8x16.extract_lane_u 11
+    i32x4.load16x4_s $5 offset=2751546034
+    i8x16.any_true
+    call_indirect $2 (type $1)
+    local.get $2
+    local.get $1
+    table.size $2
+    br 0
+    ))

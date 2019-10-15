@@ -1,0 +1,6 @@
+  (elem $2 (table =t)f)
+(elem $0 (table b)) (elem $2(table $))
+  (elem $2 (table ct))
+  (elem $2 (table l))(elem $2 (table t))
+ (elem  (table dt))
+  (elem  (table bl)(

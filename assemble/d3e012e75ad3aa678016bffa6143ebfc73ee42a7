@@ -1,0 +1,2 @@
+(func
+data.drop 4 data.drop)

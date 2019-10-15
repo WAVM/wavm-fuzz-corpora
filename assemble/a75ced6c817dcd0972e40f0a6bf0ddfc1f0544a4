@@ -1,0 +1,5 @@
+(func f64.const inf f64.const
+inf)(func f64.const inf f64.const
+inf)(func f64.const inf f64.const
+inf)(func f64.const inf f64.const
+inf)

@@ -1,0 +1,108 @@
+(module
+  (type $0 (func (param funcref)))
+  (type $1 (func (result f32 f64)))
+  (type $2 (func (param funcref) (result i32)))
+  (type $3 (func))
+  (type $4 (func (param i64 f64 funcref f32)))
+  (import "env" "func0" (func $12))
+  (memory $7  98 34630 shared)
+  (table $5  97 4294967295 shared funcref)
+  (table $6  25 4294967295 shared funcref)
+  (global $8  externref (ref.null extern))
+  (global $9  (mut externref) (ref.null extern))
+  
+  (func $13 (type $0)
+    (param $0 funcref)
+    (local $1 externref)
+    (local $2 v128)
+    (local $3 f32)
+    local.get $2
+    i32x4.widen_high_i16x8_u
+    atomic.fence
+    f32x4.abs
+    i16x8.bitmask
+    i32.load8_u offset=1763288472
+    local.get $2
+    i8x16.all_true
+    i32.atomic.store offset=1341934971
+    nop
+    global.get $8
+    br 0
+    )
+  
+  (func $14 (type $1)
+    (result f32 f64)
+    (local $0 funcref)
+    (local $1 f32)
+    (local $2 i32)
+    local.get $1
+    local.set $1
+    data.drop $11
+    i64.const 1298445717232171896
+    global.get $8
+    call $14
+    ref.null func
+    local.get $1
+    local.tee $1
+    call $12
+    f32.sqrt
+    local.set $1
+    memory.size
+    block $block
+      table.size $6
+      local.set $2
+      br $block
+    end ;; $block
+    call_indirect $5 (type $3)
+    local.set $0
+    drop
+    drop
+    global.set $9
+    drop
+    local.get $1
+    call $14
+    return
+    )
+  
+  (func $15 (type $2)
+    (param $0 funcref)
+    (result i32)
+    (local $1 funcref)
+    (local $2 f64)
+    (local $3 f32)
+    (local $4 i64)
+    global.get $8
+    atomic.fence
+    unreachable
+    )
+  
+  (func $16 (type $4)
+    (param $0 i64)
+    (param $1 f64)
+    (param $2 funcref)
+    (param $3 f32)
+    (local $4 i32)
+    global.get $8
+    atomic.fence
+    global.get $8
+    data.drop $10
+    f64.const -0x1.a6f6345cb15a6p-50
+    f64.ceil
+    i64.trunc_f64_u
+    local.set $0
+    local.get $0
+    local.tee $0
+    i64.const -4255852597318388350
+    global.get $9
+    call $14
+    drop
+    local.get $2
+    br 0
+    )
+  
+  (data $10 (i32.const -2008494535)
+    "\88\8fJBi*\13\e3\bc9\a9\9a\c1S$S\1e")
+  
+  (data $11 
+    "\db\05\86\bb\c0\ce\b9e/N\b1JI=\13\b1\88\a4\1bw)\92WU\n\\&NJ`\c1\15\bc0\ff\f2\a4\a6\1bc\b1\13Z\acm\e6\89@.\e7\e7h\e9\b8\a9\01\afm\f3\95\n\dcd\a3"
+    "\c2"))

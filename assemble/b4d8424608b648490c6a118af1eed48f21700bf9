@@ -1,0 +1,1 @@
+(memory 8)(func(br 0)v64x2.load_interleaved_3(br 0))

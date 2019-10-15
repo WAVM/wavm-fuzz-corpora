@@ -1,0 +1,6 @@
+ (memory 2 )(func (i32_u)(i32.atomic.rmw16.xor_u)( i32.atomic.rmw16.xor_u)memor 2 )(func (i)(i32.atomic.rmw16.xor_u)( i32.atomic.rmw16.xor_u)(i32.atomic.rmw16.xor_u)
+(i32.atomic.rmw16.xor_u)(i32.atomic.rmw16.xor_u)(i32.atomic.rmw16.xor_u)(i32.atomic.rmw16.xor_u)(i32.atomic.rmic.xor_u)memory 2 )(func (i)(i32.atomic.rmw16.xor_u)( i32.atomic.rmw16.xor_u)(i32.atomic.rmw16.xor_u)
+(i32.atomic.rmw16.xor_u)(i32.atomic.rmw16.xor_u)(i3)(i32.atomic.rmw16.xor_u)emory 2 )(func (i)(i32.atomic.rmw16.xor_u)( i32.atomic.rmw16.xor_u)(i32.atomic.rmw16.xor_u)
+(i32.atomic.rmw16.xor_u)(i32.atomic.rmw16.xor_u)(i32.atomic.rmw16.xor_u)(i32.atomic.rmw16.xor_u)(i32.atomic.rmw16.xor_2.atomic.rmw16.xor_u)(i32.atomic.rmw16.xor_u)(i32.atomic.rmw16.xor_u)(i32.atomic.rmw16.xor_u)
+(i32.atomic.rmw16.xor_u)(i32.atomic.rmw1mw16.xor_u)(i32.atomic.rmw16.xor_u)
+(i32.atomic.rmw16.xor_u)(i32.atomic.rmw16.xor_u)(i32.atomic.rmw16.xor_u)(i32.atomic.rmw16.xor_u)(i32.atomic.rmw16.xor_u))

@@ -1,0 +1,46 @@
+(module
+  (type $0 (func (param v128) (result v128)))
+  (type $1 (func (result v128)))
+  (memory $2  1)
+  (export "as-ll.tee-value" (func $6))
+  
+  (func $3 (type $0)
+    (param $0 v128)
+    (result v128)
+    (local $1 v128)(local $2 v128)
+    (local  v128)
+    (local $4 v128)
+    local.get $0
+    local.set   
+$0  local.get $0  )
+  
+  (func  (param $0 v128)
+    (result v128)
+    (local $1 v128)
+    (local $2 v128)
+    (local $3 v128)
+    (local $4 v128)
+    local.get $0
+    local.set $0
+    local.get $0
+    local.set $2  local.get $0
+    )
+  
+  (func $5 (type $0)
+    (param $0 v128)
+    (result v128)
+    (local $1 v128)
+    (local $2 v128)
+    (local $3 v128)
+    (local $4 v128)
+    local.get $2
+    local.set $3
+    local.get $3
+    )
+  
+  (func $6 (type $1)
+    (result v128)
+    (local $0 v128)
+    v128.const i32x4 0x00000000 0x00000001 0x00000002 0x00000003
+    local.tee $0
+    ))

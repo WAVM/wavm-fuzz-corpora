@@ -1,0 +1,55 @@
+(module
+  (type $0 (func (param funcref i64 f32 f64)))
+  (type $1 (func (param i64 externref externref v128)))
+  (type $2 (func (result funcref i32 externref i64)))
+  (import "env" "memory" (memory $4 83 5888 shared))
+  (import "env" "table" (table $3 59 4294967295 funcref))
+  (import "env" "func0" (func $8 (param funcref i64 f32 f64)))
+  (memory $5  31 36543 shared)
+  (memory $6  27 17632 shared)
+  
+  (func $9 (type $1)
+    (param $0 i64)
+    (param $1 externref)
+    (param $2 externref)
+    (param $3 v128)
+    (local $4 funcref)
+    (local $5 i32)
+    f32.const -0x1.334d10p+19
+    i32.trunc_sat_f32_s
+    v64x2.load_interleaved_2 offset=989752084 align=2
+    f64x2.gt
+    local.get $1
+    ref.null func
+    i32.const 1242213678
+    i32x4.load16x4_s $5 offset=2416768132 align=1
+    f32x4.convert_i32x4_s
+    i16x8.neg
+    i32x4.trunc_sat_f32x4_u
+    i32x4.trunc_sat_f32x4_s
+    local.tee $3
+    ref.null extern
+    block $block (result funcref i32 externref i64)
+      ref.null extern
+      ref.null func
+      local.set $4
+      local.set $2
+      local.get $2
+      ref.is_null
+      ref.null func
+      drop
+      br_if 1
+      local.get $2
+      drop
+      f64.const -0x1.6edc4e4679151p+1011
+      return
+    end ;; $block
+    drop
+    local.set $1
+    br_if 0
+    br 0
+    )
+  
+  (data $7 (memory $6) (i32.const -204791517)
+    "\n\e3\98\d2\1d\d3\bc\"\9a\f0FB\0b\8f\f9\e9!\04#\cd\c0]\b5\16#\84\1a\1f\95\e5\1a\d49\a1\b1mf\ce\18\0dW@\f2M~\1d\dbd\81\ef\8b\e3\b3\19)\f1\c5q\f2:\cb\e4\98&"
+    "\f0\a6\03\17\d7\f8\c9?\03\d2"))

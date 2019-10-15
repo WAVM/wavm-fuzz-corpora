@@ -1,0 +1,51 @@
+(module
+  (type $0 (func (param i64 f32 externref) (result i64 i64)))
+  (type $1 (func (param v128)))
+  (type $2 (func (result i32 f64)))
+  (type $3 (func (param i32 i64) (result i64 i32)))
+  (import "env" "memory" (memory $4 19 8092 shared))
+  (import "env" "global1" (global $5 (mut f32)))
+  (import "env" "global2" (global $6 (mut i32)))
+  (import "env" "global3" (global $7 funcref))
+  (import "env" "func0" (func $9 (param i64 f32 externref) (result i64 i64)))
+  (import "env" "func1" (func $10 (param v128)))
+  (import "env" "func2" (func $11 (param i32 i64) (result i64 i32)))
+  (global $8  (mut i32) (i32.const -550748852))
+  
+  (func $12 (type $2)
+    (result i32 f64)
+    (local $0 f32)
+    (local $1 f32)
+    (local $2 funcref)
+    (local $3 funcref)
+    i32.const -1526985884
+    i16x8.splat
+    i16x8.extract_lane_u 6
+    i8x16.splat
+    i32.const -413026399
+    i32.ctz
+    v64x2.load_splat offset=2997084808 align=4
+    i8x16.extract_lane_s 8
+    v64x2.load_interleaved_3 offset=2794202883 align=2
+    f64x2.ne
+    global.get $5
+    f32.floor
+    local.set $0
+    i8x16.extract_lane_s 4
+    i64x2.shr_s
+    f64x2.min
+    drop
+    global.get $7
+    ref.is_null
+    i32.clz
+    i32.load offset=833814037
+    i64.atomic.load16_u offset=3266629831
+    ref.null func
+    ref.null extern
+    ref.is_null
+    ref.null extern
+    ref.is_null
+    i32.atomic.rmw8.xor_u offset=3773189076
+    global.set $6
+    unreachable
+    ))

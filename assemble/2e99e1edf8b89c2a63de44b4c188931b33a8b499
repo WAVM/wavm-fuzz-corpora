@@ -1,0 +1,62 @@
+(module
+  (type $0 (func (param f32 funcref externref) (result f32 f64)))
+  (type $1 (func (param i64 i32 f64 externref) (result funcref i64)))
+  (type $2 (func))
+  (type $3 (func (result v128 i32)))
+  (type $4 (func (param funcref) (result i32 f32 v128)))
+  (import "env" "memory" (memory $5 63 45009 shared))
+  (import "env" "memory" (memory $6 45 7606 shared))
+  (import "env" "global0" (global $7 (mut externref)))
+  (import "env" "global1" (global $8 funcref))
+  (import "env" "global2" (global $9 (mut i32)))
+  (import "env" "global3" (global $10 (mut i32)))
+  (import "env" "global6" (global $11 externref))
+  (import "env" "global7" (global $12 funcref))
+  (import "env" "func0" (func $16 (param i64 i32 f64 externref) (result funcref i64)))
+  (import "env" "func1" (func $17))
+  (import "env" "func2" (func $18 (result v128 i32)))
+  (global $13  (mut i64) (i64.const -1512638069980740596))
+  (global $14  (mut i32) (i32.const 397739176))
+  (global $15  (mut f32) (f32.const 0x1.8efab0p+29))
+  
+  (func $19 (type $0)
+    (param $0 f32)
+    (param $1 funcref)
+    (param $2 externref)
+    (result f32 f64)
+    (local $3 v128)
+    (local $4 f32)
+    (local $5 f64)
+    (local $6 i64)
+    i64.const 2199581958327705278
+    global.get $12
+    block $block (param funcref) (result i32 f32 v128)
+      global.get $8
+      local.set $1
+      global.get $11
+      local.set $2
+      v128.const i32x4 0x321dfcf6 0xeaf7ce18 0x38ddf541 0xe569a927
+      i8x16.any_true
+      global.get $13
+      i64.atomic.rmw.sub $6 offset=275392679
+      i64.clz
+      i32.wrap_i64
+      v16x8.load_interleaved_4 offset=4023188921 align=4
+      i64x2.extract_lane 1
+      ref.null extern
+      drop
+      global.set $13
+      i16x8.ge_s
+      ref.null extern
+      global.set $7
+      f64x2.ne
+      drop
+      ref.is_null
+      i32.load8_u $6 offset=3636958200
+      i32.atomic.load $6 offset=4052779321
+      i32.load16_s $6 offset=3932287689
+      global.get $7
+      unreachable
+    end ;; $block
+    unreachable
+    ))

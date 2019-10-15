@@ -1,0 +1,17 @@
+  (memory 1)
+(func (e)
+  i32.load8_u
+i32.load8_u
+   i32.load8_u  i32.load8_u  i32.load8_u  memory 1)
+(func (e)
+  i32.load8_u
+i32.load8_u
+   i32.load8_u  i32.load8_u  i32.load8_u   i32.load8_u(;;)  i32.load8_u i32.load8_u
+
+i32.load8_u  i32.load8_u i32.load8_u  i32.load8_u i32.load8_u
+ i32.load8_u
+i32.load8_u   i32.load8_u  i32.load8_u(;;)  i32.load8_u i32.load8_u
+
+i32.load8_u  i32.load8_u i32.load8_u  i32.load8_u i32.load8_u
+ i32.load8_u
+i32.load8_u   i32.load8_u oa 2)

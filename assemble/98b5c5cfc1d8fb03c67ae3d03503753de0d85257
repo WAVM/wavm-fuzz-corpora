@@ -1,0 +1,74 @@
+(module
+  (type $0 (func (param f32)))
+  (type $1 (func))
+  (type $2 (func (param f32 externref)))
+  (type $3 (func (param i32 i32 externref) (result f64)))
+  (import "env" "memory" (memory $6 52 52384 shared))
+  (import "env" "global0" (global $9 (mut i32)))
+  (import "env" "global2" (global $10 v128))
+  (import "env" "global4" (global $11 (mut f32)))
+  (import "env" "global8" (global $12 (mut v128)))
+  (import "env" "func0" (func $21 (param f32 externref)))
+  (memory $7  21 29014 shared)
+  (memory $8  52 64662)
+  (table $4  2 4294967295 funcref)
+  (table $5  65 4294967295 funcref)
+  (global $13  externref (ref.null extern))
+  (global $14  (mut funcref) (ref.null func))
+  (global $15  (mut i32) (i32.const 341244741))
+  (global $16  (mut i64) (i64.const 8163807162832886649))
+  (global $17  (mut externref) (ref.null extern))
+  (global $18  (mut i32) (i32.const 814071487))
+  
+  (func $22 (type $0)
+    (param $0 f32)
+    (local $1 funcref)
+    br 0
+    )
+  
+  (func $23 (type $1)
+    (local $0 f64)
+    (local $1 externref)
+    global.get $13
+    call $23
+    call $23
+    call $23
+    memory.size $8
+    i64.extend_i32_u
+    i64x2.splat
+    i32x4.trunc_sat_f32x4_u
+    i32x4.any_true
+    i64x2.load32x2_u offset=1419623765 align=1
+    i32.const -281664858
+    i32.load16_u $7 offset=794321096 align=1
+    i32x4.replace_lane 1
+    i32x4.all_true
+    i64.const -7958479985515729511
+    i64.atomic.rmw16.and_u $8 offset=639236172
+    ref.null extern
+    return
+    )
+  
+  (func $24 (type $3)
+    (param $0 i32)
+    (param $1 i32)
+    (param $2 externref)
+    (result f64)
+    (local $3 f32)
+    (local $4 v128)
+    (local $5 v128)
+    global.get $14
+    nop
+    ref.is_null
+    f32.convert_i32_s
+    local.get $4
+    global.get $9
+    i16x8.load8x8_u $7 offset=1913848189 align=1
+    unreachable
+    )
+  
+  (data $19 
+    "&n<K\bb\1f\05\1c\e17\be\ee<\a9\ae\b7\d0\e5\c94\a8\8e\94\02\c2\ea\fb\9f\1c\da\0c\1c\e9$L\baM&\b3\e7\e1YC\db\\\01")
+  
+  (data $20 
+    "\0bQD4ti*\08\89"))

@@ -1,0 +1,84 @@
+(module
+  (type $0 (func (param f64 i32) (result v128 i64)))
+  (type $1 (func (param i64 i32 f64)))
+  (type $2 (func (param f32) (result externref)))
+  (type $3 (func (param i64 funcref) (result f32)))
+  (import "env" "memory" (memory $5 45 32583))
+  (import "env" "table" (table $4 94 4294967295 shared externref))
+  (import "env" "global0" (global $7 f64))
+  (import "env" "global1" (global $8 i64))
+  (import "env" "func0" (func $15 (param f32) (result externref)))
+  (memory $6  73 36346 shared)
+  (global $9  f32 (f32.const 0x1.8a6208p+31))
+  (global $10  (mut funcref) (ref.null func))
+  (global $11  (mut externref) (ref.null extern))
+  (global $12  (mut i64) (i64.const -4296704022050407209))
+  (elem $13 exception_type)
+  
+  (func $16 (type $0)
+    (param $0 f64)
+    (param $1 i32)
+    (result v128 i64)
+    (local $2 v128)
+    (local $3 v128)
+    table.size $4
+    v64x2.load_splat offset=1175373313
+    i8x16.all_true
+    v8x16.load_interleaved_3 offset=2648212872 align=2
+    f64x2.neg
+    f32x4.sub
+    i64x2.mul
+    i32x4.abs
+    atomic.fence
+    i64x2.neg
+    i8x16.extract_lane_u 3
+    v8x16.load_interleaved_4 offset=4284362405 align=2
+    i8x16.max_s
+    f64x2.abs
+    f32x4.extract_lane 0
+    drop
+    i8x16.sub_saturate_u
+    local.tee $2
+    global.get $12
+    )
+  
+  (func $17 (type $1)
+    (param $0 i64)
+    (param $1 i32)
+    (param $2 f64)
+    (local $3 f64)
+    elem.drop $13
+    i32.const -1450300111
+    drop
+    global.get $9
+    return
+    )
+  
+  (func $18 (type $3)
+    (param $0 i64)
+    (param $1 funcref)
+    (result f32)
+    (local $2 v128)
+    (local $3 funcref)
+    (local $4 externref)
+    (local $5 f64)
+    elem.drop $13
+    memory.size
+    i32x4.load16x4_u $6 offset=3266635809 align=1
+    i16x8.widen_high_i8x16_u
+    local.tee $2
+    i32x4.bitmask
+    v32x4.load_splat offset=3461609132
+    i8x16.all_true
+    i64.atomic.load32_u offset=2382774186
+    global.get $11
+    local.set $4
+    data.drop $14
+    f64.convert_i64_u
+    global.get $8
+    i32.wrap_i64
+    unreachable
+    )
+  
+  (data $14 (i32.const 415406248)
+    "H4"))

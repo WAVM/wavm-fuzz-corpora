@@ -1,0 +1,3 @@
+(func
+f32.const 0x1.ffAfff f32.const 0x1.27 f32.const 0x1.ff1 f32.const 0x1.fc
+f32.const 0x1.7 f32.const 0x1.f f32.const 0x1.ff12 f32.const 0x1.fffff)

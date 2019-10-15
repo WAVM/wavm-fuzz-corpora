@@ -1,0 +1,1 @@
+(func(i64.const 0xd00FFFFFFBFFF2)drop(i64.const 0xdFFFFBFFFFFFFF)drop)

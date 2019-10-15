@@ -1,0 +1,1 @@
+(func(i64x2.replace_lane 5)f64.ne(i64x2.replace_lane 2))

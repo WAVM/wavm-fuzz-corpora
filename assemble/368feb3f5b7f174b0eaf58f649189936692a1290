@@ -1,0 +1,17 @@
+(module
+  (type $0 (func))
+   (memory $1  1)(func $1 i32.const 0
+   v128.load
+    i32.const 1
+    i16x8.shr_u
+   i32.const 0
+   v128.load
+    i32.const 1
+    i16x8.shr_u
+i32.const 1    i16x8.shr_u
+i32.const 1
+  i16x8.shr_u
+       drop
+  i32.const 1  i16x8.shl
+    drop
+    ))

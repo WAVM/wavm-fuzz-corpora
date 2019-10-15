@@ -1,0 +1,2 @@
+ (func $2 i16x8.avgr_u
+ i8x16.any_true  i16x8.avgr_u)

@@ -1,0 +1,4 @@
+(func br 0
+i64.sub i64.sub
+i64.sub i64.sub i64.sub i64.sub
+i64.sub i64.sub)

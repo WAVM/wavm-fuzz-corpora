@@ -1,0 +1,53 @@
+(module
+  (type $0 (func (result v128)))
+  (type $1 (func (result f64)))
+  (type $2 (func (result i64 i32 i64 i32)))
+  (import "env" "table" (table $3 0 4294967295 shared externref))
+  (import "env" "func0" (func $11 (result f64)))
+  (table $4  73 4294967295 shared funcref)
+  (table $5  39 4294967295 externref)
+  (global $6  (mut i64) (i64.const 7955672138716503739))
+  (global $7  (mut i32) (i32.const -1749920687))
+  (elem $8 global
+    $7 $7 $6 $7 $7 $7 $7 $7
+    $6)
+  
+  (func $12 (type $0)
+    (result v128)
+    (local $0 funcref)
+    (local $1 externref)
+    (local $2 v128)
+    global.get $7
+    i32.const -874143474
+    i32.shr_u
+    i32.popcnt
+    f32.convert_i32_u
+    data.drop $10
+    f32.neg
+    local.get $0
+    local.set $0
+    f32.neg
+    loop $loop (result i64 i32 i64 i32)
+      nop
+      i64.const 1827586926562356392
+      i64x2.splat
+      i32x4.extract_lane 0
+      table.get $5
+      local.set $1
+      elem.drop $8
+      data.drop $10
+      ref.null func
+      ref.is_null
+      global.set $7
+      unreachable
+    end ;; $loop
+    unreachable
+    )
+  
+  (data $9 
+    "\98\19\b3\a8]\bd(\ebcF\a4\dbyV@,R\b4\a0\c3\81\09\82lP\89\c5\80\dc\bd\8f\bb\a5g\a5\13\ad\dds\e4\91\a2\d2J(\a2[\a2\cc^a\ce\04n\d59\ea\d3F\b8\f5\15\8dH"
+    "y\a9^\9f\b6\bd\f8\a8\8a\9eg`\e0\ed\ef;\d3:\92\85\bc\8a.?\fe\cc\b6s\b9\cb\ca\0f\1f")
+  
+  (data $10 
+    "D\b1\f8\e1\b3\d3\ee\da:'b#v`x\1b4m`\89\be\05\e6n[\e8\15\aa\7f\9c\19\9d\ab\d2d\d6\a3J\97i\1a2+k\dd\f4\86\b0\cfU#5R\ff\18\1cLam1 ~\c6z"
+    "\f4\9c\fftQ\ca\a3\07\eak7\9d>\89&\86"))

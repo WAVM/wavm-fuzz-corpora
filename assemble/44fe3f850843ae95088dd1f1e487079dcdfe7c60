@@ -1,0 +1,1 @@
+(memory 2)(func(br 0)(v8x16.store_interleaved_2)v128.store(loop)(v8x16.store_interleaved_2)(v8x16.store_interleaved_4))

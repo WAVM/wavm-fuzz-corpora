@@ -1,0 +1,3 @@
+(export "0:"(func $p))
+(custom_section "i"(after export))
+ (custom_section "i" (after export) )

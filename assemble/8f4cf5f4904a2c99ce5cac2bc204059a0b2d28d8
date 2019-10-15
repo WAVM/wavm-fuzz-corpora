@@ -1,0 +1,45 @@
+(module
+  (type $0 (func (param externref) (result i64 f32)))
+  (type $1 (func (param f32 funcref f32) (result funcref externref)))
+  (type $2 (func (param i32)))
+  (import "env" "memory" (memory $3 8 38028 shared))
+  (import "env" "global2" (global $6 (mut funcref)))
+  (import "env" "func0" (func $10 (param externref) (result i64 f32)))
+  (import "env" "func1" (func $11 (param i32)))
+  (memory $4  8 23821 shared)
+  (memory $5  61 18255)
+  (global $7  (mut v128) (v128.const i32x4 0xe8db1a55 0x97ecaf4b 0x93e46c4d 0x96dca2b1))
+  (global $8  f64 (f64.const 0x1.a502677812bc3p+60))
+  (elem $9 exception_type)
+  
+  (func $12 (type $1)
+    (param $0 f32)
+    (param $1 funcref)
+    (param $2 f32)
+    (result funcref externref)
+    (local $3 f64)
+    atomic.fence
+    local.get $1
+    ref.is_null
+    memory.size $5
+    i32.eq
+    v8x16.load_interleaved_3 offset=2664146830 align=8
+    f64x2.max
+    i32x4.gt_s
+    elem.drop $9
+    i8x16.extract_lane_u 1
+    elem.drop $9
+    local.get $2
+    f32.neg
+    local.get $2
+    f64.const 0x1.fec6e2bc37d70p+386
+    local.set $3
+    ref.null extern
+    ref.null extern
+    drop
+    drop
+    f32.ge
+    i32.ge_s
+    call $11
+    unreachable
+    ))

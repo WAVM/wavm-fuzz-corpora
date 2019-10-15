@@ -1,0 +1,3 @@
+(func ) (func i32.load16_u i32.load16_u i32.load16_u(r)i32.load16_u  i32.load16_u i32.load16_u
+i32.load16_u  i32.load16_u i32.load16_u i32.load16_u i32.load16_u
+i32.load16_u   i32.load16_u i32.load16_u i32.load16_u i32.load16_u)

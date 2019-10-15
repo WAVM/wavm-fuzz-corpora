@@ -1,0 +1,1 @@
+(func try $t try $? try $3 if $3)

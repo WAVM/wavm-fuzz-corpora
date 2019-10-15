@@ -1,0 +1,1 @@
+(memory 6)(memory 6)(func(mi.rd)i32x4.load16x4_u()i32x4.load16x4_u(br1)i32x4.load16x4_u()i32x4.load16x4_u(2)i32x4.load16x4_u(b)i32x4.load16x4_u(2u)i32x4.load16x4_u(br)i32x4.load16x4_u)(func(mi.rd)i32x4.load16x4_u()i32x4.load16x4_u(br1)i32x4.load16x4_u()i32x4.load16x4_u(2)i32x4.load16x4_u(b)i32x4.load16x4_u(2u)i32x4.load16x4_u(br)i32x4.load16x4_u)

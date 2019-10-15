@@ -1,0 +1,13 @@
+(func (o t) (v128.andnot
+)( v128.andnot
+)v128.andnot
+ (v128.andnot
+)( v128.andnot
+) v128.andnot(o t) (v128.andnot
+)( v128.andnot
+)v128.andnot
+ (v128.andnot
+)( v128.andnot
+) v128.andnot
+ v128.andnot v128.andnot
+ v128.andnot v128.andnot)

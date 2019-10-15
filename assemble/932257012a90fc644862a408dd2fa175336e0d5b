@@ -1,0 +1,8 @@
+(memory 1) (func(d) (i32.atomic.rmw.add(ldi32.atomic.rmw.add )( i32.atomic.rmw.add)(i32.atomic.rmw.add)  )
+ i32.atomic.rmw.add(i32.atomic.rmw.add )
+( i32.atomic.rmw.add)(i32.atomic.rmw.add) (i32.atomic.rmw.add(i32.ato.rmdd )( i32.atomic.rmw.add)(i32.atomic.rmw.add)  )
+ i32.atomic.rmw.add(i32.atomic.rmw.add )
+( i32.atomic.rmw.add)(i32.atomicrmw.add) (i32.atomic.rmw.add(i32.aatomic.rmw.add))i32.atomic.rmw.add(i32.atomic.rmw.add ( i32.atomic.rmw.add)(i32.atomic.rmw.add) )i32.atomic.rmw.add(i32.atomic.rmw.add ( i32.atomic.rmw.add)(i32.atomc.rmw.add)  )
+ i32.atomic.rmw.add(i32.atomic.rmw.add )
+( i32.atomic.rmw.add)(i32.atomic.rmw.add) (i32.atomic.rmw.add(i32.atomic.rmw.add)(i32.atomic.rmw.add)(i32.atomic.rmw.add))memo 1) (func(d) (i32.atomic.rmw.add(i32.atomic.rmw.add )( i32.atomic.rmw.add)(i32.atomic.rmw.add)  )
+ i32.atomic.rmw.add(tomic.rmw.add)(i32.atomic.rmw.add) (i32.atomic.rmw.add(i32.atomic.rmw.add)(i32.atomic.rww.add)(i32.atomic.rmw.add))i32.atomic.rmw.add(i32.atomic.rmw.add ( i32.atomic.rmw.add)(i32.atomic.rmw.add) )i32.atomic.rmw.add(m32.atomic.rmw.add ( i32.aic.rmw.add) ))

@@ -1,0 +1,101 @@
+(module
+  (type $0 (func (param i32) (result v128 v128)))
+  (type $1 (func (param i32) (result v128 v128 v128)))
+  (type $2 (func (param i32) (result v128 v128 v128 v128)))
+  (memory $3  1)
+  (export "v8x16.load_interleaved_2" (func $5))
+  (export "v8x16.load_interleaved_3" (func $6))
+  (export "v8x16.load_iad_interleaved_2" (func $8))
+  (export "v16x8.load_interleaved_3" (func $9))
+  (export "v16x8.load_interleaved_4" (func $10))
+  (export "v32x4.load_interleaved_2" (func $11))
+  (export "v32x4.load_interleaved_3" (func $12))
+  (export "v32x4.load_interleaved_4" (func $13))
+  (export "d_interleaved_4" (func $16))
+  
+  (func $5 (type $0)
+    (param $0 i32)
+    (result v128 v128)
+    local.get $0
+    v8x16.load_interleaved_2
+    )
+  
+  (func $6 (type $1)
+    (param $0 i32)
+    (result v128 v128 v128)
+    local.get $0
+    v8x16.load_interleaved_3
+    )
+  
+  (func $7 (type $2)
+    (param $0 i32)
+    (result v128 v128 v128 v128)
+    local.get $0
+    v8x16.load_interleaved_4
+    )
+  
+  (func $8 (type $0)
+    (param $0 i32)
+    (result v128 v128)
+    local.get $0
+    v16x8.load_interleaved_2
+    )
+  
+  (func $9 (type $1)
+    (param $0 i32)
+    (result v128 v128 v128)
+    local.get $0
+    v16x8.load_interleaved_3
+    )
+  
+  (func $10 (type $2)
+    (param $0 i32)
+    (result v128 v128 v128 v128)
+    local.get $0
+    v16x8.load_interleaved_4
+    )
+  
+  (func $11 (type $0)
+    (param $0 i32)
+    (result v128 v128)
+    local.get $0
+    v32x4.load_interleaved_2
+    )
+  
+  (func $12 (type $1)
+    (param $0 i32)
+    (result v128 v128 v128)
+    local.get $0
+    v32x4.load_interleaved_3
+    )
+  
+  (func $13 (type $2)
+    (param $0 i32)
+    (result v128 v128 v128 v128)
+    local.get $0
+    v32x4.load_interleaved_4
+    )
+  
+  (func $14 (type $0)
+    (param $0 i32)
+    (result v128 v128)
+    local.get $0
+    v64x2.load_interleaved_2
+    )
+  
+  (func $15 (type $1)
+    (param $0 i32)
+    (result v128 v128 v128)
+    local.get $0
+    v64x2.load_interleaved_3
+    )
+  
+  (func $16 (type $2)
+    (param $0 i32)
+    (result v128 v128 v128 v128)
+    local.get $0
+    v64x2.load_interleaved_4
+    )
+  
+  (data $4 (i32.const 0)
+    "\00\01\02\03\04\05\06\07\08\09\n\0b\0c\0d\0e\0f\10\11\12\13\14\15\16\17\18\19\1a\1b\1c\1d\1e\1f !\"#$%&'()*+,-./0123456789:;<=>?"))

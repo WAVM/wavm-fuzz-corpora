@@ -1,0 +1,12 @@
+(module
+  (type $2 (func (result i32))  
+)(type $4 (func (param i32)))
+  (export "a" (exception_type $a))
+  (export "bllmek" (exception_type $b))  (export "g" (exception_type $c))
+  (export "d" (exception_type $d))
+
+  (exception_type $a)
+  (exception_type $b i32)
+  (exception_type $c i64 f64)
+  (exception_type $d)
+  (func  ))

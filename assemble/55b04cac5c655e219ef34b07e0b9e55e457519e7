@@ -1,0 +1,125 @@
+(module
+  (type $0 (func (param funcref i64 i64) (result i64)))
+  (type $1 (func (param v128 funcref)))
+  (type $2 (func (param externref funcref v128 funcref)))
+  (type $3 (func (param i32 i64 funcref v128) (result f64)))
+  (type $4 (func (result f64 i32)))
+  (type $5 (func (param v128 funcref funcref externref)))
+  (type $6 (func (param v128 i32) (result i32 funcref)))
+  (import "env" "memory" (memory $9 87 61353 shared))
+  (import "env" "table" (table $7 57 4294967295 shared externref))
+  (memory $10  59 55146 shared)
+  (table $8  80 4294967295 externref)
+  
+  (func $12 (type $0)
+    (param $0 funcref)
+    (param $1 i64)
+    (param $2 i64)
+    (result i64)
+    (local $3 f32)
+    ref.null extern
+    drop
+    f32.const 0x1.598b68p+86
+    f32.sqrt
+    i64.const 858459842795715801
+    data.drop $11
+    unreachable
+    )
+  
+  (func $13 (type $1)
+    (param $0 v128)
+    (param $1 funcref)
+    (local $2 f32)
+    (local $3 f32)
+    (local $4 v128)
+    local.get $1
+    v128.const i32x4 0x44cc9bb4 0x320fa3b4 0xe1000712 0xc6abf5c4
+    i16x8.extract_lane_u 3
+    f32.convert_i32_s
+    i64.trunc_sat_f32_s
+    f64.convert_i64_s
+    block $block (result f64 i32)
+      return
+    end ;; $block
+    table.get $7
+    return
+    )
+  
+  (func $14 (type $2)
+    (param $0 externref)
+    (param $1 funcref)
+    (param $2 v128)
+    (param $3 funcref)
+    data.drop $11
+    ref.null extern
+    atomic.fence
+    atomic.fence
+    local.get $2
+    local.get $3
+    nop
+    local.get $1
+    local.get $0
+    loop $loop (param v128 funcref funcref externref)
+      local.tee $0
+      atomic.fence
+      br 1
+    end ;; $loop
+    local.set $0
+    v128.const i32x4 0xb5b37c10 0x3ab4c4b9 0xdcc5f19b 0x4d90f1fc
+    return
+    )
+  
+  (func $15 (type $3)
+    (param $0 i32)
+    (param $1 i64)
+    (param $2 funcref)
+    (param $3 v128)
+    (result f64)
+    (local $4 f32)
+    (local $5 funcref)
+    (local $6 v128)
+    (local $7 i32)
+    atomic.fence
+    atomic.fence
+    local.get $6
+    i32x4.extract_lane 0
+    i64.load offset=2444301274
+    local.get $0
+    i32.popcnt
+    v64x2.load_interleaved_4 offset=3015823507 align=1
+    f64x2.div
+    i8x16.le_u
+    atomic.fence
+    i8x16.extract_lane_u 5
+    block $block (param v128 i32) (result i32 funcref)
+      local.get $6
+      i32x4.all_true
+      i32.rotl
+      i8x16.replace_lane 7
+      local.set $6
+      local.get $0
+      i32.load8_s offset=3641987790
+      i32.load8_s offset=1142515083
+      i32.load8_s $10 offset=267437994
+      local.tee $7
+      i32.atomic.load16_u $10 offset=1488243145
+      table.size $8
+      i32.atomic.rmw8.xchg_u offset=3116145947
+      local.get $6
+      ref.null func
+      unreachable
+    end ;; $block
+    local.set $2
+    local.set $0
+    ref.null extern
+    ref.null func
+    ref.is_null
+    drop
+    ref.is_null
+    local.set $7
+    unreachable
+    )
+  
+  (data $11 
+    "\85E\df\a0\cf\bf\ec\cea\fdab>E\a1*\f4\87\98\ec\e9\86\07\8el\06\c8\fb\ce\1d\da\10\ad\8bR\ff\0d\c3E\bbi\e8\be\91\b8/B\0fx\9b\12\8b4?\d4\98\95Y\a0S\16C\nD"
+    "S\f8m\cc\be\99#\a6{\09\b3\ad"))

@@ -1,0 +1,46 @@
+(module
+  (type $0 (func (param i32) (result i32 i64)))
+  (import "env" "memory" (memory $2 3 55222 shared))
+  (import "env" "memory" (memory $3 57 18230 shared))
+  (import "env" "table" (table $1 19 4294967295 shared funcref))
+  (memory $4  22 61425 shared)
+  (global $5  (mut v128) (v128.const i32x4 0x69e3e175 0x5269701d 0x49d0d6a8 0x47c9aea0))
+  (elem $6 declare memory
+    $4 $2 $3 $2 $3 $2 $2 $3
+    $4 $3 $3 $4)
+  
+  (func $8 (type $0)
+    (param $0 i32)
+    (result i32 i64)
+    (local $1 funcref)
+    (local $2 i64)
+    (local $3 externref)
+    table.size $1
+    i32.eqz
+    i32x4.load16x4_u $3 offset=2850378168
+    i32x4.all_true
+    i32.load8_s $3 offset=2241989757
+    i32x4.load16x4_u $4 offset=4098913143 align=2
+    i8x16.any_true
+    i32.atomic.load16_u offset=926546574
+    i64.atomic.load16_u $4 offset=504956517
+    f64.convert_i64_u
+    f64.abs
+    i64.reinterpret_f64
+    i64.eqz
+    i32.load offset=2507146346 align=1
+    data.drop $7
+    i32.load $3 offset=2791559247 align=1
+    i32.eqz
+    memory.size $3
+    i32.atomic.rmw16.or_u offset=1607544932
+    atomic.fence
+    i32.ctz
+    i32.load16_u $4 offset=485694465 align=1
+    v16x8.load_splat $4 offset=3599742033 align=1
+    unreachable
+    )
+  
+  (data $7 (i32.const -1440796185)
+    "\84t\85\ddO\e9T\9d\b0\06D \f1\ed\acVF\c2(\fc\15\95\9cv\e0+T5jA\e9\af+\91Y!e\10\96\8e\9a\8b1\b2\e7_\dd\be\c6\a7\aa\85NR\c8\14[x\e0Cy_=\e6"
+    "\f6\86\adP"))

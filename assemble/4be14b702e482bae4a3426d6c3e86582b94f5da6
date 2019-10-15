@@ -1,0 +1,7 @@
+(func ( v)( v128.andnot)(v128.andnot
+ )( v128.andnot) ( v128.andnot  ) ( v128.andnot
+ )( v128.andnot)(v128.andnot
+)( v128.andnot) (  v128.andnot)(v128.andnot
+ )( v128.andnot) ( v128.andnot  ) ( v128.andnot
+ )( v128.andnot)( v128.andnot
+)( v128.andnot) ( v18.))

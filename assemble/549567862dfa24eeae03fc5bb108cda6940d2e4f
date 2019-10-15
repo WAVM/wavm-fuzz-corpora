@@ -1,0 +1,96 @@
+(module
+  (type $0 (func (param i32 f64 f32 i64)))
+  (type $1 (func (param i32 externref i32 f32) (result v128)))
+  (type $2 (func (param funcref i32 funcref) (result i64 f64)))
+  (type $3 (func (param externref i64) (result i64 externref)))
+  (type $4 (func (param i64)))
+  (import "env" "memory" (memory $5 74 64986 shared))
+  (import "env" "global0" (global $8 (mut i32)))
+  (import "env" "global1" (global $9 (mut i32)))
+  (import "env" "global3" (global $10 i64))
+  (import "env" "global4" (global $11 (mut externref)))
+  (import "env" "global5" (global $12 f64))
+  (import "env" "global6" (global $13 f32))
+  (import "env" "func0" (func $18 (param i32 externref i32 f32) (result v128)))
+  (memory $6  98 13630 shared)
+  (memory $7  35 34284)
+  (global $14  (mut i64) (i64.const 6207565751058368194))
+  (elem $15 declare memory
+    $7 $6)
+  
+  (func $19 (type $0)
+    (param $0 i32)
+    (param $1 f64)
+    (param $2 f32)
+    (param $3 i64)
+    (local $4 i32)
+    (local $5 f32)
+    (local $6 f64)
+    (local $7 v128)
+    data.drop $17
+    br 0
+    )
+  
+  (func $20 (type $2)
+    (param $0 funcref)
+    (param $1 i32)
+    (param $2 funcref)
+    (result i64 f64)
+    memory.size $7
+    v16x8.load_interleaved_2 offset=2905000102 align=1
+    i32x4.gt_u
+    i8x16.all_true
+    i32.atomic.load16_u $6 offset=706547677
+    i32.clz
+    i64.atomic.load32_u $7 offset=1665009517
+    i32.wrap_i64
+    i32x4.splat
+    local.get $1
+    data.drop $16
+    v8x16.load_splat $6 offset=665626078
+    data.drop $17
+    f32x4.convert_i32x4_s
+    f32x4.abs
+    f64x2.ne
+    ref.null extern
+    drop
+    unreachable
+    )
+  
+  (func $21 (type $3)
+    (param $0 externref)
+    (param $1 i64)
+    (result i64 externref)
+    (local $2 i32)
+    (local $3 externref)
+    (local $4 f32)
+    global.get $11
+    global.get $10
+    loop $loop (param i64)
+      i32.wrap_i64
+      local.get $1
+      i64.atomic.rmw32.add_u $6 offset=4035577289
+      i64.const 324533355085069738
+      memory.size $6
+      i16x8.load8x8_u offset=1901752443 align=4
+      f32x4.abs
+      f64x2.neg
+      i8x16.abs
+      i8x16.bitmask
+      i64.atomic.load32_u offset=3262302130
+      i64.div_s
+      br $loop
+    end ;; $loop
+    local.set $3
+    atomic.fence
+    local.get $3
+    global.set $11
+    v128.const i32x4 0xbfaba6dc 0x9e10ac6b 0xba9b99cd 0x7b5e0c2b
+    unreachable
+    )
+  
+  (data $16 (memory $7) (i32.const 274301035)
+    "\9e.~\e7Q\10\0dw\1e\b6\1f!\f2eF\90_\08\d5\b4\0dv\fa\b6\n\ad\1a\09\e1\c3\18\05s\950@D")
+  
+  (data $17 (memory $7) (i32.const 746695576)
+    "\c4\f1\f0h\1dj\eair\bd\a00\8c\ad%<\04\d2\bc\c8\a5\c9\c3v\8e\ae\03%\b3D\a4v\e6!\94"))

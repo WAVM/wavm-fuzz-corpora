@@ -1,0 +1,732 @@
+(module
+  (type $sig (func (param i32 i32 i32) (result i32)))
+  (type $0 (func))
+  (type $1 (func (result i32)))
+  (type $2 (func (result i64)))
+  (type $3 (func (result f32)))
+  (type $4 (func (result f64)))
+  (type $5 (func (result f64 f64)))
+  (type $6 (func (result i32 i64)))
+  (type $7 (func (param i32 i32) (result i32)))
+  (memory $9  1)
+  (table $8  1 1 funcref)
+  (global $a  (mut i32) (i32.const 10))
+  (export "type-i32" (func $11))
+  (export "type-i64" (func $12))
+  (export "type-f32" (func $13))
+  (export "type-f64" (func $14))
+  (export "type-i32-i32" (func $15))
+  (export "type-i64-i64" (func $16))
+  (export "typeerand" (func $75))
+  (export "as-memory.gr-index" (func $82))
+  (elem $10 (i32.const 0)
+    $f)
+  
+  (func $dummy (type $0)
+    )
+  
+  (func $11 (type $0)
+    block $block
+      br $block
+      i32.ctz
+      drop
+    end ;; $block
+    )
+  
+  (func $12 (type $0)
+    block $block
+      br $block
+      i64.ctz
+      drop
+    end ;; $block
+    )
+  
+  (func $13 (type $0)
+    block $block
+      br $block
+      f32.neg
+      drop
+    end ;; $block
+    )
+  
+  (func $14 (type $0)
+    block $block
+      br $block
+      f64.neg
+      drop
+    end ;; $block
+    )
+  
+  (func $15 (type $0)
+    block $block
+      br $block
+      i32.add
+      drop
+    end ;; $block
+    )
+  
+  (func $16 (type $0)
+    block $block
+      br $block
+      i64.add
+      drop
+    end ;; $block
+    )
+  
+  (func $17 (type $0)
+    block $block
+      br $block
+      f32.add
+      drop
+    end ;; $block
+    )
+  
+  (func $18 (type $0)
+    block $block
+      br $block
+      f64.add
+      drop
+    end ;; $block
+    )
+  
+  (func $19 (type $1)
+    (result i32)
+    block $block (result i32)
+      i32.const 1
+      br $block
+      i32.ctz
+    end ;; $block
+    )
+  
+  (func $20 (type $2)
+    (result i64)
+    block $block (result i64)
+      i64.const 2
+      br $block
+      i64.ctz
+    end ;; $block
+    )
+  
+  (func $21 (type $3)
+    (result f32)
+    block $block (result f32)
+      f32.const 0x1.800000p+1
+      br $block
+      f32.neg
+    end ;; $block
+    )
+  
+  (func $22 (type $4)
+    (result f64)
+    block $block (result f64)
+      f64.const 0x1.0000000000000p+2
+      br $block
+      f64.neg
+    end ;; $block
+    )
+  
+  (func $23 (type $5)
+    (result f64 f64)
+    block $block (result f64 f64)
+      f64.const 0x1.0000000000000p+2
+      f64.const 0x1.4000000000000p+2
+      br $block
+      f64.add
+      f64.const 0x1.8000000000000p+2
+    end ;; $block
+    )
+  
+  (func $24 (type $0)
+    block $block
+      br $block
+      call $dummy
+    end ;; $block
+    )
+  
+  (func $25 (type $0)
+    block $block
+      call $dummy
+      br $block
+      call $dummy
+    end ;; $block
+    )
+  
+  (func $26 (type $0)
+    block $block
+      nop
+      call $dummy
+      br $block
+    end ;; $block
+    )
+  
+  (func $27 (type $1)
+    (result i32)
+    block $block (result i32)
+      nop
+      call $dummy
+      i32.const 2
+      br $block
+    end ;; $block
+    )
+  
+  (func $28 (type $1)
+    (result i32)
+    block $block (result i32)
+      loop $loop (result i32)
+        i32.const 3
+        br $block
+        i32.const 2
+      end ;; $loop
+    end ;; $block
+    )
+  
+  (func $29 (type $1)
+    (result i32)
+    block $block (result i32)
+      loop $loop (result i32)
+        call $dummy
+        i32.const 4
+        br $block
+        i32.const 2
+      end ;; $loop
+    end ;; $block
+    )
+  
+  (func $30 (type $1)
+    (result i32)
+    block $block (result i32)
+      loop $loop (result i32)
+        nop
+        call $dummy
+        i32.const 5
+        br $block
+      end ;; $loop
+    end ;; $block
+    )
+  
+  (func $31 (type $1)
+    (result i32)
+    block $block (result i32)
+      i32.const 9
+      br $block
+      br $block
+    end ;; $block
+    )
+  
+  (func $32 (type $0)
+    block $block
+      br $block
+      br_if $block
+    end ;; $block
+    )
+  
+  (func $33 (type $1)
+    (result i32)
+    block $block (result i32)
+      i32.const 8
+      br $block
+      i32.const 1
+      br_if $block
+      drop
+      i32.const 7
+    end ;; $block
+    )
+  
+  (func $34 (type $1)
+    (result i32)
+    block $block (result i32)
+      i32.const 6
+      i32.const 9
+      br $block
+      br_if $block
+      drop
+      i32.const 7
+    end ;; $block
+    )
+  
+  (func $35 (type $0)
+    block $block
+      br $block
+ end ;; $block
+    )
+  
+  (func $42 (type $7)
+    (param $0 i32)
+    (param $1 i32)
+    (result i32)
+    block $block (result i32)
+      local.get $0
+      if $if (result i32)
+        local.get $1
+      else
+        i32.const 4
+        br $block
+      end ;; $if
+    end ;; $block
+    )
+  
+  (func $43 (type $7)
+    (param $0 i32)
+    (param $1 i32)
+    (result i32)
+    block $block (result i32)
+      i32.const 5
+      br $block
+      local.get $0
+      local.get $1
+      select
+    end ;; $block
+    )
+  
+  (func $44 (type $7)
+    (param $0 i32)
+    (param $1 i32)
+    (result i32)
+    block $block (result i32)
+      local.get $0
+      i32.const 6
+      br $block
+      local.get $1
+      select
+    end ;; $block
+    )
+  
+  (func $45 (type $1)
+    (result i32)
+    block $block (result i32)
+      i32.const 0
+      i32.const 1
+      i32.const 7
+      br $block
+      select
+    end ;; $block
+    )
+  
+  (func $46 (type $1)
+    (result i32)
+    block $block (result i32)
+      i32.const 8
+      br $block
+      select
+    end ;; $block
+    )
+  
+  (func $f (type $sig)
+    (param $0 i32)
+    (param $1 i32)
+    (param $2 i32)
+    (result i32)
+    i32.const -1
+    )
+  
+  (func $47 (type $1)
+    (result i32)
+    block $block (result i32)
+      i32.const 12
+      br $block
+      i32.const 2
+      i32.const 3
+      call $f
+    end ;; $block
+    )
+  
+  (func $48 (type $1)
+    (result i32)
+    block $block (result i32)
+      i32.const 1
+      i32.const 13
+      br $block
+      i32.const 3
+      call $f
+    end ;; $block
+    )
+  
+  (func $49 (type $1)
+    (result i32)
+    block $block (result i32)
+      i32.const 1
+      i32.const 2
+      i32.const 14
+      br $block
+      call $f
+    end ;; $block
+    )
+  
+  (func $50 (type $1)
+    (result i32)
+    block $block (result i32)
+      i32.const 15
+      br $block
+      call $f
+    end ;; $block
+    )
+  
+  (func $51 (type $1)
+    (result i32)
+    block $block (result i32)
+      i32.const 20
+      br $block
+      i32.const 1
+      i32.const 2
+      i32.const 3
+      call_indirect $8 (type $sig)
+    end ;; $block
+    )
+  
+  (func $52 (type $1)
+    (result i32)
+    block $block (result i32)
+      i32.const 0
+      i32.const 21
+      br $block
+      i32.const 2
+      i32.const 3
+      call_indirect $8 (type $sig)
+    end ;; $block
+    )
+  
+  (func $53 (type $1)
+    (result i32)
+    block $block (result i32)
+      i32.const 0
+      i32.const 1
+      i32.const 22
+      br $block
+      i32.const 3
+      call_indirect $8 (type $sig)
+    end ;; $block
+    )
+  
+  (func $54 (type $1)
+    (result i32)
+    block $block (result i32)
+      i32.const 0
+      i32.const 1
+      i32.const 2
+      i32.const 23
+      br $block
+      call_indirect $8 (type $sig)
+    end ;; $block
+    )
+  
+  (func $55 (type $1)
+    (result i32)
+    block $block (result i32)
+      i32.const 24
+      br $block
+      call_indirect $8 (type $sig)
+    end ;; $block
+    )
+  
+  (func $56 (type $1)
+    (result i32)
+    (local $0 f32)
+    block $block (result i32)
+      i32.const 17
+      br $block
+      local.set $0
+      i32.const -1
+    end ;; $block
+    )
+  
+  (func $57 (type $1)
+    (result i32)
+    (local $0 i32)
+    block $block (result i32)
+      i32.const 1
+      br $block
+      local.tee $0
+    end ;; $block
+    )
+  
+  (func $58 (type $1)
+    (result i32)
+    block $block (result i32)
+      i32.const 1
+      br $block
+      global.set $a
+    end ;; $block
+    )
+  
+  (func $59 (type $3)
+    (result f32)
+    block $block (result f32)
+      f32.const 0x1.b33334p-0
+      br $block
+      f32.load
+    end ;; $block
+    )
+  
+  (func $60 (type $2)
+    (result i64)
+    block $block (result i64)
+      i64.const 30
+      br $block
+      i64.load8_s
+    end ;; $block
+    )
+  
+  (func $61 (type $1)
+    (result i32)
+    block $block (result i32)
+      i32.const 30
+      br $block
+      f64.const 0x1.c000000000000p+2
+      f64.store
+      i32.const -1
+    end ;; $block
+    )
+  
+  (func $62 (type $1)
+    (result i32)
+    block $block (result i32)
+      i32.const 2
+      i32.const 31
+      br $block
+      i64.store
+      i32.const -1
+    end ;; $block
+    )
+  
+  (func $63 (type $1)
+    (result i32)
+    block $block (result i32)
+      i32.const 32
+      br $block
+      i64.store
+      i32.const -1
+    end ;; $block
+    )
+  
+  (func $64 (type $1)
+    (result i32)
+    block $block (result i32)
+      i32.const 32
+      br $block
+      i32.const 7
+      i32.store8
+      i32.const -1
+    end ;; $block
+    )
+  
+  (func $65 (type $1)
+    (result i32)
+    block $block (result i32)
+      i32.const 2
+      i32.const 33
+      br $block
+      i64.store16
+      i32.const -1
+    end ;; $block
+    )
+  
+  (func $66 (type $1)
+    (result i32)
+    block $block (result i32)
+      i32.const 34
+      br $block
+      i64.store16
+      i32.const -1
+    end ;; $block
+    )
+  
+  (func $67 (type $3)
+    (result f32)
+    block $block (result f32)
+      f32.const 0x1.b33334p+1
+      br $block
+      f32.neg
+    end ;; $block
+    )
+  
+  (func $68 (type $1)
+    (result i32)
+    block $block (result i32)
+      i32.const 3
+      br $block
+      i32.const 10
+      i32.add
+    end ;; $block
+    )
+  
+  (func $69 (type $2)
+    (result i64)
+    block $block (result i64)
+      i64.const 10
+      i64.const 45
+      br $block
+      i64.sub
+    end ;; $block
+    )
+  
+  (func $70 (type $1)
+    (result i32)
+    block $block (result i32)
+      i32.const 46
+      br $block
+      i32.add
+    end ;; $block
+    )
+  
+  (func $71 (type $1)
+    (result i32)
+    block $block (result i32)
+      i32.const 44
+      br $block
+      i32.eqz
+    end ;; $block
+    )
+  
+  (func $72 (type $1)
+    (result i32)
+    block $block (result i32)
+      i32.const 43
+      br $block
+      f64.const 0x1.4000000000000p+3
+      f64.le
+    end ;; $block
+    )
+  
+  (func $73 (type $1)
+    (result i32)
+    block $block (result i32)
+      f32.const 0x1.400000p+3
+      i32.const 42
+      br $block
+      f32.ne
+    end ;; $block
+    )
+  
+  (func $74 (type $1)
+    (result i32)
+    block $block (result i32)
+      i32.const 44
+      br $block
+      f64.le
+    end ;; $block
+    )
+  
+  (func $75 (type $1)
+    (result i32)
+    block $block (result i32)
+      i32.const 41
+      br $block
+      i32.wrap_i64
+    end ;; $block
+    )
+  
+  (func $76 (type $1)
+    (result i32)
+    block $block (result i32)
+      i32.const 40
+      br $block
+      memory.grow
+    end ;; $block
+    )
+  
+  (func $77 (type $1)
+    (result i32)
+    i32.const 1
+    block $block (result i32)
+      call $dummy
+      i32.const 4
+      i32.const 8
+      br $block
+      i32.add
+    end ;; $block
+    i32.add
+    )
+  
+  (func $78 (type $1)
+    (result i32)
+    i32.const 1
+    block $block (result i32)
+      i32.const 2
+      drop
+      block $block_0 (result i32)
+        i32.const 4
+        drop
+        i32.const 8
+        br $block
+        br $block_0
+      end ;; $block_0
+      drop
+      i32.const 16
+    end ;; $block
+    i32.add
+    )
+  
+  (func $79 (type $1)
+    (result i32)
+    i32.const 1
+    block $block (result i32)
+      i32.const 2
+      drop
+      block $block_0 (result i32)
+        i32.const 4
+        drop
+        i32.const 8
+        br $block
+        i32.const 1
+        br_if $block_0
+        drop
+        i32.const 32
+      end ;; $block_0
+      drop
+      i32.const 16
+    end ;; $block
+    i32.add
+    )
+  
+  (func $80 (type $1)
+    (result i32)
+    i32.const 1
+    block $block (result i32)
+      i32.const 2
+      drop
+      i32.const 4
+      i32.const 8
+      br $block
+      br_if $block
+      drop
+      i32.const 16
+    end ;; $block
+    i32.add
+    )
+  
+  (func $81 (type $1)
+    (result i32)
+    i32.const 1
+    block $block (result i32)
+      i32.const 2
+      drop
+      block $block_0 (result i32)
+        i32.const 4
+        drop
+        i32.const 8
+        br $block
+        i32.const 1
+        br_table
+          $block_0 ;; default
+      end ;; $block_0
+      drop
+      i32.const 16
+    end ;; $block
+    i32.add
+    )
+  
+  (func $82 (type $1)
+    (result i32)
+    i32.const 1
+    block $block (result i32)
+      i32.const 2
+      drop
+      i32.const 4
+      i32.const 8
+      br $block
+      br_table
+        $block ;; default
+      i32.const 16
+    end ;; $block
+    i32.add
+    ))

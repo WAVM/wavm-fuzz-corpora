@@ -1,0 +1,15 @@
+(func
+f64.sqrt
+f64x2.sqrt
+f64x2.sqrt
+f64x2.sqrt f64x2.sqrt
+f64x2.sqrt
+f64x2.sqrt
+f64x2.sqrt f64x2.sqrt
+f64x2.sqrt
+f64x2.sqrt
+f64x2.sqrt
+f64x2.sqrt f64x2.sqrt
+f64x2.sqrt
+f64x2.sqrt
+f64x2.sqrt )

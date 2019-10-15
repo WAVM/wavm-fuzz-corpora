@@ -1,0 +1,1 @@
+(memory 0)(func(drop(i64.load offset=881(i32.const 3))))

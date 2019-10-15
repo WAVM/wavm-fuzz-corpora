@@ -1,0 +1,45 @@
+(module
+  (type $0 (func (param i32 i32) (result funcref)))
+  (type $1 (func (param i32 i64 funcref i64) (result f64 f32)))
+  (type $2 (func (param f32 f32 f64 i64)))
+  (import "env" "table" (table $3 87 4294967295 funcref))
+  (import "env" "func0" (func $6 (param i32 i32) (result funcref)))
+  (import "env" "func1" (func $7 (param f32 f32 f64 i64)))
+  (global $4  f32 (f32.const 0x1.c50418p+31))
+  
+  (func $8 (type $1)
+    (param $0 i32)
+    (param $1 i64)
+    (param $2 funcref)
+    (param $3 i64)
+    (result f64 f32)*    (local $4 f64)
+    (local $5 f64)
+    (local $6 i32)
+    local.get $2
+    table.size $3
+    f64.const 0x1.09dfbbdf0add2p+840
+    i32.trunc_sat_f64_u
+    i32.rem_u
+    local.get $5
+    f64.sqrt
+    local.tee $4
+    f64x2.splat
+    data.drop $5
+    i32x4.trunc_sat_f32x4_u
+    i16x8.bitmask
+    f64.convert_i32_s
+    local.get $0
+    data.drop $5
+    drop
+    drop
+    table.get $3
+    ref.null func
+    ref.is_null
+    local.set $0
+    ref.is_null
+    local.set $6
+    unreachable
+    )
+  
+  (data $5 
+    "x\f2\aa\af\8b\0d\0b\c4\16\82\c00\e6^\b5\9aA\8f\0e\ce["))

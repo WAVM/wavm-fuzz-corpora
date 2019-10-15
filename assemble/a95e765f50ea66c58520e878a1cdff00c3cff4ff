@@ -1,0 +1,2 @@
+(module(memory 4)(func memory.size i32.load8_u offset=97774
+unreachable))

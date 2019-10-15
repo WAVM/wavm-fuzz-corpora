@@ -1,0 +1,149 @@
+(module  (func      atomic.fence
+f64x2.lt  atomic.fence
+f64x2.lt  2x4
+f64x2.lt  ßé   (result f32 i32)
+    (local $2 f64)
+    (local i64)
+ !  i32x4.s1274b  2785
+ .load17_u offset=šved_4 $5     )
+  
+  (func    atomic.fence
+f64x2.lt  ß    )
+  
+  (func    atomic.fence
+f64x2.lt  ßé  i32x4.a_u ofed_offset=dešv_4 $5 ¢    )
+  
+  (func    atomic.fence
+f64x2.lt  2x4 0x5b$5     )
+  
+  (func
+   )
+  
+  (func    atomic.fence
+f64x2.lt  ßé  i32x4.a_u ofed_4 $5     )
+  
+  (func   85
+ .loa¹d16_u offUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUset=šved_)
+  
+  (func    atomic.fence
+f64x2.lt  ß    )
+  
+  (func    atomic.fence
+f64x2.lt  ßé  i32x4.a_u ofed_offset=dešv_4 $5 ¢    )
+  
+  (func    atomic.fence
+f64x2.lt  2x4 0x5b$5     )
+  
+  (func
+   )
+  
+  (func    atomic.fence
+f64x2.lt  ßé  i324._au xofed_4 ÿ$5     )
+  
+  (func   85
+ .loa¹d16_u ofnc
+   )
+  
+  (func    atomic.fence
+f64x2.lt  ßé  i32x4.a_u ofed_4 $5     )
+  
+  (func   85
+ .loa¹d16_u offset=šved_)
+  
+  (func    atomic.fence
+f64x2.lt  ß    )
+  
+  (func    atomic.fence
+f64x2.lt  ßé  i32x4.a_u ofed_offset=dešv_4 $5 ¢    )
+  
+  (func    atomic.fence
+f64x2.lt  2x4 0x5b$5 )
+  
+  (func    atomic.fence
+f64x2.lt  ß    )
+  
+  (func    atomic.fence
+f64x2.lt  ßé  i32x4.a_u ofed_offset=dešv_4 $5 ¢    )
+  
+  (func    atomic.fence
+f64x2.lt  2x4 0x5b$5     )
+  
+  (func
+   )
+  
+  (func    atomic.fence
+f64x2.lt  ßé  i32x4.a_u ofed_4 $5     )
+  
+  (func   85
+ .loa¹d16_u offUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUset=šved_)
+  
+  (func    atomic.fence
+f64x2.lt  ß    )
+  
+  (func    atomic.fence
+f64x2.lt  ßé  i32x4.a_u ofed_offset=dešv_4 $5 ¢    )
+  
+  (func    atomic.fence
+f64x2.lt  2x4 0x5b$5     )
+  
+  (func
+   )
+  
+  (func    atomic.fence
+f64x2.lt  ßé  i324._au xofed_4 ÿ$5     )
+  
+  (func   85
+ .loa¹d16_u ofnc
+   )
+  
+  (func    atomic.fence
+f64x2.lt  ßé  i32x4.a_u ofed_4 $5     )
+  
+  (func   85
+ .loa¹d16_u offset=šved_)
+  
+  (func    atomic.fence
+f64x2.lt  ß    )
+  
+  (func    atomic.fence
+f64x2.lt  ßé  i32x4.a_u ofed_offset=dešv_4 $5 ¢    )
+  
+  (func    atomic.fence
+f64x2.lt  2x4 0x5b$5     )
+  
+  (func
+   )
+  
+  (func    atomic.fence
+f64x2.lt  ßé  i32x4.a_u ofed_4 $5     )
+  
+  (func   85
+ .loa¹d16_u offset=šved_4 $5     )
+  
+  (func    atomic.fence
+f64x2.lt  atomic.fence
+f64x2.lt  2x4
+f64x2.lt  ßé  i32x4.a_u ofed_4 $5     )
+  
+   
+  (func    atomic.fence
+f64x2.lt ßé  i32x4.a_u ofedget_4 $mic.fe     )
+  
+  (func
+   )
+  
+  (func    atomic.fence
+f64x2.lt  ßé  i32x4.a_u ofed_4 $5     )
+  
+  (func   85
+ .loa¹d16_u offset=šved_4 $5     )
+  
+  (func    atomic.fence
+f64x2.lt  atomic.fence
+f64x2.lt  2x4
+f64x2.lt  ßé  i32x4.a_u ofed_4 $5     )
+  
+   
+  (func    atomic.fence
+f64x2.lt ßé  i32x4.a_u ofedget_4 $mic.fence
+    i32x4.all_trf\c2\06"))

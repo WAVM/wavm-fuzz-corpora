@@ -1,0 +1,5 @@
+(func i32.store8 i32x4.max_u
+ i32x4.max_u   i32x4.max_u i32x4.max_u
+ i32x4.max_u
+ i32x4.max_u   i32x4.max_u i32x4.max_u
+u )

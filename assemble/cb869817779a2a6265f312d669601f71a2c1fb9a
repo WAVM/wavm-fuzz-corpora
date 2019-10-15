@@ -1,0 +1,1 @@
+(func(export ".")(export "")(export "5i64.store16")(export ""))

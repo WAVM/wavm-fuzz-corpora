@@ -1,0 +1,1 @@
+(memory 2)(func i32.const 5 memory.grow memory.grow memory.grow(return))

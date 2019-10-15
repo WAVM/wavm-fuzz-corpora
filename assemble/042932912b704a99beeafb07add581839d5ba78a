@@ -1,0 +1,76 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param externref funcref) (result i32 f64)))
+  (type $2 (func (param f64) (result i32)))
+  (type $3 (func (param f32 externref) (result i64)))
+  (type $4 (func (param externref externref)))
+  (type $5 (func (param f64 i32) (result v128 funcref f32 v128)))
+  (import "env" "table" (table $6 43 4294967295 externref))
+  (import "env" "func0" (func $12))
+  (import "env" "func1" (func $13 (param externref funcref) (result i32 f64)))
+  (import "env" "func2" (func $14 (param externref externref)))
+  (memory $8  10 56870 shared)
+  (table $7  52 4294967295 funcref)
+  (elem $9 declare exception_type)
+  
+  (func $15 (type $2)
+    (param $0 f64)
+    (result i32)
+    memory.size
+    v16x8.load_interleaved_3 offset=382073379 align=1
+    i32x4.extract_lane 3
+    i32x4.load16x4_u offset=1537368891 align=2
+    i64.const 6796250565037346797
+    v128.const i32x4 0x63ce88ad 0x318ef18d 0x67c61a09 0x81206ac7
+    i64x2.extract_lane 1
+    i32.wrap_i64
+    v16x8.load_interleaved_3 offset=1326310212 align=4
+    i32x4.ge_s
+    i32x4.lt_u
+    i8x16.extract_lane_s 15
+    i32.eqz
+    table.size $6
+    i32.mul
+    i64.extend_i32_s
+    i64.shr_s
+    i64x2.replace_lane 0
+    i8x16.ne
+    f64x2.ge
+    unreachable
+    )
+  
+  (func $16 (type $3)
+    (param $0 f32)
+    (param $1 externref)
+    (result i64)
+    (local $2 funcref)
+    (local $3 funcref)
+    call $12
+    ref.null func
+    f64.const -0x1.e3265e03e2e09p-406
+    call $12
+    memory.size
+    i64x2.load32x2_s offset=4243902336 align=4
+    i16x8.widen_low_i8x16_u
+    i16x8.extract_lane_u 1
+    loop $loop (param f64 i32) (result v128 funcref f32 v128)
+      i32x4.load16x4_u offset=2313611794 align=4
+      i8x16.extract_lane_s 4
+      i16x8.splat
+      memory.size
+      v16x8.load_splat offset=1095325469
+      i8x16.ne
+      ref.null func
+      local.set $3
+      unreachable
+    end ;; $loop
+    ref.null extern
+    ref.null extern
+    unreachable
+    )
+  
+  (data $10 (i32.const 1765149333)
+    "\dc\83\b4D1A\d0\e0\9f|\a5\e6N\14\b8")
+  
+  (data $11 (i32.const -1082212739)
+    "\b2.\b6m\ba\a4\1c\94U\fb\\\85\f1\dcq5\19{\83YSbF\f5=[\88\fbc\03\e5\d9\e8\f1\09\fc\ba"))

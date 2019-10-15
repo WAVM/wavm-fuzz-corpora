@@ -1,0 +1,5 @@
+(func br 0
+i32.gt_u
+i32.gt_u
+i32.gt_u br
+0)

@@ -1,0 +1,4 @@
+(memory $m 0)
+		(data )
+		(func (memory.init 1 00)))
+	

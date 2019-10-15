@@ -1,0 +1,1 @@
+(func(export "A")(export "x")(export "2"))

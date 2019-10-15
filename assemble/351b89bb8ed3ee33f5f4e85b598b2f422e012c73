@@ -1,0 +1,1 @@
+(func(i64.atomic.rmw32.xchg_u(mg_u)(i64.atomic.rmw32.xchg_u)(3u))(i6tyr) )(memory  5)

@@ -1,0 +1,1 @@
+(memory 2)(func()i64.atomic.rmw16.xor_u)

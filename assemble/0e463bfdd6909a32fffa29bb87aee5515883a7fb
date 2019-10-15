@@ -1,0 +1,51 @@
+(module
+  (type $0 (func (param i32 funcref externref f32) (result i32)))
+  (type $1 (func (param i64 i64 externref) (result f32)))
+  (memory $5  95 50037 shared)
+  (table $2  80 4294967295 funcref)
+  (table $3  82 4294967295 funcref)
+  (table $4  72 4294967295 shared externref)
+  (elem $6 declare funcref
+    (ref.func $7) (ref.func $7) (ref.func $7) (ref.func $7)
+    (ref.func $7) (ref.null func) (ref.func $8) (ref.func $8)
+    (ref.func $7) (ref.func $7) (ref.null func) (ref.null func)
+    (ref.null func) (ref.func $8) (ref.null func) (ref.func $7)
+    (ref.func $8) (ref.func $8) (ref.func $7) (ref.func $8)
+    (ref.func $7) (ref.null func) (ref.null func) (ref.func $8)
+    (ref.func $8) (ref.null func) (ref.func $8) (ref.func $8)
+    (ref.null func) (ref.null func) (ref.null func) (ref.func $7)
+    (ref.func $7) (ref.null func) (ref.func $7) (ref.func $8)
+    (ref.func $8) (ref.null func) (ref.func $7) (ref.func $8)
+    (ref.func $7) (ref.func $8) (ref.null func) (ref.func $8)
+    (ref.func $7) (ref.func $7) (ref.func $7))
+  
+  (func $7 (type $0)
+    (param $0 i32)
+    (param $1 funcref)
+    (param $2 externref)
+    (param $3 f32)
+    (result i32)
+    (local $4 funcref)
+    (local $5 funcref)
+    (local $6 v128)
+    local.get $3
+    i64.trunc_f32_u
+    f64.const 0x1.912aa55f675b9p-823
+    f64.nearest
+    unreachable
+    )
+  
+  (func $8 (type $1)
+    (param $0 i64)
+    (param $1 i64)
+    (param $2 externref)
+    (result f32)
+    (local $3 f64)
+    (local $4 v128)
+    (local $5 v128)
+    (local $6 v128)
+    local.get $3
+    local.tee $3
+    f32.const 0x1.e0d8a6p+51
+    unreachable
+    ))

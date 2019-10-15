@@ -1,0 +1,94 @@
+(module
+  (type $0 (func (result funcref f64)))
+  (type $1 (func (result externref)))
+  (type $2 (func (result f64 i64)))
+  (type $3 (func))
+  (type $4 (func (param f64) (result i32 i32 funcref i32)))
+  (import "env" "global0" (global $6 (mut funcref)))
+  (import "env" "global3" (global $7 i32))
+  (import "env" "global4" (global $8 f32))
+  (import "env" "func0" (func $12))
+  (table $5  73 4294967295 externref)
+  (global $9  (mut funcref) (ref.null func))
+  (global $10  i32 (i32.const 1398940894))
+  
+  (func $13 (type $0)
+    (result funcref f64)
+    call $15
+    f64.convert_i64_s
+    f64x2.splat
+    atomic.fence
+    i32x4.any_true
+    table.size $5
+    i32.rotl
+    f64.convert_i32_u
+    unreachable
+    )
+  
+  (func $14 (type $1)
+    (result externref)
+    (local $0 externref)
+    (local $1 i64)
+    (local $2 v128)
+    i64.const 1580683188336218550
+    i64.clz
+    i32.const -234861619
+    f32.convert_i32_s
+    f32.sqrt
+    f32.sqrt
+    i32.reinterpret_f32
+    i8x16.splat
+    local.tee $2
+    i8x16.extract_lane_s 12
+    drop
+    f32.const -0x1.b1ef50p-33
+    f64.const 0x1.25b7ef0887262p-32
+    loop $loop (param f64) (result i32 i32 funcref i32)
+      i64.trunc_sat_f64_s
+      drop
+      nop
+      nop
+      f64.const 0x1.fab54417348acp-278
+      br $loop
+    end ;; $loop
+    drop
+    global.set $6
+    i32.rem_u
+    ref.null extern
+    ref.null func
+    drop
+    unreachable
+    )
+  
+  (func $15 (type $2)
+    (result f64 i64)
+    (local $0 i64)
+    (local $1 i32)
+    f32.const -0x1.5f4c34p+110
+    f32.sqrt
+    f32.sqrt
+    i32.trunc_f32_u
+    drop
+    nop
+    call $12
+    global.get $9
+    call $12
+    f64.const 0x1.0eae317c89a6ep+694
+    block $block (result externref)
+      global.get $7
+      f32.reinterpret_i32
+      i64.trunc_f32_s
+      i32.wrap_i64
+      unreachable
+    end ;; $block
+    drop
+    drop
+    global.set $6
+    atomic.fence
+    global.get $9
+    global.set $9
+    unreachable
+    )
+  
+  (data $11 
+    "\d6\bc\cdd\ff\9d\1a]\c6n\abx\daX\13F\f20\a39\c1\eb\85\bcO\8a\a1\14\83Oi\f0\b3\d4\"\e2\a9\9b"))

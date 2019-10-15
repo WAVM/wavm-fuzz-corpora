@@ -1,0 +1,56 @@
+(module
+  (type $0 (func (param i32 externref externref) (result i32 i64)))
+  (import "env" "memory" (memory $2 73 34913 shared))
+  (import "env" "memory" (memory $3 64 4137 shared))
+  (import "env" "table" (table $1 24 4294967295 shared funcref))
+  (import "env" "global2" (global $5 funcref))
+  (memory $4  30 2092 shared)
+  (global $6  (mut v128) (v128.const i32x4 0xad60af79 0xdd2f752d 0x8ea1ac33 0xee0bf995))
+  (global $7  f64 (f64.const 0x1.8229a116831e0p+63))
+  (elem $8 exception_type)
+  
+  (func $10 (type $0)
+    (param $0 i32)
+    (param $1 externref)
+    (param $2 externref)
+    (result i32 i64)
+    (local $3 i32)
+    (local $4 i64)
+    (local $5 f32)
+    (local $6 funcref)
+    table.size $1
+    v16x8.load_splat $4 offset=502884677 align=1
+    i16x8.widen_high_i8x16_s
+    i8x16.extract_lane_u 9
+    v8x16.load_interleaved_3 $4 offset=3536028654 align=8
+    drop
+    f32x4.neg
+    f32x4.sub
+    memory.size $4
+    i32.load8_s offset=1762255668
+    i32.load16_u offset=1609501709 align=1
+    i64.atomic.load32_u offset=4135499196
+    i64.extend16_s
+    f32.const 0x1.b52b34p+16
+    i32.trunc_sat_f32_u
+    drop
+    ref.null func
+    local.set $6
+    ref.null extern
+    local.set $1
+    ref.null func
+    drop
+    local.set $4
+    drop
+    ref.null func
+    ref.is_null
+    i32.atomic.load $4 offset=1505954037
+    i64.extend_i32_u
+    ref.null func
+    ref.is_null
+    unreachable
+    )
+  
+  (data $9 (i32.const -380531689)
+    "W\90\fa<\a3${-\c5\97\d5\d6\8f\b8\88\185\b4\d1\13\b3\ae\94%QS\1d\10,\b9\84_9\d6\b8_\0fSI\99\c9\10!\f4iS6\7f\16b\abS{\e7gqr\ecM}|\1eH\da"
+    "\"\c1\df*(\9c\99\0cF6\c1\d1\e3\b2\e7\92D67\83\f7\f4\edz"))

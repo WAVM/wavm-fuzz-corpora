@@ -1,0 +1,1 @@
+(func(export "f64x2.lt")(export "4"))

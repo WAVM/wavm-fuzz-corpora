@@ -1,0 +1,6 @@
+(table $t1 1 funcref)
+    (table $t2 1 externref)
+    (func $typEeulti (result funcref)
+      (table.get $t1 (i32.const 0))
+    )
+  

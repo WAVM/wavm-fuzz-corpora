@@ -1,0 +1,15 @@
+(module
+  (t41 27946)
+  (elem $5 funcref
+    (ref.func $7) (ref.null) (ref.func $8) (ref.null.null)
+    (ref.func $8) (ref.func $7) (ref.func $7) (ref.func $7)
+    (ref.null)   (ref.null) (ref.func $7) (ref.func $7) (ref.null)
+    (ref.func $7)
+    (ref.func $7) (ref.func $8) (ref.func $7) (ref.null)
+    (ref.func $8) (ref.func $7) (ref.func $8) (ref.func $7)
+    (ref.func $7) (ref.null) (ref.func $8) (ref.func $8)
+    (ref.func $7) (ref.func $8) (rel) (ref.func $7)
+    (r) (ref.func $8)
+    (ref.func $8) (ref.func $7) (ref.null) (ref.func $7)
+    (ref.func $8) (ref.func $7) (ref.func $8) (ref.c $8) (ref.func $7) (reef.null) (ref.func $8)
+    (ref.func $7)))

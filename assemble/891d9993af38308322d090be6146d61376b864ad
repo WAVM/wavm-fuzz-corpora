@@ -1,0 +1,53 @@
+(module
+  (type $0 (func (result funcref)))
+  (import "env" "table" (table $1 80 4294967295 externref))
+  (import "env" "table" (table $2 57 4294967295 externref))
+  (import "env" "global0" (global $5 v128))
+  (memory $4  61 39502 shared)
+  (table $3  37 4294967295 shared externref)
+  (elem $6 declare funcref
+    (ref.null func) (ref.null func) (ref.null func) (ref.null func)
+    (ref.func $10) (ref.func $10) (ref.func $10) (ref.func $10)
+    (ref.func $10) (ref.null func) (ref.null func) (ref.null func)
+    (ref.func $10) (ref.func $10) (ref.func $10) (ref.func $10)
+    (ref.null func) (ref.func $10) (ref.func $10) (ref.null func)
+    (ref.null func) (ref.func $10) (ref.func $10) (ref.func $10)
+    (ref.null func) (ref.null func) (ref.func $10) (ref.func $10)
+    (ref.null func) (ref.null func) (ref.null func) (ref.null func)
+    (ref.func $10) (ref.null func) (ref.func $10) (ref.func $10))
+  (elem $7
+    $10 $10 $10 $10 $10 $10 $10 $10
+    $10 $10 $10 $10 $10 $10 $10 $10
+    $10 $10 $10 $10 $10 $10 $10 $10
+    $10 $10 $10 $10 $10 $10 $10 $10
+    $10 $10 $10 $10 $10 $10 $10 $10
+    $10 $10 $10 $10 $10 $10 $10 $10
+    $10 $10 $10 $10 $10 $10 $10 $10)
+  
+  (func $10 (type $0)
+    (result funcref)
+    global.get $5
+    v128.not
+    i16x8.abs
+    i8x16.extract_lane_u 12
+    i64.extend_i32_u
+    f64.convert_i64_s
+    f64.sqrt
+    f32.const 0x1.933436p+73
+    i32.trunc_sat_f32_s
+    memory.size
+    v64x2.load_interleaved_4 offset=3511915065 align=4
+    i32.const 2130268983
+    i8x16.shr_u
+    i16x8.extract_lane_u 4
+    v32x4.load_splat offset=2584304253 align=1
+    v32x4.store_interleaved_4 offset=1495196195 align=4
+    ref.null func
+    br 0
+    )
+  
+  (data $8 (i32.const -372001325)
+    "\88UJ\96\ea\8bPJ\bb\7f+\df\15H\95\10\15'e\fc\cd`\01\cc\a2Bk\82\07\88\16\06\0el\08\cb\d4\fd")
+  
+  (data $9 (i32.const -1168568447)
+    ",\12\ca\80t\1d|O\d22\c0\98\b1q\00Ex\9b>\e1\edp\d7\93\89\d2\cf\a4d\84\0e\c8\0fgw./\1cW3"))

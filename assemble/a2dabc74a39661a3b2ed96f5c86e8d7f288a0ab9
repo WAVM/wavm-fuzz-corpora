@@ -1,0 +1,4 @@
+(func
+br 0
+i8x16.any_true br 0
+i8x16.any_true br 0)

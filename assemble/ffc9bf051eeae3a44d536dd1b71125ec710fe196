@@ -1,0 +1,71 @@
+(module
+  (type $0 (func (param funcref externref)))
+  (type $1 (func (param funcref)))
+  (type $2 (func (param f64) (result v128 externref)))
+  (type $3 (func (param externref i32) (result i32 i32)))
+  (import "env" "memory" (memory $6 83 52843 shared))
+  (import "env" "table" (table $4 89 4294967295 funcref))
+  (import "env" "table" (table $5 79 4294967295 funcref))
+  (import "env" "global1" (global $7 funcref))
+  (import "env" "global2" (global $8 funcref))
+  (import "env" "global3" (global $9 f32))
+  (import "env" "global4" (global $10 i32))
+  (import "env" "global7" (global $11 externref))
+  (import "env" "global8" (global $12 v128))
+  (import "env" "func0" (func $18 (param funcref externref)))
+  (import "env" "func1" (func $19 (param funcref)))
+  (import "env" "func2" (func $20 (param externref i32) (result i32 i32)))
+  (global $13  (mut externref) (ref.null extern))
+  (global $14  i64 (i64.const -5068027913132127365))
+  (global $15  (mut funcref) (ref.null func))
+  (elem $16 (i32.const 1569713851) funcref
+    (ref.null func) (ref.null func) (ref.func $20) (ref.null func)
+    (ref.func $19) (ref.null func) (ref.func $19) (ref.func $19)
+    (ref.func $18) (ref.func $20) (ref.func $19) (ref.func $21)
+    (ref.func $21) (ref.null func) (ref.null func) (ref.func $19)
+    (ref.func $21) (ref.func $20) (ref.null func) (ref.func $20)
+    (ref.func $19) (ref.func $20) (ref.func $20) (ref.func $18)
+    (ref.func $21) (ref.func $21) (ref.null func) (ref.func $21)
+    (ref.func $19) (ref.null func) (ref.func $18) (ref.func $20)
+    (ref.func $19) (ref.func $20) (ref.func $21) (ref.func $20)
+    (ref.func $21) (ref.func $18) (ref.func $21) (ref.func $21)
+    (ref.null func) (ref.func $20) (ref.func $21) (ref.null func)
+    (ref.func $18) (ref.func $19) (ref.func $19) (ref.func $19)
+    (ref.func $19) (ref.func $19) (ref.func $21))
+  (elem $17 funcref
+    (ref.func $18) (ref.null func) (ref.func $19) (ref.func $20)
+    (ref.func $18) (ref.null func) (ref.func $19) (ref.func $20)
+    (ref.null func) (ref.null func) (ref.func $19) (ref.func $21)
+    (ref.func $19) (ref.func $20) (ref.func $18) (ref.func $21))
+  
+  (func $21 (type $2)
+    (param $0 f64)
+    (result v128 externref)
+    (local $1 externref)
+    (local $2 externref)
+    global.get $10
+    v32x4.load_interleaved_4 offset=2717149520
+    f32x4.convert_i32x4_s
+    i64x2.sub
+    i8x16.gt_s
+    i32x4.le_u
+    global.get $7
+    drop
+    i32x4.any_true
+    v16x8.load_interleaved_4 offset=1606199622 align=8
+    f32x4.le
+    i16x8.le_u
+    i16x8.le_u
+    i8x16.extract_lane_u 3
+    v32x4.load_interleaved_4 offset=3662111451 align=4
+    i64x2.mul
+    i8x16.eq
+    f32x4.max
+    f32x4.convert_i32x4_s
+    i32x4.widen_high_i16x8_s
+    f32x4.sqrt
+    i32x4.neg
+    i8x16.bitmask
+    table.get $4
+    unreachable
+    ))

@@ -1,0 +1,1 @@
+(module(func(param $i i32)local.get $i drop))

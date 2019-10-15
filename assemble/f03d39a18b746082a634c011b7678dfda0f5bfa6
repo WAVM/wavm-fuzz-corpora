@@ -1,0 +1,124 @@
+(module
+  (type $check (func (param i32 i32) (result i32)))
+  (type $0 (func (param i32 i32 i32) (result i32)))
+  (type $2 (func (result f64)))
+  (type $8 (func (param i32) (result i32)))
+  (type $9 (func (param i32)))
+  (func $44 (type $9)
+    (param $0 i32)
+    i32.const 0
+    i32.const 4
+    local.get $0
+    select
+ 
+    (param $0 i32)
+ block $block (result i32)
+      i32.const 1
+     i32.const 2
+      local.get $0
+      select
+      br $block
+    end ;; $blo64.const 1
+    i32.const 2
+    local.get $0
+    select
+    local.tee $0
+   i32.const 1
+    i32.const 2
+    local.get $0
+    select
+    globaconst 8
+    local.get $0
+  . )
+  
+  (func $46 (type $8)
+    (param $0 i32)
+    (result i32)
+    i32.const 1
+    i32.const 2
+    local.get $0
+    select
+nst 1
+  .get $0
+  l.get $0
+    )
+  
+  (func $47 (type $8)
+    (param $0 i32)
+    (result i32)
+    i32.const 1
+    i32.const 2
+    local.get $0
+    select
+    call  )
+  
+  (func $48 (type $8)
+    (param $0 i32)
+    (result i32)
+    i32.const 1
+    i32.const 2
+    local.get $0
+    select
+    return
+    )
+  
+  (func $49 (type $9)
+    (param $0 i32)
+    i32.const 1
+    i32.const 2
+    local.get $0
+    select
+    drop
+    )
+  
+  (func $50 (type $8)
+    (param $0 i32)
+    (result i32)
+    block $block (result i32)
+      i32.const 1
+      i32.const 2
+      local.get $0
+      select
+      br $block
+    end i32.const 4
+    local.get $0
+    select
+    i32.l   )
+  
+  (func $55 (type $8)
+    (param $0 i32)
+    (result i32)
+    i32.const 0
+    i32.const 1
+    local.get $0
+    select
+    i32.eqz
+  
+    i32.const 1
+    i32.const 2
+    local.get $0
+    select
+    i32.const 1
+    i32.const 2
+    local.get $0
+    select
+    i32.mul
+      
+      i32.const 0
+      i32.const 1
+      local.get $0
+      select
+      block $block (result i32)
+      i32.const 1
+      i32.const 2
+      local.get $0
+      select
+      i32.const 1
+       local.get $0
+      select
+      i32.ne
+    end ;; $block
+    )
+  
+  (func $   ;; $block
+    ))

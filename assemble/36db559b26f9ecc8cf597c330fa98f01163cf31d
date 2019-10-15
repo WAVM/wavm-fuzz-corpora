@@ -1,0 +1,16 @@
+(module
+  (type $proc (func))
+  (type $0 (func (param i32)))
+  (type $1 (func (result i32)))
+  (table $2  1 funcref)
+  
+  (func $3 (type $proc)
+    block $jlock
+      i32.const 0
+      call_indirect $2 (type $proc)
+   i32.const 5
+      call_indirect $2 i32.const 0
+      call_indirect $2 end ;; $if_16
+    i32.const 0
+    call_indirect $2 (type $proc)
+    ))

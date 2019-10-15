@@ -1,0 +1,39 @@
+(module
+  (type $0 (func (param f32 f32 i32)))
+  (type $1 (func (result v128)))
+  (import "env" "table" (table $2 37 4294967295 externref))
+  (import "env" "func0" (func $4 (param f32 f32 i32)))
+  
+  (func $5 (type $1)
+    (result v128)
+    (local $0 externref)
+    (local $1 f32)
+    (local $2 i64)
+    v128.const i32x4 0xec7d466d 0x1ebb9028 0x1fe3ca25 0x11b4ac7c
+    i8x16.neg
+    i16x8.widen_low_i8x16_u
+    i32x4.bitmask
+    i32.const 1742566096
+    i32.div_u
+    f64.convert_i32_u
+    atomic.fence
+    f64.neg
+    i64.trunc_f64_u
+    i64.const -1449914772957111692
+    i64.rotr
+    f32.const 0x1.5be022p+86
+    local.get $1
+    drop
+    ref.null extern
+    ref.is_null
+    table.get $2
+    local.set $0
+    ref.null func
+    ref.null func
+    drop
+    unreachable
+    )
+  
+  (data $3 
+    "\bb\b1)\17\a3s\1a/\b6\08\ack\07D^\cdQ\f9\aa\8d\05\c2\02\e4\10LDs9qbyZ\00A\80_[\ef\f9\n\9e\ca\0ci\b4\f8\99\1a\c3\7f\a4\de\10ek]vf\b1:\eb/j"
+    "\c1UR\b1\f8Z\be\dc\8a1]8\19_ d\b8\fbl\94\ad\82&\11\7f+\fcO"))

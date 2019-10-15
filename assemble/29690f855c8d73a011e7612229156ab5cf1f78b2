@@ -1,0 +1,4 @@
+(func
+i64.atomic.store32
+i64.atomic.store32
+i64.atomic.store32)

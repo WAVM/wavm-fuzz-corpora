@@ -1,0 +1,39 @@
+(module
+  (type $0 (func (param funcref funcref i32 f32)))
+  (import "env" "memory" (memory $2 17 7072 shared))
+  (import "env" "memory" (memory $3 22 44778 shared))
+  (memory $4  39 24457 shared)
+  (table $1  57 4294967295 funcref)
+  (global $5  (mut i64) (i64.const -7187675528725714760))
+  
+  (func $8 (type $0)
+    (param $0 funcref)
+    (param $1 funcref)
+    (param $2 i32)
+    (param $3 f32)
+    global.get $5
+    f64.convert_i64_s
+    local.get $0
+    ref.is_null
+    v64x2.load_interleaved_2 offset=4042596176 align=1
+    f32x4.max
+    i8x16.abs
+    i8x16.extract_lane_s 6
+    f32.const 0x1.4b47dcp+27
+    local.set $3
+    i32.load offset=2320591632 align=2
+    v128.const i32x4 0x2dbc9138 0xd91c099b 0xa8a6968e 0x57d72de0
+    i8x16.bitmask
+    i32.gt_s
+    f64.convert_i32_s
+    f64.add
+    ref.null extern
+    return
+    )
+  
+  (data $6 (memory $3) (i32.const 992517875)
+    "vb\99\dfW\d6NG\ec$?:\f7+\ddZ\96\e4H\88\a1\04\b1Y\0c\16;\17\faM\8a\ad\ae*\fb\19*\fa\c0\87\be\eau\c5us\ed*\da\97\b5\dc\99\0b\7fT\e3\8f\bc9x\ac@K"
+    "\b5\f27\89gn\df\d2oB\de\e6c\e2\9cf\d6\a1\c1\cf\be\16\19l\9b\caSy_\ca")
+  
+  (data $7 
+    "\e7=@\f6\95\f9\fb\e3\b7i\e6\80C\f9Y$\bd1\e5\8a%\a5\84raLi\e8\ce\8f\81\95 \d3$\92\d3\b1MLC\f0\e7\ba"))

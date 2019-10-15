@@ -1,0 +1,75 @@
+(module
+  (type $0 (func (param externref) (result v128)))
+  (type $1 (func (param f32 i64 i32) (result externref v128)))
+  (type $2 (func (param i64) (result externref)))
+  (import "env" "global0" (global $7 (mut f32)))
+  (import "env" "global1" (global $8 (mut i32)))
+  (import "env" "global2" (global $9 (mut funcref)))
+  (import "env" "global3" (global $10 i32))
+  (import "env" "func0" (func $15 (param externref) (result v128)))
+  (memory $5  81 34636 shared)
+  (memory $6  22 678)
+  (table $3  6 4294967295 shared externref)
+  (table $4  0 4294967295 shared externref)
+  (global $11  (mut i32) (i32.const 266807780))
+  (global $12  (mut funcref) (ref.null func))
+  (global $13  i32 (i32.const -883587867))
+  
+  (func $16 (type $1)
+    (param $0 f32)
+    (param $1 i64)
+    (param $2 i32)
+    (result externref v128)
+    (local $3 i64)
+    (local $4 i64)
+    (local $5 i32)
+    (local $6 i32)
+    global.get $12
+    local.get $0
+    local.set $0
+    ref.is_null
+    v16x8.load_interleaved_4 offset=3561322734 align=2
+    v8x16.shuffle 10 16 9 7 17 30 2 5 22 13 21 1 26 10 24 6
+    i16x8.add
+    v8x16.swizzle
+    i16x8.widen_high_i8x16_u
+    f64x2.extract_lane 0
+    memory.size $6
+    i16x8.load8x8_s offset=1775977595
+    i32x4.neg
+    i32x4.neg
+    table.size $3
+    table.get $3
+    ref.is_null
+    local.set $2
+    drop
+    unreachable
+    )
+  
+  (func $17 (type $2)
+    (param $0 i64)
+    (result externref)
+    (local $1 i32)
+    memory.size $6
+    f64.load offset=2004649530 align=1
+    f64x2.splat
+    drop
+    global.get $8
+    i32.atomic.load $6 offset=3933946980
+    v32x4.load_interleaved_3 $6 offset=2320821035 align=2
+    i8x16.add
+    i16x8.ne
+    i16x8.widen_high_i8x16_u
+    table.size $3
+    table.size $4
+    i64.atomic.load32_u $6 offset=4257830928
+    global.get $8
+    v64x2.load_interleaved_2 $6 offset=2693919783 align=2
+    i8x16.add
+    ref.null func
+    ref.null func
+    unreachable
+    )
+  
+  (data $14 (i32.const -120543140)
+    ")\94\91\0e\"T\fb\80\cc\a2u\b5M/P\aeM5];\e7\19\a7n\1cXr\08\fd\edD\0e\1e\04\b2R\b0\acJ\f3YC\9dT"))

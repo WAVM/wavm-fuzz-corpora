@@ -1,0 +1,6 @@
+(func
+br 0
+f64.reinterpret/i64 br 0
+f64.reinterpret/i64 
+br 0
+f64.reinterpret/i64 br 0)

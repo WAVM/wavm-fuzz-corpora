@@ -1,0 +1,7 @@
+(modu (func))
+  (type $1 (func (param funcref) (result f32 i32),))
+  (type $2 (func (param f32 externref) (result i32)))
+  (type $4 (func (result v128 f64)_null
+    drop
+    unreachable
+    ))

@@ -1,0 +1,1 @@
+(func i64.load8_s 8W(i64.const 0)s)

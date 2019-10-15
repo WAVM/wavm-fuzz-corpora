@@ -1,0 +1,8 @@
+(module
+  (type $0 (func (param)))
+  (import "env" "memory" (memory $2 56 1522))
+  (memory $4  81 )
+  
+  (func  (local $2 i32)
+    i32.const 13    local.get $2  
+  i32.atomic.rmw8.or_u $4 br 0 ))

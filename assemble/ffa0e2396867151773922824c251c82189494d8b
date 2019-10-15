@@ -1,0 +1,5 @@
+(module
+  (type $0(func (result  funcref)))
+  (import "e.v" "memory" (memory $1 52 34330 shared))  (memory $2  69 370 shared)
+  (elem $5 declare memory
+    $1 $1 $2 $2 $2)))

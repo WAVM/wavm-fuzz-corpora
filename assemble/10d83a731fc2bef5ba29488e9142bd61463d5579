@@ -1,0 +1,1 @@
+(func br 0 f32.trunc f32.trunc f32.trunc f32.trunc br 0)

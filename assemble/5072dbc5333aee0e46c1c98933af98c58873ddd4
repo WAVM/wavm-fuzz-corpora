@@ -1,0 +1,78 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param funcref) (result i32 f64)))
+  (type $2 (func (param f64) (result v128)))
+  (type $3 (func (param i32)))
+  (import "env" "memory" (memory $5 37 19588 shared))
+  (import "env" "global0" (global $8 (mut i32)))
+  (import "env" "global1" (global $9 v128))
+  (import "env" "global2" (global $10 (mut f64)))
+  (import "env" "global5" (global $11 (mut i64)))
+  (import "env" "global6" (global $12 funcref))
+  (import "env" "global7" (global $13 f32))
+  (import "env" "func0" (func $18))
+  (import "env" "func1" (func $19 (param funcref) (result i32 f64)))
+  (memory $6  27 28492 shared)
+  (memory $7  57 43826 shared)
+  (table $4  84 4294967295 shared funcref)
+  (global $14  (mut i32) (i32.const 306721553))
+  (global $15  (mut externref) (ref.null extern))
+  
+  (func $20 (type $2)
+    (param $0 f64)
+    (result v128)
+    (local $1 externref)
+    (local $2 i32)
+    (local $3 i64)
+    f32.const 0x1.6cc0e0p-85
+    drop
+    global.get $12
+    call $18
+    data.drop $16
+    nop
+    v128.const i32x4 0x2acec322 0xc4910796 0xea475394 0xd1764023
+    f32x4.abs
+    table.size $4
+    i64.atomic.load8_u offset=3355345518
+    i64.ctz
+    i64x2.replace_lane 1
+    i32x4.widen_high_i16x8_s
+    global.get $8
+    i64x2.shr_s
+    return
+    )
+  
+  (func $21 (type $3)
+    (param $0 i32)
+    (local $1 f32)
+    (local $2 f64)
+    (local $3 f64)
+    (local $4 i64)
+    global.get $14
+    i32x4.load16x4_u $7 offset=871200913 align=1
+    i32x4.widen_high_i16x8_u
+    i32x4.abs
+    local.get $1
+    global.get $10
+    f32.demote_f64
+    f32.eq
+    i64.extend_i32_u
+    i64.ctz
+    i64x2.replace_lane 0
+    i32x4.abs
+    i8x16.extract_lane_u 10
+    v16x8.load_interleaved_4 $7 offset=640310481 align=4
+    i32x4.max_s
+    i16x8.ne
+    f64x2.sub
+    ref.null func
+    ref.is_null
+    i16x8.shr_u
+    unreachable
+    )
+  
+  (data $16 
+    "(\0b9\a4\18d\18ba\1c(-(K5\b4\00\d8t[\ba\ed")
+  
+  (data $17 
+    "N\88\82\15\dc\e8K\b6+\af\a2\86\d4\bc\063\b8\91\d1\e2he^/\de}*n\09\0c\e4\c2\a2"))

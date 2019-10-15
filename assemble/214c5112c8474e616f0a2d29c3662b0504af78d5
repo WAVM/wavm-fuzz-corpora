@@ -1,0 +1,59 @@
+(module
+  (type $0 (func (param f64 f32 i32) (result f64)))
+  (type $1 (func (param i64) (result f64 f32)))
+  (type $2 (func))
+  (import "env" "memory" (memory $5 48 50030 shared))
+  (import "env" "func0" (func $12 (param f64 f32 i32) (result f64)))
+  (memory $6  43 51700 shared)
+  (memory $7  44 30202)
+  (table $3  65 4294967295 externref)
+  (table $4  65 4294967295 externref)
+  (global $8  funcref (ref.null func))
+  (global $9  externref (ref.null extern))
+  (global $10  (mut f32) (f32.const 0x1.0095fcp+31))
+  (global $11  f64 (f64.const 0x1.67de2f70f8accp+63))
+  
+  (func $13 (type $1)
+    (param $0 i64)
+    (result f64 f32)
+    (local $1 funcref)
+    memory.size
+    f32.convert_i32_s
+    global.get $10
+    f32x4.splat
+    i8x16.any_true
+    table.get $4
+    unreachable
+    )
+  
+  (func $14 (type $2)
+    (local $0 v128)
+    (local $1 funcref)
+    (local $2 f64)
+    (local $3 i32)
+    local.get $2
+    local.set $2
+    ref.null extern
+    global.get $8
+    ref.null extern
+    local.get $0
+    nop
+    f64x2.neg
+    f64x2.sqrt
+    i16x8.any_true
+    i64.extend_i32_s
+    i64.extend16_s
+    f64.convert_i64_u
+    f64.abs
+    global.get $11
+    ref.null func
+    ref.null func
+    ref.null func
+    ref.is_null
+    select (result funcref)
+    local.set $1
+    local.set $2
+    ref.null extern
+    drop
+    return
+    ))

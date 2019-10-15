@@ -1,0 +1,42 @@
+(module
+  (type $0 (func (param f64 f32 i64) (result f32)))
+  (type $1 (func (result f32 v128)))
+  (type $2 (func (param f64 i32 v128 f32) (result i32 i32)))
+  (type $3 (func (param i32) (result v128 v128)))
+  (import "env" "global0" (global $5 v128))
+  (import "env" "global1" (global $6 f32))
+  (import "env" "func0" (func $10 (result f32 v128)))
+  (import "env" "func1" (func $11 (param f64 i32 v128 f32) (result i32 i32)))
+  (import "env" "func2" (func $12 (param i32) (result v128 v128)))
+  (table $4  88 4294967295 funcref)
+  (global $7  (mut externref) (ref.null extern))
+  
+  (func $13 (type $0)
+    (param $0 f64)
+    (param $1 f32)
+    (param $2 i64)
+    (result f32)
+    (local $3 f64)
+    global.get $7
+    ref.null extern
+    i64.const -1855275717317530245
+    atomic.fence
+    i64.eqz
+    i64.extend_i32_s
+    global.get $6
+    i64.trunc_sat_f32_s
+    i64.extend16_s
+    i64.div_s
+    atomic.fence
+    table.size $4
+    i16x8.splat
+    i16x8.extract_lane_s 1
+    i64.const -6138609687066398617
+    unreachable
+    )
+  
+  (data $8 
+    "n\b8\19.Pf/\b7N?")
+  
+  (data $9 
+    "\c0\04\04\83\c0\84m\b2\b3\dc\\}\166d\8d\d1]\9d{\f0#\13\d5\feICc\0d\a1-R\a7\d4\dbXQ\e60\01\f3x\19\9cd-\d8\05\f1r\85\ff\de\fc\a9\f9"))

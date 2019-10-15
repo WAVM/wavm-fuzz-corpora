@@ -1,0 +1,1 @@
+(func br 0 i32.gt_s i32.gt_s i32.gt_s i32.gt_s br 0)

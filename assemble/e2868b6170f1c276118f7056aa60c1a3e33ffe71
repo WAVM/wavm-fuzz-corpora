@@ -1,0 +1,1 @@
+(memory 0)(func(i16x8.widen_low_i8x16_u)(i16x8.widen_low_i8x16_u)0)(func(i16x8.widen_low_i8x16_u) tm)(func(i16x8.widen_low_i8x16_u) tom)(func(i16x8.widen_low_i8x16_u) (i16x8.widen_low_i8x16_u)(i16x8.widen_low_i8x16_u) (i16x8.widen_low_i8x16_u)i12)

@@ -1,0 +1,51 @@
+(module
+  (type $0 (func (param externref funcref) (result i64 i32)))
+  (import "env" "memory" (memory $4 41 41934 shared))
+  (import "env" "table" (table $1 55 4294967295 externref))
+  (import "env" "global3" (global $7 funcref))
+  (memory $5  42 17455 shared)
+  (memory $6  73 46826 shared)
+  (table $2  46 4294967295 shared externref)
+  (table $3  20 4294967295 shared externref)
+  (global $8  i32 (i32.const 1418216694))
+  (global $9  i32 (i32.const 359293019))
+  (global $10  (mut funcref) (ref.null func))
+  (global $11  funcref (ref.null func))
+  (elem $12 table
+    $2 $3 $3 $3 $3 $3 $2 $3
+    $1 $1 $1 $2 $2 $2 $2 $1
+    $2 $2 $2 $3 $1 $2 $2 $3
+    $1 $2 $1 $3 $3 $3 $2 $3
+    $2 $1 $3 $1 $1 $2 $3 $2
+    $1 $2 $2 $3 $1 $3 $1 $1
+    $2 $1 $1 $2 $3)
+  (elem $13 declare exception_type)
+  
+  (func $14 (type $0)
+    (param $0 externref)
+    (param $1 funcref)
+    (result i64 i32)
+    local.get $0
+    global.get $9
+    v32x4.load_interleaved_3 offset=969125419 align=1
+    i8x16.any_true
+    i16x8.splat
+    i8x16.narrow_i16x8_u
+    i8x16.all_true
+    i32.load $5 offset=1479613072
+    memory.size
+    f64.const -0x1.8d9828d91c62cp+540
+    f32.const 0x1.242d2ap-123
+    i32.trunc_f32_u
+    i64.extend_i32_s
+    atomic.fence
+    f32.convert_i64_s
+    drop
+    drop
+    i32.atomic.rmw8.add_u $5 offset=2780575982
+    i64x2.shr_u
+    drop
+    ref.is_null
+    table.get $3
+    unreachable
+    ))

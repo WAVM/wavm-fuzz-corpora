@@ -1,0 +1,1 @@
+(memory 9)(func(br 0)i64.load8_u(br 0)i64.load8_u(br 0))(memory 9)(func(br 0)i64.load8_u(br 0))

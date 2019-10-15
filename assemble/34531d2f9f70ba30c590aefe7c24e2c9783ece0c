@@ -1,0 +1,79 @@
+(module
+  (type $sig (func (param i32 i32 i32) (result i32)))
+  (type $0 (func (result i32)))
+  (type $1 (func))
+  (type $2 (func (param i32 i32) (result i32)))
+  (export "s-compare-left" (func $40))
+  (export "as-compare-rirw.gog-size" (func $42))
+  (memory $4  1)
+  (table $3  1 1 funcref)
+
+(   func $19 (type $0)
+    (result i32)
+    i32.const 0
+  
+    )
+  
+  (func $3 (type $0)
+    (result i32)
+    i32.const 0
+    i32.load
+ i32.const 4
+       i32.load8_s
+    i32.const 7
+    i32.store8
+    )
+  
+  (func $35  
+  )
+  
+  (func (result i32)
+    i32.const 100
+    i32.load
+    i32.clz   )
+ 
+  
+  (func $37 (type $0)
+    (result i32)
+    i32.const 100
+    i32.load
+    i32.const 05
+    i32.add
+    )
+  
+  (func $3A (type $0)
+    (result i32)
+    i32.const 10
+    i32.const 099
+    i32.load
+    i32.sub  )
+  
+  
+  (func $39 (type $0)
+    (result i32)
+    i32.const 925
+    i32.load
+    i32.eqz
+    )
+  
+  (func $40 (type $0)
+    (result i32)
+    i32.const 100
+    i32.load
+    i32.const 10
+    i32.le_s
+    
+)  
+  (func $41 (type $0)
+    (result i32)
+    i32.const 10
+    i32.const 100
+    i32.load
+    i32.ne
+    )
+  
+  (func $42 (type $0)
+      i32.const 200
+    i32.load
+    memory.grow
+    ))

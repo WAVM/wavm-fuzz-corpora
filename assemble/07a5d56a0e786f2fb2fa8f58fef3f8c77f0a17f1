@@ -1,0 +1,39 @@
+(module
+  (type $0 (func (result v128)))
+  (type $1 (func (param externref)))
+  (type $2 (func (param v128 i64)))
+  (import "env" "table" (table $3 47 4294967295 funcref))
+  (import "env" "func0" (func $5 (param externref)))
+  (global $4  (mut f32) (f32.const 0x1.4df0a0p+29))
+  
+  (func $6 (type $0)
+    (result v128)
+    v128.const i32x4 0x2d066270 0xcef84277 0xa250a570 0x60259ec6
+    i32x4.widen_high_i16x8_u
+    i8x16.bitmask
+    v128.const i32x4 0x28d166ff 0x08678db0 0xfc8d5576 0x9656dd3b
+    i8x16.extract_lane_u 1
+    f64.convert_i32_s
+    i64.trunc_sat_f64_u
+    drop
+    v128.const i32x4 0xd108fae3 0xf4742d2f 0xf581c572 0x9868cfe9
+    i64.const 3752745498301397762
+    block $block (param v128 i64)
+      i32.wrap_i64
+      drop
+      f64x2.abs
+      i8x16.any_true
+      table.get $3
+      ref.null extern
+      ref.null extern
+      ref.null extern
+      unreachable
+    end ;; $block
+    ref.null func
+    ref.null extern
+    call $5
+    ref.null func
+    drop
+    drop
+    unreachable
+    ))

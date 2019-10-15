@@ -1,0 +1,79 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param f64 f64)))
+  (type $2 (func (param funcref) (result funcref f64)))
+  (type $3 (func (param i32 funcref)))
+  (type $4 (func (param f32 i32 externref f32) (result f64 f64)))
+  (import "env" "global2" (global $8 f64))
+  (import "env" "func0" (func $17))
+  (import "env" "func1" (func $18 (param f64 f64)))
+  (import "env" "func2" (func $19 (param f32 i32 externref f32) (result f64 f64)))
+  (table $5  20 4294967295 shared funcref)
+  (table $6  78 4294967295 funcref)
+  (table $7  22 4294967295 shared externref)
+  (global $9  funcref (ref.null func))
+  (global $10  (mut v128) (v128.const i32x4 0xd333d6ce 0x3dc03cc7 0xe8dcd4ae 0xcbe3a382))
+  (global $11  (mut f32) (f32.const 0x1.8ec21ep+30))
+  (global $12  f32 (f32.const 0x1.011818p+31))
+  (global $13  (mut f64) (f64.const 0x1.72c794147ea1bp+62))
+  (elem $14 declare funcref
+    (ref.null func) (ref.func $18))
+  
+  (func $20 (type $2)
+    (param $0 funcref)
+    (result funcref f64)
+    (local $1 f32)
+    (local $2 f32)
+    (local $3 v128)
+    atomic.fence
+    nop
+    local.get $0
+    elem.drop $14
+    ref.is_null
+    i32.popcnt
+    i16x8.splat
+    i32x4.bitmask
+    i32.popcnt
+    table.size $5
+    i32.ne
+    local.get $3
+    global.get $10
+    drop
+    f32x4.convert_i32x4_u
+    local.set $3
+    call_indirect $6 (type $0)
+    ref.null extern
+    drop
+    local.get $2
+    unreachable
+    )
+  
+  (func $21 (type $3)
+    (param $0 i32)
+    (param $1 funcref)
+    (local $2 i32)
+    (local $3 f64)
+    data.drop $15
+    i32.const -946862777
+    global.get $10
+    f64x2.abs
+    f64x2.sqrt
+    i32x4.widen_low_i16x8_s
+    f64x2.sqrt
+    call $17
+    nop
+    i32x4.extract_lane 3
+    i32.popcnt
+    local.get $1
+    table.set $5
+    i32x4.splat
+    global.get $13
+    global.set $13
+    return
+    )
+  
+  (data $15 
+    "\d3\aa\d71P\af\d6D\04\d1>\05\d5\\\d9\81\05|\fa\d0")
+  
+  (data $16 
+    "\e0\b9\bdn\1f\14h\12=\0e\bd\03\0e\e4\89\d9\d1\001\a9\0d\0c\99\d3F\1d\f6\a5\f0\10\ee3\8d\00\8a\fa\d4B\12K\fa\ed\ac\beh\14LJfY4\ce<sb\09"))

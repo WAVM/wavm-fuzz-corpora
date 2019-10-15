@@ -1,0 +1,100 @@
+(module (import "envv" "emory" (memory $3 67 2537 shared))
+(func
+    local.get $3
+  i32.atomic.rmw8.xor_u s" "emory" (memor5377 shared))
+(func
+    local.get $3
+    i32.atomic.rmw8.xor_u s" "emov" "emory" (memory $3 67 2537 shared))
+(func
+    local.get $3
+  i32.atomic.rmw8.xor_u s" "emory" (m37 shared))
+(func
+    
+  i32.atomic.rmw8.xor_u s" "emory" (memor5377 shared))
+(func
+    local.get $3
+    i32.atomic.rmw8.xor_u s" "emov" "emory" (memory $3 67 2537 shared))
+(func
+    local.get $3
+  i32.atomic.rmw8.xor_u s" "emory" (memor5377 shared))
+(func
+    local.get $3
+    i32.atomic.rmw8.xor_u s" "emory" (memory $3 67 2537 shared))
+(func
+    local.get $3
+    i32.atomic.rmw8.xor_u s (memory $3 67 2537 shared))
+(func
+    local.get $3
+    i32.atomic.rmw8.xor_u s" "emory" (memory $3 67 2537 shared))
+(func
+    local.get $3
+  i32.atomic.rmw8.xor_u s" "emory" (memor5377 shared))
+(func
+    local.get $3
+    i32.atomic.rmw8.xor_u s" "emov" "emory" (memory $3 67 2537 shared))
+(func
+    local.get $3
+  i32.atomic.rmw8.xor_u s" "emory" )
+(func
+    local.get $3
+    i32.atomic.rmw8.xor_u s" "emory" (memory $3 67 2537 shared))
+(func
+    local.get $3
+    i32.atomic.rmw8.xor_u s (memory $3 67 2537 shared))
+(func
+    local.get $3
+    i32.atomic.rmw8.xor_u s" "emory"ry" (meed))
+(func
+    local.get $3
+    i32.atomic.rmw8.xor_u s (memory $3 67 2537 shared))
+(func
+    local.get $3
+    i32.atomic.rmw8.xor_u sy"ry" (meed))
+(func
+    local.get $3
+    i32.atomic.rmw8.xor_u s (memory $3 67 2537 shared))
+(func
+    local.get $3
+    i32.atomic.rmw8.xor_u s" "emory" (memory $3ø 67 253emor5377 shared))
+(func
+    local.get $3
+    i32.atomic.rmw8.xor_u s" "emory" (memory $3 67 2537 shared))
+(func
+    local.get $3
+    i32.atomic.rmw8.xor_u s (memory $3 67 2537 shared))
+(func
+    local.get $3
+    i32.atomic.rmw8.xor_u s" "emory" (memory $3 67 2537 shared))
+(func
+    local.get $3
+  i32.atomic.rmw8.xor_u s" "emory" (memor5377 shared))
+(func
+    local.get $3
+    i32.atomic.rmw8.xor_u s" "emov" "emory" (memory $3 67 2537 shared))
+(func
+    local.get $3
+  i32.atomic.rmw8.xor_u s" "emory" (memor5377 shared))
+(func
+    local.get $3
+    i32.atomic.rmw8.xor_u s" "emory" (memory $3 67 2537 shared))
+(func
+    local.get $3
+    i32.atomic.rmw8.xor_u s (memory $3 67 2537 shared))
+(func
+    local.get $3
+    i32.atomic.rmw8.xor_u s" "emory"ry" (meed))
+(func
+    local.get $3
+    i32.atomic.rmw8.xor_u s (memory $3 67 2537 shared))
+(func
+    local.get $3
+    i32.atomic.rmw8.xor_u sy"ry"(meed))
+(func
+    local.get $3
+    i32.atomic.rmw8.xor_u s (memory $3 67 2537 shared))
+(func
+    local.get $3
+    i32.atomic.rmw8.xor_u s" "emory" (memory $3ø 67 2537 shared))
+(func
+ cal.get $3
+    i32.atomic.rmet=2))

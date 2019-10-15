@@ -1,0 +1,166 @@
+(module
+  (type $0 (func (result f32 externref)))
+  (type $1 (func (param v128 funcref) (result funcref)))
+  (type $2 (func (param i64 f32 v128 i64) (result v128 i32)))
+  (type $3 (func (param f64 f32 v128 v128)))
+  (type $4 (func (result externref)))
+  (type $5 (func (param f32 i32 v128) (result i64 f32 funcref)))
+  (type $6 (func (param i32 funcref externref)))
+  (type $7 (func (param i32) (result funcref f32 v128)))
+  (import "env" "table" (table $8 5 4294967295 externref))
+  (import "env" "global1" (global $11 (mut funcref)))
+  (import "env" "global2" (global $12 (mut externref)))
+  (import "env" "global4" (global $13 (mut i32)))
+  (import "env" "global7" (global $14 v128))
+  (import "env" "global8" (global $15 i64))
+  (import "env" "func0" (func $21 (result externref)))
+  (memory $9  33 8963 shared)
+  (memory $10  86 41699)
+  (global $16  (mut i32) (i32.const 1336982125))
+  (global $17  (mut externref) (ref.null extern))
+  (global $18  (mut i32) (i32.const -1274076288))
+  (global $19  (mut i32) (i32.const -1698344761))
+  (elem $20 global
+    $16 $17 $15 $14 $17 $12 $17 $12
+    $15 $18 $13 $17 $13 $19 $12 $11
+    $16 $11 $18 $11 $18 $14 $15 $18
+    $16 $16 $13 $17 $12 $11 $18 $18
+    $18 $13 $11 $15 $16 $12 $16 $17
+    $11 $17 $15 $13 $16 $15 $11 $19
+    $18 $15 $17 $16 $18 $19 $15 $11
+    $19 $16 $19 $11 $16)
+  
+  (func $22 (type $0)
+    (result f32 externref)
+    (local $0 i64)
+    table.size $8
+    atomic.fence
+    global.get $19
+    i32.atomic.rmw8.add_u $10 offset=2191475089
+    f32.const -0x1.eaeda4p-83
+    global.get $18
+    memory.size $10
+    i32.atomic.rmw8.add_u $10 offset=1262782974
+    i32.atomic.load offset=1782133704
+    i32.load16_s $10 offset=37053568
+    global.set $13
+    f32.neg
+    i32.const -1758801463
+    global.get $14
+    loop $loop (param f32 i32 v128) (result i64 f32 funcref)
+      drop
+      global.set $16
+      drop
+      global.get $18
+      global.set $13
+      global.get $11
+      ref.is_null
+      global.set $19
+      nop
+      global.get $11
+      unreachable
+    end ;; $loop
+    ref.null extern
+    global.set $12
+    global.set $11
+    drop
+ call $21
+    drop
+    global.get $13
+    table.get $8
+    drop
+    global.get $18
+    global.set $13
+    local.get $0
+    unreachable
+    )
+  
+  (func $23 (type $1)
+    (param $0 v128)
+    (param $1 funcref)
+    (result funcref)
+    (local $2 externref)
+    local.get $1
+    local.get $2
+    local.tee $2
+    ref.is_null
+    v128.load $10 offset=545870837 align=4
+    global.get $13
+    local.get $1
+    elem.drop $20
+    global.get $17
+    loop $loop (param i32 funcref externref)
+      v128.const i32x4 0x8bcad1e3 0x4decda24 0xee5911fc 0x25a6ed9a
+      global.get $19
+      loop $loop_0 (param i32) (result funcref f32 v128)
+        nop
+        unreachable
+      end ;; $loop_0
+      drop
+      ref.null func
+      local.set $1
+      drop
+      call $23
+      unreachable
+    end ;; $loop
+    local.set $0
+    )
+  
+  (func $24 (type $2)
+    (param $0 i64)
+    (param $1 f32)
+    (param $2 v128)
+    (param $3 i64)
+    (result v128 i32)
+    (local $4 i64)
+    (local $5 i32)
+    global.get $16
+    v32x4.load_interleaved_3 offset=2958011691 align=2
+    i32x4.abs
+    v128.bitselect
+    drop
+    call $21
+    nop
+    global.get $13
+    v64x2.load_interleaved_4 $10 offset=2859619014 align=8
+    i32x4.ge_u
+    f64x2.div
+    i16x8.narrow_i32x4_s
+    i32x4.all_true
+    i64.load32_s $10 offset=4006947280
+    elem.drop $20
+    local.set $0
+    ref.is_null
+    table.get $8
+    ref.null func
+    ref.null func
+    ref.null extern
+    global.set $17
+    unreachable
+    )
+  
+  (func $25 (type $3)
+    (param $0 f64)
+    (param $1 f32)
+    (param $2 v128)
+    (param $3 v128)
+    (local $4 v128)
+    (local $5 externref)
+    (local $6 v128)
+    global.get $18
+    local.get $0
+    i64.trunc_f64_s
+    i64.atomic.rmw.sub offset=3033079647
+    global.get $17
+    local.get $3
+    i32x4.all_true
+    v32x4.load_splat offset=2114378411 align=1
+    i16x8.neg
+    v128.not
+    v128.const i32x4 0xf4901685 0x732b0ec2 0xbb8293bd 0x3f60c4f7
+    i64x2.neg
+    local.set $6
+    v128.const i32x4 0x8af574af 0xf68f7f40 0xcc268ad9 0x4af34be9
+    f32.const -0x1.06df16p-17
+    unreachable
+    ))

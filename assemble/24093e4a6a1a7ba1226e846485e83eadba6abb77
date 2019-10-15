@@ -1,0 +1,3 @@
+(func
+br 0 f64x2.mul
+f64x2.mul br 0)

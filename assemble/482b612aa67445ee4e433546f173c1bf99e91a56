@@ -1,0 +1,16 @@
+(module
+  (type $2 (func (param funcref v128)))
+  (memory $4  4024 65536 shared)
+  (global $11  (mut i32) (i32.const 46030))
+  
+  (func $15 (type $2)
+    (param $0 funcref)
+    (param $1 v128)
+    v128.const i32x4 0xc6046244 0xbdc49764 0x7fddc966 0x4862Eec2(local.tee 1)
+    global.get $11
+    i16x8.shr_u
+    f64x2.abs
+    i16x8.extract_lane_s 5
+    i64.load8_u
+    br 0
+    ))

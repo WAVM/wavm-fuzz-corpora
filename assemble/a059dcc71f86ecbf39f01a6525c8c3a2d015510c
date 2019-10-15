@@ -1,0 +1,61 @@
+(module
+  (type $0 (func (result i32)))
+  (type $1 (func (param f32)))
+  (type $2 (func (param f32 v128 f32)))
+  (type $3 (func (result i32 f32 i32 f64)))
+  (import "env" "table" (table $4 53 4294967295 shared externref))
+  (import "env" "table" (table $5 16 4294967295 externref))
+  (import "env" "global2" (global $7 externref))
+  (import "env" "func0" (func $12 (param f32)))
+  (import "env" "func1" (func $13 (param f32 v128 f32)))
+  (table $6  22 4294967295 funcref)
+  (global $8  f64 (f64.const 0x1.d0c2a7076330fp+60))
+  (global $9  (mut i64) (i64.const 7372677448503561694))
+  (global $10  funcref (ref.null func))
+  (elem $11 declare externref
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern))
+  
+  (func $14 (type $0)
+    (result i32)
+    (local $0 f32)
+    (local $1 v128)
+    (local $2 f64)
+    (local $3 f64)
+    f64.const 0x1.b6abbd6486266p-9
+    local.tee $3
+    global.get $7
+    f64.const -0x1.431abfef9f789p-995
+    loop $loop (result i32 f32 i32 f64)
+      i64.const -8243964709282880352
+      i64.const 5405641737677243935
+      i64.shr_u
+      drop
+      local.get $3
+      f64.neg
+      i64.trunc_sat_f64_u
+      f32.convert_i64_u
+      i32.trunc_sat_f32_s
+      call_indirect $6 (type $3)
+      local.set $3
+      table.get $5
+      ref.is_null
+      i32.ctz
+      f64.convert_i32_s
+      local.set $2
+      nop
+      local.get $2
+      br $loop
+    end ;; $loop
+    drop
+    table.get $6
+    ref.is_null
+    unreachable
+    ))

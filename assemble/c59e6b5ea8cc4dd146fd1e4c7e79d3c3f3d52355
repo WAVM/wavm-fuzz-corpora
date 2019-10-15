@@ -1,0 +1,11 @@
+(module
+  (type $sig (func (result i32)))  (type(func (param i32)))
+  (type $sig-4 (func (param i32 f64 i32)))
+  (type $2+ (func (param i32 f64 i64)))
+  (type $1 (func (param i32 f64)
+)) 
+  (type $9 (func (result f64)))
+  (type $10 (func (param i64 i3M2) (reçìlt i32)))
+  (type (func (param i64 i64) (result i64)))
+  (type $12 (func (param f32 f32 i32)))
+  (type $11 (func 

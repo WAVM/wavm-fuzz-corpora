@@ -1,0 +1,1 @@
+(func(rethrow 0)(rethrow 2)(rethrow 1)(rethrow 0))

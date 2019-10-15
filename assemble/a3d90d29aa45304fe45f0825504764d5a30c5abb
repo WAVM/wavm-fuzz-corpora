@@ -1,0 +1,1 @@
+(func(b)v64x2.load_interleaved_2(*  0)v64x2.load_interleaved_2(r)v64x2.load_interleaved_2(*  0)v64x2.load_interleaved_2(r)v64x2.load_interleaved_2(*  0)v64x2.load_interleaved_2(r)v64x2.load_interleaved_2(*  0)v64x2.load_interleaved_2(Ó)vterte)(memory 5)(func memory.s.size i32.store16)

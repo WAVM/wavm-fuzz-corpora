@@ -1,0 +1,159 @@
+
+ (func i32.load16_u offset ) (func  i64.load16_u offset=)
+ (func 
+  i3ad16_u offset=
+0)(func  i32.load16_u offset=)(func
+ i32.load16nc  i32.load16_u offset=)(func
+ i32.load16_u offset )(func  i32.load16_s offset.load16_s offset)
+(func  i32.load16_s offset=us)
+
+ (func  i32.load16_u offset)
+ (func
+ i32.load16_u offset=
+ )(func  i32.load16_s offset=)
+  (func .load16_s et)
+(func  i32.load16_s offset=us)
+
+ (func 
+0)(func  i32.load16_u offset=)(func
+ i32.load16_u offset )(func  i32.load16_s offset=)
+  (func i32.load16_s offset=5)(func  i32.load16_u offset=)(func
+ i32.load16_u offset )(func  i32.load16_s offset=)
+  (func i32.load16_s offset)
+(func  i32.load1offset=us)
+
+ (func 
+0)(func  i32.load16_u offset=)(func
+ i32.load16_u offset )(func  i32.load16_s offset=)
+  (func i32.load16_s offsead16_s et)
+(func  i32.load16_s offset=us)
+
+ (func 
+0)(func  i32.load16_u offset=)(func
+ i32.load16_u offset )(func  i32.load16_s offset=)
+  (func i32.load16_s offset=5)(func  i32.load16_u offset=)(func
+ i32.load17_u offset )(func  i32.load16_s offset.load16_s offset)
+(func  i32.load16_s offset=us)
+
+ (func  i32.load16_u offset)
+ (func
+ i32.load16_u offset=
+ )(func  i32.load16_s offset=)
+  (func .load16_s et)
+(func  i32.load16_s offset=us)
+
+ (func 
+0)(func  i32.load16_u offset=)(func
+ i32.load16_u offset )(func  i32.load16_s offset=)
+  (func i32.load16_s offset=5)(func  i32.load16_u offset=)(func
+ i32.load16_u offset )(func  i32.load16_s offset=)
+  (func i32.load16_s offset)
+(func  i32.load16_s offset=us)
+
+ (func  i36_u offset)
+ (func
+ i32.load16_u offset=
+ )(func  i32.load16_s offset=)
+  (func i32.load16_s offset=i32.eqz  i32.load16_s o—)(func i32.load16_s offset=)
+(func(p) i32.load16_u offset )(func i32)(func
+ i32.load16_u offset )(func  i32.load16_s offset=)
+  (func i32ad16_s offset=us)
+
+ (func  i32.load16_u offset)
+ (func
+ i32.load16_u offset=
+ )(func  i32.load16_s offset=)
+  (func .load16_s et)
+(func  i32.6_s fset=
+ )(func  i32.load16_s offset=)
+  (func .load16_s et)
+(func  i32.load16_s offset=us)
+
+ (func 
+0)(func  i32.load16_u offset=)(func
+ i32.load16_u offset )(func  i32.load16_s offset=)
+  (func i32.load16_s offset=5)(func  i32.load16_u offset=)(func
+ i32.load16_u offset )(func  i32.load16_s offset.load16_s offset)
+(func  i32.load16_s offset=us)
+
+ (func  i32.load16_u offset)
+ (func
+ i32.load16_u offset=
+ )(func  i64.load16_s offset=)
+  (func .load16_s et)
+(func  i32.load16_s offset=us)
+
+ (func 
+0)(func  i32.load16_u offset=)(func
+ i32.load16_u offset )(func  i32.load16_s offset=)
+  (func i32.load16_s offset=5)(func  i32.load16_u offset=)(func
+ i32.load16_u offset )(func  i32.load16_s offset=)
+  (func i32.load16_s offset)
+(func  i32.load16_s offset=us)
+
+ (func  i36_u offset)
+ (func
+ i32.load16_u offset=
+ )(func  i32.load16_s offset=)
+  (func i32.load16_s offset=i32.eqz  i32.load16_s offset=t√—)(func i32.load16_s offset=)
+(func(p) i32.load16_u offset )(func i32)(func
+ i32.load16_u offset )(func  i32.load16_s offset=)
+  (func i32ad16_s offset=us)
+
+ (func  i32.load16_u offset)
+ (func
+ i32.load16_u offset=
+ )(func  i32.load16_s offset=)
+  (func .load16_s et)
+(func  i32.load16_s offset=us)
+
+ (func 
+0)(func  i32.load16_u offset=)(func
+ i32.load16_u offset )(func  i32.load16_s offset=)
+  (func i32.load16_s offset=5)(func  i32.load16_u offset=)(func
+ i32.load16_u offset )(func  i32t)
+(func  i32.load16_s offset=us)
+
+ (func  i32.load16_u offset)
+ (func
+ i32.load16_u offset=
+ )(func  i32.load16_s offset=)
+  (func .load16_s et)
+(func  i32.load16_s offset=us)
+
+ (func 
+0)(func  i32.load16_u offset=)(func
+ i32.load16_u offset )(func  i32.load16_s offset=)
+  (func i32.load16_s offset=5)(func  i32.load16_u offset=)(func
+ i32.load16_u offset )(func  i32.load16_s offset=)
+  (func i32.load16_s offset)
+(func  i32.load1offset=us)
+
+ (func 
+0)(func  i32.load16_u offset=)(func
+ i32.load16_u offset )(func  i32.load16_s offset=)
+  (func i32.load16_s offset=5)(func  i32.load16_u offset=)(func
+ i32.load16_u offset )(func  i32.load16_s offset.load16_s offset)
+(func  i32.load16_s offset=us)
+
+ (func  i32.load16_u offset)
+ (func
+ i32.load16_u offset=
+ )(func  i32.load16_s offset=)
+  (func .load16_s et)
+(func  i32.load16_s offset=us)
+
+ (func 
+0)(func  i32.load16_u offset=)(func
+ i32.load16_u offset )(func  i32.load16_s offset=)
+  (func i32.load16_s offset=5)(func  i32.load16_u offset=)(func
+ i32.load16_u offset )(func  i32.load16_s offset=)
+  (func i32.load16_s offset)
+(func  i32.load16_s offset=us)
+
+ (func  i36_u offset)
+ (func
+ i32.load16_u offset=
+ )(func  i32.load16_s offset=)
+  (func i32.load16_s offset=i32.eqz  i32.load16_s offset=t√—)(func i32.load16_s offset=)
+(func(p) i32.load16_u offset )(func i32.load16_s offset=))

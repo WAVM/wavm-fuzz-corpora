@@ -1,0 +1,24 @@
+(func
+br_table 0  i16x8.shr_u unc )(func br 0
+br_table 0  i16x8.shr_u b0 )(func br 0  i16x8.shr_u)(func br 0
+br_table 0 6x8.shr16x8.shr_u b0 )(func br 0  i16x8.shr_u)(func br 0
+br_table 0  i16x8.shr_u i16x8.shr_u 5
+b$ 0 br_
+0b0 )(func br 0  i1)(func br 0  i16x8.shr_u)(func br 0
+br_table 0  i16x8.shr16x8.shr_u b0 )(func br 0  i16x8.shr_u)(func br 0
+br_table 0  i16x8.shr_u i16x8.shr_u 5
+b$ 0 br_
+0b0 )(func br 0  i16x8.shr_u)(func br 0  i16x8.shr_u i16x8.shr_u br 0  i16x8.shr_u unc )(func br 0
+br_table 0 16x8.shr_u 5
+b$ 0 br_
+0b0 )(func br 0  i16x8.shr_u)(func br 0  i16x8.shr_u i16x8.shr_u br 0  i16x8.shr_u unc )(func br 0
+br_table 0  i16x8.shr_u b0 )(func br 0  i16x8.shr_u)(func br 0
+br_table 0  i16x8.shr_u i16x8.shr_u 5
+0b0 )(func br 0  i16x8.shr_u)(func)(func br 0  i16x8.shr_u i16x8.shr_u br 0  i16x8.shr_u unc )(func br 0
+br_table 0  i16x8.shr_u_u i16x8.shr_unc shrýu b0 )(func br 0  i16x8.shr_u)(func br 0
+br_table 0  i16x8.shr_u i16x8.shr_u 5
+0b0 )(func br 0  i16x8.shr_u)(func br 0
+br_table 0  i16x8.shr_u i16x8.shr_u 5
+br_
+0_
+0)

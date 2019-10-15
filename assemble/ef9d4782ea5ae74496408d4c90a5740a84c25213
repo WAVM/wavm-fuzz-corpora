@@ -1,0 +1,53 @@
+(module
+  (type $0 (func (param i64) (result i64 i64)))
+  (import "env" "memory" (memory $4 6 56310 shared))
+  (import "env" "table" (table $1 59 4294967295 shared externref))
+  (table $2  8 4294967295 funcref)
+  (table $3  64 4294967295 funcref)
+  (elem $5 (table $3) (i32.const -1908107927) funcref
+    (ref.func $7) (ref.func $7) (ref.null func) (ref.func $7)
+    (ref.func $7) (ref.null func) (ref.func $7) (ref.null func)
+    (ref.func $7) (ref.func $7) (ref.func $7) (ref.null func)
+    (ref.func $7) (ref.null func) (ref.func $7) (ref.null func)
+    (ref.func $7) (ref.func $7) (ref.null func) (ref.func $7)
+    (ref.func $7) (ref.null func) (ref.null func) (ref.func $7)
+    (ref.null func) (ref.null func) (ref.null func) (ref.func $7)
+    (ref.null func) (ref.func $7) (ref.null func) (ref.null func)
+    (ref.null func) (ref.func $7) (ref.null func) (ref.func $7)
+    (ref.func $7) (ref.null func) (ref.null func) (ref.func $7)
+    (ref.func $7) (ref.null func) (ref.null func) (ref.func $7)
+    (ref.func $7) (ref.func $7) (ref.null func) (ref.func $7)
+    (ref.func $7) (ref.null func) (ref.null func) (ref.func $7)
+    (ref.func $7) (ref.func $7) (ref.func $7) (ref.null func)
+    (ref.func $7) (ref.func $7) (ref.func $7) (ref.null func)
+    (ref.null func) (ref.null func) (ref.func $7))
+  
+  (func $7 (type $0)
+    (param $0 i64)
+    (result i64 i64)
+    (local $1 externref)
+    (local $2 funcref)
+    (local $3 externref)
+    elem.drop $5
+    nop
+    atomic.fence
+    f32.const -0x1.c7cf56p-73
+    f32x4.splat
+    local.get $3
+    drop
+    table.size $3
+    memory.size
+    i32.atomic.rmw8.xchg_u offset=2328613559
+    table.size $1
+    v64x2.load_interleaved_2 offset=287508722 align=4
+    i8x16.add_saturate_s
+    i16x8.widen_low_i8x16_u
+    local.get $3
+    local.set $1
+    drop
+    i8x16.shr_s
+    unreachable
+    )
+  
+  (data $6 (i32.const 916052086)
+    "\19"))

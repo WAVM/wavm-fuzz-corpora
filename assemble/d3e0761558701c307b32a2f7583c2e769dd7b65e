@@ -1,0 +1,71 @@
+(module
+  (type $0 (func (param v128) (result externref)))
+  (type $1 (func (param externref) (result externref f32)))
+  (type $2 (func (param i64 f32 f64) (result externref i64)))
+  (type $3 (func (param i64) (result v128 f64)))
+  (type $4 (func (param externref v128)))
+  (import "env" "global4" (global $6 (mut i32)))
+  (import "env" "global5" (global $7 funcref))
+  (import "env" "func0" (func $14 (param v128) (result externref)))
+  (import "env" "func1" (func $15 (param externref) (result externref f32)))
+  (table $5  14 4294967295 externref)
+  (global $8  (mut funcref) (ref.null func))
+  (global $9  (mut v128) (v128.const i32x4 0x6c164785 0x633e003d 0x05aec70d 0x91ffbe40))
+  (global $10  f32 (f32.const 0x1.23bf8ep+31))
+  (global $11  (mut v128) (v128.const i32x4 0x9f29db35 0x850f5c52 0x24d46de0 0xa4be7a0f))
+  
+  (func $16 (type $2)
+    (param $0 i64)
+    (param $1 f32)
+    (param $2 f64)
+    (result externref i64)
+    (local $3 f32)
+    (local $4 v128)
+    ref.null extern
+    unreachable
+    )
+  
+  (func $17 (type $3)
+    (param $0 i64)
+    (result v128 f64)
+    (local $1 externref)
+    (local $2 i32)
+    (local $3 externref)
+    (local $4 f64)
+    f32.const -0x1.217d5cp+26
+    i64.trunc_f32_s
+    global.get $8
+    global.set $8
+    i64.clz
+    i64.popcnt
+    local.get $3
+    global.get $9
+    loop $loop (param externref v128)
+      f32x4.convert_i32x4_s
+      f32x4.convert_i32x4_s
+      f32x4.convert_i32x4_s
+      i32x4.trunc_sat_f32x4_s
+      f64x2.abs
+      i32x4.bitmask
+      drop
+      ref.is_null
+      local.set $2
+      ref.null extern
+      unreachable
+    end ;; $loop
+    drop
+    local.get $0
+    local.set $0
+    local.get $1
+    local.set $3
+    global.get $9
+    i16x8.all_true
+    unreachable
+    )
+  
+  (data $12 
+    "\09\da\e7`#8\ad\b9\f18\9c-\af'\89\a8\c9a\18\1f\a4\ae0C\08\fd\fc\9a_\03s\1b'Q\e9\af\f9\acI\b7)\d3\15\d4Q\baQd9lD\b3wl\8b\11}\97U\8e\98\e8\8f\de"
+    "\c1\ea\f4\fbN\b4\c3\de\ecq\93\a5\9eJ\85c\f9\11A\15\1e\aeP\c5<H\a6\f0\be\c8P\a8ly")
+  
+  (data $13 
+    "\d7\cc\00Fp\9d\e50r\dbc\a6\105\a9\8eY]\a0\00C\ea%\f0K\f90"))

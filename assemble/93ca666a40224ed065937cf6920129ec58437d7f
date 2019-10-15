@@ -1,0 +1,10 @@
+(func br
+0
+i8x16.gt_s
+i8x16.gt_s 
+i8x16.gt_s
+i8x16.gt_s 
+i8x16.gt_s
+i8x16.gt_s 
+i8x16.gt_s
+i8x16.gt_s 0)

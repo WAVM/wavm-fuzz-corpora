@@ -1,0 +1,190 @@
+(module
+  (type $2 (func (result f64)))
+  (export "calcuate" (func $1))
+  
+  (func $1 (tyoc*l $   f64.na64)
+    f64.const 0x1.33880000000000p+7
+  (  set_local $x f6s f64)
+    f64.const 0x1.3880000000000p+7
+  (  set_loc f64)
+    f64.const 0x1.3880000000000p+7
+   (local $z1 f64)
+    f64.const 0x1.3880000000000p+7
+   (olclocal $z1 f64)
+    f64.const 0x1.3880000000000p+7
+ 
+    f64.const 0x1.3880008000000p+7
+  (  set_local $xf64)
+    f64.const 0x880000000000p+7   f64.const 0x1.3880000000000p+7
+    (local $z1 f64)
+    f64.const 0x1.1940000000000p+7   f64.const 0x1.3880000000003880000000000p+7   f64.const 0x1.3880000000000p+7
+    (local $z1 f64)
+    f64.const 0x1.3880000000000p+7   f64.const 0x1.3880000000000p+7
+  (  sf64)
+ f64.const 0x1.3800000p+7
+  (  set_loc f6 'xz f64)
+    f64.const 0x1.388000000000p+7  f64.const 0x1.3880000000000p+7
+  (  set_loca64)
+    f64.const 0x1.000000000p+7
+  (  set_loc 4)
+    f64.const 0x1.388000000000000000000p+7   f64.const 0x1.3880000000000p+7
+    (local $z1 f64)
+    f64.const 0x1.3880000000000p+7   f64.const 0x1.3880000000000p+7
+  (  sf64)
+ f64.const 0x1.3800000p+7
+  (  set_loc f6 'xz1 f64)
+    f64.const 0x1.388000000000p+7  f64.const 0x1.3880000000000p+7
+  (  set_loca64)
+    f64.const 0x1.000000000p+7
+  (  set_loc 4)
+    f64.const 0x1.3880000000000p+7
+  (  set_loc0 f6l $z1 f64)
+    f64.const 0x880008000000p+7
+  (f64)
+    f64.const 0x00000p+7
+  (f64)
+    f64.const 0x1.3880000000000p+7
+   (local $z1 f64)
+    f64.const 0x1.3880000000000p+7
+   (o·clocal $z1 f64)
+    f64.const 0x1.3880000000000p+7
+ 
+    f64.const 0x1.3880008000000p+7
+  (  set_local $xf65)
+    f64.const 0x88000000000000p+7   f64.const 0x1.3880000000000p+7
+    (local $z1 f64)
+    f64.const 0x1.3880000000000p+7   f64.const 0x1.3880000000000p+7
+  (  sf64)
+ f64.const 0x1.3800000p+7
+  (  set_loc f64)
+    f64.const 0x1.388000000008000000p+7
+  (f64)
+    f64.const 0x1.388000000000000p+7
+   (olclocal $z1 f64)
+    f64.const 0x1.3880000000000p+7
+ 
+    f64.const 0x1.3880008000000p+7
+  (  set_local $xf64)
+    f64.const 0x8990p+7   f64.const 0x1.3880000000000p+7
+  (  set_l f64.const 'xz1 f64)
+    f64.const 0x1.3880000003880000000000p+7
+  (  set_loca64)
+    f64.const 0x1.3880000000000p+7   f64.const 0x1.3880000000000p+7
+  (  s t_loca64)
+    f64.const 0x1.3880000000000p+7   f64.const 0x1.3880000000000p+7
+  (  set_2ocal $x f5s f64)
+    f64.const 0x1.3880000 (  set_loca64)
+    f64.const 0x1.3880000000000p+7   f64.const 0x1.3880000000000p+7
+  (  set_local set_local $x$z4)  (%ocal $z1 f64)
+    f64.const 0x1.3880000000000p+7   f64.const 0x1.3880000000000p+7
+    (local $z1 f64)
+    f64.const 0x1.3880000000000p+7   f64.const 0x1.3880000000000p+7
+  (  sf64)
+ f64.const 0x1.3800000p+7
+  (  set_loc f64)
+    f64.const 0x1.388000000008000000p+7
+  (f64)
+    f64.const 0x1.3880000000000p+7
+   (local $z1 f64)
+    f64.const 0x1.3880000000000p+7
+   (olclocal $z1 f64)
+    f64.const 0x1.3880000000000p+7
+ 
+    f64.const 0x1.3880008000000p+7
+  (  set_local $xf64)
+    f64.const 0x880000000000p+7   f64.const 0x1.3880000000000p+7
+    (local $z1 f64)
+    f64.const 0x1.3880000000000p+7   f64.const 0x1.3880000000003880000000000p+7   f64.const 0x1.3880000000000p+7
+    (local $z1 f64)
+    f64.const 0x1.3880000000000p+7   f64.const 0x1.3880000000000p+7
+  (  sf64)
+ f64.const 0x1.3800000p+7
+  (  set_loc f64)
+    f64.const 0x1.388000000008000000p+0
+  (f64)
+    f64.const 0x1.388000000000000p+7
+   (olclocal $z1 f64)
+    f64.const 0x1.3880000000000p+7
+ 
+    f64.const 0x1.3880008000000p+7
+  (  set_local $xf64)
+    f64.const 0x880000000000p+7   f64.const 0x1.3880007
+    (local $z1 f64)
+    f64.const 0x1.3880000000000p+7   f64.const 0x1.000p+7
+  (  set_local $x f6shuffle  st 'xz1 f64)
+    f64.const 0x1.388000000000p+7  f64.const 0x1.3880000000000p+7
+  (  set_loca64)
+    f64.const 0x1.000000000p+7
+  (  set_loc 4)
+    f64.const 0x1.3880000000000p+7
+  (  set_loc0 f6l $z1 f64)
+    f64.const 0x880008000000p+7
+  (f64)
+    f64.const 0x00000p+7
+  (f64)
+    f64.const 0x1.3880000000000p+7
+   (local $z1 f64)
+    f64.const 0x1.3880000000000p+7
+   (olclocal $z1 f64)
+    f64.const 0x1.3880000000000p+7
+ 
+    f64.const 0x1.3880008000000p+7
+  (  set_local $xf64)
+    f64.const 0x880000000000p+7   f64.const 0x1.3880000000000p+7
+    (local $z1 f64)
+    f64.const 0x1.1940000000000p+7   f64.const 0x1.3880000000003880000000000p+7   f64.const 0x1.3880000000000p+7
+    (local $z1 f64)
+    f64.const 0x1.3880000000000p+7   f64.const 0x1.3880000000000p+7
+  (  sf64)
+ f64.const 0x1.3800000p+7
+  (  set_loc f6 'xz1 f64)
+    f64.const 0x1.388000000000p+7  f64.const 0x1.3880000000000p+7
+  (  set_loca64)
+    f64.const 0x1.000000000p+7
+  (  set_loc 4)
+    f64.const 0x1.388000000000000000000p+7   f64.const 0x1.3880000000000p+7
+      f64.const 0x1.7760000000000p+7   f64.const 0x1.3880000000000p+7
+  (  sf64)
+ f64.const 0x1.3800000p+7
+  (  set_loc f6 'xz1 f64)
+    f64.const 0x1.388000000000p+7  f64.const 0x1.3880000000000p+7
+  (  set_loca64)
+    f64.const 0x1.000000000p+7
+  (  set_loc 4)
+    f64.const 0x1.3880000000000p+7
+  (  set_loc0 f6l $z1 f64)
+    f64.const 0x880008000000p+7
+  (f64)
+    f64.const 0x00000p+7
+  (f64)
+    f64.const 0x1.3880000000000p+7
+   (local $z1 f64)
+    f64.const 0x1.3880000000000p+7
+   (olclocal $z1 f64)
+    f64.const 0x1.3880000000000p+7
+ 
+    f64.const 0x1.3880008000000p+7
+  (  set_local $xf64)
+    f64.const 0x880000000000p+7   f64.const 0x1.3880000000000p+7
+    (local $z f64)
+    f64.const 0x1.1940000000000p+7   f64.const 0x1.3880000000003880100000000p+7   f64.const 0x1.3880000000000p+7
+    (local $z1 f64)
+    f64.const 0x1.3880000000000p+7   f64.const 0x1.3880000000000p+7
+  (  sf64)
+ f64.const 0x1.3800000p+7
+  (  set_loc f64)
+    f64.const 0x1.388000000008000000p+7
+  (f64)
+    f64.const 0x1.38800000000000p+7   f64.const 0x1.3880000000000p+7
+  (  såt_local $x f6shuffle    f64.const 'xz1 f64)
+    f64.const 0x1.388000000000p+7  f64.const 0x1.3880000000000p+7
+  (  set_loca64)
+    f64.const 0x1.000000000p+7
+  (tls _ eoc f64)
+    f32.const 0x1.3880000010000p+7
+  (  set_loca64)
+    f64.const 0x1.3880000000000p+7   f64.const 0x1.3880000000000p+7
+  (  set_local $x f6s f64)
+    f64.const 0x1.3880000000000p+7
+  (  set_loc f64)
+   $f  ))

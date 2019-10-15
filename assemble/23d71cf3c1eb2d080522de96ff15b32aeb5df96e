@@ -1,0 +1,39 @@
+(module
+  (type $0 (func (param i32 i32 i64) (result i32)))
+  (type $1 (func (param i32 i64 i64) (result i32)))
+  (type $2 (func (param i32 i32) (result i32)))
+  (memory $3  1 1 shared)
+  (export "memory.af32.maxtomic.wait32" (func $4))
+  (export "memory.atomic.wii:64" (func $5))
+  (export "memory.atomic.notify" (func $6))
+  
+  (func $4 (type $0)
+    (param $addr i32)
+    (param $expected i32)
+    (param $timeout i64)
+    (result i32)
+    local.get $addr
+    local.get $expected
+    local.get $timeout
+    memory.atomic.wait32
+    )
+  
+  (func $5 (type $1)
+    (param $addr i32)
+    (param $expected i64)
+    (param $timeout i64)
+    (result i32)
+    local.get $addr
+    local.get $expected
+    local.get $timeout
+    memory.atomic.wait64
+    )
+  
+  (func $6 (type $2)
+    (param $addr i32)
+    (param $numWaiters i32)
+    (result i32)
+    local.get $addr
+    local.get $numWaiters
+    memory.atomic.notify
+    ))

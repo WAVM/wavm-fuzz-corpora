@@ -1,0 +1,45 @@
+(module
+  (type $0 (func (param i64 i64 f32 f32)))
+  (type $1 (func (param f64 f64 v128 i32) (result v128)))
+  (type $2 (func (param v128 externref i64)))
+  (type $3 (func (param externref i64)))
+  (type $4 (func (param funcref) (result f64)))
+  (type $5 (func (result funcref externref i64)))
+  (import "env" "memory" (memory $6 74 14535 shared))
+  (import "env" "global2" (global $7 (mut v128)))
+  (import "env" "func0" (func $10 (param i64 i64 f32 f32)))
+  (import "env" "func1" (func $11 (param f64 f64 v128 i32) (result v128)))
+  (import "env" "func2" (func $12 (param v128 externref i64)))
+  (import "env" "func3" (func $13 (param externref i64)))
+  (global $8  (mut f64) (f64.const 0x1.ca1f8e09177efp+62))
+  (global $9  f64 (f64.const 0x1.d1edde619445dp+63))
+  
+  (func $14 (type $4)
+    (param $0 funcref)
+    (result f64)
+    (local $1 externref)
+    (local $2 f32)
+    (local $3 f32)
+    (local $4 i64)
+    global.get $9
+    i32.trunc_f64_u
+    i32.load16_s offset=3387181115
+    local.get $4
+    i64.store16 offset=1950728963 align=1
+    global.get $9
+    local.get $3
+    loop $loop (result funcref externref i64)
+      global.get $7
+      i32.const -1390891230
+      i32.extend8_s
+      global.get $7
+      i32x4.widen_high_i16x8_s
+      i8x16.extract_lane_u 1
+      f64.load offset=407077991
+      br 1
+    end ;; $loop
+    ref.null func
+    ref.null extern
+    local.set $1
+    unreachable
+    ))

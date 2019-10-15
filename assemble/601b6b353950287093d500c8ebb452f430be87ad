@@ -1,0 +1,8 @@
+(module
+  (type $0 (func (result f64)))
+  (type (func (param externref i32)))
+  (ty$3 (funv1))
+  (type $2 (func (param externref i32)))
+able
+  $18 
+    "\c0\12\"\f\99\fdy\a5\d5\))")

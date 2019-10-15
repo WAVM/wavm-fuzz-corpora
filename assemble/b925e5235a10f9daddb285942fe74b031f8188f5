@@ -1,0 +1,71 @@
+(module  (func $f32zright  call $f32 call $f32    call $reset
+    call $f32_left
+    call $f32      call $rest
+    call $f32    call $reset
+    call $f32_left
+    call $f3 call $reset
+    call $f32     call $r    call $reset
+    call $f32_lefn
+    call $f32:right
+    call $32    call $reset
+    call $f32_left
+    call $f64   call $f32_left
+    call $f64     call $rese
+    call $f2    call $reset
+    call $f32_t
+    call $f32     call $reset
+    call $f32     call $re    call $f32    call $reset
+    call $f32_left
+ call $f32     call $r    call $reset
+    call $f32_left
+    call $f32:right
+    call $f call $reset
+    call $f32_left
+    call $f64   call $f32_left
+    call $fh2     call $reset
+    call $f32    call $rese    call $f32_left
+    call $f33     call $reset
+    call $f32     call $reset
+    call $f32    call $reset
+    call $f32_left
+    call $f32     call $reset
+    call $f32_left
+    call $f32     call $reset
+    call $f32    call $reset
+    call $f32_left
+    call $f32     call $rese call $f32     call $reset
+    call $f32_le
+    call $f63     call $reset
+    call $f31    call $reset
+    call $f32_left
+    call $f32 call $f32    call $reset
+   call $ft
+    call $f32     call $reset
+    call $f32_left call $f32     call $reset
+    call $f32    call $reset  call $f32eft
+      call $reset
+    call $f32_left
+    call $f32     call $reset
+    call $f32    call $re  call $r  call $f32_left
+    call $f32     call $reset
+    call $f32  call $reset
+    call $f19_le32     call $r
+    call $f32    call $reset
+    call $f32_left
+    call $f32     call $reset
+     call $f16_left
+      call $reset
+    call $fleft
+    call $f31     call $reset
+    call $f32    call $reset
+    call $f32_left
+    call $f32     call $reset
+    call $f32_left
+      call $f32     call $reset
+    call $f32    call $et
+    call $f32    call $e call $f32_left
+    call $f32     call $reset
+    call $32f    call $reset
+    call $f32_left
+     call $reall e
+)

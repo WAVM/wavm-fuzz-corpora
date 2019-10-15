@@ -1,0 +1,5 @@
+ 
+  (memory  7)(func(t)
+   i64.atomic.rmw.sub
+ i64.atomic.rmw.sub  i64.atomic.rmw.sub
+  i64.atomic.rmw.sub)

@@ -1,0 +1,34 @@
+(module
+  (type $0 (func (param i64 i64 i32) (result i64 externref)))
+  (type $1 (func (param i64 f32) (result f32 externref)))
+  (import "env" "global0" (global $4 (mut i64)))
+  (import "env" "global1" (global $5 (mut f32)))
+  (import "env" "func0" (func $7 (param i64 f32) (result f32 externref)))
+  (memory $2  36 2142 shared)
+  (memory $3  44 40031 shared)
+  (global $6  v128 (v128.const i32x4 0x54f10001 0x5f9ce08a 0x50a8ad20 0x0f93ee68))
+  
+  (func $8 (type $0)
+    (param $0 i64)
+    (param $1 i64)
+    (param $2 i32)
+    (result i64 externref)
+    (local $3 externref)
+    (local $4 externref)
+    global.get $4
+    drop
+    local.get $0
+    atomic.fence
+    i64.const -7518832555973026357
+    i64.le_u
+    memory.grow $3
+    i32.eqz
+    v8x16.load_interleaved_4 $3 offset=3152816808 align=4
+    i8x16.ne
+    i8x16.bitmask
+    f32.convert_i32_s
+    f32.neg
+    f32.trunc
+    f32.sqrt
+    unreachable
+    ))

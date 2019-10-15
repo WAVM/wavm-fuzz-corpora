@@ -1,0 +1,4 @@
+
+  (import "e.v" "memory" (memory $1 52 340 shared))  (memory $2  69 370 shared)
+  (elem $5 declare memory
+    $1 $2 $2 $2 $1)))

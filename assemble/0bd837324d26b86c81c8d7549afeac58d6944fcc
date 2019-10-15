@@ -1,0 +1,45 @@
+(module
+  (type $0 (func (param externref)))
+  (type $1 (func (param externref f64) (result i32)))
+  (type $2 (func (param i64 v128 i64 i64)))
+  (type $3 (func (result funcref f32)))
+  (import "env" "table" (table $4 54 4294967295 externref))
+  (import "env" "global0" (global $5 funcref))
+  (import "env" "global2" (global $6 (mut v128)))
+  (import "env" "func0" (func $13 (param externref f64) (result i32)))
+  (import "env" "func1" (func $14 (param i64 v128 i64 i64)))
+  (global $7  (mut externref) (ref.null extern))
+  (global $8  i32 (i32.const -2018961686))
+  (global $9  funcref (ref.null func))
+  (global $10  (mut funcref) (ref.null func))
+  (global $11  (mut i64) (i64.const -2828605314986368272))
+  (global $12  (mut f32) (f32.const 0x1.8c6b4cp+30))
+  
+  (func $15 (type $0)
+    (param $0 externref)
+    (local $1 v128)
+    v128.const i32x4 0x05fcb3fb 0x19c98e75 0x75106a05 0x65b95d02
+    i32x4.widen_low_i16x8_s
+    f32x4.neg
+    v128.const i32x4 0x10827187 0x778311de 0x94df018b 0x55a278c9
+    i32x4.ge_u
+    i32.const -312095209
+    i64x2.shr_u
+    f64x2.sqrt
+    f32x4.sqrt
+    f64x2.extract_lane 0
+    global.get $5
+    loop $loop (result i32)
+      i32.const -1930135383
+      unreachable
+    end ;; $loop
+    i32.popcnt
+    drop
+    br 0
+    )
+  
+  (func $16 (type $3)
+    (result funcref f32)
+    (local $0 f64)
+    unreachable
+    ))

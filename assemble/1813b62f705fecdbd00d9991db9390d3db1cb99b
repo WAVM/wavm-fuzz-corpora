@@ -1,0 +1,70 @@
+(module
+  (type $0 (func (param funcref f32 f64 v128) (result v128 v128)))
+  (type $1 (func (result i32)))
+  (type $2 (func (param i64 externref) (result f64 i32)))
+  (type $3 (func (param funcref funcref) (result f64 f32)))
+  (type $4 (func (result f32 externref)))
+  (import "env" "memory" (memory $6 69 47400 shared))
+  (import "env" "memory" (memory $7 87 18996))
+  (import "env" "func0" (func $14 (param funcref f32 f64 v128) (result v128 v128)))
+  (import "env" "func1" (func $15 (param funcref funcref) (result f64 f32)))
+  (import "env" "func2" (func $16 (result f32 externref)))
+  (table $5  22 4294967295 shared externref)
+  (global $8  (mut i64) (i64.const -8504993989548329206))
+  (global $9  f32 (f32.const 0x1.acdc3cp+31))
+  (global $10  (mut v128) (v128.const i32x4 0xedb620fa 0xf3c0213c 0x4401e418 0xcb389f86))
+  (global $11  i32 (i32.const -579621429))
+  (elem $12 (i32.const 15732948) table
+    $5 $5 $5 $5 $5 $5 $5 $5
+    $5 $5 $5 $5 $5 $5 $5 $5
+    $5 $5 $5 $5 $5 $5 $5 $5
+    $5 $5 $5 $5 $5 $5 $5 $5
+    $5 $5 $5 $5 $5 $5 $5 $5
+    $5 $5)
+  
+  (func $17 (type $1)
+    (result i32)
+    (local $0 v128)
+    (local $1 i64)
+    i32.const -655321122
+    f32.convert_i32_u
+    atomic.fence
+    i64.trunc_sat_f32_s
+    i64.eqz
+    v32x4.load_interleaved_4 offset=522096694
+    i8x16.sub_saturate_u
+    v128.andnot
+    i16x8.sub_saturate_u
+    f64.const 0x1.386117c5c394ep-903
+    f64.floor
+    table.size $5
+    v8x16.load_interleaved_3 $7 offset=682125300
+    v8x16.swizzle
+    i32x4.ge_u
+    global.set $10
+    ref.null func
+    unreachable
+    )
+  
+  (func $18 (type $2)
+    (param $0 i64)
+    (param $1 externref)
+    (result f64 i32)
+    memory.size $7
+    v128.const i32x4 0x1897c439 0xb861936f 0x161bb19e 0x49f2f3c4
+    i32x4.all_true
+    v8x16.load_splat $7 offset=2061596748
+    f32x4.convert_i32x4_s
+    f32x4.abs
+    i16x8.widen_high_i8x16_s
+    i64x2.neg
+    global.set $10
+    v8x16.load_splat offset=183758024
+    global.set $10
+    nop
+    unreachable
+    )
+  
+  (data $13 
+    "\fbN\86z\1ev.\e7oyt\fe\a6\80\eb\b8v\d1\e6\d4\a3\04\e2\ce\b57\8d\84\e5\db|\85x\n\e8\9c\09\c9z\9cB\16\af)\d2\d5\e5z\99\c9\e2\1a\81\80|\83\c4;*V\f0{\007"
+    "F^H\bdY\d0\89;\1a\cfN1\af\c0d^"))

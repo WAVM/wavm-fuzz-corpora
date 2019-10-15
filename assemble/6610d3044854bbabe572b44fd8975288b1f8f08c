@@ -1,0 +1,50 @@
+(module
+  (type $0 (func (param externref i32 i32 externref) (result i32 v128)))
+  (type $1 (func (result i64)))
+  (type $2 (func (param i32 externref v128 v128)))
+  (import "env" "memory" (memory $4 76 38377 shared))
+  (import "env" "memory" (memory $5 41 25882))
+  (import "env" "memory" (memory $6 21 51433 shared))
+  (import "env" "global0" (global $7 i32))
+  (import "env" "func0" (func $9 (param i32 externref v128 v128)))
+  (table $3  49 4294967295 shared funcref)
+  (elem $8 declare externref
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern))
+  
+  (func $10 (type $0)
+    (param $0 externref)
+    (param $1 i32)
+    (param $2 i32)
+    (param $3 externref)
+    (result i32 v128)
+    (local $4 externref)
+    (local $5 funcref)
+    (local $6 externref)
+    (local $7 funcref)
+    i32.const -1639583099
+    i64.load8_u $5 offset=1051411326
+    local.get $1
+    i32.load $5 offset=3203963877
+    i32.eqz
+    elem.drop $8
+    i64.load8_u offset=2631700515
+    i64.eqz
+    i32.const 35260656
+    i32.store16 offset=3031478457 align=1
+    i64.extend32_s
+    f64.const -0x1.e2cf4e22d2f3cp-80
+    unreachable
+    )
+  
+  (func $11 (type $1)
+    (result i64)
+    (local $0 f64)
+    (local $1 f32)
+    global.get $7
+    i64.extend_i32_u
+    nop
+    ))

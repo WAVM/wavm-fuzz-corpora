@@ -1,0 +1,28 @@
+(module
+  (type $0 (func (param f32 externref) (result externref)))
+  (import "env" "table" (table $1 76 4294967295 shared externref))
+  (memory $2  92 26483 shared)
+  
+  (func $4 (type $0)
+    (param $0 f32)
+    (param $1 externref)
+    (result externref)
+    memory.size
+    v8x16.load_splat offset=775879979    i64x2.extract_lane 0
+    atomic.fence
+    i64.extend32_s
+    i64.extend8_s
+    i64.const 4202015384907351007
+    i64.rotl
+    i64.eqz
+    v64x2.load_splat offset=3857254130
+    i32.const -2097643430
+    v64x2.load_interleaved_3 offset=1376757675
+    i32x4.max_u
+    f64x2.ge
+    i32x4.ne
+    unreachable
+    )
+  
+  (data $3 
+    "M@\9e+.e87\ff\8f\9d4\e9\98Y^\c6\9dk\14\e8\d1eD\15\0dyO\cd\c5E\c2\a5~\c5\\18;\94\87z\e3\10\1d\10\0f\fb"))

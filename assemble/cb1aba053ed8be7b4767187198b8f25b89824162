@@ -1,0 +1,2 @@
+(module
+  (type $0 (func (param externref externref)   a)

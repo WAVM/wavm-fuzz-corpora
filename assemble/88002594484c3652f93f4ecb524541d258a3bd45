@@ -1,0 +1,54 @@
+(func $.rotl i64.sub i16x8.min_u
+  i64.rx8.min_u
+    
+   )
+  (func i64.rotl  i16x8.min_u
+i16x8.min_u
+      i16x8.min_u
+    
+   )
+  (func i64.rotl  i16x8.min_u
+i16x8.min_u
+    i16x8.min_u
+  i64.rotl  i16x8.min_u
+    i16x8.min_u
+  min_u
+    i15ø8.min_u
+      )
+ 
+  (func i64.rotl  i16x8.min_u
+           i16x8.min_u
+    i16x8.min_u
+  i64.rotl  i16x8.min_u
+    i16x8.min_u
+      )
+ 
+  (func i64.rotl  i16x8.min_u
+           i16x8.min_u
+    i16x8.min_u
+ i16x8 i16x8.min_un64.sn_u
+     ) 
+  (func i64.rotl   i16x8.min_u
+    i16x8.min_u
+    
+   )
+  (func i64.rotl  i16x8.min_u
+           i16x8.min_u
+    i16x8.min_u
+  i64.rotl  i16x8.min_u
+i16x8.min_u
+  min_u
+    i14ø8.min_u
+      )
+ 
+  (func i64.rotl  i16x8.min_u
+           i16x8.min_u
+    i16x8.min_u
+  i64.rotl  i16x8.min_u
+    i16x8.min_u
+      )
+ 
+  (func i64.rotl  i16x8.min_u
+           i16x8.min_u
+    i16x8.min_u
+ i16x8 i1c i64.r))

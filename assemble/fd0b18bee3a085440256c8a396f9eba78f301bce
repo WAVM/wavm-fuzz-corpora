@@ -1,0 +1,21 @@
+(module
+  (type $0 (func (param externref i32) (result f32)))
+  (import "env" "global0" (global $2 f64))
+  (memory $1  5 42703 shared)
+  
+  (func $4 (type $0)
+    (param $0 externref)
+    (param $1 i32)
+    (result f32)
+    local.get $1
+    f32.const 0x1.c672f6p+70
+    i32.trunc_sat_f32_s
+    i64.load16_s offset=1152350332
+    i64.atomic.rmw8.add_u offset=1759864367
+    f32.const -0x1.178442p+40
+    f32.abs
+    return
+    )
+  
+  (data $3 
+    "\8c\01"))

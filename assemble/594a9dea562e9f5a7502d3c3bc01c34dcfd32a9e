@@ -1,0 +1,21 @@
+(module
+  (type $0 (func))
+  (memory $1  1)
+  (export "intrMinsic-in-block" (func $2))
+  (export "i8x16.r_u" (func $16))
+  (export "nesten-i16d-i1hl" (func $23))
+  (export "nes@4x2.shr_s" (func $24))
+    (func $2 (type $0)
+     drop
+       )
+  
+  (func $16 (type $0)
+    )
+  
+  (func $23 (type $0)
+    nst 0
+    i)
+ 
+  (func $24 (type $0)
+ ? shr_ 
+  (func $25 ÿÿÿ))

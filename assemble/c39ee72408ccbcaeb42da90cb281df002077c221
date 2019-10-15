@@ -1,0 +1,20 @@
+(func
+f64.gt
+f64.gt f64.gt
+f64.gt f64.gt f64.gt f64.gt f64.gt
+i64x2.splat f64.gt
+f64.gt
+f64.gt f64.gt
+f64.gt f64.gt f64.gt f64.gt f64.gt f64.gt f64.gt f64.gt
+f64.gt
+f64.gt f64.gt
+f64.gt f64.gt f64.gt
+f64.gt f64.gt
+f64.gt f64.gt f64.gt f64.gt f64.gt
+ f64.gt
+f64.gt
+f64.gt f64.gt
+f64.gt f64.gt f64.gt f64.gt f64.gt f64.gt f64.gt f64.gt
+f64.gt
+f64.gt f64.gt
+f64.gt f64.gt f64.gt f64.gt f64.gt f64.gt f64.gt f64.gt f64.gt f64.gt f64.gt f64.gt f64.gt f64.gt f64.gt)

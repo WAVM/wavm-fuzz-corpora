@@ -1,0 +1,5 @@
+(memory 0)(func () 
+memory.atomic.notify
+() 
+memory.atomic.notify
+memory.atomic.notify  ))

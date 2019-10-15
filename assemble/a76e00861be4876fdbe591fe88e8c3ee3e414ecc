@@ -1,0 +1,1 @@
+(func(i32.atomic.rmw16.xchg_u)(i32.atomic.rmw1i64.gt_u)(i16.ic.rmw16.xchg_u)(i32.atomic.rmw16.xchg_u)(i32.atoatomic.rmw16.xchg_u)(i3).atomic.rmw16.xchg_u))

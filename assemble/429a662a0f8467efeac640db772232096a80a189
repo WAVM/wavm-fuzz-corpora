@@ -1,0 +1,17 @@
+(module
+  (type $0 (func (param f64) (result funcref)))
+  (type $1 (func (param externref i64) (result i64 f64)))
+  (type $2 (func (param f32) (result externref v128)))
+  (type $3 (func (result v128 funcref f64 i64)))
+  (import "env" "table" (table $4 13 4294967295 shared externref))
+  (import "env" "func0" (func $6 (param f64) (result funcref)))
+  (import "env" "func1" (func $7 (param f32) (result externref v128)))
+  (elem $5 externref)
+  
+  (func $8 (type $1)
+    (param $0 externref)
+    (param $1 i64)
+    (result i64 f64)
+    (local $2 v128)
+    i64.const -137425   unreachable
+    ))

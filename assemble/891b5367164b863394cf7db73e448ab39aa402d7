@@ -1,0 +1,42 @@
+(module
+  (type $0 (func (param i64 funcref) (result externref)))
+  (memory $2  19 43662 shared)
+  (memory $3  46 13751)
+  (table $1  86 4294967295 externref)
+  
+  (func $5 (type $0)
+    (param $0 i64)
+    (param $1 funcref)
+    (result externref)
+    (local $2 funcref)
+    (local $3 v128)
+    (local $4 v128)
+    nop
+    local.get $3
+    f64x2.sqrt
+    i32x4.widen_low_i16x8_u
+    local.get $0
+    i64.eqz
+    i64.const -6689618744138584431
+    i64.const 6527117113271754321
+    i64.atomic.rmw.cmpxchg offset=705424963
+    local.get $0
+    i64.ctz
+    i64.ge_s
+    i64.extend_i32_u
+    f64.convert_i64_s
+    loop $loop (result funcref)
+      memory.size
+      br_if $loop
+      local.get $4
+      br $loop
+    end ;; $loop
+    ref.null func
+    local.set $2
+    ref.is_null
+    table.get $1
+    unreachable
+    )
+  
+  (data $4 
+    "\1a\c0\c5"))

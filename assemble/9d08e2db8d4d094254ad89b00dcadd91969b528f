@@ -1,0 +1,73 @@
+(module
+  (type $0 (func (param externref i32 externref) (result i32 f64)))
+  (type $1 (func (param i64 v128) (result f32)))
+  (type $2 (func (param externref f32 f64) (result i64 v128)))
+  (type $3 (func (param f64 i32 i64)))
+  (import "env" "memory" (memory $7 36 58526 shared))
+  (import "env" "memory" (memory $8 56 3543))
+  (import "env" "table" (table $4 86 4294967295 shared externref))
+  (import "env" "global5" (global $10 (mut f32)))
+  (memory $9  83 5411)
+  (table $5  52 4294967295 shared externref)
+  (table $6  68 4294967295 shared externref)
+  (global $11  (mut f32) (f32.const 0x1.a32f14p+31))
+  (global $12  i32 (i32.const 1856331215))
+  (global $13  funcref (ref.null func))
+  (global $14  (mut f64) (f64.const 0x1.4920204a65d3fp+60))
+  (global $15  f32 (f32.const 0x1.79d82ep+28))
+  (global $16  f32 (f32.const 0x1.9afbecp+30))
+  (elem $17 exception_type)
+  
+  (func $19 (type $0)
+    (param $0 externref)
+    (param $1 i32)
+    (param $2 externref)
+    (result i32 f64)
+    (local $3 funcref)
+    local.get $3
+    atomic.fence
+    drop
+    unreachable
+    )
+  
+  (func $20 (type $1)
+    (param $0 i64)
+    (param $1 v128)
+    (result f32)
+    (local $2 f64)
+    local.get $2
+    ref.null func
+    i32.const 935801910
+    table.get $4
+    f32.const -0x1.493ac4p+87
+    local.get $0
+    f64.convert_i64_u
+    loop $loop (param externref f32 f64) (result i64 v128)
+      v128.const i32x4 0x87fd04aa 0x019ab760 0x97f281e2 0xf0d8f791
+      i16x8.abs
+      i16x8.all_true
+      global.get $12
+      i64.const -418346680060183595
+      i64.atomic.rmw.and $8 offset=1635216569
+      loop $loop_0 (param f64 i32 i64)
+        i64.atomic.rmw32.xor_u $8 offset=3091108407
+        unreachable
+      end ;; $loop_0
+      drop
+      drop
+      memory.size $8
+      table.get $6
+      ref.is_null
+      table.get $6
+      ref.null func
+      ref.is_null
+      drop
+      ref.null extern
+      unreachable
+    end ;; $loop
+    call $20
+    return
+    )
+  
+  (data $18 
+    "\c6\c5\a2\f52\f8\dd]\8f\ac\d3y\9c\bb\01\c8\ce\b3x\cb!r"))

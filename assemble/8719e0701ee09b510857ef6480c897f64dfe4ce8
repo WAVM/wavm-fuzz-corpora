@@ -1,0 +1,94 @@
+(module
+  (type $0 (func (param f32 funcref i32) (result f64)))
+  (type $1 (func (param i32 i32) (result v128)))
+  (type $2 (func (result funcref)))
+  (type $3 (func (result i64 i64 i64)))
+  (type $4 (func (param externref i32) (result i64)))
+  (import "env" "memory" (memory $7 32 61851))
+  (import "env" "global3" (global $9 externref))
+  (import "env" "global4" (global $10 (mut funcref)))
+  (import "env" "global5" (global $11 (mut f64)))
+  (import "env" "global7" (global $12 i64))
+  (import "env" "func0" (func $19 (param f32 funcref i32) (result f64)))
+  (memory $8  0 15581 shared)
+  (table $5  34 4294967295 externref)
+  (table $6  2 4294967295 externref)
+  (global $13  (mut funcref) (ref.null func))
+  (global $14  f64 (f64.const 0x1.3cfff77d2fcc9p+63))
+  (global $15  (mut externref) (ref.null extern))
+  (global $16  i64 (i64.const 4716933546099782379))
+  (global $17  (mut i64) (i64.const 1411155385434275450))
+  (elem $18 declare
+    $19 $20 $21 $21 $19 $21 $19 $19
+    $21 $20 $21 $19 $19 $21 $20 $20
+    $21 $20 $19 $19 $19 $20 $21 $19
+    $20 $19 $19 $21 $21 $19 $19 $20
+    $20 $20 $19 $21 $20 $21 $20 $20
+    $20 $21 $20 $21 $19 $19 $21 $20
+    $20 $21 $19 $20 $20 $21 $21 $19
+    $19 $21 $21 $21 $19 $19 $20 $20
+    $20 $19 $19 $21 $20 $20 $19 $19
+    $19 $19 $19 $21 $20 $19 $19 $20
+    $20 $19 $19 $19 $19 $21 $20 $21
+    $20 $21 $20 $21 $21 $20)
+  
+  (func $20 (type $1)
+    (param $0 i32)
+    (param $1 i32)
+    (result v128)
+    local.get $1
+    i64.load32_u offset=855470859 align=2
+    drop
+    local.get $0
+    ref.null func
+    global.get $14
+    local.get $0
+    v128.load offset=485688158 align=8
+    i16x8.widen_low_i8x16_s
+    i16x8.extract_lane_s 0
+    i64.load8_u offset=358116992
+    i64.extend32_s
+    local.get $0
+    i32.eqz
+    v32x4.load_interleaved_3 offset=229138507 align=4
+    f32x4.min
+    return
+    )
+  
+  (func $21 (type $2)
+    (result funcref)
+    (local $0 v128)
+    i32.const -789548494
+    f64.const -0x1.7b08022f9356fp-961
+    elem.drop $18
+    global.get $17
+    i64.extend8_s
+    global.get $15
+    loop $loop (result i64 i64 i64)
+      table.size $5
+      f32.load $8 offset=1869291000 align=2
+      global.get $9
+      global.get $13
+      global.get $9
+      memory.size
+      loop $loop_0 (param externref i32) (result i64)
+        i32.load8_s $8 offset=4233983979
+        br_if $loop
+        ref.is_null
+        unreachable
+      end ;; $loop_0
+      global.set $17
+      ref.is_null
+      table.get $6
+      ref.null func
+      br 1
+    end ;; $loop
+    global.set $17
+    i64.add
+    drop
+    ref.null extern
+    global.set $15
+    drop
+    ref.null extern
+    unreachable
+    ))

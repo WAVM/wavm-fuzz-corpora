@@ -1,0 +1,1 @@
+(func(i32.trunc_sat_f32_s(i32.trunc_sat_f32_s (i32.trunc_sat_f32_s)(i32.trunc_sat_f32_s(i32.trunc_sat_f32_s(i32.trunc_sat_f32_s(i32.trunc_sat_f32_s)))))z)i32.trunc_sat_f32_s (i32.trunc_sat_f32_s)(i32.trunc_sat_f32_s)i32.trunc_sat_f32_s (i32.trunc_sat_f32_s(i32.trunc_sat_f32_s(i32.tr)(i32.trunc_sat_f32_s(i32.trunc_sat_f32_s(i32.trunc_sat_f32_s))))))

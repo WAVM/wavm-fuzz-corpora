@@ -1,0 +1,86 @@
+(module
+  (type $0 (func (param externref i32) (result i32)))
+  (type $1 (func (param i64)))
+  (type $2 (func (param i64 externref)))
+  (type $3 (func (param f32 i32 f32 i64) (result externref v128)))
+  (type $4 (func (param f64 externref) (result i64 i64)))
+  (type $5 (func (param i64 f64) (result v128 f64)))
+  (type $6 (func (result i64 externref f32 externref)))
+  (type $7 (func (result externref externref v128)))
+  (import "env" "global3" (global $10 (mut externref)))
+  (import "env" "global4" (global $11 (mut externref)))
+  (import "env" "func0" (func $16 (param externref i32) (result i32)))
+  (import "env" "func1" (func $17 (param i64 externref)))
+  (import "env" "func2" (func $18 (param f32 i32 f32 i64) (result externref v128)))
+  (memory $8  79 58978 shared)
+  (memory $9  27 6186 shared)
+  (global $12  (mut f64) (f64.const 0x1.4a25f5ef24aaep+62))
+  (global $13  (mut v128) (v128.const i32x4 0xd362f3f6 0xfff467e6 0x93b91019 0x6a739ba9))
+  (global $14  (mut f64) (f64.const 0x1.6c69eee78c82bp+57))
+  (elem $15 declare table)
+  
+  (func $19 (type $1)
+    (param $0 i64)
+    (local $1 externref)
+    (local $2 f32)
+    f32.const -0x1.b89674p+51
+    local.get $0
+    elem.drop $15
+    global.get $13
+    i16x8.extract_lane_u 4
+    f64.convert_i32_s
+    loop $loop (param i64 f64) (result v128 f64)
+      i32.trunc_f64_s
+      i32.const 1983213378
+      i32.rotl
+      v32x4.load_interleaved_3 offset=3533102476 align=8
+      f32x4.convert_i32x4_s
+      i32x4.le_u
+      f32x4.mul
+      i16x8.bitmask
+      unreachable
+    end ;; $loop
+    unreachable
+    )
+  
+  (func $20 (type $4)
+    (param $0 f64)
+    (param $1 externref)
+    (result i64 i64)
+    (local $2 f64)
+    (local $3 externref)
+    (local $4 i64)
+    global.get $12
+    block $block (result i64 externref f32 externref)
+      local.get $2
+      ref.null extern
+      global.set $10
+      atomic.fence
+      f64.neg
+      i32.trunc_sat_f64_s
+      i64.load8_u offset=2597361821
+      f64.const 0x1.003214179ae69p+693
+      local.set $2
+      i64.ctz
+      f64.convert_i64_s
+      block $block_0 (result externref externref v128)
+        f32.const 0x1.5b1336p-97
+        drop
+        i64.const -748678889540909709
+        call $19
+        local.get $0
+        local.set $0
+        nop
+        global.get $14
+        local.set $0
+        v128.const i32x4 0xbc6c5e6e 0xc166efa0 0x5324aa2f 0xf13b723f
+        ref.null func
+        unreachable
+      end ;; $block_0
+      ref.null func
+      ref.null func
+      ref.is_null
+      unreachable
+    end ;; $block
+    unreachable
+    ))

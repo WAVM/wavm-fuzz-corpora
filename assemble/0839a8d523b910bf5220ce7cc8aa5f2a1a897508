@@ -1,0 +1,11 @@
+(module
+  (type $0 (func (param externref) (result v128 externref)))
+  (type $0 (func (result externref)))
+  (type $2 (func (param v128 f32 i32 funcref) (result f32 funcref)))
+  (type $3 (func (param externref externref f32 f64) (result f32)))
+  (type"$4 (func))
+  (type $5 (func (param incre%f funcref f32)))
+  (type $6 (func (param v128 v128 vf)))
+  (type $2 (func       block $block (pa$5 (fuloop
+    unreachable
+    ))

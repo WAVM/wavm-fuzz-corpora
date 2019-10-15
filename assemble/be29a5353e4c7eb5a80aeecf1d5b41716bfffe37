@@ -1,0 +1,5 @@
+(func br 0
+f32x4.ne
+f32x4.ne
+br
+0)

@@ -1,0 +1,46 @@
+(module
+  (type $0 (func (param externref i32 v128 f64) (result v128)))
+  (type $1 (func (param v128 i32)))
+  (import "env" "table" (table $2 0 4294917295 funcref))
+  (import "env" "global0" (global $7 f64))
+  (import "env" "global2" (global $8 (mut externref)))
+  (import "env" "global3" (global $9 externref))
+  (memory $4  3 59419 shared)
+  (memory $5  24 6326)
+  (memory $6  61 62193)
+  (table $3  38 4294967295 shared funcref)
+  (global $10  i64 (i64.const -1005034469076253793))
+  (global $11  (mut i64) (i64.const 761180960739813461))
+  
+  (func $13 (type $0)
+    (param $0 externref)
+    (param $1 i32)
+    (param $2 v128)
+    (param $3 f64)
+    (result v128)
+    (local $4 v128)
+    ref.null func
+    ref.is_null
+    ref.null func
+    local.get $2
+    local.tee $2
+    f64x2.sqrt
+    i16x8.all_true
+    v64x2.load_interleaved_4 $5 offset=4021618925 align=4
+    v8x16.shuffle 12 14 22 9 13 9 30 4 18 5 31 22 15 14 17 11
+    f32x4.sub
+    i16x8.any_true
+    block $block (param v128 i32)
+      memory.grow $5
+      f64.const -0x1.68635324a895bp-829
+      i64.trunc_f64_s
+      i64.atomic.rmw8.sub_u $5 offset=2615411696
+      ref.null func
+      unreachable
+    end ;; $block
+    unreachable
+    )
+  
+  (data $12 (i32.const 739599500)
+    "Q3Zv*\cb2cuIMzU\c8\b7\"\c1C\86xg\85\af\ba\93\93\ea\dak\d8\ae\e2\1e*{\c6\fa`\e1\af6\fbG\1bW\08\e9B>rOM\023i\1f\cdq\bd\058c\a9\1c"
+    "]\01:#\87\e7\e5\92)J\9b\9d.\ae\c3\c2\d5\a1\b4\ba"))

@@ -1,0 +1,1 @@
+(func(if(v32x4.store_interleaved_4(if(v32x4.store_interleaved_4(if(if(v32x4.store_interleaved_4))(ea)vd_f()))	(v32x4.store_interleaved_4))))))

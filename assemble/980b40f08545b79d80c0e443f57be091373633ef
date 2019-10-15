@@ -1,0 +1,1 @@
+(func(throw 6(throw 1(throw 1(throw  1(throw 1(throw 0))))))))

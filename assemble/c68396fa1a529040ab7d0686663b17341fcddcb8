@@ -1,0 +1,48 @@
+(module
+  (type $0 (func (param v128 i64 f64 i32)))
+  (type $1 (func (result i64)))
+  (import "env" "table" (table $2 54 4294967295 externref))
+  (import "env" "table" (table $3 35 4294967295 funcref))
+  (import "env" "global2" (global $5 (mut i32)))
+  (import "env" "global3" (global $6 (mut funcref)))
+  (table $4  65 4294967295 externref)
+  (global $7  i32 (i32.const 1948802499))
+  (global $8  externref (ref.null extern))
+  
+  (func $11 (type $0)
+    (param $0 v128)
+    (param $1 i64)
+    (param $2 f64)
+    (param $3 i32)
+    (local $4 externref)
+    (local $5 v128)
+    )
+  
+  (func $12 (type $1)
+    (result i64)
+    (local $0 i32)
+    table.size $3
+    f64.convert_i32_u
+    i32.trunc_f64_s
+    global.get $5
+    nop
+    i32.lt_s
+    call $12
+    i64.extend16_s
+    f64.convert_i64_s
+    i32.trunc_sat_f64_u
+    i32.and
+    global.set $5
+    global.get $7
+    data.drop $9
+    f32.const -0x1.4cfb1cp-65
+    drop
+    table.get $3
+    unreachable
+    )
+  
+  (data $9 
+    "\f7KP\d7\bb\00\c8\92r\17#t\ee\nT\e4}#\a8\02\17\cc\89\9f\f3\d0\c8)\936\b0bg;\b3\9e")
+  
+  (data $10 
+    "3\9a0\be\88\e6[\0f\a0\a8\ef"))

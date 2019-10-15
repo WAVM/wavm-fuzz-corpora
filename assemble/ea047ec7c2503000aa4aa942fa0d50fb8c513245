@@ -1,0 +1,61 @@
+(module
+  (type $0 (func (param i32) (result i32)))
+  (type $1 (func (param funcref externref) (result funcref i64)))
+  (type $2 (func (param externref) (result externref f64)))
+  (import "env" "memory" (memory $6 9 63179 shared))
+  (import "env" "table" (table $3 19 4294967295 funcref))
+  (import "env" "table" (table $4 47 4294967295 funcref))
+  (import "env" "table" (table $5 87 4294967295 funcref))
+  (import "env" "func0" (func $12 (param funcref externref) (result funcref i64)))
+  (memory $7  74 47358 shared)
+  (elem $8 declare table
+    $3 $5 $5 $5 $4 $3 $5 $3
+    $4 $5 $3 $4 $4 $5 $3 $5
+    $4 $5 $4 $4 $3 $4 $3 $3
+    $5 $3 $4 $5 $5 $4 $4 $5
+    $4 $3 $4 $4 $5 $4 $4 $4
+    $3 $3 $5 $3 $5 $4 $4 $3
+    $5 $3 $3 $3 $5 $3 $5 $3
+    $5 $3 $3 $4 $5 $3 $5 $5
+    $5 $5 $4 $5 $4 $5 $4 $4
+    $5 $5 $3 $3 $3 $5 $3 $3
+    $5 $4)
+  (elem $9 declare funcref
+    (ref.func $13) (ref.func $12) (ref.func $14) (ref.null func)
+    (ref.func $13) (ref.null func) (ref.func $12) (ref.func $12))
+  
+  (func $13 (type $0)
+    (param $0 i32)
+    (result i32)
+    (local $1 v128)
+    table.size $3
+    local.get $0
+    local.tee $0
+    v16x8.load_interleaved_4 offset=250234724 align=8
+    v8x16.store_interleaved_4 $7 offset=3996724243 align=1
+    local.get $0
+    data.drop $11
+    local.set $0
+    atomic.fence
+    i32.const 1096693646
+    atomic.fence
+    i64.atomic.load8_u offset=1371031195
+    unreachable
+    )
+  
+  (func $14 (type $2)
+    (param $0 externref)
+    (result externref f64)
+    (local $1 f64)
+    (local $2 i32)
+    (local $3 externref)
+    unreachable
+    )
+  
+  (data $10 (memory $7) (i32.const 348815650)
+    "\ce\f4\a8\e1\ba\92\ba&zW\92\19:\eaqC\87\a9\"(\c9\bc\ebv\03\cf`5b\9d\0d<-{\eec_B\13\a7_\e5k+N\da\99\91\dd\ec\ca\815b\85\e9\fa\0fa5F-+\ff"
+    "kNz\16\04*\93pY\a6\b6t\f1\0cmA\7f1\9c\ff")
+  
+  (data $11 (i32.const -40125962)
+    "\cb6\b8\08[6\1b\ea\12\84\bc\81\db>w\1f\1aS\df\\\d5\11\ce\bf\cd+\cc\90\a6x\8fv;iD\8c7\82\fe_\09\c8?\b7/\f7@\1co~-\d7\aa\b7\11\a2*\1c;\\\c3\a0\07\9a"
+    "\a4\94\b1A\e3\e5\n8CA\a2\ccO\da\92,\c8V\95A\95n\19\0f\8c9\f5\e7\cd(+\e73\90"))

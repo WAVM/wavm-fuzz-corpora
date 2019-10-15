@@ -1,0 +1,1 @@
+(func(a)i32.amemory.size8 i32.atomic.store8)(func(a)i32.atomic.store8 i32.atomic.store8 i32.atomic.store8(a)i32.atomic.store8 i32.atomic.store8 i32.atomic.store8 i)

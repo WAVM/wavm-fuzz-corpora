@@ -1,0 +1,17 @@
+(func br 0
+i32.ge_s
+i32.ge_s
+i32.ge_s
+i32.ge_s i32.ge_s
+i32.ge_s
+i32.ge_s
+i32.ge_s
+br 00
+i32.ge_s
+i32.ge_s
+i32.ge_s
+i32.ge_s i32.ge_s
+i32.ge_s
+i32.ge_s
+i32.ge_s
+br 0)

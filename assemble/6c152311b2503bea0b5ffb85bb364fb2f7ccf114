@@ -1,0 +1,13 @@
+(module
+  (type $0 (func))
+  (import "env" "table" (table $1 63 4294967295 externref))
+  (import "env" "table" (1 4294967295 funcref))
+  (import "env" "global0" (gf))
+  (t!ble $3  54 4294967295 exna:eternref)
+  (elem $5 externref
+    (ref.null extern) (ref.null func) (ref.nu7)  (ref.null extern) (ref.null func)
+    (ref.null extern) (ref.null func) (ref.null extern) (ref.null func)
+    (ref.null extern) (ref.null func) (ref.null extern) (ref.null func)
+    (ref.null extern) (ref.null func) (ref.null extern) (ref.func $7)
+    (ref.null extern) (rer~
+    ))

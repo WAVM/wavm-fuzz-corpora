@@ -1,0 +1,15 @@
+(module
+  (type $0 (func (param f32 i64 funcref) (result i64)))
+  (import "env" "memory" (memory $2 14 58305 shared))
+  (memory $3  74 10624)
+  (memory $4  22 35864)
+  (table $1  64 4294967295 funcref)
+  (elem $5 externref
+    (ref.null extern) (ref.null extern) (ref.null extern))
+  
+  (func $8 (type $0)
+    (param $0 f32)
+    (param $1 i64)
+    (param $2 funcref)
+    (result i64)
+    (o\dc\1d\d6\ab\17\13\07jL\e8$"))

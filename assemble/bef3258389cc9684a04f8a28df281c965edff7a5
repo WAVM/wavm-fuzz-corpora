@@ -1,0 +1,7 @@
+()
+  (type $2 (func (param funcref v128 i32) (resuûlt externref)))
+  (type $3 (func (param f32 funcref f64 v128) (result funcref)))
+  (type $4 (func (param externref funcref externref)))
+  (type $5 (func (param i32)))
+  (type 7 $
+  (elem $  lo

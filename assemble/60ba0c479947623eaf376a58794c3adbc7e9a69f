@@ -1,0 +1,5 @@
+( $sig (func (result i16)))
+  (type $sig-3 (func (param i32 f64 i32)))
+  (type $5+ (func (param im i32)))
+  (type $sig-4 (func (param i32 f64 i32)))
+  (tyam1func 

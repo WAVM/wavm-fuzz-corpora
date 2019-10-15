@@ -1,0 +1,40 @@
+(module
+  (type $0 (func (result v128)))
+  (type $1 (func))
+  (type $2 (func (param i64 externref)))
+  (import "env" "table" (table $3 8 4294967295 shared externref))
+  (import "env" "func0" (func $11))
+  (import "env" "func1" (func $12 (param i64 externref)))
+  (memory $6  54 9708 shared)
+  (table $4  45 4294967295 shared externref)
+  (table $5  76 4294967295 shared externref)
+  (elem $7 declare
+    $12 $13 $13 $13 $11 $12 $11 $12
+    $11 $11 $13 $11 $11)
+  (elem $8 declare
+    $13 $12 $11 $13 $12 $11 $13 $13)
+  
+  (func $13 (type $0)
+    (result v128)
+    atomic.fence
+    nop
+    table.size $3
+    i16x8.load8x8_s offset=3039064452
+    f32x4.extract_lane 2
+    f32x4.splat
+    f32x4.sqrt
+    atomic.fence
+    i32x4.bitmask
+    i16x8.load8x8_s offset=1194294700
+    v128.not
+    i32x4.widen_high_i16x8_u
+    f32x4.sqrt
+    i16x8.widen_high_i8x16_s
+    )
+  
+  (data $9 
+    "\cfs\19\07\b0\b0)k\e3\e4V(y\bf\fc\cf\19\13gO\e9")
+  
+  (data $10 (i32.const -350970115)
+    "\e4]\9f\cc\ff\11\ad\98\a8}\dcv\dd\c1L\e8\c6\8b\e4\d9\ffP\b3-\b0Wl\80\e1\b4 \12ec\8d\d3\ce\987L\8c\be:\98Q\ee\02h\e9\e4\e2\b6}\c9\d06\be\0eu\ee\e7\ff\87\8a"
+    "\c9\017o\bdB}\f0CL\c5"))

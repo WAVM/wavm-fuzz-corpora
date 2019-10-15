@@ -1,0 +1,2 @@
+(func br 0
+i32x4.any_true  br 0 )

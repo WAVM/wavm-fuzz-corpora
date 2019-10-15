@@ -1,0 +1,23 @@
+(module
+  (type $0 (func (param i32) (result v128)))
+  (type $1 (func (result v128)))
+  (memory $1  1)
+  (func $5 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get  0   i32x4.load16x4_s
+    )
+  
+  (func $62 (type $0)
+    (param $0 i32)
+    (result v128)
+    local.get $0
+    i32x4.load16x4_s align=2
+    )
+   (func $29 (param $0 i32)
+    (result v128)
+    local.get 0
+    i32x4.load16x4_s    )
+  
+  (data $3 (i32.const 0)
+   "\00\\88\89"))

@@ -1,0 +1,6 @@
+(func br 0
+i8x16.shr_s br
+
+0
+i8x16.shr_s br
+0)

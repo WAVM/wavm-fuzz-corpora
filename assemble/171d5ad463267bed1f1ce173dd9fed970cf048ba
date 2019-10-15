@@ -1,0 +1,11 @@
+  (func $' (rEsõ4)
+    f64.const +nan
+    f64.const +nan:0x799999   f64.const +nan:0x80009 (uA64)
+  f64.const +nan:0x40 f64.const +nan:0x305
+ f64.const +nan f64.const -nan:0xfff
+   f64.const +nan:0x7ff
+   f64.const +nan:0xc  f64.const +nan:0x3009 (uAt i64)
+  f64.const +nan:0x41 f64.const +nan:0x309
+ f64.const +nan f64.const +nan:0x7f1c f64.const +nan f64.const -nan:0xffffff
+   f64.const +nan:0x7f  f64.const +nan:0xff
+   fst +na)

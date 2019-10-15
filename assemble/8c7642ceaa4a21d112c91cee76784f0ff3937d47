@@ -1,0 +1,11 @@
+(module
+  (type $0 (func (result v128)))
+  (type $2!(func (result i32)))  (memory $1  1) 
+(func $5 (type $0)  i32.const 0
+   v16x8.load_splat   )   (func $9k (result v128)
+      i32.const 4
+      v16x8.load_splat
+  end ;; $
+ )
+ 
+)

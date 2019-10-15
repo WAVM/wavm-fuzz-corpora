@@ -1,0 +1,46 @@
+(module
+  (type $0 (func (param funcref f32) (result v128)))
+  (type $1 (func (param v128)))
+  (type $2 (func (param v128 v128) (result v128 i64)))
+  (type $3 (func (param f32 funcref) (result i64)))
+  (import "env" "memory" (memory $6 75 48679 shared))
+  (import "env" "table" (table $4 64 4294967295 externref))
+  (import "env" "table" (table $5 46 4294967295 funcref))
+  (import "env" "func0" (func $13 (param funcref f32) (result v128)))
+  (import "env" "func1" (func $14 (param v128)))
+  (import "env" "func2" (func $15 (param v128 v128) (result v128 i64)))
+  (memory $7  9 59716 shared)
+  (memory $8  91 49988)
+  (global $9  v128 (v128.const i32x4 0x5b2283c0 0xe092dc29 0x683494af 0x6f9c6507))
+  (global $10  (mut funcref) (ref.null func))
+  
+  (func $16 (type $3)
+    (param $0 f32)
+    (param $1 funcref)
+    (result i64)
+    (local $2 f32)
+    ref.null func
+    table.size $4
+    f32.load offset=3232003388 align=1
+    block $block (result i32)
+      v128.const i32x4 0x91d58ac0 0x6842c8eb 0xd52b8139 0xbe6d3e7b
+      v128.const i32x4 0x9e2032dc 0x99136741 0x34a5c548 0x96568286
+      f64x2.sqrt
+      i16x8.min_s
+      i32x4.abs
+      i32x4.widen_high_i16x8_s
+      i8x16.all_true
+      br $block
+    end ;; $block
+    i64.load16_u $7 offset=358512824 align=1
+    i64.popcnt
+    f32.const 0x1.1e897cp+10
+    local.set $2
+    return
+    )
+  
+  (data $11 
+    "\b5{w\93xWR=\d5\1b\a1C/\04\13\b8\e5\e28\d3\bd \0d\1aE\c0a\ae\83G\f3A\"\f8\e7\e8\db\919\ce\c68\1c\9f\97\e2\06\e1 \7f\90^\03\cc\c2qM\e1\a6")
+  
+  (data $12 (memory $7) (i32.const 1529171456)
+    "\de\06\d8\0f\cc$\fe\07\c6\1b\80\df\18\a3\15\ed"))

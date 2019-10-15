@@ -1,0 +1,56 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param i64) (result f32 f64 v128)))
+  (import "env" "memory" (memory $2 80 37080 shared))
+  (import "env" "global1" (global $3 (mut i32)))
+  (import "env" "global5" (global $4 f32))
+  (import "env" "global6" (global $5 (mut i32)))
+  (import "env" "global7" (global $6 (mut f64)))
+  (global $7  f32 (f32.const 0x1.9ab366p+30))
+  (global $8  (mut f64) (f64.const 0x1.fe77df42bc044p+63))
+  (global $9  (mut i64) (i64.const 840136953351818180))
+  (global $10  f64 (f64.const 0x1.5c52680c63fc0p+62))
+  (elem $11 exception_type)
+  (elem $12 declare externref
+    (ref.null extern) (ref.null extern) (ref.null extern) (ref.null extern)
+    (ref.null extern) (ref.null extern))
+  
+  (func $15 (type $0)
+    (local $0 i32)
+    (local $1 f64)
+    (local $2 v128)
+    (local $3 f64)
+    local.get $1
+    global.get $10
+    i64.const 4208472600946982671
+    global.get $9
+    f64.convert_i64_s
+    f64x2.splat
+    i32x4.extract_lane 3
+    global.get $6
+    global.set $8
+    if $if (param i64) (result f32 f64 v128)
+      i64.popcnt
+      i64.eqz
+      i32.atomic.load16_u offset=3324128673
+      i32.ctz
+      i32.atomic.load16_u offset=3545611504
+      local.set $0
+      global.get $3
+      drop
+      local.get $1
+      local.set $3
+      global.get $3
+      return
+    else
+      return
+    end ;; $if
+    return
+    )
+  
+  (data $13 (i32.const 1454655422)
+    "\e7\9a\c70Oe\14E\c7E\d3\82\80\e8\ba\ba\a5\b1\89\ec\a7\a3\98\d3\9e:Eg\eb\ca|\a2\80y\02\9d\d30\9bi\04\b5D\da\ef91\14\d9r\04\81q\874\9aY\8c\"b\fd\d1\b1m"
+    "Z\eb\e3\81\a4=\d3\b8\a3ha\bdn\19\bb\13k(*\d1\0d\e8\c8\af\88\8e")
+  
+  (data $14 
+    "\ed\9e\c49\fa\f5\f0W)~\92\c3\cdsVnPD\82\88\bb\00\9c\de5\cb\a4\b1{\cc\86/\cbKb\85\e2\8db\004\c9\c6\bb\ad 5K\ceh^\\\8bdN"))

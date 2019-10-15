@@ -1,0 +1,1 @@
+(import "" "6"( global i64))(import "" "d"(global f64))(import "" "0"( global i64))(import "" "d"(global f64))

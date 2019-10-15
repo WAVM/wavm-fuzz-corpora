@@ -1,0 +1,30 @@
+(module
+  (type $0 (func (result v128)))
+  (export "f32-dec-sep1" (func $1))
+  (export "f32-dec-sep2" (func $6))
+  (export "f32-hex-sep2" (func $7))
+  (export "f32-hex-sep3" (func $6))
+  (export "hex-sep5" (func $10))
+  (
+  func $1 (type $0)  v128.const i32x4 0x49742400 0x49742400 0x49742400 0x49742400
+    )
+  
+(func $6 (type $0)
+    (result v128)
+    v128.const i32x4 0x4d20f00a 0x4d20f00a 0x4d20f00a 0x4d20f00a
+    )
+  
+  (func $7 (type $0)
+    (result v128)
+    v128.const i32x4 0x47d50780 0x47d50780 0x47d50780 0x4d50780
+    )
+  
+  (func $8    (result v128)
+    v128.const i32x4 0x4720fff1 0x4720fff1 0x4ff1 0x4720fff1
+    )
+  
+  (func )
+  
+  (func $10 (type $0)
+    (result v128)
+    v128.const i32x4 0x55abc228 0x55abc028 0x55abc028 0x55abc028 ))

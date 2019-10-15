@@ -1,0 +1,3 @@
+(func i32x4.max_u
+rt)
+(func  i32x4.max_u)(func i32x4.max_u)

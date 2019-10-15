@@ -1,0 +1,103 @@
+(module
+  (type $0 (func (param funcref) (result funcref)))
+  (type $1 (func (result f32)))
+  (type $2 (func (param i64) (result i64)))
+  (type $3 (func (result v128 i32 i32)))
+  (type $4 (func (param v128)))
+  (import "env" "memory" (memory $8 90 23859))
+  (import "env" "table" (table $5 91 4294967295 externref))
+  (import "env" "global1" (global $10 f64))
+  (import "env" "global2" (global $11 (mut i32)))
+  (import "env" "global3" (global $12 (mut externref)))
+  (import "env" "global4" (global $13 (mut i64)))
+  (import "env" "global5" (global $14 (mut f64)))
+  (import "env" "global6" (global $15 i32))
+  (memory $9  39 28949 shared)
+  (table $6  89 4294967295 shared funcref)
+  (table $7  45 4294967295 shared externref)
+  (global $16  i32 (i32.const -1990402587))
+  (global $17  i32 (i32.const -1349410015))
+  (global $18  i32 (i32.const -1780275344))
+  (global $19  i64 (i64.const 3743763819173243894))
+  (elem $20 (table $6) (i32.const 333446843) funcref
+    (ref.func $22) (ref.func $22) (ref.func $21) (ref.func $22)
+    (ref.null func) (ref.func $21) (ref.func $22) (ref.null func)
+    (ref.null func) (ref.func $21) (ref.func $22) (ref.func $22)
+    (ref.func $21) (ref.null func) (ref.null func) (ref.func $22)
+    (ref.func $22) (ref.func $22) (ref.func $21) (ref.null func))
+  
+  (func $21 (type $0)
+    (param $0 funcref)
+    (result funcref)
+    (local $1 f64)
+    (local $2 externref)
+    (local $3 v128)
+    (local $4 funcref)
+    global.get $14
+    global.get $13
+    atomic.fence
+    i64.ctz
+    drop
+    local.get $1
+    i64.reinterpret_f64
+    loop $loop (param i64) (result i64)
+      global.get $15
+      i16x8.splat
+      global.get $19
+      table.size $7
+      i64.extend_i32_s
+      i64.ge_u
+      v32x4.load_splat $9 offset=3078414300 align=2
+      i16x8.sub_saturate_u
+      drop
+      br $loop
+    end ;; $loop
+    global.set $13
+    drop
+    global.get $12
+    ref.is_null
+    table.get $7
+    unreachable
+    )
+  
+  (func $22 (type $1)
+    (result f32)
+    (local $0 v128)
+    atomic.fence
+    call $22
+    i64.trunc_sat_f32_u
+    loop $loop (result v128 i32 i32)
+      global.get $13
+      i32.const -1045692889
+      i32.load8_u $9 offset=1126157715
+      i16x8.splat
+      i8x16.abs
+      global.get $17
+      i16x8.replace_lane 5
+      block $block (param v128)
+        i8x16.all_true
+        i32.extend8_s
+        v128.const i32x4 0x7435087f 0x4cf486da 0x9c2b48a2 0x3ab17089
+        local.set $0
+        br_if $block
+        unreachable
+      end ;; $block
+      ref.null func
+      drop
+      global.set $13
+      table.size $7
+      drop
+      local.get $0
+      local.set $0
+      i32.const 384665427
+      table.get $7
+      drop
+      i64.const -6286649934832027091
+      ref.null extern
+      drop
+      unreachable
+    end ;; $loop
+    memory.atomic.notify $9 offset=1783372608
+    i64x2.shr_s
+    unreachable
+    ))

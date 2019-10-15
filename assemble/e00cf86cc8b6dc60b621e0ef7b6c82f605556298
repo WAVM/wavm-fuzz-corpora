@@ -1,0 +1,77 @@
+(module
+  (type $0 (func (param f64 funcref i64) (result v128)))
+  (type $1 (func (result v128)))
+  (type $2 (func (param f32 externref f64)))
+  (import "env" "global0" (global $4 f64))
+  (import "env" "func0" (func $8 (param f32 externref f64)))
+  (memory $3  83 6342 shared)
+  (global $5  (mut i64) (i64.const 4112392101465128151))
+  (global $6  f64 (f64.const 0x1.70e403a2edf15p+62))
+  (global $7  v128 (v128.const i32x4 0x13ba1a8c 0x22a29c05 0x7645e5f1 0x4f29dac6))
+  
+  (func $9 (type $0)
+    (param $0 f64)
+    (param $1 funcref)
+    (param $2 i64)
+    (result v128)
+    atomic.fence
+    i32.const -1585183639
+    v64x2.load_splat offset=3286144183
+    i8x16.extract_lane_u 7
+    atomic.fence
+    i32x4.splat
+    i32x4.any_true
+    f32.const 0x1.4f009ep+115
+    f32.const 0x1.1c85e0p+52
+    f32.gt
+    i32.atomic.store offset=1378719185
+    i64.const 6794664359629256758
+    f64.reinterpret_i64
+    f64.ceil
+    global.get $6
+    f64.lt
+    ref.null extern
+    ref.null func
+    local.set $1
+    drop
+    ref.null extern
+    ref.null func
+    local.set $1
+    ref.is_null
+    i32.store16 offset=728518984 align=1
+    global.get $6
+    ref.null func
+    ref.null extern
+    ref.null func
+    drop
+    drop
+    drop
+    local.set $0
+    local.get $1
+    drop
+    local.get $1
+    ref.null func
+    unreachable
+    )
+  
+  (func $10 (type $1)
+    (result v128)
+    (local $0 v128)
+    (local $1 v128)
+    global.get $7
+    global.get $6
+    nop
+    i64.trunc_sat_f64_u
+    i64x2.splat
+    i16x8.ne
+    i32x4.extract_lane 1
+    v64x2.load_interleaved_4 offset=1931684375 align=8
+    i16x8.narrow_i32x4_s
+    i16x8.widen_high_i8x16_s
+    i32x4.gt_s
+    i8x16.max_u
+    i16x8.all_true
+    i64.load16_u offset=2753412205
+    f32.convert_i64_s
+    unreachable
+    ))

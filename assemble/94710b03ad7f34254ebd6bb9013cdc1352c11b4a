@@ -1,0 +1,112 @@
+(module
+  (type $0 (func (param funcref funcref i64 i64) (result v128 f64)))
+  (type $1 (func (param f32) (result externref)))
+  (type $2 (func (param i32 f64 f32) (result funcref)))
+  (type $3 (func (param v128 v128 f64 f32) (result f32 v128)))
+  (type $4 (func (result i64 f32 f64 f64)))
+  (import "env" "table" (table $5 38 4294967295 shared funcref))
+  (import "env" "global0" (global $9 (mut f64)))
+  (import "env" "global2" (global $10 v128))
+  (import "env" "global3" (global $11 v128))
+  (import "env" "global4" (global $12 (mut externref)))
+  (import "env" "func0" (func $16 (param f32) (result externref)))
+  (import "env" "func1" (func $17 (param i32 f64 f32) (result funcref)))
+  (memory $8  81 65512 shared)
+  (table $6  90 4294967295 externref)
+  (table $7  21 4294967295 funcref)
+  (global $13  funcref (ref.null func))
+  (global $14  i64 (i64.const -7070603595699239293))
+  (elem $15 (table $6) (i32.const -1460823617) memory
+    $8 $8 $8 $8 $8 $8 $8 $8
+    $8 $8 $8 $8 $8 $8 $8 $8
+    $8 $8 $8 $8 $8 $8 $8 $8
+    $8 $8 $8 $8 $8 $8 $8 $8
+    $8 $8 $8)
+  
+  (func $18 (type $0)
+    (param $0 funcref)
+    (param $1 funcref)
+    (param $2 i64)
+    (param $3 i64)
+    (result v128 f64)
+    (local $4 f64)
+    (local $5 funcref)
+    (local $6 i32)
+    elem.drop $15
+    global.get $14
+    local.get $5
+    local.get $2
+    table.size $5
+    i32.atomic.load16_u offset=2199693880
+    local.get $2
+    i64.atomic.rmw8.add_u offset=2621034743
+    i64.lt_u
+    block $block (result i64 f32 f64 f64)
+      local.get $1
+      ref.null extern
+      global.get $14
+      i64.extend8_s
+      local.get $2
+      i64.eq
+      table.get $6
+      ref.null extern
+      global.set $12
+      global.set $12
+      unreachable
+    end ;; $block
+    f64.ge
+    local.set $6
+    drop
+    i64.atomic.store8 offset=1628995423
+    drop
+    ref.null extern
+    ref.null func
+    unreachable
+    )
+  
+  (func $19 (type $3)
+    (param $0 v128)
+    (param $1 v128)
+    (param $2 f64)
+    (param $3 f32)
+    (result f32 v128)
+    (local $4 i64)
+    (local $5 f32)
+    (local $6 v128)
+    (local $7 f64)
+    nop
+    table.size $5
+    local.get $1
+    i32x4.all_true
+    i32.xor
+    f32.load offset=4002943370 align=2
+    i64.trunc_f32_s
+    f64.reinterpret_i64
+    local.set $7
+    local.get $0
+    global.get $11
+    f64x2.div
+    i8x16.any_true
+    f64.load offset=3639658843
+    f64x2.splat
+    local.set $6
+    local.get $7
+    global.set $9
+    v128.const i32x4 0xdab4fbf4 0xecfc9d77 0x53800ca6 0x9457117d
+    local.set $6
+    local.get $1
+    local.set $1
+    i64.const 1872413020191286584
+    local.set $4
+    local.get $0
+    local.set $1
+    local.get $2
+    global.set $9
+    table.size $5
+    table.get $5
+    ref.null func
+    drop
+    drop
+    i64.const -9130434529375789193
+    unreachable
+    ))

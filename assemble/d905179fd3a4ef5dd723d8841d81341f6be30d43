@@ -1,0 +1,2 @@
+(func(i64.atomic.load 6)
+(i64.atomic.load 4)i64.atomic.load 4))

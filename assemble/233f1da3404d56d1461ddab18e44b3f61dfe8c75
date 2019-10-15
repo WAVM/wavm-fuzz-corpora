@@ -1,0 +1,66 @@
+(module
+  (type $0 (func))
+  (type $1 (func (result i64)))
+  (type $2 (func (param i32 f32 externref)))
+  (type $3 (func (param v128) (result v128)))
+  (import "env" "memory" (memory $4 95 17191))
+  (import "env" "memory" (memory $5 40 2710))
+  (import "env" "global0" (global $7 (mut f64)))
+  (memory $6  54 8695 shared)
+  (global $8  (mut f64) (f64.const 0x1.b09761e237432p+61))
+  
+  (func $10 (type $0)
+    (local $0 i32)
+    )
+  
+  (func $11 (type $0)
+    (local $0 i32)
+    (local $1 funcref)
+    (local $2 i64)
+    (local $3 v128)
+    global.get $8
+    v128.const i32x4 0xb08f8d83 0x4a7f8e34 0xae143ed2 0x450cb6fc
+    return
+    )
+  
+  (func $12 (type $1)
+    (result i64)
+    (local $0 f32)
+    (local $1 i64)
+    i32.const 1053261657
+    call $12
+    nop
+    i64.atomic.rmw8.xchg_u $5 offset=903117731
+    atomic.fence
+    call $12
+    i64.extend32_s
+    i64.rem_u
+    )
+  
+  (func $13 (type $2)
+    (param $0 i32)
+    (param $1 f32)
+    (param $2 externref)
+    (local $3 v128)
+    ref.null func
+    call $12
+    i32.wrap_i64
+    local.tee $0
+    v8x16.load_interleaved_2 $6 offset=1041227458 align=1
+    i8x16.add
+    local.get $2
+    local.set $2
+    i16x8.abs
+    block $block (param v128) (result v128)
+      f32x4.neg
+      f32x4.convert_i32x4_u
+      f64x2.abs
+      i32.const -1733795955
+      i64.load8_s $6 offset=2138945996
+      unreachable
+    end ;; $block
+    unreachable
+    )
+  
+  (data $9 
+    "\19\ee/q\82\8e\d8\d0,n\88\cc\a4\c1\1b\82\e2\cacs\dd\08k[\0e\bc7\d6!*\dexT7\b1\bb\e8\8d\fc\94G\dd'KQl\f1N\cd\c1\d3',DJ\dfbB<uV\f2v#"))

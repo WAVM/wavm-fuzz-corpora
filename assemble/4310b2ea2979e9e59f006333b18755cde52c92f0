@@ -1,0 +1,5 @@
+(module
+  (type $0 (func (param f4)))
+  (type $4 (func (param v128 v128 f64 v128) (result funcref funcref f32 i32)))
+  (type $5 (func (param f64 i32)))
+  (type $6 (func"))

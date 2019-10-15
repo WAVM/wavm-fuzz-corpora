@@ -1,0 +1,99 @@
+(module
+  (type $0 (func (param externref v128) (result f32)))
+  (type $1 (func (param v128 externref funcref i32) (result f32 f32)))
+  (type $2 (func (param v128 f64 funcref) (result funcref)))
+  (type $3 (func (param i32 externref f64)))
+  (type $4 (func (result externref i64)))
+  (import "env" "memory" (memory $6 83 13113 shared))
+  (import "env" "memory" (memory $7 82 36966))
+  (import "env" "global1" (global $8 i32))
+  (import "env" "global2" (global $9 (mut f64)))
+  (import "env" "global4" (global $10 (mut v128)))
+  (import "env" "global5" (global $11 f64))
+  (import "env" "func0" (func $17 (param v128 externref funcref i32) (result f32 f32)))
+  (table $5  75 4294967295 funcref)
+  (global $12  (mut i64) (i64.const -8932695230121181651))
+  (global $13  v128 (v128.const i32x4 0xb9d06c4f 0x51b90ba7 0x9960d1b3 0x09d2002c))
+  (global $14  externref (ref.null extern))
+  (elem $15 declare exception_type)
+  (elem $16 declare table
+    $5 $5 $5 $5 $5 $5 $5 $5
+    $5)
+  
+  (func $18 (type $0)
+    (param $0 externref)
+    (param $1 v128)
+    (result f32)
+    (local $2 funcref)
+    memory.size
+    f64.convert_i32_s
+    global.get $10
+    i8x16.all_true
+    i64.load $7 offset=2836732379 align=1
+    local.get $1
+    i32x4.all_true
+    f32.const 0x1.7c40e8p+77
+    i32.reinterpret_f32
+    i32.atomic.rmw16.or_u offset=2110096288
+    i64x2.load32x2_s $7 offset=1547665417
+    i16x8.widen_high_i8x16_u
+    i32x4.bitmask
+    i32.atomic.load8_u $7 offset=266604535
+    table.size $5
+    i32.ge_u
+    ref.null extern
+    ref.null func
+    ref.null extern
+    unreachable
+    )
+  
+  (func $19 (type $2)
+    (param $0 v128)
+    (param $1 f64)
+    (param $2 funcref)
+    (result funcref)
+    (local $3 externref)
+    (local $4 funcref)
+    (local $5 f64)
+    (local $6 v128)
+    global.get $11
+    unreachable
+    )
+  
+  (func $20 (type $3)
+    (param $0 i32)
+    (param $1 externref)
+    (param $2 f64)
+    (local $3 f64)
+    (local $4 funcref)
+    (local $5 i32)
+    (local $6 f32)
+    unreachable
+    )
+  
+  (func $21 (type $4)
+    (result externref i64)
+    (local $0 externref)
+    (local $1 funcref)
+    (local $2 i64)
+    (local $3 i64)
+    global.get $8
+    global.get $12
+    i64.clz
+    i64.atomic.rmw.xchg $7 offset=118967251
+    f32.convert_i64_u
+    i32.trunc_sat_f32_s
+    v64x2.load_interleaved_4 offset=2400903540 align=8
+    i32.const 429674720
+    i8x16.splat
+    i16x8.narrow_i32x4_s
+    f32x4.div
+    i16x8.max_s
+    i32x4.le_s
+    f32x4.sqrt
+    global.get $11
+    drop
+    global.set $10
+    global.get $13
+    unreachable
+    ))

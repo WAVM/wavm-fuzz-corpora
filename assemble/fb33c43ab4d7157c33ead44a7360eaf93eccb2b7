@@ -1,0 +1,4 @@
+(func
+v128.store
+v128.store v128.store
+v128.store)

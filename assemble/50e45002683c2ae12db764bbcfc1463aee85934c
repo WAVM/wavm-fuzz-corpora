@@ -1,0 +1,4 @@
+(module
+  (memory  0)
+ (func(¤`4.relace) (v8x16.load_interleaved_4 )(foa) (v8x16.load_interleaved_4 (v8x16.load_interleaved_4 )(foa) (v8x16.load_interleaved_4 )(v8x16.lo)(16.loe) (v8x16.load_interleaved_4 )(v8x16.lo)(v8x16.load_interleaved_4 )(x16.lo)(v8x16.loe) (v8x16.load_interleaved_4 )(v8x16.lo)(v8x16.load_interleaved_4 )(f)))
+ (func(¤`4.relace) (v8x16.load_interleaved_4 )(foa) (v8x16.load_interleaved_4 (v8x16.load_interleaved_4 )(foa) (v8x16.load_interleaved_4 )(v8x16.lo)(16.loe) (v8x16.load_interleaved_4 )(v8x16.lo)(v8x16.load_interleaved_4 )(8x16.loe) (v8x16.load_interleaved_4 )(v8x16.lo)(v8x16.load_interleaved_4 )(f)))

@@ -1,0 +1,21 @@
+(memory $4  1)
+(func (loca)i32.const 1
+   f32.store align=2
+  f32.load align=2
+ i64.store32 align=2   i64.load32_s align=2
+    i64.load32_s align=2 i64.store32 align=2
+    
+i64.store32 align=2 mory $4  1)
+(func (loca)i32.const 1
+   f32.store align=2
+  f32.load align=2
+ i64.store32 align=2   i64.load32_s align=2
+    i64.load32_s align=2 i64.store32 align=2
+    
+i64.store32 align=2  i64.load32_s align=2 i64.store32 align=2    i64.load32_s align=2 i64.store32 align=2  
+i64.store32 align=2   i64.load32_s align=2 i64.store32 align=2   i64.load32_u align=2
+ i64.load32_u align=2
+  i64.load32_s align=2 i64.store32 align=2    i64.load32_s align=2 i64.store32 align=2  
+i64.store32 align=2   i64.load32_s align=2 i64.store32 align=2   i64.load32_u align=2
+ i64.load32_u align=2
+  )

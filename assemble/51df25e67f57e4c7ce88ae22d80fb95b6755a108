@@ -1,0 +1,82 @@
+(module
+  (type $0 (func (param externref f32 f64 funcref) (result i32)))
+  (type $1 (func (param f32 externref funcref)))
+  (type $2 (func (param f32 v128 i64 v128)))
+  (type $3 (func (param f32) (result externref i64)))
+  (type $4 (func (param f32 i32 f32)))
+  (type $5 (func (param v128) (result i32 f32 externref f32)))
+  (import "env" "table" (table $6 38 4294967295 shared funcref))
+  (import "env" "global0" (global $9 (mut i32)))
+  (import "env" "global3" (global $10 v128))
+  (import "env" "func0" (func $13 (param f32 v128 i64 v128)))
+  (import "env" "func1" (func $14 (param f32 i32 f32)))
+  (memory $7  21 42868 shared)
+  (memory $8  55 27065)
+  (global $11  f64 (f64.const 0x1.1eaa10de607f3p+62))
+  (global $12  (mut f64) (f64.const 0x1.fbf0e8eee280cp+63))
+  
+  (func $15 (type $0)
+    (param $0 externref)
+    (param $1 f32)
+    (param $2 f64)
+    (param $3 funcref)
+    (result i32)
+    (local $4 funcref)
+    ref.null func
+    v128.const i32x4 0x2cb448b0 0xf6299000 0xafbdba6d 0x2b435225
+    loop $loop (param v128) (result i32 f32 externref f32)
+      i16x8.neg
+      i32.const 2141530006
+      v128.const i32x4 0x0792dd04 0xeb14ca7f 0xe9c06d34 0xf3be6609
+      v128.store $8 offset=3217698931 align=2
+      loop $loop_0 (result f64)
+        i32.const -24012532
+        i8x16.splat
+        i8x16.abs
+        i32.const -1242944434
+        v16x8.load_interleaved_4 $8 offset=817530680 align=1
+        i32x4.all_true
+        i8x16.shr_u
+        f32x4.sub
+        i32x4.gt_u
+        br $loop
+      end ;; $loop_0
+      unreachable
+    end ;; $loop
+    local.set $1
+    ref.is_null
+    unreachable
+    )
+  
+  (func $16 (type $1)
+    (param $0 f32)
+    (param $1 externref)
+    (param $2 funcref)
+    )
+  
+  (func $17 (type $3)
+    (param $0 f32)
+    (result externref i64)
+    nop
+    global.get $10
+    f32x4.abs
+    i16x8.abs
+    i16x8.extract_lane_s 3
+    local.get $0
+    local.get $0
+    f32.ge
+    v32x4.load_interleaved_3 offset=2816719334 align=2
+    i32x4.extract_lane 0
+    i32.clz
+    i32.ctz
+    i32x4.replace_lane 3
+    i16x8.lt_u
+    i8x16.extract_lane_u 14
+    i32.atomic.rmw16.add_u $8 offset=1146055369
+    drop
+    global.get $10
+    ref.null func
+    ref.is_null
+    i32x4.shl
+    unreachable
+    ))

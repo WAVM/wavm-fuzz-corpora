@@ -1,0 +1,2 @@
+(func br 0 f64x2.ne
+f64x2.ne f64x2.ne br 0)

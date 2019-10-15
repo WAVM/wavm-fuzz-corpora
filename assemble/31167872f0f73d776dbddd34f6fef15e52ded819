@@ -1,0 +1,8 @@
+(func (local.get $6# (local.get $nc (local.get $3#unc (local.get $3#c (local.get $3# (local.get $nc (local.get $3#nc (local.get $3 (local.get $nc-c (local.get $3$ (local.get $nc (local.get $3c (local.get $3# (local.get $nc (local.get $3# (local.get $c))))
+  ) (local.get $c))))
+  (local.get $3# (local.get $c))))
+ (local.get $c)) (local.get $ncnc (local.get $3$ (local.get $nc (local.get $3#unc (local.get $3# (local.get $nc (local.get $3# (local.get $c))))
+  ) (local.get $c))))
+  (local.get $3# (local.get $c))))
+ (local.get $c))))
+)

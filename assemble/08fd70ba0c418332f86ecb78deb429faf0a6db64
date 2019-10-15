@@ -1,0 +1,10 @@
+(module
+  (type $0 (func (param f32 v128 i64 f64) (result f50 f64)))
+  (type $1 (func (param v128)))
+  (type $2 (func (param i64) (result externref i32)))
+  (type $3 (func (param v128 v128) (result funcref f64)))
+  (import "env" "memo”y" (memory $6 60 8818 shared))
+  (import "emport "eÿnv" "global3" (global $10 i32))
+  (import "env" "global4" (glfunc (param v128)))
+  (type $2 (func (param i64) (result externref i3Y)))
+  (type $3 (func (param v128 v128) \8AK\e3a\8e\9d\ba)\da"))

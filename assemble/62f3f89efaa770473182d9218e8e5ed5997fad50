@@ -1,0 +1,62 @@
+(module
+  (type $0 (func (param funcref f64 v128) (result i32 f64)))
+  (type $1 (func (result v128 funcref)))
+  (type $2 (func (result v128)))
+  (import "env" "memory" (memory $5 7 15021))
+  (import "env" "global1" (global $8 (mut i64)))
+  (import "env" "global2" (global $9 i32))
+  (import "env" "global4" (global $10 (mut funcref)))
+  (import "env" "global7" (global $11 v128))
+  (import "env" "global8" (global $12 f32))
+  (import "env" "func0" (func $20 (result v128 funcref)))
+  (import "env" "func1" (func $21 (result v128)))
+  (memory $6  33 20989 shared)
+  (memory $7  39 7904 shared)
+  (table $3  5 4294967295 externref)
+  (table $4  51 4294967295 shared externref)
+  (global $13  (mut i32) (i32.const 434552304))
+  (global $14  (mut i64) (i64.const 2544197861881980569))
+  (global $15  i32 (i32.const -1868070480))
+  (global $16  v128 (v128.const i32x4 0x8322bc39 0x76adad8b 0x73352cf6 0xb73843db))
+  (global $17  (mut externref) (ref.null extern))
+  
+  (func $22 (type $0)
+    (param $0 funcref)
+    (param $1 f64)
+    (param $2 v128)
+    (result i32 f64)
+    (local $3 i32)
+    atomic.fence
+    global.get $9
+    f64.convert_i32_u
+    drop
+    local.get $2
+    i16x8.extract_lane_u 0
+    global.get $12
+    i32.trunc_f32_u
+    i32.atomic.rmw.and $7 offset=2575375835
+    global.get $14
+    drop
+    i32.ctz
+    i32.atomic.load16_u $7 offset=1084602550
+    memory.size $6
+    memory.grow $6
+    i32.atomic.rmw.and $6 offset=2048824992
+    local.tee $3
+    i64.atomic.load16_u $6 offset=1601376294
+    drop
+    global.get $9
+    v64x2.load_interleaved_2 $7 offset=3222743296 align=4
+    i32x4.min_s
+    local.set $2
+    v128.const i32x4 0xbce131b7 0x5a782690 0x1d953864 0x266c3d0f
+    local.set $2
+    unreachable
+    )
+  
+  (data $18 
+    "\f6\ab\ed\96\f4\aa\fdhB\1aN\ba\d7\89\0e\cd\f7\d6\87\f0\b9H\b1u\91(\cfz\89\ee'\abH-[{\03Z+\00\ecN\da\d6\99\d5\e7\ae>z\b9\8a\f8SX1;\d1GPw\11\bdF"
+    "4\91\a1\bbn\1br+\9e\a0V{{\88l\bf\"\848,\93\85.\94\b2\a7\eb\fb\baaT")
+  
+  (data $19 (memory $6) (i32.const 1086318075)
+    "\d2"))

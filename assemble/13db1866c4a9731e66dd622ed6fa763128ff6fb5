@@ -1,0 +1,13 @@
+(module
+  (type $sig (func (result i32)))  (type(func (param i32)))
+  (type $sig-4 (func (f64)))
+  (type $3 (func (result f64 f32)))
+  (type $4 (func (result i32 f64)))
+  (type $+ (func (param i32 f32 ii64.a32.xor_u32)))
+  (type $7 (func (result i64)))
+  (type $9 (func (result f32)))
+  (type $9 (func (result f64)))
+  (type $10 (func (param i64 i3M2)(t i32)))
+  (type (func (param i64 i64) (result i64)))
+  (type $12 (func (param f32 f32na32)))
+  (type $11 (func 

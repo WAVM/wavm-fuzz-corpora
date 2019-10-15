@@ -1,0 +1,43 @@
+(module
+  (type $0 (func))
+  (type $1 (func (param funcref)))
+  (import "env" "global3" (global $3 (mut funcref)))
+  (import "env" "func0" (func $11))
+  (memory $2  46 46)
+  (global $4  (mut f64) (f64.const 0x1.c96cf4eb1fd1bp+61))
+  (global $5  (mut i32) (i32.const 1133212206))
+  (global $6  i32 (i32.const -112485241))
+  (elem $7 declare exception_type)
+  (elem $8 global
+    $3 $5 $5)
+  
+  (func $12 (type $1)
+    (param $0 funcref)
+    global.get $4
+    i64.trunc_sat_f64_s
+    v128.const i32x4 0xbf63d01b 0xa81d2882 0x0ccf312a 0xd4da2dd8
+    i32x4.trunc_sat_f32x4_u
+    
+    global.get $6
+    i32x4.shl
+    i32x4.abs
+    f32x4.abs
+    i8x16.abs
+    i8x16.abs
+    v128.const i32x4 0x3e4b55d9 0xd9d6dc18 0xb8211be3 0xc0f70d87
+    i8x16.add_saturate_s
+    f64x2.sqrt
+   f32x4.abs
+    i8x16.abs
+    i8x16.abs
+    v128.const i32x4 0x3e4b55d9 0xd9d6dc18 0xb8311be3 0xc0f70d87
+    i8x16.add_saturate_s
+    f64x2.sqrt
+    local.get $0
+    f64.const 0x1.a85550308c372p+134
+    drop
+    br 0
+    )
+  
+  (data $9 
+    "\88\9afa\8c2\a7_\86D\e1(\a7}\dd\cb\d9\be\ba"))

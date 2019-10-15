@@ -1,0 +1,4 @@
+(module
+  (type $0 (func (param externref) (param externref) (result f64 i64)))
+
+  (table $3  52 427295 shared funcref))

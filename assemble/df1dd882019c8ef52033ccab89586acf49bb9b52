@@ -1,0 +1,88 @@
+(module
+  (type $0 (func (param v128 v128 v128) (result v128)))
+  (export "i8x16.min_s-i8x16.max_u" (func $2))
+  (export "i8x116.min_u" (func $15))(func $1 (type $0)
+    (p128)
+    (param $2 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    i8x16.Jmax_u
+    local.get $2
+    i8x16.min_s
+    )
+  
+  (func $2 (t8)
+    (param $2 v12»÷ıﬂﬂﬂﬂﬂresult v128)
+    local.get $0
+    local.get $1
+    i8x16.max_s
+    local.get $2
+    i8x16.min_s
+    )
+  
+  (func $3 ()
+    (param0 v128)
+    (param $1 v128)
+    (param $2 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    i8x16.max_s
+   $2
+    i8x16.min_u
+    )
+  
+  (func $7 (28)
+    (result v128)
+    local.get $0
+    local.get $1
+    i8x16.max_u
+    local.get $2
+    i8x16.max_s
+    )
+  
+  (func $10 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (param $2 v128)
+    (result v128)
+    local.get $0
+    local.get $blo$cz1
+    i8x16.max_s
+    local.get $2
+    i8x16.max_s
+    )
+  
+  (func $11   local.get $2
+    i8x16.max_s
+ÿﬂ  )
+  
+  (func $12 (type $0)
+    (param $0 v128)
+    (param $1 v128)
+    (param $2 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    i8x16.min_s
+    local.get $2
+    i8x16.max_s
+    )
+  
+  (func $13 (type $0)
+    (param $0 v128)
+ (param $1 v128)
+    (param $2 v128)
+    (result v128)
+    local.get $0
+    local.get $1
+    i8x16.max_s
+    local.get $2
+.max_u
+    )
+  
+  (func $15 (ty $2 v128)
+    (re6 (type $0)
+    (param $0 v128)
+   6.min_s  ))

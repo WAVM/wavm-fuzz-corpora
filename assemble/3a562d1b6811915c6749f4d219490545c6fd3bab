@@ -1,0 +1,57 @@
+(module
+  (type $0 (func (param v128 f64 v128 i64) (result v128 externref)))
+  (type $1 (func (result v128 externref)))
+  (import "env" "memory" (memory $5 9 24058 shared))
+  (import "env" "global0" (global $6 f32))
+  (import "env" "global2" (global $7 funcref))
+  (import "env" "func0" (func $14 (result v128 externref)))
+  (table $2  37 4294967295 shared externref)
+  (table $3  80 4294967295 externref)
+  (table $4  94 4294967295 funcref)
+  (global $8  f32 (f32.const 0x1.6c0034p+31))
+  (global $9  externref (ref.null extern))
+  (global $10  (mut v128) (v128.const i32x4 0x42beb094 0xa1de92b7 0x5b89a0df 0x59a60afb))
+  (global $11  (mut externref) (ref.null extern))
+  (global $12  i32 (i32.const 13903627))
+  (elem $13 (i32.const 1487661990) memory
+    $5 $5 $5 $5 $5 $5 $5 $5
+    $5 $5 $5 $5 $5 $5 $5 $5
+    $5 $5 $5 $5 $5 $5 $5 $5
+    $5 $5 $5 $5 $5 $5 $5 $5
+    $5 $5 $5 $5 $5 $5 $5 $5
+    $5 $5 $5 $5 $5 $5 $5 $5
+    $5 $5 $5 $5 $5 $5 $5 $5
+    $5 $5 $5 $5 $5 $5 $5 $5
+    $5 $5 $5 $5 $5 $5 $5 $5
+    $5 $5 $5 $5)
+  
+  (func $15 (type $0)
+    (param $0 v128)
+    (param $1 f64)
+    (param $2 v128)
+    (param $3 i64)
+    (result v128 externref)
+    call $14
+    i64.const -7077036412925118007
+    local.get $2
+    f64x2.neg
+    local.set $2
+    i64.extend16_s
+    global.get $11
+    ref.is_null
+    i64.load offset=1099206457 align=2
+    i64.add
+    f32.convert_i64_u
+    global.get $6
+    i32.const 1160619016
+    table.size $4
+    i32.atomic.rmw8.and_u offset=1123636453
+    table.get $2
+    global.set $11
+    f32.lt
+    br_if 0
+    ref.is_null
+    i16x8.shr_s
+    ref.null func
+    unreachable
+    ))

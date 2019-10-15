@@ -1,0 +1,48 @@
+(module
+  (type $0 (func (param funcref f32) (result funcref externref)))
+  (type $1 (func))
+  (type $2 (func (param funcref funcref f32) (result i64)))
+  (type $3 (func (param i64 externref) (result i32)))
+  (type $4 (func (param v128 externref i32)))
+  (import "env" "memory" (memory $6 92 51379 shared))
+  (import "env" "func0" (func $9 (param funcref f32) (result funcref externref)))
+  (import "env" "func1" (func $10))
+  (import "env" "func2" (func $11 (param i64 externref) (result i32)))
+  (import "env" "func3" (func $12 (param v128 externref i32)))
+  (table $5  24 4294967295 externref)
+  
+  (func $13 (type $2)
+    (param $0 funcref)
+    (param $1 funcref)
+    (param $2 f32)
+    (result i64)
+    (local $3 i32)
+    (local $4 f64)
+    (local $5 f64)
+    (local $6 f64)
+    ref.null func
+    local.set $1
+    table.size $5
+    v64x2.load_splat offset=292246014 align=4
+    i8x16.extract_lane_s 15
+    i32.load8_u offset=633178901
+    v128.load offset=3833596388 align=8
+    i32x4.bitmask
+    local.set $3
+    local.get $3
+    v32x4.load_interleaved_4 offset=3769146344
+    i32x4.all_true
+    f64.load offset=625614496 align=2
+    f64.abs
+    f64.neg
+    ref.null extern
+    unreachable
+    )
+  
+  (data $7 (i32.const -2010569273)
+    "\03\f1j\e9y\1d\d9\e3\07\d4\d5\f6\bc!iy7(\cd\0f6\00M\f4\9f\b3\e2\f0\ec\a0\b7\fe\d1\\\ae\0d\14\ebl;\e4\\J\f3G\ce\d8\b8\e4A\b8\f3\90\deOu\d3\9c\9e\8c\fc\11\07\d4"
+    "\8f\bcg\0c\d3\dd9\bc\14'\04`\e72\a0)\1f29=\d5\ea.\be\0b\d6\12\de\99@\\\eb")
+  
+  (data $8 (i32.const -98316771)
+    "\e4@I\bb\12\abLM\e5\\\f5D\c0\efi\f9\07z\c6\ffAK\e5O\ec;\1e\cd\a9e\1f\a7P\96\c1\ac\8f\9f(\89\8d\14\0d\b2\aa!r:\fc,g\88\d2\e3zX\cd;I:c\df\f78"
+    "\dc\b6\e6\91~\ceCu\e5c\a2\ea\fbV\b1\nb\ba\b9\8c\80G\c8\aa\a6\86:"))

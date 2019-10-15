@@ -1,0 +1,32 @@
+(module
+  (type $0 (func (param v128) (result funcref)))
+  (import "env" "memory" (memory $1 67 29996 shared))
+  (import "env" "global3" (global $3 f64))
+  (memory $2  40 63000 shared)
+  (global $4  externref (ref.null extern))
+  (global $5  (mut externref) (ref.null extern))
+  (global $6  i64 (i64.const -7528085264149181052))
+  
+  (func $7 (type $0)
+    (param $0 v128)
+    (result funcref)
+    (local $1 v128)
+    atomic.fence
+    f32.const -0x1.0ed626p-12
+    f32.floor
+    f32.ceil
+    f32.ceil
+    global.get $5
+    global.get $4
+    local.get $1
+    i8x16.extract_lane_u 0
+    v32x4.load_interleaved_4 offset=3362993670 align=1
+    i32x4.ge_s
+    i32.const -1519486835
+    i64x2.shl
+    i32x4.widen_low_i16x8_s
+    v128.bitselect
+    i16x8.extract_lane_u 3
+    i64.load32_s offset=1606220158
+    unreachable
+    ))

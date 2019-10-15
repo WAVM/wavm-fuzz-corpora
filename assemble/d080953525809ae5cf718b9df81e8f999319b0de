@@ -1,0 +1,4 @@
+(module
+  (memory 5)(func unreachable
+ i64.atomic.rmw8.and_u unreachable)(memory 0)(func unreachable
+ i64.atomic.rmw8.and_u unreachable))

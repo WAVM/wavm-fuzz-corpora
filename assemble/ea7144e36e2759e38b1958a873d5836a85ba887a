@@ -1,0 +1,43 @@
+(module
+  (type $0 (func (param funcref v128)))
+  (type $1 (func (param funcref i64 v128 funcref) (result v128)))
+  (type $2 (func (param v128) (result i64)))
+  (type $3 (func (param v128 v128 v128) (result externref i64 f64 funcref)))
+  (import "env" "memory" (memory $4 39 9929 shared))
+  (import "env" "memory" (memory $5 2 52510))
+  (import "env" "memory" (memory $6 94 3558 shared))
+  (import "env" "global1" (global $7 i32))
+  (import "env" "func0" (func $11 (param funcref v128)))
+  (import "env" "func1" (func $12 (param funcref i64 v128 funcref) (result v128)))
+  (global $8  v128 (v128.const i32x4 0x62d46806 0xf8bb7cf0 0xc4a14e86 0x709bf073))
+  (global $9  f32 (f32.const 0x1.6df238p+31))
+  (elem $10
+    $11 $13 $12 $12 $11 $12 $13 $12
+    $12 $11 $11 $11 $13 $11 $13 $12
+    $12 $12 $11 $12 $11 $11 $12 $12
+    $13 $13 $12 $13 $12 $11 $13 $13
+    $11)
+  
+  (func $13 (type $2)
+    (param $0 v128)
+    (result i64)
+    ref.null func
+    memory.size
+    v8x16.load_interleaved_3 $6 offset=2038914498 align=1
+    f64x2.min
+    f64x2.le
+    i32x4.trunc_sat_f32x4_s
+    i8x16.all_true
+    v64x2.load_interleaved_4 $5 offset=1763609658 align=2
+    i8x16.lt_s
+    block $block (param v128 v128 v128) (result externref i64 f64 funcref)
+      f32x4.mul
+      i8x16.sub_saturate_u
+      call $13
+      ref.null func
+      global.get $9
+      drop
+      unreachable
+    end ;; $block
+    unreachable
+    ))

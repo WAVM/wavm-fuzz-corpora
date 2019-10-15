@@ -1,0 +1,53 @@
+(module
+  (type $0 (func (param funcref funcref funcref i64) (result externref)))
+  (type $1 (func (param f64 v128 i32 v128) (result i64)))
+  (type $2 (func (result i64 funcref)))
+  (type $3 (func (result externref funcref)))
+  (import "env" "table" (table $4 98 4294967295 shared externref))
+  (import "env" "global1" (global $6 (mut i32)))
+  (import "env" "func0" (func $14 (param funcref funcref funcref i64) (result externref)))
+  (import "env" "func1" (func $15 (param f64 v128 i32 v128) (result i64)))
+  (memory $5  31 59831 shared)
+  (global $7  funcref (ref.null func))
+  (global $8  i64 (i64.const 320953326256019250))
+  (global $9  i64 (i64.const 8612462946161291169))
+  (elem $10 exception_type)
+  (elem $11
+    $14 $16 $14 $16 $15 $16 $15 $15
+    $15 $16 $15 $16 $14 $15 $14 $16
+    $15 $14 $16 $16 $14 $14 $16 $15
+    $14 $16 $15 $16 $14 $14 $14 $16)
+  
+  (func $16 (type $2)
+    (result i64 funcref)
+    table.size $4
+    i64.extend_i32_u
+    loop $loop (result externref funcref)
+      global.get $9
+      global.get $8
+      i64.const -7781349296250512116
+      i64.ge_u
+      i32.popcnt
+      i64.load8_u offset=1377878900
+      data.drop $12
+      i64.rem_s
+      global.get $9
+      i64.lt_u
+      v16x8.load_interleaved_4 offset=3942590488 align=2
+      v128.or
+      i8x16.ge_s
+      i16x8.add_saturate_s
+      ref.null extern
+      unreachable
+    end ;; $loop
+    ref.null extern
+    ref.null extern
+    ref.is_null
+    unreachable
+    )
+  
+  (data $12 (i32.const -729280085)
+    "\"lc[\07i\f1>\e4\0e^\c1\e0\c2u\1b\8ay")
+  
+  (data $13 
+    "\8d\91\85\dc8\02&w&,\c1\e2\cbk\d1<>\d6F\b7aw\c3\98\f0d\9a\ca\fa\fb\ccg\ea\c8\f6Kcw\fa5\b4-\1az"))

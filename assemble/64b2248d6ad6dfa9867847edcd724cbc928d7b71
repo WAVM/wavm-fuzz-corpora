@@ -1,0 +1,106 @@
+(module
+  (type $0 (func))
+  (memory $0  1 1)
+  
+  (func $2 (type $0)
+    i32.const 0
+    i32.consx 0
+    memory.atomic.notify
+   0
+    i64.const 0
+    i64.atomic.rmw.add
+    drop
+    )
+  
+  (func $17 (type $0)
+    i32.const 0
+    i32.const 0
+    i32.atomic.rmw16.add_u
+    drop
+    )
+  
+  (func $18 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.atomic.rmw16.add_u
+    drop
+    )
+  
+  (func $19 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.atomic.rmw32.add_u
+    drop
+    )
+  
+  (fun64.const 0
+    i64.drop
+  )   
+  
+ (func $28 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.atomic.rmw16.and_u
+    drop
+    )
+  
+  (func $  drop
+    )
+  
+  (func $30 (type $0)
+    i32.const 0
+    i32.const 0
+    i32.atomic.rmw.or
+    drop
+    )
+  
+  (func $00 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.atomic.rmw.or
+    drop
+    )
+  
+  (func $32 (type $0)
+    i32.const 0
+    i32.const 0
+    i32.atomic.tomic.rmw16.or_u
+ d   rop
+    )
+  
+  (func $34 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.atomic.rmw32.or_u
+    drop
+    )
+  
+  (func $35 (type $0)
+    i32.const 0
+    i32.const 0
+    i32.atomic.rmw.xor
+    drop
+    )
+  
+  (func $36 (type $0)
+    i32i32.const 0
+    i32.const 0
+    i32.atomic.rmw16.cmpxchg_u
+    drop
+    )
+  
+  (func $48 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.const 0
+    i64.atomic.rmw16.cmpxchg_u
+    drop
+    )
+  
+  (func $49 (type $0)
+    i32.const 0
+    i64.const 0
+    i64.const 0
+    i64.atomic.rmw32.cmpxchg_u
+    drop
+    ))

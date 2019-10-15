@@ -1,0 +1,38 @@
+(module
+  (type $0 (func (result funcref)))
+  (type $1 (func (param v128 v128 v128 i32)))
+  (type $2 (func (result v128 f64 funcref)))
+  (import "env" "func0" (func $8 (param v128 v128 v128 i32)))
+  (memory $3  68 24599 shared)
+  (global $4  externref (ref.null extern))
+  (global $5  i32 (i32.const 866867792))
+  (elem $6 declare table)
+  
+  (func $9 (type $0)
+    (result funcref)
+    (local $0 i64)
+    (local $1 externref)
+    (local $2 externref)
+    call $9
+    loop $loop (result v128 f64 funcref)
+      local.get $0
+      i64.extend8_s
+      i64x2.splat
+      v128.const i32x4 0x0cd60621 0xf7108efd 0x4b1ec5cf 0x4ad72103
+      i16x8.ne
+      i16x8.abs
+      i32x4.abs
+      i32x4.all_true
+      f32.convert_i32_s
+      v128.const i32x4 0x780ac90e 0xf07146ec 0xb92b5ba5 0xa8686147
+      atomic.fence
+      f64x2.abs
+      i32x4.extract_lane 3
+      unreachable
+    end ;; $loop
+    br 0
+    )
+  
+  (data $7 
+    "f\88h>B\86\06\c4\f6\c3\fe\b5\0b[\9f~\d7/\1a\e6\db\da\9eW\b7\9a[X\d2\f3\8f\cc\02\fe\94\a3\c8\a8\918\f5\d3R\f5H\13MF\b6\df\b7\df\cf7\b4\00\1c+\9f3\b0\0f\e1v"
+    "_\18\1c"))

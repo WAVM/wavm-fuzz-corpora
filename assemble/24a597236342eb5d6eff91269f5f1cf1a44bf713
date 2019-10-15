@@ -1,0 +1,70 @@
+(module
+  (type $0 (func (param externref f64 funcref) (result funcref externref)))
+  (type $1 (func (param v128 v128)))
+  (type $2 (func (param i32 funcref)))
+  (type $3 (func (param f64) (result funcref)))
+  (type $4 (func (param f64 i32) (result v128 v128)))
+  (type $5 (func (param i32 v128) (result i32)))
+  (type $6 (func (param i32) (result v128 funcref f32)))
+  (import "env" "global1" (global $8 i32))
+  (import "env" "func0" (func $10 (param externref f64 funcref) (result funcref externref)))
+  (import "env" "func1" (func $11 (param v128 v128)))
+  (import "env" "func2" (func $12 (param f64 i32) (result v128 v128)))
+  (memory $7  79 23473 shared)
+  (global $9  (mut v128) (v128.const i32x4 0xcc251fda 0x28560259 0xbe6143e0 0x3a9a9d4e))
+  
+  (func $13 (type $2)
+    (param $0 i32)
+    (param $1 funcref)
+    (local $2 externref)
+    f64.const 0x1.2949fbb419f14p-510
+    global.get $9
+    local.get $2
+    i32.const 482520667
+    i32.extend16_s
+    i32.ctz
+    i32.clz
+    global.get $9
+    f64x2.abs
+    memory.size
+    i64.load32_s offset=3290559707
+    i32.wrap_i64
+    global.get $8
+    i32.le_u
+    i64x2.shl
+    loop $loop (param i32 v128) (result i32)
+      global.set $9
+      return
+    end ;; $loop
+    return
+    )
+  
+  (func $14 (type $3)
+    (param $0 f64)
+    (result funcref)
+    i32.const -1283910960
+    f32.reinterpret_i32
+    f32.nearest
+    f32.abs
+    memory.size
+    ref.null extern
+    block $block
+      i64.const 4238894315103049233
+      memory.size
+      block $block_0 (param i32) (result v128 funcref f32)
+        nop
+        v16x8.load_interleaved_2 offset=2437351763 align=2
+        i8x16.gt_u
+        v128.not
+        f32.const 0x1.f623c2p+16
+        f32x4.replace_lane 0
+        i32x4.widen_high_i16x8_u
+        i16x8.extract_lane_s 5
+        drop
+        unreachable
+      end ;; $block_0
+      drop
+      return
+    end ;; $block
+    unreachable
+    ))

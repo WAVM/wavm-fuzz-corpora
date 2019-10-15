@@ -1,0 +1,28 @@
+(module
+  (type $0 (func (result i32)))
+  (import "env" "memory" (memory $4 11 44929 shared))
+  (import "env" "memory" (memory $5 11 31257 shared))
+  (import "env" "memory" (memory $6 3 42196))
+  (import "env" "table" (table $1 27 4294967295 funcref))
+  (import "env" "global1" (global $7 (mut f64)))
+  (import "env" "global2" (global $8 funcref))
+  (import "env" "global4" (global $9 f64))
+  (import "env" "global5" (global $10 i64))
+  (table $2  75 4294967295 shared externref)
+  (table $3  100 4294967295 shared funcref)
+  (global $11  externref (ref.null extern))
+  (global $12  externref (ref.null extern))
+  
+  (func $13 (type $0)
+    (result i32)
+    i32.const -1526053432
+    i64.load16_s $6 offset=2050364460 align=1
+    global.get $10
+    i64.lt_u
+    global.get $10
+    i64.popcnt
+    i64.atomic.rmw16.sub_u $5 offset=631901440
+    call $13
+    table.get $1
+    unreachable
+    ))

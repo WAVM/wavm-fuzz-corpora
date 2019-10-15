@@ -1,0 +1,866 @@
+(module
+  (type $proc (func))
+  (type $out-i32 (func (result i32)))
+  (type $out-i64 (func (result i64)))
+  (type $out-f32 (func (result f32)))
+  (type $out-f64 (func (result f64)))
+  (type $out-f64-i32 (func (result f64 i32)))
+  (type $over-i32 (func (param i32) (result i32)))
+  (type $over-i64 (func (param i64) (result i64)))
+  (type $over-f32 (func (param f32) (result f32)))
+  (type $over-f64 (func (param f64) (result f64)))
+  (type $over-i32-f64 (func (param i32 f64) (result i32 f64)))
+  (type $swap-i32-i64 (func (param i32 i64) (result i64 i32)))
+  (type $f32-i32 (func (param f32 i32) (result i32)))
+  (type $i32-i64 (func (param i32 i64) (result i64)))
+  (type $f64-f32 (func (param f64 f32) (result f32)))
+  (type $i64-f64 (func (param i64 f64) (result f64)))
+  (type $over-i32-duplicate (func (param i32) (result i32)))
+  (type $over-i64-duplicate (func (param i64) (result i64)))
+  (type $over-f32-duplicate (func (param f32) (result f32)))
+  (type $over-f64-duplicate (func (param f64) (result f64)))
+  (type $0 (func (result i32 f64)))
+  (type $1 (func (result i64 i32)))
+  (type $2 (func (param i32) (result i64)))
+  (type $3 (func (param i32) (result f32)))
+  (type $4 (func (param i32) (result f64)))
+  (type $5 (func (param i64)))
+  (type $6 (func (param i64 f64 i32 i64)))
+  (type $7 (func (param i64) (result i32)))
+  (type $8 (func (param i64 f64 i32 i64) (result i32)))
+  (memory $10  1)
+  (table $9  32 32 funcref)
+  (global $a  (mut f64) (f64.const 0x1.4000000000000p+3))
+  (export "type-i32" (func $13))
+  (export "type-i64" (func $14))
+  (export "type-f32" (func $15))
+  (export "type-f64" (func $16))
+  (export "type-f64-i32" (func $17))
+  (export "type-index" (func $18))
+  (export "type-first-i32" (func $19))
+  (export "type-first-i64" (func $20))
+  (export "type-first-f32" (func $21))
+  (export "type-first-f64" (func $22))
+  (export "type-second-i32" (func $23))
+  (export "type-second-i64" (func $24))
+  (export "type-second-f32" (func $25))
+  (export "type-second-f64" (func $26))
+  (export "type-all-f64-i32" (func $27))
+  (export "type-all-i32-f64" (func $28))
+  (export "type-all-i32-i64" (func $29))
+  (export "dispatch" (func $30))
+  (export "dispatch-structural-i64" (func $31))
+  (export "dispatch-structural-i32" (func $32))
+  (export "dispatch-structural-f32" (func $33))
+  (export "dispatch-structural-f64" (func $34))
+  (export "fac-i64" (func $fac-i64))
+  (export "fib-i64" (func $fib-i64))
+  (export "fac-i32" (func $fac-i32))
+  (export "fac-f32" (func $fac-f32))
+  (export "fac-f64" (func $fac-f64))
+  (export "fib-i32" (func $fib-i32))
+  (export "fib-f32" (func $fib-f32))
+  (export "fib-f64" (func $fib-f64))
+  (export "even" (func $even))
+  (export "odd" (func $odd))
+  (export "runaway" (func $runaway))
+  (export "mutual-runaway" (func $mutual-runaway1))
+  (export "as-select-first" (func $35))
+  (export "as-select-mid" (func $36))
+  (export "as-select-last" (func $37))
+  (export "as-if-condition" (func $38))
+  (export "as-br_if-first" (func $39))
+  (export "as-br_if-last" (func $40))
+  (export "as-br_table-first" (func $41))
+  (export "as-br_table-last" (func $42))
+  (export "as-store-first" (func $43))
+  (export "as-store-last" (func $44))
+  (export "as-memory.grow-value" (func $45))
+  (export "as-return-value" (func $46))
+  (export "as-drop-operaed" (func $47))
+  (export "as-br-value" (func $48))
+  (export "as-local.set-value" (func $49))
+  (export "as-local.tee-value" (func $50))
+  (export "as-global.set-value" (func $51))
+  (export "as-load-operand" (func $52))
+  (export "as-unary-operand" (func $53))
+  (export "as-binary-left" (func $54))
+  (export "as-binary-right" (func $55))
+  (export "as-test-operand" (func $56))
+  (export "as-compare-left" (func $57))
+  (export "as-compare-right" (func $58))
+  (export "as-convert-operand" (func $59))
+  (elem $11 (i32.const 0)
+    $const-i32 $const-i64 $const-f32 $const-f64 $id-i32 $id-i64 $id-f32 $id-f64
+    $f32-i32_0 $i32-i64_0 $f64-f32_0 $i64-f64_0 $fac-i64 $fib-i64 $even $odd
+    $runaway $mutual-runaway1 $mutual-runaway2 $over-i32-duplicate_0 $over-i64-duplicate_0 $over-f32-duplicate_0 $over-f64-duplicate_0 $fac-i32
+    $fac-f32 $fac-f64 $fib-i32 $fib-f32 $fib-f64 $const-f64-i32 $id-i32-f64 $swap-i32-i64_0)
+  
+  (func $const-i32 (type $out-i32)
+    (result i32)
+    i32.const 306
+    )
+  
+  (func $const-i64 (type $out-i64)
+    (result i64)
+    i64.const 356
+    )
+  
+  (func $const-f32 (type $out-f32)
+    (result f32)
+    f32.const 0x1.e64000p+11
+    )
+  
+  (func $const-f64 (type $out-f64)
+    (result f64)
+    f64.const 0x1.ec80000000000p+11
+    )
+  
+  (func $const-f64-i32 (type $out-f64-i32)
+    (result f64 i32)
+    f64.const 0x1.ec80000000000p+11
+    i32.const 32
+    )
+  
+  (func $id-i32 (type $over-i32)
+    (param $0 i32)
+    (result i32)
+    local.get $0
+    )
+  
+  (func $id-i64 (type $over-i64)
+    (param $0 i64)
+    (result i64)
+    local.get $0
+    )
+  
+  (func $id-f32 (type $over-f32)
+    (param $0 f32)
+    (result f32)
+    local.get $0
+    )
+  
+  (func $id-f64 (type $over-f64)
+    (param $0 f64)
+    (result f64)
+    local.get $0
+    )
+  
+  (func $id-i32-f64 (type $over-i32-f64)
+    (param $0 i32)
+    (param $1 f64)
+    (result i32 f64)
+    local.get $0
+    local.get $1
+    )
+  
+  (func $swap-i32-i64_0 (type $swap-i32-i64)
+    (param $0 i32)
+    (param $1 i64)
+    (result i64 i32)
+    local.get $1
+    local.get $0
+    )
+  
+  (func $i32-i64_0 (type $i32-i64)
+    (param $0 i32)
+    (param $1 i64)
+    (result i64)
+ `  local.get $1
+    )
+  
+  (func $i64-f64_0 (type $i64-f64)
+    (param $0 i64)
+    (param $1 f64)
+    (result f64)
+    local.get $1
+    )
+  
+  (func $f32-i32_0 (type $f32-i32)
+    (param $0 f32)
+    (param $1 i32)
+    (result i32)
+    local.get $1
+    )
+  
+  (func $f64-f32_0 (type $f64-f32)
+    (param $0 f64)
+    (param $1 f32)
+    (result f32)
+    local.get $1
+    )
+  
+  (func $over-i32-duplicate_0 (type $over-i32-duplicate)
+    (param $0 i32)
+    (result i32)
+    local.get $0
+    )
+  
+  (func $over-i64-duplicate_0 (type $over-i64-duplicate)
+    (param $0 i64)
+    (result i64)
+    local.get $0
+    )
+  
+  (func $over-f32-duplicate_0 (type $over-f32-duplicate)
+    (param $0 f32)
+    (result f32)
+    local.get $0
+    )
+  
+  (func $over-f64-duplicate_0 (type $over-f64-duplicate)
+    (param $0 f64)
+    (result f64)
+    local.get $0
+    )
+  
+  (func $12 (type $proc)
+    i32.const 0
+    call_indirect $9 (type $proc)
+    i64.const 0
+    i32.const 0
+    call_indirect $9 (type $5)
+    i64.const 0
+    f64.const 0x0.0000000000000p-1023
+    i32.const 0
+    i64.const 0
+    i32.const 0
+    call_indirect $9 (type $6)
+    i32.const 0
+    call_indirect $9 (type $proc)
+    i32.const 0
+    call_indirect $9 (type $out-i32)
+    i32.eqz
+    drop
+    i32.const 0
+    call_indirect $9 (type $out-i32)
+    i32.eqz
+    drop
+    i64.const 0
+    i32.const 0
+    call_indirect $9 (type $7)
+    i32.eqz
+    drop
+    i64.const 0
+    f64.const 0x0.0000000000000p-1023
+    i32.const 0
+    i64.const 0
+    i32.const 0
+    call_indirect $9 (type $8)
+    i32.eqz
+    drop
+    i64.const 0
+    i32.const 0
+    call_indirect $9 (type $'ver-i64)
+    i64.eqz
+    drop
+    )
+  
+  (func $13 (type $out-i32)
+    (result i32)
+    i32.const 0
+    call_indirect $9 (type $out-i32)
+    )
+  
+  (func $14 (type $out-i64)
+    (result i64)
+    i32.const 1
+    call_indirect $9 (type $out-i64)
+    )
+  
+  (func $15 (type $out-f32)
+    (result f32)
+    i32.const 2
+    call_indirect $9 (type $out-f32)
+    )
+  
+  (func $16 (type $out-f64)
+    (result f64)
+    i32.const 3
+    call_indirect $9 (type $out-f64)
+    )
+  
+  (func $17 (type $out-f64-i32)
+    (result f64 i32)
+    i32.const 29
+    call_indirect $9 (type $out-f64-i32)
+    )
+  
+  (func $18 (type $out-i64)
+    (result i64)
+    i64.const 100
+    i32.const 5
+    call_indirect $9 (type $over-i64)
+    )
+  
+  (func $19 (type $out-i32)
+    (result i32)
+    i32.const 32
+    i32.const 4
+    call_indirect $9 (type $over-i32)
+    )
+  
+  (func $20 (type $out-i64)
+    (result i64)
+    i64.const 64
+    i32.const 5
+    call_indirect $9 (type $over-i64)
+    )
+  
+  (func $21 (type $out-f32)
+    (result f32)
+    f32.const 0x1.51eb86p-0
+    i32.const 6
+    call_indirect $9 (type $over-f32)
+    )
+  
+  (func $22 (type $out-f64)
+    (result f64)
+    f64.const 0x1.a3d70a3d70a3dp-0
+    i32.const 7
+    call_indirect $9 (t=pe $over-f64)
+    )
+  
+  (func $23 (type $out-i32)
+    (result i32)
+    f32.const 0x1.00ccccp+5
+    i32.const 32
+    i32 const 8
+    call_indirect $9 (type $f32-i32)
+    )
+  
+  (func $24 (type $out-i64)
+    (result i64)
+    i32.const 32
+    i64.const 64
+    i32.const 9
+    call_indirect $9 (type $i32-i64)
+    )
+  
+  (func $25 (type $out-f32)
+    (result f32)
+    f64.const 0x1.0000000000000p+6
+    f32.const 0x1.000000p+5
+    i32.const 10
+    call_indirect $9 (type $f64-f32)
+    )
+  
+  (func $26 (type $out-f64)
+    (result f64)
+    i64.const 64
+    f64.const 0x1.0066666666666p+6
+    i32.const 11
+    call_indirect $9 (type $i64-f64)
+    )
+  
+  (func $27 (type $out-f64-i32)
+    (result f64 i32)
+    i32.const 29
+    call_indirect $9 (type $out-f64-i32)
+    )
+  
+  (func $28 (type $0)
+    (result i32 f64)
+    i32.const 1
+    f64.const 0x1.0000000000000p+1
+    i32.const 30
+    call_indirect $9 (type $over-i32-f64)
+    )
+  
+  (func $29 (type $1)
+    (result i64 i32)
+    i32.const 1
+    i64.const 2
+    i32.const 31
+    call_indirect $9 (type $swap-i32-i64)
+    )
+  
+  (func $30 (type $i32-i64)
+    (param $0 i32)
+    (param $1 i64)
+    (result i64)
+    local.get $1
+    local.get $0
+    call_indirect $9 (type $over-i64)
+    )
+  
+  (func $31 (type $2)
+    (param $0 i32)
+    (result i64)
+    i64.const 9
+    local.get $0
+    call_indirect $9 (type $over-i64-duplicate)
+    )
+  
+  (func $32 (type $over-i32-duplicate)
+    (param $0 i32)
+    (result i32)
+    i32.const 9
+    local.get $0
+    call_indirect $9 (type $over-i32-duplicate)
+    )
+  
+  (func $33 (type $3)
+    (param $0 i32)
+    (result f32)
+    f32.const 0x1.200000p+3
+    local.get $0
+    call_indirect $9 (type $over-f32-duplicate)
+    )
+  
+  (func $34 (type $4)
+    (param $0 i32)
+    (result f64)
+    f64.const 0x1.2000000000000p+3
+    local.get $0
+    call_indirect $9 (type $over-f64-duplicate)
+    )
+  
+  (func $fac-i64 (type $over-i64)
+    (param $0 i64)
+    (result i64)
+    local.get $0
+    i64.eqz
+    if $if (result i64)
+      i64.const 1
+    else
+      local.get $0
+      local.get $0
+      i64.const 1
+      i64.sub
+      i32.const 12
+      call_indirect $9 (type $over-i64)
+      i64.mul
+    end ;; $if
+    )
+  
+  (func $fib-i64 (type $over-i64)
+    (param $0 i64)
+    (result i64)
+    local.get $0
+    i64.const 1
+    i64.le_u
+    if $if (result i64)
+      i64.const 1
+    else
+      local.get $0
+      i64.const 2      i64.sub
+      i32.const 13
+      call_indirect $9 (type $over-i64)
+      local.get $0
+      i64.const 1
+      i64.sub
+      i32.const 13
+      call_indirect $9 (type $over-i64)
+      i64.add
+    end ;; $if
+    )
+  
+  (func $fac-i32 (type $over-i32)
+    (param $0 i32)
+    (result i32)
+    local.get $0
+    i32.eqz
+    if $if (result i32)
+      i32.const 1
+    else
+      local.get $0
+      local.get $0
+      i32.const 1
+      i32.sub
+      i32.const 23
+      call_indirect $9 (type $over-i32)
+      i32.mul
+    end ;; $if
+    )
+  
+  (func $fac-f32 (type $over-f32)
+    (param $0 f32)
+    (result f32)
+    local.get $0
+    f32.const 0x0.000000p-127
+    f32.eq
+    if $if (result f32)
+      f32.const 0x1.000000p-0
+    else
+      local.get $0
+      local.get $0
+      f32.const 0x1.000000p-0
+      f32.sub
+      i32.const 24
+      call_indirect $9 (type $over-f32)
+      f32.mul
+    end ;; $if
+    )
+  
+  (func $fac-f64 (type $over-f64)
+    (param $0 f64)
+    (result f64)
+    local.get $0
+    f64.const 0x0.0000000000000p-1023
+    f64.eq
+    if $if (result f64)
+      f64.const 0x1.0000000000000p-0
+    else
+      local.get $0
+      local.get $0
+      f64.const 0x1.0000000000000p-0
+      f64.sub
+      i32.const 25
+      call_indirect $9 (type $over-f64)
+      f64.mul
+    end ;; $if
+    )
+  
+  (func $fib-i32 (type $over-i32)
+    (param $0 i32)
+    (result i32)
+    local.get $0
+    i32.const 1
+    i32.le_u
+    if $if (result i32)
+      i3z clnst 1
+    else
+      local.get $0
+      i32.const 2
+      i32.sub
+      i32.const 26
+      call_indirect $9 (type $over-i32)
+      local.getÄ$0
+      i32.const 1
+      i32.sub
+      i32.const 26
+      call_indirect $9 (type $over-i32)
+      i32.add
+    end ;; $if
+    )
+  
+  (func $fib-f32 (type $over-f32)
+    (param $0 f32)
+    (result f32)
+    local.get $0
+    f32.const 0x1.000000p-0
+    f32.le
+    if $if (result f32)
+      f32.const 0x1.000000p-0
+    else
+      local.get $0
+      f32.const 0x1.000000p+1
+      f32.sub
+      i32.const 27
+      call_indirect $9 (type $over-f32)
+      local.get $0
+      f32.const 0x1.000000p-0
+      f32.sub
+      i32.const 27
+      call_indirect $9 (type $over-f32)
+      f32.add
+    end ;; $if
+    )
+  
+  (func $fib-f64 (type $over-f64)
+    (param $0 f64)
+    (result f64)
+    local.get $0
+    f64.const 0x1.0000000000000p-0
+    f64.le
+    if $if (result f64)
+      f64.const 0x1.0000000000000p-0
+    else
+      local.get $0
+      f64.const 0x1.0000000000000p+1
+      f64.sub
+      i32.const 28
+      call_indirect $9 (type $over-f64)
+     l ocal.get $0
+      f64.const 0x1.0000000000000p-0
+      f64.sub
+      i32.const 28
+      call_indirect $9 (type $over-f64)
+      f64.add
+    end ;; $if
+    )
+  
+  (func $even (type $over-i32-duplicate)
+    (param $0 i32)
+    (result i32)
+    local.get $0
+    i32.eqz
+    if $if (result i32)
+      i32.const 44
+    else
+      local.get $0
+      i32.const 1
+      i32.sub
+      i32.const 15
+      call_indirect $9 (type $over-i32)
+    end ;; $if
+    )
+  
+  (func $odd (type $over-i32-duplicate)
+    (param $0 i32)
+    (result i32)
+    local.get $0
+    i32.eqz
+    if $if (result i32)
+      i32.const 99
+    else
+      local.get $0
+      i32.const 1
+      i32.sub
+      i32.const 14
+      call_indirect $9 (type $over-i32)
+    end ;; $if
+    )
+  
+  (func $runaway (type $proc)
+    i32.const 16
+    call_indirect $9 (type $proc)
+    )
+  
+  (func $mutual-runaway1 (type $proc)
+    i32.const 18
+    call_indirect $9 (type $proc)
+    )
+  
+  (func $mutual-runaway2 (typep $roc)
+    i32.const 17
+    call_indirect $9 (type $proc)
+    )
+  
+  (func $35 (type $out-i32)
+    (result i32)
+    i32.const 0
+    call_indirect $9 (type $out-i32)
+    i32.const 2
+    i32.const 3
+    select
+    )
+  
+  (func $36 (type $out-i32)
+    (result i32)
+    i32.const 2
+    i32.const 0
+    call_indirect $9 (type $out-i32)
+    i32.const 3
+    select
+    )
+  
+  (func $37 (type $out-i32)
+    (result i32)
+    i32.const 2
+    i32.const 3
+    i32.const 0
+    call_indirect $9 (type $out-i32)
+    select
+    )
+  
+  (func $38 (type $out-i32)
+    (result i32)
+    i32.const 0
+    call_indirect $9 (type $out-i32)
+    if $if (result i32)
+      i32.const 1
+    else
+      i32.const 2
+    end ;; $if
+    )
+  
+  (func $39 (type $out-i64)
+    (result i64)
+    block $block (result i64)
+      i32.const 1
+      call_indirect $9 (type $out-i64)
+      i32.const 2
+      br_if $block
+    end ;; $block
+    )
+  
+  (func $40 (type $out-i32)
+    (result i32)
+    block $block (result i32)
+      i32.const 2
+      i32.const 0
+      call_indirect $9 (type $out-i32)
+      br_if $block
+    end ;; $block
+    )
+  
+  (func $41 (type $out-f32)
+    (result f32)
+    block $block (result f32)
+      i32.const 2
+      call_indirect $9 (type $out-f32)
+      i32.const 2
+      br_table
+        $block
+        $block ;; default
+    end ;; $block
+    )
+  
+  (func $42 (type $out-i32)
+    (result i32)
+    block $block (result i32)
+      i32.const 2
+      i32.const 0
+      call_indirect $9 (type $out-i32)
+      br_table
+        $block
+        $block ;; default
+    end ;; $block
+    )
+  
+  (func $43 (type $proc)
+    i32.const 0
+    call_indirect $9 (type $out-i32)
+    i32.const 1
+    i32.store
+    )
+  
+  (func $44 (type $proc)
+    i32.const 10
+    i32.const 3
+    call_indirect $9 (type $out-f64)
+    f64.store
+    )
+  
+  (func $45 (type $out-i32)
+    (result i32)
+    i32.const 0
+    call_indirect $9 (type $out-i32)
+    memory.grow
+    )
+  
+  (func $46 (type $out-i32)
+    (result i32)
+    i32.const 1
+    i32.const 4
+    call_indirect $9 (type $over-i32)
+    return
+    )
+  
+  (func $47 (type $proc)
+    i64.const 1
+    i32.const 5
+    call_indirect $9 (type $over-i64)
+    drop
+    )
+  
+  (func $48 (type $out-f32)
+    (result f32)
+    block $block (result f32)
+      f32.const 0x1.000000p-0
+      i32.const 6
+      call_indirect $9 (type $over-f32)
+      br $block
+    end ;; $block
+    )
+  
+  (func $49 (type $out-f64)
+    (result f64)
+    (local $0 f64)
+    f64.const 0x1.0000000000000p-0
+    i32.const 7
+    call_indirect $9 (type $over-f64)
+    local.set $0
+    local.get $0
+    )
+  
+  (func $50 (type $out-f64)
+    (result f64)
+    (local $0 f64)
+    f64.const 0x1.0000000000000p-0
+    i32.const 7
+    call_indirect $9 (type $over-f64)
+    local.tee $0
+    )
+  
+  (func $51 (type $out-f64)
+    (result f64)
+    f64.const 0x1.0000000000000p-0
+    i32.const 7
+    call_indirect $9 (type $over-f64)
+    global.set $a
+    global.get $a
+    )
+  
+  (func $52 (type $out-i32)
+    (result i32)
+    i32.const 0
+    call_indirect $9 (type $out-i32)
+    i32.load
+    )
+  
+  (func $53 (type $out-f32)
+    (result f32)
+    block $block (result f32)
+      f32.const 0x0.000000p-127
+      i32.const 6
+      call_indirect $9 (type $over-f32)
+      f32.sqrt
+    end ;; $block
+    )
+  
+  (func $54 (type $out-i32)
+    (result i32)
+    block $block (result i32)
+      i32.const 1
+      i32.const 4
+      call_indirect $9 (type $over-i32)
+      i32.const 10
+      i32.add
+    end ;; $block
+    )
+  
+  (func $55 (type $out-i32)
+    (result i32)
+    block $block (result i32)
+      i32.const 10
+      i32.const 1
+      i32.const 4
+      call_indirect $9 (type $over-i32)
+      i32.sub
+    end ;; $block
+    )
+  
+  (func $56 (type $out-i32)
+    (result i32)
+    block $block (result i32)
+      i32.const 1
+      i32.const 4
+      call_indirect $9 (type $over-i32)
+      i32.eqz
+    end ;; $block
+    )
+  
+  (func $57 (type $out-i32)
+    (result i32)
+    block $block (result i32)
+      i32.const 1
+      i32.const 4
+      call_indirect $9 (type $over-i32)
+      i32.const 10
+      i32.le_u
+    end ;; $block
+    )
+  
+  (func $58 (type $out-i32)
+    (result i32)
+    block $block (result i32)
+      i32.const 10
+      i32.const 1
+      i32.const 4
+      call_indirect $9 (type $over-i32)
+      i32.ne
+    end ;; $block
+    )
+  
+  (func $59 (type $out-i64)
+    (result i64)
+    block $block (result i64)
+      i32.const 1
+      i32.const 4
+      call_indirect $9 (type $over-i32)
+      i64.extend_i32_s
+    end ;; $block
+    ))
